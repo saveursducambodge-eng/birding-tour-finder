@@ -1,0 +1,1117 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Clock, Users, MapPin, Star, ArrowRight, Filter } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import Navigation from "@/components/Navigation";
+import TourDetailsPopup from "@/components/TourDetailsPopup";
+import giantIbisImage from "@/assets/giant-ibis-cambodia.jpg";
+import heroImage from "@/assets/hero-cambodia-jungle.jpg";
+import birdTourHero from "@/assets/bird-tour-hero.png";
+import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
+import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
+import customTourIbisGroup from "@/assets/custom-tour-ibis-group.jpg";
+import vultureFeeding14Day from "@/assets/vulture-feeding-14day.jpg";
+import tailorbird15Day from "@/assets/tailorbird-15day.jpg";
+import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
+import wagtail19Day from "@/assets/wagtail-19day.jpg";
+// Import bird images from gallery
+import bird1 from "@/assets/bird-1.jpg";
+import bird2 from "@/assets/bird-2.jpg";
+import bird3 from "@/assets/bird-3.jpg";
+import bird4 from "@/assets/bird-4.jpg";
+import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
+import bird6 from "@/assets/bird-6.jpg";
+import bird7 from "@/assets/bird-7.jpg";
+import bird8 from "@/assets/bird-8.jpg";
+import bird9 from "@/assets/bird-9.jpg";
+import bird10 from "@/assets/bird-10.jpg";
+
+const ToursPage = () => {
+  const [selectedFilter, setSelectedFilter] = useState("all");
+  const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const tours = [
+    {
+      id: 1,
+      title: "Half-Day to Birding Near Siem Reap - Phnom Krom Marshland",
+      description: "An easy and affordable half-day birding tour perfect for early risers or afternoon explorers. Just 15km from Siem Reap town (20 minutes by tuk-tuk), explore the Phnom Krom marshland where paddy fields and ponds stretch to the edge of the great Tonle Sap Lake. Spot 50+ wetland and grassland bird species in just a few hours of birding.",
+      duration: "Half Day (4 hours)",
+      difficulty: "Easy",
+      groupSize: "2-8 people",
+      price: "$85 Per Person",
+      image: bird1,
+      category: "cultural",
+      highlights: ["50+ bird species", "Phnom Krom marshland", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
+      rating: 4.5,
+      schedule: {
+        "Option 1 - Morning": "5:30 AM pickup, 5:50 AM arrive at Phnom Krom, birding until 9:00 AM, 9:30 AM return to hotel",
+        "Option 2 - Afternoon": "2:30 PM pickup, 2:50 PM arrive at marshland, birding until 5:00 PM, 5:30 PM return to hotel"
+      },
+      birdSpecies: [
+        "Cinnamon Bittern", "Yellow Bittern", "Lesser Coucal", "Black Bittern",
+        "Baya Weaver", "Asian Golden Weaver", "Black-browed Reed Warbler", "Oriental Reed Warbler",
+        "Bright-headed Cisticola", "Bronze-winged Jacana", "Pheasant-tailed Jacana", "Greater Adjutant",
+        "Little Egret", "Intermediate Egret", "Great Egret", "Grey Heron",
+        "Purple Heron", "Black-crowned Night Heron", "Cattle Egret", "Indian Pond Heron",
+        "Painted Stork", "Asian Openbill", "Spot-billed Pelican", "Little Cormorant",
+        "Indian Cormorant", "Oriental Darter", "White-throated Kingfisher", "Common Kingfisher",
+        "Pied Kingfisher", "White-breasted Waterhen", "Common Moorhen", "Purple Swamphen"
+      ],
+      included: [
+        "Transport by tuk-tuk or car",
+        "English-speaking birding guide",
+        "Bottled drinking water",
+        "All site entry fees"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Personal expenses"
+      ],
+      bestSeason: "Year-round availability with best birding conditions in early morning or late afternoon",
+      physicalEffort: "Easy. Walking 3-4km on mostly flat wetland terrain. Suitable for all fitness levels comfortable with tropical conditions.",
+      weather: "Hot and humid conditions expected near wetlands. Morning tours cooler, afternoon tours offer beautiful sunset photography opportunities.",
+      food: "No meals included - short tour duration",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 2,
+      title: "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating Village",
+      description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, hosts thousands of rare and endangered birds during the dry season, making it one of the premier birdwatching destinations in Southeast Asia. Prek Toal contains the largest breeding colony of large water birds in Southeast Asia, with over 150 bird species recorded in this protected reserve.",
+      duration: "Full Day (11 hours)",
+      difficulty: "Easy",
+      groupSize: "2 people",
+      price: "$285 Per Person",
+      image: bird2,
+      category: "water",
+      highlights: ["Greater Adjutant", "Milky Stork", "Floating village", "Ramsar wetlands", "Community restaurant", "150+ bird species"],
+      rating: 4.9,
+      schedule: {
+        "Option 1 - Full Day": "5:30 AM pickup from hotel, 7:30 AM packed breakfast on boat, 8:30 AM arrive at Prek Toal floating village, 8:45 AM transfer to smaller community boats, 9:30 AM arrive at observation platform and climb treetop for bird colony views, 10:30 AM return to village for lunch at Saray Community Restaurant, 12:45 PM visit Water Hyacinth Handicraft Workshop, 1:00 PM paddle boat tour around floating village, 3:15 PM travel back to Siem Reap, 4:00 PM arrive back at hotel",
+        "Option 2 - Afternoon": "9:30 AM pickup from hotel, 12:30 PM lunch at local restaurant at Prek Toal Floating Village, 2:50 PM arrive and begin birding at Prek Toal Waterbird Sanctuary platform, 5:00 PM return to vehicle, 5:30 PM drop-off at hotel"
+      },
+      birdSpecies: [
+        "Greater Adjutant", "Lesser Adjutant", "Painted Stork", "Milky Stork",
+        "Great Cormorant", "Purple Heron", "Black Bittern", "Cinnamon Bittern",
+        "Spot-billed Pelican", "Yellow Bittern", "Asian Openbill", "Medium Egret",
+        "Oriental Darter", "Indian Cormorant", "Gray-headed Fish Eagle",
+        "Oriental Reed Warbler", "Dusky Warbler", "Black-browed Reed Warbler",
+        "Plain-backed Sparrow", "Amur Stonechat", "Pied Bush Chat",
+        "Black-collared Starling", "Brown Shrike", "Oriental Pratincole", "Rufous Woodpecker",
+        "White-breasted Waterhen", "Black-headed Ibis"
+      ],
+      included: [
+        "All transport including transfers",
+        "All reserve entry fees",
+        "Meals, breakfast and lunch on the day of departure",
+        "Bottled drinking water",
+        "Boat trips",
+        "English-speaking birding guide",
+        "Community restaurant meal",
+        "Handicraft workshop visit"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips",
+        "Laundry",
+        "Hotel mini bar",
+        "Phone calls",
+        "Any other items of a personal nature"
+      ],
+      bestSeason: "November to April (Peak: January-March) when water levels are low and all waterbirds come to breed at Prek Toal Waterbird Sanctuary",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 1 kilometre in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 3,
+      title: "Full-day Trip to Birding at Koh Ker & Beng Melea",
+      description: "The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar). That's the best time slot for birding and bird photography in Cambodia. These tours are available for a year. This tour combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species. Koh Ker is a remote archaeological site in northern Cambodia about 120 kilometres away from Siem Reap with more than 180 sanctuaries found in a protected area of 81 square kilometres. Only about two dozen monuments can be visited by tourists because most sanctuaries are hidden in the forest. It is situated in dry Dipterocarp with some semi-evergreen forest providing excellent habitat for wildlife, including 8 species of woodpeckers, Rufous-winged Buzzard, White-rumped Pygmy-falcon, and Collared Falconet. Beng Mealea ('lotus pond') is an Angkor Wat period temple located 40 km east of the main group of temples at Angkor. It was built as a Hindu temple with some Buddhist carvings. Largely unrestored with trees and thick brush thriving amidst its towers and courtyards, it contains good semi-evergreen forest giving birders a chance to pick up migrant species such as Hainan Blue Flycatcher and White-throated Rock Thrush.",
+      duration: "Full Day (12.5 hours)",
+      difficulty: "Easy",
+      groupSize: "2 people",
+      price: "$265 Per Person",
+      image: bird3,
+      category: "cultural",
+      highlights: ["White-Rumped Pygmy Falcon", "8 Woodpecker species", "Remote temples", "Forest birding", "Temple exploration", "Beng Mealea ruins"],
+      rating: 5.0,
+      schedule: {
+        "5:00 AM": "Pick up from hotel, transfer to Koh Ker with packed breakfast from Siem Reap",
+        "8:00 AM": "Arrive near Koh Ker for birding and have breakfast",
+        "12:00 AM": "Lunch at Koh Ker",
+        "1:00 PM": "Visit Koh Ker temple",
+        "2:30 PM": "Visit Beng Melea temple, birding",
+        "5:00 PM": "Arrive back at Siem Reap hotel"
+      },
+      birdSpecies: [
+        "White-Rumped Pygmy Falcon", "Rufous-winged Buzzard", "Crested Serpent Eagle",
+        "Red-breasted Parakeet", "Blossom-headed Parakeet", "Velvet-fronted Nuthatch",
+        "Brown Prinia", "Rufescent Prinia", "Small Minivet", "Scarlet Minivet",
+        "Indochinese Cuckooshrike", "Ashy Drongo", "Black-hooded Oriole",
+        "Sooty-headed Bulbul", "Purple Sunbird", "Asian Green Bee-eater", "Indochinese Roller",
+        "Hainan Blue Flycatcher", "White-throated Rock Thrush", "Collared Falconet"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All meals - lunch and breakfast",
+        "Bottled drinking water throughout the tour",
+        "Boat trips as specified in itinerary",
+        "Services of English-speaking birding guide and Temple Tours guide"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      bestSeason: "November to April (Peak: January-March) - best time slot for birding and bird photography. Tours available year-round.",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 3-4 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 4,
+      title: "Full Day Tour to Birding at Ang Trapaeng Thmor Sarus Crane Reserve",
+      description: "The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low and Sarus Cranes return to Ang Trapaeng Thmor. This wetland was created as a reservoir during the Angkorian period, but Ang Trapaeng Thmor was rebuilt during the terrible Khmer Rouge regime in 1976. The Wildlife Conservation Society now manages this area as a reserve to protect, in particular, Sarus Cranes. Over three hundred of these fantastic cranes flock to this area, but there is much more to see here besides. Visiting this site gives us another chance to see many key birds, as well as providing excellent views of good numbers of Sarus Cranes. Birdwatchers visiting this site make a significant contribution to conservation in Cambodia and the persistence of Sarus Cranes in the area. The variety of habitats includes everything from wetlands to scattered woodland, giving visitors a chance to see a wide range of species in a single day. This location is also one of the few places remaining where truly wild Eld's Deer still exist, a critically endangered species which is important in maintaining this landscape.",
+      duration: "Full Day (10.5 hours)",
+      difficulty: "Easy",
+      groupSize: "2 people",
+      price: "$350 for two people",
+      image: bird4,
+      category: "water",
+      highlights: ["Sarus Crane", "Greater Spotted Eagle", "Eastern Marsh Harrier", "Wetland birding", "Conservation reserve", "Eld's Deer habitat"],
+      rating: 4.8,
+      schedule: {
+        "5:30 AM": "Pick up from hotel & transfer to Ang Trapaeng Thmor (breakfast packed from Siem Reap)",
+        "8:30 AM": "Arrive at Reservoir & meet ranger (make a few birding stops on the way to the Feeding site of Sarus Crane and have breakfast)",
+        "8:45 AM": "Start birding around Ang Trapaeng Thmor till 11:30 AM",
+        "12:00 PM": "Have lunch in a restaurant",
+        "2:00 PM": "Bird watching near the reservoir",
+        "4:00 PM": "Arrive back at Siem Reap hotel"
+      },
+      birdSpecies: [
+        "Sarus Crane", "Black-crowned Night Heron", "Spotted Wood Owl", "Barn Owl",
+        "Spotted Owlet", "Yellow Bittern", "Scarlet-backed Flowerpecker", "Asian Koel",
+        "Cinnamon Bittern", "Black Bittern", "Watercock", "Cotton Pygmy-goose",
+        "Knob-billed (Comb) Duck", "Bronze-winged Jacana", "Pheasant-tailed Jacana",
+        "Black Kite", "Eastern Marsh Harrier", "Pied Harrier", "Dark-necked Tailorbird",
+        "Yellow-vented Bulbul", "Plain-backed Sparrow", "Black-collared Starling",
+        "Lanceolated Warbler", "Black-headed Ibis", "Painted Stork", "Spot-billed Pelican",
+        "Oriental Darter", "Asian Openbill", "Greater Spotted Eagle", "Roofed-winged Buzzard",
+        "Black-winged Kite", "Small Quail", "Blue-breasted Quail", "Oriental Skylark",
+        "Indochinese Bushlark", "Singing Bushlark", "Amur Stonechat", "Pied Bush Chat",
+        "Richard's Pipit", "Paddyfield Pipit", "Red-throated Pipit", "Plain Prinia",
+        "Yellow-bellied Prinia", "Oriental Reed Warbler", "Red Avadavat"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All meals - lunch and breakfast",
+        "Bottled drinking water throughout the tour",
+        "Boat trips as specified in itinerary",
+        "Services of English-speaking birding guide and Temple Tours guide"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      bestSeason: "November to April (Peak: January-March) when water levels are low and Sarus Cranes return to Ang Trapaeng Thmor. Recommend tours starting from January to end of April.",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 2 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 5,
+      title: "Full Birding and Angkor Wat Temple Tour",
+      description: "The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-April). That's the best time slot for birding and bird photography in Cambodia. Tours are recommended from January to the end of April. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species. Angkor Wat is a Hindu-Buddhist temple complex located on a site measuring 162 hectares within the ancient Khmer capital city of Angkor. It was originally constructed in the 12th century as a Hindu temple dedicated to the deity Vishnu, and sits just 7 kilometers north of Siem Reap. Angkor Wat is not only the most famous temple of Cambodia but also a surprising birding hotspot. The temple's surrounding moat and forest patches are home and feeding areas for more than 50 bird species. After birding and learning about Angkor Wat history, we continue to visit Bayon and Ta Prohm Temple. We can search for Alexandrine Parakeet, alongside Red-breasted parakeets, at the Ta Prohm temple - an amazing location used in the movie 'Tomb Raider' where massive roots of trees climb around ruined temples creating an amazing sight. We then continue to visit Bayon for bird watching until sunset.",
+      duration: "Full Day (12.5 hours)",
+      difficulty: "Easy",
+      groupSize: "2-8 people",
+      price: "$195 Per Person",
+      image: bird5,
+      category: "cultural",
+      highlights: ["Angkor Wat sunrise", "Forest Wagtail", "White-throated Rock Thrush", "Hainan Blue Flycatcher", "Ta Prohm Temple", "50+ bird species", "Bayon Temple"],
+      rating: 4.7,
+      schedule: {
+        "5:00 AM": "Pick up from hotel to Angkor Wat (15 minutes or more on the road)",
+        "5:30 AM": "Visit sunrise at Angkor Wat temple and birding",
+        "9:00 AM": "Visit the temple and learn about Khmer history",
+        "11:30 AM": "Lunch time in the temple area",
+        "1:30 PM": "Birds seen in the forest around the temple, visit Ta Prohm and Bayon",
+        "5:30 PM": "Driver will bring you back to the hotel"
+      },
+      birdSpecies: [
+        "Hainan Blue Flycatcher", "Taiga Flycatcher", "Asian Brown Flycatcher", "Forest Wagtail",
+        "White-throated Rock Thrush", "Black-capped Kingfisher", "Asian Barred Owlet", "Black Baza",
+        "Alexandrine Parakeet", "Red-breasted Parakeet", "Ashy Minivet", "Greater Racket-tailed Drongo",
+        "Yellow-browed Warbler", "Pale-legged Leaf Warbler"
+      ],
+      included: [
+        "All transport including airport transfers",
+        "All reserve entry fees",
+        "Meals, breakfast and lunch on the day of departure",
+        "Bottled drinking water",
+        "Boat trips",
+        "Services of English-speaking birding guide"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips",
+        "Laundry",
+        "Hotel mini bar",
+        "Phone calls",
+        "Any other items of a personal nature"
+      ],
+      bestSeason: "November to April (Peak: January-February-April) for optimal birding and temple photography conditions",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 1.3 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 6,
+      title: "Three-Day Tour to Birding at Tmatboey - Bengal Florican Grassland and Presh Vihear Temple",
+      description: "The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low, Sarus Cranes return, and Bengal Florican displays are visible. That's the best time slot for birding and bird photography in Cambodia. Recommend tours starting from December to the end of April. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species. This tour offers a unique experience of staying in a local eco-lodge, supporting community-based conservation. Tmatboey is a remote community ecotourism site in Cambodia's Northern Plains, known for hosting the critically endangered Giant Ibis (Cambodia's national bird) and the elusive White-shouldered Ibis. The Tmatboey Ibis Site is a conservation project established by the Wildlife Conservation Society as a partnership with the Cambodian Government and the villagers of Tmatboey. Before the tour starts in Tmatboey, we have a full morning of bird watching at Bengal Florican Grassland to see the critically endangered Bengal Florican. This grassland hosts several rare bird species, including the Bengal Florican, Manchurian Reed-warbler, Sarus Crane, Singing bush lark, Oriental skylark, Common buttonquail, Asian Pied Starling, Spotted Redshank, Little Ringed Plover, Streaked Weaver, Oriental Pratincole, Pied Harrier, Eastern Marsh-harrier, Bluethroat, Red Avadavat, Lanceolated Warbler, and other waterbirds. The Temple of Preah Vihear is situated on the edge of a plateau that dominates the plain of Cambodia, dedicated to Shiva. The temple dates back to the first half of the 11th century AD, with origins traced to the 9th century. This site is particularly well preserved due to its remote location and is exceptional for the quality of its architecture adapted to the natural environment.",
+      duration: "3 Days / 2 Nights",
+      difficulty: "Moderate",
+      groupSize: "2-8 people",
+      price: "$898 Per Person",
+      image: tmatboeyIbis,
+      category: "multi-day",
+      highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
+      rating: 4.8,
+      schedule: {
+        "Day 1": "Bengal Florican Grassland & Tmatboey - 5:00 AM pickup from hotel by English-speaking bird guide with packed breakfast from Siem Reap, 6:30 AM arrive Florican grassland and have breakfast while bird watching, 10:00 AM lunch at restaurant in Beng Mealea, 1:00 PM travel to Tmatboey community, 3:00 PM arrive Tmatboey, relax and look at Giant Ibis and White-shouldered Ibis at roosting tree, 6:30 PM night walk for owls and dinner",
+        "Day 2": "Full Day Bird Watching at Tmatboey - 4:30 AM packed tea, coffee, and breakfast, moving to Giant Ibis roosting tree, 6:00 AM bird watching till 11:00 AM, 11:30 AM lunch at community restaurant, 1:00 PM continue birding in another area till 4:30 PM, 6:30 PM dinner and overnight",
+        "Day 3": "Tmatboey & Presh Vihear - 6:30 AM tea and coffee, heading to Presh Vihear temple, 8:00 AM visit temple and bird watching at the temple, 12:00 PM lunch at local restaurant, 1:00 PM turn back to Siem Reap hotel with birding stops, 5:00 PM arrive Siem Reap hotel and drop off"
+      },
+      birdSpecies: [
+        "Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Greater Adjutant",
+        "Milky Stork", "Rufous-bellied Woodpecker", "Spot-billed Pelican", "Sarus Crane",
+        "White-rumped Falcon", "Black-headed Woodpecker", "Yellow-crowned Woodpecker",
+        "Oriental Scops Owl", "Spotted Wood Owl", "Brown Wood Owl", "Brown Fish Owl",
+        "Singing Bush Lark", "Oriental Skylark", "Oriental Pratincole", "Common Buttonquail",
+        "Pied Harrier", "Eastern Marsh Harrier", "Bluethroat", "Red Avadavat",
+        "Burmese Nuthatch", "Burmese Shrike", "Woolly-necked Stork", "White-browed Fantail",
+        "Rufous Treepie", "Small Minivet", "Common Woodshrike", "Indochinese Cuckooshrike",
+        "Great Slaty Woodpecker", "Pale-capped Pigeon", "Black-hooded Oriole", "Black-naped Oriole",
+        "Golden-fronted Leafbird", "Manchurian Reed Warbler", "Asian Pied Starling",
+        "Spotted Redshank", "Little Ringed Plover", "Streaked Weaver", "Lanceolated Warbler",
+        "Collared Scops Owl", "Brown Boobook", "Spotted Owlet"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "Accommodation in Tmatboey",
+        "All meals - lunch, dinner, and breakfast on departure day",
+        "Bottled drinking water throughout the tour",
+        "Boat trips as specified",
+        "Services of English-speaking birding guide and Temple Tours guide"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      accommodation: "Local eco-lodge at Tmatboey with simple private shower/toilet facilities and fans in the rooms. Single supplement: $80 (Note: single accommodation will probably not be available at Tmat Boey).",
+      bestSeason: "December to end of April (Peak: January-February-March) when water levels are low, Sarus Cranes return, and Bengal Florican displays are visible",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 3-4 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 7,
+      title: "Three-Day Tour to Birding at Be Treed Adventure",
+      description: "Welcome to BeTreed Adventures in Preah Vihear Province, Cambodia. Working closely with the local community, we have developed a unique ecotourism destination for off-the-beaten-path travellers, nature seekers, and adventurers in our ecostay in a small part of wild Cambodia. We are about three hours travel time from Siem Reap town and centred between Koh Ker and Preah Khan of Kompong Svay temples. BeTreed Adventures is working on the frontline to protect the Phnom Tnout Phnom Pok Wildlife Sanctuary: 42,000 hectares of Cambodia's 'savannah' land, or dry dipterocarp forest. Through visiting, you will support these conservation efforts, encouraging the will of the people to preserve and protect their forest as they realise that conservation can provide a tangible and immediate benefit to them. BeTreed will give you a real Cambodian Eco-Adventure. We try to tailor your activities to what you are interested in. If you particularly like birds, we'll wake you up early for the morning bird chorus. For bug lovers, we can take you out at night and look under every leaf. For those wishing to hike, we have many kilometres of jungle trail to explore. We can take you out to look for endangered wildlife, such as banteng or pileated gibbons or silvered langurs. Birdwatching will entail early rising and late afternoon hikes to areas frequented by a variety of birds. Some lucky hikers will experience wildlife encounters: deer, macaques, langurs, gibbons, squirrels, and banteng are all resident. A short hike (1.5km) to Prasat Preah Puol, a small temple ruin from the Angkorian period at the top of the mountain, and then continuing across the mountain top to some waterholes will take up the good part of a day; or over the top to the mountain ridge where you can hike overlooking a huge expanse of Dry Dipterocarp Forest (about 8km for the loop).",
+      duration: "3 Days / 2 Nights",
+      difficulty: "Moderate",
+      groupSize: "2-8 people",
+      price: "$750 Per Person",
+      image: bird7,
+      category: "multi-day",
+      highlights: ["Bengal Florican", "White-rumped Pygmy-Falcon", "Tree House accommodation", "Conservation tourism", "Angkorian cave temples", "Forest zipline", "Community-based ecotourism"],
+      rating: 4.9,
+      schedule: {
+        "Day 1": "Bengal Florican Grasslands & BeTreed Adventure - 5:00 AM departure from Siem Reap with birding guide and driver, arrive at Bengal Florican Grassland just after sunrise, local guides meet us for Bengal Florican viewing using combination of vehicle and short walks, see critically endangered Bengal Florican displaying in early morning light. This grassland hosts rare birds including Manchurian Reed-warbler, Sarus Crane, Singing bush lark, Oriental skylark, Common buttonquail, Asian Pied Starling, Oriental Pratincole, Pied Harrier, Eastern Marsh-harrier, Bluethroat, Red Avadavat, Lanceolated Warbler. After morning birding, transfer to BeTreed Adventure. Late afternoon meet local guide for bird watching at roost sites near tree house before sunset. Overnight at BeTreed adventure",
+        "Day 2": "Wildlife & Forest Exploration at BeTreed - Full day dedicated to exploring BeTreed's diverse habitats from dry deciduous to evergreen forest. Options include challenging hike up the mountain to discover Angkorian-era cave temples and ancient quarries, or exhilarating 300m zipline ride across forest canopy with sweeping panoramic views. Along trails, watch for birds, butterflies, and primates thriving in this protected sanctuary. Overnight again at BeTreed Adventure",
+        "Day 3": "Birding Trails & Siem Reap + Koh Ker Temple - Morning bird and wildlife walk around BeTreed. Journey onward to Prey Veng Ecolodge, set on banks of 12th-century baray in heart of Kulen Promtep Wildlife Sanctuary. Spend late afternoon exploring nearby 'lost' temple ruins, trekking around reservoir, or relaxing with sundowners overlooking water while wildlife gathers at dusk. This community lodge stay supports local livelihoods and conservation efforts. Return to Siem Reap"
+      },
+      birdSpecies: [
+        "Painted Stork", "Egrets", "Blue-breasted Quail", "Small Buttonquail", "Bengal Florican",
+        "Pied Harrier", "Red Avadavat", "Singing Bushlark", "Black-browed Reed-warbler",
+        "Manchurian Reed-warbler", "Lanceolated Warbler", "Striated Grassbird", "Scarlet Minivet",
+        "Small Minivet", "Indochinese Roller", "Indochinese Bushlark", "White-rumped Pygmy-Falcon",
+        "Rufous-winged Buzzard", "Pale-capped Pigeon", "Collared Scops Owl", "Savanna Nightjar",
+        "Rufous-bellied Woodpecker", "Black-headed Woodpecker", "Great Slaty Woodpecker",
+        "Sarus Crane", "Oriental Skylark", "Common Buttonquail", "Asian Pied Starling",
+        "Spotted Redshank", "Little Ringed Plover", "Streaked Weaver", "Oriental Pratincole",
+        "Eastern Marsh Harrier", "Bluethroat"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All accommodation in Cambodia",
+        "All meals - breakfast, lunch and dinner, and breakfast on departure day",
+        "Bottled drinking water throughout the tour",
+        "Services of English-speaking birding guide and local guides"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      accommodation: "Tree House at BeTreed with comfortable room, private bathroom/shower, simple private shower/toilet facilities with fans (no air-conditioning). Note: Food at BeTreed is only Vegetarian.",
+      bestSeason: "November to April when dry season provides best birding conditions and access to forest trails",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 3-4 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Vegetarian meals only at BeTreed. Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 8,
+      title: "7 Day Focus Target Tours Species - Dream Birding Trip to Cambodia",
+      description: "The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low, all the waterbirds return to the lake, and Bengal Florican displays are visible. That's the best time slot for birding and bird photography in Cambodia. Recommend tours starting from mid-February to the end of May. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species. The tour includes visits to Prek Toal Waterbird Sanctuary (largest breeding colony of large water birds in Southeast Asia), Bengal Florican Grassland (critically endangered Bengal Florican), Tmatboey (Giant Ibis - Cambodia's national bird), and the Mekong River (Mekong Wagtail and Irrawaddy dolphins). You'll also search for the Cambodian Tailorbird, an endemic species discovered in 2009. Experience community-based conservation by staying at Tmatboey Eco-lodge, supporting local livelihoods and wildlife protection efforts.",
+      duration: "7 Days / 6 Nights",
+      difficulty: "Moderate",
+      groupSize: "2-8 people",
+      price: "$2890 Per Person",
+      image: northernPlainsIbisFlight,
+      category: "multi-day",
+      highlights: ["Giant Ibis", "Greater Adjutant", "Milky Stork", "Mekong Wagtail", "Cambodian Tailorbird", "White-shouldered Ibis", "Community eco-lodge", "Irrawaddy dolphins"],
+      rating: 5.0,
+      schedule: {
+        "Day 1": "Arrival in Siem Reap - Arrive at Siem Reap International Airport, welcomed by bird guide and driver. After check-in, enjoy relaxed afternoon birding around Phnom Kroam Area (migrants and resident species such as Asian Golden Weaver, Bya Weaver, Greater Coucal, Black-collared Starling, wetland species). Overnight Siem Reap hotel",
+        "Day 2": "Full Day Birdwatching at Prek Toal Waterbird Sanctuary - 45 minutes by road + 90 minutes by boat. Largest breeding colony of large water birds in Southeast Asia. Target two endangered species: Greater Adjutant and Milky Stork. See Great Cormorant, Purple Heron, Yellow Bittern, Asian Openbill, Oriental Darter, Grey-headed Fish Eagle, Black-headed Ibis, Black Bittern, Cinnamon Bittern. Over 150 bird species recorded. Lunch at floating restaurant. Late afternoon birding in traditional agricultural areas for Oriental Reed Warbler, Dusky Warbler, Black-browed Reed Warbler, Plain-backed Sparrow, Amur Stonechat, Pied Bush Chat, Oriental Pratincoles. Overnight Siem Reap hotel",
+        "Day 3": "AM Birding at Bengal Florican Grassland, PM Transfer to Tmatboey - 5:00 AM departure from Siem Reap, arrive protected area just after sunrise. Local guides meet us for Bengal Florican viewing using vehicle and short walks. Critically endangered Bengal Florican displaying in early morning light. Grassland hosts Manchurian Reed-warbler, Sarus Crane, Singing bush lark, Oriental skylark, Common buttonquail, Asian Pied Starling, Oriental Pratincole, Pied Harrier, Eastern Marsh-harrier, Bluethroat, Red Avadavat, Lanceolated Warbler. Transfer to Tmatboey (3-4 hours). Late afternoon meet local guide for White-shouldered Ibis at roost site before sunset. Overnight Tmatboey",
+        "Day 4": "Full Day Birding at Tmatboey (Giant Ibis and White-shouldered Ibis focus) - Two full days birding in forests around Tmatboey for best chances to see both White-shouldered Ibis and Giant Ibis before they leave roost sites early morning to feed in small ponds. Option to walk to pond feeding site and set up hide. Good chance to see Brown Fish Owl, Brown Wood Owl, Spotted Wood Owl, Spotted Owlet at roost sites. Other species: Burmese Nuthatch, Burmese Shrike, Woolly-necked Stork, Small Minivet, Common Woodshrike, White-browed Fantail, Rufous Treepie, Indochinese Cuckooshrike, Black-headed Woodpecker, Great Slaty Woodpecker, Yellow-crowned Woodpecker, Rufous-bellied Woodpecker, White-rumped Falcon, Pale-capped Pigeon, Black-hooded and Black-naped Orioles, Golden-fronted Leafbird. Night-birding often productive for Collared and Oriental Scops Owl, Brown Boobook. Overnight Tmatboey Eco-lodge",
+        "Day 5": "Full Day Birding at Tmatboey (continued) - Continue tracking Giant Ibis and other target species. If local guides discovered roosting tree, might experience sight and sound of Giant Ibis waking at roost tree. More opportunities for woodpecker species, owls, and specialty birds of Northern Plains. Overnight Tmatboey Eco-lodge",
+        "Day 6": "AM Final Birding at Tmatboey, Transfer to Kratie (Mekong Wagtail focus) - Final few hours searching for any remaining key species. Travel to small town of Kratie (5-6 hours), stop at Presh Vihear town for lunch. Late afternoon stop at small marsh near Kratie for large numbers of weavers including Grey-headed Swamphen, Oriental Reed Warbler, Asian Golden and Baya Weaver, other wetland birds, chance to see Small Pratincole flying over rice fields. Overnight hotel in Kratie",
+        "Day 7": "Kratie to Phnom Penh (Cambodian Tailorbird focus) - 30 minutes from Kratie town to Kapi for Mekong Wagtail and Irrawaddy Dolphins. 2-4 hours on boat observing Mekong Wagtail feeding on small islands in Mekong River. Target birds: Mekong Wagtail, Small Pratincole, Grey-throated Martin, Golden-bellied Gerygone, Indian Spot-billed Duck, Yellow-bellied Prinia, Dusky Warbler. On way back to mainland, Irrawaddy dolphins may show up near boat. Continue to Phnom Penh to look for Cambodian Tailorbird, endemic species found in 2009 in outskirts of Phnom Penh city. Transfer to Phnom Penh International Airport by taxi"
+      },
+      birdSpecies: [
+        "Giant Ibis", "Greater Adjutant", "Milky Stork", "Rufous-bellied Woodpecker",
+        "White-shouldered Ibis", "Mekong Wagtail", "Cambodian Tailorbird", "Spot-billed Pelican",
+        "Bengal Florican", "Sarus Crane", "White-rumped Falcon", "Great Slaty Woodpecker",
+        "Black-headed Woodpecker", "Yellow-crowned Woodpecker", "Oriental Scops Owl",
+        "Spotted Wood Owl", "Brown Wood Owl", "Brown Fish Owl", "Asian Golden Weaver",
+        "Bya Weaver", "Greater Coucal", "Black-collared Starling", "Purple Heron",
+        "Yellow Bittern", "Asian Openbill", "Oriental Darter", "Grey-headed Fish Eagle",
+        "Manchurian Reed Warbler", "Singing Bush Lark", "Oriental Skylark", "Common Buttonquail",
+        "Burmese Nuthatch", "Burmese Shrike", "Woolly-necked Stork", "Small Minivet",
+        "Rufous Treepie", "Pale-capped Pigeon", "Golden-fronted Leafbird", "Small Pratincole",
+        "Grey-headed Swamphen", "Golden-bellied Gerygone", "Yellow-bellied Prinia",
+        "Black-headed Ibis", "Black Bittern", "Cinnamon Bittern", "Rufous Woodpecker",
+        "Medium Egret", "Indian Cormorant", "White-breasted Waterhen", "Dusky Warbler",
+        "Black-browed Reed Warbler", "Plain-backed Sparrow", "Amur Stonechat", "Pied Bush Chat",
+        "Brown Shrike", "Oriental Pratincole", "Asian Pied Starling", "Spotted Redshank",
+        "Little Ringed Plover", "Streaked Weaver", "Eastern Marsh Harrier", "Bluethroat",
+        "Red Avadavat", "Lanceolated Warbler", "White-browed Fantail", "Common Woodshrike",
+        "Indochinese Cuckooshrike", "Black-hooded Oriole", "Black-naped Oriole",
+        "Collared Scops Owl", "Brown Boobook", "Spotted Owlet", "Baya Weaver",
+        "Grey-throated Martin", "Indian Spot-billed Duck"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All accommodation in Cambodia (including final night)",
+        "All meals from dinner Day 1 to breakfast Day 7",
+        "Bottled drinking water throughout the tour",
+        "Boat trips (Prek Toal, Mekong River)",
+        "Services of English-speaking birding guide and Temple Tours guide",
+        "Local community guides at specialized sites"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa to Cambodia",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      accommodation: "Siem Reap: comfortable hotel with air-conditioning, private bathroom/shower, wifi. Tmatboey: local eco-lodge with simple private shower/toilet facilities and fans. Kratie: comfortable air-conditioned local hotel with wifi. Phnom Penh: hotel with all facilities. Single supplement available (except Tmatboey where probably not available).",
+      bestSeason: "November to April (Peak: January-February-March) when water levels are low, waterbirds return to lake, and Bengal Florican displays are visible. Recommend mid-February to end of May.",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 3-4 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 9,
+      title: "Custom Tours 10 Days Birding Trip in Cambodia - Dream Birding Trip to Cambodia",
+      description: "The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low, Sarus Cranes return to Ang Trapeang Thmor, and Bengal Florican displays are visible. That's the best time slot for birding and bird photography in Cambodia. Recommend tours starting from mid-February to the end of May. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species. The ultimate birding adventure including visits to Prek Toal Waterbird Sanctuary (largest breeding colony of large water birds in Southeast Asia with 150+ species), Ang Trapeang Thmor (unique wetland ecosystem with 200+ species, home to Sarus Cranes), Bengal Florican Grassland (critically endangered Bengal Florican), Tmatboey (Giant Ibis - Cambodia's national bird, and White-shouldered Ibis), Kratie (Mekong Wagtail and Irrawaddy dolphins), and Phnom Penh (Cambodian Tailorbird - endemic species discovered in 2009). Experience community-based conservation by staying at Tmatboey Eco-lodge for three full days, supporting local livelihoods and wildlife protection efforts. The tour concludes with a full-day Phnom Penh city tour exploring the Royal Palace, Silver Pagoda, National Museum, and Tuol Sleng Genocide Museum.",
+      duration: "10 Days / 9 Nights",
+      difficulty: "Moderate",
+      groupSize: "2-8 people",
+      price: "$3750 Per Person",
+      image: customTourIbisGroup,
+      category: "multi-day",
+      highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Sarus Crane", "Mekong Wagtail", "Greater Adjutant", "Milky Stork", "Irrawaddy dolphins", "Phnom Penh city tour"],
+      rating: 5.0,
+      schedule: {
+        "Day 1": "Arrival in Siem Reap - Arrive at Siem Reap International Airport, welcomed by bird guide and driver. After check-in, enjoy relaxed afternoon birding around Phnom Kroam Area (migrants and resident species: Asian Golden Weaver, Bya Weaver, Greater Coucal, Black-collared Starling, wetland species). Overnight Siem Reap hotel",
+        "Day 2": "Full Day Birdwatching at Prek Toal Waterbird Sanctuary - 45 minutes by road + 90 minutes by boat. Largest breeding colony of large water birds in Southeast Asia. Target two endangered species: Greater Adjutant and Milky Stork. See Great Cormorant, Purple Heron, Yellow Bittern, Asian Openbill, Oriental Darter, Grey-headed Fish Eagle, Black-headed Ibis, Black Bittern, Cinnamon Bittern. Over 150 bird species recorded. Lunch at floating restaurant. Late afternoon birding in traditional agricultural areas for Oriental Reed Warbler, Dusky Warbler, Black-browed Reed Warbler, Plain-backed Sparrow, Amur Stonechat, Pied Bush Chat, Oriental Pratincoles. Overnight Siem Reap hotel",
+        "Day 3": "Full Day Birdwatching at Ang Trapeang Thmor (Sarus Cranes focus) - Reservoir built in Angkor Period, rebuilt during Pol Pot regime 1976. Managed by WCS, converted to protected landscape 2016. Unique wetland ecosystem with 200+ species. 5:00 AM pickup, 2 hours drive northwest. Stops on rice fields for Oriental Reed Warbler, Black-browed Reed Warbler, Plain-backed Sparrow, Amur Stonechat, Black-headed Ibis, Painted Stork, Spot-billed Pelican, Oriental Darter, Asian Openbill, raptors. At reservoir: Lesser Whistling Duck, Garganey, Sarus Crane, Cotton Pygmy-goose, Black-crowned Night Heron, Yellow Bittern, Cinnamon Bittern, Grey-headed Swamphen, Knob-billed Duck, Bronze-winged and Pheasant-tailed Jacanas, Black Kite, Eastern Marsh and Pied Harriers, Dark-necked Tailorbird, Yellow-vented Bulbul, Lanceolated Warbler, Thick-billed Warbler, Spotted Wood Owl, Barn Owl. Lunch at WCS office. Continue birding mid-afternoon. Return Siem Reap around 5 PM. Overnight Siem Reap hotel",
+        "Day 4": "AM Birding at Bengal Florican Grassland, PM Transfer to Tmatboey - 5:00 AM departure from Siem Reap, arrive protected area just after sunrise. Local guides meet us for Bengal Florican viewing using vehicle and short walks. Critically endangered Bengal Florican displaying in early morning light. Grassland hosts Manchurian Reed-warbler, Sarus Crane, Singing bush lark, Oriental skylark, Common buttonquail, Asian Pied Starling, Oriental Pratincole, Pied Harrier, Eastern Marsh-harrier, Bluethroat, Red Avadavat, Lanceolated Warbler. Transfer to Tmatboey (3-4 hours). Tmatboey is remote community ecotourism site in Cambodia's Northern Plains, WCS conservation project with Cambodian Government and villagers. Late afternoon meet local guide for White-shouldered Ibis at roost site before sunset. Overnight Tmatboey",
+        "Day 5": "Full Day Birding at Tmatboey (Giant Ibis and White-shouldered Ibis focus) - Best chances to see both White-shouldered Ibis and Giant Ibis before they leave roost sites early morning to feed in small ponds. Option to walk to pond feeding site and set up hide. Good chance to see Brown Fish Owl, Brown Wood Owl, Spotted Wood Owl, Spotted Owlet at roost sites. Other species: Burmese Nuthatch, Burmese Shrike, Woolly-necked Stork, Small Minivet, Common Woodshrike, White-browed Fantail, Rufous Treepie, Indochinese Cuckooshrike, Black-headed Woodpecker, Great Slaty Woodpecker, Yellow-crowned Woodpecker, Rufous-bellied Woodpecker, White-rumped Falcon, Pale-capped Pigeon, Black-hooded and Black-naped Orioles, Golden-fronted Leafbird. Night-birding often productive for Collared and Oriental Scops Owl, Brown Boobook. Overnight Tmatboey Eco-lodge",
+        "Day 6": "Full Day Birding at Tmatboey (continued) - Continue tracking Giant Ibis and other target species. If local guides discovered roosting tree, might experience sight and sound of Giant Ibis waking at roost tree. More opportunities for woodpecker species, owls, and specialty birds of Northern Plains. Overnight Tmatboey Eco-lodge",
+        "Day 7": "AM Final Birding at Tmatboey, Transfer to Kratie (Mekong Wagtail focus) - Final few hours searching for remaining key species. Experience Giant Ibis waking at roost tree if not already seen. Travel to small town of Kratie (5-6 hours), stop at Presh Vihear town for lunch. Late afternoon stop at small marsh near Kratie for large numbers of weavers including Grey-headed Swamphen, Oriental Reed Warbler, Asian Golden and Baya Weaver, other wetland birds, chance to see Small Pratincole flying over rice fields. Overnight hotel in Kratie",
+        "Day 8": "Kratie to Phnom Penh (Cambodian Tailorbird focus) - Kratie province with Mekong River running 140km, home to Irrawaddy dolphins, fish, birds. 30 minutes from Kratie town to Kapi for Mekong Wagtail and Irrawaddy Dolphins. 2-4 hours on boat observing Mekong Wagtail feeding on small islands. Target birds: Mekong Wagtail, Small Pratincole, Grey-throated Martin, Golden-bellied Gerygone, Indian Spot-billed Duck, Yellow-bellied Prinia, Dusky Warbler. Irrawaddy dolphins may show up near boat. Continue to Phnom Penh to look for Cambodian Tailorbird, endemic species found in 2009 in outskirts of Phnom Penh city during avian influenza checks. Overnight Phnom Penh",
+        "Day 9": "Phnom Penh City Tour - Full-day city tour diving into Cambodia's vibrant capital where history, culture, and daily life blend. Morning visit Royal Palace and Silver Pagoda (seat of Cambodian monarchy, glittering spires, floor of 5,000+ silver tiles showcasing Khmer artistry). Continue to National Museum (outstanding collection of Angkorian and pre-Angkorian artifacts). Traditional Khmer lunch along riverfront. Afternoon visits Tuol Sleng Genocide Museum (S-21). Overnight Phnom Penh",
+        "Day 10": "Phnom Penh - Transfer to Airport - Transfer to Phnom Penh International Airport by taxi at time convenient for your flight. Guide says goodbye"
+      },
+      birdSpecies: [
+        "Giant Ibis", "Greater Adjutant", "Milky Stork", "Rufous-bellied Woodpecker",
+        "White-shouldered Ibis", "Mekong Wagtail", "Small Pratincole", "Asian Golden Weaver",
+        "Cambodian Tailorbird", "Spot-billed Pelican", "Bengal Florican", "Sarus Crane",
+        "White-rumped Falcon", "Great Slaty Woodpecker", "Black-headed Woodpecker",
+        "Yellow-crowned Woodpecker", "Oriental Scops Owl", "Spotted Wood Owl", "Brown Wood Owl",
+        "Brown Fish Owl", "Bya Weaver", "Greater Coucal", "Black-collared Starling",
+        "Purple Heron", "Yellow Bittern", "Asian Openbill", "Oriental Darter",
+        "Grey-headed Fish Eagle", "Black-headed Ibis", "Black Bittern", "Cinnamon Bittern",
+        "Rufous Woodpecker", "Medium Egret", "Indian Cormorant", "White-breasted Waterhen",
+        "Dusky Warbler", "Black-browed Reed Warbler", "Plain-backed Sparrow", "Amur Stonechat",
+        "Pied Bush Chat", "Brown Shrike", "Oriental Pratincole", "Great Cormorant",
+        "Painted Stork", "Lesser Whistling Duck", "Garganey", "Cotton Pygmy-goose",
+        "Black-crowned Night Heron", "Grey-headed Swamphen", "Knob-billed Duck",
+        "Bronze-winged Jacana", "Pheasant-tailed Jacana", "Black Kite", "Eastern Marsh Harrier",
+        "Pied Harrier", "Dark-necked Tailorbird", "Yellow-vented Bulbul", "Lanceolated Warbler",
+        "Thick-billed Warbler", "Spotted Wood Owl", "Barn Owl", "Manchurian Reed Warbler",
+        "Singing Bush Lark", "Oriental Skylark", "Common Buttonquail", "Asian Pied Starling",
+        "Spotted Redshank", "Little Ringed Plover", "Streaked Weaver", "Bluethroat",
+        "Red Avadavat", "Burmese Nuthatch", "Burmese Shrike", "Woolly-necked Stork",
+        "Small Minivet", "Common Woodshrike", "White-browed Fantail", "Rufous Treepie",
+        "Indochinese Cuckooshrike", "Pale-capped Pigeon", "Black-hooded Oriole",
+        "Black-naped Oriole", "Golden-fronted Leafbird", "Collared Scops Owl", "Brown Boobook",
+        "Spotted Owlet", "Baya Weaver", "Grey-throated Martin", "Indian Spot-billed Duck",
+        "Yellow-bellied Prinia", "Golden-bellied Gerygone"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All accommodation in Cambodia (including final night)",
+        "All meals from dinner Day 1 to breakfast Day 10",
+        "Bottled drinking water throughout the tour",
+        "Boat trips (Prek Toal, Mekong River)",
+        "Services of English-speaking birding guide and Temple Tours guide"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa to Cambodia",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      accommodation: "Siem Reap: very comfortable hotel with air-conditioning, private bathroom/shower, wifi. Tmatboey: local eco-lodge with simple private shower/toilet facilities and fans. Kratie: comfortable air-conditioned local hotel with wifi. Phnom Penh: hotel with all facilities. Single supplement: $340 (available at Siem Reap, Kratie, Phnom Penh; probably not available at Tmatboey).",
+      bestSeason: "November to April (Peak: January-February-March) when water levels are low, Sarus Cranes return to Ang Trapeang Thmor, and Bengal Florican displays are visible. Recommend mid-February to end of May.",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 3-4 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 10,
+      title: "Bird Watching Itinerary in Cambodia: 14-Day Tours - Rare Bird Species",
+      description: "This comprehensive 14-day itinerary combines Cambodia's remarkable biodiversity with its cultural heritage, offering an unforgettable birdwatching adventure. Cambodia, with its diverse ecosystems, stunning landscapes, and rich avian biodiversity, is a paradise for birdwatching enthusiasts. The country is home to more than 644 bird species, including several rare and endangered ones, making it an ideal destination for an immersive 14-day birdwatching trip. This immersive journey covers Siem Reap, Prek Toal, Ang Trapaeng Thmor, Florican Grasslands, Chong Kran Roy (Bar-bellied Pitta), BeTreed Adventure, Tmatboey (Giant Ibis), Vulture Restaurant (three species of critically endangered vultures), Kratie (Mekong Wagtail and Irrawaddy dolphins), Pursat (Chinese Grassbird and Yellow-breasted Bunting), and ends with the endemic Cambodian Tailorbird. Our Cambodia bird tour focuses on finding as many special birds of Cambodia as possible, including mega world birds like: Pale-capped Pigeon, Coral-billed Ground Cuckoo, Bar-bellied Pitta, Yellow-breasted Bunting, Giant Ibis, White-shouldered Ibis, Greater Adjutant, Milky Stork, three species of vultures, Mekong Wagtail, Cambodian Tailorbird, Chinese Grassbird, Bengal Florican, and Sarus Crane.",
+      duration: "14 Days / 13 Nights (plus Day 15 transfer)",
+      difficulty: "Moderate",
+      groupSize: "2-8 people",
+      price: "$3232 Per Person",
+      image: vultureFeeding14Day,
+      category: "multi-day",
+      highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
+      rating: 5.0,
+      schedule: {
+        "Day 1": "Arrival in Siem Reap - Arrive in Cambodia's Siem Reap (AM or PM). Spend day acclimatizing and visiting local attractions like Phnom Kroam or Chrev. Evening meet guide for briefing",
+        "Day 2": "Siem Reap and Angkor Wat - Combine culture and birding exploring Angkor Wat complex and surrounding forests. Target species: Forest Wagtail, White-throated Rock Thrush, Hainan Blue Flycatcher, Asian Barred Owlet, Black Baza. Ancient temples offer enchanting backdrop",
+        "Day 3": "Prek Toal Bird Sanctuary - World-renowned sanctuary on Tonle Sap Lake. Explore by boat for rare species: Oriental Darter, Painted Stork, Milky Stork, Greater Adjutant, Lesser Adjutant, Egrets, Herons, Ibis, Cormorants, Spot-billed Pelican. Crucial habitat for migratory birds. Overnight Siem Reap",
+        "Day 4": "Ang Trapaeng Thmor (Sarus Crane) - Wetland sanctuary northwest of Siem Reap. Stronghold for endangered Sarus Crane, Spotted Wood Owl, Greater Spotted Eagle, Eastern Marsh Harrier, Pied Harrier, Black Kite, Grey-headed Swamphen, Comb Duck, other wetland birds. Overnight Siem Reap",
+        "Day 5": "Siem Reap to Chong Kran Roy - Early morning leave for Chong Kran Roy tented camp. Late afternoon visit hide attracting birds: Bar-bellied Pitta, Coral-billed Ground Cuckoo, Siamese Fireback, Siberian Blue Robin. Also hope for Green-legged Partridge, Orange-breasted Trogon. Commoner birds: Black-naped Monarch, Green-eared Barbet, Lineated Barbet, Puff-throated Babbler, Hainan Blue Flycatcher, Gray-eyed Bulbul",
+        "Day 6": "Chong Kran Roy to Siem Reap - Early morning revisit hide for Bar-bellied Pitta, Siberian Blue Robin, Red Junglefowl, Emerald Dove. Full day in woodlands: Thick-billed Green Pigeon, Green-eared Barbet, Asian Fairy Bluebird, Banded Broadbill, Heart-spotted Woodpecker, Banded Kingfisher. Vocal breeding season increases chances for Coral-billed Ground Cuckoo. Mid-afternoon drive back to Siem Reap",
+        "Day 7": "BeTreed Adventure & Bengal Florican Grasslands - Visit grasslands near Kampong Thom for critically endangered Bengal Florican, Sarus Crane, Manchurian Reed Warbler. Open grasslands attract Eastern Marsh Harrier, storks, egrets. 60+ species recorded. Late afternoon check into BeTreed homestay. Introductory birding walk: Siamese Fireback, Green Peafowl, Greater Yellownape Woodpecker, Burmese Shrike, Asian Barred Owlet, Rufous Treepie, bulbuls, Drongos. Dusk: Collared Scops Owls, nightjars, Brown Wood Owl",
+        "Day 8": "Full Day Birding at BeTreed Adventure - Remote ecotourism homestay in Phnom Tnout Phnom Pok Wildlife Sanctuary. 2-3 hours from Bengal Florican Grassland. Conserves 42,000+ hectares dry dipterocarp forest, supports community conservation. Dawn trek: White-browed Fantail, Scarlet Minivet, Asian Paradise Flycatcher, Blossom-headed Parakeet, woodpeckers, Crested Serpent Eagle, Banded Broadbill. Longer hike: Indochinese Bushlark, Rufous-winged Buzzard, Common Iora, Brown Prinia, Blue-winged Pitta. Afternoon trail to Prasat Preah Puol (Angkor-era temple ruin): Green Peafowl, Lineated Barbet, Hainan Blue Flycatcher. Evening viewpoint/zipline for raptors. Night walk for owls, nightjars, civets",
+        "Day 9": "BeTreed to Tmatboey (Giant Ibis) - Final dawn walk: Black-headed Woodpecker, White-rumped Shama, Velvet-fronted Nuthatch, Taiga Flycatcher. Listen for gibbons. Breakfast, pack, depart late morning for Tmatboey (2-3 hours through rural farmland). Arrive 3:30 PM, meet local guide. Head into dry deciduous forest for seasonal waterholes where ibises feed: Giant Ibis (Cambodia's national bird, Critically Endangered), White-shouldered Ibis (globally threatened). Other sightings: Black-headed Woodpecker, Yellow-crowned Woodpecker, Burmese Shrike, Blossom-headed Parakeet, Rufous-winged Buzzard, Lesser Adjutant. 6 PM return, dinner. Optional night spotlighting: Collared Scops Owl, Spotted Owlet, Large-tailed Nightjar, Barn Owl",
+        "Day 10": "Full Birding Day at Tmatboey - Before sunrise with coffee/tea, set out by foot or ox-cart to seasonal wetlands where Giant Ibis feeds at dawn. After breakfast in field, continue birding dry forest trails: woodpeckers, Brown Wood Owl, Spotted Wood Owl, Brown Fish Owl, Blossom-headed Parakeet, White-browed Fantail, Common Flameback, Large Cuckooshrike, Velvet-fronted Nuthatch. Lunch and midday rest. Afternoon visit sites for White-shouldered Ibis: Greater Racket-tailed Drongo, Green Bee-eater, Blue-winged Pitta, Siamese Fireback. Evening birding near village: Collared Scops Owl, Barn Owl, Large-tailed Nightjar",
+        "Day 11": "Morning Birding Tmatboey & to Vulture Restaurant - Final hours for remaining key species. If roosting tree discovered, may experience Giant Ibis waking. Mid-morning transfer to Vulture Restaurant at Boeng Toal (Dung Plet Village). After birding around camp (Yellow-crowned Woodpecker, White-browed Fantail), visit large hide for vulture-viewing. Hope to see species loafing in trees or feeding on carcass. Overnight camping in forest",
+        "Day 12": "Vulture Restaurant to Kratie - Birdwatching at Vulture Restaurant is one of most unusual, rewarding wildlife experiences in Southeast Asia. Conservation project run by Dongphlet village community with WCS support. Since natural carrion scarce, controlled feedings attract large numbers of vultures. Three critically endangered species: White-rumped Vulture, Slender-billed Vulture, Red-headed Vulture. Entrance fees provide vital community income, incentive to protect globally threatened species. Visitors pay for cow to feed birds from hide. After morning, continue to Kratie (4 hours), stop Stung Treng for lunch. Pleasant hotel with good facilities on Mekong River. Late afternoon to marsh near Kratie: Grey-headed Swamphen, Pheasant-tailed Jacanas, Brown-winged Jacanas, Oriental Reed Warbler, Asian Golden and Baya Weaver, Golden-headed Cisticola, Yellow-bellied Prinia, Dusky Warbler, Small Pratincole. Overnight Kratie",
+        "Day 13": "Kratie to Pursat (Chinese Grassbird) - Kratie province with Mekong River running 140km, home to Irrawaddy dolphins, fish, birds. 30 minutes to Kapi for Mekong Wagtail and Irrawaddy Dolphins. 2-3 hours on boat observing Mekong Wagtail feeding on small islands. Target birds: Mekong Wagtail, Small Pratincole, Grey-throated Martin, Golden-bellied Gerygone, Indian Spot-billed Duck, Yellow-bellied Prinia, Dusky Warbler. Irrawaddy dolphins may appear. After full morning, continue to Phnom Penh area for Cambodian Tailorbird (endemic species found 2009 during avian influenza checks). Then continue to Pursat Grassland for Chinese Grassbird and other wetland birds",
+        "Day 14": "Pursat to Phnom Penh - Final morning birding Cambodia. Wake early, breakfast in field in Pursat grasslands. Locals part of conservation project protecting grasslands and key species: Chinese Grassbird and Yellow-breasted Bunting. Poorly-known, cryptic Chinese Grassbird has patchy, thinly-spread distribution throughout Asia (wiped out in many places due to habitat loss). Population discovered near Pursat few years ago. Excellent chance observing Chinese Grassbird in early morning. Also chance of small groups critically endangered Yellow-breasted Bunting (grasslands provide important wintering habitat). Other key species: Manchurian Reed Warbler, Asian Golden Weavers (pre-migration song), Striated Grassbird, Oriental Pratincole, Red Avadavat, Pied Harrier. After lunch, drive back to Phnom Penh, stopping for Cambodian Tailorbird. Overnight Phnom Penh",
+        "Day 15": "Phnom Penh City Tour & Transfer to Airport - Full-day city tour. Transfer to Phnom Penh Airport or hotel for departure"
+      },
+      birdSpecies: [
+        "Pale-capped Pigeon", "Coral-billed Ground Cuckoo", "Bar-bellied Pitta", "Yellow-breasted Bunting",
+        "Asian Golden Weaver", "Great Slaty Woodpecker", "Giant Ibis", "White-shouldered Ibis",
+        "Greater Adjutant", "Black-headed Woodpecker", "Milky Stork", "Rufous-bellied Woodpecker",
+        "Mekong Wagtail", "Cambodian Tailorbird", "Spot-billed Pelican", "Red-headed Vulture",
+        "White-rumped Vulture", "Slender-billed Vulture", "Indochinese Bush Lark", "Manchurian Reed Warbler",
+        "Javan Pond Heron", "Grey-headed Fish Eagle", "Eastern Marsh Harrier", "Pied Harrier",
+        "Greater Spotted Eagle", "Rufous-winged Buzzard", "Alexandrine Parakeet", "Blossom-headed Parakeet",
+        "Bengal Florican", "Chinese Grassbird", "Sarus Crane", "White-rumped Falcon",
+        "Spotted Wood Owl", "Brown Wood Owl", "Brown Fish Owl", "Asian Barred Owlet",
+        "Spotted Owlet", "Brown Boobook", "Oriental Scops Owl", "Collared Scops Owl",
+        "Oriental Bay Owl", "Forest Wagtail", "White-throated Rock Thrush", "Hainan Blue Flycatcher",
+        "Black Baza", "Oriental Darter", "Painted Stork", "Lesser Adjutant", "Comb Duck",
+        "Siamese Fireback", "Siberian Blue Robin", "Green-legged Partridge", "Orange-breasted Trogon",
+        "Black-naped Monarch", "Green-eared Barbet", "Lineated Barbet", "Puff-throated Babbler",
+        "Gray-eyed Bulbul", "Red Junglefowl", "Emerald Dove", "Thick-billed Green Pigeon",
+        "Asian Fairy Bluebird", "Banded Broadbill", "Heart-spotted Woodpecker", "Banded Kingfisher"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All accommodation in Cambodia (hotels + eco-lodges)",
+        "All meals from dinner Day 1 to breakfast Day 14",
+        "Bottled drinking water throughout the tour",
+        "Boat trips (Prek Toal, Mekong River)",
+        "English-speaking birding guide services",
+        "Temple tour guide services",
+        "Vulture feeding experience",
+        "Community-based eco-tourism support"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa to Cambodia",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Personal items and expenses"
+      ],
+      accommodation: "Siem Reap: very comfortable hotel with air-conditioning, private bathroom/shower, wifi. BeTreed Adventure and Tmatboey: local eco-lodges with simple private shower/toilet facilities and fans. Kratie: comfortable air-conditioned local hotel with wifi. Phnom Penh: hotel with all facilities. Single supplement: $350 (available at Siem Reap, Kratie, Phnom Penh; probably not available at BeTreed Adventure, Tmatboey).",
+      bestSeason: "Year-round availability with optimal conditions during dry season (November-April)",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 2-5 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The French influence is evident in the fact that good bread is readily available in many areas, and for those who prefer beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 11,
+      title: "15 Days Rare Birding Itinerary with Rare Endemic Species in Cambodia",
+      description: "This comprehensive 15-day itinerary combines Cambodia's remarkable biodiversity with its cultural heritage, offering an unforgettable birdwatching adventure. Cambodia, with its diverse ecosystems, stunning landscapes, and rich avian biodiversity, is a paradise for birdwatching enthusiasts. The country is home to more than 644 bird species, including several rare and endangered ones, making it an ideal destination for an immersive 15-day birdwatching trip. This immersive journey covers all major birding sites from Siem Reap to Phnom Penh, including Prek Toal, Ang Trapaeng Thmor, Florican Grasslands, Chong Kran Roy (Bar-bellied Pitta, Coral-billed Ground Cuckoo), BeTreed Adventure (42,000+ hectares dry dipterocarp forest conservation), Tmatboey (Giant Ibis - Cambodia's national bird), Vulture Restaurant (three critically endangered vulture species), Kratie (Mekong Wagtail and Irrawaddy dolphins), Pursat (Chinese Grassbird and Yellow-breasted Bunting), and ends with the endemic Cambodian Tailorbird. Our Cambodia bird tour focuses on finding as many special birds of Cambodia as possible, including mega world birds like: Pale-capped Pigeon, Coral-billed Ground Cuckoo, Bar-bellied Pitta, Yellow-breasted Bunting, Giant Ibis, White-shouldered Ibis, Greater Adjutant, Milky Stork, three species of vultures, Mekong Wagtail, Cambodian Tailorbird, Chinese Grassbird, Bengal Florican, and Sarus Crane.",
+      duration: "15 Days / 14 Nights",
+      difficulty: "Moderate",
+      groupSize: "2-8 people",
+      price: "$4150 Per Person",
+      image: tailorbird15Day,
+      category: "multi-day",
+      highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
+      rating: 5.0,
+      schedule: {
+        "Day 1": "Arrival in Siem Reap - Arrive in Cambodia's Siem Reap (AM or PM). Spend day acclimatizing and visiting local attractions like Phnom Kroam or Chrev. Evening meet guide for briefing",
+        "Day 2": "Siem Reap and Angkor Wat - Combine culture and birding exploring Angkor Wat complex and surrounding forests. Target species: Forest Wagtail, White-throated Rock Thrush, Hainan Blue Flycatcher, Asian Barred Owlet, Black Baza. Ancient temples offer enchanting backdrop",
+        "Day 3": "Prek Toal Bird Sanctuary - World-renowned sanctuary on Tonle Sap Lake. Explore by boat for rare species: Oriental Darter, Painted Stork, Milky Stork, Greater Adjutant, Lesser Adjutant, Egrets, Herons, Ibis, Cormorants, Spot-billed Pelican. Crucial habitat for migratory birds. Overnight Siem Reap",
+        "Day 4": "Ang Trapaeng Thmor (Sarus Crane) - Wetland sanctuary northwest of Siem Reap. Stronghold for endangered Sarus Crane, Spotted Wood Owl, Greater Spotted Eagle, Eastern Marsh Harrier, Pied Harrier, Black Kite, Grey-headed Swamphen, Comb Duck, other wetland birds. Overnight Siem Reap",
+        "Day 5": "Siem Reap to Chong Kran Roy - Early morning leave for Chong Kran Roy tented camp. Late afternoon visit hide attracting birds: Bar-bellied Pitta, Coral-billed Ground Cuckoo, Siamese Fireback, Siberian Blue Robin. Also hope for Green-legged Partridge, Orange-breasted Trogon. Commoner birds: Black-naped Monarch, Green-eared Barbet, Lineated Barbet, Puff-throated Babbler, Hainan Blue Flycatcher, Gray-eyed Bulbul",
+        "Day 6": "Chong Kran Roy to Siem Reap - Early morning revisit hide for Bar-bellied Pitta, Siberian Blue Robin, Red Junglefowl, Emerald Dove. Full day in woodlands: Thick-billed Green Pigeon, Green-eared Barbet, Asian Fairy Bluebird, Banded Broadbill, Heart-spotted Woodpecker, Banded Kingfisher. Vocal breeding season increases chances for Coral-billed Ground Cuckoo. Mid-afternoon drive back to Siem Reap",
+        "Day 7": "BeTreed Adventure & Bengal Florican Grasslands - Visit grasslands near Kampong Thom for critically endangered Bengal Florican, Sarus Crane, Manchurian Reed Warbler. Open grasslands attract Eastern Marsh Harrier, storks, egrets. 60+ species recorded. Late afternoon check into BeTreed homestay. Introductory birding walk: Siamese Fireback, Green Peafowl, Greater Yellownape Woodpecker, Burmese Shrike, Asian Barred Owlet, Rufous Treepie, bulbuls, Drongos. Dusk: Collared Scops Owls, nightjars, Brown Wood Owl",
+        "Day 8": "Full Day Birding at BeTreed Adventure - Remote ecotourism homestay in Phnom Tnout Phnom Pok Wildlife Sanctuary. 2-3 hours from Bengal Florican Grassland. Conserves 42,000+ hectares dry dipterocarp forest, supports community conservation. Dawn trek: White-browed Fantail, Scarlet Minivet, Asian Paradise Flycatcher, Blossom-headed Parakeet, woodpeckers, Crested Serpent Eagle, Banded Broadbill. Longer hike: Indochinese Bushlark, Rufous-winged Buzzard, Common Iora, Brown Prinia, Blue-winged Pitta. Afternoon trail to Prasat Preah Puol (Angkor-era temple ruin): Green Peafowl, Lineated Barbet, Hainan Blue Flycatcher. Evening viewpoint/zipline for raptors. Night walk for owls, nightjars, civets",
+        "Day 9": "BeTreed to Tmatboey (Giant Ibis) - Final dawn walk: Black-headed Woodpecker, White-rumped Shama, Velvet-fronted Nuthatch, Taiga Flycatcher. Listen for gibbons. Breakfast, pack, depart late morning for Tmatboey (2-3 hours through rural farmland). Arrive 3:30 PM, meet local guide. Head into dry deciduous forest for seasonal waterholes where ibises feed: Giant Ibis (Cambodia's national bird, Critically Endangered), White-shouldered Ibis (globally threatened). Other sightings: Black-headed Woodpecker, Yellow-crowned Woodpecker, Burmese Shrike, Blossom-headed Parakeet, Rufous-winged Buzzard, Lesser Adjutant. 6 PM return, dinner. Optional night spotlighting: Collared Scops Owl, Spotted Owlet, Large-tailed Nightjar, Barn Owl",
+        "Day 10": "Full Birding Day at Tmatboey - Before sunrise with coffee/tea, set out by foot or ox-cart to seasonal wetlands where Giant Ibis feeds at dawn. After breakfast in field, continue birding dry forest trails: woodpeckers, Brown Wood Owl, Spotted Wood Owl, Brown Fish Owl, Blossom-headed Parakeet, White-browed Fantail, Common Flameback, Large Cuckooshrike, Velvet-fronted Nuthatch. Lunch and midday rest. Afternoon visit sites for White-shouldered Ibis: Greater Racket-tailed Drongo, Green Bee-eater, Blue-winged Pitta, Siamese Fireback. Evening birding near village: Collared Scops Owl, Barn Owl, Large-tailed Nightjar",
+        "Day 11": "Morning Birding Tmatboey & to Vulture Restaurant - Final hours for remaining key species. If roosting tree discovered, may experience Giant Ibis waking. Mid-morning transfer to Vulture Restaurant at Boeng Toal (Dung Plet Village). After birding around camp (Yellow-crowned Woodpecker, White-browed Fantail), visit large hide for vulture-viewing. Hope to see species loafing in trees or feeding on carcass. Overnight camping in forest",
+        "Day 12": "Vulture Restaurant to Kratie - Birdwatching at Vulture Restaurant is one of most unusual, rewarding wildlife experiences in Southeast Asia. Conservation project run by Dongphlet village community with WCS support. Three critically endangered species: White-rumped Vulture, Slender-billed Vulture, Red-headed Vulture. Visitors pay for cow to feed birds from hide. After morning, continue to Kratie (4 hours), stop Stung Treng for lunch. Pleasant hotel with good facilities on Mekong River. Late afternoon to marsh near Kratie: Grey-headed Swamphen, Pheasant-tailed Jacanas, Brown-winged Jacanas, Oriental Reed Warbler, Asian Golden and Baya Weaver, Golden-headed Cisticola, Yellow-bellied Prinia, Dusky Warbler, Small Pratincole. Overnight Kratie",
+        "Day 13": "Kratie to Pursat (Chinese Grassbird) - Kratie province with Mekong River running 140km, home to Irrawaddy dolphins, fish, birds. 30 minutes to Kapi for Mekong Wagtail and Irrawaddy Dolphins. 2-3 hours on boat observing Mekong Wagtail feeding on small islands. Target birds: Mekong Wagtail, Small Pratincole, Grey-throated Martin, Golden-bellied Gerygone, Indian Spot-billed Duck, Yellow-bellied Prinia, Dusky Warbler. Irrawaddy dolphins may appear. After full morning, continue to Phnom Penh area for Cambodian Tailorbird (endemic species found 2009). Then continue to Pursat Grassland for Chinese Grassbird and other wetland birds",
+        "Day 14": "Pursat to Phnom Penh - Final morning birding Cambodia. Wake early, breakfast in field in Pursat grasslands. Locals part of conservation project protecting grasslands and key species: Chinese Grassbird and Yellow-breasted Bunting. Poorly-known, cryptic Chinese Grassbird has patchy distribution throughout Asia. Population discovered near Pursat few years ago. Excellent chance observing Chinese Grassbird. Also chance of critically endangered Yellow-breasted Bunting (important wintering habitat). Other key species: Manchurian Reed Warbler, Asian Golden Weavers, Striated Grassbird, Oriental Pratincole, Red Avadavat, Pied Harrier. After lunch, drive to Phnom Penh, stopping for Cambodian Tailorbird. Overnight Phnom Penh",
+        "Day 15": "Phnom Penh Transfer to Airport - Transfer to Phnom Penh Airport or hotel for departure. Bid each other goodbye"
+      },
+      birdSpecies: [
+        "Pale-capped Pigeon", "Coral-billed Ground Cuckoo", "Bar-bellied Pitta", "Yellow-breasted Bunting",
+        "Asian Golden Weaver", "Great Slaty Woodpecker", "Giant Ibis", "White-shouldered Ibis",
+        "Greater Adjutant", "Black-headed Woodpecker", "Milky Stork", "Rufous-bellied Woodpecker",
+        "Mekong Wagtail", "Cambodian Tailorbird", "Spot-billed Pelican", "Red-headed Vulture",
+        "White-rumped Vulture", "Slender-billed Vulture", "Indochinese Bush Lark", "Manchurian Reed Warbler",
+        "Javan Pond Heron", "Grey-headed Fish Eagle", "Eastern Marsh Harrier", "Pied Harrier",
+        "Greater Spotted Eagle", "Rufous-winged Buzzard", "Alexandrine Parakeet", "Blossom-headed Parakeet",
+        "Bengal Florican", "Chinese Grassbird", "Sarus Crane", "White-rumped Falcon",
+        "Spotted Wood Owl", "Brown Wood Owl", "Brown Fish Owl", "Asian Barred Owlet",
+        "Spotted Owlet", "Brown Boobook", "Oriental Scops Owl", "Collared Scops Owl",
+        "Oriental Bay Owl", "Forest Wagtail", "White-throated Rock Thrush", "Hainan Blue Flycatcher",
+        "Black Baza", "Oriental Darter", "Painted Stork", "Lesser Adjutant", "Comb Duck",
+        "Siamese Fireback", "Siberian Blue Robin", "Green-legged Partridge", "Orange-breasted Trogon",
+        "Black-naped Monarch", "Green-eared Barbet", "Lineated Barbet", "Puff-throated Babbler",
+        "Gray-eyed Bulbul", "Red Junglefowl", "Emerald Dove", "Thick-billed Green Pigeon",
+        "Asian Fairy Bluebird", "Banded Broadbill", "Heart-spotted Woodpecker", "Banded Kingfisher",
+        "Green Peafowl", "Greater Yellownape Woodpecker", "Burmese Shrike", "Rufous Treepie",
+        "White-browed Fantail", "Scarlet Minivet", "Asian Paradise Flycatcher", "Crested Serpent Eagle",
+        "Common Iora", "Brown Prinia", "Blue-winged Pitta", "White-rumped Shama",
+        "Velvet-fronted Nuthatch", "Taiga Flycatcher", "Common Flameback", "Large Cuckooshrike",
+        "Greater Racket-tailed Drongo", "Green Bee-eater", "Large-tailed Nightjar", "Barn Owl",
+        "Grey-headed Swamphen", "Pheasant-tailed Jacana", "Brown-winged Jacana", "Baya Weaver",
+        "Golden-headed Cisticola", "Yellow-bellied Prinia", "Dusky Warbler", "Small Pratincole",
+        "Grey-throated Martin", "Golden-bellied Gerygone", "Indian Spot-billed Duck",
+        "Striated Grassbird", "Red Avadavat", "Oriental Honey Buzzard", "Shikra"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All accommodation in Cambodia (including final night)",
+        "All meals from dinner Day 1 to breakfast Day 15",
+        "Bottled drinking water throughout the tour",
+        "Boat trips (Prek Toal, Mekong River)",
+        "Services of English-speaking birding guide and Temple Tours guide",
+        "Vulture feeding experience",
+        "Community-based eco-tourism support"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa to Cambodia",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      accommodation: "Siem Reap: very comfortable hotel with air-conditioning, private bathroom/shower, wifi. BeTreed Adventure and Tmatboey: local eco-lodges with simple private shower/toilet facilities and fans. Kratie: comfortable air-conditioned local hotel with wifi. Phnom Penh: hotel with all facilities. Single supplement: $350 (available at Siem Reap, Kratie, Phnom Penh; probably not available at BeTreed Adventure, Tmatboey).",
+      bestSeason: "Year-round availability with optimal conditions during dry season (November-April)",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 2-5 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence is evident in the fact that good bread is readily available in many areas, and for those who prefer beer, there is a surprisingly wide range of local brews to try.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 12,
+      title: "Special 16-Day Essential Cambodia 8th-23rd March 2026 - Dream Birding Trip",
+      description: "Join us for this special fixed-departure tour from March 8-23, 2026 during peak dry season. This comprehensive birding adventure unfolds across Southeast Asia's richest wetlands, largest remaining tracts of lowland dry dipterocarp forests, and the region's last surviving seasonally flooded grasslands - habitats found almost nowhere else. Two boat excursions bring you closer to rare waterbird colonies, while explorations of ancient Angkor temples weave cultural heritage into the natural spectacle. Beyond offering opportunities to encounter some of the region's most threatened and iconic birds, this trip directly supports pioneering community-based eco-tourism initiatives in Cambodia. Positioned in the heart of mainland Southeast Asia, Cambodia has emerged as a premier destination for birders, offering the last strongholds for several remarkable and threatened species. Thanks to growing network of community-based projects, visitors are guided directly into critical habitats at precisely the right time of year, ensuring unforgettable encounters while supporting conservation and local livelihoods. For birders eager to add rare and highly localized species to their life lists, Cambodia offers exceptional opportunities: Mekong Wagtail, Giant Ibis, White-shouldered Ibis, Milky Stork, Bengal Florican, Cambodian Tailorbird, Cambodian Laughingthrush, Sarus Crane, Greater Adjutant. This journey also delivers abundance of sought-after Southeast Asian specialties: Bar-bellied Pitta, Black-headed Woodpecker, Asian Golden Weaver, Collared Falconet, White-rumped Falcon, Indochinese Cuckooshrike, Spot-billed Pelican, Oriental Darter, and three critically endangered vulture species (White-rumped, Slender-billed, Red-headed). Led by expert guides from Calidris Birding Tours.",
+      duration: "16 Days / 15 Nights (March 8-23, 2026)",
+      difficulty: "Moderate",
+      groupSize: "6-12 people",
+      price: "$5250 Per Person",
+      image: essentialCambodiaOwl,
+      category: "multi-day",
+      highlights: ["Giant Ibis", "Bengal Florican", "Mekong Wagtail", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Three Vulture Species", "Angkor Wat", "Pale-capped Pigeon"],
+      rating: 5.0,
+      schedule: {
+        "Day 1 (Mar 8)": "Arrival in Siem Reap - Meet local guide, short drive to comfortable hotel. Check in and rest. Early evening dinner and pre-trip briefing",
+        "Day 2 (Mar 9)": "Angkor Wat - World-famous temple complex. Arrive at sunrise for Brown Boobook. Forest birding: White-throated Rock Thrush, Forest Wagtail, Ashy Minivet, Hainan Blue Flycatcher, Asian Barred Owlet, Blue-rock Thrush, Oriental Pied Hornbill, Common Hill Myna, Lineated Barbet, Blue-tailed Bee-eater, Thick-billed Green Pigeon, Red-breasted Parakeet, Shikra, Black Baza. Explore temple with amazing bas-reliefs. Search for Alexandrine Parakeet at Ta Promh temple (Tomb Raider location). Evening Bayon temple. Brown-backed and Silver-backed Needletails. Overnight Siem Reap",
+        "Day 3 (Mar 10)": "Prek Toal Waterbird Sanctuary - Short bus to pier, boat across Tonle Sap at sunrise. Transfer to small boats at Prek Toal reserve. Largest breeding colony of large water birds in Southeast Asia: Spot-billed Pelican, Painted Stork, Lesser Adjutant, Greater Adjutant (endangered), Milky Stork (endangered), Great Cormorant, Purple Heron, Yellow Bittern, Asian Openbill, Intermediate Egret, Oriental Darter, Indian Cormorant, White-breasted Waterhen, Grey-headed Fish Eagle, Black-headed Ibis. Lunch at floating restaurant. Afternoon traditional agricultural areas: Lanceolated Warbler, Dusky Warbler, Siberian Rubythroat, Pallas's Grasshopper Warbler, Oriental Pratincole, White-browed Crake, Chestnut-capped Babbler, Striated Grassbird, Yellow and Cinnamon Bitterns, Common and Pin-tailed Snipe. Overnight Siem Reap",
+        "Day 4 (Mar 11)": "Ang Trapaeng Thmor to Chong Kran Roy - Wetland reservoir managed by WCS to protect Sarus Cranes (300+ birds). Greater Adjutant, Milky Stork, Black-necked Stork, Black-headed Ibis, Painted Stork, Spot-billed Pelican, Oriental Darter, Asian Openbill, Lesser Adjutants, Oriental Plover (scarce passage migrant). Raptors: Greater Spotted Eagle, Roofed-winged Buzzard, Black-winged Kite, Eastern Marsh and Pied Harriers. Grassland birds: Small and Blue-breasted Quail, Oriental Skylark, Indochinese Bushlark, Singing Bushlark, Amur Stonechat, Pied Bush Chat, Richard's and Paddyfield Pipits, Red-throated Pipit, Plain and Yellow-bellied Prinia, Oriental Reed Warbler, Red Avadavat. Other species: Black-crowned Night Heron, Spotted Wood Owl, Barn Owl, Spotted Owlet, Scarlet-backed Flowerpecker, Asian Koel, Bitterns, Watercock, Cotton Pygmy-goose, Knob-billed Duck, Jacanas, Black Kite, Dark-necked Tailorbird. Possibly Eld's Deer. Mid-afternoon travel to Chong Kran Roy tented camp. Late afternoon hide visit: Bar-bellied Pitta, Coral-billed Ground Cuckoo, Siamese Fireback, Siberian Blue Robin, Green-legged Partridge, Orange-breasted Trogon, Black-naped Monarch, Green-eared Barbet, Lineated Barbet, Puff-throated Babbler, Hainan Blue Flycatcher, Gray-eyed Bulbul",
+        "Day 5 (Mar 12)": "Chong Kran Roy to Siem Reap - Early morning revisit hide for Bar-bellied Pitta, Siberian Blue Robin, Red Junglefowl, Emerald Dove. Full day woodlands: Thick-billed Green Pigeon, Green-eared Barbet, Asian Fairy Bluebird, Banded Broadbill, Heart-spotted Woodpecker, Banded Kingfisher. Vocal breeding season increases Coral-billed Ground Cuckoo chances. Mid-afternoon drive back to Siem Reap",
+        "Day 6 (Mar 13)": "Florican Grasslands to Prey Veng - Early morning drive to Florican Grasslands. Breakfast in field. Local guides for Bengal Florican (critically endangered, predominantly black males strutting). Blue-tailed Bee-eater, Singing Bushlark, Oriental Skylark, Striated Grassbird, Paddyfield Pipit, Amur Stonechat, Pied Bushchat, Manchurian Reed Warbler (restricted global range), Sarus Cranes, Oriental Pratincole, Painted Stork, Spot-billed Pelican, Egrets, Chinese Pond-heron, Eastern Marsh Harrier, Asian Pied Starling, Spotted Redshank, Common Greenshank, Little Ringed Plover, Streaked Weaver, Barred and Small Buttonquail. Journey to Prey Veng, lunch enroute. May spot Collared Falconet or White-rumped Falcon. Mid-afternoon arrive simple eco-lodge at Prey Veng alongside ancient Khmer Baray in dry dipterocarp forest. Check Baray for Sarus Cranes, Giant Ibis, White-throated Kingfisher, Common Kingfisher. Short woodland walk: Crested Treeswifts, Small Minivets, Common Woodshrike, Purple Sunbird, Lesser Whistling Duck, Cuckooshrike, Asian Green Bee-eater, Scarlet Minivet. Target woodpeckers: Black-headed Woodpecker, White-bellied Woodpecker, Great Slaty Woodpecker (world's largest surviving), Rufous-bellied Woodpecker, Common Flameback, Grey-capped Pygmy Woodpecker",
+        "Day 7 (Mar 14)": "Prey Veng - Breakfast at eco-lodge. Circuit of baray: Yellow-footed and Orange-breasted Green Pigeon, Rufous-winged Buzzard, Sarus Crane. Woodland around Chen Temple (12th century): White-crested Laughingthrush, Greater Racket-tailed Drongo, Greater Yellownape, Red-billed Blue Magpie, Violet Cuckoo, Rufous Treepie, Red-breasted and Blossom-headed Parakeet, Great Slaty Woodpecker, White-bellied Woodpecker, Rufous-bellied and Yellow-crowned Woodpeckers, Greater and Lesser Yellownape, White-rumped Falcon, Collared Falconet, Greater Flameback. Extended lunch break. Late afternoon different woodland area: Chinese Francolin, Brown Prinia, White-browed Fantail, Lanceolated Warbler, Burmese Shrike, Large Cuckooshrike, Indochinese Bushlark, Streak-throated and Grey-headed Woodpecker. If White-winged Duck and Green Peafowl recently seen, prioritize this. Night: Spotted Wood Owl, Brown Boobook, Collared Scops Owl near lodge",
+        "Day 8 (Mar 15)": "Prey Veng to Tmatboey - Final morning at Prey Veng heading towards local ruined Khmer temple. Green Pigeon in morning, nearby Barays may have surprises. Yellow-footed Green Pigeon, Stork-billed Kingfisher. Move to Tmatboey for Giant and White-shouldered Ibis. Tmatboey: small isolated Khmer village (500+ families) within Khulen Promtep Wildlife Sanctuary. WCS conservation project with Cambodian Government and villagers. Remote community ecotourism site for critically endangered Giant Ibis (Cambodia's national bird) and elusive White-shouldered Ibis. Late afternoon meet local guide for White-shouldered Ibis at roost site before sunset. Walking quietly through open woodland to feeding/roosting location. Also chance for Giant Ibis. Woodland species: Small Minivet, Common Woodshrike, White-browed Fantail, Rufous Treepie, Indochinese Cuckooshrike",
+        "Day 9-10 (Mar 16-17)": "Full Days Tmatboey - Two full days best chances for White-shouldered and Giant Ibis leaving roost sites to feed in small forest pools. Long walks in heat but no hills, local guides provide ice-cold water. Local guides scour forest for owl roosts: Brown Fish Owl, Brown Wood Owl, Spotted Wood Owl, Spotted Owlet. Woodpecker focus: Great Slaty Woodpecker, White-bellied Woodpecker, Greater and Common Flamebacks, Greater and Lesser Yellownapes, Rufous-bellied and Yellow-crowned Woodpeckers, Black-headed Woodpecker (star of dry dipterocarp), Grey-capped Pygmy and Freckle-breasted Woodpeckers. Moist woodland: Van Hasselt's Sunbird, Pale-capped Pigeon. Early morning: Pale-capped Pigeon on treetops/bamboo. Chinese Francolin, Barred Buttonquail, Blossom-headed and Red-breasted Parakeets, Burmese and Velvet-fronted Nuthatch, Burmese Shrike, Black-hooded and Black-naped Orioles, Golden-fronted Leafbird, Common Iora, Chestnut-tailed Starling, Common and Large Woodshrikes, Indochinese and Large Cuckooshrikes, Chestnut-capped Babbler, Asian Green Bee-eater, White-crested Laughingthrush, Lineated Barbet, Brown, Rufescence, and Grey-breasted Prinias, Asian Brown Flycatcher, Crested Treeswift, Radde's Warbler, Two-barred and Yellow-browed Warblers, Rufous Treepie, Hair-crested Drongo, Vinous-breasted Starling, White-browed Fantail, Red-billed Blue Magpie. Dusk: Savanna Nightjar. After dark: Oriental Scops Owl. Both nights at Tmatboey ecolodge",
+        "Day 11 (Mar 18)": "Tmatboey to Vulture Restaurant - Final hours for remaining key species. If roosting tree discovered, may experience Giant Ibis waking at roost. Mid-morning transfer to Vulture Restaurant at Boeng Toal (Dung Plet Village). Birding around camp (Yellow-crowned Woodpecker, White-browed Fantail). Visit large hide for vulture-viewing. Hope to see species loafing in trees or feeding on carcass. Overnight camping in forest",
+        "Day 12 (Mar 19)": "Vulture Restaurant to Kratie - Eco-tourism project by Sam Veasna Centre. Local farmers raise cattle without harmful medications. Visitors pay for cow to feed birds. Close-up sightings from hide of Red-headed, Long-billed (Slender-billed), White-rumped Vultures (endangered). Other raptors or mammals may join feeding frenzy. After morning continue to Kratie (4 hours), stop Stung Treng for lunch. Pleasant hotel with good facilities on Mekong River. Late afternoon to marsh near Kratie: Grey-headed Swamphen, Pheasant-tailed and Brown-winged Jacanas, Oriental Reed Warbler, Asian Golden and Baya Weaver, Golden-headed Cisticola, Yellow-bellied Prinia, Dusky Warbler, Small Pratincole. Overnight Kratie",
+        "Day 13 (Mar 20)": "Kratie to Pursat - Relaxing boat trip on Mekong River for regional endemic Mekong Wagtail. Good close views from small motor-powered boats. Entire global range restricted to lower Mekong River stretches, mostly within Cambodia. Find birds busy on small rocky islets collecting nest material or hunting insects. Other targets: Small Pratincoles, Grey-throated Martin, Golden-bellied Gerygone, Indian Spot-billed Duck, Yellow-bellied Prinia, Dusky Warbler, Little Cormorant. Find group of Irrawaddy Dolphins (threatened species). After boat trip reboard vehicles for longest journey to Pursat on southern margins of Tonle Sap. Several rest stops. Overnight Pursat city",
+        "Day 14 (Mar 21)": "Pursat to Phnom Penh - Wake very early, breakfast in field in Pursat grasslands. Locals part of conservation project protecting grasslands and key species: Chinese Grassbird (poorly-known, cryptic, patchy distribution, wiped out in many places due to habitat loss), Yellow-breasted Bunting (critically endangered, important wintering habitat), Bengal Florican possibility, Manchurian Reed Warbler (pre-migration song), Striated Grassbird, Oriental Pratincole, Red Avadavat, Pied Harrier. After lunch drive to Phnom Penh. Several stops for Cambodian Tailorbird (not uncommon in right habitat). Final dinner together with excellent Cambodian food. Overnight Phnom Penh",
+        "Day 15 (Mar 22)": "Full-day Phnom Penh City Tour - Morning visit Royal Palace and Silver Pagoda (seat of Cambodian monarchy, glittering spires, floor of 5,000+ silver tiles showcasing Khmer artistry). Continue to National Museum (outstanding collection of Angkorian and pre-Angkorian artifacts revealing Cambodia's rich cultural heritage). Traditional Khmer lunch along riverfront. Afternoon more somber turn with visits to Tuol Sleng Genocide Museum (S-21). Overnight Phnom Penh",
+        "Day 16 (Mar 23)": "Departure from Phnom Penh - Transfer to Phnom Penh International Airport by taxi at time convenient for flight"
+      },
+      birdSpecies: [
+        "Pale-capped Pigeon", "Coral-billed Ground Cuckoo", "Bar-bellied Pitta", "Yellow-breasted Bunting",
+        "Asian Golden Weaver", "Great Slaty Woodpecker", "Giant Ibis", "White-shouldered Ibis",
+        "Greater Adjutant", "Black-headed Woodpecker", "Milky Stork", "Rufous-bellied Woodpecker",
+        "Mekong Wagtail", "Cambodian Tailorbird", "Spot-billed Pelican", "Red-headed Vulture",
+        "White-rumped Vulture", "Slender-billed Vulture", "Indochinese Bush Lark", "Manchurian Reed Warbler",
+        "Javan Pond Heron", "Grey-headed Fish Eagle", "Eastern Marsh Harrier", "Pied Harrier",
+        "Greater Spotted Eagle", "Rufous-winged Buzzard", "Alexandrine Parakeet", "Blossom-headed Parakeet",
+        "Bengal Florican", "Chinese Grassbird", "Sarus Crane", "White-rumped Falcon",
+        "Spotted Wood Owl", "Brown Wood Owl", "Brown Fish Owl", "Asian Barred Owlet",
+        "Spotted Owlet", "Brown Boobook", "Oriental Scops Owl", "Collared Scops Owl",
+        "Oriental Bay Owl", "Forest Wagtail", "White-throated Rock Thrush", "Hainan Blue Flycatcher",
+        "Black Baza", "Oriental Darter", "Painted Stork", "Lesser Adjutant", "Siamese Fireback",
+        "Siberian Blue Robin", "Green-legged Partridge", "Orange-breasted Trogon", "Black-naped Monarch",
+        "Green-eared Barbet", "Lineated Barbet", "Puff-throated Babbler", "Gray-eyed Bulbul",
+        "Red Junglefowl", "Emerald Dove", "Thick-billed Green Pigeon", "Asian Fairy Bluebird",
+        "Banded Broadbill", "Heart-spotted Woodpecker", "Banded Kingfisher", "White-crested Laughingthrush",
+        "Red-billed Blue Magpie", "Chinese Francolin", "Collared Falconet", "Irrawaddy Dolphins",
+        "Blue-tailed Bee-eater", "Common Hill Myna", "Shikra", "Oriental Pied Hornbill",
+        "Brown-backed Needletail", "Silver-backed Needletail", "Indian Cormorant", "White-breasted Waterhen",
+        "Purple Heron", "Yellow Bittern", "Cinnamon Bittern", "Black Bittern", "Asian Openbill",
+        "Intermediate Egret", "Lanceolated Warbler", "Dusky Warbler", "Siberian Rubythroat",
+        "Pallas's Grasshopper Warbler", "Oriental Pratincole", "White-browed Crake", "Chestnut-capped Babbler",
+        "Striated Grassbird", "Common Snipe", "Pin-tailed Snipe", "Black-necked Stork",
+        "Oriental Plover", "Black-winged Kite", "Roofed-winged Buzzard", "Small Quail",
+        "Blue-breasted Quail", "Oriental Skylark", "Singing Bushlark", "Amur Stonechat",
+        "Pied Bush Chat", "Richard's Pipit", "Paddyfield Pipit", "Red-throated Pipit",
+        "Plain Prinia", "Yellow-bellied Prinia", "Red Avadavat", "Black-crowned Night Heron",
+        "Barn Owl", "Scarlet-backed Flowerpecker", "Asian Koel", "Watercock", "Cotton Pygmy-goose",
+        "Knob-billed Duck", "Bronze-winged Jacana", "Pheasant-tailed Jacana", "Black Kite",
+        "Dark-necked Tailorbird", "Yellow-vented Bulbul", "Plain-backed Sparrow", "Black-collared Starling",
+        "Orange-breasted Green Pigeon", "Yellow-footed Green Pigeon", "Crested Treeswift",
+        "Small Minivet", "Common Woodshrike", "Purple Sunbird", "Lesser Whistling Duck",
+        "Indochinese Cuckooshrike", "Large Cuckooshrike", "Asian Green Bee-eater", "Scarlet Minivet",
+        "Common Flameback", "Grey-capped Pygmy Woodpecker", "White-bellied Woodpecker",
+        "Greater Yellownape", "Lesser Yellownape", "Yellow-crowned Woodpecker", "Greater Flameback",
+        "Violet Cuckoo", "Rufous Treepie", "Red-breasted Parakeet", "Greater Racket-tailed Drongo",
+        "White-throated Kingfisher", "Common Kingfisher", "Stork-billed Kingfisher",
+        "Burmese Nuthatch", "Velvet-fronted Nuthatch", "Burmese Shrike", "Black-hooded Oriole",
+        "Black-naped Oriole", "Golden-fronted Leafbird", "Common Iora", "Chestnut-tailed Starling",
+        "Large Woodshrike", "Brown Prinia", "Rufescence Prinia", "Grey-breasted Prinia",
+        "Asian Brown Flycatcher", "Radde's Warbler", "Two-barred Warbler", "Yellow-browed Warbler",
+        "Hair-crested Drongo", "Vinous-breasted Starling", "White-browed Fantail", "Savanna Nightjar",
+        "Freckle-breasted Woodpecker", "Van Hasselt's Sunbird", "Barred Buttonquail",
+        "Streak-throated Woodpecker", "Grey-headed Woodpecker", "Green Peafowl", "White-winged Duck",
+        "Ashy Minivet", "Blue-rock Thrush", "Spotted Redshank", "Common Greenshank",
+        "Little Ringed Plover", "Streaked Weaver", "Amor Stonechat", "Chinese Pond-heron",
+        "Asian Pied Starling", "Rufous Woodpecker", "Eastern Yellow Wagtail",
+        "Grey-headed Swamphen", "Baya Weaver", "Golden-headed Cisticola",
+        "Small Pratincole", "Grey-throated Martin", "Golden-bellied Gerygone", "Indian Spot-billed Duck",
+        "Little Cormorant"
+      ],
+      included: [
+        "All transport including airport transfers and road tolls",
+        "National park and all reserve entry fees",
+        "All accommodation in Cambodia including final night",
+        "Vulture restaurant fees",
+        "All meals from dinner Day 1 to breakfast Day 16",
+        "Bottled drinking water throughout the tour",
+        "Boat trips (Prek Toal, Mekong River)",
+        "Services of English-speaking birding guide",
+        "Services of Calidris Birding Tours guide",
+        "Temple guide services (qualified temple guide)",
+        "Community-based eco-tourism support"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa to Cambodia",
+        "Alcoholic and soft drinks",
+        "Tips and gratuities",
+        "Laundry services",
+        "Hotel mini bar and phone calls",
+        "Any other items of a personal nature"
+      ],
+      accommodation: "Siem Reap: very comfortable hotel with air-conditioning, private bathroom/shower, wifi. Chong Kran Roy: simple tented camp with shared toilet/shower facilities. Prey Veng: simple eco-lodge with private shower/toilet facilities and fans. Tmatboey: local eco-lodge with simple private shower/toilet facilities and fans. Boeng Toal (Vulture Restaurant): overnight camping in forest (single tent available). Kratie and Pursat: comfortable air-conditioned local hotels with wifi. Phnom Penh: hotel with all facilities. Single supplement: $250 (available at Siem Reap, Kratie, Pursat, Boeng Toal; probably not available at Tmatboey, Prey Veng, Chong Kran Roy).",
+      bestSeason: "March 8-23, 2026 (Peak dry season - November to April peak) - optimal conditions for Bengal Florican displays, low water levels for Sarus Crane concentrations, and Mekong Wagtail visibility",
+      physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 3-4 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for many key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+      weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+      food: "Khmer cuisine similar to most Southeast Asian cooking but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas and for those who like beer there is a surprisingly wide range of local brews to try. Final dinner celebration included.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
+    },
+    {
+      id: 13,
+      title: "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Itinerary in Cambodia",
+      description: "This comprehensive 19-day itinerary combines Cambodia's remarkable biodiversity with its cultural heritage, offering an unforgettable birdwatching adventure. Explore diverse ecosystems from wetlands and dry dipterocarp forests to highland evergreen forests in Keo Seima Wildlife Sanctuary and Dak Dam. Cambodia is home to more than 644 bird species, including several rare and endangered ones. This tour covers all major birding sites including Siem Reap, Prek Toal, Ang Trapaeng Thmor, Florican Grasslands, BeTreed, Tmatboey, Vulture Restaurant, Kratie, Jahoo Gibbon Camp (Keo Seima), Sen Monorom, Dak Dam highlands, Pursat, and Phnom Penh, maximizing encounters with Cambodia's mega species including lowland and highland specialties.",
+      duration: "19 Days / 18 Nights",
+      difficulty: "Moderate",
+      groupSize: "2-8 people",
+      price: "$7250 Per Person",
+      image: wagtail19Day,
+      category: "multi-day",
+      highlights: ["Giant Ibis and White-shouldered Ibis at Tmatboey", "Three critically endangered vulture species at Vulture Restaurant", "Bengal Florican display at grasslands", "Bar-bellied Pitta and Coral-billed Ground Cuckoo at Chong Kran Roy", "Mekong Wagtail and Irrawaddy dolphins at Kratie", "Highland forest specialties: White-cheeked Laughingthrush, Orange-breasted Laughingthrush", "Green Peafowl and Germain's Peacock-Pheasant at Jahoo Gibbon Camp", "Silver-eared Mesia and montane species at Dak Dam", "Yellow-cheeked Gibbon calls in Keo Seima Wildlife Sanctuary", "Chinese Grassbird and Yellow-breasted Bunting at Pursat", "Cambodian Tailorbird - endemic species", "Greater Hornbills and Blue-eared Barbets", "Sarus Cranes at Ang Trapaeng Thmor", "Milky Stork, Greater Adjutant, and Spot-billed Pelican at Prek Toal", "Cultural birding at Angkor Wat temples"],
+      rating: 5.0,
+      isInformational: true,
+      schedule: {
+        "Day 1: Arrival in Siem Reap": "Arrive in Siem Reap AM or PM. Spend the day acclimatizing and visiting local attractions like Phnom Kroam or Chrev. In the evening, meet your guide for a pre-trip briefing and prepare for your birdwatching adventure.",
+        "Day 2: Full Day Birding at Angkor Wat Complex": "Combine culture and birding as you explore the Angkor Wat complex and its surrounding forests. Target species include Forest Wagtail, White-throated Rock Thrush, Hainan Blue Flycatcher, Asian Barred Owlet, Black Baza, Oriental Pied Hornbill, Common Hill Myna, Lineated Barbet, Blue-tailed Bee-eater, Thick-billed Green Pigeon, Red-breasted Parakeet, Shikra, Alexandrine Parakeet, Ashy Minivet, and Blue-rock Thrush. The ancient temples offer an enchanting backdrop for birdwatching. Visit Ta Prohm temple with its massive tree roots. Overnight in Siem Reap.",
+        "Day 3: Full Day Birding at Prek Toal Waterbird Sanctuary": "Boat trip to Prek Toal, a world-renowned bird sanctuary on Tonle Sap Lake containing the largest breeding colony of large waterbirds in Southeast Asia. Target species include Spot-billed Pelican, Painted Stork, Milky Stork, Greater Adjutant, Lesser Adjutant, Oriental Darter, Black-headed Ibis, Grey-headed Fish Eagle, Great Cormorant, Purple Heron, Yellow Bittern, Asian Openbill, Intermediate Egret, Indian Cormorant, White-breasted Waterhen, Eastern Yellow Wagtail, Amor Stonechat, and Rufous Woodpecker. Afternoon birding in traditional agricultural areas with lotus ponds, fish ponds, and rice fields looking for Lanceolated Warbler, Dusky Warbler, Siberian Rubythroat, Pallas's Grasshopper Warbler, Oriental Pratincole, White-browed Crake, Chestnut-capped Babbler, Striated Grassbird, Yellow and Cinnamon Bitterns, and Common and Pin-tailed Snipe. Overnight in Siem Reap.",
+        "Day 4: Full Day Birding at Ang Trapaeng Thmor": "Visit Ang Trapaeng Thmor wetland reserve to see over 300 Sarus Cranes and other wetland species. This WCS-managed reserve provides excellent views of concentrated waterbirds. Target species include Sarus Crane, Greater Adjutant, Milky Stork, Black-necked Stork, Black-headed Ibis, Painted Stork, Spot-billed Pelican, Oriental Darter, Asian Openbill, Lesser Adjutant, Oriental Plover, Greater Spotted Eagle, Rufous-winged Buzzard, Black-winged Kite, Small and Blue-breasted Quail, Oriental Skylark, Indochinese Bushlark, Singing Bushlark, Amor Stonechat, Pied Bush Chat, various pipits, Plain Prinia, Yellow-bellied Prinia, Oriental Reed Warbler, Red Avadavat, and various owls. Possible sightings of critically endangered Eld's Deer. Overnight in Siem Reap.",
+        "Day 5: Siem Reap to Chong Kran Roy": "Early morning departure to Chong Kran Roy tented camp. Late afternoon visit to a special bird hide targeting Bar-bellied Pitta, Coral-billed Ground Cuckoo, Siamese Fireback, Siberian Blue Robin, Green-legged Partridge, Orange-breasted Trogon, Black-naped Monarch, Green-eared Barbet, Lineated Barbet, Puff-throated Babbler, Hainan Blue Flycatcher, and Gray-eyed Bulbul. These are very hard-to-see species under normal circumstances. Overnight in tented camp.",
+        "Day 6: Full Day Chong Kran Roy to Siem Reap": "Early morning return to the hide for another chance at Bar-bellied Pitta and Siberian Blue Robin, plus Red Junglefowl and Emerald Dove. Full morning woodland birding searching for Thick-billed Green Pigeon, Green-eared Barbet, Asian Fairy Bluebird, Banded Broadbill, Heart-spotted Woodpecker, Banded Kingfisher, and Coral-billed Ground Cuckoo. Mid-afternoon drive back to Siem Reap. Overnight in Siem Reap.",
+        "Day 7: Bengal Florican Grasslands to BeTreed Adventure": "Early morning visit to Florican Grasslands near Kampong Thom to see critically endangered Bengal Florican displaying. Target birds include Bengal Florican, Sarus Crane, Manchurian Reed Warbler, Eastern Marsh Harrier, and grassland specialists. Late afternoon check-in at BeTreed Adventure eco-lodge in Preah Vihear Province within Phnom Tnout Phnom Pok Wildlife Sanctuary. Introductory evening birding walk for Siamese Fireback, Green Peafowl, Greater Yellownape, and nocturnal species. Overnight at BeTreed jungle lodge.",
+        "Day 8: Full Day Birding at BeTreed Adventure": "Full day exploring 42,000+ hectares of dry dipterocarp forest. Dawn trek targeting White-browed Fantail, Scarlet Minivet, Asian Paradise Flycatcher, Blossom-headed Parakeet, woodpeckers, Crested Serpent Eagle, and Banded Broadbill. Mid-morning hike for Indochinese Bushlark, Rufous-winged Buzzard, Common Iora, Brown Prinia, Blue-winged Pitta. Afternoon forest edge trail to Prasat Preah Puol temple ruins for Green Peafowl, Lineated Barbet, Black-headed Woodpecker, White-rumped Shama, Velvet-fronted Nuthatch. Evening viewpoint for raptors. Night walk for owls, nightjars, civets. Overnight at BeTreed.",
+        "Day 9: BeTreed to Tmatboey - Giant Ibis": "Final dawn walk at BeTreed. Late morning departure for Tmatboey (2-3 hour drive). Arrival at 3:30 PM, head into dry deciduous forest targeting Giant Ibis (Cambodia's national bird, Critically Endangered), White-shouldered Ibis, Black-headed Woodpecker, Yellow-crowned Woodpecker, Burmese Shrike, Blossom-headed Parakeet, Rufous-winged Buzzard, Lesser Adjutant. Optional night spotlighting for Collared Scops Owl, Spotted Owlet, Large-tailed Nightjar, Barn Owl. Overnight at Tmatboey Eco-Lodge.",
+        "Day 10: Full Day Tmatboey - Giant & White-shouldered Ibis": "Pre-sunrise departure to seasonal wetlands where Giant Ibis feeds at dawn. Watch Cambodia's national bird foraging. Continue birding dry forest trails for woodpeckers, Brown Wood Owl, Spotted Wood Owl, Brown Fish Owl, White-bellied Woodpecker, Great Slaty Woodpecker, Rufous-bellied Woodpecker, Greater and Lesser Yellownapes, Greater Flameback, Grey-capped Pygmy Woodpecker, Freckle-breasted Woodpecker. Afternoon visit to White-shouldered Ibis gathering sites. Evening birding walk for owls and nightjars. Overnight at Tmatboey.",
+        "Day 11: Morning Tmatboey to Vulture Restaurant": "Final morning hours at Tmatboey. If roosting tree discovered, possible experience of Giant Ibis waking at roost. Mid-morning transfer to Boeng Toal Vulture Restaurant at Dung Plet Village. Birding around camp for Yellow-crowned Woodpecker and White-browed Fantail. Visit large hide constructed for vulture-viewing. Overnight camping in forest.",
+        "Day 12: Vulture Restaurant to Kratie": "Morning at Vulture Restaurant - community-run conservation project providing controlled feeding to attract three critically endangered vulture species: White-rumped Vulture, Slender-billed Vulture, and Red-headed Vulture. Watch from hide as vultures feed. Mid-morning departure to Kratie alongside Mekong River (4-hour journey, lunch in Stung Treng). Late afternoon arrival, check-in to riverside hotel. Late afternoon visit to marshes for Grey-headed Swamphen, Pheasant-tailed Jacana, Brown-winged Jacana, weavers, cisticolas, and Small Pratincole. Overnight in Kratie.",
+        "Day 13: Kratie to Jahoo Gibbon Camp (Keo Seima)": "Early morning boat trip on Mekong River (30 min to Kapi) searching for regional endemic Mekong Wagtail feeding on rocky islets. Also Small Pratincole, Grey-throated Martin, Golden-bellied Gerygone, waders, and Little Cormorant. Boat trip includes Irrawaddy Dolphin watching. After full morning, continue to Keo Seima Wildlife Sanctuary traveling to Jahoo Gibbon Camp (community-based eco-project). Arrival 3:30 PM, afternoon forest birding with local guide for Greater Hornbill, Blue-eared Barbet, Blue-winged Leafbird, Grey-faced Bulbul, Bar-bellied Pitta, Siamese Fireback, Green Peafowl, Germain's Peacock-Pheasant, woodpeckers, kingfishers. Evening Bunong dinner. Optional night walk for Collared Scops Owl, Large-tailed Nightjar. Overnight at Jahoo Gibbon Camp.",
+        "Day 14: Full Day Jahoo Gibbon Camp": "Full day immersive birdwatching in Keo Seima's evergreen and mixed deciduous forest. Pre-dawn awakening to echoing Yellow-cheeked Crested Gibbon calls alongside Greater Hornbills. Jahoo known for Green Peafowl sightings. Trek through bamboo thickets and streamside trails for Orange-breasted Trogon, Red-headed Trogon, Banded Kingfisher, flycatchers, warblers, barbets, broadbills, sunbirds, flowerpeckers. Target species include Greater Hornbill, Blue-eared Barbet, Indochinese Barbet, Red-vented Barbet, Blue-winged Leafbird, Grey-faced Bulbul, Yellow-billed Warbler, Bar-bellied Pitta, Siamese Fireback, Green Peafowl, Germain's Peacock-Pheasant. Overnight at Jahoo.",
+        "Day 15: Jahoo to Sen Monorom and Dak Dam": "Pre-sunrise Jahoo dawn chorus: haunting Yellow-cheeked Gibbon and Black-shanked Douc calls joined by trogons, kingfishers, flycatchers, warblers, barbets, broadbills. After breakfast, final riverine forest exploration for sunbirds, flowerpeckers, kingfishers. Afternoon 2:30 PM birding specifically for Green Peafowl. Departure to Sen Monorom (highland town), check-in, then late afternoon birding at Dak Dam highland plateau near Vietnamese border - premier birding hotspot with cooler climate, montane/hill evergreen species. Late afternoon trails for White-cheeked Laughingthrush, Orange-breasted Laughingthrush, Silver-eared Mesia, Indochinese Barbet, woodpeckers. Birding until dark. Overnight in Sen Monorom.",
+        "Day 16: Full Day Dak Dam": "Full day dedicated to Dak Dam's diverse highland habitats. Pre-dawn trek into misty highland forest. Early hours bring mixed flocks of minivets, bulbuls, shrikes, yuhinas, Mesia, Maroon Oriole. Target species include White-cheeked Laughingthrush, Orange-breasted Laughingthrush, Silver-eared Mesia, Pale-capped Pigeon, Blue Pitta, Germain's Peacock-Pheasant, Crested Serpent-Eagle, Black Eagle, sunbirds, flowerpeckers, Indochinese Barbet, Red-vented Barbet, montane specialists. Ascend gentle slopes through clearings for raptors. Late morning breakfast for active sunbirds/flowerpeckers. After lunch, afternoon deeper forest trails. Birding until dark. Overnight Sen Monorom.",
+        "Day 17: Sen Monorom to Pursat via Cambodian Tailorbird": "Full morning birding Sen Monorom/Dak Dam. Mid-day departure to Pursat, stopping near Phnom Penh outskirts for Cambodian Tailorbird - endemic species discovered 2009. Continue to Pursat Grassland for Chinese Grassbird and wetland birds. Overnight Pursat city.",
+        "Day 18: Pursat Grasslands to Phnom Penh": "Very early wake-up with breakfast in field in Pursat grasslands. Community conservation project protects key species: Chinese Grassbird and Yellow-breasted Bunting. Excellent chance of observing Chinese Grassbird in early morning. Also chance of critically endangered Yellow-breasted Bunting. Other targets: Manchurian Reed Warbler, Asian Golden Weaver, Striated Grassbird, Oriental Pratincole, Red Avadavat, Pied Harrier. After lunch, drive to Phnom Penh with several stops for Cambodian Tailorbird. Overnight Phnom Penh.",
+        "Day 19: Phnom Penh City Tours and Transfer": "Full-day Phnom Penh city tour. Morning visit to Royal Palace and Silver Pagoda, National Museum. Traditional Khmer lunch along riverfront. Afternoon visits to Tuol Sleng Genocide Museum for historical perspective. Transfer to Phnom Penh International Airport at convenient time for departure. Farewell."
+      },
+      birdSpecies: [
+        "Pale-capped Pigeon", "Coral-billed Ground Cuckoo", "Bar-bellied Pitta", "Blue Pitta", "Yellow-breasted Bunting",
+        "Asian Golden Weaver", "Great Slaty Woodpecker", "Giant Ibis", "White-shouldered Ibis", "Greater Adjutant",
+        "Black-headed Woodpecker", "Milky Stork", "Rufous-bellied Woodpecker", "Mekong Wagtail", "Cambodian Tailorbird",
+        "Spot-billed Pelican", "Red-headed Vulture", "White-rumped Vulture", "Slender-billed Vulture", "Indochinese Bushlark",
+        "Manchurian Reed Warbler", "Javan Pond Heron", "Grey-headed Fish Eagle", "Eastern Marsh Harrier", "Pied Harrier",
+        "Greater Spotted Eagle", "Rufous-winged Buzzard", "Alexandrine Parakeet", "Blossom-headed Parakeet", "Bengal Florican",
+        "Chinese Grassbird", "Sarus Crane", "White-rumped Falcon", "Collared Falconet", "Spotted Wood Owl", "Brown Wood Owl",
+        "Brown Fish Owl", "Asian Barred Owlet", "Spotted Owlet", "Brown Boobook", "Oriental Scops Owl", "Collared Scops Owl",
+        "Oriental Bay Owl", "White-cheeked Laughingthrush", "Orange-breasted Laughingthrush", "Silver-eared Mesia",
+        "Green Peafowl", "Germain's Peacock-Pheasant", "Indochinese Barbet", "Red-vented Barbet", "Blue-eared Barbet",
+        "Greater Hornbill", "Blue-winged Leafbird", "Grey-faced Bulbul", "Yellow-billed Warbler", "Siamese Fireback",
+        "Orange-breasted Trogon", "Red-headed Trogon", "Banded Kingfisher", "Stork-billed Kingfisher", "White-throated Kingfisher",
+        "Common Kingfisher", "Painted Stork", "Lesser Adjutant", "Black-necked Stork", "Black-headed Ibis", "Oriental Darter",
+        "Asian Openbill", "Great Cormorant", "Indian Cormorant", "Little Cormorant", "Purple Heron", "Yellow Bittern",
+        "Cinnamon Bittern", "Black Bittern", "Intermediate Egret", "Forest Wagtail", "Eastern Yellow Wagtail",
+        "White-throated Rock Thrush", "Blue-rock Thrush", "Hainan Blue Flycatcher", "Asian Brown Flycatcher", "Taiga Flycatcher",
+        "Black Baza", "Shikra", "Crested Serpent Eagle", "Black Eagle", "Oriental Honey Buzzard", "Black-winged Kite",
+        "Black Kite", "Oriental Pied Hornbill", "Common Hill Myna", "Chestnut-tailed Starling", "Vinous-breasted Starling",
+        "Asian Pied Starling", "Black-collared Starling", "Lineated Barbet", "Green-eared Barbet", "Blue-tailed Bee-eater",
+        "Asian Green Bee-eater", "Green Bee-eater", "Thick-billed Green Pigeon", "Yellow-footed Green Pigeon",
+        "Orange-breasted Green Pigeon", "Red-breasted Parakeet", "Ashy Minivet", "Scarlet Minivet", "Small Minivet",
+        "Siberian Blue Robin", "Amor Stonechat", "Pied Bush Chat", "Rufous Woodpecker", "White-bellied Woodpecker",
+        "Common Flameback", "Greater Flameback", "Grey-capped Pygmy Woodpecker", "Freckle-breasted Woodpecker",
+        "Greater Yellownape", "Lesser Yellownape", "Yellow-crowned Woodpecker", "Heart-spotted Woodpecker",
+        "Streak-throated Woodpecker", "Grey-headed Woodpecker", "Lanceolated Warbler", "Dusky Warbler", "Oriental Reed Warbler",
+        "Radde's Warbler", "Two-barred Warbler", "Yellow-browed Warbler", "Siberian Rubythroat", "Pallas's Grasshopper Warbler",
+        "Oriental Pratincole", "Small Pratincole", "White-browed Crake", "Grey-headed Swamphen", "White-breasted Waterhen",
+        "Watercock", "Chestnut-capped Babbler", "White-crested Laughingthrush", "Puff-throated Babbler", "Striated Grassbird",
+        "Brown Prinia", "Rufescence Prinia", "Grey-breasted Prinia", "Plain Prinia", "Yellow-bellied Prinia",
+        "Dark-necked Tailorbird", "Golden-headed Cisticola", "Cotton Pygmy-goose", "Indian Spot-billed Duck",
+        "Lesser Whistling Duck", "Comb Duck", "Pheasant-tailed Jacana", "Bronze-winged Jacana", "Brown-winged Jacana",
+        "Oriental Plover", "Spotted Redshank", "Common Greenshank", "Little Ringed Plover", "Small Quail",
+        "Blue-breasted Quail", "Chinese Francolin", "Barred Buttonquail", "Small Buttonquail", "Oriental Skylark",
+        "Singing Bushlark", "Richard's Pipit", "Paddyfield Pipit", "Red-throated Pipit", "Scarlet-backed Flowerpecker",
+        "Asian Koel", "Violet Cuckoo", "Common Iora", "Golden-fronted Leafbird", "Greater Racket-tailed Drongo",
+        "Hair-crested Drongo", "Black-naped Monarch", "Asian Paradise Flycatcher", "White-browed Fantail", "Burmese Shrike",
+        "Common Woodshrike", "Large Woodshrike", "Indochinese Cuckooshrike", "Large Cuckooshrike", "Purple Sunbird",
+        "Van Hasselt's Sunbird", "Red-billed Blue Magpie", "Rufous Treepie", "Burmese Nuthatch", "Velvet-fronted Nuthatch",
+        "White-rumped Shama", "Asian Fairy Bluebird", "Crested Treeswift", "Red Junglefowl", "Emerald Dove",
+        "Green-legged Partridge", "Black-naped Oriole", "Black-hooded Oriole", "Maroon Oriole", "Grey-eyed Bulbul",
+        "Yellow-vented Bulbul", "Plain-backed Sparrow", "Baya Weaver", "Streaked Weaver", "Red Avadavat",
+        "Banded Broadbill", "Blue-winged Pitta", "Savanna Nightjar", "Large-tailed Nightjar", "Barn Owl",
+        "Grey-throated Martin", "Golden-bellied Gerygone"
+      ],
+      included: [
+        "All transport including airport transfers",
+        "Road tolls, national park and all reserve entry fees",
+        "All accommodation in Cambodia including on the final night",
+        "All meals from dinner on first night to breakfast on departure day",
+        "Bottled drinking water",
+        "Boat trips (Prek Toal, Kratie/Mekong River)",
+        "Services of English-speaking birding guide",
+        "Temple tours guide",
+        "Local community guides at Tmatboey, Jahoo Gibbon Camp, and other sites"
+      ],
+      notIncluded: [
+        "International flights",
+        "Travel insurance",
+        "Entry visa",
+        "Alcoholic and soft drinks",
+        "Tips",
+        "Laundry",
+        "Hotel mini bar",
+        "Phone calls",
+        "Any other items of a personal nature"
+      ],
+      accommodation: "Siem Reap: Very comfortable hotel with air-conditioning, private bathroom/shower, and WiFi. Tmatboey, BeTreed Adventure, and Jahoo Gibbon Camp: Local eco-lodges with simple private shower/toilet facilities and fans. Chong Kran Roy: Tented camp with shared facilities. Kratie: Comfortable air-conditioned riverside hotel with WiFi. Sen Monorom and Pursat: Comfortable air-conditioned hotels with WiFi. Phnom Penh: Hotel in city with all facilities available. Single Supplement: $450 (Note: single accommodation available at Siem Reap, Kratie, Sen Monorom, Pursat, and Phnom Penh. Probably not available at BeTreed Adventure, Tmatboey, Jahoo Gibbon Camp, and Chong Kran Roy).",
+      bestSeason: "Year-round availability with optimal conditions during dry season (November-April peak: Jan-Feb-Mar) - best for Bengal Florican displays, Sarus Crane concentrations, and highland forest species",
+      physicalEffort: "This trip does not require great physical effort in terms of long uphill hikes, but requires participants fit enough to walk sometimes 2-5 kilometers in hot conditions. Walking is mostly on flat landscape, but some walking on uneven ground is needed to search for key species. Highland forest trails at Jahoo and Dak Dam involve some elevation but gentle slopes. The physical effort required is well within the capabilities of most healthy people with ability to deal with tropical climates and some moderate forest hiking.",
+      weather: "Hot and dry weather expected throughout tour. Always possibility of a shower or two given world's changing climate, but likely to be dry most if not all of the time. Midday temperatures likely very hot, but most woodland sites have low humidity. Wetland sites can be fairly humid. Highland sites (Sen Monorom, Dak Dam) are cooler with denser forests. Tour paced with plenty of time, not forced to be birding throughout heat of day.",
+      food: "Khmer cuisine similar to most Southeast Asian cooking but rather less spicy. Traditional cuisine recovering after knowledge lost through years of war. Lodge staff cook wide variety of good local food. Former French influence means good bread readily available in many areas. For beer lovers, surprisingly wide range of local brews to try. Bunong traditional meals at Jahoo Gibbon Camp.",
+      thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, light rain jacket, comfortable hiking shoes, layered clothing for cooler highland areas (Sen Monorom/Dak Dam), camera equipment, and field guide"
+    },
+    {
+      id: 14,
+      title: "Key Locations for Rare Birds",
+      description: "A typical Cambodia rare bird itinerary includes Siem Reap for the temples and birding areas like Prek Toal Bird Sanctuary for storks and pelicans, the Florican Grasslands and Tmatboey in the Northern Plains for the critically endangered Bengal Florican and Giant Ibis, the Vulture Restaurant at Boeng Toal for vultures, and Kratie for the Mekong Wagtail and Irrawaddy Dolphins. The best time to visit for a wide range of species, particularly waterbirds, is typically from January to April.",
+      duration: "Information Guide",
+      difficulty: "Information Only",
+      groupSize: "N/A",
+      price: "Free Information",
+      image: bird1,
+      category: "information",
+      highlights: ["Birding hotspots", "Species guide", "Travel tips", "Best timing", "Key locations"],
+      rating: 5.0,
+      isInformational: true,
+      thingsToBring: "This is an informational guide only"
+    }
+  ];
+
+  const handleTourDetails = (tour: typeof tours[0]) => {
+    setSelectedTour(tour);
+    setIsPopupOpen(true);
+  };
+
+  const filteredTours = selectedFilter === "all" 
+    ? tours 
+    : tours.filter(tour => tour.category === selectedFilter);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/90 to-nature-forest/60 z-10" />
+        <img
+          src={birdTourHero}
+          alt="Bird watching tours in Cambodia"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
+          <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight drop-shadow-lg">
+              Discover Cambodia's
+              <span className="text-nature-sand block">Rare Birds</span>
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/95 drop-shadow-md">
+              Expert-guided birding tours through Cambodia's most pristine wilderness areas
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Introduction */}
+      <section className="py-12 sm:py-16 lg:py-20 px-4 max-w-6xl mx-auto">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-nature-forest mb-4 sm:mb-6">
+            Cambodia Birding Adventures
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            Cambodia is home to over 644 bird species, including several globally threatened and endemic species. 
+            Our expertly guided tours take you to the country's most important birding sites, from the vast wetlands 
+            of Tonle Sap to the pristine forests of the Northern Plains, maximizing your chances of seeing rare and 
+            endangered species while supporting local conservation efforts.
+          </p>
+        </div>
+      </section>
+
+      {/* Filter Section */}
+      <section className="py-6 sm:py-8 lg:py-10 px-4 max-w-6xl mx-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 gap-4">
+          <h3 className="text-xl sm:text-2xl font-serif text-nature-forest">
+            Choose Your Adventure
+          </h3>
+          <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
+            <Filter className="w-4 h-4 sm:w-5 sm:h-5 text-nature-forest flex-shrink-0" />
+            <Select value={selectedFilter} onValueChange={setSelectedFilter}>
+              <SelectTrigger className="w-full sm:w-48">
+                <SelectValue placeholder="Filter by category" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Tours</SelectItem>
+                <SelectItem value="multi-day">Multi-Day Adventures</SelectItem>
+                <SelectItem value="cultural">Cultural & Birding</SelectItem>
+                <SelectItem value="water">Wetland Specialists</SelectItem>
+                <SelectItem value="sanctuary">Sanctuary Visits</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+
+        {/* Tours Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredTours.map((tour) => (
+            <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={tour.image}
+                  alt={tour.title}
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              
+              <CardContent className="p-6">
+                <h3 className="font-serif text-xl text-nature-forest mb-2 line-clamp-2">
+                  {tour.title}
+                </h3>
+                <p className="text-gray-600 mb-4 line-clamp-3">
+                  {tour.description}
+                </p>
+                
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Clock className="w-4 h-4" />
+                    <span>{tour.duration}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <Users className="w-4 h-4" />
+                    <span>{tour.groupSize}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <MapPin className="w-4 h-4" />
+                    <span>Cambodia</span>
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-1">
+                    {tour.highlights.slice(0, 3).map((highlight, index) => (
+                      <Badge key={index} variant="outline" className="text-xs">
+                        {highlight}
+                      </Badge>
+                    ))}
+                    {tour.highlights.length > 3 && (
+                      <Badge variant="outline" className="text-xs">
+                        +{tour.highlights.length - 3} more
+                      </Badge>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div className="text-2xl font-bold text-nature-forest">
+                    {tour.price}
+                  </div>
+                  <Button 
+                    onClick={() => handleTourDetails(tour)}
+                    className="bg-nature-forest hover:bg-nature-sage text-white border border-nature-forest hover:border-nature-sage shadow-md"
+                  >
+                    Know more
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-nature-forest text-white">
+        <div className="max-w-4xl mx-auto text-center px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
+            Ready to Start Your Birding Adventure?
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90">
+            Contact us to customize your perfect Cambodia birding experience
+          </p>
+          <Link to="/contact">
+            <Button size="lg" variant="outline" className="border-white bg-white/10 backdrop-blur-sm text-nature-forest hover:bg-white hover:text-nature-forest">
+              Get in Touch
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Tour Details Popup */}
+      <TourDetailsPopup
+        tour={selectedTour}
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
+    </div>
+  );
+};
+
+export default ToursPage;
