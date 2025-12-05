@@ -985,7 +985,7 @@ const ToursPage = () => {
       <section className="py-12 sm:py-16 lg:py-20 px-4 max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-10 lg:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-nature-forest mb-4 sm:mb-6">
-            Cambodia Birding Adventures
+            Cambodia
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
             Cambodia is home to over 644 bird species, including several globally threatened and endemic species. 
