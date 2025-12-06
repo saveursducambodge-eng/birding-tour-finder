@@ -18,7 +18,7 @@ import tailorbird15Day from "@/assets/tailorbird-15day.jpg";
 import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
 // Import bird images from gallery
-import bird1 from "@/assets/bird-1.jpg";
+import bird1 from "@/assets/painted-storks-colony.jpg";
 import bird2 from "@/assets/bird-2.jpg";
 import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/bird-4.jpg";
