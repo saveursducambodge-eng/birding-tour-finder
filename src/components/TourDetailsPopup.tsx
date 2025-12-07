@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Users, MapPin, Star, Calendar, Utensils, AlertCircle, Camera } from "lucide-react";
 import birdTourHero from "@/assets/bird-tour-hero.png";
-
 interface Tour {
   id: number;
   title: string;
@@ -32,20 +31,21 @@ interface Tour {
     whatToBring?: string;
   };
 }
-
 interface TourDetailsPopupProps {
   tour: Tour | null;
   isOpen: boolean;
   onClose: () => void;
 }
-
-const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
+const TourDetailsPopup = ({
+  tour,
+  isOpen,
+  onClose
+}: TourDetailsPopupProps) => {
   if (!tour) return null;
 
   // Special handling for informational content
   if (tour.isInformational && tour.title === "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Species") {
-    return (
-      <Dialog open={isOpen} onOpenChange={onClose}>
+    return <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
@@ -238,14 +238,12 @@ const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
             </div>
           </div>
         </DialogContent>
-      </Dialog>
-    );
+      </Dialog>;
   }
 
   // Special handling for Ang Trapaeng Thmor tour (ID 4)
   if (tour.id === 4) {
-    return (
-      <Dialog open={isOpen} onOpenChange={onClose}>
+    return <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
@@ -256,11 +254,7 @@ const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
           <div className="space-y-6">
             {/* Tour Image */}
             <div className="aspect-video overflow-hidden rounded-lg relative">
-              <img 
-                src={tour.image} 
-                alt={tour.title}
-                className="w-full h-full object-cover"
-              />
+              <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
             </div>
 
             {/* Introduction */}
@@ -289,9 +283,13 @@ const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
                 Other birds to look out for include Black-crowned Night Heron, Spotted Wood Owl, Barn Owl, Spotted Owlet, Yellow Bittern, Scarlet-backed Flowerpecker, Asian Koel, Cinnamon Bittern and Black Bittern, Watercock, Cotton Pygmy-goose, Knob-billed (Comb) Duck, Bronze-winged and Pheasant-tailed Jacanas, Black Kite, Eastern Marsh and Pied Harriers, Dark-necked Tailorbird, Yellow-vented Bulbul, Plain-backed Sparrow, and Black-collared Starling. Lanceolated Warbler is unusually common here, and we have a great chance of seeing this cryptic little bird well despite its secretive nature.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">
-                Visiting Ang Trapaeng Thmor, as well as Prek Toal, means that we can enjoy our first few days birding at a relaxed pace and see a large proportion of the species that inhabit these habitats, rather than rushing around. This location is also one of the few places remaining where truly wild Eld's Deer still exist, a critically endangered species which is important in maintaining this landscape.
-              </p>
+              <p className="text-muted-foreground leading-relaxed">Visiting Ang Trapaeng Thmor, as well as Prek Toal, means that we can enjoy our first few days birding at a relaxed pace and see a large proportion of the species that inhabit these habitats, rather than rushing around. This location is also one of the few places remaining where truly wild Eld's Deer still exist, a critically endangered species which is important in maintaining this landscape.
+
+
+
+The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low, Sarus Cranes return to Ang Trapeang Thmor. That's the best time slot for birding and bird photography in Cambodia. We recommend tours starting from January to the end of April. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species.
+
+Cambodia birding tour highlights include: Sarus Crane, Black-crowned Night Heron, Spotted Wood Owl, Barn Owl, Spotted Owlet, Yellow Bittern, Scarlet-backed Flowerpecker, Asian Koel, Cinnamon Bittern and Black Bittern, Watercock, Cotton Pygmy-goose, Knob-billed (Comb) Duck, Bronze-winged and Pheasant-tailed Jacanas, Black Kite, Eastern Marsh and Pied Harriers, Dark-necked Tailorbird, Yellow-vented Bulbul, Plain-backed Sparrow, and Black-collared Starling. Lanceolated Warbler, Black-headed Ibis, Painted Stork, Spot-billed Pelican, Oriental Darter, Asian Openbill.</p>
             </div>
 
             {/* Tour Overview */}
@@ -504,27 +502,19 @@ const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
 
             {/* Book Now Button */}
             <div className="pt-4 border-t">
-              <Button 
-                size="lg" 
-                className="w-full" 
-                variant="nature"
-                onClick={() => {
-                  const message = `Bonjour, je suis intéressé par le tour: ${tour.title} - $350 for two people`;
-                  const whatsappUrl = `https://wa.me/855969586510?text=${encodeURIComponent(message)}`;
-                  window.open(whatsappUrl, '_blank');
-                }}
-              >
+              <Button size="lg" className="w-full" variant="nature" onClick={() => {
+              const message = `Bonjour, je suis intéressé par le tour: ${tour.title} - $350 for two people`;
+              const whatsappUrl = `https://wa.me/855969586510?text=${encodeURIComponent(message)}`;
+              window.open(whatsappUrl, '_blank');
+            }}>
                 Book Now via WhatsApp - $350 for two people
               </Button>
             </div>
           </div>
         </DialogContent>
-      </Dialog>
-    );
+      </Dialog>;
   }
-
-  return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+  return <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="font-serif text-2xl text-primary">
@@ -535,11 +525,7 @@ const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
         <div className="space-y-6">
           {/* Tour Image */}
           <div className="aspect-video overflow-hidden rounded-lg relative">
-            <img 
-              src={tour.image} 
-              alt={tour.title}
-              className="w-full h-full object-cover"
-            />
+            <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
 
           {/* Tour Info */}
@@ -582,63 +568,49 @@ const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
           </div>
 
           {/* Best Season */}
-          {tour.bestSeason && (
-            <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
+          {tour.bestSeason && <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
               <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-green-600" />
                 Best Season
               </h4>
               <p className="text-sm text-muted-foreground">{tour.bestSeason}</p>
-            </div>
-          )}
+            </div>}
 
           {/* Schedule */}
-          {tour.schedule && (
-            <div>
+          {tour.schedule && <div>
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-2 text-primary">
                 <Calendar className="w-5 h-5 text-nature-forest" />
                 Itinerary
               </h3>
               <div className="space-y-3">
-                {Object.entries(tour.schedule).map(([time, activity]) => (
-                  <div key={time} className="p-4 bg-muted/50 rounded-lg">
+                {Object.entries(tour.schedule).map(([time, activity]) => <div key={time} className="p-4 bg-muted/50 rounded-lg">
                     <p className="text-sm font-semibold text-primary mb-1">{time}</p>
                     <p className="text-sm text-muted-foreground">{activity}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
-            </div>
-          )}
+            </div>}
 
           {/* Bird Species */}
-          {tour.birdSpecies && tour.birdSpecies.length > 0 && (
-            <div>
+          {tour.birdSpecies && tour.birdSpecies.length > 0 && <div>
               <h3 className="font-semibold text-lg mb-3 text-primary">Bird Species You May Encounter</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm text-muted-foreground">
-                {tour.birdSpecies.map((species, index) => (
-                  <div key={index} className="flex items-start gap-2">
+                {tour.birdSpecies.map((species, index) => <div key={index} className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-nature-forest rounded-full mt-2" />
                     <span>{species}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
-            </div>
-          )}
+            </div>}
 
           {/* Highlights */}
-          {tour.highlights && tour.highlights.length > 0 && (
-            <div>
+          {tour.highlights && tour.highlights.length > 0 && <div>
               <h3 className="font-semibold text-lg mb-3 text-primary">Tour Highlights</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {tour.highlights.map((highlight, index) => (
-                  <div key={index} className="flex items-center gap-2 text-sm">
+                {tour.highlights.map((highlight, index) => <div key={index} className="flex items-center gap-2 text-sm">
                     <div className="w-2 h-2 bg-nature-forest rounded-full" />
                     <span className="text-muted-foreground">{highlight}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
-            </div>
-          )}
+            </div>}
 
           {/* Tour Details */}
           <div className="p-6 bg-muted/50 rounded-lg space-y-4">
@@ -649,96 +621,71 @@ const TourDetailsPopup = ({ tour, isOpen, onClose }: TourDetailsPopupProps) => {
                 <strong className="text-nature-forest">Tour Cost:</strong> <span className="text-lg font-semibold text-primary">{tour.price}</span>
               </p>
               
-              {tour.included && (
-                <div>
+              {tour.included && <div>
                   <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
                     <Utensils className="w-4 h-4 text-green-600" />
                     Included in the tour cost:
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    {tour.included.map((item, index) => (
-                      <li key={index} className="flex items-start gap-2">
+                    {tour.included.map((item, index) => <li key={index} className="flex items-start gap-2">
                         <span className="text-green-600 mt-0.5">•</span>
                         <span>{item}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
-                </div>
-              )}
+                </div>}
               
-              {tour.notIncluded && (
-                <div>
+              {tour.notIncluded && <div>
                   <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
                     <AlertCircle className="w-4 h-4 text-orange-600" />
                     Not included in the tour cost:
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    {tour.notIncluded.map((item, index) => (
-                      <li key={index} className="flex items-start gap-2">
+                    {tour.notIncluded.map((item, index) => <li key={index} className="flex items-start gap-2">
                         <span className="text-orange-600 mt-0.5">•</span>
                         <span>{item}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
-                </div>
-              )}
+                </div>}
 
-              {tour.accommodation && (
-                <div>
+              {tour.accommodation && <div>
                   <h4 className="font-semibold text-sm mb-2">Accommodation:</h4>
                   <p className="text-sm text-muted-foreground">{tour.accommodation}</p>
-                </div>
-              )}
+                </div>}
               
-              {tour.physicalEffort && (
-                <div>
+              {tour.physicalEffort && <div>
                   <h4 className="font-semibold text-sm mb-2">Physical effort:</h4>
                   <p className="text-sm text-muted-foreground">{tour.physicalEffort}</p>
-                </div>
-              )}
+                </div>}
               
-              {tour.weather && (
-                <div>
+              {tour.weather && <div>
                   <h4 className="font-semibold text-sm mb-2">Weather:</h4>
                   <p className="text-sm text-muted-foreground">{tour.weather}</p>
-                </div>
-              )}
+                </div>}
               
-              {tour.food && (
-                <div>
+              {tour.food && <div>
                   <h4 className="font-semibold text-sm mb-2">Food:</h4>
                   <p className="text-sm text-muted-foreground">{tour.food}</p>
-                </div>
-              )}
+                </div>}
               
-              {tour.thingsToBring && (
-                <div>
+              {tour.thingsToBring && <div>
                   <h4 className="font-semibold text-sm mb-2">Note:</h4>
                   <p className="text-sm text-muted-foreground">{tour.thingsToBring}</p>
-                </div>
-              )}
+                </div>}
             </div>
           </div>
 
           {/* Book Now Button */}
           <div className="pt-4 border-t">
-            <Button 
-              size="lg" 
-              className="w-full" 
-              variant="nature"
-              onClick={() => {
-                const message = `Bonjour, je suis intéressé par le tour: ${tour.title} - ${tour.price}`;
-                const whatsappUrl = `https://wa.me/855969586510?text=${encodeURIComponent(message)}`;
-                window.open(whatsappUrl, '_blank');
-              }}
-            >
+            <Button size="lg" className="w-full" variant="nature" onClick={() => {
+            const message = `Bonjour, je suis intéressé par le tour: ${tour.title} - ${tour.price}`;
+            const whatsappUrl = `https://wa.me/855969586510?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+          }}>
               Book Now via WhatsApp - {tour.price}
             </Button>
           </div>
         </div>
       </DialogContent>
-    </Dialog>
-  );
+    </Dialog>;
 };
-
 export default TourDetailsPopup;
