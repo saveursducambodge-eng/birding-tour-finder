@@ -259,13 +259,9 @@ const TourDetailsPopup = ({
 
             {/* Introduction */}
             <div className="space-y-4">
-              <p className="text-muted-foreground leading-relaxed">
-                The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low, Sarus Cranes return to Ang Trapeang Thmor. That's the best time slot for birding and bird photography in Cambodia. We recommend tours starting from January to the end of April. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species.
-              </p>
               
-              <p className="text-muted-foreground leading-relaxed">
-                ​
-              </p>
+              
+              
 
               <p className="text-muted-foreground leading-relaxed">
                 This wetland was created as a reservoir during the Angkorian period, but Ang Trapaeng Thmor was rebuilt during the terrible Khmer Rouge regime in 1976. The Wildlife Conservation Society now manages this area as a reserve to protect, in particular, Sarus Cranes. Over three hundred of these fantastic cranes flock to this area, but there is much more to see here besides.
