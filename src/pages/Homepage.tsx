@@ -13,7 +13,7 @@ import giantIbisImage from "@/assets/giant-ibis-cambodia.jpg";
 import bird1 from "@/assets/bird-1.jpg";
 import bird2 from "@/assets/bird-2.jpg";
 import bird3 from "@/assets/bird-3.jpg";
-import bird4 from "@/assets/bird-4.jpg";
+import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/bird-5.jpg";
 import bird6 from "@/assets/bird-6.jpg";
 
