@@ -282,11 +282,7 @@ The high season for birdwatching in Cambodia starts from November to April (Peak
 Ang Trapaeng Thmor (ATT) birding tour highlights include: Sarus Crane, Black-crowned Night Heron, Spotted Wood Owl, Barn Owl, Spotted Owlet, Yellow Bittern, Scarlet-backed Flowerpecker, Asian Koel, Cinnamon Bittern and Black Bittern, Watercock, Cotton Pygmy-goose, Knob-billed (Comb) Duck, Bronze-winged and Pheasant-tailed Jacanas, Black Kite, Eastern Marsh and Pied Harriers, Dark-necked Tailorbird, Yellow-vented Bulbul, Plain-backed Sparrow, and Black-collared Starling. Lanceolated Warbler, Black-headed Ibis, Painted Stork, Spot-billed Pelican, Oriental Darter, Asian Openbill.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">Visiting Ang Trapaeng Thmor, as well as Prek Toal, means that we can enjoy our first few days birding at a relaxed pace and see a large proportion of the species that inhabit these habitats, rather than rushing around. This location is also one of the few places remaining where truly wild Eld's Deer still exist, a critically endangered species which is important in maintaining this landscape.  
-
-The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low, Sarus Cranes return to Ang Trapeang Thmor. That's the best time slot for birding and bird photography in Cambodia. We recommend tours starting from January to the end of April. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species.
-
- Ang Trapaeng Thmor birding tour highlights include: Sarus Crane, Black-crowned Night Heron, Spotted Wood Owl, Barn Owl, Spotted Owlet, Yellow Bittern, Scarlet-backed Flowerpecker, Asian Koel, Cinnamon Bittern and Black Bittern, Watercock, Cotton Pygmy-goose, Knob-billed (Comb) Duck, Bronze-winged and Pheasant-tailed Jacanas, Black Kite, Eastern Marsh and Pied Harriers, Dark-necked Tailorbird, Yellow-vented Bulbul, Plain-backed Sparrow, and Black-collared Starling. Lanceolated Warbler, Black-headed Ibis, Painted Stork, Spot-billed Pelican, Oriental Darter, Asian Openbill.
+              <p className="text-muted-foreground leading-relaxed">​
 
 
 
