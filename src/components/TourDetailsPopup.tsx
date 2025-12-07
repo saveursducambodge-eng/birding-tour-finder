@@ -272,7 +272,6 @@ const TourDetailsPopup = ({
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-
 Other birds we can see in the dry grassland here include Small and Blue-breasted Quail, Oriental Skylark, Indochinese Bushlark, and Singing Bushlark, Amor Stonechat, Pied Bush Chat, Richard's Pipit, Paddyfield Pipit, and numerous Red-throated Pipits are easy to see here, with Plain Prinia, Yellow-bellied Prinia, Oriental Reed Warbler, and Red Avadavat all likely to perform for us. The variety of habitats that include everything from wetlands to scattered woodland gives us a chance to see a handful of species in a single day.</p>
 
               <p className="text-muted-foreground leading-relaxed">Visiting Ang Trapaeng Thmor, as well as Prek Toal, means that we can enjoy our first few days birding at a relaxed pace and see a large proportion of the species that inhabit these habitats, rather than rushing around. This location is also one of the few places remaining where truly wild Eld's Deer still exist, a critically endangered species which is important in maintaining this landscape. The high season for birdwatching in Cambodia starts from November to April (Peak: Jan-Feb-Mar), when water levels are low, Sarus Cranes return to Ang Trapeang Thmor. That's the best time slot for birding and bird photography in Cambodia. We recommend tours starting from January to the end of April. This plan combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing all your target species. </p>
