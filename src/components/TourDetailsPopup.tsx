@@ -264,7 +264,7 @@ const TourDetailsPopup = ({
               </p>
               
               <p className="text-muted-foreground leading-relaxed">
-                Cambodia birding tour highlights include: Sarus Crane, Black-crowned Night Heron, Spotted Wood Owl, Barn Owl, Spotted Owlet, Yellow Bittern, Scarlet-backed Flowerpecker, Asian Koel, Cinnamon Bittern and Black Bittern, Watercock, Cotton Pygmy-goose, Knob-billed (Comb) Duck, Bronze-winged and Pheasant-tailed Jacanas, Black Kite, Eastern Marsh and Pied Harriers, Dark-necked Tailorbird, Yellow-vented Bulbul, Plain-backed Sparrow, and Black-collared Starling. Lanceolated Warbler, Black-headed Ibis, Painted Stork, Spot-billed Pelican, Oriental Darter, Asian Openbill.
+                ​
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
