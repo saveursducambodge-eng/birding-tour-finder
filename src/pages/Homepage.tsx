@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 import TourIntroPopup from "@/components/TourIntroPopup";
 import BirdingSitesMap from "@/components/BirdingSitesMap";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
-import giantIbisImage from "@/assets/giant-ibis-cambodia.jpg";
+import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/bird-1.jpg";
 import bird2 from "@/assets/bird-2.jpg";
