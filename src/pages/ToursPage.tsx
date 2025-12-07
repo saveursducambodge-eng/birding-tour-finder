@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Navigation from "@/components/Navigation";
 import TourDetailsPopup from "@/components/TourDetailsPopup";
-import giantIbisImage from "@/assets/giant-ibis-cambodia.jpg";
+import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHero from "@/assets/bird-tour-hero.png";
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
