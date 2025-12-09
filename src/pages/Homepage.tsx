@@ -15,7 +15,7 @@ import bird2 from "@/assets/bird-2.jpg";
 import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/bird-5.jpg";
-import bird6 from "@/assets/bird-6.jpg";
+import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
