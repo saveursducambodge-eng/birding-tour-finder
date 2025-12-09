@@ -23,7 +23,7 @@ import bird2 from "@/assets/bird-2.jpg";
 import bird3 from "@/assets/giant-ibis-tour3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
-import bird6 from "@/assets/bird-6.jpg";
+import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
 import bird9 from "@/assets/bird-9.jpg";
