@@ -37,7 +37,7 @@ const ToursPage = () => {
   const tours = [
     {
       id: 1,
-      title: "Half-Day to Birding Near Siem Reap - Phnom Krom Marshland",
+      title: "Half-Day to Birding Siem Reap Pearaing Biodiversity Conservation",
       description: "An easy and affordable half-day birding tour perfect for early risers or afternoon explorers. Just 15km from Siem Reap town (20 minutes by tuk-tuk), explore the Phnom Krom marshland where paddy fields and ponds stretch to the edge of the great Tonle Sap Lake. Spot 50+ wetland and grassland bird species in just a few hours of birding.",
       duration: "Half Day (4 hours)",
       difficulty: "Easy",
