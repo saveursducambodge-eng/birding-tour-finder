@@ -10,7 +10,7 @@ import BirdingSitesMap from "@/components/BirdingSitesMap";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 // Import bird images from gallery
-import bird1 from "@/assets/bird-1.jpg";
+import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
 import bird2 from "@/assets/tmatboey-ibis-2.jpg";
 import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
