@@ -14,7 +14,7 @@ import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
 import bird2 from "@/assets/tmatboey-ibis-2.jpg";
 import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
-import bird5 from "@/assets/bird-5.jpg";
+import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 
 const Homepage = () => {

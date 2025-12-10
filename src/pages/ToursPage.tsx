@@ -22,7 +22,7 @@ import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
 import bird2 from "@/assets/tmatboey-ibis-2.jpg";
 import bird3 from "@/assets/giant-ibis-tour3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
-import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
+import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
