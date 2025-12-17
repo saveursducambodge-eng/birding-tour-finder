@@ -24,10 +24,10 @@ const Navigation = () => {
         <Link to="/" className="flex items-center space-x-2 transition-colors hover:text-primary">
           <img 
             src="/lovable-uploads/af1668b4-36c9-4f67-b5b8-7ac91dac500e.png" 
-            alt="Cambodia Bird Tours Logo" 
+            alt="Pearaing Birding Tours Logo" 
             className="h-7 w-7 sm:h-8 sm:w-8"
           />
-          <span className="font-serif font-semibold text-base sm:text-lg text-primary">Cambodia Bird Tours</span>
+          <span className="font-serif font-semibold text-base sm:text-lg text-primary">Pearaing Birding Tours</span>
         </Link>
 
         {/* Desktop Navigation */}
