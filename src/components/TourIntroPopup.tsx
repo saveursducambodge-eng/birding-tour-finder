@@ -66,7 +66,8 @@ const TourIntroPopup = ({
             </h3>
             <p className="text-sm text-muted-foreground">
               ​Pearaing Birding Trails offers immersive birding and wildlife trips with unique access to conservation sites across Cambodia. Our tours support local communities and promote responsible eco-tourism while showcasing Cambodia’s rich biodiversity.
-Pearaing Biodiversity Conservation is an officially government-registered organization in Cambodia. We offer visitors unique access to birding and wildlife sites nationwide, with a mission to sustain Cambodia’s wildlife and communities through responsible ecotourism.
+
+ Pearaing Biodiversity Conservation is an officially government-registered organization in Cambodia. We offer visitors unique access to birding and wildlife sites nationwide, with a mission to sustain Cambodia’s wildlife and communities through responsible ecotourism.
 
             </p>
           </div>
