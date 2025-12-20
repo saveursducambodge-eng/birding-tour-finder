@@ -65,7 +65,7 @@ const TourIntroPopup = ({
               Giant Ibis - Cambodia's National Bird
             </h3>
             <p className="text-sm text-muted-foreground">
-              ​Pearaing Birding Trails offers birding and wildlife trips with unique access to conservation sites across Cambodia.
+              ​Pearaing Birding Trails offers immersive birding and wildlife trips with unique access to conservation sites across Cambodia. Our tours support local communities and promote responsible eco-tourism while showcasing Cambodia’s rich biodiversity.
             </p>
           </div>
 
