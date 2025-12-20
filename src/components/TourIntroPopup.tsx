@@ -4,60 +4,50 @@ import { X, MapPin, Calendar, Users, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
 interface TourIntroPopupProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
-const TourIntroPopup = ({ isOpen, onClose }: TourIntroPopupProps) => {
+const TourIntroPopup = ({
+  isOpen,
+  onClose
+}: TourIntroPopupProps) => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     if (isOpen) {
       setIsVisible(true);
     }
   }, [isOpen]);
-
   const handleMeetGuideClick = () => {
     onClose();
     // Navigation will be handled by Link component
   };
-
   if (!isOpen) return null;
-
-  const tourHighlights = [
-    {
-      icon: <MapPin className="w-5 h-5" />,
-      title: "Giant Ibis Discovery",
-      description: "Witness Cambodia's national bird in its natural habitat",
-    },
-    {
-      icon: <Calendar className="w-5 h-5" />,
-      title: "18 Unique Tours",
-      description: "From half-day adventures to multi-day expeditions, custom tours available",
-    },
-    {
-      icon: <Users className="w-5 h-5" />,
-      title: "Expert Guide Chamnan",
-      description: "15+ years of birding experience in Cambodia",
-    },
-    {
-      icon: <Clock className="w-5 h-5" />,
-      title: "Conservation Focus",
-      description: "Supporting bird protection and habitat preservation",
-    },
-  ];
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+  const tourHighlights = [{
+    icon: <MapPin className="w-5 h-5" />,
+    title: "Giant Ibis Discovery",
+    description: "Witness Cambodia's national bird in its natural habitat"
+  }, {
+    icon: <Calendar className="w-5 h-5" />,
+    title: "18 Unique Tours",
+    description: "From half-day adventures to multi-day expeditions, custom tours available"
+  }, {
+    icon: <Users className="w-5 h-5" />,
+    title: "Expert Guide Chamnan",
+    description: "15+ years of birding experience in Cambodia"
+  }, {
+    icon: <Clock className="w-5 h-5" />,
+    title: "Conservation Focus",
+    description: "Supporting bird protection and habitat preservation"
+  }];
+  return <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
       <Card className={`max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
         <CardContent className="p-8">
           {/* Header */}
           <div className="flex justify-between items-start mb-6">
             <div>
               <h2 className="font-serif text-3xl font-bold text-primary mb-2">
-                Welcome to Cambodia Bird Tours
+                Welcome to Pearaing Birding Trails
               </h2>
               <p className="text-muted-foreground">
                 Discover the magnificent birds of Cambodia with expert guidance
@@ -82,15 +72,13 @@ const TourIntroPopup = ({ isOpen, onClose }: TourIntroPopupProps) => {
 
           {/* Tour Highlights Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            {tourHighlights.map((highlight, index) => (
-              <div key={index} className="flex items-start space-x-3 p-4 rounded-lg border bg-card">
+            {tourHighlights.map((highlight, index) => <div key={index} className="flex items-start space-x-3 p-4 rounded-lg border bg-card">
                 <div className="text-primary mt-1">{highlight.icon}</div>
                 <div>
                   <h4 className="font-semibold text-sm mb-1">{highlight.title}</h4>
                   <p className="text-xs text-muted-foreground">{highlight.description}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Call to Action */}
@@ -108,8 +96,6 @@ const TourIntroPopup = ({ isOpen, onClose }: TourIntroPopupProps) => {
           </div>
         </CardContent>
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default TourIntroPopup;
