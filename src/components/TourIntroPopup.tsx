@@ -65,8 +65,7 @@ const TourIntroPopup = ({
               Giant Ibis - Cambodia's National Bird
             </h3>
             <p className="text-sm text-muted-foreground">
-              Join us for an unforgettable encounter with the endangered Giant Ibis, 
-              one of the world's rarest birds found only in Cambodia and Laos.
+              ​Pearaing Birding Trails offers birding and wildlife trips with unique access to conservation sites across Cambodia.
             </p>
           </div>
 
