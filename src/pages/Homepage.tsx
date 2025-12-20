@@ -16,56 +16,45 @@ import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
-
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
-
   useEffect(() => {
     // Show popup after 2 seconds on first visit
     const timer = setTimeout(() => {
       setShowPopup(true);
     }, 2000);
-
     return () => clearTimeout(timer);
   }, []);
-
-  const tourHighlights = [
-    {
-      title: "Giant Ibis Discovery",
-      description: "Encounter Cambodia's national bird in pristine wetlands",
-      icon: <Award className="w-6 h-6" />,
-      image: giantIbisImage,
-      duration: "Full Day",
-      difficulty: "Easy",
-    },
-    {
-      title: "Tonle Sap Adventure",
-      description: "Explore Southeast Asia's largest freshwater lake",
-      icon: <Compass className="w-6 h-6" />,
-      image: heroImage,
-      duration: "2 Days",
-      difficulty: "Moderate",
-    },
-    {
-      title: "Angkor Wat Birding",
-      description: "Combine ancient temples with early morning birding",
-      icon: <Heart className="w-6 h-6" />,
-      image: heroImage,
-      duration: "Half Day",
-      difficulty: "Easy",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const tourHighlights = [{
+    title: "Giant Ibis Discovery",
+    description: "Encounter Cambodia's national bird in pristine wetlands",
+    icon: <Award className="w-6 h-6" />,
+    image: giantIbisImage,
+    duration: "Full Day",
+    difficulty: "Easy"
+  }, {
+    title: "Tonle Sap Adventure",
+    description: "Explore Southeast Asia's largest freshwater lake",
+    icon: <Compass className="w-6 h-6" />,
+    image: heroImage,
+    duration: "2 Days",
+    difficulty: "Moderate"
+  }, {
+    title: "Angkor Wat Birding",
+    description: "Combine ancient temples with early morning birding",
+    icon: <Heart className="w-6 h-6" />,
+    image: heroImage,
+    duration: "Half Day",
+    difficulty: "Easy"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
       <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(/lovable-uploads/8407b453-6b75-479f-a6ee-acfad916d4bf.png)` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(/lovable-uploads/8407b453-6b75-479f-a6ee-acfad916d4bf.png)`
+      }}>
           <div className="absolute inset-0 bg-black/40" />
         </div>
         
@@ -77,9 +66,12 @@ const Homepage = () => {
             Explore Cambodia's
             <span className="block text-nature-sky mt-2">Wild Birds</span>
           </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto animate-slide-up">
-            Witness the magnificent Giant Ibis and discover over 500 bird species 
-            with an expert team guide in Cambodia's pristine natural habitats.
+          <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto animate-slide-up text-justify lg:text-lg">
+            
+
+
+Pearaing Biodiversity Conservation is an organization officially registered with the Cambodian government. We provide visitors with unique access to birding and wildlife sites across Cambodia. Our mission is to sustain Cambodia’s wildlife and local communities through ecotourism.
+
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up max-w-md sm:max-w-none mx-auto">
               <Link to="/tours" className="w-full sm:w-auto">
@@ -88,12 +80,7 @@ const Homepage = () => {
                   Discover Our Tours
                 </Button>
               </Link>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary w-full sm:w-auto"
-              onClick={() => setShowPopup(true)}
-            >
+            <Button size="lg" variant="outline" className="border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary w-full sm:w-auto" onClick={() => setShowPopup(true)}>
               <Compass className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Learn More
             </Button>
@@ -123,11 +110,7 @@ const Homepage = () => {
             {/* Half-Day Tour */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={bird1} 
-                  alt="Half-Day Birding Near Siem Reap"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={bird1} alt="Half-Day Birding Near Siem Reap" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -152,11 +135,7 @@ const Homepage = () => {
             {/* Full Day Prek Toal */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={bird2} 
-                  alt="Prek Toal Waterbird Sanctuary"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={bird2} alt="Prek Toal Waterbird Sanctuary" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -181,11 +160,7 @@ const Homepage = () => {
             {/* Koh Ker & Beng Melea */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={bird3} 
-                  alt="Koh Ker & Beng Melea"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={bird3} alt="Koh Ker & Beng Melea" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -210,11 +185,7 @@ const Homepage = () => {
             {/* Show more tours on larger screens */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 hidden lg:block">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={bird4} 
-                  alt="Angkor Wat Birding"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={bird4} alt="Angkor Wat Birding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -238,11 +209,7 @@ const Homepage = () => {
 
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 hidden lg:block">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={bird5} 
-                  alt="Tmatboey Bengal Florican"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={bird5} alt="Tmatboey Bengal Florican" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -267,11 +234,7 @@ const Homepage = () => {
             {/* Mobile view - Show only one more card */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 md:hidden">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={bird6} 
-                  alt="Tmatboey Bengal Florican"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={bird6} alt="Tmatboey Bengal Florican" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -343,12 +306,7 @@ const Homepage = () => {
       </section>
 
       {/* Tour Introduction Popup */}
-      <TourIntroPopup 
-        isOpen={showPopup}
-        onClose={() => setShowPopup(false)}
-      />
-    </div>
-  );
+      <TourIntroPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
+    </div>;
 };
-
 export default Homepage;
