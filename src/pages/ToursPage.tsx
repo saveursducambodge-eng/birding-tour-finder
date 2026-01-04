@@ -19,7 +19,7 @@ import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
-import bird2 from "@/assets/tmatboey-ibis-2.jpg";
+import bird2 from "@/assets/prek-toal-waterbird.jpg";
 import bird3 from "@/assets/giant-ibis-tour3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
