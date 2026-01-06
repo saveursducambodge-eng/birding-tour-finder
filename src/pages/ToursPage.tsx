@@ -16,6 +16,7 @@ import customTourIbisGroup from "@/assets/custom-tour-ibis-group.jpg";
 import vultureFeeding14Day from "@/assets/vulture-feeding-14day.jpg";
 import tailorbird15Day from "@/assets/tailorbird-15day.jpg";
 import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
+import dreamBirding16Day from "@/assets/dream-birding-16day.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
 import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
 import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
@@ -365,7 +366,7 @@ const ToursPage = () => {
     difficulty: "Moderate",
     groupSize: "6-12 people",
     price: "$5250 Per Person",
-    image: essentialCambodiaOwl,
+    image: dreamBirding16Day,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Mekong Wagtail", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Three Vulture Species", "Angkor Wat", "Pale-capped Pigeon"],
     rating: 5.0,
