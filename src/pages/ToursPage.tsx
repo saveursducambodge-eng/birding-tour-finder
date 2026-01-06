@@ -18,6 +18,7 @@ import tailorbird15Day from "@/assets/tailorbird-15day.jpg";
 import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
 import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
+import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import bird2 from "@/assets/prek-toal-waterbird.jpg";
@@ -199,7 +200,7 @@ const ToursPage = () => {
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$750 Per Person",
-    image: bird7,
+    image: beTreedAdventure,
     category: "multi-day",
     highlights: ["Bengal Florican", "White-rumped Pygmy-Falcon", "Tree House accommodation", "Conservation tourism", "Angkorian cave temples", "Forest zipline", "Community-based ecotourism"],
     rating: 4.9,
