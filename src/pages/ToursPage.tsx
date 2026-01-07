@@ -290,7 +290,7 @@ const ToursPage = () => {
     duration: "14 Days / 13 Nights (plus Day 15 transfer)",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$3232 Per Person",
+    price: "$3xxx Per Person",
     image: vultureFeeding14Day,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
