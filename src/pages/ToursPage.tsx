@@ -257,7 +257,7 @@ const ToursPage = () => {
     duration: "10 Days / 9 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$3750 Per Person",
+    price: "$3xxx Per Person",
     image: customTourIbisGroup,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Sarus Crane", "Mekong Wagtail", "Greater Adjutant", "Milky Stork", "Irrawaddy dolphins", "Phnom Penh city tour"],
