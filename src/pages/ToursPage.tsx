@@ -366,7 +366,7 @@ const ToursPage = () => {
     duration: "16 Days / 15 Nights (March 8-23, 2026)",
     difficulty: "Moderate",
     groupSize: "6-12 people",
-    price: "$5250 Per Person",
+    price: "$5xxx Per Person",
     image: dreamBirding16Day,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Mekong Wagtail", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Three Vulture Species", "Angkor Wat", "Pale-capped Pigeon"],
