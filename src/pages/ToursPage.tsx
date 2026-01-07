@@ -227,7 +227,7 @@ const ToursPage = () => {
     duration: "7 Days / 6 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$2890 Per Person",
+    price: "$2xxx Per Person",
     image: dreamBirding7Day,
     category: "multi-day",
     highlights: ["Giant Ibis", "Greater Adjutant", "Milky Stork", "Mekong Wagtail", "Cambodian Tailorbird", "White-shouldered Ibis", "Community eco-lodge", "Irrawaddy dolphins"],
