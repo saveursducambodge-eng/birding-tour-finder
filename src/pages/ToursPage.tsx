@@ -328,7 +328,7 @@ const ToursPage = () => {
     duration: "15 Days / 14 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$4150 Per Person",
+    price: "$4xxx Per Person",
     image: tailorbird15Day,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
