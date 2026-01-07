@@ -22,6 +22,7 @@ import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
 import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
+import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import bird2 from "@/assets/prek-toal-waterbird.jpg";
 import bird3 from "@/assets/koh-ker-beng-melea.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
@@ -447,7 +448,7 @@ const ToursPage = () => {
     difficulty: "Information Only",
     groupSize: "N/A",
     price: "Free Information",
-    image: bird1,
+    image: keyLocationsRareBirds,
     category: "information",
     highlights: ["Birding hotspots", "Species guide", "Travel tips", "Best timing", "Key locations"],
     rating: 5.0,
