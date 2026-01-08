@@ -264,7 +264,7 @@ const TourDetailsPopup = ({
               
 
               <p className="text-muted-foreground leading-relaxed">
-                This wetland was created as a reservoir during the Angkorian period, but Ang Trapaeng Thmor was rebuilt during the terrible Khmer Rouge regime in 1976. The Wildlife Conservation Society now manages this area as a reserve to protect, in particular, Sarus Cranes. Over three hundred of these fantastic cranes flock to this area, but there is much more to see here besides.
+                ​Ang Trapeang Thmor is an important wetland originally built during the Angkorian period and later restored in 1976. Today, it is protected and managed by the Wildlife Conservation Society, with a strong focus on conserving Sarus Cranes. More than 300 Sarus Cranes gather here each season.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
