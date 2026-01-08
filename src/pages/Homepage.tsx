@@ -209,7 +209,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
 
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 hidden lg:block">
               <div className="aspect-video overflow-hidden">
-                <img src={bird5} alt="Tmatboey Bengal Florican" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                <img alt="Tmatboey Bengal Florican" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src="/lovable-uploads/4ddb0e71-757a-4f2c-81c8-51288a4ecc95.jpg" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
