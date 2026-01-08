@@ -29,7 +29,7 @@ const Navigation = () => {
       <nav className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 transition-colors hover:text-primary">
-          <img alt="Pearaing Birding Tours Logo" className="h-7 w-7 sm:h-8 sm:w-8" src="/lovable-uploads/83814539-dbb0-4efe-9123-24cb30edf345.jpg" />
+          <img alt="Pearaing Birding Tours Logo" className="h-7 w-7 sm:h-8 sm:w-8" src="/lovable-uploads/1f44ea21-da34-4708-b702-7faa33818cdb.jpg" />
           <span className="font-serif font-semibold text-base sm:text-lg text-primary">Pearaing Birding Tours</span>
         </Link>
 
