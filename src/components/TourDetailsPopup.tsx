@@ -268,7 +268,7 @@ const TourDetailsPopup = ({
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Visiting this site gives us another chance to see many of the key birds from the previous day, as well as providing excellent views of good numbers of Sarus Cranes. Birdwatchers visiting this site make a significant contribution to conservation in Cambodia and the persistence of Sarus Cranes in the area. There are many Raptors, Greater Spotted Eagle, Roofed-winged Buzzard, Black-winged Kite flying and feeding over here too, but it is very shy, and we have a better chance to see these birds on the following day.
+                ​This reserve offers excellent birdwatching, with another chance to see many species from the previous day alongside large numbers of Sarus Cranes. Birdwatching here directly supports conservation efforts and helps ensure the continued survival of these cranes in Cambodia. Raptors such as Greater Spotted Eagle, Rufous-winged Buzzard, and Black-winged Kite are also present.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
