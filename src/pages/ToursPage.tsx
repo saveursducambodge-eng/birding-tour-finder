@@ -39,7 +39,7 @@ const ToursPage = () => {
   const tours = [{
     id: 1,
     title: "Pearaing Biodiversity Conservation",
-    description: "An easy and affordable half-day birding tour perfect for early risers or afternoon explorers. Just 15km from Siem Reap town (20 minutes by tuk-tuk), explore the Phnom Krom marshland where paddy fields and ponds stretch to the edge of the great Tonle Sap Lake. Spot 50+ wetland and grassland bird species in just a few hours of birding.",
+    description: "An easy and affordable half-day birding tour, perfect for early risers or afternoon explorers. Just 15 km from Siem Reap town (about 20 minutes by tuk-tuk), explore the Pearaing Biodiversity Conservation Center, which stretches to the edge of the great Tonle Sap Lake.\n\nThis important feeding site is home to many waterbirds, including Painted Stork, Milky Stork, Lesser Adjutant, Grey-headed Fish Eagle, Spot-billed Pelican, Oriental Darter, Indian Cormorant, Great Cormorant, Little Cormorant, and more than 70 wetland bird species.\n\nIn just a few hours of birding, you can spot over 50 wetland and grassland bird species.",
     duration: "Half Day (4 hours)",
     difficulty: "Easy",
     groupSize: "2-8 people",
