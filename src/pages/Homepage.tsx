@@ -121,7 +121,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
                   Half-Day Birding Near Siem Reap
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm line-clamp-3">
-                  Explore Phnom Krom marshland with 50+ wetland species, just 20 minutes from Siem Reap.
+                  Explore Pearaing Biodiversity Conservation Center with 50+ wetland species, just 20 minutes from Siem Reap.
                 </p>
                 <Link to="/tours">
                   <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary">

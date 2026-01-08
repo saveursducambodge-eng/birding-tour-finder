@@ -102,7 +102,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
   ];
 
   const tours = [
-    "Half-Day Birding Near Siem Reap - Phnom Krom Marshland (Half Day - 4 hours)",
+    "Half-Day Birding Near Siem Reap - Pearaing Biodiversity Conservation Center (Half Day - 4 hours)",
     "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating village (Full Day - 11 hours)", 
     "Trip full day to Koh Ker & Beng Melea for Bird watching and Temple Tour (Full Day - 12.5 hours)",
     "Full Birding and Angkor Wat Temple Tour (Full Day - 12.5 hours)",

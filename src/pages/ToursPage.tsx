@@ -46,7 +46,7 @@ const ToursPage = () => {
     price: "$85 Per Person",
     image: bird1,
     category: "cultural",
-    highlights: ["50+ bird species", "Phnom Krom marshland", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
+    highlights: ["50+ bird species", "Pearaing Biodiversity Conservation Center", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
     rating: 4.5,
     schedule: {
       "Option 1 - Morning": "5:30 AM pickup, 5:50 AM arrive at Phnom Krom, birding until 9:00 AM, 9:30 AM return to hotel",
