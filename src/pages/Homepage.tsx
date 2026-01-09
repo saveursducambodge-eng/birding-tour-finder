@@ -185,7 +185,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
             {/* Show more tours on larger screens */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 hidden lg:block">
               <div className="aspect-video overflow-hidden">
-                <img src={bird4} alt="Angkor Wat Birding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                <img alt="Angkor Wat Birding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src="/lovable-uploads/68a0503c-b86f-419d-a18f-5e3499f53c88.jpg" />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
