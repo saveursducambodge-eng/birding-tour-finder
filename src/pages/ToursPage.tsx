@@ -25,7 +25,7 @@ import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import bird2 from "@/assets/prek-toal-waterbird.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
-import bird4 from "@/assets/sarus-cranes.jpg";
+import bird4 from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg";
 import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import bird7 from "@/assets/bird-7.jpg";
