@@ -28,6 +28,7 @@ import bird3 from "@/assets/koh-ker-temple.png";
 import bird4 from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg";
 import bird5 from "@/assets/angkor-wat-temple-bird.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
+import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
 import bird9 from "@/assets/bird-9.jpg";
@@ -176,7 +177,7 @@ const ToursPage = () => {
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$1xxx Per Person",
-    image: tmatboeyIbis,
+    image: giantIbis2night2days,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
     rating: 4.8,
