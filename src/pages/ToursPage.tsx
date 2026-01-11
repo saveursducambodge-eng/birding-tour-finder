@@ -15,6 +15,7 @@ import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
 import customTourIbisGroup from "@/assets/custom-tour-ibis-group.jpg";
 import vultureFeeding14Day from "@/assets/vulture-feeding-14day.jpg";
 import tailorbird15Day from "@/assets/tailorbird-15day.jpg";
+import rareEndemicWoodpecker from "@/assets/rare-endemic-woodpecker.jpg";
 import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
 import dreamBirding16Day from "@/assets/dream-birding-16day.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
@@ -331,7 +332,7 @@ const ToursPage = () => {
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$4xxx Per Person",
-    image: tailorbird15Day,
+    image: rareEndemicWoodpecker,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
     rating: 5.0,
