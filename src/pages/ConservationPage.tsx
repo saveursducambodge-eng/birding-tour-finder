@@ -29,7 +29,7 @@ const ConservationPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-16">
               {/* Conservation Images */}
               <div className="space-y-6">
-                <img src={conservationBird} alt="Endangered bird species in Cambodia grassland" className="w-full rounded-2xl shadow-float object-cover" />
+                <img alt="Endangered bird species in Cambodia grassland" className="w-full rounded-2xl shadow-float object-cover" src="/lovable-uploads/1e875d04-ec5d-4087-844f-2d46cee8614d.jpg" />
                 <img alt="Eco-tourism boat tour with local guides and visitors" className="w-full rounded-2xl shadow-float object-cover" src="/lovable-uploads/0f6e4de3-1f73-40b6-9e51-f1868c109dbf.jpg" />
               </div>
               
