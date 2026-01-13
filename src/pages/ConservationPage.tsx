@@ -52,18 +52,7 @@ The Pearaing Birding Trails, we believe that protecting nature goes hand in hand
                 <div>
                   
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed">
-                    <p>       
-
-
-Pearaing Biodiversity Conservation is an officially government-registered organization dedicated to sustaining Cambodia’s wildlife and communities through conservation-focused tourism.
-
-Pearaing is named after a large natural dam that was historically believed to have served as a cooling pond for elephants. In 2015, the site was officially registered and recognized as an ecotourism destination under the name Pearaing Biodiversity Conservation Center (PBCC). Located in Sangkat Chreav, Krong Siem Reap—approximately 13 kilometers from the city center and 2 kilometers north of Tonle Sap Lake—Pearaing is one of the closest and most impressive birdwatching sites near Siem Reap.
-
-The area is easily accessible by bicycle, remork (tuk-tuk), van, car, or bus. Sangkat Chreav has been recognized by the Commune Chief as one of the safest and greenest areas in the province. With around 85% of local villagers earning their livelihoods from farming crops and vegetables, visitors can enjoy scenic rural landscapes that contrast beautifully with nearby temples and urban settings.
-
-Through the dedication and conservation efforts of local villagers, authorities, and Buddhist monks—supported by relevant government departments, the provincial governor, and the Cambodian government—Pearaing has developed into a strong and responsible ecotourism destination. Currently, 69 community members actively care for the area, dedicating their time and resources to protecting birds, fish, and flooded forests. A visit to PBCC offers a rich and immersive nature experience while directly supporting local communities and their conservation efforts.
-
-Eco-Tourism  we have established sustainably funded ecotourism projects managed by local communities across Cambodia. These initiatives aim to create alternative livelihoods for people living within protected areas, helping reduce dependence on activities that harm wildlife and forests. By linking community development with conservation, these projects support a "no hunting, no deforestation" policy and promote long-term protection of Cambodia's unique biodiversity.</p>
+                    <p>Eco-Tourism  we have established sustainably funded ecotourism projects managed by local communities across Cambodia. These initiatives aim to create alternative livelihoods for people living within protected areas, helping reduce dependence on activities that harm wildlife and forests. By linking community development with conservation, these projects support a "no hunting, no deforestation" policy and promote long-term protection of Cambodia's unique biodiversity.</p>
                   </div>
                 </div>
               </div>
