@@ -220,7 +220,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
                   Tmatboey - Giant Ibis Experience
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm line-clamp-3">
-                  Multi-day adventure to see Giant Ibis, Bengal Florican and visit Preah Vihear Temple.
+                  Multi-day adventure to see Giant Ibis, Bengal Florican near Tonle Sap Lake and DDF.
                 </p>
                 <Link to="/tours">
                   <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary">
