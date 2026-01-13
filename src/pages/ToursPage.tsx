@@ -407,7 +407,7 @@ const ToursPage = () => {
     duration: "19 Days / 18 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$xx Per Person",
+    price: "$xxx Per Person",
     image: wagtail19Day,
     category: "multi-day",
     highlights: ["Giant Ibis and White-shouldered Ibis at Tmatboey", "Three critically endangered vulture species at Vulture Restaurant", "Bengal Florican display at grasslands", "Bar-bellied Pitta and Coral-billed Ground Cuckoo at Chong Kran Roy", "Mekong Wagtail and Irrawaddy dolphins at Kratie", "Highland forest specialties: White-cheeked Laughingthrush, Orange-breasted Laughingthrush", "Green Peafowl and Germain's Peacock-Pheasant at Jahoo Gibbon Camp", "Silver-eared Mesia and montane species at Dak Dam", "Yellow-cheeked Gibbon calls in Keo Seima Wildlife Sanctuary", "Chinese Grassbird and Yellow-breasted Bunting at Pursat", "Cambodian Tailorbird - endemic species", "Greater Hornbills and Blue-eared Barbets", "Sarus Cranes at Ang Trapaeng Thmor", "Milky Stork, Greater Adjutant, and Spot-billed Pelican at Prek Toal", "Cultural birding at Angkor Wat temples"],
