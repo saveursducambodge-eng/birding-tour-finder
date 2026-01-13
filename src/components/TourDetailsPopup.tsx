@@ -274,7 +274,7 @@ const TourDetailsPopup = ({
               <p className="text-muted-foreground leading-relaxed">
 The surrounding dry grasslands are home to many species, including Small and Blue-breasted Quail, Oriental Skylark, Indochinese and Singing Bushlarks, Amur Stonechat, Pied Bushchat, Richard's Pipit, Paddyfield Pipit, and large flocks of Red-throated Pipits. Wetlands and scattered woodland add further diversity, allowing many species to be seen in a single visit.</p>
 
-              <p className="text-muted-foreground leading-relaxed">​Ang Trapeang Thmor and Prek Toal provide an excellent introduction to Cambodia’s key wetland and grassland habitats, allowing relaxed birding while recording a high proportion of resident and wintering species. The area also supports one of the last remaining populations of wild Eld’s Deer. The prime birdwatching season runs from November to April, with peak conditions from January to March, when Sarus Cranes return. This itinerary combines Cambodia’s most important birding sites with conservation-based tourism, maximizing opportunities to observe target species. </p>
+              
 
               <p className="text-muted-foreground leading-relaxed">​
 
