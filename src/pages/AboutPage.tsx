@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import samnangGuidePortrait from "@/assets/samnang-guide-portrait.jpg";
-import chamnanGuidePortrait from "@/assets/chamnan-guide-portrait.jpg";
+import sekiGuidePortrait from "@/assets/seki-guide-portrait.jpg";
 import ladongGuidePortrait from "@/assets/ladong-guide-portrait.jpg";
 
 interface Guide {
@@ -25,11 +25,14 @@ const guides: Guide[] = [
     ]
   },
   {
-    name: "Chamnan",
+    name: "So Seki",
     role: "Senior Guide",
-    image: chamnanGuidePortrait,
+    image: sekiGuidePortrait,
     description: [
-      "Guide description coming soon..."
+      "Hello my name is So Seki, I'm an English speaking guide. I have been working as a bird guide for over 12 years. I had 4 years of experience as a bird guide with tour companies and searching groups. Currently, I work as a freelance guide in Cambodia.",
+      "I have extensive experiences organizing tours across Cambodia including bird watching tours that highlight the country's rich wildlife, support conservation efforts, and promote our cultural heritage.",
+      "Our country is home to some of the world's rarest and most endangered birds including Giant Ibis, White-shouldered Ibis, Bengal Florican, and Greater Adjutant. These magnificent species face increasing threats from habitat loss and climate change. By joining a bird watching tour, you are not only experiencing the excitement of discovering these incredible birds — you are also contributing to their protection and supporting the conservation of Cambodia's unique natural heritage.",
+      "At Cambodia Bird Watching Tours, every journey supports both people and wildlife. Join us and help ensure that these rare species and their habitats continue to thrive for years to come."
     ]
   },
   {
