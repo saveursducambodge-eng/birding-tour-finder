@@ -36,11 +36,11 @@ const guides: Guide[] = [
     ]
   },
   {
-    name: "Ladong",
+    name: "So Seki",
     role: "Guide",
     image: ladongGuidePortrait,
     description: [
-      "Hello, my name is Ladong. I am an English-speaking bird guide with over 12 years of experience. I spent four years working as a bird guide with tour companies and research groups, and I currently work as a freelance guide in Cambodia.",
+      "Hello, my name is So Seki. I am an English-speaking bird guide with over 12 years of experience. I spent four years working as a bird guide with tour companies and research groups, and I currently work as a freelance guide in Cambodia.",
       "I have extensive experience organizing tours across Cambodia, including bird-watching tours that highlight the country's rich wildlife, support conservation efforts, and promote our cultural heritage. Cambodia is home to some of the world's rarest and most endangered birds, including the Giant Ibis, White-shouldered Ibis, Bengal Florican, and Greater Adjutant. These magnificent species face increasing threats from habitat loss and climate change.",
       "By joining a bird-watching tour, you not only experience the excitement of discovering these incredible birds, but you also contribute to their protection and support the conservation of Cambodia's unique natural heritage.",
       "In Cambodia, every bird-watching journey supports both people and wildlife. Join us and help ensure that these rare species and their habitats continue to thrive for years to come."
