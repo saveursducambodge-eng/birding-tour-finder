@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import samnangGuidePortrait from "@/assets/samnang-guide-portrait.jpg";
 import sekiGuidePortrait from "@/assets/seki-guide-portrait.jpg";
 import ladongGuidePortrait from "@/assets/ladong-guide-portrait.jpg";
+import chamnanGuidePortrait from "@/assets/chamnan-guide-portrait.jpg";
 
 interface Guide {
   name: string;
@@ -44,6 +45,18 @@ const guides: Guide[] = [
       "I have extensive experience organizing tours across Cambodia, including bird-watching tours that highlight the country's rich wildlife, support conservation efforts, and promote our cultural heritage. Cambodia is home to some of the world's rarest and most endangered birds, including the Giant Ibis, White-shouldered Ibis, Bengal Florican, and Greater Adjutant. These magnificent species face increasing threats from habitat loss and climate change.",
       "By joining a bird-watching tour, you not only experience the excitement of discovering these incredible birds, but you also contribute to their protection and support the conservation of Cambodia's unique natural heritage.",
       "In Cambodia, every bird-watching journey supports both people and wildlife. Join us and help ensure that these rare species and their habitats continue to thrive for years to come."
+    ]
+  },
+  {
+    name: "Chamnan",
+    role: "Guide",
+    image: chamnanGuidePortrait,
+    description: [
+      "Hello friends, my name is Chamnan. I am an official English-speaking guide certified by the Cambodian Ministry of Tourism. I have been working as both a Bird Guide and Temple Guide for over 11 years.",
+      "I have 5 years of experience as a bird guide with Sam Veasna Conservation Tours and 3 years with the Cambodia Bird Guide Association. Currently, I work as a freelance guide in Cambodia.",
+      "I have extensive experience organizing tours across Cambodia, including Bird Watching Tours and Temple Tours that highlight the country's rich wildlife, support conservation efforts, and promote our cultural heritage.",
+      "Our country is home to some of the world's rarest and most endangered birds, including the Giant Ibis, White-shouldered Ibis, Bengal Florican, and Greater Adjutant. These magnificent species face increasing threats from habitat loss and climate change. By joining a birdwatching tour, you're not only experiencing the excitement of discovering these incredible birds — you're also contributing to their protection and supporting the conservation of Cambodia's unique natural heritage.",
+      "At Cambodia Bird Watching Tours, every journey supports both people and wildlife. Join us, and help ensure that these rare species and their habitats continue to thrive for years to come."
     ]
   }
 ];
