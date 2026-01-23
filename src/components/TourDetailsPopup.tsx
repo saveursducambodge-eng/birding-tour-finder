@@ -555,7 +555,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
             <div className="pt-4 border-t">
               <Button size="lg" className="w-full" variant="nature" onClick={() => {
               const message = `Bonjour, je suis intéressé par le tour: ${tour.title} - $350 for two people`;
-              const whatsappUrl = `https://wa.me/855969586510?text=${encodeURIComponent(message)}`;
+              const whatsappUrl = `https://wa.me/85589529696?text=${encodeURIComponent(message)}`;
               window.open(whatsappUrl, '_blank');
             }}>
                 Book Now via WhatsApp - $350 for two people
@@ -729,7 +729,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           <div className="pt-4 border-t">
             <Button size="lg" className="w-full" variant="nature" onClick={() => {
             const message = `Bonjour, je suis intéressé par le tour: ${tour.title} - ${tour.price}`;
-            const whatsappUrl = `https://wa.me/855969586510?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/85589529696?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
           }}>
               Book Now via WhatsApp - {tour.price}

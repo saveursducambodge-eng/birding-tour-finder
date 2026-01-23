@@ -10,11 +10,11 @@ const Footer = () => {
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">Contact Information</h3>
             <div className="flex items-center space-x-3 text-sm sm:text-base">
               <Phone className="w-4 h-4 flex-shrink-0 text-nature-sky" />
-              <span className="text-white">+855 96 958 6510</span>
+              <span className="text-white">+855 89 529 696</span>
             </div>
             <div className="flex items-center space-x-3 text-sm sm:text-base">
               <Mail className="w-4 h-4 flex-shrink-0 text-nature-sky" />
-              <span className="break-all text-white">channelmeng0004@gmail.com</span>
+              <span className="break-all text-white">pearaingbirdingtrails@gmail.com</span>
             </div>
             <div className="flex items-center space-x-3 text-sm sm:text-base">
               <MapPin className="w-4 h-4 flex-shrink-0 text-nature-sky" />
