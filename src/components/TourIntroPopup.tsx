@@ -32,8 +32,8 @@ const TourIntroPopup = ({
     title: "18 Unique Tours",
     description: "From half-day adventures to multi-day expeditions, custom tours available"
   }, {
-    icon: <Users className="w-5 h-5" />,
-    title: "Expert Guide Chamnan",
+  icon: <Users className="w-5 h-5" />,
+    title: "Expert Pearaing Team Guide",
     description: "15+ years of birding experience in Cambodia"
   }, {
     icon: <Clock className="w-5 h-5" />,
