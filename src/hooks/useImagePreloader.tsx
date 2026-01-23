@@ -1,17 +1,25 @@
 import { useState, useEffect } from 'react';
 
+// Import images as ES6 modules for proper bundling
+import heroCambodiaJungle from '@/assets/hero-cambodia-jungle.jpg';
+import birdTourHero from '@/assets/bird-tour-hero.png';
+import samnangGuidePortrait from '@/assets/samnang-guide-portrait.jpg';
+import conservationCambodia from '@/assets/conservation-cambodia.jpg';
+import giantIbisCambodia from '@/assets/giant-ibis-cambodia.jpg';
+import newGuidePortrait from '@/assets/new-guide-portrait.jpg';
+
 // Images critiques à charger en priorité (homepage hero et navigation)
 const criticalImages = [
-  '/src/assets/hero-cambodia-jungle.jpg',
-  '/src/assets/bird-tour-hero.png',
-  '/src/assets/ladong-guide-portrait.jpg'
+  heroCambodiaJungle,
+  birdTourHero,
+  samnangGuidePortrait
 ];
 
 // Images secondaires (pages intérieures uniquement)
 const secondaryImages = [
-  '/src/assets/conservation-cambodia.jpg',
-  '/src/assets/giant-ibis-cambodia.jpg',
-  '/src/assets/new-guide-portrait.jpg',
+  conservationCambodia,
+  giantIbisCambodia,
+  newGuidePortrait,
   '/lovable-uploads/8407b453-6b75-479f-a6ee-acfad916d4bf.png',
   '/lovable-uploads/af1668b4-36c9-4f67-b5b8-7ac91dac500e.png'
 ];
