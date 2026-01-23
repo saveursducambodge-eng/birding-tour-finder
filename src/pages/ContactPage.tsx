@@ -56,7 +56,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
     `.trim();
     
     // Create mailto link
-    const mailtoLink = `mailto:webalpch@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:pearaingbirdingtrails@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open email client
     window.location.href = mailtoLink;
@@ -78,13 +78,13 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone",
-      details: "+855 96 958 6510",
+      details: "+855 89 529 696",
       description: "WhatsApp available"
     },
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email", 
-      details: "channelmeng0004@gmail.com",
+      details: "pearaingbirdingtrails@gmail.com",
       description: "Available 24/7 - Response within 24h"
     },
     {
@@ -343,12 +343,12 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                       className="border-nature-sky text-nature-sky hover:bg-nature-sky hover:text-white"
                       onClick={() => {
                         const message = "Bonjour, je suis intéressé par vos tours d'observation d'oiseaux.";
-                        const whatsappUrl = `https://wa.me/855969586510?text=${encodeURIComponent(message)}`;
+                        const whatsappUrl = `https://wa.me/85589529696?text=${encodeURIComponent(message)}`;
                         window.open(whatsappUrl, '_blank');
                       }}
                     >
                       <MessageSquare className="w-4 h-4 mr-2" />
-                      WhatsApp: +855 96 958 6510
+                      WhatsApp: +855 89 529 696
                     </Button>
                   </CardContent>
                 </Card>
