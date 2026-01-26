@@ -81,7 +81,7 @@ const Footer = () => {
           {/* Our Partner */}
           <div className="space-y-3 sm:space-y-4">
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">OUR PARTNER</h3>
-            <p className="text-xs sm:text-sm text-white/90 mb-2">Website</p>
+            
             <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-nature-sky/50">
               <img 
                 src={partnerLogo} 
