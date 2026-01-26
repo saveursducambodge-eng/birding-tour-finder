@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-nature-forest via-nature-forest-light to-nature-forest text-white mt-16 border-t-4 border-nature-sky/50">
       <div className="container mx-auto px-4 py-6 sm:py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
           {/* Contact Info */}
           <div className="space-y-3 sm:space-y-4">
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">Contact Information</h3>
@@ -79,21 +79,34 @@ const Footer = () => {
           </div>
 
           {/* Our Partner */}
-          <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
+          <div className="space-y-3 sm:space-y-4">
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">OUR PARTNER</h3>
             <p className="text-xs sm:text-sm text-white/90 mb-2">Website</p>
-            <a 
-              href="https://webalp.ch" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-nature-sky/50 hover:border-nature-sky transition-colors duration-200"
-            >
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-nature-sky/50">
               <img 
                 src={partnerLogo} 
                 alt="Partner Logo" 
                 className="w-full h-full object-cover"
               />
-            </a>
+            </div>
+          </div>
+
+          {/* Made by */}
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">Website</h3>
+            <p className="text-xs sm:text-sm text-white/90">
+              Made with{" "}
+              <span className="text-red-400 text-sm sm:text-base">❤️</span>{" "}
+              by{" "}
+              <a 
+                href="https://webalp.ch" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-nature-sky hover:text-nature-sand transition-colors duration-200 underline decoration-transparent hover:decoration-current font-medium"
+              >
+                webalp
+              </a>
+            </p>
           </div>
         </div>
 
