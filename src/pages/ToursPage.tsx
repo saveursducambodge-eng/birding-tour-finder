@@ -56,7 +56,7 @@ const ToursPage = () => {
       "Option 2 - Afternoon": "2:30 PM pickup, 2:50 PM arrive at marshland, birding until 5:00 PM, 5:30 PM return to hotel"
     },
     birdSpecies: ["Cinnamon Bittern", "Yellow Bittern", "Lesser Coucal", "Black Bittern", "Baya Weaver", "Asian Golden Weaver", "Black-browed Reed Warbler", "Oriental Reed Warbler", "Bright-headed Cisticola", "Bronze-winged Jacana", "Pheasant-tailed Jacana", "Greater Adjutant", "Little Egret", "Intermediate Egret", "Great Egret", "Grey Heron", "Purple Heron", "Black-crowned Night Heron", "Cattle Egret", "Indian Pond Heron", "Painted Stork", "Asian Openbill", "Spot-billed Pelican", "Little Cormorant", "Indian Cormorant", "Oriental Darter", "White-throated Kingfisher", "Common Kingfisher", "Pied Kingfisher", "White-breasted Waterhen", "Common Moorhen", "Purple Swamphen"],
-    included: ["Transport by tuk-tuk, car, or boat", "English-speaking birding guide", "Bottled drinking water", "All site entry fees"],
+    included: ["Transport by tuk-tuk or car and boat at Pearaing Birding site", "English-speaking birding guide", "Bottled drinking water", "All site entry fees"],
     notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
     bestSeason: "Year-round availability with best birding conditions in early morning or late afternoon",
     physicalEffort: "Easy. Walking 3-4km on mostly flat wetland terrain. Suitable for all fitness levels comfortable with tropical conditions.",
