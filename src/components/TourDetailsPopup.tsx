@@ -680,7 +680,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                   <ul className="text-sm text-muted-foreground space-y-1">
                     {tour.included.map((item, index) => <li key={index} className="flex items-start gap-2">
                         <span className="text-green-600 mt-0.5">•</span>
-                        <span>{item}</span>
+                        <span className="">{item}</span>
                       </li>)}
                   </ul>
                 </div>}
