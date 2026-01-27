@@ -116,7 +116,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
                   <Badge variant="outline" className="text-xs">Half Day</Badge>
-                  <Badge variant="outline" className="text-xs">$85</Badge>
+                  <Badge variant="outline" className="text-xs">$122</Badge>
                 </div>
                 <h3 className="font-serif text-lg md:text-xl font-semibold mb-3 text-primary">
                   Half-Day Birding Near Siem Reap
