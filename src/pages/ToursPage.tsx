@@ -25,7 +25,7 @@ import beTreedAdventureBirds from "@/assets/be-treed-adventure-birds.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
-import bird2 from "@/assets/prek-toal-waterbird.jpg";
+import bird2 from "@/assets/prek-toal-painted-storks.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
 import bird4 from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg";
 import bird5 from "@/assets/angkor-wat-temple-bird.jpg";
