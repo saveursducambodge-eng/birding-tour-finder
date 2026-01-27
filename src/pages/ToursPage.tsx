@@ -70,7 +70,7 @@ const ToursPage = () => {
     duration: "Full Day (11 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$285 Per Person",
+    price: "$255 Per Person",
     image: bird2,
     category: "water",
     highlights: ["Greater Adjutant", "Milky Stork", "Floating village", "Ramsar wetlands", "Community restaurant", "150+ bird species"],
