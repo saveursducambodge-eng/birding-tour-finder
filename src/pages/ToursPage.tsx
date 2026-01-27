@@ -46,7 +46,7 @@ const ToursPage = () => {
     duration: "Half Day (4 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$147 Per Person",
+    price: "$167 Per Person",
     image: bird1,
     category: "cultural",
     highlights: ["50+ bird species", "Pearaing Biodiversity Conservation Center", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
