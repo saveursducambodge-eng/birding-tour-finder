@@ -16,6 +16,7 @@ import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
+import kohKerImage from "@/assets/koh-ker-bird-tours.jpg";
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
@@ -160,7 +161,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
             {/* Koh Ker & Beng Melea */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300">
               <div className="aspect-video overflow-hidden">
-                <img alt="Koh Ker & Beng Melea" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src="/lovable-uploads/c5e22229-7dd8-41ca-a189-58c72a0ed413.jpg" />
+                <img alt="Koh Ker & Beng Melea" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src={kohKerImage} />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
