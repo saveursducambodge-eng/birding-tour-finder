@@ -426,7 +426,6 @@ const ToursPage = () => {
       "Day 10: Full Day Tmatboey - Giant & White-shouldered Ibis": "Pre-sunrise departure to seasonal wetlands where Giant Ibis feeds at dawn. Watch Cambodia's national bird foraging. Continue birding dry forest trails for woodpeckers, Brown Wood Owl, Spotted Wood Owl, Brown Fish Owl, White-bellied Woodpecker, Great Slaty Woodpecker, Rufous-bellied Woodpecker, Greater and Lesser Yellownapes, Greater Flameback, Grey-capped Pygmy Woodpecker, Freckle-breasted Woodpecker. Afternoon visit to White-shouldered Ibis gathering sites. Evening birding walk for owls and nightjars. Overnight at Tmatboey.",
       "Day 11: Morning Tmatboey to Vulture Restaurant": "Final morning hours at Tmatboey. If roosting tree discovered, possible experience of Giant Ibis waking at roost. Mid-morning transfer to Boeng Toal Vulture Restaurant at Dung Plet Village. Birding around camp for Yellow-crowned Woodpecker and White-browed Fantail. Visit large hide constructed for vulture-viewing. Overnight camping in forest.",
       "Day 12: Vulture Restaurant to Kratie": "Morning at Vulture Restaurant - community-run conservation project providing controlled feeding to attract three critically endangered vulture species: White-rumped Vulture, Slender-billed Vulture, and Red-headed Vulture. Watch from hide as vultures feed. Mid-morning departure to Kratie alongside Mekong River (4-hour journey, lunch in Stung Treng).  Overnight in Kratie.",
-      
       "Day 14: Full Day Jahoo Gibbon Camp": "Full day immersive birdwatching in Keo Seima's evergreen and mixed deciduous forest. Pre-dawn awakening to echoing Yellow-cheeked Crested Gibbon calls alongside Greater Hornbills. Jahoo known for Green Peafowl sightings. Trek through bamboo thickets and streamside trails for Orange-breasted Trogon, Red-headed Trogon, Banded Kingfisher, flycatchers, warblers, barbets, broadbills, sunbirds, flowerpeckers. Overnight at Jahoo.",
       "Day 15: Jahoo to Sen Monorom and Dak Dam": "Pre-sunrise Jahoo dawn chorus: haunting Yellow-cheeked Gibbon and Black-shanked Douc. After breakfast, We exploration for sunbirds, flowerpeckers, kingfishers. Afternoon 2:30 PM birding specifically for Green Peafowl. Departure to Sen Monorom (highland town), check-in, then late afternoon birding at Dak Dam highland plateau near Vietnamese border.  Overnight in Sen Monorom.",
       "Day 16: Full Day Dak Dam": "Full day dedicated to Dak Dam's diverse highland habitats.  Early hours bring mixed flocks of minivets, bulbuls, shrikes, yuhinas, Mesia, Maroon Oriole. Late morning breakfast for active sunbirds/flowerpeckers. After lunch, afternoon deeper forest trails. Birding until dark. Overnight Sen Monorom.",
@@ -490,10 +489,7 @@ const ToursPage = () => {
             Cambodia Birding Adventures
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            Cambodia is home to over 644 bird species, including several globally threatened and endemic species. 
-            Our expertly guided tours take you to the country's most important birding sites, from the vast wetlands 
-            of Tonle Sap to the pristine forests of the Northern Plains, maximizing your chances of seeing rare and 
-            endangered species while supporting local conservation efforts.
+            Cambodia is home to over 600 bird species, including several globally threatened and endemic species. Our expertly guided tours take you to the country's most important birding sites, from the vast wetlands of Tonle Sap to the pristine forests of the Northern Plains, maximizing your chances of seeing rare and endangered species while supporting local conservation efforts.
           </p>
         </div>
       </section>
@@ -525,11 +521,7 @@ const ToursPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredTours.map(tour => <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={tour.image} 
-                  alt={tour.title} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               </div>
               
               <CardContent className="p-6">
