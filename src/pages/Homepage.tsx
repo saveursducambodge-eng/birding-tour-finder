@@ -11,7 +11,7 @@ import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
-import bird2 from "@/assets/tmatboey-ibis-2.jpg";
+import bird2 from "@/assets/prek-toal-storks.jpg";
 import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
