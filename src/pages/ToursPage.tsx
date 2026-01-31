@@ -403,7 +403,7 @@ const ToursPage = () => {
   }, {
     id: 13,
     title: "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Itinerary in Cambodia",
-    description: "The itinerary 19-day is combines Cambodia's remarkable biodiversity with cultural heritage and offering an unforgettable birdwatching adventure in Cambodia. This extensive cross-country journey also serves as a fundraising tour to directly support our conservation and community work. The tour begins in birding sites including Siem Reap, Prek Toal, Ang Trapaeng Thmor, Florican Grasslands, BeTreed, Tmatboey, Vulture Restaurant, Kratie, Jahoo Gibbon Camp (Keo Seima), Sen Monorom, Dak Dam highlands, Pursat, and Phnom Penh, maximizing encounters with Cambodia's mega species including lowland and highland specialties.",
+    description: "The itinerary 19-day is combines Cambodia's remarkable biodiversity with cultural heritage and offering an unforgettable birdwatching adventure in Cambodia. This extensive cross-country journey also serves as a fundraising tour to directly support our conservation and community work. The tour begins in birding sites including Siem Reap, Prek Toal, Ang Trapaeng Thmor, Florican Grasslands, BeTreed, Tmatboey, Vulture Restaurant, Kratie, Keo Seima, Sen Monorom, Dak Dam highlands, Pursat, and Phnom Penh, maximizing encounters with Cambodia's mega species including lowland and highland specialties.",
     duration: "19 Days / 18 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
