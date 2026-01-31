@@ -23,7 +23,7 @@ import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
 import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
 import beTreedAdventureBirds from "@/assets/be-treed-adventure-birds.jpg";
 // Import bird images from gallery
-import bird1 from "@/assets/pearaing-biodiversity.jpg";
+import bird1 from "@/assets/black-shanked-douc-2.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import bird2 from "@/assets/prek-toal-painted-storks.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
