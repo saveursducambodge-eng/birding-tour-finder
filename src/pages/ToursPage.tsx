@@ -21,7 +21,7 @@ import dreamBirding16Day from "@/assets/dream-birding-16day.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
 import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
 import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
-import beTreedAdventureBirds from "@/assets/black-shanked-douc.jpg";
+import beTreedAdventureBirds from "@/assets/be-treed-adventure-birds.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
