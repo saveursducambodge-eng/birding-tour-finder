@@ -122,7 +122,7 @@ const ToursPage = () => {
     duration: "Full Day (10.5 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$350 for two people",
+    price: "$250 Per Person",
     image: bird4,
     category: "water",
     highlights: ["Sarus Crane", "Greater Spotted Eagle", "Eastern Marsh Harrier", "Wetland birding", "Conservation reserve", "Eld's Deer habitat"],
