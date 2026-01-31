@@ -218,7 +218,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
                   <Badge variant="outline" className="text-xs">$898</Badge>
                 </div>
                 <h3 className="font-serif text-lg md:text-xl font-semibold mb-3 text-primary">
-                  Tmatboey - Giant Ibis Experience
+                   Giant Ibis Experience Tours 
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm line-clamp-3">
                   Multi-day adventure to see Giant Ibis, Bengal Florican near Tonle Sap Lake and DDF.
