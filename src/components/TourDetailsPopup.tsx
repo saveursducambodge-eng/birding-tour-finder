@@ -198,7 +198,7 @@ const TourDetailsPopup = ({
                 
                 <h4 className="text-green-600 font-semibold mt-4">Included in the tour cost:</h4>
                 <p className="text-muted-foreground">
-                  All transport including airport transfers, road tolls, national park and all reserve entry fees, all accommodation in Cambodia, including on the final night of the tour, all meals from dinner on the first night to breakfast on the day of departure, bottled drinking water, boat trips, services of English-speaking birding guide and Temple Tours guide.
+                  All transport including airport transfers, road tolls, national park and all reserve entry fees, all accommodation in Cambodia, including on the final night of the tour, all meals from dinner on the first night to breakfast on the day of departure, bottled drinking water, boat trips, services of English-speaking birding guide.
                 </p>
                 
                 <h4 className="text-green-600 font-semibold mt-4">Not included in the tour cost:</h4>
