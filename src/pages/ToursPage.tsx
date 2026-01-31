@@ -178,7 +178,7 @@ const ToursPage = () => {
     duration: "3 Days / 2 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$885 For Two Person",
+    price: "$675 Per Person",
     image: giantIbis2night2days,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
