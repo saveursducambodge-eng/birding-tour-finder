@@ -164,7 +164,7 @@ const ToursPage = () => {
       "5:30 PM": "Driver will bring you back to the hotel"
     },
     birdSpecies: ["Hainan Blue Flycatcher", "Taiga Flycatcher", "Asian Brown Flycatcher", "Forest Wagtail", "White-throated Rock Thrush", "Black-capped Kingfisher", "Asian Barred Owlet", "Black Baza", "Alexandrine Parakeet", "Red-breasted Parakeet", "Ashy Minivet", "Greater Racket-tailed Drongo", "Yellow-browed Warbler", "Pale-legged Leaf Warbler"],
-    included: ["All transport including airport transfers", "All reserve entry fees", "Meals, breakfast and lunch on the day of departure", "Bottled drinking water", "Boat trips", "Services of English-speaking birding guide"],
+    included: ["All transport", "All reserve entry fees", "Meals, breakfast and lunch on the day of departure", "Bottled drinking water", "Boat trips", "Services of English-speaking birding guide"],
     notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips", "Laundry", "Hotel mini bar", "Phone calls", "Any other items of a personal nature"],
     bestSeason: "November to April (Peak: January-February-April) for optimal birding and temple photography conditions",
     physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 1.3 kilometres in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
