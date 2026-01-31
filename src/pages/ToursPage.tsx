@@ -184,7 +184,7 @@ const ToursPage = () => {
     highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
     rating: 4.8,
     schedule: {
-      "Day 1": "Bengal Florican Grassland & Russey Trep - 5:00 AM pickup from hotel by English-speaking bird guide with packed breakfast from Siem Reap, 6:30 AM arrive Florican grassland and have breakfast while bird watching, 10:00 AM lunch at restaurant in Beng Mealea, 1:00 PM travel to Techo Sen Russey Trep, 4:00 PM arrive Russey Trep, relax and look at Giant Ibis and White-shouldered Ibis at roosting tree, 6:30 PM night walk for owls and dinner",
+      "Day 1": "Bengal Florican Grassland & Russey Trep - 5:00 AM pickup from hotel by English-speaking bird guide with packed breakfast from Siem Reap, 6:30 AM arrive Florican grassland and have breakfast while bird watching, 10:00 AM lunch at restaurant in Presh Vihear Town, 1:00 PM travel to Techo Sen Russey Trep, 4:00 PM arrive Russey Trep, relax and look at Giant Ibis and White-shouldered Ibis at roosting tree, 6:30 PM night walk for owls and dinner",
       "Day 2": "Full Day Bird Watching at Russey Trep - 4:30 AM packed tea, coffee, and breakfast, moving to Giant Ibis roosting tree, 6:00 AM bird watching till 11:00 AM, 11:30 AM lunch at community restaurant, 1:00 PM continue birding in another area till 4:30 PM, 6:30 PM dinner and overnight",
       "Day 3": "Techo Sen Russey Trep - 6:30 AM tea and coffee, heading to Birding, 12:00 PM lunch at local restaurant, 1:00 PM turn back to Siem Reap hotel with birding stops, 5:00 PM arrive Siem Reap hotel and drop off"
     },
