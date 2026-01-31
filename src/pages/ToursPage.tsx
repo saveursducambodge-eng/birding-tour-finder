@@ -94,7 +94,7 @@ const ToursPage = () => {
     duration: "Full Day (12.5 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$265 Per Person",
+    price: "$245 Per Person",
     image: bird3,
     category: "cultural",
     highlights: ["White-Rumped Pygmy Falcon", "8 Woodpecker species", "Remote temples", "Forest birding", "Temple exploration", "Beng Mealea ruins"],
