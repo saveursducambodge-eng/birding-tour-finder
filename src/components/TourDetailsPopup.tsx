@@ -507,7 +507,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                     Included in the tour cost:
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    All transport including airport transfers, road tolls, national park and all reserve entry fees, all meals from Lunch and Breakfast on the first night to breakfast on the day of departure, bottled drinking water, boat trips, services of English-speaking birding guide and Temple Tours guide.
+                    All transport , road tolls, national park and all reserve entry fees, all meals from Lunch and Breakfast on the first night to breakfast on the day of departure, bottled drinking water, boat trips, services of English-speaking birding guide and Temple Tours guide.
                   </p>
                 </div>
                 
