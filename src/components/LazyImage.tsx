@@ -31,10 +31,15 @@ const LazyImage = ({
     }
     return () => observer.disconnect();
   }, []);
-  return <div ref={imgRef} className={`${aspectRatio} overflow-hidden ${className}`} onClick={onClick}>
+  return <div ref={imgRef} className={`${aspectRatio} overflow-hidden relative ${className}`} onClick={onClick}>
       {!isInView ? <Skeleton className="w-full h-full" /> : <>
-          {!isLoaded && <Skeleton className="w-full h-full absolute" />}
-          
+          {!isLoaded && <Skeleton className="w-full h-full absolute inset-0" />}
+          <img 
+            src={src} 
+            alt={alt} 
+            className="w-full h-full object-cover"
+            onLoad={() => setIsLoaded(true)}
+          />
         </>}
     </div>;
 };
