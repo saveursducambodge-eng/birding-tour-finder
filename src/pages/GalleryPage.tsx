@@ -1,30 +1,10 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import LazyImage from "@/components/LazyImage";
-import bird1 from "@/assets/bird-1.jpg";
-import bird2 from "@/assets/bird-2.jpg";
-import bird3 from "@/assets/bird-3.jpg";
-import bird4 from "@/assets/bird-4.jpg";
-import bird5 from "@/assets/bird-5.jpg";
-import bird6 from "@/assets/bird-6.jpg";
-import bird7 from "@/assets/bird-7.jpg";
-import bird8 from "@/assets/bird-8.jpg";
-import bird9 from "@/assets/bird-9.jpg";
-import bird10 from "@/assets/bird-10.jpg";
-import bird11 from "@/assets/bird-11.jpg";
-import bird12 from "@/assets/bird-12.jpg";
-import bird13 from "@/assets/bird-13.jpg";
-import bird14 from "@/assets/bird-14.jpg";
-import bird15 from "@/assets/bird-15.jpg";
-import bird16 from "@/assets/bird-16.jpg";
-import bird17 from "@/assets/bird-17.jpg";
-import bird18 from "@/assets/bird-18.jpg";
-import woodpeckerGallery from "@/assets/woodpecker-gallery.jpg";
-import birdsInTreeGallery from "@/assets/birds-in-tree-gallery.jpg";
-import bird19 from "@/assets/bird-19.jpg";
+
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const birdImages = [bird1, bird2, bird3, bird4, bird5, bird6, bird7, bird8, bird9, bird10, bird11, bird12, bird13, bird14, bird15, bird16, bird17, bird18, bird19, woodpeckerGallery, birdsInTreeGallery];
+  const birdImages: string[] = [];
   return <div className="min-h-screen bg-background">
       <Navigation />
       
