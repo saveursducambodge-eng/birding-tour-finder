@@ -21,13 +21,13 @@ const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<BirdImage | null>(null);
   
   const birdImages: BirdImage[] = [
-    { src: galleryBird1, species: "Giant Ibis", location: "Tmatboey" },
+    { src: galleryBird1, species: "Giant Ibis", location: "Russey Trep" },
     { src: galleryBird2, species: "White-shouldered Ibis", location: "Preah Vihear" },
     { src: galleryBird3, species: "Sarus Crane", location: "Ang Trapaeng Thmor" },
-    { src: galleryBird4, species: "Green Peafowl", location: "Mondulkiri" },
+    { src: galleryBird4, species: "Green Peafowl", location: "Keo Seima" },
     { src: galleryBird5, species: "Painted Stork", location: "Prek Toal" },
     { src: galleryBird6, species: "Greater Adjutant", location: "Tonle Sap" },
-    { src: galleryBird7, species: "Red-headed Vulture", location: "Northern Plains" },
+    { src: galleryBird7, species: "Red-headed Vulture", location: "Boeng Toal Vulture Restaurant" },
     { src: galleryBird8, species: "Community Workshop", location: "Tonle Sap Ecotourism" },
     { src: galleryBird9, species: "Birding at Angkor", location: "Angkor Thom" },
   ];
