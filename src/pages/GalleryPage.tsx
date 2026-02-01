@@ -5,10 +5,11 @@ import galleryBird1 from "@/assets/gallery-bird-1.jpg";
 import galleryBird2 from "@/assets/gallery-bird-2.jpg";
 import galleryBird3 from "@/assets/gallery-bird-3.jpg";
 import galleryBird4 from "@/assets/gallery-bird-4.jpg";
+import galleryBird5 from "@/assets/gallery-bird-5.jpg";
 
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const birdImages = [galleryBird1, galleryBird2, galleryBird3, galleryBird4];
+  const birdImages = [galleryBird1, galleryBird2, galleryBird3, galleryBird4, galleryBird5];
   return <div className="min-h-screen bg-background">
       <Navigation />
       
