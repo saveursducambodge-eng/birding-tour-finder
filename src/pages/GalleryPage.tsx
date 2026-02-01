@@ -10,16 +10,6 @@ import galleryBird6 from "@/assets/gallery-bird-6.jpg";
 import galleryBird7 from "@/assets/gallery-bird-7.jpg";
 import galleryBird8 from "@/assets/gallery-bird-8.jpg";
 import galleryBird9 from "@/assets/gallery-bird-9.jpg";
-import galleryBird10 from "@/assets/gallery-bird-10.jpg";
-import galleryBird11 from "@/assets/gallery-bird-11.jpg";
-import galleryBird12 from "@/assets/gallery-bird-12.jpg";
-import galleryBird13 from "@/assets/gallery-bird-13.jpg";
-import galleryBird14 from "@/assets/gallery-bird-14.jpg";
-import galleryBird15 from "@/assets/gallery-bird-15.jpg";
-import galleryBird16 from "@/assets/gallery-bird-16.jpg";
-import galleryBird17 from "@/assets/gallery-bird-17.jpg";
-import galleryBird18 from "@/assets/gallery-bird-18.jpg";
-import galleryBird19 from "@/assets/gallery-bird-19.jpg";
 
 interface BirdImage {
   src: string;
@@ -40,16 +30,6 @@ const GalleryPage = () => {
     { src: galleryBird7, species: "Red-headed Vulture", location: "Northern Plains" },
     { src: galleryBird8, species: "Community Workshop", location: "Tonle Sap Ecotourism" },
     { src: galleryBird9, species: "Birding at Angkor", location: "Angkor Thom" },
-    { src: galleryBird10, species: "Chinese Pond Heron", location: "Tonle Sap" },
-    { src: galleryBird11, species: "Scaly-breasted Munia", location: "Siem Reap" },
-    { src: galleryBird12, species: "Small Pratincole", location: "Mekong River" },
-    { src: galleryBird13, species: "Blue-tailed Bee-eater", location: "Angkor" },
-    { src: galleryBird14, species: "Black-naped Monarch", location: "Koh Kong" },
-    { src: galleryBird15, species: "Giant Ibis Pair", location: "Preah Vihear" },
-    { src: galleryBird16, species: "Large Woodshrike", location: "Northern Plains" },
-    { src: galleryBird17, species: "Crested Serpent Eagle", location: "Mondulkiri" },
-    { src: galleryBird18, species: "Eastern Barn Owl", location: "Siem Reap" },
-    { src: galleryBird19, species: "Sarus Cranes in Flight", location: "Ang Trapaeng Thmor" },
   ];
 
   return <div className="min-h-screen bg-background">
