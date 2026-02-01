@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import LazyImage from "@/components/LazyImage";
+import galleryBird1 from "@/assets/gallery-bird-1.jpg";
 
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const birdImages: string[] = [];
+  const birdImages = [galleryBird1];
   return <div className="min-h-screen bg-background">
       <Navigation />
       
