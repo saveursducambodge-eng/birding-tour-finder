@@ -8,6 +8,7 @@ import galleryBird4 from "@/assets/gallery-bird-4.jpg";
 import galleryBird5 from "@/assets/gallery-bird-5.jpg";
 import galleryBird6 from "@/assets/gallery-bird-6.jpg";
 import galleryBird7 from "@/assets/gallery-bird-7.jpg";
+import galleryBird8 from "@/assets/gallery-bird-8.jpg";
 
 interface BirdImage {
   src: string;
@@ -26,6 +27,7 @@ const GalleryPage = () => {
     { src: galleryBird5, species: "Painted Stork", location: "Prek Toal" },
     { src: galleryBird6, species: "Greater Adjutant", location: "Tonle Sap" },
     { src: galleryBird7, species: "Red-headed Vulture", location: "Northern Plains" },
+    { src: galleryBird8, species: "Community Workshop", location: "Tonle Sap Ecotourism" },
   ];
 
   return <div className="min-h-screen bg-background">
