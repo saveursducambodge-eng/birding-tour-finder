@@ -21,12 +21,13 @@ import bird17 from "@/assets/bird-17.jpg";
 import bird18 from "@/assets/bird-18.jpg";
 import woodpeckerGallery from "@/assets/woodpecker-gallery.jpg";
 import birdsInTreeGallery from "@/assets/birds-in-tree-gallery.jpg";
+import bird19 from "@/assets/bird-19.jpg";
 
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const birdImages = [
-    bird1, bird2, bird3, bird4, bird5, bird6, bird7, bird8, bird9, bird10, bird11, bird12, bird13, bird14, bird15, bird16, bird17, bird18, woodpeckerGallery, birdsInTreeGallery
+    bird1, bird2, bird3, bird4, bird5, bird6, bird7, bird8, bird9, bird10, bird11, bird12, bird13, bird14, bird15, bird16, bird17, bird18, bird19, woodpeckerGallery, birdsInTreeGallery
   ];
 
   return (
