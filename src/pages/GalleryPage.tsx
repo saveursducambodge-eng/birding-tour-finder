@@ -10,26 +10,38 @@ import galleryBird6 from "@/assets/gallery-bird-6.jpg";
 import galleryBird7 from "@/assets/gallery-bird-7.jpg";
 import galleryBird8 from "@/assets/gallery-bird-8.jpg";
 import galleryBird9 from "@/assets/gallery-bird-9.jpg";
-
-interface BirdImage {
-  src: string;
-  species: string;
-  location?: string;
-}
+import galleryBird10 from "@/assets/gallery-bird-10.jpg";
+import galleryBird11 from "@/assets/gallery-bird-11.jpg";
+import galleryBird12 from "@/assets/gallery-bird-12.jpg";
+import galleryBird13 from "@/assets/gallery-bird-13.jpg";
+import galleryBird14 from "@/assets/gallery-bird-14.jpg";
+import galleryBird15 from "@/assets/gallery-bird-15.jpg";
+import galleryBird16 from "@/assets/gallery-bird-16.jpg";
+import galleryBird17 from "@/assets/gallery-bird-17.jpg";
+import galleryBird18 from "@/assets/gallery-bird-18.jpg";
 
 const GalleryPage = () => {
-  const [selectedImage, setSelectedImage] = useState<BirdImage | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
-  const birdImages: BirdImage[] = [
-    { src: galleryBird1, species: "Giant Ibis", location: "Russey Trep" },
-    { src: galleryBird2, species: "White-shouldered Ibis", location: "Preah Vihear" },
-    { src: galleryBird3, species: "Sarus Crane", location: "Ang Trapaeng Thmor" },
-    { src: galleryBird4, species: "Green Peafowl", location: "Keo Seima" },
-    { src: galleryBird5, species: "Painted Stork", location: "Prek Toal" },
-    { src: galleryBird6, species: "Greater Adjutant", location: "Tonle Sap" },
-    { src: galleryBird7, species: "Red-headed Vulture", location: "Boeng Toal Vulture Restaurant" },
-    { src: galleryBird8, species: "Community Workshop", location: "Tonle Sap Ecotourism" },
-    { src: galleryBird9, species: "Birding at Angkor", location: "Angkor Thom" },
+  const birdImages: string[] = [
+    galleryBird1,
+    galleryBird2,
+    galleryBird3,
+    galleryBird4,
+    galleryBird5,
+    galleryBird6,
+    galleryBird7,
+    galleryBird8,
+    galleryBird9,
+    galleryBird10,
+    galleryBird11,
+    galleryBird12,
+    galleryBird13,
+    galleryBird14,
+    galleryBird15,
+    galleryBird16,
+    galleryBird17,
+    galleryBird18,
   ];
 
   return <div className="min-h-screen bg-background">
@@ -51,24 +63,18 @@ const GalleryPage = () => {
       <section className="py-8 sm:py-12 lg:py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
-            {birdImages.map((bird, index) => (
+            {birdImages.map((src, index) => (
               <div 
                 key={index} 
                 className="group cursor-pointer overflow-hidden rounded-lg bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 <div className="relative">
                   <LazyImage 
-                    src={bird.src} 
-                    alt={bird.species} 
+                    src={src} 
+                    alt={`Bird photo ${index + 1}`} 
                     className="group-hover:scale-110 transition-transform duration-300" 
-                    onClick={() => setSelectedImage(bird)} 
+                    onClick={() => setSelectedImage(src)} 
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 sm:p-4">
-                    <h3 className="text-white font-semibold text-sm sm:text-base">{bird.species}</h3>
-                    {bird.location && (
-                      <p className="text-white/80 text-xs sm:text-sm">{bird.location}</p>
-                    )}
-                  </div>
                 </div>
               </div>
             ))}
@@ -84,17 +90,11 @@ const GalleryPage = () => {
         >
           <div className="relative w-full max-w-4xl max-h-[90vh]">
             <img 
-              src={selectedImage.src} 
-              alt={selectedImage.species} 
+              src={selectedImage} 
+              alt="Bird photo" 
               className="w-full h-full max-w-full max-h-[85vh] object-contain rounded-lg" 
               onClick={e => e.stopPropagation()} 
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 rounded-b-lg text-center">
-              <h3 className="text-white font-bold text-lg sm:text-xl">{selectedImage.species}</h3>
-              {selectedImage.location && (
-                <p className="text-white/80 text-sm sm:text-base">{selectedImage.location}</p>
-              )}
-            </div>
           </div>
         </div>
       )}
