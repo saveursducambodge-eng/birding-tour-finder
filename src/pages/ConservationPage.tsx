@@ -40,7 +40,7 @@ const ConservationPage = () => {
                     Responsible Tourism: Promoting Local Livelihoods
                   </h2>
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
-                    <p>
+                    <p className="">
 
 The Pearaing Birding Trails, we believe that protecting nature goes hand in hand with supporting the people who live closest to it. Our birdwatching and ecotourism programs are designed to create sustainable income opportunities for local communities while preserving Cambodia's unique wildlife.</p>
                     <p className="text-justify">
