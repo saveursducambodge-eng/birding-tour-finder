@@ -269,7 +269,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                     </h3>
                     <p className="text-sm text-muted-foreground mb-4">
                       For urgent inquiries or last-minute bookings, 
-                      contact Chamnan directly via WhatsApp
+                      contact Phanith Phut (Mr.) directly via WhatsApp
                     </p>
                     <Button variant="outline" className="border-nature-sky text-nature-sky hover:bg-nature-sky hover:text-white" onClick={() => {
                     const message = "Bonjour, je suis intéressé par vos tours d'observation d'oiseaux.";
