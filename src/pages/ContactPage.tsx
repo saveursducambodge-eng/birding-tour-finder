@@ -13,7 +13,6 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 import Navigation from "@/components/Navigation";
-
 const ContactPage = () => {
   const [formData, setFormData] = useState<{
     name: string;
@@ -25,18 +24,19 @@ const ContactPage = () => {
     dateRange?: DateRange;
   }>({
     name: "",
-    email: "", 
+    email: "",
     tour: "",
     message: "",
     groupSize: "",
     preferredDate: "",
     dateRange: undefined
   });
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Prepare email content
     const subject = `Tour Inquiry - ${formData.tour || 'General Inquiry'}`;
     const body = `
@@ -54,70 +54,46 @@ ${formData.message || 'No additional message'}
 ---
 This inquiry was submitted through the Cambodia Bird Tours website contact form.
     `.trim();
-    
+
     // Create mailto link
     const mailtoLink = `mailto:pearaingbirdingtrails@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
+
     // Open email client
     window.location.href = mailtoLink;
-    
     toast({
       title: "Email Client Opened!",
-      description: "Your email client should now be open with the inquiry details. Please send the email to complete your booking request.",
+      description: "Your email client should now be open with the inquiry details. Please send the email to complete your booking request."
     });
   };
-
   const handleInputChange = (field: string, value: string | any) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
     }));
   };
-
-  const contactInfo = [
-    {
-      icon: <Phone className="w-5 h-5" />,
-      title: "Phone",
-      details: "+855 89 529 696",
-      description: "WhatsApp available"
-    },
-    {
-      icon: <Mail className="w-5 h-5" />,
-      title: "Email", 
-      details: "pearaingbirdingtrails@gmail.com",
-      description: "Available 24/7 - Response within 24h"
-    },
-    {
-      icon: <MapPin className="w-5 h-5" />,
-      title: "Location",
-      details: "Siem Reap, Cambodia",
-      description: "Tours across Cambodia"
-    },
-    {
-      icon: <Clock className="w-5 h-5" />,
-      title: "Operating Hours",
-      details: "6:00 AM - 6:00 PM",
-      description: "7 days a week"
-    }
-  ];
-
-  const tours = [
-    "Half-Day Birding Near Siem Reap - Pearaing Biodiversity Conservation Center (Half Day - 4 hours)",
-    "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating village (Full Day - 11 hours)", 
-    "Trip full day to Koh Ker & Beng Melea for Bird watching and Temple Tour (Full Day - 12.5 hours)",
-    "Full Birding and Angkor Wat Temple Tour (Full Day - 12.5 hours)",
-    "Birding at Tmatboey - Bengal Florican Grassland and Presh Vihear Temple (3 Days / 2 Nights)",
-    "7 Day Focus Target Tours species - Dream Birding Trip to Cambodia (7 Days / 6 Nights)",
-    "10-Day Birding Trip to Cambodia - Dream Birding Trip to Cambodia (10 Days / 9 Nights)",
-    "Bird Watching Itinerary in Cambodia: 14-Day Tours - Rare Bird Itinerary in Cambodia (14 Days / 13 Nights)",
-    "Bird Watching Itinerary in Cambodia: 15-Day Tours - Rare Bird Itinerary in Cambodia (15 Days / 14 Nights)",
-    "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Itinerary in Cambodia (19 Days / 18 Nights)",
-    "Essential Cambodia 8th-23rd March 2026 - Dream Birding Trip to Cambodia (16 Days / 15 Nights)",
-    "Custom Tour Request"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const contactInfo = [{
+    icon: <Phone className="w-5 h-5" />,
+    title: "Phone",
+    details: "+855 89 529 696",
+    description: "WhatsApp available"
+  }, {
+    icon: <Mail className="w-5 h-5" />,
+    title: "Email",
+    details: "pearaingbirdingtrails@gmail.com",
+    description: "Available 24/7 - Response within 24h"
+  }, {
+    icon: <MapPin className="w-5 h-5" />,
+    title: "Location",
+    details: "Siem Reap, Cambodia",
+    description: "Tours across Cambodia"
+  }, {
+    icon: <Clock className="w-5 h-5" />,
+    title: "Operating Hours",
+    details: "6:00 AM - 6:00 PM",
+    description: "7 days a week"
+  }];
+  const tours = ["Half-Day Birding Near Siem Reap - Pearaing Biodiversity Conservation Center (Half Day - 4 hours)", "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating village (Full Day - 11 hours)", "Trip full day to Koh Ker & Beng Melea for Bird watching and Temple Tour (Full Day - 12.5 hours)", "Full Birding and Angkor Wat Temple Tour (Full Day - 12.5 hours)", "Birding at Tmatboey - Bengal Florican Grassland and Presh Vihear Temple (3 Days / 2 Nights)", "7 Day Focus Target Tours species - Dream Birding Trip to Cambodia (7 Days / 6 Nights)", "10-Day Birding Trip to Cambodia - Dream Birding Trip to Cambodia (10 Days / 9 Nights)", "Bird Watching Itinerary in Cambodia: 14-Day Tours - Rare Bird Itinerary in Cambodia (14 Days / 13 Nights)", "Bird Watching Itinerary in Cambodia: 15-Day Tours - Rare Bird Itinerary in Cambodia (15 Days / 14 Nights)", "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Itinerary in Cambodia (19 Days / 18 Nights)", "Essential Cambodia 8th-23rd March 2026 - Dream Birding Trip to Cambodia (16 Days / 15 Nights)", "Custom Tour Request"];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <main className="pt-16">
@@ -132,8 +108,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
               <span className="block text-nature-forest">Birding Adventure</span>
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
-              Ready to explore Cambodia's magnificent birdlife? Contact Ladong to customize 
-              your perfect birding experience or get answers to any questions about our tours.
+              Ready to explore Cambodia's magnificent birdlife? Contact us to customize your perfect birding experience or get answers to any questions about our tours.
             </p>
           </div>
         </section>
@@ -142,8 +117,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
         <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
-              {contactInfo.map((info, index) => (
-                <Card key={index} className="text-center hover:shadow-card transition-all duration-300">
+              {contactInfo.map((info, index) => <Card key={index} className="text-center hover:shadow-card transition-all duration-300">
                   <CardContent className="p-4 sm:p-6">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-nature-forest/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 text-nature-forest">
                       {info.icon}
@@ -152,8 +126,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                     <p className="font-medium mb-1 text-sm sm:text-base">{info.details}</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">{info.description}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </section>
@@ -181,24 +154,13 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                         <label className="text-sm font-medium mb-2 block">
                           Full Name *
                         </label>
-                        <Input
-                          required
-                          value={formData.name}
-                          onChange={(e) => handleInputChange("name", e.target.value)}
-                          placeholder="Your full name"
-                        />
+                        <Input required value={formData.name} onChange={e => handleInputChange("name", e.target.value)} placeholder="Your full name" />
                       </div>
                       <div>
                         <label className="text-sm font-medium mb-2 block">
                           Email Address *
                         </label>
-                        <Input
-                          type="email"
-                          required
-                          value={formData.email}
-                          onChange={(e) => handleInputChange("email", e.target.value)}
-                          placeholder="your.email@example.com"
-                        />
+                        <Input type="email" required value={formData.email} onChange={e => handleInputChange("email", e.target.value)} placeholder="your.email@example.com" />
                       </div>
                     </div>
 
@@ -206,16 +168,14 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                       <label className="text-sm font-medium mb-2 block">
                         Preferred Tour
                       </label>
-                      <Select value={formData.tour} onValueChange={(value) => handleInputChange("tour", value)}>
+                      <Select value={formData.tour} onValueChange={value => handleInputChange("tour", value)}>
                         <SelectTrigger>
                           <SelectValue placeholder="Select a tour or request custom" />
                         </SelectTrigger>
                         <SelectContent>
-                          {tours.map((tour) => (
-                            <SelectItem key={tour} value={tour}>
+                          {tours.map(tour => <SelectItem key={tour} value={tour}>
                               {tour}
-                            </SelectItem>
-                          ))}
+                            </SelectItem>)}
                         </SelectContent>
                       </Select>
                     </div>
@@ -225,13 +185,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                         <label className="text-sm font-medium mb-2 block">
                           Group Size
                         </label>
-                        <Input
-                          type="number"
-                          min="1"
-                          value={formData.groupSize}
-                          onChange={(e) => handleInputChange("groupSize", e.target.value)}
-                          placeholder="Number of people"
-                        />
+                        <Input type="number" min="1" value={formData.groupSize} onChange={e => handleInputChange("groupSize", e.target.value)} placeholder="Number of people" />
                       </div>
                       <div>
                         <label className="text-sm font-medium mb-2 block">
@@ -239,38 +193,22 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                         </label>
                         <Popover>
                           <PopoverTrigger asChild>
-                            <Button
-                              variant="outline"
-                              className={cn(
-                                "w-full justify-start text-left font-normal",
-                                !formData.preferredDate && "text-muted-foreground"
-                              )}
-                            >
+                            <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !formData.preferredDate && "text-muted-foreground")}>
                               <CalendarIcon className="mr-2 h-4 w-4" />
-                              {formData.preferredDate ? (
-                                formData.preferredDate
-                              ) : (
-                                <span>Select travel dates</span>
-                              )}
+                              {formData.preferredDate ? formData.preferredDate : <span>Select travel dates</span>}
                             </Button>
                           </PopoverTrigger>
                           <PopoverContent className="w-auto p-0" align="start">
-                            <Calendar
-                              mode="range"
-                              selected={formData.dateRange}
-                              onSelect={(range) => {
-                                if (range?.from && range?.to) {
-                                  const dateString = `${format(range.from, "PPP")} - ${format(range.to, "PPP")}`;
-                                  handleInputChange("preferredDate", dateString);
-                                  handleInputChange("dateRange", range);
-                                } else if (range?.from) {
-                                  handleInputChange("preferredDate", format(range.from, "PPP"));
-                                  handleInputChange("dateRange", range);
-                                }
-                              }}
-                              numberOfMonths={2}
-                              className="pointer-events-auto"
-                            />
+                            <Calendar mode="range" selected={formData.dateRange} onSelect={range => {
+                            if (range?.from && range?.to) {
+                              const dateString = `${format(range.from, "PPP")} - ${format(range.to, "PPP")}`;
+                              handleInputChange("preferredDate", dateString);
+                              handleInputChange("dateRange", range);
+                            } else if (range?.from) {
+                              handleInputChange("preferredDate", format(range.from, "PPP"));
+                              handleInputChange("dateRange", range);
+                            }
+                          }} numberOfMonths={2} className="pointer-events-auto" />
                           </PopoverContent>
                         </Popover>
                       </div>
@@ -280,12 +218,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                       <label className="text-sm font-medium mb-2 block">
                         Message
                       </label>
-                      <Textarea
-                        rows={4}
-                        value={formData.message}
-                        onChange={(e) => handleInputChange("message", e.target.value)}
-                        placeholder="Tell us about your birding interests, experience level, and any special requests..."
-                      />
+                      <Textarea rows={4} value={formData.message} onChange={e => handleInputChange("message", e.target.value)} placeholder="Tell us about your birding interests, experience level, and any special requests..." />
                     </div>
 
                     <Button type="submit" size="lg" variant="nature" className="w-full">
@@ -338,15 +271,11 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                       For urgent inquiries or last-minute bookings, 
                       contact Chamnan directly via WhatsApp
                     </p>
-                    <Button 
-                      variant="outline" 
-                      className="border-nature-sky text-nature-sky hover:bg-nature-sky hover:text-white"
-                      onClick={() => {
-                        const message = "Bonjour, je suis intéressé par vos tours d'observation d'oiseaux.";
-                        const whatsappUrl = `https://wa.me/85589529696?text=${encodeURIComponent(message)}`;
-                        window.open(whatsappUrl, '_blank');
-                      }}
-                    >
+                    <Button variant="outline" className="border-nature-sky text-nature-sky hover:bg-nature-sky hover:text-white" onClick={() => {
+                    const message = "Bonjour, je suis intéressé par vos tours d'observation d'oiseaux.";
+                    const whatsappUrl = `https://wa.me/85589529696?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}>
                       <MessageSquare className="w-4 h-4 mr-2" />
                       WhatsApp: +855 89 529 696
                     </Button>
@@ -435,8 +364,6 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
           </div>
         </section>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default ContactPage;
