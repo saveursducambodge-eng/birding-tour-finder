@@ -236,7 +236,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                 <Card className="bg-nature-forest text-white">
                   <CardContent className="p-6">
                     <h3 className="font-serif text-xl font-semibold mb-4">
-                      Why Choose Cambodia Bird Tours?
+                      Why Choose PEARAING Birding Trails?
                     </h3>
                     <ul className="space-y-3 text-sm">
                       <li className="flex items-start gap-2">
