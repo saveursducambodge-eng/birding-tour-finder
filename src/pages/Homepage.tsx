@@ -9,7 +9,6 @@ import TourIntroPopup from "@/components/TourIntroPopup";
 import BirdingSitesMap from "@/components/BirdingSitesMap";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
-import homepageHeroIbis from "@/assets/homepage-hero-ibis.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
 import bird2 from "@/assets/prek-toal-storks.jpg";
@@ -55,7 +54,7 @@ const Homepage = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${homepageHeroIbis})`
+        backgroundImage: `url(/lovable-uploads/8407b453-6b75-479f-a6ee-acfad916d4bf.png)`
       }}>
           <div className="absolute inset-0 bg-black/40" />
         </div>
