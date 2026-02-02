@@ -43,7 +43,7 @@ const ConservationPage = () => {
                     <p>
 
 The Pearaing Birding Trails, we believe that protecting nature goes hand in hand with supporting the people who live closest to it. Our birdwatching and ecotourism programs are designed to create sustainable income opportunities for local communities while preserving Cambodia's unique wildlife.</p>
-                    <p>
+                    <p className="">
                       By staying in community lodges, hiring local guides, and purchasing locally made products, our guests directly contribute to improving rural livelihoods. Together, we ensure that conservation benefits everyone — empowering communities, protecting endangered species, and fostering a future where people and nature thrive side by side.
                     </p>
                   </div>
