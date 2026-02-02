@@ -315,7 +315,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                       Do I need birding experience?
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Not at all! Ladong tailors each tour to your experience level, 
+                      Not at all! Our Pearaing Team Bird Guide tailors each tour to your experience level, 
                       from complete beginners to experienced birders.
                     </p>
                   </CardContent>
