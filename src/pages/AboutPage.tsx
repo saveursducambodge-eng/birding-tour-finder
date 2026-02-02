@@ -69,7 +69,7 @@ const AboutPage = () => {
                     <p className="text-accent font-medium mb-4">{guide.role}</p>
                     
                     <div className="prose prose-sm sm:prose max-w-none text-muted-foreground space-y-4">
-                      {guide.description.map((paragraph, pIndex) => <p key={pIndex} className="">
+                      {guide.description.map((paragraph, pIndex) => <p key={pIndex} className="text-justify">
                           {paragraph}
                         </p>)}
                     </div>
