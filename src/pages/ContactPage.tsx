@@ -143,7 +143,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                     Book Your Tour
                   </CardTitle>
                   <p className="text-muted-foreground text-sm sm:text-base">
-                    Fill out the form below and Ladong will get back to you within 24 hours 
+                    Fill out the form below and our team bird guide will get back to you within 24 hours 
                     with a customized itinerary and pricing.
                   </p>
                 </CardHeader>
