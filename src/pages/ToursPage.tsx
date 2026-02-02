@@ -15,7 +15,7 @@ import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
 import customTourIbisGroup from "@/assets/custom-tour-ibis-group.jpg";
 import vultureFeeding14Day from "@/assets/small-pratincole.jpg";
 import tailorbird15Day from "@/assets/tailorbird-15day.jpg";
-import rareEndemicWoodpecker from "@/assets/black-shanked-douc-3.jpg";
+import rareEndemicWoodpecker from "@/assets/rare-birding-15day-raptor.jpg";
 import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
 import dreamBirding16Day from "@/assets/dream-birding-16day.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
