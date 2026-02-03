@@ -47,7 +47,7 @@ import galleryBird43 from "@/assets/gallery-bird-43.jpg";
 import galleryBird44 from "@/assets/gallery-bird-44.jpg";
 import galleryBird45 from "@/assets/gallery-bird-45.jpg";
 import galleryBird46 from "@/assets/gallery-bird-46.jpg";
-import galleryBird47 from "@/assets/gallery-bird-47.jpg";
+
 import galleryBird48 from "@/assets/gallery-bird-48.jpg";
 import galleryBird49 from "@/assets/gallery-bird-49.jpg";
 import galleryBird50 from "@/assets/gallery-bird-50.jpg";
@@ -106,7 +106,6 @@ const GalleryPage = () => {
     galleryBird44,
     galleryBird45,
     galleryBird46,
-    galleryBird47,
     galleryBird48,
     galleryBird49,
     galleryBird50,
