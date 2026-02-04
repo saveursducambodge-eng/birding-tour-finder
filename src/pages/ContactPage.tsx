@@ -13,6 +13,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 import Navigation from "@/components/Navigation";
+import contactBirdingGuide from "@/assets/contact-birding-guide.jpg";
 const ContactPage = () => {
   const [formData, setFormData] = useState<{
     name: string;
@@ -231,6 +232,15 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
 
               {/* Map & Additional Info */}
               <div className="space-y-8">
+                
+                {/* Birding Guide Photo */}
+                <div className="rounded-xl overflow-hidden shadow-card">
+                  <img 
+                    src={contactBirdingGuide} 
+                    alt="Our birding guide with spotting scope at wetlands" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
 
                 {/* Quick Response Info */}
                 <Card className="bg-nature-forest text-white">
