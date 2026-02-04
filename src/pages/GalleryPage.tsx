@@ -38,6 +38,14 @@ import galleryBird51 from "@/assets/gallery-bird-51.jpg";
 import galleryBird52 from "@/assets/gallery-bird-52.jpg";
 import galleryBird53 from "@/assets/gallery-bird-53.jpg";
 import galleryBird54 from "@/assets/gallery-bird-54.jpg";
+import galleryTour1 from "@/assets/gallery-tour-1.jpg";
+import galleryTour2 from "@/assets/gallery-tour-2.jpg";
+import galleryTour3 from "@/assets/gallery-tour-3.jpg";
+import galleryTour4 from "@/assets/gallery-tour-4.jpg";
+import galleryTour5 from "@/assets/gallery-tour-5.jpg";
+import galleryTour6 from "@/assets/gallery-tour-6.jpg";
+import galleryTour7 from "@/assets/gallery-tour-7.jpg";
+import galleryTour8 from "@/assets/gallery-tour-8.jpg";
 
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -80,6 +88,14 @@ const GalleryPage = () => {
     galleryBird52,
     galleryBird53,
     galleryBird54,
+    galleryTour1,
+    galleryTour2,
+    galleryTour3,
+    galleryTour4,
+    galleryTour5,
+    galleryTour6,
+    galleryTour7,
+    galleryTour8,
   ];
 
   return <div className="min-h-screen bg-background">
