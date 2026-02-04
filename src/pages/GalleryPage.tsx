@@ -20,11 +20,6 @@ import galleryBird16 from "@/assets/gallery-bird-16.jpg";
 import galleryBird28 from "@/assets/gallery-bird-28.jpg";
 import galleryBird29 from "@/assets/gallery-bird-29.jpg";
 import galleryBird30 from "@/assets/gallery-bird-30.jpg";
-import galleryBird31 from "@/assets/gallery-bird-31.jpg";
-import galleryBird32 from "@/assets/gallery-bird-32.jpg";
-import galleryBird33 from "@/assets/gallery-bird-33.jpg";
-import galleryBird34 from "@/assets/gallery-bird-34.jpg";
-import galleryBird35 from "@/assets/gallery-bird-35.jpg";
 import galleryBird36 from "@/assets/gallery-bird-36.jpg";
 import galleryBird37 from "@/assets/gallery-bird-37.jpg";
 import galleryBird38 from "@/assets/gallery-bird-38.jpg";
@@ -67,11 +62,6 @@ const GalleryPage = () => {
     galleryBird28,
     galleryBird29,
     galleryBird30,
-    galleryBird31,
-    galleryBird32,
-    galleryBird33,
-    galleryBird34,
-    galleryBird35,
     galleryBird36,
     galleryBird37,
     galleryBird38,
