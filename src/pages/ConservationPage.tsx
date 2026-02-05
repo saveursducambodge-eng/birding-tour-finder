@@ -84,7 +84,19 @@ Our work is based at the heart of Cambodia’s rich natural landscapes, where ra
                       ​Our Mission Our mission is simple: To provide high-quality birdwatching experiences,  To support wildlife conservation,  To create benefits for local communities,  To share knowledge about Cambodia’s natural heritage Every tour we lead helps raise awareness about protecting
                     </p>
                     <p className="text-justify">
-                      By choosing our local experts, you not only gain access to unparalleled knowledge of Cambodia's birdlife but also directly support community-based conservation efforts that protect these precious ecosystems for future generations.
+                      ​Why Travel With Us?
+
+Experienced local bird guides
+
+Deep knowledge of Cambodia’s birding sites
+
+Focus on rare and endangered species
+
+Friendly, flexible, and responsible service
+
+Strong connection with local communities
+
+We are committed to giving every guest a meaningful, educational, and memorable experience in the wild places of Cambodia.
                     </p>
                   </div>
                 </div>
