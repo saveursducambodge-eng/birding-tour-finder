@@ -57,6 +57,38 @@ The Pearaing Birding Trails, we believe that protecting nature goes hand in hand
                 </div>
               </div>
             </div>
+
+            {/* Local Experts Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              {/* Content */}
+              <div className="space-y-6 lg:order-2">
+                <div>
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6">
+                    Local Experts in Birdwatching & Conservation in Cambodia
+                  </h2>
+                  <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
+                    <p className="text-justify">
+                      Our team of expert local guides brings decades of combined experience in bird identification, habitat knowledge, and conservation practices. Born and raised in Cambodia's most biodiverse regions, they possess an intimate understanding of the landscape, wildlife behavior, and the best locations to observe rare and endemic species.
+                    </p>
+                    <p className="text-justify">
+                      Each guide has received specialized training in bird ecology, conservation biology, and sustainable tourism practices. They work closely with international conservation organizations to monitor endangered species, track population trends, and implement protection measures for critical habitats.
+                    </p>
+                    <p className="text-justify">
+                      By choosing our local experts, you not only gain access to unparalleled knowledge of Cambodia's birdlife but also directly support community-based conservation efforts that protect these precious ecosystems for future generations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Expert Guide Images */}
+              <div className="space-y-6 lg:order-1">
+                <img 
+                  alt="Local expert bird guide with spotting scope in the field" 
+                  className="w-full rounded-2xl shadow-float object-cover" 
+                  src="/lovable-uploads/1e875d04-ec5d-4087-844f-2d46cee8614d.jpg" 
+                />
+              </div>
+            </div>
           </div>
         </section>
       </main>
