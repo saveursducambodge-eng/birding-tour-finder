@@ -68,7 +68,9 @@ The Pearaing Birding Trails, we believe that protecting nature goes hand in hand
                   </h2>
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
                     <p className="text-justify">
-                      Our team of expert local guides brings decades of combined experience in bird identification, habitat knowledge, and conservation practices. Born and raised in Cambodia's most biodiverse regions, they possess an intimate understanding of the landscape, wildlife behavior, and the best locations to observe rare and endemic species.
+                      ​We are a team of passionate local bird guides dedicated to sharing the beauty of Cambodia’s birdlife with visitors from around the world. With years of field experience across forests, wetlands, and grasslands, we specialize in leading authentic birdwatching tours to some of the country’s most important wildlife habitats.
+
+Our work is based at the heart of Cambodia’s rich natural landscapes, where rare and endangered species still survive. From the flooded forests of Prek Toal to the remote Northern Plains, we guide guests to the best birding locations while promoting responsible and sustainable tourism.
                     </p>
                     <p className="text-justify">
                       Each guide has received specialized training in bird ecology, conservation biology, and sustainable tourism practices. They work closely with international conservation organizations to monitor endangered species, track population trends, and implement protection measures for critical habitats.
@@ -82,11 +84,7 @@ The Pearaing Birding Trails, we believe that protecting nature goes hand in hand
               
               {/* Expert Guide Images */}
               <div className="space-y-6 lg:order-1">
-                <img 
-                  alt="Local expert bird guide with spotting scope in the field" 
-                  className="w-full rounded-2xl shadow-float object-cover" 
-                  src="/lovable-uploads/1e875d04-ec5d-4087-844f-2d46cee8614d.jpg" 
-                />
+                <img alt="Local expert bird guide with spotting scope in the field" className="w-full rounded-2xl shadow-float object-cover" src="/lovable-uploads/1e875d04-ec5d-4087-844f-2d46cee8614d.jpg" />
               </div>
             </div>
           </div>
