@@ -16,9 +16,6 @@ const ConservationPage = () => {
           </div>
           
           <div className="relative z-10 container mx-auto text-center text-white px-4">
-            <p className="text-lg sm:text-xl mb-4 text-white/90 font-medium">
-              Local Experts in Birdwatching & Conservation in Cambodia
-            </p>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
               Bird Conservation and Community Support in Cambodia
             </h1>
