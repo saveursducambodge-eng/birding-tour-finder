@@ -81,19 +81,7 @@ When you travel with us, you are not only discovering amazing wildlife — you a
 Our work is based at the heart of Cambodia’s rich natural landscapes, where rare and endangered species still survive. From the flooded forests of Prek Toal to the remote Northern Plains, we guide guests to the best birding locations while promoting responsible and sustainable tourism.
                     </p>
                     <p className="text-justify">
-                      ​Our Mission
-
-Our mission is simple:
-
-To provide high-quality birdwatching experiences
-
-To support wildlife conservation
-
-To create benefits for local communities
-
-To share knowledge about Cambodia’s natural heritage
-
-Every tour we lead helps raise awareness about protecting
+                      ​Our Mission Our mission is simple: To provide high-quality birdwatching experiences,  To support wildlife conservation,  To create benefits for local communities,  To share knowledge about Cambodia’s natural heritage Every tour we lead helps raise awareness about protecting
                     </p>
                     <p className="text-justify">
                       By choosing our local experts, you not only gain access to unparalleled knowledge of Cambodia's birdlife but also directly support community-based conservation efforts that protect these precious ecosystems for future generations.
