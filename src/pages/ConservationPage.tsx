@@ -52,7 +52,15 @@ The Pearaing Birding Trails, we believe that protecting nature goes hand in hand
                 <div>
                   
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed">
-                    <p className="text-justify">Eco-Tourism  we have established sustainably funded ecotourism projects managed by local communities across Cambodia. These initiatives aim to create alternative livelihoods for people living within protected areas, helping reduce dependence on activities that harm wildlife and forests. By linking community development with conservation, these projects support a "no hunting, no deforestation" policy and promote long-term protection of Cambodia's unique biodiversity.</p>
+                    <p className="text-justify">Eco-Tourism  we have established sustainably funded ecotourism projects managed by local communities across Cambodia. These initiatives aim to create alternative livelihoods for people living within protected areas, helping reduce dependence on activities that harm wildlife and forests. By linking community development with conservation, these projects support a "no hunting, no deforestation" policy and promote long-term protection of Cambodia's unique biodiversity.
+
+
+We believe that birdwatching tourism can play an important role in conservation. By working closely with local communities and conservation partners, our tours help support livelihoods and encourage the protection of important bird habitats.
+
+When you travel with us, you are not only discovering amazing wildlife — you are also helping protect it.
+
+
+                  </p>
                   </div>
                 </div>
               </div>
