@@ -1,36 +1,23 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, Bird } from "lucide-react";
-
-const highlights = [
-  "Painted Stork",
-  "Spot-billed Pelican",
-  "Oriental Darter",
-  "Bengal Florican",
-  "Spotted Owlet",
-  "Giant Ibis",
-  "Black-headed Woodpecker",
-  "Blossom-headed Parakeet",
-  "Asian Woolly-necked Stork",
-  "Lesser Adjutant",
-  "Scarlet Minivet",
-  "White-shouldered Ibis",
-  "Spotted Wood-owl",
-  "Greater Flameback",
-];
-
+const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
-  return (
-    <>
+  return <>
       {/* Hero Section */}
       <section className="py-16 sm:py-20 px-4 md:px-6 lg:px-8 bg-gradient-nature">
         <div className="container mx-auto text-center">
           <Badge className="mb-4 bg-nature-forest text-white text-xs sm:text-sm">
             Trip Report
           </Badge>
-          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 max-w-4xl mx-auto">
-            Costumed Tour Prek Toal Ramsar Site and 3day2nights Tmat Beoy and Bengal Florican Grasslands Package
-          </h1>
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 max-w-4xl mx-auto">Trip Report 3day2nights at Bengal Florican Grasslands  and Tmat Beoy
+
+
+
+
+
+ 
+        </h1>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-nature-forest" />
@@ -75,14 +62,12 @@ const TripReportPrekToal = () => {
             Highlights
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {highlights.map((bird, index) => (
-              <Card key={index} className="bg-white/80">
+            {highlights.map((bird, index) => <Card key={index} className="bg-white/80">
                 <CardContent className="p-3 sm:p-4">
                   <span className="text-nature-forest font-semibold mr-2">{index + 1}.</span>
                   <span className="text-sm sm:text-base text-foreground">{bird}</span>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -207,8 +192,6 @@ const TripReportPrekToal = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default TripReportPrekToal;
