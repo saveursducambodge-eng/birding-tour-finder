@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TripReportPrekToal from "@/components/trip-reports/TripReportPrekToal";
 import TripReportWildCambodia from "@/components/trip-reports/TripReportWildCambodia";
 import TripReportEssentialCambodia from "@/components/trip-reports/TripReportEssentialCambodia";
+import TripReportSVC2014 from "@/components/trip-reports/TripReportSVC2014";
 
 const TripReportPage = () => {
   return (
@@ -32,6 +33,12 @@ const TripReportPage = () => {
                 >
                   Essential Cambodia (Jan 2023)
                 </TabsTrigger>
+                <TabsTrigger 
+                  value="svc-2014" 
+                  className="data-[state=active]:bg-nature-forest data-[state=active]:text-white px-4 py-2 text-sm"
+                >
+                  SVC Prek Toal (Oct 2014)
+                </TabsTrigger>
               </TabsList>
             </div>
           </div>
@@ -46,6 +53,10 @@ const TripReportPage = () => {
 
           <TabsContent value="essential-cambodia" className="mt-0">
             <TripReportEssentialCambodia />
+          </TabsContent>
+
+          <TabsContent value="svc-2014" className="mt-0">
+            <TripReportSVC2014 />
           </TabsContent>
         </Tabs>
       </main>
