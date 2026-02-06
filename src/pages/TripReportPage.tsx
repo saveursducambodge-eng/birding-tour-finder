@@ -1,8 +1,8 @@
-import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TripReportPrekToal from "@/components/trip-reports/TripReportPrekToal";
 import TripReportWildCambodia from "@/components/trip-reports/TripReportWildCambodia";
+import TripReportEssentialCambodia from "@/components/trip-reports/TripReportEssentialCambodia";
 
 const TripReportPage = () => {
   return (
@@ -26,6 +26,12 @@ const TripReportPage = () => {
                 >
                   Wild Cambodia & Pursat (Feb 2023)
                 </TabsTrigger>
+                <TabsTrigger 
+                  value="essential-cambodia" 
+                  className="data-[state=active]:bg-nature-forest data-[state=active]:text-white px-4 py-2 text-sm"
+                >
+                  Essential Cambodia (Jan 2023)
+                </TabsTrigger>
               </TabsList>
             </div>
           </div>
@@ -36,6 +42,10 @@ const TripReportPage = () => {
 
           <TabsContent value="wild-cambodia" className="mt-0">
             <TripReportWildCambodia />
+          </TabsContent>
+
+          <TabsContent value="essential-cambodia" className="mt-0">
+            <TripReportEssentialCambodia />
           </TabsContent>
         </Tabs>
       </main>
