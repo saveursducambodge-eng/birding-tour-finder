@@ -13,7 +13,7 @@ interface Guide {
 }
 const guides: Guide[] = [{
   name: "Sok Samnang",
-  role: "Lead Guide",
+  role: "Guide",
   image: samnangGuidePortrait,
   description: ["Hello friends, my name is Sok Samnang is Lead Guide. I am an official English-speaking guide certified by the Cambodian Ministry of Tourism. I have been working as both a Bird Guide and Temple Guide for over 11 years. I have 10 years of experience as a bird guide with Pearaing Biodiversity Conservation Center and 8 Temple Tour Guide years with the . Currently, I work as a freelance guide in Cambodia.", "I have extensive experience organizing tours across Cambodia, including Bird Watching Tours and Temple Tours that highlight the country's rich wildlife, support conservation efforts, and promote our cultural heritage.", "Our country is home to some of the world's rarest and most endangered birds, including the Giant Ibis, White-shouldered Ibis, Bengal Florican, and Greater Adjutant. These magnificent species face increasing threats from habitat loss and climate change. By joining a birdwatching tour, you're not only experiencing the excitement of discovering these incredible birds — you're also contributing to their protection and supporting the conservation of Cambodia's unique natural heritage.", "At Cambodia Bird Watching Tours, every journey supports both people and wildlife. Join us, and help ensure that these rare species and their habitats continue to thrive for years to come."]
 }, {
