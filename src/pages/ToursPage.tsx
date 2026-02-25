@@ -311,7 +311,7 @@ const ToursPage = () => {
       "Day 10": "Full Birding Day at Tmatboey . Overnight in Tbeng Resort,",
       "Day 11": "Morning Birding at Tmatboey & afternoon birding at  Vulture Restaurant. Overnight camping in forest",
       "Day 12": "Vulture Restaurant to Kratie, Morning bird bird near the Vulture Restaurant & Afternoon continue to Kratie. Overnight Kratie.",
-      "Day 13": "Kratie to Pursat (Chinese Grassbird) - Kratie province with Mekong River is home to Irrawaddy dolphins, Mekong Wagtail, fish, birds. take only 30 minutes from town to Kapi for Mekong Wagtail and Irrawaddy Dolphins. Afternoon continue to Pursat for Chinese Grassbird and other wetland birds. overnight in Pursat.",
+      "Day 13": "Kratie to Pursat (Chinese Grassbird) - Kratie, looking for Irrawaddy dolphins, Mekong Wagtail. Afternoon continue to Pursat for Chinese Grassbird .overnight in Pursat.",
       "Day 14": "Pursat to Phnom Penh - Final morning birding Cambodia. Wake early, breakfast in field in Pursat grasslands. the key species: Chinese Grassbird and Yellow-breasted Bunting. After lunch, drive to Phnom Penh, stopping for Cambodian Tailorbird. Overnight Phnom Penh",
       "Day 15": "Phnom Penh City Tour & Transfer to Airport - Full-day city tour. Transfer to Phnom Penh Airport or hotel for departure"
     },
@@ -349,7 +349,7 @@ const ToursPage = () => {
       "Day 10": "Full Birding Day at Tmatboey . Overnight in Tbeng Resort,",
       "Day 11": "Morning Birding at Tmatboey & afternoon birding at  Vulture Restaurant. Overnight camping in forest",
       "Day 12": "Vulture Restaurant to Kratie, Morning bird bird near the Vulture Restaurant & Afternoon continue to Kratie. Overnight Kratie.",
-      "Day 13": "Kratie to Pursat (Chinese Grassbird) - Kratie province with Mekong River is home to Irrawaddy dolphins, Mekong Wagtail, fish, birds. take only 30 minutes from town to Kapi for Mekong Wagtail and Irrawaddy Dolphins. Afternoon continue to Pursat for Chinese Grassbird and other wetland birds. overnight in Pursat.",
+      "Day 13": "Kratie to Pursat (Chinese Grassbird) - Kratie, looking for Irrawaddy dolphins, Mekong Wagtail. Afternoon continue to Pursat for Chinese Grassbird .overnight in Pursat.",
       "Day 14": "Pursat to Phnom Penh - Final morning birding Cambodia. Wake early, breakfast in field in Pursat grasslands. the key species: Chinese Grassbird and Yellow-breasted Bunting. After lunch, drive to Phnom Penh, stopping for Cambodian Tailorbird. Overnight Phnom Penh",
       "Day 15": "Phnom Penh Transfer to Airport - Transfer to Phnom Penh Airport or hotel for departure. Bid each other goodbye"
     },
