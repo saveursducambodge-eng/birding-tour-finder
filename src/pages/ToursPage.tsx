@@ -380,7 +380,7 @@ const ToursPage = () => {
       "Day 3 (Mar 10)": "Prek Toal Waterbird Sanctuary, looking for Greater Adjutant (endangered), Milky Stork (endangered). Overnight Siem Reap",
       "Day 4 (Mar 11)": "Ang Trapaeng Thmor to Chong Kran Roy : looking for  Sarus Cranes (100+ birds).  Mid-afternoon travel to Chong Kran Roy tented camp.",
       "Day 5 (Mar 12)": "Chong Kran Roy to Siem Reap - Early morning revisit hide for Bar-bellied Pitta, Coral-billed Ground Cuckoo. Mid-afternoon drive back to Siem Reap",
-      "Day 6 (Mar 13)": "Florican Grasslands to Prey Veng - Early morning drive to Grasslands for looking for Bengal Florican, Afternoon journey to Prey Veng. overnight in  eco-lodge at Prey Veng.",
+      "Day 6 (Mar 13)": "Florican Grasslands to Prey Veng - Early morning drive to Grasslands for looking for Bengal Florican. overnight in at Prey Veng.",
       "Day 7 (Mar 14)": "Prey Veng Full Day Bird Watching - Breakfast at eco-lodge.",
       "Day 8 (Mar 15)": "Prey Veng to Tmatboey - Final morning at Prey Veng.",
       "Day 9-10 (Mar 16-17)": "Full Days Tmatboey - Two full days best chances for White-shouldered and Giant Ibis. nights at Phnom Tbeng Resort.",
