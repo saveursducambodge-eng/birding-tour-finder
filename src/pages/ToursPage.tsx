@@ -376,7 +376,7 @@ const ToursPage = () => {
     rating: 5.0,
     schedule: {
       "Day 1 (Mar 8)": "Arrival in Siem Reap - Meet local guide, short drive to comfortable hotel. Check in and rest. Early evening dinner and pre-trip briefing",
-      "Day 2 (Mar 9)": "Angkor Wat - World-famous temple complex. Arrive at sunrise for Brown Boobook. Forest birding: White-throated Rock Thrush, Forest Wagtail. Explore temple with amazing bas-reliefs. Search for Alexandrine Parakeet at Ta Promh temple (Tomb Raider location). Evening visit Bayon temple. Overnight Siem Reap",
+      "Day 2 (Mar 9)": "Angkor Wat -  Explore temple with amazing bas-reliefs. Angkor Wat and Ta Promh temple (Tomb Raider location). Evening visit Bayon temple. Overnight Siem Reap",
       "Day 3 (Mar 10)": "Prek Toal Waterbird Sanctuary - Largest breeding colony of large water birds in Southeast Asia: we will looking for: Spot-billed Pelican, Painted Stork, Lesser Adjutant, Greater Adjutant (endangered), Milky Stork (endangered). Lunch at floating restaurant. Overnight Siem Reap",
       "Day 4 (Mar 11)": "Ang Trapaeng Thmor to Chong Kran Roy - Wetland reservoir managed by WCS to protect Sarus Cranes (100+ birds). Greater Spotted Eagle, Black Kite, Eastern Marsh and Pied Harriers, Spotted Wood Owl, Barn Owl, Spotted Owlet. Mid-afternoon travel to Chong Kran Roy tented camp.",
       "Day 5 (Mar 12)": "Chong Kran Roy to Siem Reap - Early morning revisit hide for Bar-bellied Pitta, Coral-billed Ground Cuckoo. Mid-afternoon drive back to Siem Reap",
