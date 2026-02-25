@@ -299,7 +299,7 @@ const ToursPage = () => {
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
     rating: 5.0,
     schedule: {
-      "Day 1": "Arrival in Siem Reap - Arrive in Cambodia's Siem Reap (AM or PM). Spend day acclimatizing and visiting local attractions like Phnom Kroam or Chrev. Evening meet guide for briefing",
+      "Day 1": "Arrival in Siem Reap - Arrive in Siem Reap (AM or PM).  Evening meet guide for briefing. overnight in Siem Reap.",
       "Day 2": "Siem Reap and Angkor Wat - Combine culture and birding exploring Angkor Wat complex and surrounding forests. Target species: Forest Wagtail, White-throated Rock Thrush, Hainan Blue Flycatcher, Asian Barred Owlet, Black Baza. Ancient temples offer enchanting backdrop",
       "Day 3": "Prek Toal Bird Sanctuary - Sanctuary on Tonle Sap Lake. Explore by boat for rare species: Oriental Darter, Painted Stork, Milky Stork, Greater Adjutant, Lesser Adjutant, Spot-billed Pelican. Overnight Siem Reap",
       "Day 4": "Ang Trapaeng Thmor (Sarus Crane) - Wetland sanctuary northwest of Siem Reap. Stronghold for endangered Sarus Crane, Spotted Wood Owl, Greater Spotted Eagle, Eastern Marsh Harrier, Pied Harrier, Black Kite, Grey-headed Swamphen, Comb Duck, other wetland birds. Overnight Siem Reap",
@@ -337,7 +337,7 @@ const ToursPage = () => {
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
     rating: 5.0,
     schedule: {
-      "Day 1": "Arrival in Siem Reap - Arrive in Cambodia's Siem Reap (AM or PM). Spend day acclimatizing and visiting local attractions like Phnom Kroam or Chrev. Evening meet guide for briefing",
+      "Day 1": "Arrival in Siem Reap - Arrive in Siem Reap (AM or PM).  Evening meet guide for briefing. overnight in Siem Reap.",
       "Day 2": "Siem Reap and Angkor Wat - Combine culture and birding exploring Angkor Wat complex and surrounding forests. Target species: Forest Wagtail, White-throated Rock Thrush, Hainan Blue Flycatcher, Asian Barred Owlet, Black Baza. Ancient temples offer enchanting backdrop",
       "Day 3": "Prek Toal Bird Sanctuary - Sanctuary on Tonle Sap Lake. Explore by boat for rare species: Oriental Darter, Painted Stork, Milky Stork, Greater Adjutant, Lesser Adjutant, Spot-billed Pelican. Overnight Siem Reap",
       "Day 4": "Ang Trapaeng Thmor (Sarus Crane) - Wetland sanctuary northwest of Siem Reap. Stronghold for endangered Sarus Crane, Spotted Wood Owl, Greater Spotted Eagle, Eastern Marsh Harrier, Pied Harrier, Black Kite, Grey-headed Swamphen, Comb Duck, other wetland birds. Overnight Siem Reap",
