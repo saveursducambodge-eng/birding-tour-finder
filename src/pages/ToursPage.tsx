@@ -414,7 +414,7 @@ const ToursPage = () => {
     rating: 5.0,
     isInformational: true,
     schedule: {
-      "Day 1: Arrival in Siem Reap": "Arrive in Siem Reap AM or PM. Spend the day acclimatizing and visiting local attractions like Phnom Kroam or Chrev. In the evening, meet your guide for a pre-trip briefing and prepare for your birdwatching adventure.",
+      "Day 1: Arrival in Siem Reap": "Arrive in Siem Reap AM or PM. Spend the day acclimatizing and visiting local attractions like Phnom Kroam or Chrev.  Overnight in Siem Reap",
       "Day 2: Full Day Birding at Angkor Wat Complex": "Combine culture and birding as you explore the Angkor Wat complex and its surrounding forests. Target species include Forest Wagtail, White-throated Rock Thrush, and more than 60 species. overnight in Siem Reap",
       "Day 3: Full Day Birding at Prek Toal Waterbird Sanctuary": "Boat trip to Prek Toal, one of Southeast Asia's most important bird sanctuaries on Tonle Sap Lake. The area hosts the largest breeding colonies of large waterbirds in the region. Highlights include Spot-billed Pelican, Painted Stork, Milky Stork, Greater and Lesser Adjutants. Overnight in Siem Reap.",
       "Day 4: Full Day Birding at Ang Trapaeng Thmor": "Visit Ang Trapaeng Thmor wetland reserve to see over 50 Sarus Cranes and other wetland species. This WCS-managed reserve provides excellent views of concentrated waterbirds. Target species is Sarus Crane and various owls. Overnight in Siem Reap.",
