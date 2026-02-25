@@ -331,7 +331,7 @@ const ToursPage = () => {
     duration: "15 Days / 14 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$4xxx Per Person",
+    price: "$$",
     image: rareEndemicWoodpecker,
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
