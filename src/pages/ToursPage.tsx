@@ -429,7 +429,7 @@ const ToursPage = () => {
       "Day 14: Full Day Keo Seima": "Full day immersive birdwatching in Keo Seima's evergreen and mixed deciduous forest. Overnight at Senmonorom City",
       "Day 15: Sen Monorom and Dak Dam": "Pre-sunrise at Dak Dam highland plateau near Vietnamese border. Overnight in Sen Monorom.",
       "Day 16: Full Day Dak Dam": "Full day dedicated to Dak Dam's diverse highland habitats.   Overnight Sen Monorom.",
-      "Day 17: Sen Monorom to Pursat via Cambodian Tailorbird": "Full morning birding Sen Monorom/Dak Dam. Mid-day departure to Pursat, stopping near Phnom Penh outskirts for Cambodian Tailorbird - endemic species discovered 2009. Continue to Pursat Grassland for Chinese Grassbird and wetland birds. Overnight Pursat city.",
+      "Day 17: Sen Monorom to Pursat via Cambodian Tailorbird": "Full morning birding Sen Monorom/Dak Dam. Mid-day departure to Pursat. Overnight Pursat city.",
       "Day 18: Pursat Grasslands to Phnom Penh": "Very early wake-up with breakfast in field in Pursat grasslands. Community conservation project protects key species: Chinese Grassbird and Yellow-breasted Bunting. Excellent chance of observing Chinese Grassbird in early morning. Also chance of critically endangered Yellow-breasted Bunting. Overnight Phnom Penh.",
       "Day 19: Phnom Penh City Tours and Transfer": "Full-day Phnom Penh city tour. Morning visit to Royal Palace and Silver Pagoda, National Museum. Traditional Khmer lunch along riverfront. Afternoon visits to Tuol Sleng Genocide Museum for historical perspective. Transfer to Phnom Penh International Airport at convenient time for departure. Farewell."
     },
