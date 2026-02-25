@@ -296,7 +296,7 @@ const ToursPage = () => {
     price: "$",
     image: vultureFeeding14Day,
     category: "multi-day",
-    highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
+    highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "200+ bird species", "Angkor Wat", "Multiple ecosystems"],
     rating: 5.0,
     schedule: {
       "Day 1": "Arrival in Siem Reap - Arrive in Siem Reap (AM or PM).  Evening meet guide for briefing. overnight in Siem Reap.",
@@ -334,7 +334,7 @@ const ToursPage = () => {
     price: "$",
     image: rareEndemicWoodpecker,
     category: "multi-day",
-    highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "644+ bird species", "Angkor Wat", "Multiple ecosystems"],
+    highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "200+ bird species", "Angkor Wat", "Multiple ecosystems"],
     rating: 5.0,
     schedule: {
       "Day 1": "Arrival in Siem Reap - Arrive in Siem Reap (AM or PM).  Evening meet guide for briefing. overnight in Siem Reap.",
