@@ -415,7 +415,7 @@ const ToursPage = () => {
     isInformational: true,
     schedule: {
       "Day 1: Arrival in Siem Reap": "Arrive in Siem Reap AM or PM. Spend the day acclimatizing and visiting local attractions like Phnom Kroam or Chrev.  Overnight in Siem Reap",
-      "Day 2: Full Day Birding at Angkor Wat Complex": "Combine culture and birding as you explore the Angkor Wat complex. Target species include Forest Wagtail, White-throated Rock Thrush,  overnight in Siem Reap",
+      "Day 2: Full Day Birding at Angkor Wat Complex": "Combine culture and birding as you explore the Angkor Wat complex.  overnight in Siem Reap",
       "Day 3: Full Day Birding at Prek Toal Waterbird Sanctuary": "Boat trip to Prek Toal Waterbird Colonies, Highlights include,  Milky Stork, Greater. Overnight in Siem Reap.",
       "Day 4: Full Day Birding at Ang Trapaeng Thmor": "Visit Ang Trapaeng Thmor wetland reserve to see over 50 Sarus Cranes and other wetland species.  Overnight in Siem Reap.",
       "Day 5: Siem Reap to Chong Kran Roy": "Chong Kran Roy tented camp, visit to a special bird hide targeting Coral-billed Ground Cuckoo. Overnight in tented camp.",
