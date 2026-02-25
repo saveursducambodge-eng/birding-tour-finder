@@ -289,7 +289,7 @@ const ToursPage = () => {
   }, {
     id: 10,
     title: "Bird Watching Itinerary in Cambodia: 14-Day Tours - Rare Bird Species",
-    description: "The itinerary 14-day tours combines Cambodia's remarkable biodiversity with cultural heritage in Cambodia. The country is home to more than 600 bird species, including several rare and endangered. This extensive cross-country journey also serves as a fundraising tour to directly support our conservation and community work. The tour begins in birding sites from Siem Reap, Prek Toal, Ang Trapaeng Thmor, Florican Grasslands, Chong Kran Roy (Bar-bellied Pitta), BeTreed Adventure, Vulture Restaurant (three species of critically endangered vultures), Rusy Trep - Giant Ibis, Kratie (Mekong Wagtail and Irrawaddy dolphins), Pursat (Chinese Grassbird and Yellow-breasted Bunting), and ends with the endemic Cambodian Tailorbird.",
+    description: "14-Day Cambodia Birding & Cultural Highlights\nExperience the best of Cambodia's biodiversity and cultural heritage on this 14-day cross-country birding adventure. With over 200 bird species, including rare, endemic, and critically endangered birds, Cambodia is one of Southeast Asia's top birding destinations.\n\nExplore key sites from Siem Reap to Prek Toal, Ang Trapaeng Thmor, Florican Grasslands, Chong Kran Roy, the Vulture Restaurant, Rusy Trep, Kratie, and Pursat — ending with the endemic Cambodian Tailorbird.\n\nThis tour also supports local conservation and community projects, making your journey both exciting and meaningful.",
     duration: "14 Days / 13 Nights (plus Day 15 transfer)",
     difficulty: "Moderate",
     groupSize: "2-8 people",
