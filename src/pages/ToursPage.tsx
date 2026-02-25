@@ -204,7 +204,7 @@ const ToursPage = () => {
     duration: "3 Days / 2 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$578 For Person",
+    price: "$",
     image: beTreedAdventureBirds,
     category: "multi-day",
     highlights: ["Bengal Florican", "White-rumped Pygmy-Falcon", "Tree House accommodation", "Conservation tourism", "Angkorian cave temples", "Forest zipline", "Community-based ecotourism"],
