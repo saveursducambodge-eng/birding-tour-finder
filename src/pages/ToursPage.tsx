@@ -424,7 +424,7 @@ const ToursPage = () => {
       "Day 8: Full Day Birding at BeTreed Adventure": "Full day exploring, targeting White-browed Fantail, Scarlet Minivet, Blossom-headed Parakeet, woodpeckers, Crested Serpent Eagle.  Overnight at BeTreed.",
       "Day 9: BeTreed to Tmatboey - Giant Ibis": "Final dawn walk at BeTreed. Late afternoon departure for Tmatboey, targeting Giant Ibis. and White-shouldered Ibis. Overnight at Tbeng Resort.",
       "Day 10: Full Day Tmatboey - Giant & White-shouldered Ibis": "Full day birding at Tmatboey. Overnight at Tbeng Resort.",
-      "Day 11: Morning Tmatboey to Vulture Restaurant": "Final morning hours at Tmatboey. Mid-morning transfer to Boeng Toal Vulture Restaurant at Dung Plet Village. Overnight camping in forest.",
+      "Day 11: Morning Tmatboey to Vulture Restaurant": "Final morning hours at Tmatboey. Mid-morning transfer to Boeng Toal Vulture Restaurant. Overnight camping in forest.",
       "Day 12: Vulture Restaurant to Kratie": "Morning at Vulture Restaurant - community-run conservation project providing controlled feeding to attract three critically endangered vulture species: White-rumped Vulture, Slender-billed Vulture, and Red-headed Vulture. Watch from hide as vultures feed. Mid-morning departure to Kratie alongside Mekong River. Overnight in Kratie.",
       "Day 14: Full Day Keo Seima": "Full day immersive birdwatching in Keo Seima's evergreen and mixed deciduous forest. Overnight at Senmonorom City",
       "Day 15: Sen Monorom and Dak Dam": "Pre-sunrise at Dak Dam highland plateau near Vietnamese border. Overnight in Sen Monorom.",
