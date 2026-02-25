@@ -237,7 +237,7 @@ const ToursPage = () => {
     rating: 5.0,
     schedule: {
       "Day 1": "Arrival in Siem Reap - Arrive at Siem Reap International Airport, welcomed by bird guide and driver. Overnight Siem Reap hotel",
-      "Day 2": "Full Day Birdwatching, Prek Toal Waterbird Sanctuary is Largest breeding colony of large water birds in Southeast Asia. Target two endangered species: Greater Adjutant and Milky Stork and over 150 bird species recorded. Overnight in Siem Reap hotel",
+      "Day 2": "Full Day Birdwatching, Prek Toal Waterbird Sanctuary. Target two endangered species: Greater Adjutant and Milky Stork and over 102 bird species recorded. Overnight in Siem Reap hotel",
       "Day 3": "AM Birding at Bengal Florican Grassland,  The critically endangered Bengal Florican mostly displaying in early morning light. Overnight Tbeng Resort",
       "Day 4": "Two full days of birding in the forests around Tmatboey, with excellent chances to see White-shouldered Ibis and Giant Ibis before they leave their roosts early in the morning. Overnight at Tbeng Resort.",
       "Day 5": "Full Day Birding at Tmatboey (continued) - Continue tracking Giant Ibis and other target species. More opportunities for woodpecker species, owls, and 100+ species specialty birds of Northern Plains. Overnight Tbeng Resort",
