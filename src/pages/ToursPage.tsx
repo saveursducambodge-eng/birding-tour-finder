@@ -383,7 +383,7 @@ const ToursPage = () => {
       "Day 6 (Mar 13)": "Florican Grasslands to Prey Veng - Early morning drive to Grasslands for looking for Bengal Florican, Afternoon journey to Prey Veng. overnight in  eco-lodge at Prey Veng.",
       "Day 7 (Mar 14)": "Prey Veng Full Day Bird Watching - Breakfast at eco-lodge.",
       "Day 8 (Mar 15)": "Prey Veng to Tmatboey - Final morning at Prey Veng.",
-      "Day 9-10 (Mar 16-17)": "Full Days Tmatboey - Two full days best chances for White-shouldered and Giant Ibis leaving roost sites to feed in small forest pools. Long walks in heat but no hills.\nBoth nights at Phnom Tbeng Resort ecolodge",
+      "Day 9-10 (Mar 16-17)": "Full Days Tmatboey - Two full days best chances for White-shouldered and Giant Ibis. nights at Phnom Tbeng Resort.",
       "Day 11 (Mar 18)": "Tmatboey to Vulture Restaurant - Final hours for remaining key species. Mid-morning transfer to Vulture Restaurant at Boeng Toal (Dung Plet Village). Overnight camping in forest",
       "Day 12 (Mar 19)": "Vulture Restaurant to Kratie - Eco-tourism project by Sam Veasna Centre. Local farmers raise cattle without harmful medications. Overnight Kratie",
       "Day 13 (Mar 20)": "Kratie to Pursat - Relaxing boat trip on Mekong River for regional endemic Mekong Wagtail. Find group of Irrawaddy Dolphins (threatened species). After boat trip, journey to Pursat. Overnight Pursat city",
