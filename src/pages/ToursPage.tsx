@@ -420,7 +420,7 @@ const ToursPage = () => {
       "Day 4: Full Day Birding at Ang Trapaeng Thmor": "Visit Ang Trapaeng Thmor wetland reserve to see over 50 Sarus Cranes and other wetland species.  Overnight in Siem Reap.",
       "Day 5: Siem Reap to Chong Kran Roy": "Chong Kran Roy tented camp, visit to a special bird hide targeting Coral-billed Ground Cuckoo. Overnight in tented camp.",
       "Day 6: Full Day Chong Kran Roy to Siem Reap": "Early morning return to the hide for another chance more birds species. Mid-afternoon drive back to Siem Reap. Overnight in Siem Reap.",
-      "Day 7: Bengal Florican Grasslands to BeTreed Adventure": "Florican Grasslands near Kampong Thom to see critically endangered Bengal Florican. Late afternoon check-in at BeTreed Adventure eco-lodge. Overnight at BeTreed jungle lodge.",
+      "Day 7: Bengal Florican Grasslands to BeTreed Adventure": "Florican Grasslands to see critically endangered Bengal Florican. Late afternoon check-in at BeTreed Adventure . Overnight at BeTreed jungle lodge.",
       "Day 8: Full Day Birding at BeTreed Adventure": "Full day exploring, targeting White-browed Fantail, Scarlet Minivet, Blossom-headed Parakeet, woodpeckers, Crested Serpent Eagle.  Overnight at BeTreed.",
       "Day 9: BeTreed to Tmatboey - Giant Ibis": "Final dawn walk at BeTreed. Late afternoon departure for Tmatboey, targeting Giant Ibis. and White-shouldered Ibis. Overnight at Tbeng Resort.",
       "Day 10: Full Day Tmatboey - Giant & White-shouldered Ibis": "Full day birding at Tmatboey. Overnight at Tbeng Resort.",
