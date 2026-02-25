@@ -376,7 +376,7 @@ const ToursPage = () => {
     rating: 5.0,
     schedule: {
       "Day 1 (Mar 8)": "Arrival in Siem Reap - Meet local guide, short drive to comfortable hotel. Check in and rest. Early evening dinner and pre-trip briefing",
-      "Day 2 (Mar 9)": "Angkor Wat -  Explore temple with amazing bas-reliefs. Angkor Wat and Ta Promh temple (Tomb Raider location). Evening visit Bayon temple. Overnight Siem Reap",
+      "Day 2 (Mar 9)": "Angkor Wat -  Angkor Wat and Ta Promh temple (Tomb Raider location). Evening visit Bayon temple. Overnight Siem Reap",
       "Day 3 (Mar 10)": "Prek Toal Waterbird Sanctuary, looking for Greater Adjutant (endangered), Milky Stork (endangered). Overnight Siem Reap",
       "Day 4 (Mar 11)": "Ang Trapaeng Thmor to Chong Kran Roy : looking for  Sarus Cranes (100+ birds).  Mid-afternoon travel to Chong Kran Roy tented camp.",
       "Day 5 (Mar 12)": "Chong Kran Roy to Siem Reap - Early morning revisit hide for Bar-bellied Pitta, Coral-billed Ground Cuckoo. Mid-afternoon drive back to Siem Reap",
