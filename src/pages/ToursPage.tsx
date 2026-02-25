@@ -266,7 +266,7 @@ const ToursPage = () => {
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Sarus Crane", "Mekong Wagtail", "Greater Adjutant", "Milky Stork", "Irrawaddy dolphins", "Phnom Penh city tour"],
     rating: 5.0,
     schedule: {
-      "Day 1": "Arrival in Siem Reap - Arrive at Siem Reap International Airport, welcomed by bird guide and driver. After check-in, enjoy relaxed afternoon birding around Phnom Kroam Area (migrants and resident species: Asian Golden Weaver, Bya Weaver, Greater Coucal, Black-collared Starling, wetland species). Overnight Siem Reap hotel",
+      "Day 1": "Arrival in Siem Reap - Arrive at Siem Reap International Airport, welcomed by bird guide and driver.  Overnight Siem Reap hotel",
       "Day 2": "Full Day Birdwatching at Prek Toal Waterbird Sanctuary is Largest breeding colony of large water birds in Southeast Asia. Target two endangered species: Greater Adjutant and Milky Stork and Over 102 bird species recorded. Overnight Siem Reap hotel",
       "Day 3": "Full Day Birdwatching at Ang Trapeang Thmor (Sarus Cranes focus)  Unique wetland ecosystem with 100+ species. Overnight Siem Reap hotel",
       "Day 4": "AM Birding at Bengal Florican Grassland, PM Transfer to Tmatboey. Target species is Bengal Florican. Mid-day transfer to Tmatboey. Overnight Tbeng Resort.",
