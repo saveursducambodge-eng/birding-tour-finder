@@ -386,7 +386,7 @@ const ToursPage = () => {
       "Day 9-10 (Mar 16-17)": "Full Days Tmatboey - Two full days best chances for White-shouldered and Giant Ibis. nights at Phnom Tbeng Resort.",
       "Day 11 (Mar 18)": "Tmatboey to Vulture Restaurant - Final hours for remaining key species. Overnight camping in forest",
       "Day 12 (Mar 19)": "Vulture Restaurant to Kratie , a half day morning birding at Vulture Restaurant. Overnight Kratie",
-      "Day 13 (Mar 20)": "Kratie to Pursat - Relaxing boat trip on Mekong River for regional endemic Mekong Wagtail. Find group of Irrawaddy Dolphins (threatened species). After boat trip, journey to Pursat. Overnight Pursat city",
+      "Day 13 (Mar 20)": "Kratie to Pursat - looking for endemic Mekong Wagtail and Dolphins. After boat trip, journey to Pursat. Overnight Pursat city",
       "Day 14 (Mar 21)": "Pursat to Phnom Penh - Wake very early, breakfast in field in Pursat grasslands. Locals part of conservation project protecting grasslands and key species: Chinese Grassbird (poorly-known) Overnight Phnom Penh",
       "Day 15 (Mar 22)": "Full-day Phnom Penh City Tour - Morning visit Royal Palace and Silver Pagoda (seat of Cambodian monarchy, glittering spires, floor of 5,000+ silver tiles showcasing Khmer artistry). Continue to National Museum (outstanding collection of Angkorian and pre-Angkorian artifacts revealing Cambodia's rich cultural heritage). Traditional Khmer lunch along riverfront. Afternoon more somber turn with visits to Tuol Sleng Genocide Museum (S-21). Overnight Phnom Penh",
       "Day 16 (Mar 23)": "Departure from Phnom Penh - Transfer to Phnom Penh International Airport by taxi at time convenient for flight"
