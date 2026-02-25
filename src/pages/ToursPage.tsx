@@ -239,7 +239,7 @@ const ToursPage = () => {
       "Day 1": "Arrival in Siem Reap - Arrive at Siem Reap International Airport, welcomed by bird guide and driver. Overnight Siem Reap hotel",
       "Day 2": "Full Day Birdwatching, Prek Toal Waterbird Sanctuary. Target two endangered species: Greater Adjutant and Milky Stork and over 102 bird species recorded. Overnight in Siem Reap hotel",
       "Day 3": "AM Birding at Bengal Florican Grassland,  The critically endangered Bengal Florican mostly displaying in early morning light. Overnight Tbeng Resort",
-      "Day 4": "Two full days of birding in the forests around Tmatboey, with excellent chances to see White-shouldered Ibis and Giant Ibis before they leave their roosts early in the morning. Overnight at Tbeng Resort.",
+      "Day 4": "Two full days of birding in the forests around Tmatboey, Looking for  White-shouldered Ibis and Giant Ibis. Overnight at Tbeng Resort.",
       "Day 5": "Full Day Birding at Tmatboey (continued) - Continue tracking Giant Ibis and other target species. More opportunities for woodpecker species, owls, and 100+ species specialty birds of Northern Plains. Overnight Tbeng Resort",
       "Day 6": "AM Final Birding at Tmatboey, Transfer to Kratie (Mekong Wagtail focus) - Final few hours searching for any remaining key species. Afternoon travel to small town of Kratie (4-5 hours). Overnight hotel in Kratie",
       "Day 7": "Kratie to Phnom Penh (Cambodian Tailorbird focus) - 30 minutes from Kratie town to Kapi for Mekong Wagtail and Irrawaddy Dolphins. Afternoon Continue to Phnom Penh to look for Cambodian Tailorbird, endemic species found in 2009 in outskirts of Phnom Penh city. Transfer to Phnom Penh International Airport."
