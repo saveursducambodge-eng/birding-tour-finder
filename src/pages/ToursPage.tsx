@@ -382,7 +382,7 @@ const ToursPage = () => {
       "Day 5 (Mar 12)": "Chong Kran Roy to Siem Reap - Early morning revisit hide for Bar-bellied Pitta, Coral-billed Ground Cuckoo. Mid-afternoon drive back to Siem Reap",
       "Day 6 (Mar 13)": "Florican Grasslands to Prey Veng - Early morning drive to Grasslands for looking for Bengal Florican, Afternoon journey to Prey Veng. overnight in  eco-lodge at Prey Veng.",
       "Day 7 (Mar 14)": "Prey Veng Full Day Bird Watching - Breakfast at eco-lodge.",
-      "Day 8 (Mar 15)": "Prey Veng to Tmatboey - Final morning at Prey Veng heading towards local ruined Khmer temple. Green Pigeon in morning, nearby Barays may have surprises.",
+      "Day 8 (Mar 15)": "Prey Veng to Tmatboey - Final morning at Prey Veng.",
       "Day 9-10 (Mar 16-17)": "Full Days Tmatboey - Two full days best chances for White-shouldered and Giant Ibis leaving roost sites to feed in small forest pools. Long walks in heat but no hills.\nBoth nights at Phnom Tbeng Resort ecolodge",
       "Day 11 (Mar 18)": "Tmatboey to Vulture Restaurant - Final hours for remaining key species. Mid-morning transfer to Vulture Restaurant at Boeng Toal (Dung Plet Village). Overnight camping in forest",
       "Day 12 (Mar 19)": "Vulture Restaurant to Kratie - Eco-tourism project by Sam Veasna Centre. Local farmers raise cattle without harmful medications. Overnight Kratie",
