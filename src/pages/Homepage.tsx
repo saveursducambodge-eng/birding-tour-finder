@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import TourIntroPopup from "@/components/TourIntroPopup";
-import BirdingSitesMap from "@/components/BirdingSitesMap";
+
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import homepageHeroIbis from "@/assets/homepage-hero-ibis.jpg";
@@ -89,9 +89,6 @@ Pearaing Biodiversity Conservation is an organization officially registered with
           </div>
         </div>
       </section>
-
-      {/* Birding Sites Map */}
-      <BirdingSitesMap />
 
       {/* Tours Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
