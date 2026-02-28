@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { Clock, Users, MapPin, Star, ArrowRight, Filter } from "lucide-react";
+import { Clock, Users, MapPin, Star, ArrowRight, Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -24,6 +24,7 @@ import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
 import beTreedAdventureBirds from "@/assets/be-treed-adventure-birds.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
+import pearaingBio2 from "@/assets/pearaing-biodiversity-2.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import bird2 from "@/assets/prek-toal-painted-storks.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
@@ -35,6 +36,49 @@ import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
 import bird9 from "@/assets/bird-9.jpg";
 import bird10 from "@/assets/bird-10.jpg";
+const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => {
+  const [current, setCurrent] = useState(0);
+
+  const next = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrent((c) => (c + 1) % images.length);
+  }, [images.length]);
+
+  const prev = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrent((c) => (c - 1 + images.length) % images.length);
+  }, [images.length]);
+
+  useEffect(() => {
+    const timer = setInterval(() => setCurrent((c) => (c + 1) % images.length), 4000);
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  return (
+    <div className="relative h-48 overflow-hidden group/slider">
+      {images.map((img, i) => (
+        <img
+          key={i}
+          src={img}
+          alt={`${alt} ${i + 1}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+        />
+      ))}
+      <button onClick={prev} className="absolute left-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 opacity-0 group-hover/slider:opacity-100 transition-opacity z-10">
+        <ChevronLeft className="w-4 h-4" />
+      </button>
+      <button onClick={next} className="absolute right-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 opacity-0 group-hover/slider:opacity-100 transition-opacity z-10">
+        <ChevronRight className="w-4 h-4" />
+      </button>
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+        {images.map((_, i) => (
+          <button key={i} onClick={(e) => { e.stopPropagation(); setCurrent(i); }} className={`w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-white' : 'bg-white/50'}`} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const ToursPage = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
@@ -48,6 +92,7 @@ const ToursPage = () => {
     groupSize: "2 people",
     price: "$122 Per Person",
     image: bird1,
+    images: [bird1, pearaingBio2],
     category: "cultural",
     highlights: ["50+ bird species", "Pearaing Biodiversity Conservation Center", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
     rating: 4.5,
@@ -520,9 +565,13 @@ const ToursPage = () => {
         {/* Tours Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredTours.map((tour) => <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
-              </div>
+              {tour.images && tour.images.length > 1 ? (
+                <TourImageSlider images={tour.images} alt={tour.title} />
+              ) : (
+                <div className="relative h-48 overflow-hidden">
+                  <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
+                </div>
+              )}
               
               <CardContent className="p-6">
                 <h3 className="font-serif text-xl text-nature-forest mb-2 line-clamp-2">
