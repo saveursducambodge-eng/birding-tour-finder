@@ -54,7 +54,7 @@ import attSlide2 from "@/assets/att-slide-2.jpg";
 import attSlide3 from "@/assets/att-slide-3.jpg";
 import attSlide4 from "@/assets/att-slide-4.jpg";
 import attSlide5 from "@/assets/att-slide-5.jpg";
-import attSlide6 from "@/assets/att-slide-6.jpg";
+
 import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
@@ -196,7 +196,7 @@ const ToursPage = () => {
     groupSize: "2 people",
     price: "$250 Per Person",
     image: bird4,
-    images: [bird4, attSlide1, attSlide2, attSlide3, attSlide4, attSlide5, attSlide6],
+    images: [bird4, attSlide1, attSlide2, attSlide3, attSlide4, attSlide5],
     category: "water",
     highlights: ["Sarus Crane", "Greater Spotted Eagle", "Eastern Marsh Harrier", "Wetland birding", "Conservation reserve", "Eld's Deer habitat"],
     rating: 4.8,
