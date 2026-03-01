@@ -365,7 +365,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                 <p className="text-sm text-muted-foreground"><strong>8:30 AM</strong> – Arrive at Reservoir & meet ranger (we will make a few birding stops on the way to the Feeding site of Sarus Crane and have breakfast).</p>
                 <p className="text-sm text-muted-foreground"><strong>8:45 AM</strong> – Start birding around Ang Trapaeng Thmor till 11:30 AM. Observe Sarus Cranes, various water birds, and raptors including Greater Spotted Eagle, Roofed-winged Buzzard, and Black-winged Kite.</p>
                 <p className="text-sm text-muted-foreground"><strong>12:00 PM</strong> – Have lunch in a restaurant.</p>
-                <p className="text-sm text-muted-foreground"><strong>2:00 PM</strong> – Continue bird watching near the reservoir. Look for grassland species like Small and Blue-breasted Quail, Oriental Skylark, Indochinese Bushlark, Singing Bushlark, Amor Stonechat, Pied Bush Chat, Richard's Pipit, Paddyfield Pipit, Red-throated Pipits, Plain Prinia, Yellow-bellied Prinia, Oriental Reed Warbler, and Red Avadavat.</p>
+                <p className="text-sm text-muted-foreground"><strong>2:00 PM</strong> – Continue bird watching near the reservoir. Look for grassland species like Amor Stonechat, Pied Bush Chat, Paddyfield Pipit, Red-throated Pipits, Plain Prinia, Yellow-bellied Prinia, Oriental Reed Warbler, and Red Avadavat.</p>
                 <p className="text-sm text-muted-foreground"><strong>4:00 PM</strong> – Arrive back at Siem Reap hotel.</p>
               </div>
             </div>
