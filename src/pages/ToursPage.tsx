@@ -49,6 +49,13 @@ import prekToalSlide7 from "@/assets/prek-toal-slide-7.jpg";
 import prekToalSlide8 from "@/assets/prek-toal-slide-8.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
 import bird4 from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg";
+import attSlide1 from "@/assets/att-slide-1.jpg";
+import attSlide2 from "@/assets/att-slide-2.jpg";
+import attSlide3 from "@/assets/att-slide-3.jpg";
+import attSlide4 from "@/assets/att-slide-4.jpg";
+import attSlide5 from "@/assets/att-slide-5.jpg";
+import attSlide6 from "@/assets/att-slide-6.jpg";
+import attSlide7 from "@/assets/att-slide-7.jpg";
 import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
@@ -190,6 +197,7 @@ const ToursPage = () => {
     groupSize: "2 people",
     price: "$250 Per Person",
     image: bird4,
+    images: [bird4, attSlide1, attSlide2, attSlide3, attSlide4, attSlide5, attSlide6, attSlide7],
     category: "water",
     highlights: ["Sarus Crane", "Greater Spotted Eagle", "Eastern Marsh Harrier", "Wetland birding", "Conservation reserve", "Eld's Deer habitat"],
     rating: 4.8,
