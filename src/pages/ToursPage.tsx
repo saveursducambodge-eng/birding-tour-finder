@@ -36,6 +36,9 @@ import day19Slide7 from "@/assets/19day-slide-7.jpg";
 import day19Slide8 from "@/assets/19day-slide-8.jpg";
 import day19Slide9 from "@/assets/19day-slide-9.jpg";
 import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
+import day7Slide1 from "@/assets/7day-slide-1.jpg";
+import day7Slide2 from "@/assets/7day-slide-2.jpg";
+import day7Slide3 from "@/assets/7day-slide-3.jpg";
 import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
 import beTreedAdventureBirds from "@/assets/be-treed-adventure-birds.jpg";
 import beTreedSlide1 from "@/assets/be-treed-slide-1.jpg";
@@ -330,6 +333,7 @@ const ToursPage = () => {
     groupSize: "2-8 people",
     price: "$",
     image: dreamBirding7Day,
+    images: [dreamBirding7Day, day7Slide1, day7Slide2, day7Slide3],
     category: "multi-day",
     highlights: ["Giant Ibis", "Greater Adjutant", "Milky Stork", "Mekong Wagtail", "Cambodian Tailorbird", "White-shouldered Ibis", "Community eco-lodge", "Irrawaddy dolphins"],
     rating: 5.0,
