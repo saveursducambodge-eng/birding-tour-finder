@@ -14,6 +14,13 @@ import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
 import customTourIbisGroup from "@/assets/custom-tour-ibis-group.jpg";
 import vultureFeeding14Day from "@/assets/small-pratincole.jpg";
+import day14Slide1 from "@/assets/14day-slide-1.jpg";
+import day14Slide2 from "@/assets/14day-slide-2.jpg";
+import day14Slide3 from "@/assets/14day-slide-3.jpg";
+import day14Slide4 from "@/assets/14day-slide-4.jpg";
+import day14Slide5 from "@/assets/14day-slide-5.jpg";
+import day14Slide6 from "@/assets/14day-slide-6.jpg";
+import day14Slide7 from "@/assets/14day-slide-7.jpg";
 import tailorbird15Day from "@/assets/tailorbird-15day.jpg";
 import rareEndemicWoodpecker from "@/assets/rare-birding-15day-raptor.jpg";
 import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
@@ -386,6 +393,7 @@ const ToursPage = () => {
     groupSize: "2-8 people",
     price: "$",
     image: vultureFeeding14Day,
+    images: [vultureFeeding14Day, day14Slide1, day14Slide2, day14Slide3, day14Slide4, day14Slide5, day14Slide6, day14Slide7],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Cambodian Tailorbird", "Chinese Grassbird", "Bar-bellied Pitta", "Coral-billed Ground Cuckoo", "Vulture Restaurant", "200+ bird species", "Angkor Wat", "Multiple ecosystems"],
     rating: 5.0,
