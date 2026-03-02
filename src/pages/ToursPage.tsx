@@ -57,6 +57,12 @@ import prekToalSlide6 from "@/assets/prek-toal-slide-6.jpg";
 import prekToalSlide7 from "@/assets/prek-toal-slide-7.jpg";
 import prekToalSlide8 from "@/assets/prek-toal-slide-8.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
+import kohKerSlide1 from "@/assets/koh-ker-slide-1.jpg";
+import kohKerSlide2 from "@/assets/koh-ker-slide-2.jpg";
+import kohKerSlide3 from "@/assets/koh-ker-slide-3.jpg";
+import kohKerSlide4 from "@/assets/koh-ker-slide-4.jpg";
+import kohKerSlide5 from "@/assets/koh-ker-slide-5.jpg";
+import kohKerSlide6 from "@/assets/koh-ker-slide-6.jpg";
 import bird4 from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg";
 import attSlide1 from "@/assets/att-slide-1.jpg";
 import attSlide2 from "@/assets/att-slide-2.jpg";
@@ -178,6 +184,7 @@ const ToursPage = () => {
     groupSize: "2 people",
     price: "$245 Per Person",
     image: bird3,
+    images: [bird3, kohKerSlide1, kohKerSlide2, kohKerSlide3, kohKerSlide4, kohKerSlide5, kohKerSlide6],
     category: "cultural",
     highlights: ["White-Rumped Pygmy Falcon", "8 Woodpecker species", "Remote temples", "Forest birding", "Temple exploration", "Beng Mealea ruins"],
     rating: 5.0,
