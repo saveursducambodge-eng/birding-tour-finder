@@ -19,6 +19,15 @@ import rareEndemicWoodpecker from "@/assets/rare-birding-15day-raptor.jpg";
 import essentialCambodiaOwl from "@/assets/essential-cambodia-owl.jpg";
 import dreamBirding16Day from "@/assets/dream-birding-16day.jpg";
 import wagtail19Day from "@/assets/wagtail-19day.jpg";
+import day19Slide1 from "@/assets/19day-slide-1.jpg";
+import day19Slide2 from "@/assets/19day-slide-2.jpg";
+import day19Slide3 from "@/assets/19day-slide-3.jpg";
+import day19Slide4 from "@/assets/19day-slide-4.jpg";
+import day19Slide5 from "@/assets/19day-slide-5.jpg";
+import day19Slide6 from "@/assets/19day-slide-6.jpg";
+import day19Slide7 from "@/assets/19day-slide-7.jpg";
+import day19Slide8 from "@/assets/19day-slide-8.jpg";
+import day19Slide9 from "@/assets/19day-slide-9.jpg";
 import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
 import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
 import beTreedAdventureBirds from "@/assets/be-treed-adventure-birds.jpg";
@@ -484,6 +493,7 @@ const ToursPage = () => {
     groupSize: "2-8 people",
     price: "$",
     image: wagtail19Day,
+    images: [wagtail19Day, day19Slide1, day19Slide2, day19Slide3, day19Slide4, day19Slide5, day19Slide6, day19Slide7, day19Slide8, day19Slide9],
     category: "multi-day",
     highlights: ["Giant Ibis and White-shouldered Ibis at Tmatboey", "Three critically endangered vulture species at Vulture Restaurant", "Bengal Florican display at grasslands", "Bar-bellied Pitta and Coral-billed Ground Cuckoo at Chong Kran Roy", "Mekong Wagtail and Irrawaddy dolphins at Kratie", "Highland forest specialties: White-cheeked Laughingthrush, Orange-breasted Laughingthrush", "Green Peafowl and Germain's Peacock-Pheasant at Jahoo Gibbon Camp", "Silver-eared Mesia and montane species at Dak Dam", "Yellow-cheeked Gibbon calls in Keo Seima Wildlife Sanctuary", "Chinese Grassbird and Yellow-breasted Bunting at Pursat", "Cambodian Tailorbird - endemic species", "Greater Hornbills and Blue-eared Barbets", "Sarus Cranes at Ang Trapaeng Thmor", "Milky Stork, Greater Adjutant, and Spot-billed Pelican at Prek Toal", "Cultural birding at Angkor Wat temples"],
     rating: 5.0,
