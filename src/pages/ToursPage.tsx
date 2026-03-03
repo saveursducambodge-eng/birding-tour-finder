@@ -88,6 +88,10 @@ import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
 import bird9 from "@/assets/bird-9.jpg";
 import bird10 from "@/assets/bird-10.jpg";
+import russeyTrepSlide1 from "@/assets/russey-trep-slide-1.jpg";
+import russeyTrepSlide2 from "@/assets/russey-trep-slide-2.jpg";
+import russeyTrepSlide3 from "@/assets/russey-trep-slide-3.jpg";
+import russeyTrepSlide4 from "@/assets/russey-trep-slide-4.jpg";
 const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => {
   const [current, setCurrent] = useState(0);
 
@@ -280,6 +284,7 @@ const ToursPage = () => {
     groupSize: "2-8 people",
     price: "$675 Per Person",
     image: giantIbis2night2days,
+    images: [giantIbis2night2days, russeyTrepSlide1, russeyTrepSlide2, russeyTrepSlide3, russeyTrepSlide4],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
     rating: 4.8,
