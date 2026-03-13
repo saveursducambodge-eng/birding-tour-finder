@@ -147,7 +147,7 @@ Early morning departure from Siem Reap for the journey to Tmatboey Village, loca
           <div className="flex items-start gap-4 mb-6">
             <Badge className="bg-nature-forest text-white shrink-0">Day 3</Badge>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-primary">
-              25th November 2025 – Tmat Beoy
+              25th March 2022 – Tmat Beoy to Siem Reap
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
