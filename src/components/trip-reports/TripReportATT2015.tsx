@@ -42,7 +42,7 @@ const TripReportATT2015 = () => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-nature-forest" />
-              <span>Langie Coroes Bernd (2 pax)</span>
+              <span> Jon Coroes Berni (2 pax)</span>
             </div>
           </div>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-muted-foreground">
