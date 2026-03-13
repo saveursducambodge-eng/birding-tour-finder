@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, Bird } from "lucide-react";
 import tmatboeyDay1 from "@/assets/tmatboey-day1-journey.jpg";
+import tmatboeyDay1b from "@/assets/tmatboey-day1-journey2.jpg";
 const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
   return <>
@@ -106,8 +107,8 @@ Dinner and overnight at the Tmatboey community lodge.
             <div className="aspect-video rounded-xl overflow-hidden">
               <img src={tmatboeyDay1} alt="Journey to Tmatboey Village" className="w-full h-full object-cover" />
             </div>
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>View from the platform – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={tmatboeyDay1b} alt="Tmatboey Village birding" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
