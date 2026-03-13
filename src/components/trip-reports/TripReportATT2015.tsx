@@ -174,9 +174,9 @@ The excursion began early in the morning, when bird activity is at its peak. The
         <div className="container mx-auto max-w-4xl">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-6 flex items-center gap-3">
             <Bird className="w-8 h-8 text-nature-forest" />
-            Bird Checklist (98 Species)
+            Bird Checklist (162 Species)
           </h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-sm text-muted-foreground mb-4">​
             <span className="font-semibold">Location Key:</span> R = Reservoir, V = Vocalization only
           </p>
           <Accordion type="single" collapsible className="w-full">
