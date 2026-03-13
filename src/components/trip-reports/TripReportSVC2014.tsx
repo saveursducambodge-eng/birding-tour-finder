@@ -12,7 +12,7 @@ const highlights = [
 "Little Cormorant",
 "Great Egret",
 "Purple Heron",
-"Whiskered Tern",
+"Greater adjutant",
 "Green-billed Malkoha",
 "Greater Coucal",
 "Pied Kingfisher",
