@@ -106,7 +106,7 @@ const TripReportSVC2014 = () => {
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-justify whitespace-pre-line">
-                Morning birding around Prek Toal Bird Sanctuary and afternoon return to Siem Reap. We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.{"\n"}
+                Morning birding around Prek Toal Bird Sanctuary . We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.{"\n"}
                 We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.
               </p>
             </div>
