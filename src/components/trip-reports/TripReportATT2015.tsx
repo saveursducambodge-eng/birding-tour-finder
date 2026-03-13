@@ -390,7 +390,7 @@ The excursion began early in the morning, when bird activity is at its peak. The
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Germain's Swiftlet (Aerodramus germani)</div>
                   <div>Asian Palm-swift (Cypsiurus balasiensis) – R seen</div>
-                  <div>House Swift (Apus affinis)</div>
+                  <div>​</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
