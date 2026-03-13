@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, Bird } from "lucide-react";
 import tmatboeyDay1 from "@/assets/tmatboey-day1-journey.jpg";
 import tmatboeyDay1b from "@/assets/tmatboey-day1-journey2.jpg";
+import tmatboeyDay2 from "@/assets/tmatboey-day2-giantibis.png";
 const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
   return <>
@@ -143,8 +144,8 @@ Dinner and overnight at Tmatboey.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>Bengal Florican in Prolay Protected Area – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={tmatboeyDay2} alt="Giant Ibis at Tmatboey" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
               <span>Greater Yellownape in Koh Ker Temple – Image coming soon</span>
