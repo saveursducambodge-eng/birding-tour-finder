@@ -85,18 +85,20 @@ const TripReportPrekToal = () => {
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              ​Start time: 6:00 AM
-Early morning departure from Siem Reap for the journey to Tmatboey Village, located approximately 4–5 hours north of the city. The drive passes through rural countryside, rice fields, and forest landscapes.
+              ​Early morning departure from Siem Reap for the journey to Tmatboey Village, located approximately 4–5 hours north of the city. The drive passes through rural countryside, rice fields, and forest landscapes.
 
+            
+          </p>
+            <p className="text-justify">
+              ​After arriving at the Tmatboey community ecolodge, we enjoy lunch and a short rest before beginning our afternoon birding session in the surrounding dry forest and seasonal wetlands.
             </p>
             <p className="text-justify">
-              ​
+              ​During the afternoon birding walk, we search for species such as Collared Falconet, Indochinese Roller, Black-headed Woodpecker, and various bee-eaters and drongos.
             </p>
             <p className="text-justify">
-              ​
-            </p>
-            <p className="text-justify">
-              Lunch was served at a floating community restaurant. Afterward, we returned by boat to Mechrey Village, then continued by car, stopping along the way for additional birding. Here we encountered species such as the Plaintive Cuckoo, Pied Bushchat, Asian Green Bee-eater, Paddyfield Pipit, Yellow-vented Bulbul, and Black Drongo.
+              ​As the evening approaches, we visit nearby wetlands and forest pools in search of the highlight species, the Giant Ibis, which often comes to drink at forest pools before sunset.
+
+Dinner and overnight at the Tmatboey community lodge.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
