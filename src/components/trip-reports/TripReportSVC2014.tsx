@@ -4,21 +4,21 @@ import { Calendar, Users, MapPin, Bird } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const highlights = [
-  "Grey-headed Fish-eagle",
-  "Spot-billed Pelican",
-  "Oriental Darter",
-  "Great Cormorant",
-  "Indian Cormorant",
-  "Little Cormorant",
-  "Great Egret",
-  "Purple Heron",
-  "Whiskered Tern",
-  "Green-billed Malkoha",
-  "Greater Coucal",
-  "Pied Kingfisher",
-  "Blue-tailed Bee-eater",
-  "Indian Roller",
-];
+"Grey-headed Fish-eagle",
+"Spot-billed Pelican",
+"Oriental Darter",
+"Great Cormorant",
+"Indian Cormorant",
+"Little Cormorant",
+"Great Egret",
+"Purple Heron",
+"Whiskered Tern",
+"Green-billed Malkoha",
+"Greater Coucal",
+"Pied Kingfisher",
+"Blue-tailed Bee-eater",
+"Indian Roller"];
+
 
 const TripReportSVC2014 = () => {
   return (
@@ -59,7 +59,7 @@ const TripReportSVC2014 = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              We left from Sam Veasna Center at 6:00 am to go to Mechrey where we got a boat to Prek Toal village. From SVC to Mechrey we went by car, it took about 45 minutes, and from Mechrey to Prek Toal we went by boat. During the car ride to Mechrey, we did a presentation about the itinerary of Prek Toal.
+              We left from Hotel at 6:00 am to go to Mechrey where we got a boat to Prek Toal village. From Siem Reap to Mechrey we went by car, it took about 50 minutes, and from Mechrey to Prek Toal we went by boat. During the car ride to Mechrey, we did a presentation about the itinerary of Prek Toal.
             </p>
             <p className="text-justify">
               We arrived at Mechrey at 6:45 am and then started bird watching during the boat trip to Prek Toal. We saw Chinese Pond-heron, Great Egrets, Intermediate Egrets, Little Egrets, Black Drongo, Great Cormorant, Indian Cormorant, Little Cormorant, Oriental Darter, Grey-headed Fish-eagle, Green-billed Malkoha, Greater Coucal, Pied Kingfisher, Common Kingfisher, Blue-tailed Bee-eater, Rock Pigeon, Pied Fantail, Southern Jungle Crow, Brown Shrike, Olive-backed Sunbird, House Sparrow, and Eurasian Tree Sparrow.
@@ -85,14 +85,14 @@ const TripReportSVC2014 = () => {
             Bird Highlights
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {highlights.map((bird, index) => (
-              <Card key={index} className="bg-white/80">
+            {highlights.map((bird, index) =>
+            <Card key={index} className="bg-white/80">
                 <CardContent className="p-3 sm:p-4">
                   <span className="text-nature-forest font-semibold mr-2">{index + 1}.</span>
                   <span className="text-sm sm:text-base text-foreground">{bird}</span>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -272,8 +272,8 @@ const TripReportSVC2014 = () => {
           </Accordion>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 };
 
 export default TripReportSVC2014;
