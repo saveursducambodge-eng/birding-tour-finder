@@ -181,10 +181,8 @@ Dinner and overnight at the Tmatboey community lodge.
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              We set out at 6:00 am with our local guide for a morning of birding and were rewarded with sightings of some incredible species, including the Crested Treeswift, Golden-crowned Leafbird, Greater Flameback, and Bronze Drongo.
-            </p>
-            <p className="text-justify">
-              By 10:00 am, we left the forest and returned to the lodge, where we enjoyed lunch at 11:45 am. Afterward, we began our journey back to Siem Reap, bringing our birding adventure to a close with lasting memories of Cambodia's remarkable wildlife.
+              After breakfast at the lodge, we depart Tmatboey and drive back to Siem Reap, stopping along the way for additional birding opportunities in suitable habitats.<br />
+              Arrival in Siem Reap in the early afternoon, marking the end of an unforgettable Northern Plains birding adventure.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
