@@ -236,7 +236,7 @@ The excursion began early in the morning, when bird activity is at its peak. The
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Little Cormorant (Phalacrocorax niger) – R seen</div>
                   <div>Indian Cormorant (Phalacrocorax fuscicollis) – R seen</div>
-                  <div>Great Cormorant (Phalacrocorax carbo)</div>
+                  <div>​</div>
                   <div>Oriental Darter (Anhinga melanogaster) – R seen</div>
                 </div>
               </AccordionContent>
