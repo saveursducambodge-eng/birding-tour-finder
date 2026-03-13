@@ -38,7 +38,7 @@ const TripReportATT2015 = () => {
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-nature-forest" />
-              <span>17th February 2024</span>
+              <span>10th Feb 2024</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-nature-forest" />
@@ -150,7 +150,7 @@ The excursion began early in the morning, when bird activity is at its peak. The
           <div className="mb-8">
             <div className="flex items-start gap-4 mb-4">
               <Badge className="bg-nature-forest text-white shrink-0">Day 1</Badge>
-              <h3 className="font-serif text-xl font-bold text-primary">17th February 2024 – Ang Trapeang Thmor</h3>
+              <h3 className="font-serif text-xl font-bold text-primary">10th Feb 2024 – Ang Trapeang Thmor</h3>
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p className="text-justify">
