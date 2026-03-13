@@ -4,21 +4,21 @@ import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const highlights = [
-  "Sarus Crane",
-  "Spot-billed Pelican",
-  "Milky Stork",
-  "Black-necked Stork",
-  "Bengal Florican",
-  "Spotted Wood-Owl",
-  "Common Barn-owl",
-  "Peregrine Falcon",
-  "Bronze-winged Jacana",
-  "Pheasant-tailed Jacana",
-  "Oriental Pratincole",
-  "Black-backed Swamphen",
-  "Painted Stork",
-  "Lesser Adjutant",
-];
+"Sarus Crane",
+"Spot-billed Pelican",
+"Milky Stork",
+"Black-necked Stork",
+"Bengal Florican",
+"Spotted Wood-Owl",
+"Common Barn-owl",
+"Peregrine Falcon",
+"Bronze-winged Jacana",
+"Pheasant-tailed Jacana",
+"Oriental Pratincole",
+"Black-backed Swamphen",
+"Painted Stork",
+"Lesser Adjutant"];
+
 
 const TripReportATT2015 = () => {
   return (
@@ -65,13 +65,34 @@ const TripReportATT2015 = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              We left from the hotel at 5:00 am to go to Ang Trapeang Thmor for birding. We arrived at Phnom Srok at 6:30 am and continued to the Reservoir for birding until 7:30 am. We then had breakfast there.
+              ​Pearaing Biodiversity Conservation Center is a community-based wetland conservation area located about 13 km southeast of Siem Reap and close to Tonle Sap Lake, the largest freshwater lake in Southeast Asia. The site lies within the Tonle Sap floodplain and features a unique ecosystem of seasonal wetlands, flooded forests, rice fields, and small reservoirs. 
             </p>
             <p className="text-justify">
-              At 8:00 am, we went back to the office of WCS to pick up a ranger and a local guide and did birding around there. We continued to the reservoir to see Sarus Crane and Spotted Wood-Owl. At 10:30 am, we went back to the reservoir and stopped at one place on the reservoir for birding where we spent about one hour.
+              ​Recognized as an eco-tourism site since 2015, Pearaing has been protected through the cooperation of local villagers, monks, and authorities. Conservation efforts focus on protecting wetlands, fish habitats, and bird populations while creating sustainable tourism opportunities for the community. 
             </p>
             <p className="text-justify">
-              At 12:00 pm, we went back to the office of WCS for lunch and after lunch we had a presentation about the reservoir. At 1:30 pm, we continued to the other place on the reservoir for birding again. We saw more species in the reservoir and then continued to see silk production. At 2:00 pm, we went back to Siem Reap.
+              ​The area supports hundreds of species of fish and many waterbirds, making it one of the closest birdwatching locations to Siem Reap. Typical birds recorded here include pelicans, storks, herons, darters, Asian Openbills, cormorants, and Black-headed Ibis, among many others. 
+Many birds migrate to the Pearaing wetlands during the dry season to feed after breeding in larger colonies around the Tonle Sap ecosystem. Because of its rich biodiversity and peaceful environment, the site has become an attractive destination for birdwatchers, photographers, and eco-tourists visiting the Siem Reap region. 
+
+A wonderful half-day morning birdwatching trip took place at the Pearaing Biodiversity Conservation Center, a rich wetland habitat located in the floodplain of Tonle Sap Lake. 
+The area consists of rice fields, seasonal wetlands, and open grassland, providing ideal habitat for many species of waterbirds and wetland birds.
+We began the excursion early in the morning, when bird activity is at its peak. The soft golden light of sunrise illuminated the wetlands, creating excellent conditions for birdwatching and photography.
+
+Morning Birding Experience
+As we walked along the wetland trails and rice field edges, numerous waterbirds were already active, feeding in shallow pools and flying across the open landscape.
+Among the highlights of the morning were sightings of:
+•	Asian Openbill
+•	Lesser Whistling Duck
+•	Pheasant-tailed Jacana
+•	Bronze-winged Jacana
+•	Purple Heron
+•	Grey-headed Swamphen
+Flocks of ducks and egrets moved between feeding areas, while jacanas gracefully walked across floating vegetation. Raptors were also occasionally seen soaring over the wetlands searching for prey.
+
+
+
+
+
             </p>
           </div>
         </div>
@@ -85,14 +106,12 @@ const TripReportATT2015 = () => {
             Bird Highlights
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {highlights.map((bird, index) => (
-              <Card key={index} className="bg-white/80">
+            {highlights.map((bird, index) => <Card key={index} className="bg-white/80">
                 <CardContent className="p-3 sm:p-4">
                   <span className="text-nature-forest font-semibold mr-2">{index + 1}.</span>
                   <span className="text-sm sm:text-base text-foreground">{bird}</span>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -448,8 +467,4 @@ const TripReportATT2015 = () => {
           </Accordion>
         </div>
       </section>
-    </>
-  );
-};
-
-export default TripReportATT2015;
+    </>);};export default TripReportATT2015;
