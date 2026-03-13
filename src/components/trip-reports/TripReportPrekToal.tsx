@@ -120,13 +120,16 @@ Dinner and overnight at the Tmatboey community lodge.
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              We got our baggage on the car by 4:45 am and drove 1.5 hours to get to Prolay Florican Grassland Community. We met our local guides who were waiting for us to witness a majestic Bengal Florican, one of the critically endangered species in Cambodia. We also had a chance to see some wetland species like Chestnut Munia, Bengal Florican, Spotted Owlet, Common Kingfisher, White-throated Kingfisher, Black Drongo, Eastern Marsh Harrier, Little Heron, Scaly-breasted Munia, Egrets, and Taiga Flycatcher.
+              Start time: 5:30 AM
+              An early morning start allows us to explore the dry dipterocarp forest when bird activity is at its peak. We travel by vehicle and short walking trails through the forest to search for rare and specialized Northern Plains species.
             </p>
             <p className="text-justify">
-              We left Prolay protected area to get lunch on the way at 11:30 am and continued our journey to Koh Ker Temple. We visited some temples such as Pram Temple, Beong Khnar Temple, Damrei Temple (Elephant Temple), and the 7-tier Koh Ker temple. We witnessed some stunning birds such as Greater Yellownape, Black-naped Monarch, Black-hooded Oriole, Bar-winged Flycatcher-Shrike, Dark-necked Tailorbird, and Black-headed Woodpecker.
+              Morning highlights may include sightings of White-shouldered Ibis, White-rumped Falcon, and Black-headed Woodpecker. Raptors are often active during the morning hours, and the open forest structure allows excellent views.
+              After returning to the lodge for lunch and a short rest, we head out again in the afternoon to explore additional wetlands and forest clearings. These habitats attract a variety of birds including bee-eaters, rollers, and parakeets.
             </p>
             <p className="text-justify">
-              We left Koh Ker Group and arrived at Tmat Beoy Lodge around 5:30 pm. We had dinner and spent the night at the lodge.
+              In the late afternoon, we again visit known feeding areas or waterholes to increase our chances of observing the Giant Ibis and other rare species.
+              Dinner and overnight at Tmatboey.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
