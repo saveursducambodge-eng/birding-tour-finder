@@ -315,23 +315,23 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Black-winged Stilt (Himantopus himantopus) – R seen</div>
-                  <div>Pacific Golden Plover (Pluvialis fulva)</div>
-                  <div>Red-wattled Lapwing (Vanellus indicus) – KS seen</div>
-                  <div>Little Ringed Plover (Charadrius dubius) – KS seen</div>
+                  <div>​</div>
+                  <div>Red-wattled Lapwing (Vanellus indicus)</div>
+                  <div>Little Ringed Plover (Charadrius dubius) </div>
                   <div>Pheasant-tailed Jacana (Hydrophasianus chirurgus) – R seen</div>
                   <div>Bronze-winged Jacana (Metopidius indicus) – R seen</div>
-                  <div>Greater Painted-snipe (Rostratula benghalensis)</div>
+                  <div>​</div>
                   <div>Pintail Snipe (Gallinago stenura) – R seen</div>
-                  <div>Common Snipe (Gallinago gallinago)</div>
+                  <div>​</div>
                   <div>Common Sandpiper (Actitis hypoleucos) – R seen</div>
-                  <div>Green Sandpiper (Tringa ochropus)</div>
+                  <div>​</div>
                   <div>Wood Sandpiper (Tringa glareola) – R seen</div>
                   <div>Common Greenshank (Tringa nebularia) – R seen</div>
                   <div>Marsh Sandpiper (Tringa stagnatilis) – R seen</div>
-                  <div>Spotted Redshank (Tringa totanus) – R seen</div>
-                  <div>Oriental Pratincole (Glareola maldivarum) – KT seen</div>
-                  <div>Ruff – 4 R seen</div>
-                  <div>Oriental Plover – 45 KT seen</div>
+                  <div>​</div>
+                  <div>Oriental Pratincole (Glareola maldivarum)</div>
+                  <div>​</div>
+                  <div>​</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
