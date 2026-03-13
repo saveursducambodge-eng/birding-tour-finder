@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, Bird } from "lucide-react";
-import prekToalPlatformView from "@/assets/prek-toal-platform-view.jpg";
 const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
   return <>
@@ -100,8 +99,8 @@ const TripReportPrekToal = () => {
             <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
               <span>Painted Stork – Image coming soon</span>
             </div>
-            <div className="aspect-video rounded-xl overflow-hidden">
-              <img src={prekToalPlatformView} alt="View from the birdwatching platform at Prek Toal" className="w-full h-full object-cover" />
+            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
+              <span>View from the platform – Image coming soon</span>
             </div>
           </div>
         </div>
