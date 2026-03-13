@@ -282,14 +282,14 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <AccordionTrigger className="text-lg font-semibold">Raptors</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <div>Peregrine Falcon (Falco peregrinus)</div>
-                  <div>Black-shouldered Kite (Elanus caeruleus) – KS seen</div>
+                  <div>​</div>
+                  <div>Black-winged Kite (Elanus caeruleus) – KS seen</div>
                   <div>Black Kite (Milvus migrans) – KS seen</div>
-                  <div>Brahminy Kite (Haliastur indus)</div>
+                  <div>​</div>
                   <div>Black-eared Kite (Milvus lineatus)</div>
-                  <div>Hen Harrier (Circus cyaneus)</div>
+                  <div>​</div>
                   <div>Pied Harrier (Circus melanoleucos) – KS seen</div>
-                  <div>Western Marsh-harrier (Circus aeruginosus)</div>
+                  <div>​</div>
                   <div>Eastern Marsh-harrier (Circus spilonotus) – KS seen</div>
                   <div>Rufous-winged Buzzard (Butastur liventer) – KS seen</div>
                   <div>Shikra (Accipiter badius) – KS seen</div>
