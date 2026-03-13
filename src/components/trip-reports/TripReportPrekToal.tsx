@@ -49,9 +49,6 @@ const TripReportPrekToal = () => {
 
 
             </p>
-            <p className="text-justify">
-              On the fourth and final day, we set off to discover more avian wonders, including the Greater Flameback, Burmese Shrike, Crested Treeswift, and many other species. After lunch, we concluded our adventure and returned to Siem Reap, enriched by the incredible diversity of Cambodia's birdlife and cultural heritage.
-            </p>
           </div>
         </div>
       </section>
