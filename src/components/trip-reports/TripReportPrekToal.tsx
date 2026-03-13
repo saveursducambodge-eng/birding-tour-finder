@@ -18,14 +18,7 @@ const TripReportPrekToal = () => {
           <Badge className="mb-4 bg-nature-forest text-white text-xs sm:text-sm">
             Trip Report
           </Badge>
-          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 max-w-4xl mx-auto">Trip Report 3day2nights at Bengal Florican Grasslands  and Tmat Beoy
-
-
-
-
-
- 
-        </h1>
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 max-w-4xl mx-auto">Trip Report 3day2nights at  Tmat Beoy  </h1>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-nature-forest" />
