@@ -17,7 +17,7 @@ const highlights = [
 "Oriental Pratincole",
 "Black-backed Swamphen",
 "Painted Stork",
-"Lesser Adjutant"];
+"Common Kingfisher"];
 
 
 const TripReportATT2015 = () => {
