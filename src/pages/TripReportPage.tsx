@@ -20,7 +20,7 @@ const TripReportPage = () => {
                   value="prek-toal" 
                   className="data-[state=active]:bg-nature-forest data-[state=active]:text-white px-4 py-2 text-sm"
                 >
-                  Prek Toal & Tmat Beoy (Nov 2025)
+                  Tmat Beoy - Gaint Ibis(March 2022)
                 </TabsTrigger>
                 <TabsTrigger 
                   value="wild-cambodia" 
