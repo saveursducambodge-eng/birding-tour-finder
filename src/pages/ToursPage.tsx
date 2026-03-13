@@ -709,6 +709,7 @@ const ToursPage = () => {
                 <SelectItem value="all">All Tours</SelectItem>
                 <SelectItem value="multi-day">Multi-Day Adventures</SelectItem>
                 <SelectItem value="cultural">Cultural & Birding</SelectItem>
+                <SelectItem value="temple">Temple Tours</SelectItem>
                 <SelectItem value="water">Wetland Specialists</SelectItem>
                 <SelectItem value="sanctuary">Sanctuary Visits</SelectItem>
               </SelectContent>
