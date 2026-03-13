@@ -177,7 +177,7 @@ The excursion began early in the morning, when bird activity is at its peak. The
             Bird Checklist (162 Species)
           </h2>
           <p className="text-sm text-muted-foreground mb-4">
-            <span className="font-semibold">Location Key:</span> R = Reservoir, KS = Keng Som Rung, KT = Kok Thoch, V = Vocalization only
+            <span className="font-semibold">Location Key:</span> R = Reservoir, V = Vocalization only
           </p>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="gamebirds">
