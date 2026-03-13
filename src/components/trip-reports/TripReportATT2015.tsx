@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import attDay1SarusCranes from "@/assets/att-day1-sarus-cranes.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
