@@ -128,11 +128,15 @@ const TripReportEssentialCambodia = () => {
               <h3 className="font-serif text-xl font-bold text-primary">Prek Toal Bird Sanctuary</h3>
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
-              <p className="text-justify">
-                Prek Toal is one of the amazing trips that mostly we using the boat from the beginning till the end of the trip. We will start our boat trip from Mechrey-Siem Reap boat dock our schedule. We will spend around 1 hour half on a wooden boat, including breakfast along the way to Prek Toal floating village.
+              <p className="text-justify whitespace-pre-line">
+                Day 1 – Siem Reap to Tmatboey / Afternoon Birding
+                Start time: 6:00 AM
               </p>
-              <p className="text-justify">
-                We had a stop at The MOE building for the research station and then we swapped the boat from a wooden boat to a long tail boat to get our platform tower #49 to observe the birds. We spend our time there till our client feels enough with the landscape of the breeding colony birds with our target such as Greater Adjutant, Lesser Adjutant, Milky Stork, Grey-headed Fish-eagle, Peregrine Falcon, Painted Stork, Asian Openbill, Spot-billed Pelican, Black-headed Ibis, Glossy Ibis, Grey Heron, and other water species.
+              <p className="text-justify whitespace-pre-line">
+                Early morning departure from Siem Reap for the journey to Tmatboey Village, located approximately 4–5 hours north of the city. The drive passes through rural countryside, rice fields, and forest landscapes.
+                After arriving at the Tmatboey community ecolodge, we enjoy lunch and a short rest before beginning our afternoon birding session in the surrounding dry forest and seasonal wetlands.
+                During the afternoon birding walk, we search for species such as Collared Falconet, Indochinese Roller, Black-headed Woodpecker, and various bee-eaters and drongos.
+                As the evening approaches, we visit nearby wetlands and forest pools in search of the highlight species, the Giant Ibis, which often comes to drink at forest pools before sunset.
               </p>
             </div>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
