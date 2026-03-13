@@ -175,7 +175,7 @@ Early morning departure from Siem Reap for the journey to Tmatboey Village, loca
           <div className="flex items-start gap-4 mb-6">
             <Badge className="bg-nature-forest text-white shrink-0">Day 4</Badge>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-primary">
-              ​
+              
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
