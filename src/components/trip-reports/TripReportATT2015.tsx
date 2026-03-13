@@ -266,7 +266,7 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Sarus Crane (Grus antigone) – KT seen</div>
-                  <div>Bengal Florican (Houbaropsis bengalensis)</div>
+                  <div>​</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
