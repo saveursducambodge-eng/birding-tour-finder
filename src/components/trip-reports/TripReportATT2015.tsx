@@ -214,11 +214,11 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <AccordionTrigger className="text-lg font-semibold">Storks</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <div>Milky Stork (Mycteria cinerea)</div>
+                  <div>​</div>
                   <div>Painted Stork (Mycteria leucocephala) – R seen</div>
                   <div>Asian Openbill (Anastomus oscitans) – R seen</div>
-                  <div>Black-necked Stork (Ephypiorhynchus asiaticus) – R seen</div>
-                  <div>Lesser Adjutant (Leptoptilos javanicus)</div>
+                  <div>​</div>
+                  <div>​</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
