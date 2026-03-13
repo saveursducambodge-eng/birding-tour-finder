@@ -82,6 +82,7 @@ import attSlide5 from "@/assets/att-slide-5.jpg";
 import attSlide6 from "@/assets/att-slide-6.jpg";
 import attSlide7 from "@/assets/att-slide-7.jpg";
 import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
+import angkorWatTempleBird from "@/assets/angkor-wat-temple-bird.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import bird7 from "@/assets/bird-7.jpg";
