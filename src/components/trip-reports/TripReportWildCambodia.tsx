@@ -4,30 +4,30 @@ import { Calendar, Users, MapPin, Bird } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const highlights = [
-  "Giant Ibis",
-  "White-shoulder Ibis",
-  "Cambodian Tailorbird",
-  "Red-headed Vulture",
-  "White-rumped Vulture",
-  "Slender-billed Vulture",
-  "Milky Stork",
-  "Greater Adjutant",
-  "Lesser Adjutant",
-  "Sarus Crane",
-  "Asian Golden Weaver",
-  "White-rumped Falcon",
-  "Black-headed Woodpecker",
-  "Yellow-bellied Woodpecker",
-  "Yellow-crowned Woodpecker",
-  "Brown Boobook",
-  "Spotted Wood-Owl",
-  "Brown Wood-Owl",
-  "Brown Fish-Owl",
-  "Oriental Scops Owl",
-  "Mekong Wagtail",
-  "Forest Wagtail",
-  "Rufous Rumped Grass-Babbler",
-];
+"Giant Ibis",
+"White-shoulder Ibis",
+"Cambodian Tailorbird",
+"Red-headed Vulture",
+"White-rumped Vulture",
+"Slender-billed Vulture",
+"Milky Stork",
+"Greater Adjutant",
+"Lesser Adjutant",
+"Sarus Crane",
+"Asian Golden Weaver",
+"White-rumped Falcon",
+"Black-headed Woodpecker",
+"Yellow-bellied Woodpecker",
+"Yellow-crowned Woodpecker",
+"Brown Boobook",
+"Spotted Wood-Owl",
+"Brown Wood-Owl",
+"Brown Fish-Owl",
+"Oriental Scops Owl",
+"Mekong Wagtail",
+"Forest Wagtail",
+"Rufous Rumped Grass-Babbler"];
+
 
 const TripReportWildCambodia = () => {
   return (
@@ -66,16 +66,16 @@ const TripReportWildCambodia = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              Wild Cambodia and Pursat 11-day trip include a number of birding sites around Cambodia. The sites were including Angkor Wat, Prek Toal Bird Sanctuary, Ang Trapeang Thmor Landscape Protected Area, Bengal Florican Grassland, Prey Veng White Winged Duck rooting Tree, Tmat Boey Ibis Site, Boeng Toal Vulture Restaurant, Kratie, Cambodia Tailorbird site, and Pursat Grassland.
+              ​The Wild Cambodia 10-day birding trip includes visits to several of the most important birdwatching sites across Cambodia. Throughout the journey, participants explore a variety of habitats including wetlands, grasslands, dry dipterocarp forests, and river landscapes.
             </p>
             <p className="text-justify">
-              We started our tour from Siem Reap at one of the most beautiful places in Cambodia called Angkor Wat temple, a world heritage site with our target's bird species like White-throated Rock-thrush, Blue Rock-thrush, Hainan Blue Flycatcher, Forest Wagtail, Alexandrine Parakeet, Red-breasted Parakeet, and Asian barred Owlet.
+              ​Key birding locations on the tour include Angkor Wat, the famous temple complex surrounded by forest habitats that support many woodland bird species. The itinerary also includes the remarkable waterbird breeding colonies at Prek Toal Bird Sanctuary, one of Southeast Asia’s most important sites for colonial waterbirds.
             </p>
             <p className="text-justify">
-              Prek Toal is a large waterbird breeding colony known as the Ramsar site since 2015 called the "Wetland Protected Area" in Battambang province. It is a popular area for ecotourism and birdwatching with the rarest birds in our target's species such as Milky Stork, Greater Adjutant, Lesser Adjutant, Painted Stork, Black-headed Ibis, Asian Openbill, Grey-headed Fish-eagle, Oriental Darter, Cormorants, and Spot-billed Pelican.
+              ​Other highlights include Ang Trapeang Thmor Landscape Protected Area, a key wetland area known for wintering cranes and waterbirds 
             </p>
             <p className="text-justify">
-              Ang Trapeang Thmor is a protected area established in 1999 after Mr. Samveasna found the tallest bird in the world can fly called the "Sarus Crane" between 1997 and 1998. A unique wetland ecosystem gives home to over 200 species of birds living and feeding there with target birds such as Grey-headed Swamphen, Bronze-winged Jacana, Pheasant-tailed Jacana, Cotton Pygmy Goose, Garganey, Greater spotted Eagle, Barn Owl, Spotted Wooded Owl, and Sarus Crane.
+              ​The tour continues to the forests of Prey Veng, an important location for the rare White-winged Duck, before heading north to Tmatboey Village, one of the best places in the world to observe the critically endangered Giant Ibis and White-shouldered Ibis.
             </p>
             <p className="text-justify">
               Bengal Florican Grassland is seasonally inundated outer-floodplain grassland with some small areas of scrub with our targets such as Bengal Florican, Eastern Marsh-Harrier, Yellow-breasted Bunting, Indochinese Bushlark, Oriental Skylark, Bluethroat, Oriental Pratincole, Pied Harrier, Painted Stork, and Sarus Crane.
@@ -107,14 +107,14 @@ const TripReportWildCambodia = () => {
             Birds Highlight of the Tour
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {highlights.map((bird, index) => (
-              <Card key={index} className="bg-white/80">
+            {highlights.map((bird, index) =>
+            <Card key={index} className="bg-white/80">
                 <CardContent className="p-3 sm:p-4">
                   <span className="text-nature-forest font-semibold mr-2">{index + 1}.</span>
                   <span className="text-sm sm:text-base text-foreground">{bird}</span>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -444,8 +444,8 @@ const TripReportWildCambodia = () => {
           </Accordion>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 };
 
 export default TripReportWildCambodia;
