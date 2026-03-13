@@ -218,7 +218,7 @@ const TripReportSVC2014 = () => {
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Plaintive Cuckoo (Cacomantis merulinus)</div>
                   <div>Green-billed Malkoha (Rhopodytes tristis)</div>
-                  <div>Greater Coucal (Centropus sinensis)</div>
+                  <div>Milky stork (Mycteria cinerea)</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
