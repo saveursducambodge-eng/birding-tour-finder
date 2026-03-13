@@ -150,7 +150,7 @@ The excursion began early in the morning, when bird activity is at its peak. The
           <div className="mb-8">
             <div className="flex items-start gap-4 mb-4">
               <Badge className="bg-nature-forest text-white shrink-0">Day 1</Badge>
-              <h3 className="font-serif text-xl font-bold text-primary">17th February 2024 – Ang Trapeang Thmor</h3>
+              <h3 className="font-serif text-xl font-bold text-primary">10th Feb 2024 – Ang Trapeang Thmor</h3>
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p className="text-justify">
