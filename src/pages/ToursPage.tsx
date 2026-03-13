@@ -552,102 +552,6 @@ const ToursPage = () => {
     food: "Khmer cuisine similar to most Southeast Asian cooking but rather less spicy. Traditional cuisine recovering after knowledge lost through years of war. Lodge staff cook wide variety of good local food. Former French influence means good bread readily available in many areas. For beer lovers, surprisingly wide range of local brews to try. Bunong traditional meals at Jahoo Gibbon Camp.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, light rain jacket, comfortable hiking shoes, layered clothing for cooler highland areas (Sen Monorom/Dak Dam), camera equipment, and field guide"
   }, {
-    id: 15,
-    title: "Angkor Wat Sunrise Birding & Temple Tour",
-    description: "Experience the magic of sunrise at Angkor Wat combined with expert birding through the temple forests. This tour blends Cambodia's most iconic cultural heritage with rewarding birdwatching, exploring Angkor Wat, Ta Prohm (Tomb Raider location), and Bayon Temple.\n\nThe ancient moat and surrounding forest patches support over 50 bird species. After sunrise birding, explore the temples with a knowledgeable guide before afternoon birding at Ta Prohm and Bayon.",
-    duration: "Full Day (12 hours)",
-    difficulty: "Easy",
-    groupSize: "2-8 people",
-    price: "$195 Per Person",
-    image: bird5,
-    category: "temple",
-    highlights: ["Angkor Wat sunrise", "Forest Wagtail", "Hainan Blue Flycatcher", "Ta Prohm Temple", "Bayon Temple", "50+ bird species", "Alexandrine Parakeet"],
-    rating: 4.8,
-    schedule: {
-      "5:00 AM": "Pick up from hotel, transfer to Angkor Wat",
-      "5:30 AM": "Sunrise at Angkor Wat with birding in temple grounds and moat area",
-      "9:00 AM": "Guided temple tour learning about Khmer history and architecture",
-      "11:30 AM": "Lunch at local restaurant in temple area",
-      "1:30 PM": "Birding in forest around Ta Prohm - search for Alexandrine Parakeet and Red-breasted Parakeet",
-      "3:30 PM": "Visit Bayon Temple with afternoon birding until sunset",
-      "5:30 PM": "Return to hotel"
-    },
-    birdSpecies: ["Hainan Blue Flycatcher", "Forest Wagtail", "White-throated Rock Thrush", "Asian Brown Flycatcher", "Taiga Flycatcher", "Black-capped Kingfisher", "Asian Barred Owlet", "Black Baza", "Alexandrine Parakeet", "Red-breasted Parakeet", "Ashy Minivet", "Greater Racket-tailed Drongo", "Yellow-browed Warbler", "Pale-legged Leaf Warbler", "Velvet-fronted Nuthatch", "Scarlet Minivet"],
-    included: ["All transport", "Angkor pass entry fee", "Lunch", "Bottled drinking water", "English-speaking birding guide", "Temple tour guide"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
-    bestSeason: "November to April (Peak: January-March) for optimal birding and temple photography conditions",
-    physicalEffort: "Easy. Walking 3-5km on mostly flat terrain around temple grounds. Suitable for all fitness levels.",
-    weather: "Hot and dry. Morning start avoids midday heat. Afternoon temple forests provide shade.",
-    food: "Lunch at local Khmer restaurant near Angkor complex.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and comfortable walking shoes. Modest clothing required for temple entry."
-  }, {
-    id: 16,
-    title: "Koh Ker, Beng Melea & Preah Vihear Temple Birding",
-    description: "A two-day temple and birding expedition visiting Cambodia's most remote and spectacular ancient temples. Day one explores Koh Ker's 180+ sanctuaries in dry dipterocarp forest and the jungle-engulfed Beng Melea. Day two ventures to the clifftop Preah Vihear Temple on the Thai border.\n\nThe surrounding forests offer exceptional birding with 8 woodpecker species, raptors, and forest specialists found nowhere else on standard itineraries.",
-    duration: "2 Days / 1 Night",
-    difficulty: "Moderate",
-    groupSize: "2-6 people",
-    price: "$495 Per Person",
-    image: bird3,
-    images: [bird3, kohKerSlide1, kohKerSlide2, kohKerSlide3, kohKerSlide4, kohKerSlide5, kohKerSlide6],
-    category: "temple",
-    highlights: ["Koh Ker pyramid temple", "Beng Melea jungle ruins", "Preah Vihear clifftop temple", "8 woodpecker species", "White-Rumped Pygmy Falcon", "Collared Falconet", "Remote forest birding"],
-    rating: 4.9,
-    schedule: {
-      "Day 1 - 5:00 AM": "Depart Siem Reap with packed breakfast",
-      "Day 1 - 8:00 AM": "Arrive Koh Ker, birding in dry dipterocarp forest",
-      "Day 1 - 12:00 PM": "Lunch at Koh Ker, explore temple complex",
-      "Day 1 - 2:30 PM": "Visit Beng Melea temple with forest birding",
-      "Day 1 - 5:00 PM": "Check in to accommodation near Preah Vihear",
-      "Day 2 - 5:30 AM": "Early morning birding en route to Preah Vihear",
-      "Day 2 - 8:00 AM": "Explore Preah Vihear Temple with birding along clifftop trails",
-      "Day 2 - 12:00 PM": "Lunch and return journey to Siem Reap",
-      "Day 2 - 5:00 PM": "Arrive back at Siem Reap hotel"
-    },
-    birdSpecies: ["White-Rumped Pygmy Falcon", "Collared Falconet", "Rufous-winged Buzzard", "Crested Serpent Eagle", "Red-breasted Parakeet", "Blossom-headed Parakeet", "Velvet-fronted Nuthatch", "Brown Prinia", "Scarlet Minivet", "Small Minivet", "Black-hooded Oriole", "Sooty-headed Bulbul", "Purple Sunbird", "Asian Green Bee-eater", "Indochinese Roller", "Hainan Blue Flycatcher", "White-throated Rock Thrush", "Great Slaty Woodpecker", "Black-headed Woodpecker", "Greater Flameback"],
-    included: ["All transport", "1 night accommodation", "All meals (2 breakfasts, 2 lunches, 1 dinner)", "National park and temple entry fees", "Bottled drinking water", "English-speaking birding guide"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
-    bestSeason: "November to April (Peak: January-March) for dry trails and optimal birding",
-    physicalEffort: "Moderate. Walking 4-6km daily on uneven temple terrain and forest trails. Preah Vihear involves some steep steps.",
-    weather: "Hot and dry. Forest canopy provides shade at most sites. Preah Vihear clifftop can be windy.",
-    food: "Local Khmer restaurants and packed meals.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, sturdy walking shoes, and camera"
-  }, {
-    id: 17,
-    title: "3-Day Angkor Temples & Wetlands Birding Adventure",
-    description: "The ultimate temple and birding combination tour covering Angkor's greatest temples alongside Cambodia's premier wetland birding sites. This 3-day adventure pairs the cultural wonders of Angkor Wat, Ta Prohm, and Bayon with birdwatching at Prek Toal Waterbird Sanctuary and Pearaing Biodiversity Conservation Center.\n\nPerfect for visitors who want both world-class cultural experiences and exceptional birding without committing to a longer expedition.",
-    duration: "3 Days / 2 Nights",
-    difficulty: "Easy",
-    groupSize: "2-8 people",
-    price: "$595 Per Person",
-    image: bird5,
-    category: "temple",
-    highlights: ["Angkor Wat sunrise", "Prek Toal Waterbird Sanctuary", "Ta Prohm & Bayon", "Greater Adjutant", "Painted Stork", "Pearaing wetlands", "70+ bird species", "Floating village"],
-    rating: 4.9,
-    schedule: {
-      "Day 1 - 5:00 AM": "Sunrise birding at Angkor Wat temple grounds",
-      "Day 1 - 9:00 AM": "Guided tour of Angkor Wat, Ta Prohm, and Bayon temples with birding",
-      "Day 1 - 12:00 PM": "Lunch in temple area",
-      "Day 1 - 2:00 PM": "Afternoon birding at Pearaing Biodiversity Conservation Center",
-      "Day 1 - 5:30 PM": "Return to hotel. Overnight in Siem Reap",
-      "Day 2 - 5:30 AM": "Depart for Prek Toal Waterbird Sanctuary by boat",
-      "Day 2 - 9:30 AM": "Arrive at observation platform for waterbird colony viewing",
-      "Day 2 - 12:00 PM": "Lunch at Saray Community Restaurant in floating village",
-      "Day 2 - 2:00 PM": "Floating village paddle boat tour and handicraft workshop",
-      "Day 2 - 4:00 PM": "Return to Siem Reap. Overnight in Siem Reap",
-      "Day 3 - 5:30 AM": "Morning birding at Pearaing wetlands targeting remaining species",
-      "Day 3 - 9:00 AM": "Visit lesser-known temples with forest birding",
-      "Day 3 - 12:00 PM": "Farewell lunch and transfer to airport or hotel"
-    },
-    birdSpecies: ["Greater Adjutant", "Lesser Adjutant", "Painted Stork", "Milky Stork", "Spot-billed Pelican", "Oriental Darter", "Indian Cormorant", "Grey-headed Fish Eagle", "Hainan Blue Flycatcher", "Forest Wagtail", "Alexandrine Parakeet", "Red-breasted Parakeet", "Asian Barred Owlet", "Black-capped Kingfisher", "White-throated Rock Thrush", "Purple Heron", "Black Bittern", "Cinnamon Bittern", "Asian Openbill", "Bronze-winged Jacana"],
-    included: ["All transport including boat trips", "2 nights accommodation in Siem Reap", "All meals (3 breakfasts, 3 lunches, 2 dinners)", "Angkor pass and all entry fees", "Bottled drinking water", "English-speaking birding guide", "Temple tour guide", "Community restaurant meal"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
-    bestSeason: "November to April (Peak: January-March) for waterbirds at Prek Toal and optimal temple conditions",
-    physicalEffort: "Easy. Walking 3-5km daily on flat terrain. Boat trips are comfortable. Suitable for all fitness levels.",
-    weather: "Hot and dry. Early morning starts avoid peak heat. Wetland areas can be humid.",
-    food: "Mix of local Khmer restaurants and community dining at Prek Toal floating village.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, modest clothing for temples, and camera"
-  }, {
     id: 14,
     title: "Key Locations for Rare Birds",
     description: "A typical Cambodia rare bird itinerary includes Siem Reap for the temples and birding areas like Prek Toal Bird Sanctuary for storks and pelicans, the Florican Grasslands and Tmatboey in the Northern Plains for the critically endangered Bengal Florican and Giant Ibis, the Vulture Restaurant at Boeng Toal for vultures, and Kratie for the Mekong Wagtail and Irrawaddy Dolphins. The best time to visit for a wide range of species, particularly waterbirds, is typically from January to April.",
@@ -717,7 +621,6 @@ const ToursPage = () => {
                 <SelectItem value="cultural">Cultural & Birding</SelectItem>
                 <SelectItem value="water">Wetland Specialists</SelectItem>
                 <SelectItem value="sanctuary">Sanctuary Visits</SelectItem>
-                <SelectItem value="temple">Temple Tours</SelectItem>
               </SelectContent>
             </Select>
           </div>
