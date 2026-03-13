@@ -8,7 +8,7 @@ const highlights = [
 "Spot-billed Pelican",
 "Milky Stork",
 "Black-necked Stork",
-"Bengal Florican",
+"Spotted Owlet",
 "Spotted Wood-Owl",
 "Common Barn-owl",
 "Peregrine Falcon",
