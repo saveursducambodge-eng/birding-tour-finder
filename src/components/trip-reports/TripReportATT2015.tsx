@@ -38,7 +38,7 @@ const TripReportATT2015 = () => {
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-nature-forest" />
-              <span>17th February 2024</span>
+              <span>10th Feb 2024</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-nature-forest" />
