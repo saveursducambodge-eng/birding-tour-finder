@@ -1,6 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import attDay1SarusCranes from "@/assets/att-day1-sarus-cranes.jpg";
-import attDay1Cattle from "@/assets/att-day1-cattle.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -9,17 +7,17 @@ const highlights = [
 "Sarus Crane",
 "Spot-billed Pelican",
 "Milky Stork",
-"Black Kite",
-"Spotted Owlet",
+"Black-necked Stork",
+"Bengal Florican",
 "Spotted Wood-Owl",
 "Common Barn-owl",
-"Rufous-winged Buzzard",
+"Peregrine Falcon",
 "Bronze-winged Jacana",
 "Pheasant-tailed Jacana",
 "Oriental Pratincole",
 "Black-backed Swamphen",
 "Painted Stork",
-"Common Kingfisher"];
+"Lesser Adjutant"];
 
 
 const TripReportATT2015 = () => {
@@ -82,43 +80,33 @@ The excursion began early in the morning, when bird activity is at its peak. The
             
 
             </p>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-2">Morning Birding</h3>
-                <p className="text-justify">
-                  Shortly after sunrise, the group began exploring the wetland edges and surrounding grasslands. Large flocks of waterbirds were already active, flying across the reservoir and feeding in shallow water.
-                  One of the highlights of the morning was observing the magnificent Sarus Crane, the tallest flying bird in the world. Several individuals were seen foraging gracefully in the open wetlands.
-                  Other notable species recorded during the morning included:
-                </p>
-                <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>Asian Openbill</li>
-                  <li>Grey-headed Swamphen</li>
-                  <li>Purple Heron</li>
-                  <li>Black-winged Stilt</li>
-                  <li>Whiskered Tern</li>
-                </ul>
-                <p className="mt-2 text-justify">
-                  The open landscape made it easy to scan the area with binoculars and spotting scopes.
-                </p>
-              </div>
+            <p className="text-justify">
+              ​Recognized as an eco-tourism site since 2015, Pearaing has been protected through the cooperation of local villagers, monks, and authorities. Conservation efforts focus on protecting wetlands, fish habitats, and bird populations while creating sustainable tourism opportunities for the community. 
+            </p>
+            <p className="text-justify">
+              ​The area supports hundreds of species of fish and many waterbirds, making it one of the closest birdwatching locations to Siem Reap. Typical birds recorded here include pelicans, storks, herons, darters, Asian Openbills, cormorants, and Black-headed Ibis, among many others. 
+Many birds migrate to the Pearaing wetlands during the dry season to feed after breeding in larger colonies around the Tonle Sap ecosystem. Because of its rich biodiversity and peaceful environment, the site has become an attractive destination for birdwatchers, photographers, and eco-tourists visiting the Siem Reap region. 
 
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-2">Midday Birding</h3>
-                <p className="text-justify text-muted-foreground">
-                  During the late morning and midday period, we continued birding along the reservoir and nearby grasslands. Raptors were occasionally seen soaring overhead, while ducks and other waterbirds rested on the calm waters.
-                  Bird activity slowed slightly during the heat of midday, but several interesting species were still observed along the edges of the reservoir and in nearby fields.
-                </p>
-              </div>
+A wonderful half-day morning birdwatching trip took place at the Pearaing Biodiversity Conservation Center, a rich wetland habitat located in the floodplain of Tonle Sap Lake. 
+The area consists of rice fields, seasonal wetlands, and open grassland, providing ideal habitat for many species of waterbirds and wetland birds.
+We began the excursion early in the morning, when bird activity is at its peak. The soft golden light of sunrise illuminated the wetlands, creating excellent conditions for birdwatching and photography.
 
-              <div>
-                <h3 className="text-xl font-bold text-primary mb-2">Afternoon Birding</h3>
-                <p className="text-justify text-muted-foreground">
-                  In the late afternoon, bird activity increased again as the temperature cooled. We revisited several wetland areas and scanned the grasslands for additional species.
-                  More waterbirds appeared around the reservoir, and the beautiful afternoon light provided excellent opportunities for bird photography. The peaceful wetland landscape and the calls of cranes and waterbirds created a memorable atmosphere for the final hours of birding.
-                  The day concluded at 5:30 PM, as we returned with wonderful observations of Cambodia’s wetland birds and the unforgettable sight of Sarus Cranes in their natural habitat.
-                </p>
-              </div>
-            </div>
+Morning Birding Experience
+As we walked along the wetland trails and rice field edges, numerous waterbirds were already active, feeding in shallow pools and flying across the open landscape.
+Among the highlights of the morning were sightings of:
+•	Asian Openbill
+•	Lesser Whistling Duck
+•	Pheasant-tailed Jacana
+•	Bronze-winged Jacana
+•	Purple Heron
+•	Grey-headed Swamphen
+Flocks of ducks and egrets moved between feeding areas, while jacanas gracefully walked across floating vegetation. Raptors were also occasionally seen soaring over the wetlands searching for prey.
+
+
+
+
+
+            </p>
           </div>
         </div>
       </section>
@@ -154,15 +142,15 @@ The excursion began early in the morning, when bird activity is at its peak. The
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p className="text-justify">
-                The day included extensive birding around the reservoir and floodplain areas, with sightings of Sarus Crane, Spotted Wood-Owl, and numerous waterbird species. Afternoon included a silk production demonstration before returning to Siem Reap.
+                Early morning birding at the reservoir starting at 5:00 am. After breakfast at the site, we picked up a ranger and local guide from the WCS office. The day included extensive birding around the reservoir and floodplain areas, with sightings of Sarus Crane, Spotted Wood-Owl, and numerous waterbird species. Afternoon included a silk production demonstration before returning to Siem Reap.
               </p>
             </div>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="aspect-video rounded-xl overflow-hidden">
-                <img src={attDay1SarusCranes} alt="Sarus Cranes at Ang Trapeang Thmor" className="w-full h-full object-cover" loading="lazy" />
+              <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
+                <span>Ang Trapeang Thmor Reservoir – Image coming soon</span>
               </div>
-              <div className="aspect-video rounded-xl overflow-hidden">
-                <img src={attDay1Cattle} alt="Cattle at Ang Trapeang Thmor" className="w-full h-full object-cover" loading="lazy" />
+              <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
+                <span>12th March 2019– Ang Trapeang Thmor</span>
               </div>
             </div>
           </div>
