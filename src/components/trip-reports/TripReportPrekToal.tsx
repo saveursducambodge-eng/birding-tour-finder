@@ -100,8 +100,8 @@ const TripReportPrekToal = () => {
             <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
               <span>Painted Stork – Image coming soon</span>
             </div>
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>View from the platform – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={prekToalPlatformView} alt="View from the birdwatching platform at Prek Toal" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
