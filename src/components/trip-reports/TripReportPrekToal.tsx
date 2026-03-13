@@ -6,6 +6,7 @@ import tmatboeyDay1b from "@/assets/tmatboey-day1-journey2.jpg";
 import tmatboeyDay2 from "@/assets/tmatboey-day2-giantibis.png";
 import tmatboeyDay2b from "@/assets/tmatboey-day2-bird.jpg";
 import tmatboeyDay3 from "@/assets/tmatboey-day3-forest.jpg";
+import tmatboeyDay3b from "@/assets/tmatboey-day3-woodpecker.jpg";
 const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
   return <>
@@ -177,8 +178,8 @@ Dinner and overnight at Tmatboey.
             <div className="aspect-video rounded-xl overflow-hidden">
               <img src={tmatboeyDay3} alt="Forest at Tmatboey" className="w-full h-full object-cover" />
             </div>
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>Spotted Wood-Owl – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={tmatboeyDay3b} alt="Woodpecker at Tmatboey" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
