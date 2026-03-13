@@ -111,8 +111,9 @@ const TripReportSVC2014 = () => {
               <h3 className="font-serif text-xl font-bold text-primary">11th Feb 2023 – Prek Toal</h3>
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p className="text-justify">
-                Morning birding around Prek Toal Bird Sanctuary and afternoon return to Siem Reap.
+              <p className="text-justify whitespace-pre-line">
+                Morning birding around Prek Toal Bird Sanctuary and afternoon return to Siem Reap. We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.{"\n"}
+                We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.
               </p>
             </div>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
