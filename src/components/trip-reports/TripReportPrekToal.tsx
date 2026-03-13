@@ -204,8 +204,8 @@ Dinner and overnight at Tmatboey.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>View of the Forest in Tmat Beoy – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={tmatboeyDay4} alt="Bird in forest at Tmat Beoy" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
               <span>Birding Activities – Image coming soon</span>
