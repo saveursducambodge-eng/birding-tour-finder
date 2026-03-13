@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, MapPin, Bird } from "lucide-react";
 import svcPrekToalImg from "@/assets/svc-prek-toal-2014.jpg";
+import svcBoatTripImg from "@/assets/svc-boat-trip-prek-toal.jpg";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const highlights = [
