@@ -621,6 +621,7 @@ const ToursPage = () => {
                 <SelectItem value="cultural">Cultural & Birding</SelectItem>
                 <SelectItem value="water">Wetland Specialists</SelectItem>
                 <SelectItem value="sanctuary">Sanctuary Visits</SelectItem>
+                <SelectItem value="temple">Temple Tours</SelectItem>
               </SelectContent>
             </Select>
           </div>
