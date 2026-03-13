@@ -148,6 +148,8 @@ const TripReportSVC2014 = () => {
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Asian Openbill (Anastomus oscitans)</div>
+                  <div>Painted stork (Mycteria leucocephala)</div>
+                  <div>Greater adjutant (Leptoptilos dubius)</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
