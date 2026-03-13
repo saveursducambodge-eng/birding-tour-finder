@@ -21,7 +21,7 @@ const TripReportPrekToal = () => {
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-nature-forest" />
-              <span>23rd to 26th November 2025</span>
+              <span>23rd to 25th March 2022</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-nature-forest" />
