@@ -184,8 +184,8 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <AccordionTrigger className="text-lg font-semibold">Gamebirds & Buttonquails</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <div>Chinese Francolin (Francolinus pintadeanus)</div>
-                  <div>Small Buttonquail (Turnix sylvaticus) – 2 R seen</div>
+                  <div>​</div>
+                  <div>​</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
