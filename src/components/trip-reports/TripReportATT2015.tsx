@@ -32,7 +32,7 @@ const TripReportATT2015 = () => {
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 max-w-4xl mx-auto">
             Ang Trapeang Thmor Birding Trip
           </h1>
-          <p className="text-muted-foreground text-lg mb-6">Reservoir, Floodplain, Scrub Land, Rice Field, Flooded Forest</p>
+          <p className="text-muted-foreground text-lg mb-6">Reservoir, Floodplain, Scrub Land, Rice Field </p>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-nature-forest" />
