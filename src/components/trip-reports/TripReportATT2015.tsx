@@ -138,7 +138,7 @@ Flocks of ducks and egrets moved between feeding areas, while jacanas gracefully
           <div className="mb-8">
             <div className="flex items-start gap-4 mb-4">
               <Badge className="bg-nature-forest text-white shrink-0">Day 1</Badge>
-              <h3 className="font-serif text-xl font-bold text-primary">17th March 2015 – Ang Trapeang Thmor</h3>
+              <h3 className="font-serif text-xl font-bold text-primary">12th March 2019 – Ang Trapeang Thmor</h3>
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p className="text-justify">
