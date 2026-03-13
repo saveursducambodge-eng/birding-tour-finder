@@ -106,7 +106,13 @@ const TripReportSVC2014 = () => {
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-justify whitespace-pre-line">
-                Morning birding around Prek Toal Bird Sanctuary . We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.{"\n"}
+                We left from Hotel at 6:00 am to go to Mechrey where we got a boat to Prek Toal village. From Siem Reap to Mechrey we went by car, it took about 50 minutes, and from Mechrey to Prek Toal we went by boat. During the car ride to Mechrey, we did a presentation about the itinerary of Prek Toal.
+
+                We arrived at Mechrey at 6:45 am and then started bird watching during the boat trip to Prek Toal. We saw Chinese Pond-heron, Great Egrets, Intermediate Egrets, Little Egrets, Black Drongo, Great Cormorant, Indian Cormorant, Little Cormorant, Oriental Darter, Grey-headed Fish-eagle, Green-billed Malkoha, Greater Coucal, Pied Kingfisher, Common Kingfisher, Blue-tailed Bee-eater, Rock Pigeon, Pied Fantail, Southern Jungle Crow, Brown Shrike, Olive-backed Sunbird, House Sparrow, and Eurasian Tree Sparrow.
+
+                We did bird watching until 8:30 am and then stopped to have breakfast on the boat after we passed Mechrey Pagoda about 3km. After breakfast, we did a presentation about Tonle Sap Lake, then continued bird watching until we reached Prek Toal village.
+                Morning birding around Prek Toal Bird Sanctuary and afternoon return to Siem Reap. We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.
+
                 We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.
               </p>
             </div>
