@@ -67,20 +67,6 @@ const TripReportEssentialCambodia = () => {
             </p>
             <p className="text-justify">
               ​This 3-day birding tour offers excellent opportunities to explore the Northern Plains, observe rare species, and experience the rich biodiversity of Cambodia’s dry forests.
-
-
-            </p>
-            <p className="text-justify">
-              Prek Toal bird sanctuary is known as a large waterbird breeding colony located in Battambang province, and our target birds there such as Greater Adjutant, Lesser Adjutant, Milky Stork, Grey-headed Fish-eagle, Black-headed Ibis, Glossy Ibis, Oriental Darter, and Spot-billed Pelican.
-            </p>
-            <p className="text-justify">
-              Ang Trapeang Thmor landscape protected area is the best place to see the birds such as Sarus Crane, Bronze-winged Jacana, Pheasant-tailed Jacana, Painted Stork, Greater Spotted Eagle, Garganey, Spotted Owlet, Barn Owl, and Grey-headed Swamphen.
-            </p>
-            <p className="text-justify">
-              Tmat Boey is located in the Northern Plain of Cambodia and we are looking for Giant Ibis and White-shouldered Ibises, Brown Fish-owl, Oriental Scops Owl, Spotted Wood Owl, Black-headed Woodpecker, Rufous Bellied Woodpeckers, Yellow-crowned Woodpeckers.
-            </p>
-            <p className="text-justify">
-              Kampong Thom is a new world heritage site that was registered with UNESCO in 2017 called Sambor Prei Kuk temple. After that, we continue our trip to Kratie for Mekong Wagtail, Asian Golden Weaver, Grey-headed Swamphen, Chestnut-capped Babbler, Golden-headed Cisticola, Oriental Reed Warbler, and Irrawaddy Dolphin. The Cambodian Tailorbird is the newly discovered described in 2013 and we will see them outskirts of Phnom Penh city.
             </p>
           </div>
         </div>
