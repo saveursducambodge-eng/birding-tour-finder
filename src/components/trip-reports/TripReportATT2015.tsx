@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import attDay1SarusCranes from "@/assets/att-day1-sarus-cranes.jpg";
+import attDay1Cattle from "@/assets/att-day1-cattle.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -160,8 +161,8 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <div className="aspect-video rounded-xl overflow-hidden">
                 <img src={attDay1SarusCranes} alt="Sarus Cranes at Ang Trapeang Thmor" className="w-full h-full object-cover" loading="lazy" />
               </div>
-              <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-                <span>Sarus Crane – Image coming soon</span>
+              <div className="aspect-video rounded-xl overflow-hidden">
+                <img src={attDay1Cattle} alt="Cattle at Ang Trapeang Thmor" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </div>
