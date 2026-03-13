@@ -80,7 +80,7 @@ const TripReportPrekToal = () => {
           <div className="flex items-start gap-4 mb-6">
             <Badge className="bg-nature-forest text-white shrink-0">Day 1</Badge>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-primary">
-              23rd November 2025 – Journey to Tmatboey Village
+              23rd  March 2022 – Journey to Tmatboey Village
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
@@ -90,12 +90,13 @@ Early morning departure from Siem Reap for the journey to Tmatboey Village, loca
 
             </p>
             <p className="text-justify">
-              ​After arriving at the Tmatboey community ecolodge, we enjoy lunch and a short rest before beginning our afternoon birding session in the surrounding dry forest and seasonal wetlands.
+              ​
             </p>
             <p className="text-justify">
-              ​During the afternoon birding walk, we search for species such as Collared Falconet, Indochinese Roller, Black-headed Woodpecker, and various bee-eaters and drongos.
-As the evening approaches, we visit nearby wetlands and forest pools in search of the highlight species, the Giant Ibis, which often comes to drink at forest pools before sunset.
-Dinner and overnight at the Tmatboey community lodge.
+              ​
+            </p>
+            <p className="text-justify">
+              Lunch was served at a floating community restaurant. Afterward, we returned by boat to Mechrey Village, then continued by car, stopping along the way for additional birding. Here we encountered species such as the Plaintive Cuckoo, Pied Bushchat, Asian Green Bee-eater, Paddyfield Pipit, Yellow-vented Bulbul, and Black Drongo.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -113,23 +114,20 @@ Dinner and overnight at the Tmatboey community lodge.
       <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-nature-sand/20">
         <div className="container mx-auto max-w-4xl">
           <div className="flex items-start gap-4 mb-6">
-            <Badge className="bg-nature-forest text-white shrink-0">Day 2</Badge>
+            <Badge className="bg-nature-forest text-white shrink-0">24th March 2022 – Full day Bird Watching at Tmatboey    </Badge>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-primary">
               24th November 2025 – Bengal Florican
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              Start time: 5:30 AM
-              An early morning start allows us to explore the dry dipterocarp forest when bird activity is at its peak. We travel by vehicle and short walking trails through the forest to search for rare and specialized Northern Plains species.
+              We got our baggage on the car by 4:45 am and drove 1.5 hours to get to Prolay Florican Grassland Community. We met our local guides who were waiting for us to witness a majestic Bengal Florican, one of the critically endangered species in Cambodia. We also had a chance to see some wetland species like Chestnut Munia, Bengal Florican, Spotted Owlet, Common Kingfisher, White-throated Kingfisher, Black Drongo, Eastern Marsh Harrier, Little Heron, Scaly-breasted Munia, Egrets, and Taiga Flycatcher.
             </p>
             <p className="text-justify">
-              Morning highlights may include sightings of White-shouldered Ibis, White-rumped Falcon, and Black-headed Woodpecker. Raptors are often active during the morning hours, and the open forest structure allows excellent views.
-              After returning to the lodge for lunch and a short rest, we head out again in the afternoon to explore additional wetlands and forest clearings. These habitats attract a variety of birds including bee-eaters, rollers, and parakeets.
+              We left Prolay protected area to get lunch on the way at 11:30 am and continued our journey to Koh Ker Temple. We visited some temples such as Pram Temple, Beong Khnar Temple, Damrei Temple (Elephant Temple), and the 7-tier Koh Ker temple. We witnessed some stunning birds such as Greater Yellownape, Black-naped Monarch, Black-hooded Oriole, Bar-winged Flycatcher-Shrike, Dark-necked Tailorbird, and Black-headed Woodpecker.
             </p>
             <p className="text-justify">
-              In the late afternoon, we again visit known feeding areas or waterholes to increase our chances of observing the Giant Ibis and other rare species.
-              Dinner and overnight at Tmatboey.
+              We left Koh Ker Group and arrived at Tmat Beoy Lodge around 5:30 pm. We had dinner and spent the night at the lodge.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -154,9 +152,10 @@ Dinner and overnight at the Tmatboey community lodge.
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              Start time: 5:30 AM<br />
-              We begin the final morning with another birding session in the surrounding forest and wetlands. This is an excellent opportunity to look for species we may have missed earlier in the trip.<br />
-              Bird activity is usually very productive in the early morning, and sightings may include woodpeckers, rollers, falcons, and a variety of forest birds.
+              We left Tmat Beoy Lodge at 6 am and together with our local guide ventured to the forest for Giant Ibis as she sat on her nest. We also encountered Blossom-headed Parakeet, Lesser Adjutant, Crested Serpent-eagle, Asian Woolly-necked Stork, and Black-headed Woodpecker. We arrived at the lodge at 9:30 am and continued birding around the lodge where we witnessed Scarlet Minivet, Small Minivet, Greater Racket-tailed Drongo, Common Hoopoe, Hainan Blue Flycatcher, Puff-throated Babbler, and Thick-billed Flowerpecker.
+            </p>
+            <p className="text-justify">
+              In the afternoon, we departed at 3 pm for afternoon birding. We witnessed Spotted Wood-Owl, White-shouldered Ibis, Burmese Shrike, Bronze Drongo, Golden-fronted Leafbird, Plain Prinia, and Brown Prinia.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -176,13 +175,15 @@ Dinner and overnight at the Tmatboey community lodge.
           <div className="flex items-start gap-4 mb-6">
             <Badge className="bg-nature-forest text-white shrink-0">Day 4</Badge>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-primary">
-              26th November 2025 – Tmat Beoy to Siem Reap
+              ​
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              After breakfast at the lodge, we depart Tmatboey and drive back to Siem Reap, stopping along the way for additional birding opportunities in suitable habitats.<br />
-              Arrival in Siem Reap in the early afternoon, marking the end of an unforgettable Northern Plains birding adventure.
+              We set out at 6:00 am with our local guide for a morning of birding and were rewarded with sightings of some incredible species, including the Crested Treeswift, Golden-crowned Leafbird, Greater Flameback, and Bronze Drongo.
+            </p>
+            <p className="text-justify">
+              By 10:00 am, we left the forest and returned to the lodge, where we enjoyed lunch at 11:45 am. Afterward, we began our journey back to Siem Reap, bringing our birding adventure to a close with lasting memories of Cambodia's remarkable wildlife.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
