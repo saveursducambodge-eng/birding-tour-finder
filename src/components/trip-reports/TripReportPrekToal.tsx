@@ -154,10 +154,9 @@ Dinner and overnight at the Tmatboey community lodge.
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              We left Tmat Beoy Lodge at 6 am and together with our local guide ventured to the forest for Giant Ibis as she sat on her nest. We also encountered Blossom-headed Parakeet, Lesser Adjutant, Crested Serpent-eagle, Asian Woolly-necked Stork, and Black-headed Woodpecker. We arrived at the lodge at 9:30 am and continued birding around the lodge where we witnessed Scarlet Minivet, Small Minivet, Greater Racket-tailed Drongo, Common Hoopoe, Hainan Blue Flycatcher, Puff-throated Babbler, and Thick-billed Flowerpecker.
-            </p>
-            <p className="text-justify">
-              In the afternoon, we departed at 3 pm for afternoon birding. We witnessed Spotted Wood-Owl, White-shouldered Ibis, Burmese Shrike, Bronze Drongo, Golden-fronted Leafbird, Plain Prinia, and Brown Prinia.
+              Start time: 5:30 AM<br />
+              We begin the final morning with another birding session in the surrounding forest and wetlands. This is an excellent opportunity to look for species we may have missed earlier in the trip.<br />
+              Bird activity is usually very productive in the early morning, and sightings may include woodpeckers, rollers, falcons, and a variety of forest birds.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -182,10 +181,8 @@ Dinner and overnight at the Tmatboey community lodge.
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              We set out at 6:00 am with our local guide for a morning of birding and were rewarded with sightings of some incredible species, including the Crested Treeswift, Golden-crowned Leafbird, Greater Flameback, and Bronze Drongo.
-            </p>
-            <p className="text-justify">
-              By 10:00 am, we left the forest and returned to the lodge, where we enjoyed lunch at 11:45 am. Afterward, we began our journey back to Siem Reap, bringing our birding adventure to a close with lasting memories of Cambodia's remarkable wildlife.
+              After breakfast at the lodge, we depart Tmatboey and drive back to Siem Reap, stopping along the way for additional birding opportunities in suitable habitats.<br />
+              Arrival in Siem Reap in the early afternoon, marking the end of an unforgettable Northern Plains birding adventure.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
