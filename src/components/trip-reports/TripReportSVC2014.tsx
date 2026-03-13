@@ -15,7 +15,7 @@ const highlights = [
 "Greater adjutant",
 "Lesser adjutant",
 "Milky stork",
-"Pied Kingfisher",
+"Painted stork",
 "Blue-tailed Bee-eater",
 "Indian Roller"];
 
