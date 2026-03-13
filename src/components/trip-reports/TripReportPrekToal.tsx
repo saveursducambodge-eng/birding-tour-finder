@@ -174,8 +174,8 @@ Dinner and overnight at Tmatboey.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>White-shouldered Ibis – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={tmatboeyDay3} alt="Forest at Tmatboey" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
               <span>Spotted Wood-Owl – Image coming soon</span>
