@@ -65,7 +65,20 @@ const TripReportATT2015 = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              ​Pearaing Biodiversity Conservation Center is a community-based wetland conservation area located about 13 km southeast of Siem Reap and close to Tonle Sap Lake, the largest freshwater lake in Southeast Asia. The site lies within the Tonle Sap floodplain and features a unique ecosystem of seasonal wetlands, flooded forests, rice fields, and small reservoirs. 
+              
+
+
+
+
+
+
+
+Start Time: 6:00 AM, A rewarding full day of birdwatching took place at the vast wetlands of Ang Trapaeng Thmor Landscape Protected Area, one of the most important bird conservation sites in northwestern Cambodia. The large reservoir and surrounding grasslands provide ideal habitat for many waterbirds, raptors, and migratory species.
+The excursion began early in the morning, when bird activity is at its peak. The calm waters of the reservoir and the open marshland created excellent conditions for observing birds as they searched for food or rested along the wetland edges.
+
+ 
+            
+
             </p>
             <p className="text-justify">
               ​Recognized as an eco-tourism site since 2015, Pearaing has been protected through the cooperation of local villagers, monks, and authorities. Conservation efforts focus on protecting wetlands, fish habitats, and bird populations while creating sustainable tourism opportunities for the community. 
