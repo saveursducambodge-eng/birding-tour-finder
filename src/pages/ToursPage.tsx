@@ -225,7 +225,7 @@ const ToursPage = () => {
     duration: "Full Day (10.5 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$250 Per Person",
+    price: "$240 Per Person",
     image: bird4,
     images: [bird4, attSlide1, attSlide2, attSlide3, attSlide4, attSlide5, attSlide6, attSlide7],
     category: "water",
