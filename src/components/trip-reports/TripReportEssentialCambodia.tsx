@@ -4,24 +4,24 @@ import { Calendar, Users, MapPin, Bird } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const highlights = [
-  "Giant Ibis",
-  "White-shoulder Ibis",
-  "Bengal Florican",
-  "Cambodian Tailorbird",
-  "Milky Stork",
-  "Greater Adjutant",
-  "Lesser Adjutant",
-  "Sarus Crane",
-  "Asian Golden Weaver",
-  "White-rumped Falcon",
-  "Black-headed Woodpecker",
-  "Great Slaty Woodpecker",
-  "Yellow-crowned Woodpecker",
-  "Brown Fish Owl",
-  "Brown Wood Owl",
-  "Oriental Scops Owl",
-  "Mekong Wagtail",
-];
+"Giant Ibis",
+"White-shoulder Ibis",
+"Bengal Florican",
+"Cambodian Tailorbird",
+"Milky Stork",
+"Greater Adjutant",
+"Lesser Adjutant",
+"Sarus Crane",
+"Asian Golden Weaver",
+"White-rumped Falcon",
+"Black-headed Woodpecker",
+"Great Slaty Woodpecker",
+"Yellow-crowned Woodpecker",
+"Brown Fish Owl",
+"Brown Wood Owl",
+"Oriental Scops Owl",
+"Mekong Wagtail"];
+
 
 const TripReportEssentialCambodia = () => {
   return (
@@ -60,13 +60,15 @@ const TripReportEssentialCambodia = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              This is a great tour for me since I worked as a bird guide with Samveasna Conservation tours Company. I can say, the year 2023 will change my destiny. This is my huge experience since I work with SVC, I had a chance to lead an 8 days trip of Samveasna conservation tours to a variety places of birding sites around Cambodia.
+              ​Located in the remote Northern Plains of Cambodia, Tmatboey Village is one of the most important birdwatching destinations in Southeast Asia. The area forms part of the vast Northern Plains Landscape, a unique ecosystem dominated by dry dipterocarp forest, seasonal wetlands, and open grasslands.
             </p>
             <p className="text-justify">
-              Sites included Angkor Wat historical park, Prek Toal bird sanctuary, Ang Trapeang Thmor landscape protected area, Bengal Florican Grassland, Tmat Boey Ibis site, Sambor Preikuk a new world heritage site at Kompong Thom, Kratie, and Cambodia Tailorbird site near Phnom Penh city.
+              ​Tmatboey is globally renowned as a stronghold for some of the world’s rarest birds, including the critically endangered Giant Ibis and White-shouldered Ibis. Community-based conservation efforts in the village have helped protect these species while providing sustainable livelihoods through birdwatching tourism.
             </p>
             <p className="text-justify">
-              We started our tour in one of the famous world heritage sites in the world called Angkor Wat located in Siem Reap province with our target bird species like the White-throated Rock-Thrush, Forest Wagtail, Asian barred Owlet, Hainan Blue Flycatcher, Black-capped Kingfisher, Alexandrine Parakeet, and Red-breasted Parakeets.
+              ​This 3-day birding tour offers excellent opportunities to explore the Northern Plains, observe rare species, and experience the rich biodiversity of Cambodia’s dry forests.
+
+
             </p>
             <p className="text-justify">
               Prek Toal bird sanctuary is known as a large waterbird breeding colony located in Battambang province, and our target birds there such as Greater Adjutant, Lesser Adjutant, Milky Stork, Grey-headed Fish-eagle, Black-headed Ibis, Glossy Ibis, Oriental Darter, and Spot-billed Pelican.
@@ -92,14 +94,12 @@ const TripReportEssentialCambodia = () => {
             Bird Highlights of the Tour
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {highlights.map((bird, index) => (
-              <Card key={index} className="bg-white/80">
+            {highlights.map((bird, index) => <Card key={index} className="bg-white/80">
                 <CardContent className="p-3 sm:p-4">
                   <span className="text-nature-forest font-semibold mr-2">{index + 1}.</span>
                   <span className="text-sm sm:text-base text-foreground">{bird}</span>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -371,8 +371,8 @@ const TripReportEssentialCambodia = () => {
           </Accordion>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 };
 
 export default TripReportEssentialCambodia;
