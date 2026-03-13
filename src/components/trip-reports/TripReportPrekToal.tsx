@@ -103,8 +103,8 @@ Dinner and overnight at the Tmatboey community lodge.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>Painted Stork – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={tmatboeyDay1} alt="Journey to Tmatboey Village" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
               <span>View from the platform – Image coming soon</span>
