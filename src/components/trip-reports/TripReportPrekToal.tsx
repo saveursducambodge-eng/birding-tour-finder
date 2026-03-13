@@ -80,7 +80,7 @@ const TripReportPrekToal = () => {
           <div className="flex items-start gap-4 mb-6">
             <Badge className="bg-nature-forest text-white shrink-0">Day 1</Badge>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-primary">
-              23rd November 2025 – Prek Toal Ramsar Site
+              23rd November 2025 – Journey to Tmatboey Village
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
@@ -90,13 +90,12 @@ Early morning departure from Siem Reap for the journey to Tmatboey Village, loca
 
             </p>
             <p className="text-justify">
-              ​
+              ​After arriving at the Tmatboey community ecolodge, we enjoy lunch and a short rest before beginning our afternoon birding session in the surrounding dry forest and seasonal wetlands.
             </p>
             <p className="text-justify">
-              ​
-            </p>
-            <p className="text-justify">
-              Lunch was served at a floating community restaurant. Afterward, we returned by boat to Mechrey Village, then continued by car, stopping along the way for additional birding. Here we encountered species such as the Plaintive Cuckoo, Pied Bushchat, Asian Green Bee-eater, Paddyfield Pipit, Yellow-vented Bulbul, and Black Drongo.
+              ​During the afternoon birding walk, we search for species such as Collared Falconet, Indochinese Roller, Black-headed Woodpecker, and various bee-eaters and drongos.
+As the evening approaches, we visit nearby wetlands and forest pools in search of the highlight species, the Giant Ibis, which often comes to drink at forest pools before sunset.
+Dinner and overnight at the Tmatboey community lodge.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
