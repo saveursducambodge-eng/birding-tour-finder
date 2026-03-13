@@ -8,6 +8,7 @@ import tmatboeyDay2b from "@/assets/tmatboey-day2-bird.jpg";
 import tmatboeyDay3 from "@/assets/tmatboey-day3-forest.jpg";
 import tmatboeyDay3b from "@/assets/tmatboey-day3-woodpecker.jpg";
 import tmatboeyDay4 from "@/assets/tmatboey-day4-bird.jpg";
+import tmatboeyDay4b from "@/assets/tmatboey-day4-grassland.jpg";
 const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
   return <>
@@ -207,8 +208,8 @@ Dinner and overnight at Tmatboey.
             <div className="aspect-video rounded-xl overflow-hidden">
               <img src={tmatboeyDay4} alt="Bird in forest at Tmat Beoy" className="w-full h-full object-cover" />
             </div>
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-              <span>Birding Activities – Image coming soon</span>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <img src={tmatboeyDay4b} alt="Grassland at Tmat Beoy" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
