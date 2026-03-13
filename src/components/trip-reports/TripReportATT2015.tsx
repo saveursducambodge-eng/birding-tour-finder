@@ -425,67 +425,67 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Ashy Minivet (Pericrocotus divaricatus)</div>
-                  <div>Small Minivet (Pericrocotus cinnamomeus)</div>
+                  <div>​</div>
                   <div>Black-naped Oriole (Oriolus chinensis)</div>
-                  <div>Black-hooded Oriole (Oriolus xanthornus)</div>
+                  <div>​</div>
                   <div>Common Iora (Aegithina tiphia)</div>
-                  <div>Pied Fantail (Rhipidura javanica) – R seen</div>
-                  <div>Black Drongo (Dicrurus macrocercus) – seen</div>
-                  <div>Ashy Drongo (Dicrurus leucophaeus) – KS seen</div>
+                  <div>Pied Fantail (Rhipidura javanica) </div>
+                  <div>Black Drongo (Dicrurus macrocercus) </div>
+                  <div>​</div>
                   <div>Greater Racket-tailed Drongo (Dicrurus paradiseus)</div>
                   <div>Black-naped Monarch (Hypothymis azurea)</div>
-                  <div>Southern Jungle Crow (Corvus macrorhynchos) – seen</div>
-                  <div>Rufous Treepie (Dendrocitta vagabunda) – KS seen</div>
-                  <div>Racket-tailed Treepie (Crypsirina temia) – seen</div>
-                  <div>Brown Shrike (Lanius cristatus) – seen</div>
-                  <div>Burmese Shrike (Lanius collurioides)</div>
+                  <div>Southern Jungle Crow (Corvus macrorhynchos) </div>
+                  <div>Rufous Treepie (Dendrocitta vagabunda) </div>
+                  <div>​</div>
+                  <div>Brown Shrike (Lanius cristatus) </div>
+                  <div>​</div>
                   <div>Purple Sunbird (Cinnyris asiaticus)</div>
-                  <div>Olive-backed Sunbird (Cinnyris jugularis) – seen</div>
-                  <div>Scarlet-backed Flowerpecker (Dicaeum cruentatum) – seen</div>
-                  <div>Streaked Weaver (Ploceus manyar)</div>
+                  <div>Olive-backed Sunbird (Cinnyris jugularis) </div>
+                  <div>Scarlet-backed Flowerpecker (Dicaeum cruentatum)</div>
+                  <div>​</div>
                   <div>Baya Weaver (Ploceus philippinus)</div>
                   <div>White-rumped Munia (Lonchura striata)</div>
-                  <div>Scaly-breasted Munia (Lonchura punctulata) – seen</div>
-                  <div>House Sparrow (Passer domesticus) – seen</div>
-                  <div>Plain-backed Sparrow (Passer flaveolus) – seen</div>
-                  <div>Eurasian Tree Sparrow (Passer montanus) – seen</div>
+                  <div>Scaly-breasted Munia (Lonchura punctulata) </div>
+                  <div>House Sparrow (Passer domesticus) </div>
+                  <div>Plain-backed Sparrow (Passer flaveolus) </div>
+                  <div>Eurasian Tree Sparrow (Passer montanus) </div>
                   <div>Red-throated Pipit (Anthus cervinus)</div>
-                  <div>Paddyfield Pipit (Anthus rufulus) – seen</div>
+                  <div>Paddyfield Pipit (Anthus rufulus) </div>
                   <div>Eastern Yellow Wagtail (Motacilla tschutschensis)</div>
-                  <div>White Wagtail (Motacilla alba)</div>
-                  <div>White-vented Myna (Acridotheres grandis) – seen</div>
-                  <div>Common Myna (Acridotheres tristis) – seen</div>
-                  <div>Black-collared Starling (Gracupica nigricollis) – KS seen</div>
-                  <div>Asian Pied Starling (Gracupica contra)</div>
-                  <div>White-shouldered Starling (Sturnus sinensis) – seen</div>
-                  <div>Bluethroat (Luscinia svecica)</div>
-                  <div>Blue Rock-thrush (Monticola solitarius)</div>
-                  <div>Eastern Stonechat (Saxicola maurus) – seen</div>
-                  <div>Pied Bushchat (Saxicola caprata) – seen</div>
+                  <div>​</div>
+                  <div>White-vented Myna (Acridotheres grandis)  </div>
+                  <div>Common Myna (Acridotheres tristis) </div>
+                  <div>Black-collared Starling (Gracupica nigricollis)  </div>
+                  <div>​</div>
+                  <div>White-shouldered Starling (Sturnus sinensis) </div>
+                  <div>​</div>
+                  <div>​</div>
+                  <div>Eastern Stonechat (Saxicola maurus) </div>
+                  <div>Pied Bushchat (Saxicola caprata) </div>
                   <div>Taiga Flycatcher (Ficedula albicilla)</div>
-                  <div>Asian Brown Flycatcher (Muscicapa dauurica) – seen</div>
-                  <div>Oriental Magpie-Robin (Copsychus saularis) – V</div>
-                  <div>Australasian Bushlark (Mirafra javanica)</div>
-                  <div>Indochinese Bushlark (Mirafra erythrocephala)</div>
-                  <div>Oriental Skylark (Alauda gulgula)</div>
-                  <div>Yellow-vented Bulbul (Pycnonotus goiavier) – seen</div>
-                  <div>Streak-eared Bulbul (Pycnonotus blanfordi) – seen</div>
+                  <div>Asian Brown Flycatcher (Muscicapa dauurica) </div>
+                  <div>Oriental Magpie-Robin (Copsychus saularis) </div>
+                  <div>​</div>
+                  <div>​</div>
+                  <div>​</div>
+                  <div>Yellow-vented Bulbul (Pycnonotus goiavier) </div>
+                  <div>Streak-eared Bulbul (Pycnonotus blanfordi) </div>
                   <div>Sooty-headed Bulbul (Pycnonotus aurigaster)</div>
-                  <div>Common Sand-martin (Riparia chinensis)</div>
-                  <div>Barn Swallow (Hirundo rustica) – seen</div>
+                  <div>​</div>
+                  <div>Barn Swallow (Hirundo rustica) </div>
                   <div>Red-rumped Swallow (Cecropis daurica)</div>
                   <div>Yellow-browed Warbler (Phylloscopus inornatus)</div>
-                  <div>Dusky Warbler (Phylloscopus fuscatus) – R seen</div>
+                  <div>Dusky Warbler (Phylloscopus fuscatus) </div>
                   <div>Pin-striped Tit-babbler (Macronous gularis)</div>
                   <div>Black-browed Reed-warbler (Acrocephalus bistrigiceps)</div>
-                  <div>Oriental Reed-warbler (Acrocephalus orientalis) – R seen</div>
-                  <div>Lanceolated Warbler (Locustella lanceolata) – R seen</div>
-                  <div>Zitting Cisticola (Cisticola juncidis) – V</div>
-                  <div>Bright-headed Cisticola (Cisticola exilis)</div>
-                  <div>Dark-necked Tailorbird (Orthotomus atrogularis) – V</div>
-                  <div>Common Tailorbird (Orthotomus sutorius) – V</div>
+                  <div>Oriental Reed-warbler (Acrocephalus orientalis) </div>
+                  <div>Lanceolated Warbler (Locustella lanceolata) </div>
+                  <div>Zitting Cisticola (Cisticola juncidis) </div>
+                  <div>​</div>
+                  <div>Dark-necked Tailorbird (Orthotomus atrogularis) </div>
+                  <div>Common Tailorbird (Orthotomus sutorius) </div>
                   <div>Yellow-bellied Prinia (Prinia flaviventris)</div>
-                  <div>Plain Prinia (Prinia inornata) – R seen</div>
+                  <div>Plain Prinia (Prinia inornata)  </div>
                 </div>
               </AccordionContent>
             </AccordionItem>
