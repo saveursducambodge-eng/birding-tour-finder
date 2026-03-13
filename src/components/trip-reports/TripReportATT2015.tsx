@@ -415,8 +415,8 @@ The excursion began early in the morning, when bird activity is at its peak. The
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Lineated Barbet (Megalaima lineata) – KS seen</div>
                   <div>Coppersmith Barbet (Megalaima haemacephala) – KS seen</div>
-                  <div>Spot-breasted Woodpecker (Dendrocopos analis)</div>
-                  <div>Black-headed Woodpecker (Picus erythropygius)</div>
+                  <div>​</div>
+                  <div>​</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
