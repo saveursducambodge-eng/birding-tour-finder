@@ -82,6 +82,7 @@ import attSlide5 from "@/assets/att-slide-5.jpg";
 import attSlide6 from "@/assets/att-slide-6.jpg";
 import attSlide7 from "@/assets/att-slide-7.jpg";
 import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
+import angkorWatTempleBird from "@/assets/angkor-wat-temple-bird.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import bird7 from "@/assets/bird-7.jpg";
@@ -552,6 +553,95 @@ const ToursPage = () => {
     food: "Khmer cuisine similar to most Southeast Asian cooking but rather less spicy. Traditional cuisine recovering after knowledge lost through years of war. Lodge staff cook wide variety of good local food. Former French influence means good bread readily available in many areas. For beer lovers, surprisingly wide range of local brews to try. Bunong traditional meals at Jahoo Gibbon Camp.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, light rain jacket, comfortable hiking shoes, layered clothing for cooler highland areas (Sen Monorom/Dak Dam), camera equipment, and field guide"
   }, {
+    id: 15,
+    title: "Angkor Wat Sunrise & Ancient Temples Tour",
+    description: "Experience the magic of Angkor Wat at sunrise, followed by a full day exploring Cambodia's most iconic temple complex. This tour covers the three major temples — Angkor Wat, Bayon, and Ta Prohm — offering a deep dive into Khmer history, architecture, and spirituality.\n\nAngkor Wat, the largest religious monument in the world, was built in the early 12th century by King Suryavarman II. The Bayon temple is famous for its serene stone faces, while Ta Prohm's dramatic tree roots engulfing ancient walls create an unforgettable atmosphere.\n\nYour expert guide will share stories of the Khmer Empire's rise and fall, the symbolism in the temple carvings, and the ongoing restoration efforts.",
+    duration: "Full Day (12 hours)",
+    difficulty: "Easy",
+    groupSize: "2-10 people",
+    price: "$85 Per Person",
+    image: bird5,
+    category: "temple",
+    highlights: ["Angkor Wat sunrise", "Bayon temple faces", "Ta Prohm tree roots", "Khmer history", "UNESCO World Heritage", "Photo opportunities"],
+    rating: 4.9,
+    schedule: {
+      "4:45 AM": "Pick up from hotel",
+      "5:15 AM": "Arrive at Angkor Wat for sunrise viewing and photography",
+      "7:00 AM": "Explore Angkor Wat temple complex with guided tour",
+      "9:30 AM": "Breakfast at local restaurant",
+      "10:30 AM": "Visit Bayon Temple and explore the iconic stone faces",
+      "12:00 PM": "Lunch break at temple area restaurant",
+      "1:30 PM": "Explore Ta Prohm (Tomb Raider temple) with its dramatic tree roots",
+      "3:30 PM": "Visit Angkor Thom South Gate and Terrace of the Elephants",
+      "5:00 PM": "Return to hotel"
+    },
+    included: ["Air-conditioned transport", "English-speaking temple guide", "All temple entry fees", "Breakfast and lunch", "Bottled drinking water"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "November to March for cooler weather and clearer skies. Avoid midday heat during April-May.",
+    physicalEffort: "Easy to moderate. Walking 5-7km on temple grounds with some stair climbing. Suitable for most fitness levels.",
+    weather: "Hot and humid. Morning is coolest. Bring sun protection and water.",
+    food: "Khmer cuisine lunch included at a local restaurant near the temples.",
+    thingsToBring: "Comfortable walking shoes, hat, sunscreen, camera, modest clothing covering shoulders and knees (temple dress code)"
+  }, {
+    id: 16,
+    title: "Remote Temples: Koh Ker, Beng Melea & Preah Khan Kompong Svay",
+    description: "Venture beyond the crowds to discover Cambodia's most atmospheric and remote temple sites. This full-day adventure takes you to three extraordinary archaeological sites that most visitors never see.\n\nKoh Ker served as the capital of the Khmer Empire from 928 to 944 AD. Its centerpiece, Prasat Thom, is a towering seven-tiered pyramid rising 36 meters above the forest floor. Over 180 temple structures are scattered throughout the surrounding jungle.\n\nBeng Melea, meaning 'Lotus Pond,' is an unrestored 12th-century temple engulfed by jungle, offering an Indiana Jones-like exploration experience.\n\nPreah Khan Kompong Svay is one of the largest temple enclosures ever built by the Khmer Empire, spanning over 5 km², yet it remains one of the least visited sites in Cambodia.",
+    duration: "Full Day (13 hours)",
+    difficulty: "Moderate",
+    groupSize: "2-8 people",
+    price: "$195 Per Person",
+    image: bird3,
+    images: [bird3, kohKerSlide1, kohKerSlide2, kohKerSlide3, kohKerSlide4, kohKerSlide5, kohKerSlide6],
+    category: "temple",
+    highlights: ["Koh Ker pyramid", "Beng Melea jungle temple", "Preah Khan Kompong Svay", "Off the beaten path", "Ancient Khmer architecture", "Forest exploration"],
+    rating: 5.0,
+    schedule: {
+      "5:00 AM": "Pick up from hotel in Siem Reap with packed breakfast",
+      "7:30 AM": "Arrive at Beng Melea temple, explore the jungle-covered ruins",
+      "9:30 AM": "Continue to Koh Ker archaeological site",
+      "10:30 AM": "Explore Koh Ker temples including Prasat Thom pyramid",
+      "12:30 PM": "Lunch at local restaurant",
+      "1:30 PM": "Visit Preah Khan Kompong Svay temple complex",
+      "3:30 PM": "Begin return journey to Siem Reap",
+      "6:00 PM": "Arrive back at hotel"
+    },
+    included: ["Air-conditioned transport", "English-speaking temple guide", "All temple entry fees", "Breakfast and lunch", "Bottled drinking water"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "November to April for dry conditions and easier access to remote sites",
+    physicalEffort: "Moderate. Walking 6-8km on uneven terrain, some climbing over ruins. Good fitness recommended.",
+    weather: "Hot and dry. Remote sites have limited shade. Bring plenty of water and sun protection.",
+    food: "Khmer lunch included at a local restaurant between temple visits.",
+    thingsToBring: "Sturdy walking shoes, hat, sunscreen, insect repellent, camera, modest clothing, flashlight for temple interiors"
+  }, {
+    id: 17,
+    title: "Preah Vihear Temple & Sacred Mountain Tour",
+    description: "Journey to the magnificent Preah Vihear Temple, a UNESCO World Heritage Site perched dramatically atop a 525-meter cliff in the Dângrêk Mountains on the Cambodia-Thailand border. This awe-inspiring temple offers some of the most spectacular views in all of Southeast Asia.\n\nBuilt over several centuries from the 9th to 12th century, Preah Vihear is dedicated to the Hindu god Shiva. The temple's unique hilltop setting, with its series of sanctuaries connected by long causeways and staircases ascending the mountain, makes it architecturally distinct from the lowland temples of Angkor.\n\nThe panoramic views from the clifftop across the vast Cambodian plains below are truly breathtaking and provide unforgettable photo opportunities.",
+    duration: "Full Day (14 hours)",
+    difficulty: "Moderate",
+    groupSize: "2-8 people",
+    price: "$250 Per Person",
+    image: angkorWatTempleBird,
+    category: "temple",
+    highlights: ["UNESCO World Heritage", "Clifftop panoramic views", "525m mountain temple", "Ancient Khmer architecture", "Dângrêk Mountains", "Historical significance"],
+    rating: 4.8,
+    schedule: {
+      "4:30 AM": "Early pickup from hotel in Siem Reap",
+      "8:00 AM": "Arrive at Preah Vihear province, breakfast stop",
+      "9:00 AM": "Transfer to motorbike taxi up the mountain (included)",
+      "9:30 AM": "Begin guided tour of Preah Vihear Temple complex",
+      "12:00 PM": "Enjoy panoramic views from the clifftop and photography",
+      "12:30 PM": "Lunch at local restaurant at the base",
+      "1:30 PM": "Begin return journey to Siem Reap with scenic stops",
+      "6:30 PM": "Arrive back at hotel"
+    },
+    included: ["Air-conditioned transport", "English-speaking temple guide", "All temple entry fees", "Motorbike taxi up the mountain", "Breakfast and lunch", "Bottled drinking water"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "November to April for clear skies and best visibility from the clifftop",
+    physicalEffort: "Moderate. Significant stair climbing at the temple. Good fitness required for the steep ascent sections.",
+    weather: "Cooler temperatures at elevation but hot during the drive. Mountain breezes at the temple.",
+    food: "Breakfast and lunch included at local restaurants.",
+    thingsToBring: "Comfortable walking shoes with good grip, hat, sunscreen, camera, modest clothing covering shoulders and knees, light jacket for mountain breeze"
+  }, {
     id: 14,
     title: "Key Locations for Rare Birds",
     description: "A typical Cambodia rare bird itinerary includes Siem Reap for the temples and birding areas like Prek Toal Bird Sanctuary for storks and pelicans, the Florican Grasslands and Tmatboey in the Northern Plains for the critically endangered Bengal Florican and Giant Ibis, the Vulture Restaurant at Boeng Toal for vultures, and Kratie for the Mekong Wagtail and Irrawaddy Dolphins. The best time to visit for a wide range of species, particularly waterbirds, is typically from January to April.",
@@ -619,6 +709,7 @@ const ToursPage = () => {
                 <SelectItem value="all">All Tours</SelectItem>
                 <SelectItem value="multi-day">Multi-Day Adventures</SelectItem>
                 <SelectItem value="cultural">Cultural & Birding</SelectItem>
+                <SelectItem value="temple">Temple Tours</SelectItem>
                 <SelectItem value="water">Wetland Specialists</SelectItem>
                 <SelectItem value="sanctuary">Sanctuary Visits</SelectItem>
               </SelectContent>
