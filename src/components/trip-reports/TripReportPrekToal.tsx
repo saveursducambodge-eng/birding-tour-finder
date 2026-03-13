@@ -9,7 +9,7 @@ import tmatboeyDay3 from "@/assets/tmatboey-day3-forest.jpg";
 import tmatboeyDay3b from "@/assets/tmatboey-day3-woodpecker.jpg";
 import tmatboeyDay4 from "@/assets/tmatboey-day4-bird.jpg";
 import tmatboeyDay4b from "@/assets/tmatboey-day4-dryforest.jpg";
-const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
+const highlights = ["White-rumped falcon", "Great slaty woodpecker", "Burmese nuthatch", "Rufous-winged buzzard", "Oriental scops owl", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
   return <>
       {/* Hero Section */}
