@@ -161,8 +161,8 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <div className="aspect-video rounded-xl overflow-hidden">
                 <img src={attDay1SarusCranes} alt="Sarus Cranes at Ang Trapeang Thmor" className="w-full h-full object-cover" loading="lazy" />
               </div>
-              <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-                <span>Sarus Crane – Image coming soon</span>
+              <div className="aspect-video rounded-xl overflow-hidden">
+                <img src={attDay1Cattle} alt="Cattle at Ang Trapeang Thmor" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </div>
