@@ -108,7 +108,7 @@ const TripReportSVC2014 = () => {
           <div className="mb-8">
             <div className="flex items-start gap-4 mb-4">
               <Badge className="bg-nature-forest text-white shrink-0">Day 1</Badge>
-              <h3 className="font-serif text-xl font-bold text-primary">11th October 2014 – Prek Toal</h3>
+              <h3 className="font-serif text-xl font-bold text-primary">11th Feb 2023 – Prek Toal</h3>
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-justify">
