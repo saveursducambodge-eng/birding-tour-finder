@@ -39,13 +39,15 @@ const TripReportPrekToal = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              Our journey combined a visit to the Prek Toal Ramsar Site on Tonle Sap Lake—the largest lake in Southeast Asia—with a 3D2N tour to see the Bengal Florican, followed by an excursion to Koh Ker Temple, a UNESCO World Heritage Site.
+              ​Located in the remote Northern Plains of Cambodia, Tmatboey Village is one of the most important birdwatching destinations in Southeast Asia. The area forms part of the vast Northern Plains Landscape, a unique ecosystem dominated by dry dipterocarp forest, seasonal wetlands, and open grasslands.
             </p>
             <p className="text-justify">
-              We arrived at Tmat Beoy Lodge at 5:30 pm. On the third day, we began with an early morning outing to spot the Giant Ibis, Cambodia's national bird, along with several woodpecker species and other fascinating birds inhabiting the area. Later, we returned to the lodge for more birdwatching around its grounds.
+              ​Tmatboey is globally renowned as a stronghold for some of the world’s rarest birds, including the critically endangered Giant Ibis and White-shouldered Ibis. Community-based conservation efforts in the village have helped protect these species while providing sustainable livelihoods through birdwatching tourism.
             </p>
             <p className="text-justify">
-              In the evening, we embarked on another birding session and were rewarded with sightings of the Spotted Wood-owl and the White-shouldered Ibis, gracefully landing on their roosting tree as dusk settled.
+              ​This 3-day birding tour offers excellent opportunities to explore the Northern Plains, observe rare species, and experience the rich biodiversity of Cambodia’s dry forests.
+
+
             </p>
             <p className="text-justify">
               On the fourth and final day, we set off to discover more avian wonders, including the Greater Flameback, Burmese Shrike, Crested Treeswift, and many other species. After lunch, we concluded our adventure and returned to Siem Reap, enriched by the incredible diversity of Cambodia's birdlife and cultural heritage.
@@ -192,6 +194,4 @@ const TripReportPrekToal = () => {
           </div>
         </div>
       </section>
-    </>;
-};
-export default TripReportPrekToal;
+    </>;};export default TripReportPrekToal;
