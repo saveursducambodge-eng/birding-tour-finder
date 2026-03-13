@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, Bird } from "lucide-react";
 import tmatboeyDay1 from "@/assets/tmatboey-day1-journey.jpg";
 import tmatboeyDay1b from "@/assets/tmatboey-day1-journey2.jpg";
+import tmatboeyDay2 from "@/assets/tmatboey-day2-giantibis.png";
 const highlights = ["Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Bengal Florican", "Spotted Owlet", "Giant Ibis", "Black-headed Woodpecker", "Blossom-headed Parakeet", "Asian Woolly-necked Stork", "Lesser Adjutant", "Scarlet Minivet", "White-shouldered Ibis", "Spotted Wood-owl", "Greater Flameback"];
 const TripReportPrekToal = () => {
   return <>
