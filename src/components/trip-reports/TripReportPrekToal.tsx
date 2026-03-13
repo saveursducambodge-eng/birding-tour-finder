@@ -114,9 +114,9 @@ Early morning departure from Siem Reap for the journey to Tmatboey Village, loca
       <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-nature-sand/20">
         <div className="container mx-auto max-w-4xl">
           <div className="flex items-start gap-4 mb-6">
-            <Badge className="bg-nature-forest text-white shrink-0">24th March 2022 – Full day Bird Watching at Tmatboey    </Badge>
+            <Badge className="bg-nature-forest text-white shrink-0">​Day2    </Badge>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-primary">
-              24th November 2025 – Bengal Florican
+              ​24th March 2022 – Full day Bird Watching at Tmatboey
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
