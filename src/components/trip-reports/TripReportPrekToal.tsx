@@ -49,6 +49,9 @@ const TripReportPrekToal = () => {
 
 
             </p>
+            <p className="text-justify">
+              On the fourth and final day, we set off to discover more avian wonders, including the Greater Flameback, Burmese Shrike, Crested Treeswift, and many other species. After lunch, we concluded our adventure and returned to Siem Reap, enriched by the incredible diversity of Cambodia's birdlife and cultural heritage.
+            </p>
           </div>
         </div>
       </section>
@@ -82,13 +85,15 @@ const TripReportPrekToal = () => {
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
             <p className="text-justify">
-              We began our tour at 5:30 am, with a car pickup from the hotel to Mechrey Village, where we boarded a boat bound for Prek Toal Village in Koh Chiveang District, Battambang Province. By 7:30 am, we arrived at the Environmental Station, enjoyed breakfast, and purchased tickets for the birdwatching platform.
+              ​Start time: 6:00 AM
+Early morning departure from Siem Reap for the journey to Tmatboey Village, located approximately 4–5 hours north of the city. The drive passes through rural countryside, rice fields, and forest landscapes.
+
             </p>
             <p className="text-justify">
-              From there, we boarded a community boat to explore the bird nesting trees. Along the way, we spotted remarkable species such as the Spot-billed Pelican, Painted Stork, Dark-necked Tailorbird, Lesser Adjutant, Greater Adjutant, Great Cormorant, and Oriental Darter. After leaving the platform, we continued birding along the flooded forest and bushes.
+              ​
             </p>
             <p className="text-justify">
-              Our next stop was the Saray Souvenir Shop, where women from the village craft beautiful products from water hyacinth, an invasive plant species. Behind the shop, we enjoyed more birding and observed the Yellow-bellied Prinia, Indochinese Roller, Dusky Warbler, Plaintive Cuckoo, and Chinese Pond-heron.
+              ​
             </p>
             <p className="text-justify">
               Lunch was served at a floating community restaurant. Afterward, we returned by boat to Mechrey Village, then continued by car, stopping along the way for additional birding. Here we encountered species such as the Plaintive Cuckoo, Pied Bushchat, Asian Green Bee-eater, Paddyfield Pipit, Yellow-vented Bulbul, and Black Drongo.
