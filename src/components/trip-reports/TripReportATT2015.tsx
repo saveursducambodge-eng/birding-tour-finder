@@ -11,7 +11,7 @@ const highlights = [
 "Spotted Owlet",
 "Spotted Wood-Owl",
 "Common Barn-owl",
-"Peregrine Falcon",
+"Rufous-winged Buzzard",
 "Bronze-winged Jacana",
 "Pheasant-tailed Jacana",
 "Oriental Pratincole",
