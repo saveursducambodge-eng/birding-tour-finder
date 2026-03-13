@@ -247,11 +247,11 @@ The excursion began early in the morning, when bird activity is at its peak. The
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Yellow Bittern (Ixobrychus sinensis) – R seen</div>
                   <div>Cinnamon Bittern (Ixobrychus cinnamomeus)</div>
-                  <div>Black Bittern (Dupetor flavicollis)</div>
+                  <div>​</div>
                   <div>Black-crowned Night-heron (Nycticorax nycticorax)</div>
-                  <div>Little Heron (Butorides striata)</div>
+                  <div>​</div>
                   <div>Chinese Pond-heron (Ardeola bacchus) – R seen</div>
-                  <div>Javan Pond-heron (Ardeola speciosa)</div>
+                  <div>​</div>
                   <div>Eastern Cattle Egret (Bubulcus coromandus) – R seen</div>
                   <div>Grey Heron (Ardea cinerea) – R seen</div>
                   <div>Purple Heron (Ardea purpurea) – R seen</div>
