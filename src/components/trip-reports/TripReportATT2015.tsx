@@ -152,7 +152,7 @@ The excursion began early in the morning, when bird activity is at its peak. The
             </div>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p className="text-justify">
-                Early morning birding at the reservoir starting at 5:00 am. After breakfast at the site, we picked up a ranger and local guide from the WCS office. The day included extensive birding around the reservoir and floodplain areas, with sightings of Sarus Crane, Spotted Wood-Owl, and numerous waterbird species. Afternoon included a silk production demonstration before returning to Siem Reap.
+                The day included extensive birding around the reservoir and floodplain areas, with sightings of Sarus Crane, Spotted Wood-Owl, and numerous waterbird species. Afternoon included a silk production demonstration before returning to Siem Reap.
               </p>
             </div>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
