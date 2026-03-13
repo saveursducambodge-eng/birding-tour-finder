@@ -122,9 +122,9 @@ Dinner and overnight at the Tmatboey community lodge.
             </h2>
           </div>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
-            <p className="text-justify">
-              ​
-            </p>
+            
+
+          
             <p className="text-justify">
               ​
             </p>
