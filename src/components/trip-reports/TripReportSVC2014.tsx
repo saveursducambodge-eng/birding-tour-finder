@@ -115,8 +115,8 @@ const TripReportSVC2014 = () => {
               </p>
             </div>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
-                <span>Prek Toal Bird Sanctuary – Image coming soon</span>
+              <div className="aspect-video rounded-xl overflow-hidden">
+                <img src={svcPrekToalImg} alt="Birdwatching at Prek Toal Bird Sanctuary" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-video bg-muted rounded-xl flex items-center justify-center text-muted-foreground">
                 <span>Boat Trip to Prek Toal – Image coming soon</span>
