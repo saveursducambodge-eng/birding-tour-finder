@@ -47,7 +47,7 @@ const TripReportSVC2014 = () => {
             <MapPin className="w-5 h-5 text-nature-forest" />
             <span className="text-sm">Prek Toal Bird Sanctuary</span>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground">Written by: Ladong (Guide Training)</p>
+          <p className="mt-4 text-sm text-muted-foreground">Written by: Mr. Sam (PBG Guide)        </p>
         </div>
       </section>
 
