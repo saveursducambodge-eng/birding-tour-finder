@@ -69,12 +69,6 @@ const TripReportSVC2014 = () => {
             <p className="text-justify">
               We did bird watching until 8:30 am and then stopped to have breakfast on the boat after we passed Mechrey Pagoda about 3km. After breakfast, we did a presentation about Tonle Sap Lake, then continued bird watching until we reached Prek Toal village.
             </p>
-            <p className="text-justify">
-              We arrived at Prek Toal village at 9:30 am. We saw the crocodile farm, fish farm, chicken farm, and then stopped at the Environment Research Station to get passes and pick up a ranger. After that, we continued to the bird sanctuary.
-            </p>
-            <p className="text-justify">
-              We arrived at the Bird Sanctuary at 10:30 am and did bird watching for around two hours. We saw the nests of cormorants and darters (the chicks of cormorants are black and darters are white). We stopped for lunch on the boat at the bird sanctuary. At 2:00 pm, we left the bird sanctuary to return to Siem Reap.
-            </p>
           </div>
         </div>
       </section>
