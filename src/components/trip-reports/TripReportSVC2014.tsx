@@ -12,10 +12,10 @@ const highlights = [
 "Little Cormorant",
 "Great Egret",
 "Purple Heron",
-"Greater adjutant",
-"Lesser adjutant",
-"Milky stork",
-"Painted stork",
+"Whiskered Tern",
+"Green-billed Malkoha",
+"Greater Coucal",
+"Pied Kingfisher",
 "Blue-tailed Bee-eater",
 "Indian Roller"];
 
@@ -40,7 +40,7 @@ const TripReportSVC2014 = () => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-nature-forest" />
-              <span>Young Bird Club, SVC Guides</span>
+              <span>​4 pax from USA  </span>
             </div>
           </div>
           <div className="mt-4 flex items-center justify-center gap-2 text-muted-foreground">
@@ -62,7 +62,7 @@ const TripReportSVC2014 = () => {
               We left from Hotel at 6:00 am to go to Mechrey where we got a boat to Prek Toal village. From Siem Reap to Mechrey we went by car, it took about 50 minutes, and from Mechrey to Prek Toal we went by boat. During the car ride to Mechrey, we did a presentation about the itinerary of Prek Toal.
             </p>
             <p className="text-justify">
-              We arrived at Mechrey at 6:45 am and then started bird watching during the boat trip to Prek Toal. We saw Chinese Pond-heron, Great Egrets, Intermediate Egrets, Little Egrets, Black Drongo, Great Cormorant, Indian Cormorant, Little Cormorant, Oriental Darter, Grey-headed Fish-eagle, Lesser adjutant, Milky stork, Pied Kingfisher, Common Kingfisher, Blue-tailed Bee-eater, Rock Pigeon, Pied Fantail, Southern Jungle Crow, Brown Shrike, Olive-backed Sunbird, House Sparrow, and Eurasian Tree Sparrow.
+              We arrived at Mechrey at 6:45 am and then started bird watching during the boat trip to Prek Toal. We saw Chinese Pond-heron, Great Egrets, Intermediate Egrets, Little Egrets, Black Drongo, Great Cormorant, Indian Cormorant, Little Cormorant, Oriental Darter, Grey-headed Fish-eagle, Green-billed Malkoha, Greater Coucal, Pied Kingfisher, Common Kingfisher, Blue-tailed Bee-eater, Rock Pigeon, Pied Fantail, Southern Jungle Crow, Brown Shrike, Olive-backed Sunbird, House Sparrow, and Eurasian Tree Sparrow.
             </p>
             <p className="text-justify">
               We did bird watching until 8:30 am and then stopped to have breakfast on the boat after we passed Mechrey Pagoda about 3km. After breakfast, we did a presentation about Tonle Sap Lake, then continued bird watching until we reached Prek Toal village.
@@ -218,7 +218,7 @@ const TripReportSVC2014 = () => {
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div>Plaintive Cuckoo (Cacomantis merulinus)</div>
                   <div>Green-billed Malkoha (Rhopodytes tristis)</div>
-                  <div>Milky stork (Mycteria cinerea)</div>
+                  <div>Greater Coucal (Centropus sinensis)</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
