@@ -300,13 +300,13 @@ The excursion began early in the morning, when bird activity is at its peak. The
               <AccordionTrigger className="text-lg font-semibold">Rails, Crakes & Coots</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <div>Ruddy-breasted Crake (Porzana fusca)</div>
+                  <div>​</div>
                   <div>White-browed Crake (Porzana cinerea)</div>
                   <div>Watercock (Gallicrex cinerea)</div>
                   <div>Black-backed Swamphen (Porphyrio indicus) – R seen</div>
                   <div>Common Moorhen (Gallinula chloropus) – R seen</div>
                   <div>Common Coot (Fulica atra)</div>
-                  <div>White-breasted Crake (Amaurornis phoenicurus)</div>
+                  <div>​</div>
                 </div>
               </AccordionContent>
             </AccordionItem>
