@@ -55,7 +55,7 @@ const TripReportATT2015 = () => {
               <span className="text-sm">Sunny</span>
             </div>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground">Guide: Mr. Phanith (PBT Guide) </p>
+          <p className="mt-4 text-sm text-muted-foreground">Guide: Mr. Phanith (PRBT Guide) </p>
         </div>
       </section>
 
