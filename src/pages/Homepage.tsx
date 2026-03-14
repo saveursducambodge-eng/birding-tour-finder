@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play, Award, Compass, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,9 @@ import TourIntroPopup from "@/components/TourIntroPopup";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import homepageHeroIbis from "@/assets/homepage-hero-ibis.jpg";
+import heroSlideGuides from "@/assets/hero-slide-guides.jpg";
+import heroSlideBirdingGroup from "@/assets/hero-slide-birding-group.jpg";
+import heroSlideScope from "@/assets/hero-slide-scope.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
 import bird2 from "@/assets/prek-toal-storks.jpg";
@@ -18,6 +21,9 @@ import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import kohKerImage from "@/assets/koh-ker-bird-tours.jpg";
+
+const heroSlides = [homepageHeroIbis, heroSlideGuides, heroSlideBirdingGroup, heroSlideScope];
+
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
