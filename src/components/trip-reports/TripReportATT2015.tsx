@@ -1,8 +1,11 @@
+import { useState, useEffect, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 import attDay1SarusCranes from "@/assets/att-day1-sarus-cranes.jpg";
 import attDay1Cattle from "@/assets/att-day1-cattle.jpg";
+import heronSlide1 from "@/assets/heron-slide-1.jpg";
+import heronSlide2 from "@/assets/heron-slide-2.jpg";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous } from "lucide-react";
+import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous, ChevronLeft, ChevronRight } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const highlights = [
@@ -21,6 +24,45 @@ const highlights = [
 "Painted Stork",
 "Common Kingfisher"];
 
+const heronSlides = [heronSlide1, heronSlide2];
+
+const HeronSlideshow = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % heronSlides.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const prev = useCallback(() => setCurrent((c) => (c - 1 + heronSlides.length) % heronSlides.length), []);
+  const next = useCallback(() => setCurrent((c) => (c + 1) % heronSlides.length), []);
+
+  return (
+    <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4">
+      {heronSlides.map((img, i) => (
+        <img
+          key={i}
+          src={img}
+          alt={`Birding photo ${i + 1}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${i === current ? "opacity-100" : "opacity-0"}`}
+        />
+      ))}
+      <button onClick={prev} className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1.5 transition-colors">
+        <ChevronLeft className="w-5 h-5" />
+      </button>
+      <button onClick={next} className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1.5 transition-colors">
+        <ChevronRight className="w-5 h-5" />
+      </button>
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+        {heronSlides.map((_, i) => (
+          <button key={i} onClick={() => setCurrent(i)} className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-white" : "bg-white/50"}`} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const TripReportATT2015 = () => {
   return (
@@ -244,7 +286,9 @@ The excursion began early in the morning, when bird activity is at its peak. The
             <AccordionItem value="herons">
               <AccordionTrigger className="text-lg font-semibold">Bitterns, Herons & Egrets</AccordionTrigger>
               <AccordionContent>
-                <div className="space-y-2 text-sm text-muted-foreground">
+                {/* Photo Slideshow */}
+                <HeronSlideshow />
+                <div className="space-y-2 text-sm text-muted-foreground mt-4">
                   <div>Yellow Bittern (Ixobrychus sinensis) – R seen</div>
                   <div>Cinnamon Bittern (Ixobrychus cinnamomeus)</div>
                   <div>​</div>
@@ -492,4 +536,8 @@ The excursion began early in the morning, when bird activity is at its peak. The
           </Accordion>
         </div>
       </section>
-    </>);};export default TripReportATT2015;
+    </>
+  );
+};
+
+export default TripReportATT2015;
