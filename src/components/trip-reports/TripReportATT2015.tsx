@@ -536,4 +536,8 @@ The excursion began early in the morning, when bird activity is at its peak. The
           </Accordion>
         </div>
       </section>
-    </>);};export default TripReportATT2015;
+    </>
+  );
+};
+
+export default TripReportATT2015;
