@@ -247,7 +247,9 @@ The excursion began early in the morning, when bird activity is at its peak. The
             <AccordionItem value="herons">
               <AccordionTrigger className="text-lg font-semibold">Bitterns, Herons & Egrets</AccordionTrigger>
               <AccordionContent>
-                <div className="space-y-2 text-sm text-muted-foreground">
+                {/* Photo Slideshow */}
+                <HeronSlideshow />
+                <div className="space-y-2 text-sm text-muted-foreground mt-4">
                   <div>Yellow Bittern (Ixobrychus sinensis) – R seen</div>
                   <div>Cinnamon Bittern (Ixobrychus cinnamomeus)</div>
                   <div>​</div>
