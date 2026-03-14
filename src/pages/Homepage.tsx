@@ -79,10 +79,33 @@ const Homepage = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${homepageHeroIbis})`
-      }}>
-          <div className="absolute inset-0 bg-black/40" />
+        {/* Slideshow backgrounds */}
+        {heroSlides.map((slide, index) => (
+          <div
+            key={index}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+            style={{
+              backgroundImage: `url(${slide})`,
+              opacity: currentSlide === index ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Slide indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {heroSlides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                currentSlide === index
+                  ? "bg-white scale-125"
+                  : "bg-white/50 hover:bg-white/75"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
         
         <div className="relative z-10 text-center text-white max-w-4xl px-4 sm:px-6 py-8">
