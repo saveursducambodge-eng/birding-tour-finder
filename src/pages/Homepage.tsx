@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play, Award, Compass, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,9 @@ import TourIntroPopup from "@/components/TourIntroPopup";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import homepageHeroIbis from "@/assets/homepage-hero-ibis.jpg";
+import heroSlideGuides from "@/assets/hero-slide-guides.jpg";
+import heroSlideBirdingGroup from "@/assets/hero-slide-birding-group.jpg";
+import heroSlideScope from "@/assets/hero-slide-scope.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
 import bird2 from "@/assets/prek-toal-storks.jpg";
@@ -18,14 +21,25 @@ import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import kohKerImage from "@/assets/koh-ker-bird-tours.jpg";
+
+const heroSlides = [homepageHeroIbis, heroSlideGuides, heroSlideBirdingGroup, heroSlideScope];
+
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   useEffect(() => {
-    // Show popup after 2 seconds on first visit
     const timer = setTimeout(() => {
       setShowPopup(true);
     }, 2000);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(interval);
   }, []);
   const tourHighlights = [{
     title: "Giant Ibis Discovery",
@@ -54,11 +68,17 @@ const Homepage = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${homepageHeroIbis})`
-      }}>
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
+        {heroSlides.map((slide, index) => (
+          <div
+            key={index}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+            style={{
+              backgroundImage: `url(${slide})`,
+              opacity: currentSlide === index ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40" />
         
         <div className="relative z-10 text-center text-white max-w-4xl px-4 sm:px-6 py-8">
           <Badge className="mb-4 bg-nature-forest/80 text-white border-none text-xs sm:text-sm">
@@ -86,6 +106,17 @@ Pearaing Biodiversity Conservation is an organization officially registered with
               <Compass className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Learn More
             </Button>
+          </div>
+          <div className="flex gap-2 justify-center mt-6">
+            {heroSlides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                  currentSlide === index ? "bg-white scale-125" : "bg-white/50"
+                }`}
+              />
+            ))}
           </div>
         </div>
       </section>
