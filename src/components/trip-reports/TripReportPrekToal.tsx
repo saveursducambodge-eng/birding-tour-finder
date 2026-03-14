@@ -26,7 +26,7 @@ const TripReportPrekToal = () => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-nature-forest" />
-              <span>2 Clients ,  Guide Mr. Sam (PBT Guide) </span>
+              <span>2 Clients ,  Guide Mr. Sam (PRBT Guide) </span>
             </div>
           </div>
         </div>
