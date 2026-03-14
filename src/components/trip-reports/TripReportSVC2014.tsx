@@ -32,7 +32,7 @@ const TripReportSVC2014 = () => {
             Trip Report
           </Badge>
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 sm:mb-6 max-w-4xl mx-auto">
-            SVC Birdwatching Trip Report
+            PRBT Birdwatching Trip Report
           </h1>
           <p className="text-muted-foreground text-lg mb-6">Prek Toal, Siem Reap, Cambodia</p>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground">
