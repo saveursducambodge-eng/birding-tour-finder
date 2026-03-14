@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play, Award, Compass, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,14 +18,39 @@ import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import kohKerImage from "@/assets/koh-ker-bird-tours.jpg";
+
+// Hero slideshow images
+import heroSeki from "@/assets/hero-seki.jpg";
+import heroPhunit from "@/assets/hero-phunit.jpg";
+import heroSam from "@/assets/hero-sam.jpg";
+import heroAllGuides from "@/assets/hero-all-guides.jpg";
+import heroBirdingGroup from "@/assets/hero-birding-group.jpg";
+
+const heroSlides = [
+  homepageHeroIbis,
+  heroSeki,
+  heroPhunit,
+  heroSam,
+  heroAllGuides,
+  heroBirdingGroup,
+];
+
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
-    // Show popup after 2 seconds on first visit
     const timer = setTimeout(() => {
       setShowPopup(true);
     }, 2000);
     return () => clearTimeout(timer);
+  }, []);
+
+  // Hero slideshow auto-advance
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(interval);
   }, []);
   const tourHighlights = [{
     title: "Giant Ibis Discovery",
@@ -54,10 +79,33 @@ const Homepage = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${homepageHeroIbis})`
-      }}>
-          <div className="absolute inset-0 bg-black/40" />
+        {/* Slideshow backgrounds */}
+        {heroSlides.map((slide, index) => (
+          <div
+            key={index}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+            style={{
+              backgroundImage: `url(${slide})`,
+              opacity: currentSlide === index ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Slide indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {heroSlides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                currentSlide === index
+                  ? "bg-white scale-125"
+                  : "bg-white/50 hover:bg-white/75"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
         
         <div className="relative z-10 text-center text-white max-w-4xl px-4 sm:px-6 py-8">
