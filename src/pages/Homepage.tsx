@@ -119,6 +119,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
             ))}
           </div>
         </div>
+      </section>
 
       {/* Tours Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
