@@ -39,11 +39,18 @@ const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
-    // Show popup after 2 seconds on first visit
     const timer = setTimeout(() => {
       setShowPopup(true);
     }, 2000);
     return () => clearTimeout(timer);
+  }, []);
+
+  // Hero slideshow auto-advance
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(interval);
   }, []);
   const tourHighlights = [{
     title: "Giant Ibis Discovery",
