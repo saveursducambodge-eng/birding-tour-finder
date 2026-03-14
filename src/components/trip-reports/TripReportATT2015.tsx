@@ -1,8 +1,11 @@
+import { useState, useEffect, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 import attDay1SarusCranes from "@/assets/att-day1-sarus-cranes.jpg";
 import attDay1Cattle from "@/assets/att-day1-cattle.jpg";
+import heronSlide1 from "@/assets/heron-slide-1.jpg";
+import heronSlide2 from "@/assets/heron-slide-2.jpg";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous } from "lucide-react";
+import { Calendar, Users, MapPin, Bird, Sun, TreeDeciduous, ChevronLeft, ChevronRight } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const highlights = [
