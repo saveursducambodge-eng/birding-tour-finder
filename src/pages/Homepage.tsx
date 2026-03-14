@@ -107,8 +107,18 @@ Pearaing Biodiversity Conservation is an organization officially registered with
               Learn More
             </Button>
           </div>
+          <div className="flex gap-2 justify-center mt-6">
+            {heroSlides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                  currentSlide === index ? "bg-white scale-125" : "bg-white/50"
+                }`}
+              />
+            ))}
+          </div>
         </div>
-      </section>
 
       {/* Tours Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
