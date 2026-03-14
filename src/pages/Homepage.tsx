@@ -68,11 +68,17 @@ const Homepage = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${homepageHeroIbis})`
-      }}>
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
+        {heroSlides.map((slide, index) => (
+          <div
+            key={index}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+            style={{
+              backgroundImage: `url(${slide})`,
+              opacity: currentSlide === index ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40" />
         
         <div className="relative z-10 text-center text-white max-w-4xl px-4 sm:px-6 py-8">
           <Badge className="mb-4 bg-nature-forest/80 text-white border-none text-xs sm:text-sm">
