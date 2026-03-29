@@ -23,6 +23,9 @@ const TempleToursPage = () => {
             <p className="text-muted-foreground text-center text-lg">
               Welcome to Siem Reap!
             </p>
+            <p className="text-muted-foreground text-center text-lg mt-6">
+              Siem Reap is widely known as the gateway to the majestic Angkor Wat, one of the most iconic and sought-after destinations not only in Cambodia but across Southeast Asia. Rich in history, culture, and local charm, Siem Reap offers an unforgettable experience for every traveler. Whether you're here to explore the ancient temples of Angkor or simply soak up the vibrant local atmosphere, Siem Reap has something truly special to offer.
+            </p>
           </div>
         </section>
       </div>
