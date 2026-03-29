@@ -16,6 +16,9 @@ const Navigation = () => {
     name: "Our Tours",
     path: "/tours"
   }, {
+    name: "Temple Tours",
+    path: "/temple-tours"
+  }, {
     name: "Gallery",
     path: "/gallery"
   }, {
