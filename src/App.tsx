@@ -13,6 +13,7 @@ import GalleryPage from "./pages/GalleryPage";
 import ConservationPage from "./pages/ConservationPage";
 import TripReportPage from "./pages/TripReportPage";
 import ContactPage from "./pages/ContactPage";
+import TempleToursPage from "./pages/TempleToursPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
                 <Route path="/" element={<Homepage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/tours" element={<ToursPage />} />
+                <Route path="/temple-tours" element={<TempleToursPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/conservation" element={<ConservationPage />} />
                 <Route path="/trip-report" element={<TripReportPage />} />
