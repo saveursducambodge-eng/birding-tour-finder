@@ -21,7 +21,7 @@ const TempleToursPage = () => {
         <section className="py-16">
           <div className="container mx-auto px-4 max-w-4xl">
             <p className="text-muted-foreground text-center text-lg">
-              Content and photos coming soon. Stay tuned!
+              Welcome to Siem Reap!
             </p>
           </div>
         </section>
