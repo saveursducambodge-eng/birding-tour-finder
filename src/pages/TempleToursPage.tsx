@@ -17,7 +17,7 @@ const temples = [
   {
     name: "Angkor Wat",
     image: angkorWatImg,
-    location: "Siem Reap    Angkor Thom  Ta Prohm",
+    location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
   },
   {
