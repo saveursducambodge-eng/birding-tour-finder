@@ -120,8 +120,12 @@ const temples = [
 ];
 
 const TempleToursPage = () => {
+  const [showAngkorPopup, setShowAngkorPopup] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
+      <AngkorSunriseTourPopup isOpen={showAngkorPopup} onClose={() => setShowAngkorPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
