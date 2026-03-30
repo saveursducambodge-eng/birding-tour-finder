@@ -28,6 +28,30 @@ const TempleToursPage = () => {
             </p>
           </div>
         </section>
+
+        {/* Handpicked Destinations */}
+        <section className="py-16 bg-primary/5">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
+              Handpicked Destinations
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Coming soon — our curated selection of Cambodia's most remarkable temple sites.
+            </p>
+          </div>
+        </section>
+
+        {/* Featured Tours */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
+              Featured Tours
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Coming soon — explore our top temple tour experiences.
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   );
