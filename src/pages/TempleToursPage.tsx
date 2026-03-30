@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin } from "lucide-react";
+import { MapPin, Clock, Users, Globe } from "lucide-react";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
@@ -20,60 +20,90 @@ const temples = [
     location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
     price: "$150 Per Person",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Bayon Temple",
     image: bayonImg,
     location: "Angkor Thom",
     description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Ta Prohm",
     image: taProhmImg,
     location: "Angkor",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Banteay Srei",
     image: banteaySreiImg,
     location: "Siem Reap Province",
     description: "The 'Citadel of Women' is renowned for its intricate pink sandstone carvings, considered the finest example of classical Khmer art.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Preah Vihear",
     image: preahVihearImg,
     location: "Preah Vihear Province",
     description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Koh Ker",
     image: kohKerImg,
     location: "Preah Vihear Province",
     description: "A remote former capital of the Khmer Empire featuring Prasat Thom, a striking seven-tiered pyramid rising 36 meters above the surrounding jungle.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Beng Mealea",
     image: bengMealeaImg,
     location: "Siem Reap Province",
     description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Banteay Chhmar",
     image: banteayChhmarImg,
     location: "Banteay Meanchey",
     description: "One of the largest and most mysterious Angkorian temples, featuring unique multi-armed Avalokiteshvara carvings and remarkably few tourists.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Phnom Bakheng",
     image: phnomBakhengImg,
     location: "Angkor",
     description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
   {
     name: "Sambor Prei Kuk",
     image: samborPreiKukImg,
     location: "Kampong Thom",
     description: "A UNESCO World Heritage pre-Angkorian temple complex dating to the 6th–7th century, featuring unique octagonal towers set in a peaceful forest.",
+    duration: "Half Day (4 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
   },
 ];
 
@@ -139,6 +169,11 @@ const TempleToursPage = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {temple.description}
                     </p>
+                    <div className="flex flex-wrap gap-3 mt-3 text-muted-foreground text-xs">
+                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" />{temple.duration}</span>
+                      <span className="flex items-center gap-1"><Users className="w-3.5 h-3.5" />{temple.groupSize}</span>
+                      <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5" />{temple.country}</span>
+                    </div>
                     {temple.price && (
                       <p className="text-primary font-semibold mt-3 text-lg">
                         {temple.price}
