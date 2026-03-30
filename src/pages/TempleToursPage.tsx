@@ -1,6 +1,9 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Users, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
@@ -117,8 +120,12 @@ const temples = [
 ];
 
 const TempleToursPage = () => {
+  const [showAngkorPopup, setShowAngkorPopup] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
+      <AngkorSunriseTourPopup isOpen={showAngkorPopup} onClose={() => setShowAngkorPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -187,6 +194,15 @@ const TempleToursPage = () => {
                       <p className="text-primary font-semibold mt-3 text-lg">
                         {temple.price}
                       </p>
+                    )}
+                    {temple.name === "Full day to visit Small Circus – Angkor" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowAngkorPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
                     )}
                   </CardContent>
                 </Card>
