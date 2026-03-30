@@ -1,6 +1,9 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Users, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
