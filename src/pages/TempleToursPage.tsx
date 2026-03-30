@@ -1,4 +1,80 @@
 import Navigation from "@/components/Navigation";
+import { Card, CardContent } from "@/components/ui/card";
+import { MapPin } from "lucide-react";
+
+import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
+import bayonImg from "@/assets/temples/bayon.jpg";
+import taProhmImg from "@/assets/temples/ta-prohm.jpg";
+import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
+import preahVihearImg from "@/assets/temples/preah-vihear.jpg";
+import kohKerImg from "@/assets/temples/koh-ker.jpg";
+import bengMealeaImg from "@/assets/temples/beng-mealea.jpg";
+import banteayChhmarImg from "@/assets/temples/banteay-chhmar.jpg";
+import phnomBakhengImg from "@/assets/temples/phnom-bakheng.jpg";
+import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk.jpg";
+
+const temples = [
+  {
+    name: "Angkor Wat",
+    image: angkorWatImg,
+    location: "Siem Reap",
+    description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
+  },
+  {
+    name: "Bayon Temple",
+    image: bayonImg,
+    location: "Angkor Thom",
+    description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
+  },
+  {
+    name: "Ta Prohm",
+    image: taProhmImg,
+    location: "Angkor",
+    description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
+  },
+  {
+    name: "Banteay Srei",
+    image: banteaySreiImg,
+    location: "Siem Reap Province",
+    description: "The 'Citadel of Women' is renowned for its intricate pink sandstone carvings, considered the finest example of classical Khmer art.",
+  },
+  {
+    name: "Preah Vihear",
+    image: preahVihearImg,
+    location: "Preah Vihear Province",
+    description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
+  },
+  {
+    name: "Koh Ker",
+    image: kohKerImg,
+    location: "Preah Vihear Province",
+    description: "A remote former capital of the Khmer Empire featuring Prasat Thom, a striking seven-tiered pyramid rising 36 meters above the surrounding jungle.",
+  },
+  {
+    name: "Beng Mealea",
+    image: bengMealeaImg,
+    location: "Siem Reap Province",
+    description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
+  },
+  {
+    name: "Banteay Chhmar",
+    image: banteayChhmarImg,
+    location: "Banteay Meanchey",
+    description: "One of the largest and most mysterious Angkorian temples, featuring unique multi-armed Avalokiteshvara carvings and remarkably few tourists.",
+  },
+  {
+    name: "Phnom Bakheng",
+    image: phnomBakhengImg,
+    location: "Angkor",
+    description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
+  },
+  {
+    name: "Sambor Prei Kuk",
+    image: samborPreiKukImg,
+    location: "Kampong Thom",
+    description: "A UNESCO World Heritage pre-Angkorian temple complex dating to the 6th–7th century, featuring unique octagonal towers set in a peaceful forest.",
+  },
+];
 
 const TempleToursPage = () => {
   return (
@@ -31,13 +107,41 @@ const TempleToursPage = () => {
 
         {/* Handpicked Destinations */}
         <section className="py-16 bg-primary/5">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
+          <div className="container mx-auto px-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
               Handpicked Destinations
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Coming soon — our curated selection of Cambodia's most remarkable temple sites.
+            <p className="text-muted-foreground text-lg text-center mb-12 max-w-2xl mx-auto">
+              Our curated selection of Cambodia's most remarkable temple sites
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {temples.map((temple) => (
+                <Card key={temple.name} className="overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <img
+                      src={temple.image}
+                      alt={temple.name}
+                      loading="lazy"
+                      width={640}
+                      height={512}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <CardContent className="p-5">
+                    <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
+                      {temple.name}
+                    </h3>
+                    <div className="flex items-center gap-1 text-muted-foreground text-sm mb-3">
+                      <MapPin className="w-3.5 h-3.5" />
+                      <span>{temple.location}</span>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {temple.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
 
