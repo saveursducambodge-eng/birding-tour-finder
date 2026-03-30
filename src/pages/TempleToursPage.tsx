@@ -195,13 +195,15 @@ const TempleToursPage = () => {
                         {temple.price}
                       </p>
                     )}
-                    <Button
-                      variant="outline"
-                      className="mt-3 w-full"
-                      onClick={() => setShowAngkorPopup(true)}
-                    >
-                      View Itinerary Details
-                    </Button>
+                    {temple.name === "Full day to visit Small Circus – Angkor" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowAngkorPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
