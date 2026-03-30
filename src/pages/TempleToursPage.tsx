@@ -109,6 +109,7 @@ const temples = [
     image: samborPreiKukImg,
     location: "Kampong Thom",
     description: "A UNESCO World Heritage pre-Angkorian temple complex dating to the 6th–7th century, featuring unique octagonal towers set in a peaceful forest.",
+    price: "$150 two people",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
