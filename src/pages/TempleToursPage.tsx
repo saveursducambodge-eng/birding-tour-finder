@@ -19,6 +19,7 @@ const temples = [
     image: angkorWatImg,
     location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
+    price: "$150 Per Person",
   },
   {
     name: "Bayon Temple",
@@ -138,6 +139,11 @@ const TempleToursPage = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {temple.description}
                     </p>
+                    {temple.price && (
+                      <p className="text-primary font-semibold mt-3 text-lg">
+                        {temple.price}
+                      </p>
+                    )}
                   </CardContent>
                 </Card>
               ))}
