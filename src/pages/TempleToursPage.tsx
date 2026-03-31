@@ -44,7 +44,7 @@ const temples = [
     location: "Tonle Sap Lake",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
     price: "$150 two people",
-    duration: "Half Day (4 hours)",
+    duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
   },
