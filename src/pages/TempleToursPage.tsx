@@ -219,6 +219,15 @@ const TempleToursPage = () => {
                         View Itinerary Details
                       </Button>
                     )}
+                    {temple.name === "Full Day to ​Kampong Phluk Fishing Village & Flooded Forest" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowKampongPhlukPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
