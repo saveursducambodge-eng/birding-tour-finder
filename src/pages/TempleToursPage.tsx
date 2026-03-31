@@ -39,7 +39,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Ta Prohm",
+    name: "Full Day to ​Kampong Phluk Fishing Village & Flooded Forest",
     image: taProhmImg,
     location: "Angkor",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
