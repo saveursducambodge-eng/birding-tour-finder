@@ -28,7 +28,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Bayon Temple",
+    name: "Banteay Srei and Grand Circuit Heritage Tour",
     image: bayonImg,
     location: "Angkor Thom",
     description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
