@@ -128,6 +128,7 @@ const TempleToursPage = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <AngkorSunriseTourPopup isOpen={showAngkorPopup} onClose={() => setShowAngkorPopup(false)} />
+      <BanteaySreiTourPopup isOpen={showBanteaySreiPopup} onClose={() => setShowBanteaySreiPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
