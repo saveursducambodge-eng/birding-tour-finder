@@ -24,7 +24,7 @@ const temples = [
     location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
     price: "$150 two people",
-    duration: "Half Day (4 hours)",
+    duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
   },
