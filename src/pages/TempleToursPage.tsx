@@ -5,6 +5,7 @@ import { MapPin, Clock, Users, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
 import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
+import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
