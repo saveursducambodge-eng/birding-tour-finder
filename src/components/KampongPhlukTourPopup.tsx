@@ -22,11 +22,26 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
 
             <div className="mt-4 space-y-6">
               <div className="space-y-3">
+                <h3 className="font-serif text-lg font-semibold text-foreground">
+                  Itinerary: Kampong Phluk Fishing Village & Flooded Forest
+                </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Experience the unique floating world of Tonle Sap Lake on this immersive full-day adventure to Kampong Phluk, one of Cambodia's most remarkable stilted fishing villages. Navigate through a mystical flooded forest, witness daily life on the water, and gain an unforgettable glimpse into the traditions of Cambodia's lakeside communities.
+                  Get ready for an exciting day trip to the amazing Tonle Sap Lake in Cambodia!
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  This tour combines natural beauty, cultural discovery, and a boat ride through the stunning flooded mangrove forest — a truly unique Cambodian experience you won't find anywhere else.
+                  Your adventure starts at 8:00 AM when you leave your hotel for a fun ride through the countryside. The Tonle Sap is a magical lake that changes size with the seasons, growing as big as 100,000 – 12,000 km² in the rainy season! The lake covers approximately 3,500 km² during the dry season. You'll hop on a boat to visit Kampong Phluk, a group of fishing villages where houses stand on tall stilts above the water. As you float through the underwater forest, you'll see cool plants and animals, just like in a nature movie!
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Upon arrival, you'll board a boat and travel to Kampong Phluk, a fascinating cluster of fishing villages where homes are built high on stilts above the water. As you cruise through the area, you'll witness daily life on the lake and, depending on the season, glide through a flooded mangrove forest filled with unique plant and animal life—an experience that feels straight out of a nature documentary.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  After the boat excursion, continue exploring the surrounding countryside for an authentic glimpse into rural Cambodian life. Along the way, you may see locals planting rice, raising ducks, or even collecting insects. You'll also visit a local Buddhist monastery, offering insight into the country's spiritual traditions.
+                </p>
+                <p className="text-muted-foreground leading-relaxed font-semibold text-foreground">
+                  Alternative Option to Kampong Phluk: Visit Chong Khneas with a Sunset Experience during the dry season (01st March until 31st July)
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Due to the dry season, the water level in Kampong Phluk is quite low to fully appreciate the unique charm of the floating village. However, Chong Khneas offers an excellent alternative. Located closer to Siem Reap, this floating village remains accessible and provides a wonderful opportunity to explore life on the Tonlé Sap Lake.
                 </p>
               </div>
 
