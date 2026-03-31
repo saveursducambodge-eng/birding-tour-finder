@@ -34,7 +34,7 @@ const temples = [
     location: "Angkor Thom",
     description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
     price: "$150 two people",
-    duration: "Half Day (4 hours)",
+    duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
   },
