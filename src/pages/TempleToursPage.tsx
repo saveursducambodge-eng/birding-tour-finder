@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Users, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
+import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
@@ -121,11 +122,13 @@ const temples = [
 
 const TempleToursPage = () => {
   const [showAngkorPopup, setShowAngkorPopup] = useState(false);
+  const [showBanteaySreiPopup, setShowBanteaySreiPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <AngkorSunriseTourPopup isOpen={showAngkorPopup} onClose={() => setShowAngkorPopup(false)} />
+      <BanteaySreiTourPopup isOpen={showBanteaySreiPopup} onClose={() => setShowBanteaySreiPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -200,6 +203,15 @@ const TempleToursPage = () => {
                         variant="outline"
                         className="mt-3 w-full"
                         onClick={() => setShowAngkorPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
+                    {temple.name === "Full Day to Banteay Srei and Grand Circuit Heritage Tour" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowBanteaySreiPopup(true)}
                       >
                         View Itinerary Details
                       </Button>
