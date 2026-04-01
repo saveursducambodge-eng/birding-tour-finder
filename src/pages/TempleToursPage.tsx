@@ -8,6 +8,7 @@ import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
+import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
 import taProhmImg from "@/assets/temples/ta-prohm.jpg";
 import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
