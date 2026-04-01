@@ -52,7 +52,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Full Day to ​Kulen Mountain Waterfall and History",
+    name: "Full Day to ​Kulen Mountain Waterfall and River of 1,000 Lingas",
     image: banteaySreiImg,
     location: "Siem Reap Province",
     description: "The 'Citadel of Women' is renowned for its intricate pink sandstone carvings, considered the finest example of classical Khmer art.",
