@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
 import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
+import KulenMountainTourPopup from "@/components/KulenMountainTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
