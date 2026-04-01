@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
 import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
+import KulenMountainTourPopup from "@/components/KulenMountainTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -126,6 +127,7 @@ const TempleToursPage = () => {
   const [showAngkorPopup, setShowAngkorPopup] = useState(false);
   const [showBanteaySreiPopup, setShowBanteaySreiPopup] = useState(false);
   const [showKampongPhlukPopup, setShowKampongPhlukPopup] = useState(false);
+  const [showKulenPopup, setShowKulenPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -133,6 +135,7 @@ const TempleToursPage = () => {
       <AngkorSunriseTourPopup isOpen={showAngkorPopup} onClose={() => setShowAngkorPopup(false)} />
       <BanteaySreiTourPopup isOpen={showBanteaySreiPopup} onClose={() => setShowBanteaySreiPopup(false)} />
       <KampongPhlukTourPopup isOpen={showKampongPhlukPopup} onClose={() => setShowKampongPhlukPopup(false)} />
+      <KulenMountainTourPopup isOpen={showKulenPopup} onClose={() => setShowKulenPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -229,6 +232,15 @@ const TempleToursPage = () => {
                         variant="outline"
                         className="mt-3 w-full"
                         onClick={() => setShowKampongPhlukPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
+                    {temple.name === "Full Day to ​Kulen Mountain Waterfall and History" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowKulenPopup(true)}
                       >
                         View Itinerary Details
                       </Button>
