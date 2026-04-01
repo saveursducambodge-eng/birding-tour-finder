@@ -8,6 +8,7 @@ import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
+import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
 import taProhmImg from "@/assets/temples/ta-prohm.jpg";
 import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
@@ -135,12 +136,16 @@ const TempleToursPage = () => {
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="relative py-20 bg-primary/10">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">
+        <section className="relative py-32 md:py-44 overflow-hidden">
+          <div className="absolute inset-0">
+            <img src={templeToursHero} alt="Angkor Wat at sunset" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/50" />
+          </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
               Temple Tours
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Explore Cambodia's magnificent temples and cultural heritage sites
             </p>
           </div>
