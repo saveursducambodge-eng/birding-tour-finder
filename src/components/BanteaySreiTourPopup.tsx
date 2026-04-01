@@ -156,6 +156,51 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
 
               <Separator />
 
+              {/* Essential Items */}
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Footprints className="w-5 h-5 text-primary" />
+                  Essential Items to Bring
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground text-sm mb-2">Required</h4>
+                    <ul className="space-y-1.5 text-muted-foreground text-sm">
+                      {["Flashlight or phone light", "Temple pass (US$37)", "Modest clothing (shoulders & knees covered)", "Comfortable walking shoes"].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-600 mt-0.5 shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground text-sm mb-2">Recommended</h4>
+                    <ul className="space-y-1.5 text-muted-foreground text-sm">
+                      {["Camera with extra batteries", "Small backpack", "Cash for breakfast", "Sun protection (hat, sunscreen)"].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <Sun className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground text-sm mb-2">Leave at Hotel</h4>
+                    <ul className="space-y-1.5 text-muted-foreground text-sm">
+                      {["Passport (bring a copy)", "Airline tickets", "Excess cash", "Valuable jewellery"].map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <XCircle className="w-3.5 h-3.5 text-red-500 mt-0.5 shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <Separator />
+
               {/* Booking */}
               <div className="text-center space-y-3">
                 <p className="text-primary font-semibold text-xl">$150 for two people</p>
