@@ -201,6 +201,32 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
 
               <Separator />
 
+              {/* Weather */}
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Sun className="w-5 h-5 text-primary" />
+                  Weather
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+                  Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.
+                </p>
+              </div>
+
+              <Separator />
+
+              {/* Food */}
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5 text-primary" />
+                  Food
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+                  Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.
+                </p>
+              </div>
+
+              <Separator />
+
               {/* Booking */}
               <div className="text-center space-y-3">
                 <p className="text-primary font-semibold text-xl">$150 for two people</p>

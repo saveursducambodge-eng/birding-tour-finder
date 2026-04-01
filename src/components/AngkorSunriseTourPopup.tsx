@@ -228,6 +228,29 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <p>• Children under 8 years old are not permitted</p>
               <p>• <strong>Maximum group size:</strong> 2–15 travelers in an air-conditioned vehicle</p>
             </div>
+            <Separator className="my-6" />
+
+            {/* Weather */}
+            <h3 className="font-serif text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+              <Sun className="w-5 h-5 text-primary" />
+              Weather
+            </h3>
+            <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+              Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.
+            </p>
+
+            <Separator className="my-6" />
+
+            {/* Food */}
+            <h3 className="font-serif text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+              <Info className="w-5 h-5 text-primary" />
+              Food
+            </h3>
+            <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+              Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.
+            </p>
+
+            <Separator className="my-6" />
 
             {/* WhatsApp CTA */}
             <div className="mt-8 text-center">
