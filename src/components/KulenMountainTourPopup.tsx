@@ -23,7 +23,7 @@ const KulenMountainTourPopup = ({ isOpen, onClose }: KulenMountainTourPopupProps
             <div className="mt-4 space-y-6">
               <div className="space-y-3">
                 <h3 className="font-serif text-lg font-semibold text-foreground">
-                  Itinerary: Kulen Mountain Waterfall and River of 1,000 Lingas
+                  Itinerary
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-justify">
                   This morning at 8:00 AM, depart from your hotel for Phnom Kulen, regarded as the birthplace of the Khmer Empire, located approximately 65 kilometers from Siem Reap. The drive to the base of Phnom Kulen takes around one hour, passing through beautiful countryside. From there, continue for another 35 minutes to reach the summit.
