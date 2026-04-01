@@ -236,7 +236,7 @@ const TempleToursPage = () => {
                         View Itinerary Details
                       </Button>
                     )}
-                    {temple.name === "Full Day to ​Kulen Mountain Waterfall and History" && (
+                    {temple.name === "Full Day to ​Kulen Mountain Waterfall and River of 1,000 Lingas" && (
                       <Button
                         variant="outline"
                         className="mt-3 w-full"
