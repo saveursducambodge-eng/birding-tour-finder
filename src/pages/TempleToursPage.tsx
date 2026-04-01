@@ -134,6 +134,7 @@ const TempleToursPage = () => {
       <AngkorSunriseTourPopup isOpen={showAngkorPopup} onClose={() => setShowAngkorPopup(false)} />
       <BanteaySreiTourPopup isOpen={showBanteaySreiPopup} onClose={() => setShowBanteaySreiPopup(false)} />
       <KampongPhlukTourPopup isOpen={showKampongPhlukPopup} onClose={() => setShowKampongPhlukPopup(false)} />
+      <KulenMountainTourPopup isOpen={showKulenPopup} onClose={() => setShowKulenPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
