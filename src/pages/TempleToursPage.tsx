@@ -82,7 +82,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Beng Mealea",
+    name: "​Kompong Khleang Stilted House & Floating Village Tour",
     image: bengMealeaImg,
     location: "Siem Reap Province",
     description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
