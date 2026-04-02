@@ -248,6 +248,15 @@ const TempleToursPage = () => {
                         View Itinerary Details
                       </Button>
                     )}
+                    {temple.name === "​2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowPreahVihearPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
