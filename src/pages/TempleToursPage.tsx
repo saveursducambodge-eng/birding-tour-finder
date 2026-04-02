@@ -102,7 +102,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Phnom Bakheng",
+    name: "​2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour",
     image: phnomBakhengImg,
     location: "Angkor",
     description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
