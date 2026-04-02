@@ -7,6 +7,7 @@ import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
 import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
 import KulenMountainTourPopup from "@/components/KulenMountainTourPopup";
+import PreahVihearTourPopup from "@/components/PreahVihearTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -128,6 +129,7 @@ const TempleToursPage = () => {
   const [showBanteaySreiPopup, setShowBanteaySreiPopup] = useState(false);
   const [showKampongPhlukPopup, setShowKampongPhlukPopup] = useState(false);
   const [showKulenPopup, setShowKulenPopup] = useState(false);
+  const [showPreahVihearPopup, setShowPreahVihearPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -136,6 +138,7 @@ const TempleToursPage = () => {
       <BanteaySreiTourPopup isOpen={showBanteaySreiPopup} onClose={() => setShowBanteaySreiPopup(false)} />
       <KampongPhlukTourPopup isOpen={showKampongPhlukPopup} onClose={() => setShowKampongPhlukPopup(false)} />
       <KulenMountainTourPopup isOpen={showKulenPopup} onClose={() => setShowKulenPopup(false)} />
+      <PreahVihearTourPopup isOpen={showPreahVihearPopup} onClose={() => setShowPreahVihearPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -241,6 +244,15 @@ const TempleToursPage = () => {
                         variant="outline"
                         className="mt-3 w-full"
                         onClick={() => setShowKulenPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
+                    {temple.name === "​2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowPreahVihearPopup(true)}
                       >
                         View Itinerary Details
                       </Button>
