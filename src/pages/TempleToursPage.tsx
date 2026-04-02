@@ -8,6 +8,7 @@ import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
 import KulenMountainTourPopup from "@/components/KulenMountainTourPopup";
 import PreahVihearTourPopup from "@/components/PreahVihearTourPopup";
+import KompongKhleangTourPopup from "@/components/KompongKhleangTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -130,6 +131,7 @@ const TempleToursPage = () => {
   const [showKampongPhlukPopup, setShowKampongPhlukPopup] = useState(false);
   const [showKulenPopup, setShowKulenPopup] = useState(false);
   const [showPreahVihearPopup, setShowPreahVihearPopup] = useState(false);
+  const [showKompongKhleangPopup, setShowKompongKhleangPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -139,6 +141,7 @@ const TempleToursPage = () => {
       <KampongPhlukTourPopup isOpen={showKampongPhlukPopup} onClose={() => setShowKampongPhlukPopup(false)} />
       <KulenMountainTourPopup isOpen={showKulenPopup} onClose={() => setShowKulenPopup(false)} />
       <PreahVihearTourPopup isOpen={showPreahVihearPopup} onClose={() => setShowPreahVihearPopup(false)} />
+      <KompongKhleangTourPopup isOpen={showKompongKhleangPopup} onClose={() => setShowKompongKhleangPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -253,6 +256,15 @@ const TempleToursPage = () => {
                         variant="outline"
                         className="mt-3 w-full"
                         onClick={() => setShowPreahVihearPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
+                    {temple.name === "​Kompong Khleang Stilted House & Floating Village Tour" && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowKompongKhleangPopup(true)}
                       >
                         View Itinerary Details
                       </Button>
