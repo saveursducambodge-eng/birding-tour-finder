@@ -43,7 +43,7 @@ const KohKerBengMealeaTourPopup = ({ isOpen, onClose }: KohKerBengMealeaTourPopu
             <Separator />
 
             {/* Full-Day Itinerary */}
-            <div>
+            <div className="border-0">
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">Full-Day Itinerary & Schedule</h3>
               <div className="space-y-4">
                 <div>
