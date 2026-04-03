@@ -10,6 +10,7 @@ import KulenMountainTourPopup from "@/components/KulenMountainTourPopup";
 import PreahVihearTourPopup from "@/components/PreahVihearTourPopup";
 import KompongKhleangTourPopup from "@/components/KompongKhleangTourPopup";
 import KohKerBengMealeaTourPopup from "@/components/KohKerBengMealeaTourPopup";
+import BengMealeaTourPopup from "@/components/BengMealeaTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -134,6 +135,7 @@ const TempleToursPage = () => {
   const [showPreahVihearPopup, setShowPreahVihearPopup] = useState(false);
   const [showKompongKhleangPopup, setShowKompongKhleangPopup] = useState(false);
   const [showKohKerPopup, setShowKohKerPopup] = useState(false);
+  const [showBengMealeaPopup, setShowBengMealeaPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -145,6 +147,7 @@ const TempleToursPage = () => {
       <PreahVihearTourPopup isOpen={showPreahVihearPopup} onClose={() => setShowPreahVihearPopup(false)} />
       <KompongKhleangTourPopup isOpen={showKompongKhleangPopup} onClose={() => setShowKompongKhleangPopup(false)} />
       <KohKerBengMealeaTourPopup isOpen={showKohKerPopup} onClose={() => setShowKohKerPopup(false)} />
+      <BengMealeaTourPopup isOpen={showBengMealeaPopup} onClose={() => setShowBengMealeaPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -277,6 +280,15 @@ const TempleToursPage = () => {
                         variant="outline"
                         className="mt-3 w-full"
                         onClick={() => setShowKohKerPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
+                    {temple.name === "\u200BHalf-Day  Tour To Beng Mealea Temple " && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowBengMealeaPopup(true)}
                       >
                         View Itinerary Details
                       </Button>
