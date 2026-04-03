@@ -272,6 +272,15 @@ const TempleToursPage = () => {
                         View Itinerary Details
                       </Button>
                     )}
+                    {temple.name === "Full-Day Tour \u200BKoh Ker  and Beng Mealea Temple Adventure " && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowKohKerPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
