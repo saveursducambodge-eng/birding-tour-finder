@@ -65,7 +65,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Preah Vihear",
+    name: "​Half-Day  Tour To Beng Mealea Temple ",
     image: preahVihearImg,
     location: "Preah Vihear Province",
     description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
