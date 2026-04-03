@@ -135,6 +135,7 @@ const TempleToursPage = () => {
   const [showPreahVihearPopup, setShowPreahVihearPopup] = useState(false);
   const [showKompongKhleangPopup, setShowKompongKhleangPopup] = useState(false);
   const [showKohKerPopup, setShowKohKerPopup] = useState(false);
+  const [showBengMealeaPopup, setShowBengMealeaPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
