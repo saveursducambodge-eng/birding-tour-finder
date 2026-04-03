@@ -13,7 +13,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] p-0">
         <ScrollArea className="max-h-[90vh]">
-          <div className="p-6">
+          <div className="p-6 rounded-lg shadow-lg border">
             <DialogHeader>
               <DialogTitle className="font-serif text-2xl text-primary">
                 Full Day to Banteay Srei and Grand Circuit Heritage Tour
