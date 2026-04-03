@@ -9,6 +9,7 @@ import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
 import KulenMountainTourPopup from "@/components/KulenMountainTourPopup";
 import PreahVihearTourPopup from "@/components/PreahVihearTourPopup";
 import KompongKhleangTourPopup from "@/components/KompongKhleangTourPopup";
+import KohKerBengMealeaTourPopup from "@/components/KohKerBengMealeaTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -78,9 +79,9 @@ const temples = [
     image: kohKerImg,
     location: "Preah Vihear Province",
     description: "A remote former capital of the Khmer Empire featuring Prasat Thom, a striking seven-tiered pyramid rising 36 meters above the surrounding jungle.",
-    price: "$150 two people",
-    duration: "Half Day (4 hours)",
-    groupSize: "2 people",
+    price: "$130–$160 USD (1–2 people)",
+    duration: "Full Day (10–12 hours)",
+    groupSize: "1–8 people",
     country: "Cambodia",
   },
   {
@@ -132,6 +133,7 @@ const TempleToursPage = () => {
   const [showKulenPopup, setShowKulenPopup] = useState(false);
   const [showPreahVihearPopup, setShowPreahVihearPopup] = useState(false);
   const [showKompongKhleangPopup, setShowKompongKhleangPopup] = useState(false);
+  const [showKohKerPopup, setShowKohKerPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -142,6 +144,7 @@ const TempleToursPage = () => {
       <KulenMountainTourPopup isOpen={showKulenPopup} onClose={() => setShowKulenPopup(false)} />
       <PreahVihearTourPopup isOpen={showPreahVihearPopup} onClose={() => setShowPreahVihearPopup(false)} />
       <KompongKhleangTourPopup isOpen={showKompongKhleangPopup} onClose={() => setShowKompongKhleangPopup(false)} />
+      <KohKerBengMealeaTourPopup isOpen={showKohKerPopup} onClose={() => setShowKohKerPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -265,6 +268,15 @@ const TempleToursPage = () => {
                         variant="outline"
                         className="mt-3 w-full"
                         onClick={() => setShowPreahVihearPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
+                    {temple.name === "Full-Day Tour \u200BKoh Ker  and Beng Mealea Temple Adventure " && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowKohKerPopup(true)}
                       >
                         View Itinerary Details
                       </Button>
