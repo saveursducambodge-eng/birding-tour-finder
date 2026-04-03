@@ -74,7 +74,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Full-Day Tour \u200BKoh Ker  and \u2022\tBeng Mealea Temple Adventure ",
+    name: "Full-Day Tour \u200BKoh Ker  and Beng Mealea Temple Adventure ",
     image: kohKerImg,
     location: "Preah Vihear Province",
     description: "A remote former capital of the Khmer Empire featuring Prasat Thom, a striking seven-tiered pyramid rising 36 meters above the surrounding jungle.",
