@@ -79,9 +79,9 @@ const temples = [
     image: kohKerImg,
     location: "Preah Vihear Province",
     description: "A remote former capital of the Khmer Empire featuring Prasat Thom, a striking seven-tiered pyramid rising 36 meters above the surrounding jungle.",
-    price: "$150 two people",
-    duration: "Half Day (4 hours)",
-    groupSize: "2 people",
+    price: "$130–$160 USD (1–2 people)",
+    duration: "Full Day (10–12 hours)",
+    groupSize: "1–8 people",
     country: "Cambodia",
   },
   {
