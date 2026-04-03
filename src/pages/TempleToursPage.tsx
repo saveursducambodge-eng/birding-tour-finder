@@ -9,6 +9,7 @@ import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
 import KulenMountainTourPopup from "@/components/KulenMountainTourPopup";
 import PreahVihearTourPopup from "@/components/PreahVihearTourPopup";
 import KompongKhleangTourPopup from "@/components/KompongKhleangTourPopup";
+import KohKerBengMealeaTourPopup from "@/components/KohKerBengMealeaTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
