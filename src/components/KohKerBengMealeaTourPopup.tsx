@@ -13,7 +13,7 @@ const KohKerBengMealeaTourPopup = ({ isOpen, onClose }: KohKerBengMealeaTourPopu
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] p-0">
-        <ScrollArea className="max-h-[90vh] p-6">
+        <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-lg">
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
               Itinerary
@@ -43,7 +43,7 @@ const KohKerBengMealeaTourPopup = ({ isOpen, onClose }: KohKerBengMealeaTourPopu
             <Separator />
 
             {/* Full-Day Itinerary */}
-            <div>
+            <div className="border-0">
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">Full-Day Itinerary & Schedule</h3>
               <div className="space-y-4">
                 <div>
