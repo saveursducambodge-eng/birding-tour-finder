@@ -90,7 +90,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                     { time: "3:00 PM", desc: "Drive back to Siem Reap" },
                     { time: "4:00 PM", desc: "Arrive back at your hotel" },
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
+                    <li key={i} className="flex items-start gap-2 text-lg">
                       <span className="font-semibold text-primary min-w-[80px]">{item.time}</span>
                       <span>{item.desc}</span>
                     </li>
