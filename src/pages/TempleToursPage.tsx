@@ -96,7 +96,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Banteay Chhmar",
+    name: "Full Day Adventure to​ Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple ",
     image: banteayChhmarImg,
     location: "Banteay Meanchey",
     description: "One of the largest and most mysterious Angkorian temples, featuring unique multi-armed Avalokiteshvara carvings and remarkably few tourists.",
