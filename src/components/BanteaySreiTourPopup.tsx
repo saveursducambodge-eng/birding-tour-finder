@@ -113,7 +113,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                     <XCircle className="w-5 h-5 text-red-500" />
                     What's Not Included
                   </h3>
-                  <ul className="space-y-1.5 text-muted-foreground text-sm">
+                  <ul className="space-y-1.5 text-muted-foreground text-lg">
                     {[
                       "Angkor Pass (temple entrance fee)",
                       "Meals and drinks",
