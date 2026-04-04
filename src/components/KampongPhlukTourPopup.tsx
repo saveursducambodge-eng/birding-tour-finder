@@ -63,7 +63,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Sun className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      <span className="text-lg">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -90,7 +90,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                     { time: "3:00 PM", desc: "Drive back to Siem Reap" },
                     { time: "4:00 PM", desc: "Arrive back at your hotel" },
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
+                    <li key={i} className="flex items-start gap-2 text-lg">
                       <span className="font-semibold text-primary min-w-[80px]">{item.time}</span>
                       <span>{item.desc}</span>
                     </li>
@@ -114,7 +114,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                       "Cold water and towels",
                       "Hotel pickup and drop-off",
                     ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2">
+                      <li key={i} className="flex items-start gap-2 text-lg">
                         <CheckCircle className="w-3.5 h-3.5 text-green-600 mt-0.5 shrink-0" />
                         <span>{item}</span>
                       </li>
@@ -133,7 +133,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                       "Personal expenses",
                       "Boat entrance fee (if applicable)",
                     ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2">
+                      <li key={i} className="flex items-start gap-2 text-lg">
                         <XCircle className="w-3.5 h-3.5 text-red-500 mt-0.5 shrink-0" />
                         <span>{item}</span>
                       </li>
@@ -160,7 +160,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Footprints className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      <span className="text-lg">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -174,7 +174,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                   <Sun className="w-5 h-5 text-primary" />
                   Weather
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed text-left">
+                  <p className="text-muted-foreground leading-relaxed text-left text-lg">
                   Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.
                 </p>
               </div>
@@ -187,7 +187,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                   <Camera className="w-5 h-5 text-primary" />
                   Food
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed text-left">
+                <p className="text-muted-foreground leading-relaxed text-left text-lg">
                   Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.
                 </p>
               </div>
