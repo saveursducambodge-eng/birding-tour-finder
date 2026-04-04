@@ -30,13 +30,13 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <p className="text-lg font-semibold text-foreground italic">
                 The perfect sunrise. No crowds. No guesswork—just the photos you came for, led by an expert guide.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-base">
                 Skip the crowds, capture incredible photos, and experience Angkor Wat at its most magical—guided by someone who knows every hidden path.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-base">
                 Most visitors arrive around 9:00 AM, when the site is already crowded and the light is harsh. Our Angkor Wat Sunrise Tour gets you there early—around 4:15 AM—so you can enjoy peaceful surroundings, soft morning light, and truly unforgettable views.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-base">
                 This tour includes expert guiding, visits to four major temples—Angkor Wat, Ta Prohm, Bayon Temple, and Angkor Thom—as well as comfortable transportation with hotel pickup. You'll return with stunning photos and a deeper understanding of Cambodia's most iconic heritage site.
               </p>
             </div>
