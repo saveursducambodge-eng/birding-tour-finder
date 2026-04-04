@@ -79,7 +79,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="font-semibold text-primary min-w-[80px]">{item.time}</span>
-                      <span>{item.desc}</span>
+                      <span className="text-left">{item.desc}</span>
                     </li>
                   ))}
                 </ul>
