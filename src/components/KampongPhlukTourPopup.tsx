@@ -11,8 +11,8 @@ interface KampongPhlukTourPopupProps {
 const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl max-h-[90vh] p-0">
-        <ScrollArea className="max-h-[90vh]">
+      <DialogContent className="max-w-4xl max-h-[90vh] p-0">
+        <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-lg">
           <div className="p-6">
             <DialogHeader>
               <DialogTitle className="font-serif text-2xl text-primary">
