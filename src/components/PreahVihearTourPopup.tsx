@@ -12,7 +12,7 @@ const PreahVihearTourPopup = ({ isOpen, onClose }: PreahVihearTourPopupProps) =>
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
-        <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-base">
+        <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-lg">
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
               2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker Temple Adventure Tour
