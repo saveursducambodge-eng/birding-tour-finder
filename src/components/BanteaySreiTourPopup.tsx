@@ -23,12 +23,12 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
             <div className="mt-4 space-y-6">
               {/* Intro */}
               <div className="space-y-3">
-                <p className="text-muted-foreground leading-relaxed">
-                  Discover the finest masterpieces of Khmer art and architecture on this full-day journey through the Grand Circuit and the legendary Banteay Srei temple. This tour takes you beyond the usual Angkor highlights into a deeper exploration of Cambodia's ancient heritage.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  From intricate pink sandstone carvings to jungle-wrapped ruins, this tour offers a perfect blend of history, culture, and stunning photo opportunities—all guided by a knowledgeable local expert.
-                </p>
+                  <p className="text-muted-foreground leading-relaxed text-left">
+                    Discover the finest masterpieces of Khmer art and architecture on this full-day journey through the Grand Circuit and the legendary Banteay Srei temple. This tour takes you beyond the usual Angkor highlights into a deeper exploration of Cambodia's ancient heritage.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed text-left">
+                    From intricate pink sandstone carvings to jungle-wrapped ruins, this tour offers a perfect blend of history, culture, and stunning photo opportunities—all guided by a knowledgeable local expert.
+                  </p>
               </div>
 
               <Separator />
@@ -50,7 +50,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Sun className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      <span className="text-left">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -79,7 +79,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="font-semibold text-primary min-w-[80px]">{item.time}</span>
-                      <span>{item.desc}</span>
+                      <span className="text-left">{item.desc}</span>
                     </li>
                   ))}
                 </ul>
@@ -148,7 +148,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Footprints className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      <span className="text-left">{item}</span>
                     </li>
                   ))}
                 </ul>
