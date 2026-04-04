@@ -199,7 +199,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <li>• Sun protection (hat, sunscreen)</li>
                 </ul>
               </div>
-              <div className="bg-muted/50 rounded-lg p-4">
+              <div className="bg-muted/50 rounded-lg p-4 text-base">
                 <h4 className="font-semibold text-foreground text-sm mb-2">Leave at Hotel</h4>
                 <ul className="space-y-1 text-muted-foreground text-sm">
                   <li>• Passport (bring a copy)</li>
