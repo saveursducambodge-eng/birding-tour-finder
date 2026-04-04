@@ -114,7 +114,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                       "Cold water and towels",
                       "Hotel pickup and drop-off",
                     ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2">
+                      <li key={i} className="flex items-start gap-2 text-lg">
                         <CheckCircle className="w-3.5 h-3.5 text-green-600 mt-0.5 shrink-0" />
                         <span>{item}</span>
                       </li>
