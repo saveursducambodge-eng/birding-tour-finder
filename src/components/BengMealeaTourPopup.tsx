@@ -12,7 +12,7 @@ interface BengMealeaTourPopupProps {
 const BengMealeaTourPopup = ({ isOpen, onClose }: BengMealeaTourPopupProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl max-h-[90vh] p-0">
+      <DialogContent className="max-w-4xl max-h-[90vh] p-0">
         <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-lg">
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
