@@ -133,7 +133,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                       "Personal expenses",
                       "Boat entrance fee (if applicable)",
                     ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2">
+                      <li key={i} className="flex items-start gap-2 text-lg">
                         <XCircle className="w-3.5 h-3.5 text-red-500 mt-0.5 shrink-0" />
                         <span>{item}</span>
                       </li>
