@@ -180,7 +180,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                       {["Camera with extra batteries", "Small backpack", "Cash for breakfast", "Sun protection (hat, sunscreen)"].map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <Sun className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
-                          <span>{item}</span>
+                          <span className="text-lg">{item}</span>
                         </li>
                       ))}
                     </ul>
