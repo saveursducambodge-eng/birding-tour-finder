@@ -181,7 +181,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               Essential Items to Bring
             </h3>
             <div className="grid md:grid-cols-3 gap-4">
-              <div className="bg-muted/50 rounded-lg p-4">
+              <div className="bg-muted/50 rounded-lg p-4 text-base">
                 <h4 className="font-semibold text-foreground text-sm mb-2">Required</h4>
                 <ul className="space-y-1 text-muted-foreground text-sm">
                   <li>• Flashlight or phone light</li>
