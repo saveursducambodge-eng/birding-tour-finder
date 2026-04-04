@@ -217,7 +217,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <Info className="w-5 h-5 text-primary" />
               Additional Information
             </h3>
-            <div className="bg-muted/50 rounded-lg p-4 space-y-2 text-muted-foreground text-sm">
+            <div className="bg-muted/50 rounded-lg p-4 space-y-2 text-muted-foreground text-base">
               <p>• <strong>Pickup time:</strong> 4:15 AM – 4:35 AM (exact time confirmed one day before)</p>
               <p>• <strong>Tour ends:</strong> 12:30 PM – 1:30 PM</p>
               <p>• <strong>Breakfast:</strong> If your hotel includes breakfast, request a takeaway box, or stop at a local restaurant</p>
