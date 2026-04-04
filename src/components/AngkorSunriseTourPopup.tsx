@@ -18,7 +18,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
         <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-lg">
-          <div className="p-6 md:p-8">
+          <div className="p-6 md:p-8 text-base">
             <DialogHeader>
               <DialogTitle className="font-serif text-2xl md:text-3xl text-primary">
                 Itinerary – Angkor Wat Sunrise Tour
@@ -181,7 +181,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               Essential Items to Bring
             </h3>
             <div className="grid md:grid-cols-3 gap-4">
-              <div className="bg-muted/50 rounded-lg p-4">
+              <div className="bg-muted/50 rounded-lg p-4 text-base">
                 <h4 className="font-semibold text-foreground text-sm mb-2">Required</h4>
                 <ul className="space-y-1 text-muted-foreground text-sm">
                   <li>• Flashlight or phone light</li>
@@ -190,8 +190,8 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <li>• Comfortable walking shoes</li>
                 </ul>
               </div>
-              <div className="bg-muted/50 rounded-lg p-4">
-                <h4 className="font-semibold text-foreground text-sm mb-2">Recommended</h4>
+              <div className="bg-muted/50 rounded-lg p-4 text-base">
+                <h4 className="font-semibold text-foreground mb-2 text-sm">Recommended</h4>
                 <ul className="space-y-1 text-muted-foreground text-sm">
                   <li>• Camera with extra batteries</li>
                   <li>• Small backpack</li>
@@ -199,7 +199,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <li>• Sun protection (hat, sunscreen)</li>
                 </ul>
               </div>
-              <div className="bg-muted/50 rounded-lg p-4">
+              <div className="bg-muted/50 rounded-lg p-4 text-base">
                 <h4 className="font-semibold text-foreground text-sm mb-2">Leave at Hotel</h4>
                 <ul className="space-y-1 text-muted-foreground text-sm">
                   <li>• Passport (bring a copy)</li>
@@ -217,7 +217,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <Info className="w-5 h-5 text-primary" />
               Additional Information
             </h3>
-            <div className="bg-muted/50 rounded-lg p-4 space-y-2 text-muted-foreground text-sm">
+            <div className="bg-muted/50 rounded-lg p-4 space-y-2 text-muted-foreground text-base">
               <p>• <strong>Pickup time:</strong> 4:15 AM – 4:35 AM (exact time confirmed one day before)</p>
               <p>• <strong>Tour ends:</strong> 12:30 PM – 1:30 PM</p>
               <p>• <strong>Breakfast:</strong> If your hotel includes breakfast, request a takeaway box, or stop at a local restaurant</p>
@@ -235,7 +235,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <Sun className="w-5 h-5 text-primary" />
               Weather
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+            <p className="text-muted-foreground leading-relaxed text-justify text-base">
               Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.
             </p>
 
@@ -246,7 +246,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <Info className="w-5 h-5 text-primary" />
               Food
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+            <p className="text-muted-foreground leading-relaxed text-justify text-base">
               Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.
             </p>
 
