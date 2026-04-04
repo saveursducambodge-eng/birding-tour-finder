@@ -65,9 +65,9 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <div className="flex-shrink-0 w-36 md:w-44">
                     <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded">{item.time}</span>
                   </div>
-                  <div>
+                  <div className="text-base">
                     <h4 className="font-semibold text-foreground text-sm">{item.title}</h4>
-                    <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
+                    <p className="text-muted-foreground mt-1 text-base">{item.desc}</p>
                   </div>
                 </div>
               ))}
