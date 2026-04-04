@@ -12,7 +12,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
-        <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-base">
+        <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-lg">
           <div className="p-6 rounded-lg shadow-lg border">
             <DialogHeader>
               <DialogTitle className="font-serif text-2xl text-primary">
