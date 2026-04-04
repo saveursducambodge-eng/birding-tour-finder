@@ -169,7 +169,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                       {["Flashlight or phone light", "Temple pass (US$37)", "Modest clothing (shoulders & knees covered)", "Comfortable walking shoes"].map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <CheckCircle className="w-3.5 h-3.5 text-green-600 mt-0.5 shrink-0" />
-                          <span>{item}</span>
+                          <span className="text-lg">{item}</span>
                         </li>
                       ))}
                     </ul>
