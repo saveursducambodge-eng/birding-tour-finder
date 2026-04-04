@@ -50,7 +50,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Sun className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span className="text-left">{item}</span>
+                      <span className="text-left text-lg">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -77,7 +77,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                     { time: "3:00 PM", desc: "Visit Pre Rup temple – enjoy panoramic views" },
                     { time: "4:00 PM", desc: "Return to hotel" },
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
+                    <li key={i} className="flex items-start gap-2 text-lg">
                       <span className="font-semibold text-primary min-w-[80px]">{item.time}</span>
                       <span className="text-left">{item.desc}</span>
                     </li>
@@ -103,7 +103,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <CheckCircle className="w-3.5 h-3.5 text-green-600 mt-0.5 shrink-0" />
-                        <span>{item}</span>
+                        <span className="text-lg">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -113,7 +113,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                     <XCircle className="w-5 h-5 text-red-500" />
                     What's Not Included
                   </h3>
-                  <ul className="space-y-1.5 text-muted-foreground text-sm">
+                  <ul className="space-y-1.5 text-muted-foreground text-lg">
                     {[
                       "Angkor Pass (temple entrance fee)",
                       "Meals and drinks",
@@ -148,7 +148,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Footprints className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
-                      <span className="text-left">{item}</span>
+                      <span className="text-left text-lg">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -169,7 +169,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                       {["Flashlight or phone light", "Temple pass (US$37)", "Modest clothing (shoulders & knees covered)", "Comfortable walking shoes"].map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <CheckCircle className="w-3.5 h-3.5 text-green-600 mt-0.5 shrink-0" />
-                          <span>{item}</span>
+                          <span className="text-lg">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -180,7 +180,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                       {["Camera with extra batteries", "Small backpack", "Cash for breakfast", "Sun protection (hat, sunscreen)"].map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <Sun className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
-                          <span>{item}</span>
+                          <span className="text-lg">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -191,7 +191,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                       {["Passport (bring a copy)", "Airline tickets", "Excess cash", "Valuable jewellery"].map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <XCircle className="w-3.5 h-3.5 text-red-500 mt-0.5 shrink-0" />
-                          <span>{item}</span>
+                          <span className="text-lg">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -207,7 +207,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   <Sun className="w-5 h-5 text-primary" />
                   Weather
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+                <p className="text-muted-foreground leading-relaxed text-justify text-lg">
                   Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.
                 </p>
               </div>
@@ -220,7 +220,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   <AlertTriangle className="w-5 h-5 text-primary" />
                   Food
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+                <p className="text-muted-foreground leading-relaxed text-justify text-lg">
                   Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.
                 </p>
               </div>
