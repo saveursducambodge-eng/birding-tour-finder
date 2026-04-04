@@ -220,7 +220,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   <AlertTriangle className="w-5 h-5 text-primary" />
                   Food
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+                <p className="text-muted-foreground leading-relaxed text-justify text-lg">
                   Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.
                 </p>
               </div>
