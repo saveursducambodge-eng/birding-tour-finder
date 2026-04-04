@@ -107,7 +107,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
             <h3 className="font-serif text-xl font-bold text-foreground mb-4">
               Discover Our Angkor Wat Tours – Complete Tour Collection
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed mb-4 text-base">
               After planning thousands of trips to Cambodia, one thing is clear: not all Angkor tours are created equal. Some rush you through in just a few hours, while others charge premium prices for a basic experience. Here's what truly makes the difference…
             </p>
             <div className="space-y-3">
