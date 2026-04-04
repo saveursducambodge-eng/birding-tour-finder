@@ -190,8 +190,8 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <li>• Comfortable walking shoes</li>
                 </ul>
               </div>
-              <div className="bg-muted/50 rounded-lg p-4">
-                <h4 className="font-semibold text-foreground text-sm mb-2">Recommended</h4>
+              <div className="bg-muted/50 rounded-lg p-4 text-base">
+                <h4 className="font-semibold text-foreground mb-2 text-sm">Recommended</h4>
                 <ul className="space-y-1 text-muted-foreground text-sm">
                   <li>• Camera with extra batteries</li>
                   <li>• Small backpack</li>
