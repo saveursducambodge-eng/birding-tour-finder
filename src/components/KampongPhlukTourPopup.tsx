@@ -63,7 +63,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Sun className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      <span className="text-lg">{item}</span>
                     </li>
                   ))}
                 </ul>
