@@ -128,10 +128,10 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <h4 className="font-semibold text-foreground text-sm flex items-center gap-2">
                 <Info className="w-4 h-4 text-primary" /> Good to Know
               </h4>
-              <p className="text-muted-foreground text-sm mt-1">
+              <p className="text-muted-foreground mt-1 text-base">
                 Sunrise tours are the most popular and tend to sell out quickly, especially during the dry season (November to March). Sunset tours are also beautiful, though typically more crowded.
               </p>
-              <p className="text-muted-foreground text-sm mt-2">
+              <p className="text-muted-foreground mt-2 text-lg">
                 We recommend booking at least 48 hours in advance to secure the best guides—during peak season, even earlier.
               </p>
             </div>
