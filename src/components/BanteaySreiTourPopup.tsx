@@ -191,7 +191,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                       {["Passport (bring a copy)", "Airline tickets", "Excess cash", "Valuable jewellery"].map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <XCircle className="w-3.5 h-3.5 text-red-500 mt-0.5 shrink-0" />
-                          <span>{item}</span>
+                          <span className="text-lg">{item}</span>
                         </li>
                       ))}
                     </ul>
