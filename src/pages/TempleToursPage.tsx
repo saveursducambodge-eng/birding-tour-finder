@@ -11,6 +11,7 @@ import PreahVihearTourPopup from "@/components/PreahVihearTourPopup";
 import KompongKhleangTourPopup from "@/components/KompongKhleangTourPopup";
 import KohKerBengMealeaTourPopup from "@/components/KohKerBengMealeaTourPopup";
 import BengMealeaTourPopup from "@/components/BengMealeaTourPopup";
+import BanteayChhmarTourPopup from "@/components/BanteayChhmarTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
