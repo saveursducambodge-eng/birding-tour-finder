@@ -77,7 +77,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                     { time: "3:00 PM", desc: "Visit Pre Rup temple – enjoy panoramic views" },
                     { time: "4:00 PM", desc: "Return to hotel" },
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
+                    <li key={i} className="flex items-start gap-2 text-lg">
                       <span className="font-semibold text-primary min-w-[80px]">{item.time}</span>
                       <span className="text-left">{item.desc}</span>
                     </li>
