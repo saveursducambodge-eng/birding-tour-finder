@@ -91,7 +91,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <h4 className="font-semibold text-foreground text-sm mb-2">{section.phase}</h4>
                   <ul className="space-y-1">
                     {section.items.map((item, j) => (
-                      <li key={j} className="text-muted-foreground text-sm flex items-start gap-2">
+                      <li key={j} className="text-muted-foreground flex items-start gap-2 text-base">
                         <span className="text-primary mt-1">•</span>
                         {item}
                       </li>
