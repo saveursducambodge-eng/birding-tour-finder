@@ -207,7 +207,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   <Sun className="w-5 h-5 text-primary" />
                   Weather
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed text-justify">
+                <p className="text-muted-foreground leading-relaxed text-justify text-lg">
                   Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.
                 </p>
               </div>
