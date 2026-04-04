@@ -119,7 +119,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               ].map((item, i) => (
                 <div key={i} className="border border-border rounded-lg p-4">
                   <h4 className="font-semibold text-foreground text-sm">{item.title}</h4>
-                  <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
+                  <p className="text-muted-foreground mt-1 text-base">{item.desc}</p>
                 </div>
               ))}
             </div>
