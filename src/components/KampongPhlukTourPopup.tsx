@@ -72,7 +72,7 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
               <Separator />
 
               <div>
-                <h3 className="font-serif text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-3 flex items-center gap-2 text-left">
                   <Clock className="w-5 h-5 text-primary" />
                   Tour Schedule
                 </h3>
