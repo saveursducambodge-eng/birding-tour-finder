@@ -30,13 +30,13 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <p className="text-lg font-semibold text-foreground italic">
                 The perfect sunrise. No crowds. No guesswork—just the photos you came for, led by an expert guide.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-base">
                 Skip the crowds, capture incredible photos, and experience Angkor Wat at its most magical—guided by someone who knows every hidden path.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-base">
                 Most visitors arrive around 9:00 AM, when the site is already crowded and the light is harsh. Our Angkor Wat Sunrise Tour gets you there early—around 4:15 AM—so you can enjoy peaceful surroundings, soft morning light, and truly unforgettable views.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-base">
                 This tour includes expert guiding, visits to four major temples—Angkor Wat, Ta Prohm, Bayon Temple, and Angkor Thom—as well as comfortable transportation with hotel pickup. You'll return with stunning photos and a deeper understanding of Cambodia's most iconic heritage site.
               </p>
             </div>
@@ -65,9 +65,9 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <div className="flex-shrink-0 w-36 md:w-44">
                     <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded">{item.time}</span>
                   </div>
-                  <div>
+                  <div className="text-base">
                     <h4 className="font-semibold text-foreground text-sm">{item.title}</h4>
-                    <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
+                    <p className="text-muted-foreground mt-1 text-base">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -91,7 +91,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
                   <h4 className="font-semibold text-foreground text-sm mb-2">{section.phase}</h4>
                   <ul className="space-y-1">
                     {section.items.map((item, j) => (
-                      <li key={j} className="text-muted-foreground text-sm flex items-start gap-2">
+                      <li key={j} className="text-muted-foreground flex items-start gap-2 text-base">
                         <span className="text-primary mt-1">•</span>
                         {item}
                       </li>
@@ -107,7 +107,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
             <h3 className="font-serif text-xl font-bold text-foreground mb-4">
               Discover Our Angkor Wat Tours – Complete Tour Collection
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed mb-4 text-base">
               After planning thousands of trips to Cambodia, one thing is clear: not all Angkor tours are created equal. Some rush you through in just a few hours, while others charge premium prices for a basic experience. Here's what truly makes the difference…
             </p>
             <div className="space-y-3">
@@ -119,7 +119,7 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               ].map((item, i) => (
                 <div key={i} className="border border-border rounded-lg p-4">
                   <h4 className="font-semibold text-foreground text-sm">{item.title}</h4>
-                  <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
+                  <p className="text-muted-foreground mt-1 text-base">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -128,10 +128,10 @@ const AngkorSunriseTourPopup = ({ isOpen, onClose }: AngkorSunriseTourPopupProps
               <h4 className="font-semibold text-foreground text-sm flex items-center gap-2">
                 <Info className="w-4 h-4 text-primary" /> Good to Know
               </h4>
-              <p className="text-muted-foreground text-sm mt-1">
+              <p className="text-muted-foreground mt-1 text-base">
                 Sunrise tours are the most popular and tend to sell out quickly, especially during the dry season (November to March). Sunset tours are also beautiful, though typically more crowded.
               </p>
-              <p className="text-muted-foreground text-sm mt-2">
+              <p className="text-muted-foreground mt-2 text-lg">
                 We recommend booking at least 48 hours in advance to secure the best guides—during peak season, even earlier.
               </p>
             </div>
