@@ -48,11 +48,11 @@ const KampongPhlukTourPopup = ({ isOpen, onClose }: KampongPhlukTourPopupProps) 
               <Separator />
 
               <div>
-                <h3 className="font-serif text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-3 flex items-center gap-2 text-left">
                   <Camera className="w-5 h-5 text-primary" />
                   What You'll Do
                 </h3>
-                <ul className="space-y-2 text-muted-foreground text-sm">
+                <ul className="space-y-2 text-muted-foreground text-sm text-left">
                   {[
                     "Visit Kampong Phluk – a stunning stilted village rising above the waters of Tonle Sap",
                     "Boat ride through the flooded mangrove forest – an otherworldly natural landscape",
