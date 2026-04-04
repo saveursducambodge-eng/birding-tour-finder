@@ -11,6 +11,7 @@ import PreahVihearTourPopup from "@/components/PreahVihearTourPopup";
 import KompongKhleangTourPopup from "@/components/KompongKhleangTourPopup";
 import KohKerBengMealeaTourPopup from "@/components/KohKerBengMealeaTourPopup";
 import BengMealeaTourPopup from "@/components/BengMealeaTourPopup";
+import BanteayChhmarTourPopup from "@/components/BanteayChhmarTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -136,6 +137,7 @@ const TempleToursPage = () => {
   const [showKompongKhleangPopup, setShowKompongKhleangPopup] = useState(false);
   const [showKohKerPopup, setShowKohKerPopup] = useState(false);
   const [showBengMealeaPopup, setShowBengMealeaPopup] = useState(false);
+  const [showBanteayChhmarPopup, setShowBanteayChhmarPopup] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -148,6 +150,7 @@ const TempleToursPage = () => {
       <KompongKhleangTourPopup isOpen={showKompongKhleangPopup} onClose={() => setShowKompongKhleangPopup(false)} />
       <KohKerBengMealeaTourPopup isOpen={showKohKerPopup} onClose={() => setShowKohKerPopup(false)} />
       <BengMealeaTourPopup isOpen={showBengMealeaPopup} onClose={() => setShowBengMealeaPopup(false)} />
+      <BanteayChhmarTourPopup isOpen={showBanteayChhmarPopup} onClose={() => setShowBanteayChhmarPopup(false)} />
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
@@ -289,6 +292,15 @@ const TempleToursPage = () => {
                         variant="outline"
                         className="mt-3 w-full"
                         onClick={() => setShowBengMealeaPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
+                    {temple.name === "Full Day Adventure to\u200B Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple " && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowBanteayChhmarPopup(true)}
                       >
                         View Itinerary Details
                       </Button>
