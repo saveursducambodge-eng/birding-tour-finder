@@ -296,6 +296,15 @@ const TempleToursPage = () => {
                         View Itinerary Details
                       </Button>
                     )}
+                    {temple.name === "Full Day Adventure to\u200B Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple " && (
+                      <Button
+                        variant="outline"
+                        className="mt-3 w-full"
+                        onClick={() => setShowBanteayChhmarPopup(true)}
+                      >
+                        View Itinerary Details
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
