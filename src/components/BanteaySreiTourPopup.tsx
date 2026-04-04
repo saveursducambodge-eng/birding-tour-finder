@@ -148,7 +148,7 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <Footprints className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
-                      <span className="text-left">{item}</span>
+                      <span className="text-left text-lg">{item}</span>
                     </li>
                   ))}
                 </ul>
