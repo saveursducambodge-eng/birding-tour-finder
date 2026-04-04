@@ -23,12 +23,12 @@ const BanteaySreiTourPopup = ({ isOpen, onClose }: BanteaySreiTourPopupProps) =>
             <div className="mt-4 space-y-6">
               {/* Intro */}
               <div className="space-y-3">
-                <p className="text-muted-foreground leading-relaxed">
-                  Discover the finest masterpieces of Khmer art and architecture on this full-day journey through the Grand Circuit and the legendary Banteay Srei temple. This tour takes you beyond the usual Angkor highlights into a deeper exploration of Cambodia's ancient heritage.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  From intricate pink sandstone carvings to jungle-wrapped ruins, this tour offers a perfect blend of history, culture, and stunning photo opportunities—all guided by a knowledgeable local expert.
-                </p>
+                  <p className="text-muted-foreground leading-relaxed text-left">
+                    Discover the finest masterpieces of Khmer art and architecture on this full-day journey through the Grand Circuit and the legendary Banteay Srei temple. This tour takes you beyond the usual Angkor highlights into a deeper exploration of Cambodia's ancient heritage.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed text-left">
+                    From intricate pink sandstone carvings to jungle-wrapped ruins, this tour offers a perfect blend of history, culture, and stunning photo opportunities—all guided by a knowledgeable local expert.
+                  </p>
               </div>
 
               <Separator />
