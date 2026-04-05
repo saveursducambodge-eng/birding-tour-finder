@@ -12,6 +12,13 @@ import KompongKhleangTourPopup from "@/components/KompongKhleangTourPopup";
 import KohKerBengMealeaTourPopup from "@/components/KohKerBengMealeaTourPopup";
 import BengMealeaTourPopup from "@/components/BengMealeaTourPopup";
 import BanteayChhmarTourPopup from "@/components/BanteayChhmarTourPopup";
+import PreahKhanKampongSvayTourPopup from "@/components/PreahKhanKampongSvayTourPopup";
+import PreahVihearFullDayTourPopup from "@/components/PreahVihearFullDayTourPopup";
+import EssentialCambodia5DayTourPopup from "@/components/EssentialCambodia5DayTourPopup";
+import BattambangTourPopup from "@/components/BattambangTourPopup";
+import PhnomPenhTourPopup from "@/components/PhnomPenhTourPopup";
+import TenDayGrandTourPopup from "@/components/TenDayGrandTourPopup";
+import FifteenDayGrandTourPopup from "@/components/FifteenDayGrandTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -47,7 +54,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Full Day to ​Kampong Phluk Fishing Village & Flooded Forest",
+    name: "Full Day to \u200BKampong Phluk Fishing Village & Flooded Forest",
     image: taProhmImg,
     location: "Tonle Sap Lake",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
@@ -57,7 +64,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Full Day to ​Kulen Mountain Waterfall and River of 1,000 Lingas",
+    name: "Full Day to \u200BKulen Mountain Waterfall and River of 1,000 Lingas",
     image: banteaySreiImg,
     location: "Siem Reap Province",
     description: "The 'Citadel of Women' is renowned for its intricate pink sandstone carvings, considered the finest example of classical Khmer art.",
@@ -67,7 +74,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "​Half-Day  Tour To Beng Mealea Temple ",
+    name: "\u200BHalf-Day  Tour To Beng Mealea Temple ",
     image: preahVihearImg,
     location: "Preah Vihear Province",
     description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
@@ -87,7 +94,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "​Kompong Khleang Stilted House & Floating Village Tour",
+    name: "\u200BKompong Khleang Stilted House & Floating Village Tour",
     image: bengMealeaImg,
     location: "Siem Reap Province",
     description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
@@ -97,7 +104,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Full Day Adventure to​ Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple ",
+    name: "Full Day Adventure to\u200B Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple ",
     image: banteayChhmarImg,
     location: "Banteay Meanchey",
     description: "One of the largest and most mysterious Angkorian temples, featuring unique multi-armed Avalokiteshvara carvings and remarkably few tourists.",
@@ -107,7 +114,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "​2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour",
+    name: "\u200B2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour",
     image: phnomBakhengImg,
     location: "Angkor",
     description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
@@ -126,32 +133,126 @@ const temples = [
     groupSize: "2 people",
     country: "Cambodia",
   },
+  // New tours
+  {
+    name: "Full Day to Preah Khan Kampong Svay",
+    image: bengMealeaImg,
+    location: "Preah Vihear Province",
+    description: "One of Cambodia's most remote and impressive temple complexes, spanning over 5 square kilometers. This vast jungle-engulfed site was once a major city of the Khmer Empire.",
+    price: "$150 two people",
+    duration: "Full Day (10–12 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
+  },
+  {
+    name: "Full Day to Preah Vihear Temple",
+    image: preahVihearImg,
+    location: "Preah Vihear Province",
+    description: "Journey to the breathtaking UNESCO World Heritage temple perched atop a 525-meter cliff, offering unparalleled panoramic views and exceptional Khmer architectural masterpieces.",
+    price: "$150 two people",
+    duration: "Full Day (10–12 hours)",
+    groupSize: "2 people",
+    country: "Cambodia",
+  },
+  {
+    name: "Essential Cambodia 5-Day Tour in Siem Reap",
+    image: angkorWatImg,
+    location: "Siem Reap",
+    description: "Experience the very best of Siem Reap in 5 unforgettable days — from Angkor Wat sunrise to jungle temples, floating villages, Kulen Mountain, and vibrant night markets.",
+    price: "$150 two people",
+    duration: "5 Days / 4 Nights",
+    groupSize: "2 people",
+    country: "Cambodia",
+  },
+  {
+    name: "2 Nights 3 Days in Battambang",
+    image: banteaySreiImg,
+    location: "Battambang",
+    description: "Explore Cambodia's charming second city — French colonial architecture, the iconic Bamboo Train, bat caves, hilltop temples, and authentic village workshops.",
+    price: "$150 two people",
+    duration: "3 Days / 2 Nights",
+    groupSize: "2 people",
+    country: "Cambodia",
+  },
+  {
+    name: "2-Day Tours in Phnom Penh",
+    image: phnomBakhengImg,
+    location: "Phnom Penh",
+    description: "Discover Cambodia's vibrant capital — the Royal Palace, Silver Pagoda, National Museum, Tuol Sleng, Killing Fields, and bustling markets across two action-packed days.",
+    price: "$150 two people",
+    duration: "2 Days / 1 Night",
+    groupSize: "2 people",
+    country: "Cambodia",
+  },
+  {
+    name: "10-Day Grand Cambodia Tour",
+    image: kohKerImg,
+    location: "Siem Reap, Battambang, Phnom Penh, Kratie, Stung Treng, Preah Vihear",
+    description: "An epic journey through Cambodia's most spectacular destinations — from Angkor temples to Mekong dolphins, remote wilderness, and cliff-top temples.",
+    price: "$150 two people",
+    duration: "10 Days / 9 Nights",
+    groupSize: "2 people",
+    country: "Cambodia",
+  },
+  {
+    name: "15 Days Grand Cambodia Tour",
+    image: banteayChhmarImg,
+    location: "All Cambodia",
+    description: "The ultimate Cambodia experience — 15 days covering temples, colonial cities, Mekong dolphins, remote northeast, cliff-top temples, and pre-Angkorian heritage sites.",
+    price: "$150 two people",
+    duration: "15 Days / 14 Nights",
+    groupSize: "2 people",
+    country: "Cambodia",
+  },
 ];
 
+// Map tour names to popup keys
+const tourPopupMap: Record<string, string> = {
+  "Full day to visit Small Circus – Angkor": "angkor",
+  "Full Day to Banteay Srei and Grand Circuit Heritage Tour": "banteaySrei",
+  "Full Day to \u200BKampong Phluk Fishing Village & Flooded Forest": "kampongPhluk",
+  "Full Day to \u200BKulen Mountain Waterfall and River of 1,000 Lingas": "kulen",
+  "\u200BHalf-Day  Tour To Beng Mealea Temple ": "bengMealea",
+  "Full-Day Tour \u200BKoh Ker  and Beng Mealea Temple Adventure ": "kohKer",
+  "\u200BKompong Khleang Stilted House & Floating Village Tour": "kompongKhleang",
+  "Full Day Adventure to\u200B Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple ": "banteayChhmar",
+  "\u200B2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour": "preahVihear2Day",
+  "Full Day to Preah Khan Kampong Svay": "preahKhan",
+  "Full Day to Preah Vihear Temple": "preahVihearFullDay",
+  "Essential Cambodia 5-Day Tour in Siem Reap": "essential5Day",
+  "2 Nights 3 Days in Battambang": "battambang",
+  "2-Day Tours in Phnom Penh": "phnomPenh",
+  "10-Day Grand Cambodia Tour": "tenDay",
+  "15 Days Grand Cambodia Tour": "fifteenDay",
+};
+
 const TempleToursPage = () => {
-  const [showAngkorPopup, setShowAngkorPopup] = useState(false);
-  const [showBanteaySreiPopup, setShowBanteaySreiPopup] = useState(false);
-  const [showKampongPhlukPopup, setShowKampongPhlukPopup] = useState(false);
-  const [showKulenPopup, setShowKulenPopup] = useState(false);
-  const [showPreahVihearPopup, setShowPreahVihearPopup] = useState(false);
-  const [showKompongKhleangPopup, setShowKompongKhleangPopup] = useState(false);
-  const [showKohKerPopup, setShowKohKerPopup] = useState(false);
-  const [showBengMealeaPopup, setShowBengMealeaPopup] = useState(false);
-  const [showBanteayChhmarPopup, setShowBanteayChhmarPopup] = useState(false);
+  const [activePopup, setActivePopup] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <AngkorSunriseTourPopup isOpen={showAngkorPopup} onClose={() => setShowAngkorPopup(false)} />
-      <BanteaySreiTourPopup isOpen={showBanteaySreiPopup} onClose={() => setShowBanteaySreiPopup(false)} />
-      <KampongPhlukTourPopup isOpen={showKampongPhlukPopup} onClose={() => setShowKampongPhlukPopup(false)} />
-      <KulenMountainTourPopup isOpen={showKulenPopup} onClose={() => setShowKulenPopup(false)} />
-      <PreahVihearTourPopup isOpen={showPreahVihearPopup} onClose={() => setShowPreahVihearPopup(false)} />
-      <KompongKhleangTourPopup isOpen={showKompongKhleangPopup} onClose={() => setShowKompongKhleangPopup(false)} />
-      <KohKerBengMealeaTourPopup isOpen={showKohKerPopup} onClose={() => setShowKohKerPopup(false)} />
-      <BengMealeaTourPopup isOpen={showBengMealeaPopup} onClose={() => setShowBengMealeaPopup(false)} />
-      <BanteayChhmarTourPopup isOpen={showBanteayChhmarPopup} onClose={() => setShowBanteayChhmarPopup(false)} />
-      <Navigation />
+
+      {/* Existing popups */}
+      <AngkorSunriseTourPopup isOpen={activePopup === "angkor"} onClose={() => setActivePopup(null)} />
+      <BanteaySreiTourPopup isOpen={activePopup === "banteaySrei"} onClose={() => setActivePopup(null)} />
+      <KampongPhlukTourPopup isOpen={activePopup === "kampongPhluk"} onClose={() => setActivePopup(null)} />
+      <KulenMountainTourPopup isOpen={activePopup === "kulen"} onClose={() => setActivePopup(null)} />
+      <PreahVihearTourPopup isOpen={activePopup === "preahVihear2Day"} onClose={() => setActivePopup(null)} />
+      <KompongKhleangTourPopup isOpen={activePopup === "kompongKhleang"} onClose={() => setActivePopup(null)} />
+      <KohKerBengMealeaTourPopup isOpen={activePopup === "kohKer"} onClose={() => setActivePopup(null)} />
+      <BengMealeaTourPopup isOpen={activePopup === "bengMealea"} onClose={() => setActivePopup(null)} />
+      <BanteayChhmarTourPopup isOpen={activePopup === "banteayChhmar"} onClose={() => setActivePopup(null)} />
+
+      {/* New popups */}
+      <PreahKhanKampongSvayTourPopup isOpen={activePopup === "preahKhan"} onClose={() => setActivePopup(null)} />
+      <PreahVihearFullDayTourPopup isOpen={activePopup === "preahVihearFullDay"} onClose={() => setActivePopup(null)} />
+      <EssentialCambodia5DayTourPopup isOpen={activePopup === "essential5Day"} onClose={() => setActivePopup(null)} />
+      <BattambangTourPopup isOpen={activePopup === "battambang"} onClose={() => setActivePopup(null)} />
+      <PhnomPenhTourPopup isOpen={activePopup === "phnomPenh"} onClose={() => setActivePopup(null)} />
+      <TenDayGrandTourPopup isOpen={activePopup === "tenDay"} onClose={() => setActivePopup(null)} />
+      <FifteenDayGrandTourPopup isOpen={activePopup === "fifteenDay"} onClose={() => setActivePopup(null)} />
+
       <div className="pt-16">
         {/* Hero Section */}
         <section className="relative py-32 md:py-44 overflow-hidden">
@@ -191,123 +292,54 @@ const TempleToursPage = () => {
               Our curated selection of Cambodia's most remarkable temple sites
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {temples.map((temple) => (
-                <Card key={temple.name} className="overflow-hidden group hover:shadow-lg transition-shadow duration-300">
-                  <div className="relative overflow-hidden aspect-[4/3]">
-                    <img
-                      src={temple.image}
-                      alt={temple.name}
-                      loading="lazy"
-                      width={640}
-                      height={512}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <CardContent className="p-5">
-                    <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
-                      {temple.name}
-                    </h3>
-                    <div className="flex items-center gap-1 text-muted-foreground text-sm mb-3">
-                      <MapPin className="w-3.5 h-3.5" />
-                      <span>{temple.location}</span>
+              {temples.map((temple) => {
+                const popupKey = tourPopupMap[temple.name];
+                return (
+                  <Card key={temple.name} className="overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+                    <div className="relative overflow-hidden aspect-[4/3]">
+                      <img
+                        src={temple.image}
+                        alt={temple.name}
+                        loading="lazy"
+                        width={640}
+                        height={512}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {temple.description}
-                    </p>
-                    <div className="flex flex-wrap gap-3 mt-3 text-muted-foreground text-xs">
-                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" />{temple.duration}</span>
-                      <span className="flex items-center gap-1"><Users className="w-3.5 h-3.5" />{temple.groupSize}</span>
-                      <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5" />{temple.country}</span>
-                    </div>
-                    {temple.price && (
-                      <p className="text-primary font-semibold mt-3 text-lg">
-                        {temple.price}
+                    <CardContent className="p-5">
+                      <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
+                        {temple.name}
+                      </h3>
+                      <div className="flex items-center gap-1 text-muted-foreground text-sm mb-3">
+                        <MapPin className="w-3.5 h-3.5" />
+                        <span>{temple.location}</span>
+                      </div>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {temple.description}
                       </p>
-                    )}
-                    {temple.name === "Full day to visit Small Circus – Angkor" && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowAngkorPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "Full Day to Banteay Srei and Grand Circuit Heritage Tour" && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowBanteaySreiPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "Full Day to ​Kampong Phluk Fishing Village & Flooded Forest" && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowKampongPhlukPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "Full Day to ​Kulen Mountain Waterfall and River of 1,000 Lingas" && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowKulenPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "​Kompong Khleang Stilted House & Floating Village Tour" && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowKompongKhleangPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "​2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour" && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowPreahVihearPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "Full-Day Tour \u200BKoh Ker  and Beng Mealea Temple Adventure " && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowKohKerPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "\u200BHalf-Day  Tour To Beng Mealea Temple " && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowBengMealeaPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                    {temple.name === "Full Day Adventure to\u200B Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple " && (
-                      <Button
-                        variant="outline"
-                        className="mt-3 w-full"
-                        onClick={() => setShowBanteayChhmarPopup(true)}
-                      >
-                        View Itinerary Details
-                      </Button>
-                    )}
-                  </CardContent>
-                </Card>
-              ))}
+                      <div className="flex flex-wrap gap-3 mt-3 text-muted-foreground text-xs">
+                        <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" />{temple.duration}</span>
+                        <span className="flex items-center gap-1"><Users className="w-3.5 h-3.5" />{temple.groupSize}</span>
+                        <span className="flex items-center gap-1"><Globe className="w-3.5 h-3.5" />{temple.country}</span>
+                      </div>
+                      {temple.price && (
+                        <p className="text-primary font-semibold mt-3 text-lg">
+                          {temple.price}
+                        </p>
+                      )}
+                      {popupKey && (
+                        <Button
+                          variant="outline"
+                          className="mt-3 w-full"
+                          onClick={() => setActivePopup(popupKey)}
+                        >
+                          View Itinerary Details
+                        </Button>
+                      )}
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>
