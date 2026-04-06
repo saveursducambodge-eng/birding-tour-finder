@@ -19,6 +19,7 @@ import BattambangTourPopup from "@/components/BattambangTourPopup";
 import PhnomPenhTourPopup from "@/components/PhnomPenhTourPopup";
 import TenDayGrandTourPopup from "@/components/TenDayGrandTourPopup";
 import FifteenDayGrandTourPopup from "@/components/FifteenDayGrandTourPopup";
+import SamborPreiKukTourPopup from "@/components/SamborPreiKukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
@@ -128,8 +129,8 @@ const temples = [
     image: samborPreiKukImg,
     location: "Kampong Thom",
     description: "A UNESCO World Heritage pre-Angkorian temple complex dating to the 6th–7th century, featuring unique octagonal towers set in a peaceful forest.",
-    price: "$150 two people",
-    duration: "Half Day (4 hours)",
+    price: "$120–$150 (1–2 people)",
+    duration: "Full Day (8–10 hours)",
     groupSize: "2 people",
     country: "Cambodia",
   },
@@ -217,6 +218,7 @@ const tourPopupMap: Record<string, string> = {
   "\u200BKompong Khleang Stilted House & Floating Village Tour": "kompongKhleang",
   "Full Day Adventure to\u200B Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple ": "banteayChhmar",
   "\u200B2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour": "preahVihear2Day",
+  "\u200BFull-Day Heritage Tour to Sambor Prei Kuk": "samborPreiKuk",
   "Full Day to Preah Khan Kampong Svay": "preahKhan",
   "Full Day to Preah Vihear Temple": "preahVihearFullDay",
   "Essential Cambodia 5-Day Tour in Siem Reap": "essential5Day",
@@ -244,6 +246,7 @@ const TempleToursPage = () => {
       <BengMealeaTourPopup isOpen={activePopup === "bengMealea"} onClose={() => setActivePopup(null)} />
       <BanteayChhmarTourPopup isOpen={activePopup === "banteayChhmar"} onClose={() => setActivePopup(null)} />
 
+      <SamborPreiKukTourPopup isOpen={activePopup === "samborPreiKuk"} onClose={() => setActivePopup(null)} />
       {/* New popups */}
       <PreahKhanKampongSvayTourPopup isOpen={activePopup === "preahKhan"} onClose={() => setActivePopup(null)} />
       <PreahVihearFullDayTourPopup isOpen={activePopup === "preahVihearFullDay"} onClose={() => setActivePopup(null)} />
