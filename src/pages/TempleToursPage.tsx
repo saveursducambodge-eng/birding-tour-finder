@@ -218,6 +218,7 @@ const tourPopupMap: Record<string, string> = {
   "\u200BKompong Khleang Stilted House & Floating Village Tour": "kompongKhleang",
   "Full Day Adventure to\u200B Spean Toap Bridge, Banteay Chhmar & Banteay Toap Temple ": "banteayChhmar",
   "\u200B2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour": "preahVihear2Day",
+  "\u200BFull-Day Heritage Tour to Sambor Prei Kuk": "samborPreiKuk",
   "Full Day to Preah Khan Kampong Svay": "preahKhan",
   "Full Day to Preah Vihear Temple": "preahVihearFullDay",
   "Essential Cambodia 5-Day Tour in Siem Reap": "essential5Day",
