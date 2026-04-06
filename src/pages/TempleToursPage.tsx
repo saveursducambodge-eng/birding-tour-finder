@@ -19,6 +19,7 @@ import BattambangTourPopup from "@/components/BattambangTourPopup";
 import PhnomPenhTourPopup from "@/components/PhnomPenhTourPopup";
 import TenDayGrandTourPopup from "@/components/TenDayGrandTourPopup";
 import FifteenDayGrandTourPopup from "@/components/FifteenDayGrandTourPopup";
+import SamborPreiKukTourPopup from "@/components/SamborPreiKukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
