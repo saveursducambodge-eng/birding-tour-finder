@@ -246,6 +246,7 @@ const TempleToursPage = () => {
       <BengMealeaTourPopup isOpen={activePopup === "bengMealea"} onClose={() => setActivePopup(null)} />
       <BanteayChhmarTourPopup isOpen={activePopup === "banteayChhmar"} onClose={() => setActivePopup(null)} />
 
+      <SamborPreiKukTourPopup isOpen={activePopup === "samborPreiKuk"} onClose={() => setActivePopup(null)} />
       {/* New popups */}
       <PreahKhanKampongSvayTourPopup isOpen={activePopup === "preahKhan"} onClose={() => setActivePopup(null)} />
       <PreahVihearFullDayTourPopup isOpen={activePopup === "preahVihearFullDay"} onClose={() => setActivePopup(null)} />
