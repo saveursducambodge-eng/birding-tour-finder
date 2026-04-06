@@ -124,7 +124,7 @@ const temples = [
     country: "Cambodia",
   },
   {
-    name: "Sambor Prei Kuk",
+    name: "\u200BFull-Day Heritage Tour to Sambor Prei Kuk",
     image: samborPreiKukImg,
     location: "Kampong Thom",
     description: "A UNESCO World Heritage pre-Angkorian temple complex dating to the 6th–7th century, featuring unique octagonal towers set in a peaceful forest.",
