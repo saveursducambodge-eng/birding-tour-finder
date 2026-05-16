@@ -23,6 +23,7 @@ import SamborPreiKukTourPopup from "@/components/SamborPreiKukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import angkorSunriseImg from "@/assets/temples/angkor-wat-sunrise.jpg";
+import banteaySreiNewImg from "@/assets/temples/banteay-srei-new.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
 import taProhmImg from "@/assets/temples/ta-prohm.jpg";
@@ -47,7 +48,7 @@ const temples = [
   },
   {
     name: "Full Day to Banteay Srei and Grand Circuit Heritage Tour",
-    image: bayonImg,
+    image: banteaySreiNewImg,
     location: "Angkor Thom",
     description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
     price: "$150 two people",
