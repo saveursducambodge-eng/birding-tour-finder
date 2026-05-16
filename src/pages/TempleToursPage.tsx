@@ -22,6 +22,7 @@ import FifteenDayGrandTourPopup from "@/components/FifteenDayGrandTourPopup";
 import SamborPreiKukTourPopup from "@/components/SamborPreiKukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
+import angkorSunriseImg from "@/assets/temples/angkor-wat-sunrise.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
 import taProhmImg from "@/assets/temples/ta-prohm.jpg";
@@ -36,7 +37,7 @@ import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk.jpg";
 const temples = [
   {
     name: "Full day to visit Small Circus – Angkor",
-    image: angkorWatImg,
+    image: angkorSunriseImg,
     location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
     price: "$150 two people",
