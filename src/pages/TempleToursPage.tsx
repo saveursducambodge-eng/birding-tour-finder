@@ -24,6 +24,7 @@ import SamborPreiKukTourPopup from "@/components/SamborPreiKukTourPopup";
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
 import angkorSunriseImg from "@/assets/temples/angkor-wat-sunrise.jpg";
 import banteaySreiNewImg from "@/assets/temples/banteay-srei-new.jpg";
+import kampongPhlukImg from "@/assets/temples/kampong-phluk.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
 import taProhmImg from "@/assets/temples/ta-prohm.jpg";
@@ -58,7 +59,7 @@ const temples = [
   },
   {
     name: "Full Day to \u200BKampong Phluk Fishing Village & Flooded Forest",
-    image: taProhmImg,
+    image: kampongPhlukImg,
     location: "Tonle Sap Lake",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
     price: "$150 two people",
