@@ -33,6 +33,7 @@ import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
 import preahVihearImg from "@/assets/temples/preah-vihear.jpg";
 import kohKerImg from "@/assets/temples/koh-ker.jpg";
 import bengMealeaImg from "@/assets/temples/beng-mealea.jpg";
+import bengMealeaNewImg from "@/assets/temples/beng-mealea-new.jpg";
 import banteayChhmarImg from "@/assets/temples/banteay-chhmar.jpg";
 import phnomBakhengImg from "@/assets/temples/phnom-bakheng.jpg";
 import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk.jpg";
@@ -80,7 +81,7 @@ const temples = [
   },
   {
     name: "\u200BHalf-Day  Tour To Beng Mealea Temple ",
-    image: preahVihearImg,
+    image: bengMealeaNewImg,
     location: "Preah Vihear Province",
     description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
     price: "$150 two people",
