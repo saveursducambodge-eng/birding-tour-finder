@@ -31,7 +31,7 @@ import bayonImg from "@/assets/temples/bayon.jpg";
 import taProhmImg from "@/assets/temples/ta-prohm.jpg";
 import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
 import preahVihearImg from "@/assets/temples/preah-vihear.jpg";
-import kohKerImg from "@/assets/temples/koh-ker.jpg";
+import kohKerImg from "@/assets/temples/koh-ker-beng-mealea.jpg";
 import bengMealeaImg from "@/assets/temples/beng-mealea.jpg";
 import bengMealeaNewImg from "@/assets/temples/beng-mealea-new.jpg";
 import banteayChhmarImg from "@/assets/temples/banteay-chhmar.jpg";
