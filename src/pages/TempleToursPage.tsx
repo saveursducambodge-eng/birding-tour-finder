@@ -35,7 +35,7 @@ import kohKerImg from "@/assets/temples/koh-ker-beng-mealea.jpg";
 import kompongKhleangImg from "@/assets/temples/kompong-khleang-new.jpg";
 import bengMealeaImg from "@/assets/temples/beng-mealea.jpg";
 import bengMealeaNewImg from "@/assets/temples/beng-mealea-new.jpg";
-import banteayChhmarImg from "@/assets/temples/banteay-chhmar.jpg";
+import banteayChhmarImg from "@/assets/temples/banteay-chhmar-new.jpg";
 import phnomBakhengImg from "@/assets/temples/phnom-bakheng.jpg";
 import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk.jpg";
 
