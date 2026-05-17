@@ -33,6 +33,7 @@ import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
 import preahVihearImg from "@/assets/temples/preah-vihear.jpg";
 import kohKerImg from "@/assets/temples/koh-ker-beng-mealea.jpg";
 import kompongKhleangImg from "@/assets/temples/kompong-khleang-new.jpg";
+import preahVihear2DayImg from "@/assets/temples/preah-vihear-2day.jpg";
 import bengMealeaImg from "@/assets/temples/beng-mealea.jpg";
 import bengMealeaNewImg from "@/assets/temples/beng-mealea-new.jpg";
 import banteayChhmarImg from "@/assets/temples/banteay-chhmar-new.jpg";
@@ -122,7 +123,7 @@ const temples = [
   },
   {
     name: "\u200B2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour",
-    image: phnomBakhengImg,
+    image: preahVihear2DayImg,
     location: "Angkor",
     description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
     price: "$150 two people",
