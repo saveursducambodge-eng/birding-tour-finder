@@ -32,6 +32,7 @@ import taProhmImg from "@/assets/temples/ta-prohm.jpg";
 import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
 import preahVihearImg from "@/assets/temples/preah-vihear.jpg";
 import kohKerImg from "@/assets/temples/koh-ker-beng-mealea.jpg";
+import kompongKhleangImg from "@/assets/temples/kompong-khleang-new.jpg";
 import bengMealeaImg from "@/assets/temples/beng-mealea.jpg";
 import bengMealeaNewImg from "@/assets/temples/beng-mealea-new.jpg";
 import banteayChhmarImg from "@/assets/temples/banteay-chhmar.jpg";
@@ -101,7 +102,7 @@ const temples = [
   },
   {
     name: "\u200BKompong Khleang Stilted House & Floating Village Tour",
-    image: bengMealeaImg,
+    image: kompongKhleangImg,
     location: "Siem Reap Province",
     description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
     price: "$150 two people",
