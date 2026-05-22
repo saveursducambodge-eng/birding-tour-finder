@@ -42,6 +42,7 @@ import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk-new.jpg";
 import preahKhanKampongSvayImg from "@/assets/temples/preah-khan-kampong-svay-new.jpg";
 import preahVihearFulldayImg from "@/assets/temples/preah-vihear-fullday-new.jpg";
 import essentialCambodia5DayImg from "@/assets/temples/essential-cambodia-5day.jpg";
+import battambangImg from "@/assets/temples/battambang-new.jpg";
 
 const temples = [
   {
@@ -177,7 +178,7 @@ const temples = [
   },
   {
     name: "2 Nights 3 Days in Battambang",
-    image: banteaySreiImg,
+    image: battambangImg,
     location: "Battambang",
     description: "Explore Cambodia's charming second city — French colonial architecture, the iconic Bamboo Train, bat caves, hilltop temples, and authentic village workshops.",
     price: "$150 two people",
