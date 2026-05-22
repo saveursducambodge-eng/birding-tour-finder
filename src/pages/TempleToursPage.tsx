@@ -41,6 +41,7 @@ import phnomBakhengImg from "@/assets/temples/phnom-bakheng.jpg";
 import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk-new.jpg";
 import preahKhanKampongSvayImg from "@/assets/temples/preah-khan-kampong-svay-new.jpg";
 import preahVihearFulldayImg from "@/assets/temples/preah-vihear-fullday-new.jpg";
+import essentialCambodia5DayImg from "@/assets/temples/essential-cambodia-5day.jpg";
 
 const temples = [
   {
@@ -166,7 +167,7 @@ const temples = [
   },
   {
     name: "Essential Cambodia 5-Day Tour in Siem Reap",
-    image: angkorWatImg,
+    image: essentialCambodia5DayImg,
     location: "Siem Reap",
     description: "Experience the very best of Siem Reap in 5 unforgettable days — from Angkor Wat sunrise to jungle temples, floating villages, Kulen Mountain, and vibrant night markets.",
     price: "$150 two people",
