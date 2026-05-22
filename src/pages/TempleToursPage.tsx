@@ -167,7 +167,7 @@ const temples = [
   },
   {
     name: "Essential Cambodia 5-Day Tour in Siem Reap",
-    image: angkorWatImg,
+    image: essentialCambodia5DayImg,
     location: "Siem Reap",
     description: "Experience the very best of Siem Reap in 5 unforgettable days — from Angkor Wat sunrise to jungle temples, floating villages, Kulen Mountain, and vibrant night markets.",
     price: "$150 two people",
