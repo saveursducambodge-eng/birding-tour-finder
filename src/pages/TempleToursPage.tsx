@@ -43,6 +43,7 @@ import preahKhanKampongSvayImg from "@/assets/temples/preah-khan-kampong-svay-ne
 import preahVihearFulldayImg from "@/assets/temples/preah-vihear-fullday-new.jpg";
 import essentialCambodia5DayImg from "@/assets/temples/essential-cambodia-5day.jpg";
 import battambangImg from "@/assets/temples/battambang-new.jpg";
+import phnomPenhImg from "@/assets/temples/phnom-penh-new.jpg";
 
 const temples = [
   {
@@ -188,7 +189,7 @@ const temples = [
   },
   {
     name: "2-Day Tours in Phnom Penh",
-    image: phnomBakhengImg,
+    image: phnomPenhImg,
     location: "Phnom Penh",
     description: "Discover Cambodia's vibrant capital — the Royal Palace, Silver Pagoda, National Museum, Tuol Sleng, Killing Fields, and bustling markets across two action-packed days.",
     price: "$150 two people",
