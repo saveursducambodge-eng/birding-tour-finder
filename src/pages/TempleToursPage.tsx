@@ -40,6 +40,7 @@ import banteayChhmarImg from "@/assets/temples/banteay-chhmar-new.jpg";
 import phnomBakhengImg from "@/assets/temples/phnom-bakheng.jpg";
 import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk-new.jpg";
 import preahKhanKampongSvayImg from "@/assets/temples/preah-khan-kampong-svay-new.jpg";
+import preahVihearFulldayImg from "@/assets/temples/preah-vihear-fullday-new.jpg";
 
 const temples = [
   {
@@ -155,7 +156,7 @@ const temples = [
   },
   {
     name: "Full Day to Preah Vihear Temple",
-    image: preahVihearImg,
+    image: preahVihearFulldayImg,
     location: "Preah Vihear Province",
     description: "Journey to the breathtaking UNESCO World Heritage temple perched atop a 525-meter cliff, offering unparalleled panoramic views and exceptional Khmer architectural masterpieces.",
     price: "$150 two people",
