@@ -39,6 +39,7 @@ import bengMealeaNewImg from "@/assets/temples/beng-mealea-new.jpg";
 import banteayChhmarImg from "@/assets/temples/banteay-chhmar-new.jpg";
 import phnomBakhengImg from "@/assets/temples/phnom-bakheng.jpg";
 import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk-new.jpg";
+import preahKhanKampongSvayImg from "@/assets/temples/preah-khan-kampong-svay-new.jpg";
 
 const temples = [
   {
@@ -144,7 +145,7 @@ const temples = [
   // New tours
   {
     name: "Full Day to Preah Khan Kampong Svay",
-    image: bengMealeaImg,
+    image: preahKhanKampongSvayImg,
     location: "Preah Vihear Province",
     description: "One of Cambodia's most remote and impressive temple complexes, spanning over 5 square kilometers. This vast jungle-engulfed site was once a major city of the Khmer Empire.",
     price: "$150 two people",
