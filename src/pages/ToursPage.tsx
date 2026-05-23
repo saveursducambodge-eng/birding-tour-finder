@@ -405,7 +405,7 @@ const ToursPage = () => {
         </div>
 
         {/* Tours Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredTours.map((tour) => <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
               {tour.images && tour.images.length > 1 ? (
                 <TourImageSlider images={tour.images} alt={tour.title} />
