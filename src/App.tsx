@@ -11,7 +11,7 @@ import AboutPage from "./pages/AboutPage";
 import ToursPage from "./pages/ToursPage";
 import GalleryPage from "./pages/GalleryPage";
 import ConservationPage from "./pages/ConservationPage";
-import TripReportPage from "./pages/TripReportPage";
+
 import ContactPage from "./pages/ContactPage";
 import TempleToursPage from "./pages/TempleToursPage";
 import NotFound from "./pages/NotFound";
@@ -34,7 +34,7 @@ const App = () => (
                 <Route path="/temple-tours" element={<TempleToursPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/conservation" element={<ConservationPage />} />
-                <Route path="/trip-report" element={<TripReportPage />} />
+                
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
