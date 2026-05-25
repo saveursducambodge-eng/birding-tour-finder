@@ -350,7 +350,13 @@ const ToursPage = () => {
     setIsPopupOpen(true);
   };
   const filteredTours = selectedFilter === "all" ? tours : tours.filter((tour) => tour.category === selectedFilter);
-  return <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
+  return <>
+      <Helmet>
+        <title>Bird Watching Tours in Cambodia | PEARAING Birding Trails</title>
+        <meta name="description" content="Book expert-led bird watching tours in Cambodia. From half-day trips to 19-day adventures, discover Giant Ibis, Bengal Florican, and 500+ bird species with professional guides." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/tours" />
+      </Helmet>
+      <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
       <Navigation />
       
       {/* Hero Section */}

@@ -64,7 +64,13 @@ const Homepage = () => {
     duration: "Half Day",
     difficulty: "Easy"
   }];
-  return <div className="min-h-screen bg-background">
+  return <>
+      <Helmet>
+        <title>PEARAING Birding Trails - Bird Watching & Temple Tours in Cambodia</title>
+        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with PEARAING Birding Trails. Expert-guided bird watching tours, Angkor temple tours, and wildlife adventures across Cambodia." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/" />
+      </Helmet>
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}

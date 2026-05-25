@@ -185,7 +185,13 @@ const GalleryPage = () => {
     galleryTour32,
   ];
 
-  return <div className="min-h-screen bg-background">
+  return <>
+      <Helmet>
+        <title>Bird & Wildlife Photo Gallery | Cambodia | PEARAING Birding Trails</title>
+        <meta name="description" content="Browse stunning photos of Cambodia's rare birds, wildlife, and tour destinations. Giant Ibis, Bengal Florican, Angkor Wat, and more." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/gallery" />
+      </Helmet>
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}

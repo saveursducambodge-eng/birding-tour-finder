@@ -10,7 +10,12 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+    <>
+      <Helmet>
+        <title>Page Not Found | PEARAING Birding Trails Cambodia</title>
+        <meta name="description" content="Sorry, the page you are looking for does not exist. Explore bird watching tours and temple tours in Cambodia with PEARAING Birding Trails." />
+      </Helmet>
+      <div className="flex min-h-screen items-center justify-center bg-gray-100">
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
         <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>

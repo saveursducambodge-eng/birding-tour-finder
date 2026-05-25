@@ -245,7 +245,13 @@ const TempleToursPage = () => {
   const [activePopup, setActivePopup] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <Helmet>
+        <title>Temple Tours in Cambodia | Angkor Wat & Beyond | PEARAING Birding Trails</title>
+        <meta name="description" content="Explore Cambodia's ancient temples with expert guides. Angkor Wat, Banteay Srei, Preah Vihear, Koh Ker, and remote temple adventures from Siem Reap and beyond." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/temple-tours" />
+      </Helmet>
+      <div className="min-h-screen bg-background">
       <Navigation />
 
       {/* Existing popups */}
