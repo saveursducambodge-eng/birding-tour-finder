@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import samnangGuidePortrait from "@/assets/samnang-guide-portrait.jpg";
@@ -33,7 +34,13 @@ const guides: Guide[] = [{
   description: ["Hello friends, my name is Chamnan. I am an official English-speaking guide certified by the Cambodian Ministry of Tourism. I have been working as both a Bird Guide and Temple Guide for over 11 years.", "I have 5 years of experience as a bird guide with Sam Veasna Conservation Tours and 3 years with the Cambodia Bird Guide Association. Currently, I work as a freelance guide in Cambodia.", "I have extensive experience organizing tours across Cambodia, including Bird Watching Tours and Temple Tours that highlight the country's rich wildlife, support conservation efforts, and promote our cultural heritage.", "Our country is home to some of the world's rarest and most endangered birds, including the Giant Ibis, White-shouldered Ibis, Bengal Florican, and Greater Adjutant. These magnificent species face increasing threats from habitat loss and climate change. By joining a birdwatching tour, you're not only experiencing the excitement of discovering these incredible birds — you're also contributing to their protection and supporting the conservation of Cambodia's unique natural heritage.", "At Cambodia Bird Watching Tours, every journey supports both people and wildlife. Join us, and help ensure that these rare species and their habitats continue to thrive for years to come."]
 }];
 const AboutPage = () => {
-  return <div className="min-h-screen bg-background">
+  return <>
+      <Helmet>
+        <title>About Our Guides | PEARAING Birding Trails Cambodia</title>
+        <meta name="description" content="Meet our certified bird and temple guides with over a decade of experience. Officially registered with the Cambodian Ministry of Tourism." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/about" />
+      </Helmet>
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       <main className="pt-16">
@@ -95,6 +102,6 @@ const AboutPage = () => {
           </div>
         </section>
       </main>
-    </div>;
+    </div></>;
 };
 export default AboutPage;

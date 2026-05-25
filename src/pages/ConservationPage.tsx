@@ -1,9 +1,16 @@
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import conservationImage from "@/assets/conservation-cambodia.jpg";
 import conservationBird from "@/assets/conservation-bird.png";
 import conservationEcotour from "@/assets/conservation-ecotour.png";
 const ConservationPage = () => {
-  return <div className="min-h-screen bg-background">
+  return <>
+      <Helmet>
+        <title>Bird Conservation & Community Support | PEARAING Birding Trails</title>
+        <meta name="description" content="Learn how PEARAING Birding Trails supports Cambodia's bird conservation and local communities through responsible ecotourism and sustainable livelihoods." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/conservation" />
+      </Helmet>
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       <main className="pt-16">
@@ -110,6 +117,6 @@ We are committed to giving every guest a meaningful, educational, and memorable 
           </div>
         </section>
       </main>
-    </div>;
+    </div></>;
 };
 export default ConservationPage;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { format } from "date-fns";
 import { DateRange } from "react-day-picker";
 import { CalendarIcon, Phone, Mail, MapPin, Send, Clock, MessageSquare } from "lucide-react";
@@ -94,7 +95,13 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
     description: "7 days a week"
   }];
   const tours = ["Half-Day Birding Near Siem Reap - Pearaing Biodiversity Conservation Center (Half Day - 4 hours)", "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating village (Full Day - 11 hours)", "Trip full day to Koh Ker & Beng Melea for Bird watching and Temple Tour (Full Day - 12.5 hours)", "Full Birding and Angkor Wat Temple Tour (Full Day - 12.5 hours)", "Birding at Tmatboey - Bengal Florican Grassland and Presh Vihear Temple (3 Days / 2 Nights)", "7 Day Focus Target Tours species - Dream Birding Trip to Cambodia (7 Days / 6 Nights)", "10-Day Birding Trip to Cambodia - Dream Birding Trip to Cambodia (10 Days / 9 Nights)", "Bird Watching Itinerary in Cambodia: 14-Day Tours - Rare Bird Itinerary in Cambodia (14 Days / 13 Nights)", "Bird Watching Itinerary in Cambodia: 15-Day Tours - Rare Bird Itinerary in Cambodia (15 Days / 14 Nights)", "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Itinerary in Cambodia (19 Days / 18 Nights)", "Essential Cambodia 8th-23rd March 2026 - Dream Birding Trip to Cambodia (16 Days / 15 Nights)", "Custom Tour Request"];
-  return <div className="min-h-screen bg-background">
+  return <>
+      <Helmet>
+        <title>Contact Us | Book a Birding or Temple Tour in Cambodia</title>
+        <meta name="description" content="Plan your perfect bird watching or temple tour in Cambodia. Contact PEARAING Birding Trails via WhatsApp, email, or our booking form." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/contact" />
+      </Helmet>
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       <main className="pt-16">
@@ -374,6 +381,6 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
           </div>
         </section>
       </main>
-    </div>;
+    </div></>;
 };
 export default ContactPage;
