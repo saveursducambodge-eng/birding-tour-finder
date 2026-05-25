@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import LazyImage from "@/components/LazyImage";
 import galleryBird1 from "@/assets/gallery-bird-1.jpg";
