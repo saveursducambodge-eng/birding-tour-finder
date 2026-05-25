@@ -379,7 +379,7 @@ const TempleToursPage = () => {
         </section>
       </div>
     </div>
-  );
+  </>);
 };
 
 export default TempleToursPage;

@@ -102,6 +102,6 @@ const AboutPage = () => {
           </div>
         </section>
       </main>
-    </div>;
+    </div></>;
 };
 export default AboutPage;

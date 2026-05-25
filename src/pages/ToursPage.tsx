@@ -489,6 +489,6 @@ const ToursPage = () => {
 
       {/* Tour Details Popup */}
       <TourDetailsPopup tour={selectedTour} isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
-    </div>;
+    </div></>;
 };
 export default ToursPage;

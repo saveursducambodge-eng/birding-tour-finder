@@ -344,6 +344,6 @@ Pearaing Biodiversity Conservation is an organization officially registered with
 
       {/* Tour Introduction Popup */}
       <TourIntroPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
-    </div>;
+    </div></>;
 };
 export default Homepage;

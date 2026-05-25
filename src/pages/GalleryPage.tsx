@@ -245,6 +245,6 @@ const GalleryPage = () => {
           </div>
         </div>
       )}
-    </div>;
+    </div></>;
 };
 export default GalleryPage;

@@ -381,6 +381,6 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
           </div>
         </section>
       </main>
-    </div>;
+    </div></>;
 };
 export default ContactPage;
