@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, Users, Globe } from "lucide-react";
@@ -23,33 +22,21 @@ import FifteenDayGrandTourPopup from "@/components/FifteenDayGrandTourPopup";
 import SamborPreiKukTourPopup from "@/components/SamborPreiKukTourPopup";
 
 import angkorWatImg from "@/assets/temples/angkor-wat.jpg";
-import angkorSunriseImg from "@/assets/temples/angkor-wat-sunrise.jpg";
-import banteaySreiNewImg from "@/assets/temples/banteay-srei-new.jpg";
-import kampongPhlukImg from "@/assets/temples/kampong-phluk.jpg";
-import kulenWaterfallImg from "@/assets/temples/kulen-waterfall.jpg";
 import templeToursHero from "@/assets/temples/temple-tours-hero.jpg";
 import bayonImg from "@/assets/temples/bayon.jpg";
 import taProhmImg from "@/assets/temples/ta-prohm.jpg";
 import banteaySreiImg from "@/assets/temples/banteay-srei.jpg";
 import preahVihearImg from "@/assets/temples/preah-vihear.jpg";
-import kohKerImg from "@/assets/temples/koh-ker-beng-mealea.jpg";
-import kompongKhleangImg from "@/assets/temples/kompong-khleang-new.jpg";
-import preahVihear2DayImg from "@/assets/temples/preah-vihear-2day.jpg";
+import kohKerImg from "@/assets/temples/koh-ker.jpg";
 import bengMealeaImg from "@/assets/temples/beng-mealea.jpg";
-import bengMealeaNewImg from "@/assets/temples/beng-mealea-new.jpg";
-import banteayChhmarImg from "@/assets/temples/banteay-chhmar-new.jpg";
+import banteayChhmarImg from "@/assets/temples/banteay-chhmar.jpg";
 import phnomBakhengImg from "@/assets/temples/phnom-bakheng.jpg";
-import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk-new.jpg";
-import preahKhanKampongSvayImg from "@/assets/temples/preah-khan-kampong-svay-new.jpg";
-import preahVihearFulldayImg from "@/assets/temples/preah-vihear-fullday-new.jpg";
-import essentialCambodia5DayImg from "@/assets/temples/essential-cambodia-5day.jpg";
-import battambangImg from "@/assets/temples/battambang-new.jpg";
-import phnomPenhImg from "@/assets/temples/phnom-penh-new.jpg";
+import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk.jpg";
 
 const temples = [
   {
     name: "Full day to visit Small Circus – Angkor",
-    image: angkorSunriseImg,
+    image: angkorWatImg,
     location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
     price: "$150 two people",
@@ -59,7 +46,7 @@ const temples = [
   },
   {
     name: "Full Day to Banteay Srei and Grand Circuit Heritage Tour",
-    image: banteaySreiNewImg,
+    image: bayonImg,
     location: "Angkor Thom",
     description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
     price: "$150 two people",
@@ -69,7 +56,7 @@ const temples = [
   },
   {
     name: "Full Day to \u200BKampong Phluk Fishing Village & Flooded Forest",
-    image: kampongPhlukImg,
+    image: taProhmImg,
     location: "Tonle Sap Lake",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
     price: "$150 two people",
@@ -79,7 +66,7 @@ const temples = [
   },
   {
     name: "Full Day to \u200BKulen Mountain Waterfall and River of 1,000 Lingas",
-    image: kulenWaterfallImg,
+    image: banteaySreiImg,
     location: "Siem Reap Province",
     description: "The 'Citadel of Women' is renowned for its intricate pink sandstone carvings, considered the finest example of classical Khmer art.",
     price: "$150 two people",
@@ -89,7 +76,7 @@ const temples = [
   },
   {
     name: "\u200BHalf-Day  Tour To Beng Mealea Temple ",
-    image: bengMealeaNewImg,
+    image: preahVihearImg,
     location: "Preah Vihear Province",
     description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
     price: "$150 two people",
@@ -109,7 +96,7 @@ const temples = [
   },
   {
     name: "\u200BKompong Khleang Stilted House & Floating Village Tour",
-    image: kompongKhleangImg,
+    image: bengMealeaImg,
     location: "Siem Reap Province",
     description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
     price: "$150 two people",
@@ -129,7 +116,7 @@ const temples = [
   },
   {
     name: "\u200B2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker temple Adventure Tour",
-    image: preahVihear2DayImg,
+    image: phnomBakhengImg,
     location: "Angkor",
     description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
     price: "$150 two people",
@@ -150,7 +137,7 @@ const temples = [
   // New tours
   {
     name: "Full Day to Preah Khan Kampong Svay",
-    image: preahKhanKampongSvayImg,
+    image: bengMealeaImg,
     location: "Preah Vihear Province",
     description: "One of Cambodia's most remote and impressive temple complexes, spanning over 5 square kilometers. This vast jungle-engulfed site was once a major city of the Khmer Empire.",
     price: "$150 two people",
@@ -160,7 +147,7 @@ const temples = [
   },
   {
     name: "Full Day to Preah Vihear Temple",
-    image: preahVihearFulldayImg,
+    image: preahVihearImg,
     location: "Preah Vihear Province",
     description: "Journey to the breathtaking UNESCO World Heritage temple perched atop a 525-meter cliff, offering unparalleled panoramic views and exceptional Khmer architectural masterpieces.",
     price: "$150 two people",
@@ -170,7 +157,7 @@ const temples = [
   },
   {
     name: "Essential Cambodia 5-Day Tour in Siem Reap",
-    image: essentialCambodia5DayImg,
+    image: angkorWatImg,
     location: "Siem Reap",
     description: "Experience the very best of Siem Reap in 5 unforgettable days — from Angkor Wat sunrise to jungle temples, floating villages, Kulen Mountain, and vibrant night markets.",
     price: "$150 two people",
@@ -180,7 +167,7 @@ const temples = [
   },
   {
     name: "2 Nights 3 Days in Battambang",
-    image: battambangImg,
+    image: banteaySreiImg,
     location: "Battambang",
     description: "Explore Cambodia's charming second city — French colonial architecture, the iconic Bamboo Train, bat caves, hilltop temples, and authentic village workshops.",
     price: "$150 two people",
@@ -190,7 +177,7 @@ const temples = [
   },
   {
     name: "2-Day Tours in Phnom Penh",
-    image: phnomPenhImg,
+    image: phnomBakhengImg,
     location: "Phnom Penh",
     description: "Discover Cambodia's vibrant capital — the Royal Palace, Silver Pagoda, National Museum, Tuol Sleng, Killing Fields, and bustling markets across two action-packed days.",
     price: "$150 two people",
@@ -245,13 +232,7 @@ const TempleToursPage = () => {
   const [activePopup, setActivePopup] = useState<string | null>(null);
 
   return (
-    <>
-      <Helmet>
-        <title>Temple Tours in Cambodia | Angkor Wat & Beyond | PEARAING Birding Trails</title>
-        <meta name="description" content="Explore Cambodia's ancient temples with expert guides. Angkor Wat, Banteay Srei, Preah Vihear, Koh Ker, and remote temple adventures from Siem Reap and beyond." />
-        <link rel="canonical" href="https://my-birding-canvas.lovable.app/temple-tours" />
-      </Helmet>
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
 
       {/* Existing popups */}
@@ -379,7 +360,7 @@ const TempleToursPage = () => {
         </section>
       </div>
     </div>
-  </>);
+  );
 };
 
 export default TempleToursPage;

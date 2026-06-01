@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { ArrowRight, Play, Award, Compass, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -64,13 +63,7 @@ const Homepage = () => {
     duration: "Half Day",
     difficulty: "Easy"
   }];
-  return <>
-      <Helmet>
-        <title>PEARAING Birding Trails - Bird Watching & Temple Tours in Cambodia</title>
-        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with PEARAING Birding Trails. Expert-guided bird watching tours, Angkor temple tours, and wildlife adventures across Cambodia." />
-        <link rel="canonical" href="https://my-birding-canvas.lovable.app/" />
-      </Helmet>
-      <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -344,6 +337,6 @@ Pearaing Biodiversity Conservation is an organization officially registered with
 
       {/* Tour Introduction Popup */}
       <TourIntroPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
-    </div></>;
+    </div>;
 };
 export default Homepage;
