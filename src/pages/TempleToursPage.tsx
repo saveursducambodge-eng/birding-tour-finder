@@ -299,6 +299,16 @@ const TempleToursPage = () => {
                 const popupKey = tourPopupMap[temple.name];
                 return (
                   <Card key={temple.name} className="overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+                    <div className="relative overflow-hidden aspect-[4/3]">
+                      <img
+                        src={temple.image}
+                        alt={temple.name}
+                        loading="lazy"
+                        width={640}
+                        height={512}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
                     <CardContent className="p-5">
                       <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
                         {temple.name}
