@@ -469,6 +469,20 @@ const ToursPage = () => {
                 </div>
               </CardContent>
             </Card>)}
+          <Link to="/temple-tours" className="block group">
+            <Card className="h-full min-h-[380px] flex flex-col items-center justify-center text-center p-8 bg-sage-light/40 border-2 border-dashed border-nature-sage hover:border-nature-forest hover:shadow-xl transition-all duration-300">
+              <Calendar className="w-12 h-12 text-nature-forest mb-4" />
+              <h3 className="text-2xl font-serif text-nature-forest mb-3">
+                Plan Your Trip
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Explore our Temple Tours and suggested itineraries from 1 day up to 25 days across Cambodia.
+              </p>
+              <span className="inline-flex items-center gap-2 text-nature-forest font-semibold group-hover:gap-3 transition-all">
+                View Temple Tours <ArrowRight className="w-4 h-4" />
+              </span>
+            </Card>
+          </Link>
         </div>
       </section>
 
