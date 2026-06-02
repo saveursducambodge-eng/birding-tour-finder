@@ -47,7 +47,7 @@ const TourIntroPopup = ({
           <div className="flex justify-between items-start mb-6">
             <div>
               <h2 className="font-serif text-3xl font-bold text-primary mb-2">
-                Welcome to Pearaing Birding Trails
+                 Pearaing Conservation Tours
               </h2>
               <p className="text-muted-foreground">
                 Discover the magnificent birds of Cambodia with expert guidance
