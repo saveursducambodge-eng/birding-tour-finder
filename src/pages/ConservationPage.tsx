@@ -8,8 +8,8 @@ const ConservationPage = () => {
   return (
     <>
       <Helmet>
-        <title>Bird Conservation & Community Support | Pearaing Conservation Tours</title>
-        <meta name="description" content="How Pearaing Conservation Tours protects Cambodia's birds and supports the communities who live alongside them through responsible ecotourism." />
+        <title>Bird Conservation & Community Support | Pearaing Birding Trails</title>
+        <meta name="description" content="How Pearaing Birding Trails protects Cambodia's birds and supports the communities who live alongside them through responsible ecotourism." />
         <link rel="canonical" href="https://pearaing.com/conservation" />
       </Helmet>
 
@@ -71,7 +71,7 @@ const ConservationPage = () => {
                     Responsible tourism that lifts local lives.
                   </h2>
                   <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-5">
-                    At Pearaing Conservation Tours, protecting nature goes hand in hand with supporting the people
+                    At Pearaing Birding Trails, protecting nature goes hand in hand with supporting the people
                     who live closest to it. Our programs create steady income for villages bordering Cambodia's
                     last great forests and wetlands.
                   </p>

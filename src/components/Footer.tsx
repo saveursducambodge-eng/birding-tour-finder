@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* About */}
           <div className="space-y-3 sm:space-y-4">
-            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">Pearaing Conservation Tours</h3>
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">​Pearaing Birding Trails</h3>
             <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
               Discover the incredible biodiversity of Cambodia with our expert guides. Our guide has over 10 years of experience leading birding tours across Cambodia, with extensive knowledge of the country’s key birding sites and wildlife. 
             
