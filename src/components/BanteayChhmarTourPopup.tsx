@@ -86,7 +86,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
                 {/* Lunch */}
                 <div>
-                  <h4 className="font-semibold text-foreground">🍽️ 01:00 PM – 02:00 PM – Lunch Break</h4>
+                  <h4 className="font-semibold text-foreground"> 01:00 PM – 02:00 PM – Lunch Break</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Local Khmer lunch at a nearby village</li>
                     <li>Simple, authentic countryside experience</li>
