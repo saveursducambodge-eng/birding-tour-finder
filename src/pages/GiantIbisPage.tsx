@@ -24,7 +24,7 @@ const GiantIbisPage = () => (
       },
       {
         heading: "Birding tours that target the Giant Ibis",
-        body: "PEARAING's 3-day Russey Treb tour is purpose-built for Giant Ibis and White-shouldered Ibis. Longer 5–10 day Cambodia birding itineraries combine Russey Treb with Bengal Florican grasslands, Prek Toal and the dry forests of Preah Vihear for a full Northern Plains experience.",
+        body: "Pearaing Conservation Tours's 3-day Russey Treb tour is purpose-built for Giant Ibis and White-shouldered Ibis. Longer 5–10 day Cambodia birding itineraries combine Russey Treb with Bengal Florican grasslands, Prek Toal and the dry forests of Preah Vihear for a full Northern Plains experience.",
       },
       {
         heading: "How your visit supports conservation",

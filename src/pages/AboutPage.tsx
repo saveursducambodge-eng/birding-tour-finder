@@ -77,7 +77,7 @@ const AboutPage = () => {
                     <div className={`aspect-[4/5] w-full overflow-hidden relative z-10 ${portraitTint}`}>
                       <img
                         src={guide.image}
-                        alt={`${guide.name} — ${guide.role}, PEARAING Birding Trails`}
+                        alt={`${guide.name} — ${guide.role}, Pearaing Conservation Tours`}
                         loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                       />

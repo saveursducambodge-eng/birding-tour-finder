@@ -28,8 +28,9 @@ const PrekToalPage = () => (
       },
       {
         heading: "Supporting Tonle Sap conservation",
-        body: "Visitor permits and guide fees fund colony protection, ranger salaries and community livelihoods in the floating villages. PEARAING works exclusively with local boatmen and uses small groups to minimise disturbance.",
+        body: "Visitor permits and guide fees fund colony protection, ranger salaries and community livelihoods in the floating villages. Pearaing Conservation Tours works exclusively with local boatmen and uses small groups to minimise disturbance.",
       },
+
     ]}
     relatedTour={{ label: "See the Prek Toal day tour", href: "/tours" }}
     jsonLd={{

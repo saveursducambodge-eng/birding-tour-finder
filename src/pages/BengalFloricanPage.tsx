@@ -24,7 +24,7 @@ const BengalFloricanPage = () => (
       },
       {
         heading: "Tours that include the Bengal Florican",
-        body: "PEARAING runs dedicated half-day and full-day Bengal Florican trips from Siem Reap, and includes the grassland as the opening morning of its 3-day Russey Treb / Giant Ibis tour. The site also features in 7- to 15-day Cambodia birding grand tours.",
+        body: "Pearaing Conservation Tours runs dedicated half-day and full-day Bengal Florican trips from Siem Reap, and includes the grassland as the opening morning of its 3-day Russey Treb / Giant Ibis tour. The site also features in 7- to 15-day Cambodia birding grand tours.",
       },
       {
         heading: "Conservation context",
