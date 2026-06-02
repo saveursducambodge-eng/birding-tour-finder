@@ -150,7 +150,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
               Our Tours
             </Badge>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-right">
-              Discover Cambodia's Birding Adventures
+              Discover Pearaing Conservation Tours
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
               From half-day excursions to multi-day expeditions, explore Cambodia's incredible bird diversity with our expert guides.

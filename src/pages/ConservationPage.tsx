@@ -6,7 +6,7 @@ import conservationEcotour from "@/assets/conservation-ecotour.png";
 const ConservationPage = () => {
   return <>
       <Helmet>
-        <title>Bird Conservation & Community Support | PEARAING Birding Trails</title>
+        <title>Bird Conservation & Community Support | Pearaing Conservation Tours</title>
         <meta name="description" content="Learn how PEARAING Birding Trails supports Cambodia's bird conservation and local communities through responsible ecotourism and sustainable livelihoods." />
         <link rel="canonical" href="https://my-birding-canvas.lovable.app/conservation" />
       </Helmet>

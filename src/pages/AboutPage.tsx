@@ -30,7 +30,7 @@ const guides: Guide[] = [{
 const AboutPage = () => {
   return <>
       <Helmet>
-        <title>About Our Guides | PEARAING Birding Trails Cambodia</title>
+        <title>About Our Guides | Pearaing Conservation Tours Cambodia</title>
         <meta name="description" content="Meet our certified bird and temple guides with over a decade of experience. Officially registered with the Cambodian Ministry of Tourism." />
         <link rel="canonical" href="https://my-birding-canvas.lovable.app/about" />
       </Helmet>
