@@ -3,8 +3,8 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const BengalFloricanPage = () => (
   <SpeciesLandingPage
     slug="bengal-florican"
-    title="Bengal Florican Cambodia | Tonle Sap Grassland Birding | PEARAING"
-    metaDescription="See the critically endangered Bengal Florican on Cambodia's Tonle Sap floodplain grasslands. Expert-guided birding tours from Siem Reap with PEARAING Birding Trails."
+    title="Bengal Florican Cambodia | Tonle Sap Grassland Birding | Pearaing Conservation Tours"
+    metaDescription="See the critically endangered Bengal Florican on Cambodia's Tonle Sap floodplain grasslands. Expert-guided birding tours from Siem Reap with Pearaing Conservation Tours."
     h1="Bengal Florican — Cambodia's Last Grassland Bustard"
     intro="The Bengal Florican (Houbaropsis bengalensis) is one of the world's rarest bustards. Cambodia's Tonle Sap floodplain holds the largest remaining global population, and the grasslands north of Stoung and Kampong Thom are the most accessible place on Earth to see displaying males."
     whereToSee="The Bengal Florican Conservation Area on the seasonally flooded grasslands north of Tonle Sap (Kampong Thom and Siem Reap provinces). Visited as an early-morning detour from Siem Reap or as a stop on Russey Treb / Northern Plains tours."
@@ -16,7 +16,7 @@ const BengalFloricanPage = () => (
       },
       {
         heading: "Where to see the Bengal Florican in Cambodia",
-        body: "The Bengal Florican Conservation Areas (BFCAs) on the north side of the Tonle Sap protect the species' core breeding habitat. PEARAING's local guides know the active display sites year to year and position visitors at first light for the best chance of seeing males in display flight, along with Sarus Crane, Manchurian Reed Warbler, Asian Golden Weaver and a long list of grassland specialists.",
+        body: "The Bengal Florican Conservation Areas (BFCAs) on the north side of the Tonle Sap protect the species' core breeding habitat. Pearaing Conservation Tours's local guides know the active display sites year to year and position visitors at first light for the best chance of seeing males in display flight, along with Sarus Crane, Manchurian Reed Warbler, Asian Golden Weaver and a long list of grassland specialists.",
       },
       {
         heading: "Best time for a Bengal Florican tour",
@@ -37,7 +37,7 @@ const BengalFloricanPage = () => (
       "@type": "Article",
       headline: "Bengal Florican in Cambodia",
       about: "Bengal Florican (Houbaropsis bengalensis)",
-      author: { "@type": "Organization", name: "PEARAING Birding Trails" },
+      author: { "@type": "Organization", name: "Pearaing Conservation Tours" },
       mainEntityOfPage: "https://pearaing.com/bengal-florican",
     }}
   />
