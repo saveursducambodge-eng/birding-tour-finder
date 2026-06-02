@@ -71,7 +71,7 @@ const ConservationPage = () => {
                     Responsible tourism that lifts local lives.
                   </h2>
                   <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-5">
-                    At Pearaing Conservation Tours, protecting nature goes hand in hand with supporting the people
+                    At Pearaing Birding Trails, protecting nature goes hand in hand with supporting the people
                     who live closest to it. Our programs create steady income for villages bordering Cambodia's
                     last great forests and wetlands.
                   </p>
@@ -88,7 +88,7 @@ const ConservationPage = () => {
           <section className="bg-background py-24 sm:py-32">
             <div className="container mx-auto px-6 max-w-4xl text-center">
               <Bird className="w-10 h-10 text-primary/60 mx-auto mb-8" />
-              <blockquote className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-primary leading-[1.15] lg:text-7xl">
+              <blockquote className="font-serif italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.15]">
                 “No hunting. No deforestation.<br />Just birds, forests, and the people who protect them.”
               </blockquote>
               <div className="mt-10 text-sm uppercase tracking-[0.3em] text-muted-foreground">
