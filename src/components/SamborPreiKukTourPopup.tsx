@@ -1,7 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Clock, MapPin, Users, Star, Utensils, CloudSun, CheckCircle, XCircle, Lightbulb, Camera, Backpack, BadgeDollarSign } from "lucide-react";
-import samborPreiKukImg from "@/assets/temples/sambor-prei-kuk.jpg";
+import samborPreiKukAsset from "@/assets/temples/sambor-prei-kuk-hero.jpg.asset.json";
 
 interface SamborPreiKukTourPopupProps {
   isOpen: boolean;
@@ -14,7 +14,7 @@ const SamborPreiKukTourPopup = ({ isOpen, onClose }: SamborPreiKukTourPopupProps
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
         <ScrollArea className="max-h-[90vh]">
           <div className="relative">
-            <img src={samborPreiKukImg} alt="Sambor Prei Kuk temples" className="w-full h-64 md:h-80 object-cover" />
+            <img src={samborPreiKukAsset.url} alt="Sambor Prei Kuk ancient pre-Angkorian temple ruins in jungle" className="w-full h-64 md:h-80 object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
               <DialogHeader>
