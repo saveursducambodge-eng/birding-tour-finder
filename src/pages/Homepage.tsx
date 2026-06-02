@@ -338,34 +338,6 @@ Pearaing Biodiversity Conservation is an organization officially registered with
       </section>
 
       {/* Conservation Message */}
-      {/* Featured Species & Sites */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 md:px-6 lg:px-8 bg-muted/30">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3">
-              Featured Species & Sites
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
-              Explore Cambodia's most iconic birds and birding destinations.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link to="/giant-ibis" className="group block p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-all">
-              <h3 className="font-serif text-xl font-semibold text-primary mb-2 group-hover:underline">Giant Ibis</h3>
-              <p className="text-sm text-muted-foreground">Cambodia's national bird — see the world's rarest ibis at Russey Treb.</p>
-            </Link>
-            <Link to="/bengal-florican" className="group block p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-all">
-              <h3 className="font-serif text-xl font-semibold text-primary mb-2 group-hover:underline">Bengal Florican</h3>
-              <p className="text-sm text-muted-foreground">Critically endangered bustard of the Tonle Sap grasslands.</p>
-            </Link>
-            <Link to="/prek-toal" className="group block p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-all">
-              <h3 className="font-serif text-xl font-semibold text-primary mb-2 group-hover:underline">Prek Toal Bird Sanctuary</h3>
-              <p className="text-sm text-muted-foreground">Southeast Asia's largest waterbird breeding colony on Tonle Sap.</p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-nature px-4 md:px-6 lg:px-8">
         <div className="container mx-auto text-center">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
