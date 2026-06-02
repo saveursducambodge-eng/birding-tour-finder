@@ -356,6 +356,20 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                 <Star className="w-5 h-5 text-nature-forest" />
                 Tour Overview
               </h3>
+              {tour.id === 4 && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+                  {[atts916_1, atts916_2, atts916_3, atts916_4].map((asset, i) => (
+                    <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                      <img
+                        src={asset.url}
+                        alt={`Ang Trapaeng Thmor Sarus Crane Reserve photo ${i + 1}`}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Begin your day with a 5:30 AM pickup from your hotel in Siem Reap. Head to Ang Trapaeng Thmor, a wetland created as a reservoir during the Angkorian period and rebuilt during the Khmer Rouge regime in 1976. Today, it's managed by the Wildlife Conservation Society as a reserve to protect Sarus Cranes and other wildlife.
               </p>
