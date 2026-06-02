@@ -11,6 +11,10 @@ import kohKer916_1 from "@/assets/koh-ker-9-16-1.png.asset.json";
 import kohKer916_2 from "@/assets/koh-ker-9-16-2.jpg.asset.json";
 import kohKer916_3 from "@/assets/koh-ker-9-16-3.jpg.asset.json";
 import kohKer916_4 from "@/assets/koh-ker-9-16-4.jpg.asset.json";
+import atts916_1 from "@/assets/atts-9-16-1.jpg.asset.json";
+import atts916_2 from "@/assets/atts-9-16-2.jpg.asset.json";
+import atts916_3 from "@/assets/atts-9-16-3.jpg.asset.json";
+import atts916_4 from "@/assets/atts-9-16-4.jpg.asset.json";
 interface Tour {
   id: number;
   title: string;
