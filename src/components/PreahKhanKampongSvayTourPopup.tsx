@@ -1,6 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Clock, MapPin, CheckCircle, XCircle, Sun, UtensilsCrossed, Camera, ShieldAlert } from "lucide-react";
+import preahKhanHero from "@/assets/temples/preah-khan-kampong-svay-hero.jpg.asset.json";
 
 interface PreahKhanKampongSvayTourPopupProps {
   isOpen: boolean;
@@ -12,12 +13,24 @@ const PreahKhanKampongSvayTourPopup = ({ isOpen, onClose }: PreahKhanKampongSvay
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
         <ScrollArea className="max-h-[90vh]">
+          <div className="relative">
+            <img
+              src={preahKhanHero.url}
+              alt="Preah Khan Kampong Svay moss-covered Angkorian temple ruins in jungle"
+              className="w-full h-64 md:h-80 object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4">
+              <DialogHeader>
+                <DialogTitle className="text-white text-2xl md:text-3xl font-serif">
+                  Full-Day Tour to Preah Khan Kampong Svay Adventure
+                </DialogTitle>
+              </DialogHeader>
+            </div>
+          </div>
+
           <div className="p-6 space-y-8">
-            <DialogHeader>
-              <DialogTitle className="font-serif text-2xl md:text-3xl text-foreground">
-                Full-Day Tour to Preah Khan Kampong Svay Adventure
-              </DialogTitle>
-            </DialogHeader>
 
             {/* Overview */}
             <p className="text-muted-foreground text-base leading-relaxed text-justify">
