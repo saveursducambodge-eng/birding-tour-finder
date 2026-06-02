@@ -14,6 +14,11 @@ import homepageHeroIbis from "@/assets/homepage-hero-ibis.jpg";
 import heroSlideGuides from "@/assets/hero-slide-guides.jpg";
 import heroSlideBirdingGroup from "@/assets/hero-slide-birding-group.jpg";
 import heroSlideScope from "@/assets/hero-slide-scope.jpg";
+import heroMoon2 from "@/assets/hero-moon/hero-moon-2.jpg.asset.json";
+import heroMoon3 from "@/assets/hero-moon/hero-moon-3.jpg.asset.json";
+import heroMoon4 from "@/assets/hero-moon/hero-moon-4.jpg.asset.json";
+import heroMoon5 from "@/assets/hero-moon/hero-moon-5.jpg.asset.json";
+import heroMoon6 from "@/assets/hero-moon/hero-moon-6.jpg.asset.json";
 // Import bird images from gallery
 import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
 import bird2 from "@/assets/prek-toal-storks.jpg";
@@ -23,7 +28,17 @@ import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import kohKerImage from "@/assets/koh-ker-bird-tours.jpg";
 
-const heroSlides = [homepageHeroIbis, heroSlideGuides, heroSlideBirdingGroup, heroSlideScope];
+const heroSlides = [
+  homepageHeroIbis,
+  heroMoon2.url,
+  heroMoon3.url,
+  heroMoon4.url,
+  heroMoon5.url,
+  heroMoon6.url,
+  heroSlideGuides,
+  heroSlideBirdingGroup,
+  heroSlideScope,
+];
 
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
