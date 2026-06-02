@@ -64,7 +64,7 @@ const AboutPage = () => {
                   </div>
                   
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
-                    <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-4">
+                    <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-4 text-right">
                       {guide.name}
                     </h2>
                     <p className="text-accent font-medium mb-4">{guide.role}</p>
