@@ -7,6 +7,10 @@ import pearaingBio7 from "@/assets/pearaing-biodiversity-7.jpg";
 import pearaingBio8 from "@/assets/pearaing-biodiversity-8.jpg";
 import pearaingBio9 from "@/assets/pearaing-biodiversity-9.jpg";
 import pearaingBio10 from "@/assets/pearaing-biodiversity-10.jpg";
+import prekToal916_1 from "@/assets/prek-toal-9-16-1.jpg.asset.json";
+import prekToal916_2 from "@/assets/prek-toal-9-16-2.jpg.asset.json";
+import prekToal916_3 from "@/assets/prek-toal-9-16-3.jpg.asset.json";
+import prekToal916_4 from "@/assets/prek-toal-9-16-4.png.asset.json";
 interface Tour {
   id: number;
   title: string;
@@ -589,6 +593,22 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                   <img
                     src={src}
                     alt={`Pearaing Biodiversity Conservation Center photo ${i + 1}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Prek Toal Waterbird Sanctuary — 9:16 photo gallery */}
+          {tour.id === 2 && (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {[prekToal916_1, prekToal916_2, prekToal916_3, prekToal916_4].map((asset, i) => (
+                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                  <img
+                    src={asset.url}
+                    alt={`Prek Toal Waterbird Sanctuary photo ${i + 1}`}
                     loading="lazy"
                     className="w-full h-full object-cover"
                   />
