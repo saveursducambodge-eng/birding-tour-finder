@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Binoculars } from "lucide-react";
+import { Menu, X, Binoculars, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const navItems = [{
+  type NavItem = {
+    name: string;
+    path: string;
+    children?: { name: string; path: string }[];
+  };
+  const navItems: NavItem[] = [{
     name: "Home",
     path: "/"
   }, {
@@ -14,10 +19,11 @@ const Navigation = () => {
     path: "/about"
   }, {
     name: "Bird Tours",
-    path: "/tours"
-  }, {
-    name: "Temple Tours",
-    path: "/temple-tours"
+    path: "/tours",
+    children: [
+      { name: "Bird Tours", path: "/tours" },
+      { name: "Temple Tours", path: "/temple-tours" },
+    ]
   }, {
     name: "Gallery",
     path: "/gallery"
@@ -41,9 +47,45 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          {navItems.map(item => <Link key={item.name} to={item.path} className={cn("text-sm font-medium transition-colors hover:text-primary", location.pathname === item.path ? "text-primary" : "text-muted-foreground")}>
-              {item.name}
-            </Link>)}
+          {navItems.map(item => {
+            if (item.children) {
+              const isActive = item.children.some(c => location.pathname === c.path);
+              return (
+                <div key={item.name} className="relative group">
+                  <button
+                    className={cn(
+                      "text-sm font-medium transition-colors hover:text-primary inline-flex items-center gap-1",
+                      isActive ? "text-primary" : "text-muted-foreground"
+                    )}
+                  >
+                    {item.name}
+                    <ChevronDown className="w-3 h-3" />
+                  </button>
+                  <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+                    <div className="bg-background border border-border rounded-md shadow-lg min-w-[180px] py-2">
+                      {item.children.map(child => (
+                        <Link
+                          key={child.name}
+                          to={child.path}
+                          className={cn(
+                            "block px-4 py-2 text-sm transition-colors hover:bg-muted hover:text-primary",
+                            location.pathname === child.path ? "text-primary" : "text-muted-foreground"
+                          )}
+                        >
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            return (
+              <Link key={item.name} to={item.path} className={cn("text-sm font-medium transition-colors hover:text-primary", location.pathname === item.path ? "text-primary" : "text-muted-foreground")}>
+                {item.name}
+              </Link>
+            );
+          })}
           <Link to="/contact">
             <Button variant="default" size="sm" asChild className="ml-4">
               <span>
@@ -63,9 +105,32 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && <div className="md:hidden bg-background border-b border-border">
           <div className="container mx-auto px-4 py-4 space-y-4">
-            {navItems.map(item => <Link key={item.name} to={item.path} className={cn("block py-2 text-sm font-medium transition-colors hover:text-primary", location.pathname === item.path ? "text-primary" : "text-muted-foreground")} onClick={() => setIsMenuOpen(false)}>
-                {item.name}
-              </Link>)}
+            {navItems.map(item => (
+              item.children ? (
+                <div key={item.name} className="space-y-2">
+                  <div className="py-2 text-sm font-semibold text-primary">{item.name}</div>
+                  <div className="pl-4 space-y-2 border-l border-border">
+                    {item.children.map(child => (
+                      <Link
+                        key={child.name}
+                        to={child.path}
+                        onClick={() => setIsMenuOpen(false)}
+                        className={cn(
+                          "block py-1 text-sm font-medium transition-colors hover:text-primary",
+                          location.pathname === child.path ? "text-primary" : "text-muted-foreground"
+                        )}
+                      >
+                        {child.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link key={item.name} to={item.path} className={cn("block py-2 text-sm font-medium transition-colors hover:text-primary", location.pathname === item.path ? "text-primary" : "text-muted-foreground")} onClick={() => setIsMenuOpen(false)}>
+                  {item.name}
+                </Link>
+              )
+            ))}
             <Link to="/contact">
               <Button className="w-full mt-4">
                 <Binoculars className="w-4 h-4 mr-2" />
