@@ -546,7 +546,7 @@ const ToursPage = () => {
                 days: "14 Days",
                 title: "Grand Cambodia Birding",
                 summary: "Siem Reap, Tonle Sap, Northern Plains, Mondulkiri and Kratie for Mekong specialities.",
-                highlights: ["Mekong Wagtail", "Irrawaddy Dolphin", "Yellow-cheeked Crested Gibbon"],
+                highlights: ["Mekong Wagtail", "Irrawaddy Dolphin", "Yellow-cheeked Gibbon"],
               },
               {
                 days: "18 Days",
