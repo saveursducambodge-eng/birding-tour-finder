@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="space-y-3 sm:space-y-4">
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/cambodiabirdingtours" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nature-sky transition-colors duration-200" aria-label="Facebook">
+              <a href="https://www.facebook.com/pearaingbirdingtrails" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nature-sky transition-colors duration-200" aria-label="Facebook">
                 <img src={facebookLogo.url} alt="Facebook" className="w-6 h-6 rounded" />
               </a>
               <a href="https://www.youtube.com/@Tmatboeybirdingtours" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nature-sky transition-colors duration-200" aria-label="YouTube">
