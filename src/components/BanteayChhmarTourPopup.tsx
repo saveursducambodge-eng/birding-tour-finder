@@ -221,7 +221,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
               </h3>
               <div className="space-y-2 text-muted-foreground">
                 <div>
-                  <h4 className="font-semibold text-foreground">☀️ November – February</h4>
+                  <h4 className="font-semibold text-foreground"> November – February</h4>
                   <p>Cool & dry (best)</p>
                 </div>
                 <div>
