@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Clock, Users, MapPin, Star, ArrowRight, Filter, ChevronLeft, ChevronRight } from "lucide-react";
+import { Clock, Users, MapPin, Star, ArrowRight, Filter, ChevronLeft, ChevronRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -469,11 +469,28 @@ const ToursPage = () => {
                 </div>
               </CardContent>
             </Card>)}
+
+          {/* Plan Your Trip CTA Card */}
+          <a
+            href="#plan-your-trip"
+            className="group flex flex-col items-center justify-center text-center p-8 rounded-lg border-2 border-dashed border-nature-sage bg-sage-light/40 hover:bg-sage-light hover:border-nature-forest transition-all duration-300 min-h-[380px]"
+          >
+            <div className="w-16 h-16 rounded-full bg-nature-forest text-white flex items-center justify-center mb-4 group-hover:bg-nature-sage transition-colors">
+              <Calendar className="w-8 h-8" />
+            </div>
+            <h3 className="font-serif text-2xl text-nature-forest mb-3">Plan Your Trip</h3>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Not sure which tour fits? Browse suggested itineraries from <span className="font-semibold">1 day to 25 days</span> and build your perfect Cambodia birding adventure.
+            </p>
+            <span className="inline-flex items-center text-nature-forest font-medium group-hover:text-nature-sage">
+              View itineraries <ArrowRight className="ml-2 w-4 h-4" />
+            </span>
+          </a>
         </div>
       </section>
 
       {/* Plan Your Trip — Suggested Itineraries */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 bg-sage-light/40">
+      <section id="plan-your-trip" className="py-12 sm:py-16 lg:py-20 px-4 bg-sage-light/40 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-nature-forest mb-4">
