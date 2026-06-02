@@ -15,6 +15,10 @@ import atts916_1 from "@/assets/atts-9-16-1.jpg.asset.json";
 import atts916_2 from "@/assets/atts-9-16-2.jpg.asset.json";
 import atts916_3 from "@/assets/atts-9-16-3.jpg.asset.json";
 import atts916_4 from "@/assets/atts-9-16-4.jpg.asset.json";
+import angkorWat916_1 from "@/assets/angkor-wat-9-16-1.jpg.asset.json";
+import angkorWat916_2 from "@/assets/angkor-wat-9-16-2.jpg.asset.json";
+import angkorWat916_3 from "@/assets/angkor-wat-9-16-3.jpg.asset.json";
+import angkorWat916_4 from "@/assets/angkor-wat-9-16-4.jpg.asset.json";
 interface Tour {
   id: number;
   title: string;
@@ -610,7 +614,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           )}
 
           {/* Tour Info */}
-          {tour.id !== 3 && (
+          {tour.id !== 3 && tour.id !== 5 && (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-nature-forest" />
@@ -697,6 +701,53 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                 </div>
               </div>
             </div>
+          )}
+
+          {tour.id === 5 && (
+            <>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {[angkorWat916_1, angkorWat916_2, angkorWat916_3, angkorWat916_4].map((asset, i) => (
+                  <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                    <img
+                      src={asset.url}
+                      alt={`Full Birding and Angkor Wat Temple Tour photo ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Duration</p>
+                    <p className="text-sm font-semibold">{tour.duration}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="w-4 h-4 text-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Group Size</p>
+                    <p className="text-sm font-semibold">{tour.groupSize}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Difficulty</p>
+                    <p className="text-sm font-semibold">{tour.difficulty}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Star className="w-4 h-4 text-nature-forest fill-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Rating</p>
+                    <p className="text-sm font-semibold">{tour.rating}/5</p>
+                  </div>
+                </div>
+              </div>
+            </>
           )}
 
           {tour.bestSeason && <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
