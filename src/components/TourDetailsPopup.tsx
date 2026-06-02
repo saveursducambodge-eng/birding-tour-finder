@@ -7,6 +7,10 @@ import prekToal916_1 from "@/assets/prek-toal-9-16-1.jpg.asset.json";
 import prekToal916_2 from "@/assets/prek-toal-9-16-2.jpg.asset.json";
 import prekToal916_3 from "@/assets/prek-toal-9-16-3.jpg.asset.json";
 import prekToal916_4 from "@/assets/prek-toal-9-16-4.png.asset.json";
+import kohKer916_1 from "@/assets/koh-ker-9-16-1.png.asset.json";
+import kohKer916_2 from "@/assets/koh-ker-9-16-2.jpg.asset.json";
+import kohKer916_3 from "@/assets/koh-ker-9-16-3.jpg.asset.json";
+import kohKer916_4 from "@/assets/koh-ker-9-16-4.jpg.asset.json";
 interface Tour {
   id: number;
   title: string;
@@ -632,6 +636,21 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           </div>
 
           {/* Best Season */}
+          {tour.id === 3 && (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {[kohKer916_1, kohKer916_2, kohKer916_3, kohKer916_4].map((asset, i) => (
+                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                  <img
+                    src={asset.url}
+                    alt={`Koh Ker & Beng Mealea photo ${i + 1}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+
           {tour.bestSeason && <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
               <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-green-600" />
