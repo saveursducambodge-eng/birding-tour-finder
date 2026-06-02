@@ -40,4 +40,28 @@
     <loc>https://pearaing.com/prek-toal</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://pearaing.com/sarus-crane</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pearaing.com/white-shouldered-ibis</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pearaing.com/green-peafowl</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pearaing.com/mekong-wagtail</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pearaing.com/cambodian-tailorbird</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pearaing.com/birding-siem-reap</loc>
+    <priority>0.9</priority>
+  </url>
 </urlset>
