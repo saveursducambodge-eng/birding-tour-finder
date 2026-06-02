@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Clock, Users, MapPin, Star, ArrowRight, Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -111,7 +112,7 @@ const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => 
   }, [images.length]);
 
   return (
-    <div className="relative aspect-[4/3] overflow-hidden group/slider">
+    <div className="relative h-48 overflow-hidden group/slider">
       {images.map((img, i) => (
         <img
           key={i}
@@ -349,7 +350,13 @@ const ToursPage = () => {
     setIsPopupOpen(true);
   };
   const filteredTours = selectedFilter === "all" ? tours : tours.filter((tour) => tour.category === selectedFilter);
-  return <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
+  return <>
+      <Helmet>
+        <title>Bird Watching Tours in Cambodia | PEARAING Birding Trails</title>
+        <meta name="description" content="Book expert-led bird watching tours in Cambodia. From half-day trips to 19-day adventures, discover Giant Ibis, Bengal Florican, and 500+ bird species with professional guides." />
+        <link rel="canonical" href="https://my-birding-canvas.lovable.app/tours" />
+      </Helmet>
+      <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
       <Navigation />
       
       {/* Hero Section */}
@@ -405,12 +412,12 @@ const ToursPage = () => {
         </div>
 
         {/* Tours Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredTours.map((tour) => <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
               {tour.images && tour.images.length > 1 ? (
                 <TourImageSlider images={tour.images} alt={tour.title} />
               ) : (
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
                   <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
                 </div>
               )}
@@ -482,6 +489,6 @@ const ToursPage = () => {
 
       {/* Tour Details Popup */}
       <TourDetailsPopup tour={selectedTour} isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
-    </div>;
+    </div></>;
 };
 export default ToursPage;
