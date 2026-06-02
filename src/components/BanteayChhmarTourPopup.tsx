@@ -160,7 +160,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
             {/* Essential Items */}
             <div>
-              <h3 className="font-serif text-lg font-semibold text-foreground mb-3">🎒 Essential Items</h3>
+              <h3 className="font-serif text-lg font-semibold text-foreground mb-3">Essential Items</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-muted/50 rounded-lg p-4 text-base">
                   <h4 className="font-semibold text-foreground mb-2 text-sm">Recommended</h4>
