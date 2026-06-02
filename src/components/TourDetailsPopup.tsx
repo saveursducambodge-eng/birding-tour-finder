@@ -868,7 +868,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
               </h3>
               <div className="space-y-3">
                 {Object.entries(tour.schedule).map(([time, activity]) => <div key={time} className="p-4 bg-muted/50 rounded-lg">
-                    <p className="text-sm font-semibold text-primary mb-1">{time}</p>
+                    <p className="text-sm font-semibold text-primary mb-1">{time.replace("🌅 ", "")}</p>
                     <p className="text-sm text-muted-foreground">{activity}</p>
                   </div>)}
               </div>
