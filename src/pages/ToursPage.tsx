@@ -472,6 +472,119 @@ const ToursPage = () => {
         </div>
       </section>
 
+      {/* Plan Your Trip — Suggested Itineraries */}
+      <section className="py-12 sm:py-16 lg:py-20 px-4 bg-sage-light/40">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-nature-forest mb-4">
+              Plan Your Trip
+            </h2>
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              From a quick morning outing to a full month exploring Cambodia's wildest corners, choose a suggested itinerary that matches your time and target species. Every itinerary is fully customisable.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                days: "1 Day",
+                title: "Angkor Wat Temple & Birding",
+                summary: "Sunrise at Angkor Wat, forest birding around the moat, Ta Prohm and Bayon temples.",
+                highlights: ["Hainan Blue Flycatcher", "Alexandrine Parakeet", "Cultural icons"],
+              },
+              {
+                days: "2 Days",
+                title: "Siem Reap & Prek Toal",
+                summary: "Day 1 Angkor temples birding. Day 2 boat trip to Prek Toal Bird Sanctuary for waterbird colonies.",
+                highlights: ["Spot-billed Pelican", "Greater Adjutant", "Tonle Sap"],
+              },
+              {
+                days: "3 Days",
+                title: "Russey Treb — Bengal Florican",
+                summary: "Northern Plains grasslands and dry forest for Bengal Florican, Giant Ibis and Sarus Crane.",
+                highlights: ["Bengal Florican", "Giant Ibis", "Community lodge"],
+              },
+              {
+                days: "4 Days",
+                title: "Koh Ker & Beng Mealea",
+                summary: "Remote temples and dry dipterocarp forest birding with woodpeckers and raptors.",
+                highlights: ["8 Woodpecker species", "White-rumped Pygmy Falcon", "Jungle temples"],
+              },
+              {
+                days: "5 Days",
+                title: "Angkor + Prek Toal + Russey Treb",
+                summary: "Combines Cambodia's cultural heritage with its two flagship birding landscapes.",
+                highlights: ["Temples", "Waterbird colonies", "Grassland specialities"],
+              },
+              {
+                days: "7 Days",
+                title: "Cambodia Classic Birding",
+                summary: "Siem Reap, Prek Toal, Russey Treb and BeTreed — the essential first-time birding loop.",
+                highlights: ["Giant Ibis", "Bengal Florican", "Spot-billed Pelican"],
+              },
+              {
+                days: "10 Days",
+                title: "Northern Plains In-Depth",
+                summary: "Extended time in Russey Treb, BeTreed and Keo Seima for ibises, vultures and primates.",
+                highlights: ["White-shouldered Ibis", "Vulture Restaurant", "Black-shanked Douc"],
+              },
+              {
+                days: "14 Days",
+                title: "Grand Cambodia Birding",
+                summary: "Siem Reap, Tonle Sap, Northern Plains, Mondulkiri and Kratie for Mekong specialities.",
+                highlights: ["Mekong Wagtail", "Irrawaddy Dolphin", "Yellow-cheeked Crested Gibbon"],
+              },
+              {
+                days: "18 Days",
+                title: "Cambodia & Cardamoms",
+                summary: "Full birding circuit plus the Cardamom Mountains for evergreen-forest specialities.",
+                highlights: ["Chestnut-headed Partridge", "Cardamom endemics", "Coastal stop"],
+              },
+              {
+                days: "21 Days",
+                title: "Comprehensive Cambodia",
+                summary: "Three weeks covering wetlands, grasslands, dry forest, evergreen forest and the Mekong.",
+                highlights: ["500+ species possible", "All key endemics", "Conservation sites"],
+              },
+              {
+                days: "25 Days",
+                title: "Ultimate Cambodia Expedition",
+                summary: "Our most complete itinerary — every major habitat, all flagship species and cultural highlights.",
+                highlights: ["Maximum species list", "Remote camps", "Private guiding"],
+              },
+              {
+                days: "Custom",
+                title: "Tailor-Made Itinerary",
+                summary: "Tell us your dates, target species and pace — we'll design a private itinerary just for you.",
+                highlights: ["Private guide", "Flexible pace", "Any duration"],
+              },
+            ].map((trip) => (
+              <Card key={trip.days + trip.title} className="border-sage-light hover:border-nature-sage hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-6">
+                  <Badge className="mb-3 bg-nature-forest text-white hover:bg-nature-sage">{trip.days}</Badge>
+                  <h3 className="font-serif text-xl text-nature-forest mb-2">{trip.title}</h3>
+                  <p className="text-sm text-gray-700 mb-4 leading-relaxed">{trip.summary}</p>
+                  <div className="flex flex-wrap gap-1">
+                    {trip.highlights.map((h, i) => (
+                      <Badge key={i} variant="outline" className="text-xs">{h}</Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/contact">
+              <Button size="lg" className="bg-nature-forest hover:bg-nature-sage text-white">
+                Plan My Trip
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-12 sm:py-16 lg:py-20 bg-nature-forest text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
