@@ -46,7 +46,7 @@ const TourIntroPopup = ({
           {/* Header */}
           <div className="flex justify-between items-start mb-6">
             <div>
-              <h2 className="font-serif text-3xl font-bold text-primary mb-2 text-center">
+              <h2 className="font-serif text-3xl font-bold text-primary mb-2">
                  Pearaing Conservation Tours
               </h2>
               <p className="text-muted-foreground">
