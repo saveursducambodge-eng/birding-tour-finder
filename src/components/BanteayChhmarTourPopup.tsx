@@ -95,7 +95,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
                 {/* Afternoon */}
                 <div>
-                  <h4 className="font-semibold text-foreground">🏛️ 02:00 PM – 03:30 PM – Visit Banteay Toap Temple</h4>
+                  <h4 className="font-semibold text-foreground"> 02:00 PM – 03:30 PM – Visit Banteay Toap Temple</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Quiet, less-visited temple</li>
                     <li>Surrounded by forest and peaceful landscapes</li>
