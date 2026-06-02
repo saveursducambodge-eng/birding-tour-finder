@@ -23,6 +23,10 @@ import russeyTrep916_1 from "@/assets/russey-trep-9-16-1.jpg.asset.json";
 import russeyTrep916_2 from "@/assets/russey-trep-9-16-2.jpg.asset.json";
 import russeyTrep916_3 from "@/assets/russey-trep-9-16-3.jpg.asset.json";
 import russeyTrep916_4 from "@/assets/russey-trep-9-16-4.png.asset.json";
+import beTreed916_1 from "@/assets/be-treed-9-16-1.jpg.asset.json";
+import beTreed916_2 from "@/assets/be-treed-9-16-2.jpg.asset.json";
+import beTreed916_3 from "@/assets/be-treed-9-16-3.jpg.asset.json";
+import beTreed916_4 from "@/assets/be-treed-9-16-4.jpg.asset.json";
 interface Tour {
   id: number;
   title: string;
