@@ -86,7 +86,7 @@ const SamborPreiKukTourPopup = ({ isOpen, onClose }: SamborPreiKukTourPopupProps
                 <div className="bg-primary/5 rounded-lg p-4">
                   <h4 className="font-semibold text-foreground mb-2">Private Tour</h4>
                   <ul className="space-y-1 text-base text-muted-foreground">
-                    <li>1–2 persons: $120–$150</li>
+                    <li>1–2 persons: $150–$250</li>
                     <li>3–5 persons: $160–$200</li>
                     <li>6–10 persons: $220–$300</li>
                   </ul>
