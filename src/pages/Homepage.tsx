@@ -20,7 +20,8 @@ import heroMoon4 from "@/assets/hero-moon/hero-moon-4.jpg.asset.json";
 import heroMoon5 from "@/assets/hero-moon/hero-moon-5.jpg.asset.json";
 import heroMoon6 from "@/assets/hero-moon/hero-moon-6.jpg.asset.json";
 // Import bird images from gallery
-import bird1 from "@/assets/half-day-birding-siem-reap.jpg";
+import bird1Asset from "@/assets/half-day-birding-siem-reap-new.jpg.asset.json";
+const bird1 = bird1Asset.url;
 import bird2 from "@/assets/prek-toal-storks.jpg";
 import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
