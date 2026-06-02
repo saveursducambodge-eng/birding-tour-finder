@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
+import conservationHero from "@/assets/conservation-hero.jpg.asset.json";
 import conservationImage from "@/assets/conservation-cambodia.jpg";
 import { Leaf, Users, Bird, ShieldCheck } from "lucide-react";
 
@@ -20,7 +21,7 @@ const ConservationPage = () => {
           <section className="relative h-[85vh] min-h-[560px] w-full overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center scale-105"
-              style={{ backgroundImage: `url(${conservationImage})` }}
+              style={{ backgroundImage: `url(${conservationHero.url})` }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/60 to-primary/90" />
             <div className="relative z-10 h-full container mx-auto px-6 flex flex-col justify-end pb-16 sm:pb-24">
