@@ -287,7 +287,7 @@ const ToursPage = () => {
     groupSize: "2-8 people",
     price: "$675 Per Person",
     image: giantIbis2night2days,
-    images: [giantIbis2night2days, russeyTrepSlide1, russeyTrepSlide2, russeyTrepSlide3, russeyTrepSlide4],
+    images: [giantIbis2night2days, russeyTrepSlide1, russeyTrepSlide2, russeyTrepSlide3],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
     rating: 4.8,
