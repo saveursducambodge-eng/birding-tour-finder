@@ -711,6 +711,53 @@ The surrounding dry grasslands are home to many species, including Small and Blu
               <p className="text-sm text-muted-foreground">{tour.bestSeason}</p>
             </div>}
 
+          {tour.id === 5 && (
+            <>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {[angkorWat916_1, angkorWat916_2, angkorWat916_3, angkorWat916_4].map((asset, i) => (
+                  <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                    <img
+                      src={asset.url}
+                      alt={`Full Birding and Angkor Wat Temple Tour photo ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Duration</p>
+                    <p className="text-sm font-semibold">{tour.duration}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="w-4 h-4 text-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Group Size</p>
+                    <p className="text-sm font-semibold">{tour.groupSize}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Difficulty</p>
+                    <p className="text-sm font-semibold">{tour.difficulty}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Star className="w-4 h-4 text-nature-forest fill-nature-forest" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">Rating</p>
+                    <p className="text-sm font-semibold">{tour.rating}/5</p>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
           {/* Schedule */}
           {tour.schedule && <div>
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-2 text-primary">
