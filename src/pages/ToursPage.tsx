@@ -56,7 +56,6 @@ import pearaingBio2 from "@/assets/pearaing-biodiversity-2.jpg";
 import pearaingBio3 from "@/assets/pearaing-biodiversity-3.jpg";
 import pearaingBio4 from "@/assets/pearaing-biodiversity-4.jpg";
 import pearaingBio5 from "@/assets/pearaing-biodiversity-5.jpg";
-import pearaingBio6 from "@/assets/pearaing-biodiversity-6.jpg";
 import pearaingBio7 from "@/assets/pearaing-biodiversity-7.jpg";
 import pearaingBio8 from "@/assets/pearaing-biodiversity-8.jpg";
 import pearaingBio9 from "@/assets/pearaing-biodiversity-9.jpg";
@@ -153,7 +152,7 @@ const ToursPage = () => {
     groupSize: "2 people",
     price: "$122 Per Person",
     image: bird1,
-    images: [bird1, pearaingBio2, pearaingBio3, pearaingBio4, pearaingBio5, pearaingBio6, pearaingBio7, pearaingBio8, pearaingBio9, pearaingBio10],
+    images: [bird1, pearaingBio2, pearaingBio3, pearaingBio4, pearaingBio5, pearaingBio7, pearaingBio8, pearaingBio9, pearaingBio10],
     category: "cultural",
     highlights: ["50+ bird species", "Pearaing Biodiversity Conservation Center", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
     rating: 4.5,
