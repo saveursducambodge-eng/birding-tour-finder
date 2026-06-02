@@ -19,6 +19,12 @@ import BlogPostPage from "./pages/BlogPostPage";
 import GiantIbisPage from "./pages/GiantIbisPage";
 import BengalFloricanPage from "./pages/BengalFloricanPage";
 import PrekToalPage from "./pages/PrekToalPage";
+import SarusCranePage from "./pages/SarusCranePage";
+import WhiteShoulderedIbisPage from "./pages/WhiteShoulderedIbisPage";
+import GreenPeafowlPage from "./pages/GreenPeafowlPage";
+import MekongWagtailPage from "./pages/MekongWagtailPage";
+import CambodianTailorbirdPage from "./pages/CambodianTailorbirdPage";
+import BirdingSiemReapPage from "./pages/BirdingSiemReapPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +52,12 @@ const App = () => (
                 <Route path="/giant-ibis" element={<GiantIbisPage />} />
                 <Route path="/bengal-florican" element={<BengalFloricanPage />} />
                 <Route path="/prek-toal" element={<PrekToalPage />} />
+                <Route path="/sarus-crane" element={<SarusCranePage />} />
+                <Route path="/white-shouldered-ibis" element={<WhiteShoulderedIbisPage />} />
+                <Route path="/green-peafowl" element={<GreenPeafowlPage />} />
+                <Route path="/mekong-wagtail" element={<MekongWagtailPage />} />
+                <Route path="/cambodian-tailorbird" element={<CambodianTailorbirdPage />} />
+                <Route path="/birding-siem-reap" element={<BirdingSiemReapPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
