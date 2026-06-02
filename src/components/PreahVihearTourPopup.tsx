@@ -2,6 +2,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { MapPin, Clock, CheckCircle, XCircle, Sun, UtensilsCrossed, Camera, Backpack, ShieldAlert, MessageCircle } from "lucide-react";
+import preahVihear2DayHero from "@/assets/temples/preah-vihear-2day-hero.jpg.asset.json";
 
 interface PreahVihearTourPopupProps {
   isOpen: boolean;
@@ -13,6 +14,15 @@ const PreahVihearTourPopup = ({ isOpen, onClose }: PreahVihearTourPopupProps) =>
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
         <ScrollArea className="max-h-[90vh] p-6 shadow-none text-justify text-lg">
+          <div className="relative -mx-6 -mt-6 mb-4 h-64 md:h-80 overflow-hidden">
+            <img
+              src={preahVihear2DayHero.url}
+              alt="Preah Vihear Temple on cliff with green grass and blue sky"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+          </div>
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
               2-Day Tours To Preah Vihear, Boeng Mealea, Koh Ker Temple Adventure Tour
