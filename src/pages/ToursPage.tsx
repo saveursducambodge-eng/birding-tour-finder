@@ -194,7 +194,7 @@ const ToursPage = () => {
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
     id: 3,
-    title: "Full-day Trip to Birding at Koh Ker & Beng Melea",
+    title: "Full-day Trip to Birding at Koh Ker and  Beng Mealea",
     description: "This tour combines Cambodia's most important birding sites with conservation-based tourism, maximizing your chances of seeing your target species. Koh Ker is a remote archaeological site in northern Cambodia, located about 120 kilometres from Siem Reap. It contains more than 180 sanctuaries within a protected area of approximately 81 square kilometres. Only around two dozen monuments are accessible to visitors, as most sanctuaries remain hidden within the forest.\n\nKoh Ker is situated in dry dipterocarp forest with areas of semi-evergreen forest, providing excellent habitat for wildlife. Notable bird species here include eight species of woodpeckers, Rufous-winged Buzzard, White-rumped Pygmy Falcon, and Collared Falconet.\n\nBeng Mealea (\"Lotus Pond\") is an Angkor-period temple located about 40 kilometres east of the main Angkor temple complex. Originally built as a Hindu temple with later Buddhist carvings, it remains largely unrestored, with trees and dense vegetation growing among its towers and courtyards. The surrounding semi-evergreen forest offers excellent birding opportunities, including the chance to see migrant species such as Hainan Blue Flycatcher and White-throated Rock Thrush.",
     duration: "​Full Day (12.5 hours)",
     difficulty: "Easy",
@@ -502,13 +502,13 @@ const ToursPage = () => {
             {[
               {
                 days: "1 Day",
-                title: "Angkor Wat Temple & Birding",
+                title: "Angkor Wat Temple and Birding",
                 summary: "Sunrise at Angkor Wat, forest birding around the moat, Ta Prohm and Bayon temples.",
                 highlights: ["Hainan Blue Flycatcher", "Alexandrine Parakeet", "Cultural icons"],
               },
               {
                 days: "2 Days",
-                title: "Siem Reap & Prek Toal",
+                title: "Siem Reap and  Prek Toal",
                 summary: "Day 1 Angkor temples birding. Day 2 boat trip to Prek Toal Bird Sanctuary for waterbird colonies.",
                 highlights: ["Spot-billed Pelican", "Greater Adjutant", "Tonle Sap"],
               },
@@ -520,7 +520,7 @@ const ToursPage = () => {
               },
               {
                 days: "4 Days",
-                title: "Koh Ker & Beng Mealea",
+                title: "Koh Ker and  Beng Mealea",
                 summary: "Remote temples and dry dipterocarp forest birding with woodpeckers and raptors.",
                 highlights: ["8 Woodpecker species", "White-rumped Pygmy Falcon", "Jungle temples"],
               },
@@ -550,7 +550,7 @@ const ToursPage = () => {
               },
               {
                 days: "18 Days",
-                title: "Cambodia & Cardamoms",
+                title: "Cambodia and Cardamoms",
                 summary: "Full birding circuit plus the Cardamom Mountains for evergreen-forest specialities.",
                 highlights: ["Chestnut-headed Partridge", "Cardamom endemics", "Coastal stop"],
               },
