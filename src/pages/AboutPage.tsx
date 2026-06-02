@@ -46,7 +46,7 @@ const AboutPage = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <header className="mb-20 lg:mb-32 text-center">
-            <h1 className="font-serif italic text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium text-primary mb-6 tracking-tight">
+            <h1 className="font-serif italic text-5xl sm:text-6xl md:text-7xl font-medium text-primary mb-6 tracking-tight lg:text-xl">
               Meet Our Guides
             </h1>
             <div className="w-24 h-px bg-nature-forest/40 mx-auto mb-8" />
