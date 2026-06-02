@@ -229,7 +229,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
                   <p>Hot but clear skies</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">🌿 June – October</h4>
+                  <h4 className="font-semibold text-foreground"> June – October</h4>
                   <p>Green landscapes, occasional rain</p>
                 </div>
               </div>
