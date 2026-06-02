@@ -80,8 +80,8 @@ const Homepage = () => {
   }];
   return <>
       <Helmet>
-        <title>Pearaing Conservation Tours - Bird Watching & Temple Tours in Cambodia</title>
-        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with PEARAING Birding Trails. Expert-guided bird watching tours, Angkor temple tours, and wildlife adventures across Cambodia." />
+        <title>Pearaing Conservation Tours - Birding & Temple Tours in Cambodia</title>
+        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with PEARAING Birding Trails. Expert-guided birding tours, Angkor temple tours, and wildlife adventures across Cambodia." />
         <link rel="canonical" href="https://my-birding-canvas.lovable.app/" />
       </Helmet>
       <div className="min-h-screen bg-background">
