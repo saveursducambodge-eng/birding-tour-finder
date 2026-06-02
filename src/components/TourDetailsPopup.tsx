@@ -577,12 +577,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
         
         <div className="space-y-6">
           {/* Tour Image */}
-          {tour.id !== 1 && (
-            <div className="aspect-video overflow-hidden rounded-lg relative">
-              <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
-            </div>
-          )}
-
           {/* Prek Toal Waterbird Sanctuary — 9:16 photo gallery */}
           {tour.id === 2 && (
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
