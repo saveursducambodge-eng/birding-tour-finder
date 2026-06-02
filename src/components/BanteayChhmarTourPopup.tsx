@@ -105,7 +105,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
                 {/* Return */}
                 <div>
-                  <h4 className="font-semibold text-foreground">🚗 03:30 PM – 06:30 PM – Return Journey</h4>
+                  <h4 className="font-semibold text-foreground"> 03:30 PM – 06:30 PM – Return Journey</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Drive back to your hotel</li>
                     <li>Optional stops for photos or local markets</li>
