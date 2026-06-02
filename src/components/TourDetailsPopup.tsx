@@ -703,14 +703,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
             </div>
           )}
 
-          {tour.bestSeason && <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
-              <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-green-600" />
-                Best Season
-              </h4>
-              <p className="text-sm text-muted-foreground">{tour.bestSeason}</p>
-            </div>}
-
           {tour.id === 5 && (
             <>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -757,6 +749,14 @@ The surrounding dry grasslands are home to many species, including Small and Blu
               </div>
             </>
           )}
+
+          {tour.bestSeason && <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
+              <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-green-600" />
+                Best Season
+              </h4>
+              <p className="text-sm text-muted-foreground">{tour.bestSeason}</p>
+            </div>}
 
           {/* Schedule */}
           {tour.schedule && <div>
