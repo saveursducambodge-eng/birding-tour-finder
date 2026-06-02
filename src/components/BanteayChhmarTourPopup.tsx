@@ -66,7 +66,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-foreground">🌉 09:30 AM – Stop at Spean Toap Bridge</h4>
+                  <h4 className="font-semibold text-foreground"> 09:30 AM – Stop at Spean Toap Bridge</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Explore one of the longest ancient laterite bridges</li>
                     <li>Learn about Angkor road networks and history</li>
