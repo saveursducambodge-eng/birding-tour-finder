@@ -43,7 +43,7 @@ const ConservationPage = () => {
               {/* Content */}
               <div className="space-y-6">
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-right">
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Responsible Tourism: Promoting Local Livelihoods
                   </h2>
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
@@ -78,7 +78,7 @@ When you travel with us, you are not only discovering amazing wildlife — you a
               {/* Content */}
               <div className="space-y-6 lg:order-2">
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-right">
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Birdwatching & Conservation in Cambodia
                   </h2>
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
