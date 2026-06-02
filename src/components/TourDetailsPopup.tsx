@@ -256,11 +256,6 @@ const TourDetailsPopup = ({
           </DialogHeader>
           
           <div className="space-y-6">
-            {/* Tour Image */}
-            <div className="aspect-video overflow-hidden rounded-lg relative">
-              <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
-            </div>
-
             {/* Introduction */}
             <div className="space-y-4">
               
