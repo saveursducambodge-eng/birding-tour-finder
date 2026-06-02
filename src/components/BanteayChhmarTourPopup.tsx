@@ -239,7 +239,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
             {/* Travel Tips */}
             <div>
-              <h3 className="font-serif text-lg font-semibold text-foreground mb-2">🎒 Travel Tips</h3>
+              <h3 className="font-serif text-lg font-semibold text-foreground mb-2"> Travel Tips</h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-1">
                 <li>Wear light clothing + comfortable shoes</li>
                 <li>Bring sunscreen, hat & insect repellent</li>
