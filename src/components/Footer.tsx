@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="https://t.me/giantibistours" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nature-sky transition-colors duration-200" aria-label="Telegram">
                 <Send className="w-6 h-6" />
               </a>
-              <a href="https://www.tripadvisor.co.uk/Attraction_Review-g297390-d15072032-Reviews-Sourire_Khmer-Siem_Reap_Siem_Reap_Province.html" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nature-sky transition-colors duration-200" aria-label="TripAdvisor">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g297390-d12290404-Reviews-Pearaing_Biodiversity_Conservation_Center-Siem_Reap_Siem_Reap_Province.html" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nature-sky transition-colors duration-200" aria-label="TripAdvisor">
                 <img src={tripadvisorLogo.url} alt="TripAdvisor" className="w-6 h-6 rounded" />
               </a>
               <a href="https://www.getyourguide.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-nature-sky transition-colors duration-200" aria-label="GetYourGuide">
