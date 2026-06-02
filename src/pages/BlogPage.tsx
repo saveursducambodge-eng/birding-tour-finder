@@ -28,7 +28,7 @@ const BlogPage = () => {
               <div className="text-center mb-12 lg:mb-16">
                 <Badge className="mb-4 bg-nature-sand text-nature-forest">Our Journal</Badge>
                 <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
-                  Birding & Temple Tour Stories
+                  Birding and Temple Tour Stories
                 </h1>
                 <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                   Field notes, tour highlights, and expert guidance from our certified guides across Cambodia.
