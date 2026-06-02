@@ -27,6 +27,14 @@ const Navigation = () => {
       { name: "Blog", path: "/blog" },
     ]
   }, {
+    name: "Featured",
+    path: "/giant-ibis",
+    children: [
+      { name: "Giant Ibis", path: "/giant-ibis" },
+      { name: "Bengal Florican", path: "/bengal-florican" },
+      { name: "Prek Toal Sanctuary", path: "/prek-toal" },
+    ]
+  }, {
     name: "Conservation",
     path: "/conservation"
   }, {
