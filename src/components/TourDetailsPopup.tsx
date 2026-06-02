@@ -614,7 +614,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           )}
 
           {/* Tour Info */}
-          {tour.id !== 3 && (
+          {tour.id !== 3 && tour.id !== 5 && (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-nature-forest" />
