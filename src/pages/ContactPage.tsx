@@ -249,6 +249,18 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                   />
                 </div>
 
+                {/* Google Maps - Pearaing Biodiversity Conservation Center */}
+                <div className="rounded-xl overflow-hidden shadow-card">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.5936372688047!2d103.86814179999999!3d13.2507995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31101f2a82dd4df7%3A0x8c1799e85bc24311!2sPearaing%20Biodiversity%20Conservation%20Center!5e0!3m2!1sen!2skh!4v1780415211699!5m2!1sen!2skh"
+                    title="Pearaing Biodiversity Conservation Center on Google Maps"
+                    className="w-full h-[360px] border-0"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+
                 {/* Quick Response Info */}
                 <Card className="bg-nature-forest text-white">
                   <CardContent className="p-6">
