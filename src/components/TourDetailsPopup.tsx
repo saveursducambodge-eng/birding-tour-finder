@@ -3,10 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Users, MapPin, Star, Calendar, Utensils, AlertCircle, Camera } from "lucide-react";
 import birdTourHero from "@/assets/bird-tour-hero.png";
-import pearaingBio7 from "@/assets/pearaing-biodiversity-7.jpg";
-import pearaingBio8 from "@/assets/pearaing-biodiversity-8.jpg";
-import pearaingBio9 from "@/assets/pearaing-biodiversity-9.jpg";
-import pearaingBio10 from "@/assets/pearaing-biodiversity-10.jpg";
 import prekToal916_1 from "@/assets/prek-toal-9-16-1.jpg.asset.json";
 import prekToal916_2 from "@/assets/prek-toal-9-16-2.jpg.asset.json";
 import prekToal916_3 from "@/assets/prek-toal-9-16-3.jpg.asset.json";
@@ -584,22 +580,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           <div className="aspect-video overflow-hidden rounded-lg relative">
             <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
-
-          {/* Pearaing Biodiversity Conservation Center — 9:16 photo gallery */}
-          {tour.id === 1 && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[pearaingBio7, pearaingBio8, pearaingBio9, pearaingBio10].map((src, i) => (
-                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
-                  <img
-                    src={src}
-                    alt={`Pearaing Biodiversity Conservation Center photo ${i + 1}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
 
           {/* Prek Toal Waterbird Sanctuary — 9:16 photo gallery */}
           {tour.id === 2 && (
