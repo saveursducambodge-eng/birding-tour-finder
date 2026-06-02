@@ -80,7 +80,7 @@ const Homepage = () => {
   }];
   return <>
       <Helmet>
-        <title>PEARAING Birding Trails - Bird Watching & Temple Tours in Cambodia</title>
+        <title>Pearaing Conservation Tours - Bird Watching & Temple Tours in Cambodia</title>
         <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with PEARAING Birding Trails. Expert-guided bird watching tours, Angkor temple tours, and wildlife adventures across Cambodia." />
         <link rel="canonical" href="https://my-birding-canvas.lovable.app/" />
       </Helmet>
@@ -149,8 +149,8 @@ Pearaing Biodiversity Conservation is an organization officially registered with
             <Badge className="mb-4 bg-nature-sand text-nature-forest">
               Our Tours
             </Badge>
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6">
-              Discover Cambodia's Birding Adventures
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-right">
+              Discover Pearaing Conservation Tours
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
               From half-day excursions to multi-day expeditions, explore Cambodia's incredible bird diversity with our expert guides.
@@ -340,7 +340,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
       {/* Conservation Message */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-nature px-4 md:px-6 lg:px-8">
         <div className="container mx-auto text-center">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-right">
             Supporting Bird Conservation
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto mb-8 text-sm sm:text-base">

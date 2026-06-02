@@ -30,7 +30,7 @@ const guides: Guide[] = [{
 const AboutPage = () => {
   return <>
       <Helmet>
-        <title>About Our Guides | PEARAING Birding Trails Cambodia</title>
+        <title>About Our Guides | Pearaing Conservation Tours Cambodia</title>
         <meta name="description" content="Meet our certified bird and temple guides with over a decade of experience. Officially registered with the Cambodian Ministry of Tourism." />
         <link rel="canonical" href="https://my-birding-canvas.lovable.app/about" />
       </Helmet>
@@ -64,7 +64,7 @@ const AboutPage = () => {
                   </div>
                   
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
-                    <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-4">
+                    <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-4 text-right">
                       {guide.name}
                     </h2>
                     <p className="text-accent font-medium mb-4">{guide.role}</p>

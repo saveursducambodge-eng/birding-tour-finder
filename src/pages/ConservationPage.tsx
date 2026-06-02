@@ -6,7 +6,7 @@ import conservationEcotour from "@/assets/conservation-ecotour.png";
 const ConservationPage = () => {
   return <>
       <Helmet>
-        <title>Bird Conservation & Community Support | PEARAING Birding Trails</title>
+        <title>Bird Conservation & Community Support | Pearaing Conservation Tours</title>
         <meta name="description" content="Learn how PEARAING Birding Trails supports Cambodia's bird conservation and local communities through responsible ecotourism and sustainable livelihoods." />
         <link rel="canonical" href="https://my-birding-canvas.lovable.app/conservation" />
       </Helmet>
@@ -43,13 +43,13 @@ const ConservationPage = () => {
               {/* Content */}
               <div className="space-y-6">
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6">
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-right">
                     Responsible Tourism: Promoting Local Livelihoods
                   </h2>
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
                     <p className="text-justify">
 
-The Pearaing Birding Trails, we believe that protecting nature goes hand in hand with supporting the people who live closest to it. Our birdwatching and ecotourism programs are designed to create sustainable income opportunities for local communities while preserving Cambodia's unique wildlife.</p>
+The Pearaing Conservation Tours, we believe that protecting nature goes hand in hand with supporting the people who live closest to it. Our birdwatching and ecotourism programs are designed to create sustainable income opportunities for local communities while preserving Cambodia's unique wildlife.</p>
                     <p className="text-justify">
                       By staying in community lodges, hiring local guides, and purchasing locally made products, our guests directly contribute to improving rural livelihoods. Together, we ensure that conservation benefits everyone — empowering communities, protecting endangered species, and fostering a future where people and nature thrive side by side.
                     </p>
@@ -78,7 +78,7 @@ When you travel with us, you are not only discovering amazing wildlife — you a
               {/* Content */}
               <div className="space-y-6 lg:order-2">
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6">
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-right">
                     Birdwatching & Conservation in Cambodia
                   </h2>
                   <div className="prose prose-sm sm:prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
