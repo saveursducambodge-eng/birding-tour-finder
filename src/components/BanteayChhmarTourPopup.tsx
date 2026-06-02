@@ -76,7 +76,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
                 {/* Late Morning */}
                 <div>
-                  <h4 className="font-semibold text-foreground">🏛️ 10:30 AM – 01:00 PM – Visit Banteay Chhmar Temple</h4>
+                  <h4 className="font-semibold text-foreground"> 10:30 AM – 01:00 PM – Visit Banteay Chhmar Temple</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Hidden Angkorian complex surrounded by jungle</li>
                     <li>See Bayon-style faces and bas-reliefs</li>
