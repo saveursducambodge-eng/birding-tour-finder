@@ -29,7 +29,6 @@ import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import kohKerImage from "@/assets/koh-ker-bird-tours.jpg";
 
 const heroSlides = [
-  homepageHeroIbis,
   heroMoon2.url,
   heroMoon3.url,
   heroMoon4.url,
