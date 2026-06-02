@@ -669,7 +669,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                 <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
                   <img
                     src={asset.url}
-                    alt={`Koh Ker & Beng Mealea photo ${i + 1}`}
+                    alt={`Koh Ker and  Beng Mealea photo ${i + 1}`}
                     loading="lazy"
                     className="w-full h-full object-cover"
                   />
