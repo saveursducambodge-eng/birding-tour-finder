@@ -86,7 +86,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
                 {/* Lunch */}
                 <div>
-                  <h4 className="font-semibold text-foreground">🍽️ 01:00 PM – 02:00 PM – Lunch Break</h4>
+                  <h4 className="font-semibold text-foreground"> 01:00 PM – 02:00 PM – Lunch Break</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Local Khmer lunch at a nearby village</li>
                     <li>Simple, authentic countryside experience</li>
@@ -95,7 +95,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
                 {/* Afternoon */}
                 <div>
-                  <h4 className="font-semibold text-foreground">🏛️ 02:00 PM – 03:30 PM – Visit Banteay Toap Temple</h4>
+                  <h4 className="font-semibold text-foreground"> 02:00 PM – 03:30 PM – Visit Banteay Toap Temple</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Quiet, less-visited temple</li>
                     <li>Surrounded by forest and peaceful landscapes</li>
@@ -105,7 +105,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
                 {/* Return */}
                 <div>
-                  <h4 className="font-semibold text-foreground">🚗 03:30 PM – 06:30 PM – Return Journey</h4>
+                  <h4 className="font-semibold text-foreground"> 03:30 PM – 06:30 PM – Return Journey</h4>
                   <ul className="list-disc list-inside text-muted-foreground mt-1 space-y-1">
                     <li>Drive back to your hotel</li>
                     <li>Optional stops for photos or local markets</li>
@@ -160,7 +160,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
             {/* Essential Items */}
             <div>
-              <h3 className="font-serif text-lg font-semibold text-foreground mb-3">🎒 Essential Items</h3>
+              <h3 className="font-serif text-lg font-semibold text-foreground mb-3">Essential Items</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-muted/50 rounded-lg p-4 text-base">
                   <h4 className="font-semibold text-foreground mb-2 text-sm">Recommended</h4>
@@ -221,7 +221,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
               </h3>
               <div className="space-y-2 text-muted-foreground">
                 <div>
-                  <h4 className="font-semibold text-foreground">☀️ November – February</h4>
+                  <h4 className="font-semibold text-foreground"> November – February</h4>
                   <p>Cool & dry (best)</p>
                 </div>
                 <div>
@@ -229,7 +229,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
                   <p>Hot but clear skies</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">🌿 June – October</h4>
+                  <h4 className="font-semibold text-foreground"> June – October</h4>
                   <p>Green landscapes, occasional rain</p>
                 </div>
               </div>
@@ -239,7 +239,7 @@ const BanteayChhmarTourPopup = ({ isOpen, onClose }: BanteayChhmarTourPopupProps
 
             {/* Travel Tips */}
             <div>
-              <h3 className="font-serif text-lg font-semibold text-foreground mb-2">🎒 Travel Tips</h3>
+              <h3 className="font-serif text-lg font-semibold text-foreground mb-2"> Travel Tips</h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-1">
                 <li>Wear light clothing + comfortable shoes</li>
                 <li>Bring sunscreen, hat & insect repellent</li>
