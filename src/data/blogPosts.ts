@@ -1,4 +1,5 @@
-import halfDayImage from "@/assets/half-day-birding-siem-reap.jpg";
+import halfDayImageAsset from "@/assets/half-day-birding-siem-reap-new.jpg.asset.json";
+const halfDayImage = halfDayImageAsset.url;
 import fullDayImage from "@/assets/prek-toal-storks.jpg";
 import twoDayImage from "@/assets/tmatboey-ibis.jpg";
 import sevenDayImage from "@/assets/dream-birding-7day.jpg";
