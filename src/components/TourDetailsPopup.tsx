@@ -15,6 +15,10 @@ import atts916_1 from "@/assets/atts-9-16-1.jpg.asset.json";
 import atts916_2 from "@/assets/atts-9-16-2.jpg.asset.json";
 import atts916_3 from "@/assets/atts-9-16-3.jpg.asset.json";
 import atts916_4 from "@/assets/atts-9-16-4.jpg.asset.json";
+import angkorWat916_1 from "@/assets/angkor-wat-9-16-1.jpg.asset.json";
+import angkorWat916_2 from "@/assets/angkor-wat-9-16-2.jpg.asset.json";
+import angkorWat916_3 from "@/assets/angkor-wat-9-16-3.jpg.asset.json";
+import angkorWat916_4 from "@/assets/angkor-wat-9-16-4.jpg.asset.json";
 interface Tour {
   id: number;
   title: string;
