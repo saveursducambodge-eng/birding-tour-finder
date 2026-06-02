@@ -576,23 +576,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
         </DialogHeader>
         
         <div className="space-y-6">
-          {/* Tour Image */}
-          {/* Prek Toal Waterbird Sanctuary — 9:16 photo gallery */}
-          {tour.id === 2 && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[prekToal916_1, prekToal916_2, prekToal916_3, prekToal916_4].map((asset, i) => (
-                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
-                  <img
-                    src={asset.url}
-                    alt={`Prek Toal Waterbird Sanctuary photo ${i + 1}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
-
           {/* Tour Info */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="flex items-center gap-2">
@@ -633,6 +616,20 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           </div>
 
           {/* Best Season */}
+          {tour.id === 2 && (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {[prekToal916_1, prekToal916_2, prekToal916_3, prekToal916_4].map((asset, i) => (
+                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                  <img
+                    src={asset.url}
+                    alt={`Prek Toal Waterbird Sanctuary photo ${i + 1}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
           {tour.bestSeason && <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
               <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-green-600" />
