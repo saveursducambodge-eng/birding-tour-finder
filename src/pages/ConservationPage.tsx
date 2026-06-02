@@ -71,7 +71,7 @@ const ConservationPage = () => {
                     Responsible tourism that lifts local lives.
                   </h2>
                   <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-5">
-                    At Pearaing Birding Trails, protecting nature goes hand in hand with supporting the people
+                    At Pearaing Conservation Tours, protecting nature goes hand in hand with supporting the people
                     who live closest to it. Our programs create steady income for villages bordering Cambodia's
                     last great forests and wetlands.
                   </p>
