@@ -5,8 +5,8 @@ const GiantIbisPage = () => (
     slug="giant-ibis"
     title="Giant Ibis Cambodia | Where to See Cambodia's National Bird | PEARAING"
     metaDescription="See the critically endangered Giant Ibis in Cambodia. Russey Treb & Northern Plains birding tours led by PEARAING's local guides — the best chance to spot Cambodia's national bird."
-    h1="Giant Ibis in Cambodia — Where to See Pseudibis gigantea"
-    intro="The Giant Ibis (Pseudibis gigantea) is Cambodia's national bird and one of the rarest large waterbirds on Earth. Fewer than 200 mature individuals remain, almost all of them in the dry deciduous dipterocarp forests of northern Cambodia. PEARAING Birding Trails specialises in guided tours to its last remaining strongholds."
+    h1="Giant Ibis in Cambodia — Where to See Thaumatibis gigantea"
+    intro="The Giant Ibis (Thaumatibis gigantea) is Cambodia's national bird and one of the rarest large waterbirds on Earth. Fewer than 200 mature individuals remain, almost all of them in the dry deciduous dipterocarp forests of northern Cambodia. PEARAING Birding Trails specialises in guided tours to its last remaining strongholds."
     whereToSee="Russey Treb (formerly Tmatboey) and surrounding waterholes in the Northern Plains, Preah Vihear Province. Birds are reliably observed at roosting trees at dawn and dusk."
     bestTime="November to early May (dry season). Birds gather at the few remaining waterholes, making sightings far more predictable."
     sections={[
@@ -35,8 +35,8 @@ const GiantIbisPage = () => (
     jsonLd={{
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: "Giant Ibis in Cambodia — Where to See Pseudibis gigantea",
-      about: "Giant Ibis (Pseudibis gigantea)",
+      headline: "Giant Ibis in Cambodia — Where to See Thaumatibis gigantea",
+      about: "Giant Ibis (Thaumatibis gigantea)",
       author: { "@type": "Organization", name: "PEARAING Birding Trails" },
       mainEntityOfPage: "https://pearaing.com/giant-ibis",
     }}
