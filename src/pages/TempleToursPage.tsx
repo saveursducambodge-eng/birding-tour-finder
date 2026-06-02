@@ -2,10 +2,8 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Clock, Users, Globe, ArrowRight, Calendar } from "lucide-react";
+import { MapPin, Clock, Users, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
 import AngkorSunriseTourPopup from "@/components/AngkorSunriseTourPopup";
 import BanteaySreiTourPopup from "@/components/BanteaySreiTourPopup";
 import KampongPhlukTourPopup from "@/components/KampongPhlukTourPopup";
@@ -377,68 +375,6 @@ const TempleToursPage = () => {
             <p className="text-muted-foreground text-lg">
               Coming soon — explore our top temple tour experiences.
             </p>
-          </div>
-        </section>
-
-        {/* Plan Your Trip — Birding Tours Itineraries */}
-        <section className="py-16 bg-primary/5">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 text-primary mb-3">
-                <Calendar className="w-5 h-5" />
-                <span className="uppercase tracking-widest text-xs font-semibold">Birding Tours</span>
-              </div>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
-                Plan Your Trip
-              </h2>
-              <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-                Pair your temple experience with Cambodia's world-class birding. Choose a suggested itinerary from a single day to a full 25-day expedition — every trip is fully customisable.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { days: "1 Day", title: "Angkor Wat Temple & Birding", summary: "Sunrise at Angkor Wat, forest birding around the moat, plus Ta Prohm and Bayon.", highlights: ["Hainan Blue Flycatcher", "Alexandrine Parakeet"] },
-                { days: "2 Days", title: "Siem Reap & Prek Toal", summary: "Angkor temples birding, then a boat trip to Prek Toal's waterbird colonies on Tonle Sap.", highlights: ["Spot-billed Pelican", "Greater Adjutant"] },
-                { days: "3 Days", title: "Russey Treb — Bengal Florican", summary: "Northern Plains grasslands and dry forest for Bengal Florican, Giant Ibis and Sarus Crane.", highlights: ["Bengal Florican", "Giant Ibis"] },
-                { days: "4 Days", title: "Koh Ker & Beng Mealea", summary: "Remote jungle temples and dry dipterocarp forest birding with woodpeckers and raptors.", highlights: ["8 Woodpecker species", "White-rumped Pygmy Falcon"] },
-                { days: "5 Days", title: "Angkor + Prek Toal + Russey Treb", summary: "Cambodia's cultural heritage paired with its two flagship birding landscapes.", highlights: ["Temples", "Waterbirds", "Grasslands"] },
-                { days: "7 Days", title: "Cambodia Classic Birding", summary: "Siem Reap, Prek Toal, Russey Treb and BeTreed — the essential first-time birding loop.", highlights: ["Giant Ibis", "Bengal Florican"] },
-                { days: "10 Days", title: "Northern Plains In-Depth", summary: "Extended time in Russey Treb, BeTreed and Keo Seima for ibises, vultures and primates.", highlights: ["White-shouldered Ibis", "Vulture Restaurant"] },
-                { days: "14 Days", title: "Grand Cambodia Birding", summary: "Siem Reap, Tonle Sap, Northern Plains, Mondulkiri and Kratie for Mekong specialities.", highlights: ["Mekong Wagtail", "Irrawaddy Dolphin"] },
-                { days: "18 Days", title: "Cambodia & Cardamoms", summary: "Full birding circuit plus the Cardamom Mountains for evergreen-forest specialities.", highlights: ["Chestnut-headed Partridge", "Cardamom endemics"] },
-                { days: "21 Days", title: "Comprehensive Cambodia", summary: "Three weeks across wetlands, grasslands, dry forest, evergreen forest and the Mekong.", highlights: ["500+ species possible", "All key endemics"] },
-                { days: "25 Days", title: "Ultimate Cambodia Expedition", summary: "Our most complete itinerary — every major habitat, all flagship species and cultural highlights.", highlights: ["Maximum species list", "Private guiding"] },
-                { days: "Custom", title: "Tailor-Made Itinerary", summary: "Share your dates, target species and pace — we'll design a private itinerary just for you.", highlights: ["Private guide", "Any duration"] },
-              ].map((trip) => (
-                <Card key={trip.days + trip.title} className="hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <Badge className="mb-3 bg-primary text-primary-foreground hover:bg-primary/90">{trip.days}</Badge>
-                    <h3 className="font-serif text-xl font-semibold text-foreground mb-2">{trip.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{trip.summary}</p>
-                    <div className="flex flex-wrap gap-1">
-                      {trip.highlights.map((h, i) => (
-                        <Badge key={i} variant="outline" className="text-xs">{h}</Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="text-center mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-              <Link to="/tours">
-                <Button size="lg" variant="outline">
-                  Browse Birding Tours
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Plan My Trip
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
-            </div>
           </div>
         </section>
       </div>
