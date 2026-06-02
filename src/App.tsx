@@ -16,6 +16,9 @@ import ContactPage from "./pages/ContactPage";
 import TempleToursPage from "./pages/TempleToursPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import GiantIbisPage from "./pages/GiantIbisPage";
+import BengalFloricanPage from "./pages/BengalFloricanPage";
+import PrekToalPage from "./pages/PrekToalPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +43,9 @@ const App = () => (
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/blog" element={<BlogPage />} />
                 <Route path="/blog/:slug" element={<BlogPostPage />} />
+                <Route path="/giant-ibis" element={<GiantIbisPage />} />
+                <Route path="/bengal-florican" element={<BengalFloricanPage />} />
+                <Route path="/prek-toal" element={<PrekToalPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
