@@ -98,7 +98,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
   return <>
       <Helmet>
         <title>Contact Us | Book a Birding or Temple Tour in Cambodia</title>
-        <meta name="description" content="Plan your perfect bird watching or temple tour in Cambodia. Contact PEARAING Birding Trails via WhatsApp, email, or our booking form." />
+        <meta name="description" content="Plan your perfect bird watching or temple tour in Cambodia. Contact Pearaing Conservation Tours via WhatsApp, email, or our booking form." />
         <link rel="canonical" href="https://my-birding-canvas.lovable.app/contact" />
       </Helmet>
       <div className="min-h-screen bg-background">
@@ -253,7 +253,7 @@ This inquiry was submitted through the Cambodia Bird Tours website contact form.
                 <Card className="bg-nature-forest text-white">
                   <CardContent className="p-6">
                     <h3 className="font-serif text-xl font-semibold mb-4">
-                      Why Choose PEARAING Birding Trails?
+                      Why Choose Pearaing Conservation Tours?
                     </h3>
                     <ul className="space-y-3 text-sm">
                       <li className="flex items-start gap-2">

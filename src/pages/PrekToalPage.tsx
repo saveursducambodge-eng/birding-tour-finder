@@ -3,8 +3,8 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const PrekToalPage = () => (
   <SpeciesLandingPage
     slug="prek-toal"
-    title="Prek Toal Bird Sanctuary | Tonle Sap Birding Tours | PEARAING"
-    metaDescription="Prek Toal is Southeast Asia's most important waterbird colony on Tonle Sap Lake. Book guided Prek Toal bird sanctuary tours from Siem Reap with PEARAING Birding Trails."
+    title="Prek Toal Bird Sanctuary | Tonle Sap Birding Tours | Pearaing Conservation Tours"
+    metaDescription="Prek Toal is Southeast Asia's most important waterbird colony on Tonle Sap Lake. Book guided Prek Toal bird sanctuary tours from Siem Reap with Pearaing Conservation Tours."
     h1="Prek Toal Bird Sanctuary — Tonle Sap's Great Waterbird Colony"
     intro="Prek Toal is the largest breeding colony of large waterbirds in mainland Southeast Asia. Set in the flooded forest at the north-western edge of Tonle Sap Lake, it is the most reliable place in the region to see Spot-billed Pelican, Milky Stork, Greater Adjutant, Asian Openbill and Oriental Darter at nest scale."
     whereToSee="Prek Toal Core Area, Tonle Sap Biosphere Reserve. Accessed by boat from Chong Kneas or Phnom Krom near Siem Reap — typically 90–120 minutes by motorboat."
@@ -16,7 +16,7 @@ const PrekToalPage = () => (
       },
       {
         heading: "How to visit Prek Toal",
-        body: "Most visitors join a guided day tour from Siem Reap. PEARAING departs around 05:00 to reach the colony at first light, when activity is at its peak. The trip includes the boat transfer, sanctuary permits, the colony visit with a local ranger-guide and lunch in the floating village.",
+        body: "Most visitors join a guided day tour from Siem Reap. Pearaing Conservation Tours departs around 05:00 to reach the colony at first light, when activity is at its peak. The trip includes the boat transfer, sanctuary permits, the colony visit with a local ranger-guide and lunch in the floating village.",
       },
       {
         heading: "Birds you can expect at Prek Toal",
@@ -28,7 +28,7 @@ const PrekToalPage = () => (
       },
       {
         heading: "Supporting Tonle Sap conservation",
-        body: "Visitor permits and guide fees fund colony protection, ranger salaries and community livelihoods in the floating villages. PEARAING works exclusively with local boatmen and uses small groups to minimise disturbance.",
+        body: "Visitor permits and guide fees fund colony protection, ranger salaries and community livelihoods in the floating villages. Pearaing Conservation Tours works exclusively with local boatmen and uses small groups to minimise disturbance.",
       },
     ]}
     relatedTour={{ label: "See the Prek Toal day tour", href: "/tours" }}

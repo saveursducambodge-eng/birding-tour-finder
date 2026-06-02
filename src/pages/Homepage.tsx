@@ -81,7 +81,8 @@ const Homepage = () => {
   return <>
       <Helmet>
         <title>Pearaing Conservation Tours - Birding & Temple Tours in Cambodia</title>
-        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with PEARAING Birding Trails. Expert-guided birding tours, Angkor temple tours, and wildlife adventures across Cambodia." />
+
+        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with Pearaing Conservation Tours. Expert-guided birding tours, Angkor temple tours, and wildlife adventures across Cambodia." />
         <link rel="canonical" href="https://pearaing.com/" />
       </Helmet>
       <div className="min-h-screen bg-background">

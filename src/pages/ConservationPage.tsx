@@ -7,7 +7,7 @@ const ConservationPage = () => {
   return <>
       <Helmet>
         <title>Bird Conservation & Community Support | Pearaing Conservation Tours</title>
-        <meta name="description" content="Learn how PEARAING Birding Trails supports Cambodia's bird conservation and local communities through responsible ecotourism and sustainable livelihoods." />
+        <meta name="description" content="Learn how Pearaing Conservation Tours supports Cambodia's bird conservation and local communities through responsible ecotourism and sustainable livelihoods." />
         <link rel="canonical" href="https://pearaing.com/conservation" />
       </Helmet>
       <div className="min-h-screen bg-background">
