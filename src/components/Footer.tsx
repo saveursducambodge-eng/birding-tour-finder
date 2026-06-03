@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-nature-sky/30 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
           <p className="text-xs sm:text-sm text-white/80">
-            © {new Date().getFullYear()} Cambodia Bird Tours. All rights reserved.
+            © {new Date().getFullYear()} PEARAING Birding Trails. All rights reserved.
           </p>
         </div>
       </div>
