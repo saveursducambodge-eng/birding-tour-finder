@@ -3,7 +3,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import ImagePreloader from "./components/ImagePreloader";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Homepage from "./pages/Homepage";
@@ -34,8 +33,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <ImagePreloader>
-        <BrowserRouter>
+      <BrowserRouter>
           <div className="min-h-screen flex flex-col">
             <div className="flex-grow">
               <Routes>
@@ -64,8 +62,7 @@ const App = () => (
             <Footer />
             <WhatsAppButton />
           </div>
-        </BrowserRouter>
-      </ImagePreloader>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
