@@ -22,7 +22,7 @@ const ImagePreloader = ({ children }: { children: React.ReactNode }) => {
           {/* Titre */}
           <div className="space-y-2">
             <h1 className="text-2xl font-serif font-bold text-white">
-              Cambodia Bird Tours
+              PEARAING Birding Trails
             </h1>
             <p className="text-nature-sand opacity-90">
               Preparing your adventure...
