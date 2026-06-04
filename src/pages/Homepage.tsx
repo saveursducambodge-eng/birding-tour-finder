@@ -22,6 +22,8 @@ import heroMoon6 from "@/assets/hero-moon/hero-moon-6.jpg.asset.json";
 // Import bird images from gallery
 import bird1Asset from "@/assets/half-day-birding-siem-reap-new.jpg.asset.json";
 const bird1 = bird1Asset.url;
+import angkorWatSunsetAsset from "@/assets/angkor-wat-sunset.jpg.asset.json";
+const angkorWatSunset = angkorWatSunsetAsset.url;
 import bird2 from "@/assets/prek-toal-storks.jpg";
 import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
@@ -238,7 +240,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
             {/* Show more tours on larger screens */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 hidden lg:block">
               <div className="aspect-video overflow-hidden">
-                <img alt="Angkor Wat Birding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src="/lovable-uploads/a62547e2-7ac0-49da-a5b5-a5021f0c5be7.jpg" />
+                <img alt="Angkor Wat Birding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src={angkorWatSunset} />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
