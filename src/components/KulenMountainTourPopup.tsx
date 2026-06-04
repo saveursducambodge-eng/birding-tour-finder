@@ -248,7 +248,7 @@ const KulenMountainTourPopup = ({ isOpen, onClose }: KulenMountainTourPopupProps
               <div className="text-center space-y-3">
                 <p className="text-primary font-semibold text-xl">$150 for two people</p>
                 <a
-                  href="https://wa.me/85581555191?text=Hi%2C%20I%27m%20interested%20in%20the%20Kulen%20Mountain%20Waterfall%20and%20History%20Tour"
+                  href="https://wa.me/85585303050?text=Hi%2C%20I%27m%20interested%20in%20the%20Kulen%20Mountain%20Waterfall%20and%20History%20Tour"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
