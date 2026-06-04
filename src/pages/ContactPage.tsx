@@ -76,7 +76,7 @@ This inquiry was submitted through the PEARAING Birding Trails website contact f
   const contactInfo = [{
     icon: <Phone className="w-5 h-5" />,
     title: "Phone",
-    details: "+855 89 529 696",
+    details: "+85585303050",
     description: "WhatsApp available"
   }, {
     icon: <Mail className="w-5 h-5" />,
@@ -306,7 +306,7 @@ This inquiry was submitted through the PEARAING Birding Trails website contact f
                     window.open(whatsappUrl, '_blank');
                   }}>
                       <MessageSquare className="w-4 h-4 mr-2" />
-                      WhatsApp: +855 89 529 696
+                      WhatsApp: +85585303050
                     </Button>
                   </CardContent>
                 </Card>

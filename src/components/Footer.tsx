@@ -14,7 +14,7 @@ const Footer = () => {
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">Contact Information</h3>
             <div className="flex items-center space-x-3 text-sm sm:text-base">
               <Phone className="w-4 h-4 flex-shrink-0 text-nature-sky" />
-              <span className="text-white">+855 89 529 696</span>
+              <span className="text-white">+85585303050</span>
             </div>
             <div className="flex items-center space-x-3 text-sm sm:text-base">
               <Mail className="w-4 h-4 flex-shrink-0 text-nature-sky" />
