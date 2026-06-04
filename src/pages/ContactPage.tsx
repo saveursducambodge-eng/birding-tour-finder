@@ -302,7 +302,7 @@ This inquiry was submitted through the PEARAING Birding Trails website contact f
                     </p>
                     <Button variant="outline" className="border-nature-sky text-nature-sky hover:bg-nature-sky hover:text-white" onClick={() => {
                     const message = "Bonjour, je suis intéressé par vos tours d'observation d'oiseaux.";
-                    const whatsappUrl = `https://wa.me/85589529696?text=${encodeURIComponent(message)}`;
+                    const whatsappUrl = `https://wa.me/85585303050?text=${encodeURIComponent(message)}`;
                     window.open(whatsappUrl, '_blank');
                   }}>
                       <MessageSquare className="w-4 h-4 mr-2" />

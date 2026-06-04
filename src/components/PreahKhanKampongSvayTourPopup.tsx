@@ -232,7 +232,7 @@ const PreahKhanKampongSvayTourPopup = ({ isOpen, onClose }: PreahKhanKampongSvay
             {/* Book Now */}
             <div className="text-center pt-4 pb-2">
               <a
-                href="https://wa.me/85581555191?text=Hi%2C%20I%27m%20interested%20in%20the%20Full%20Day%20to%20Preah%20Khan%20Kampong%20Svay%20tour.%20Could%20you%20please%20provide%20more%20details%3F"
+                href="https://wa.me/85585303050?text=Hi%2C%20I%27m%20interested%20in%20the%20Full%20Day%20to%20Preah%20Khan%20Kampong%20Svay%20tour.%20Could%20you%20please%20provide%20more%20details%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors"
