@@ -29,7 +29,7 @@ import bird3 from "@/assets/bird-3.jpg";
 import bird4 from "@/assets/sarus-cranes.jpg";
 import bird5 from "@/assets/prek-toal-waterbird-sanctuary.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
-import kohKerImage from "@/assets/koh-ker-bird-tours.jpg";
+import kohKerImage from "@/assets/koh-ker-bird-tours.png";
 
 const heroSlides = [
   heroMoon2.url,
