@@ -360,20 +360,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
 
             {/* Tour Overview */}
             <div>
-              {tour.id === 4 && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
-                  {[atts916_1, atts916_2, atts916_3, atts916_4].map((asset, i) => (
-                    <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
-                      <img
-                        src={asset.url}
-                        alt={`Ang Trapaeng Thmor Sarus Crane Reserve photo ${i + 1}`}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-2 text-primary">
                 <Star className="w-5 h-5 text-nature-forest" />
                 Tour Overview
