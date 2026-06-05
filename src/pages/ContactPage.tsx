@@ -54,7 +54,7 @@ Message:
 ${formData.message || 'No additional message'}
 
 ---
-This inquiry was submitted through the PEARAING Birding Trails website contact form.
+This inquiry was submitted through the PEARAING Conservation Tours website contact form.
     `.trim();
 
     // Create mailto link
