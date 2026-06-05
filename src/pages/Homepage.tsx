@@ -212,10 +212,10 @@ Pearaing Biodiversity Conservation is an organization officially registered with
               </CardContent>
             </Card>
 
-            {/* Koh Ker & Beng Melea */}
+            {/* Koh Ker and Beng Melea */}
             <Card className="group overflow-hidden hover:shadow-float transition-all duration-300">
               <div className="aspect-video overflow-hidden">
-                <img alt="Koh Ker & Beng Melea" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src={kohKerImage} />
+                <img alt="Koh Ker and Beng Melea" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" src={kohKerImage} />
               </div>
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -223,7 +223,7 @@ Pearaing Biodiversity Conservation is an organization officially registered with
                   <Badge variant="outline" className="text-xs">$255</Badge>
                 </div>
                 <h3 className="font-serif text-lg md:text-xl font-semibold mb-3 text-primary">
-                  Koh Ker & Beng Melea
+                  Koh Ker and Beng Melea
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm line-clamp-3">
                   Ancient temples and forest birding with White-Rumped Pygmy Falcon and 8 woodpecker species.
