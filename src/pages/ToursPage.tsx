@@ -232,7 +232,7 @@ const ToursPage = () => {
     groupSize: "2 people",
     price: "$240 Per Person",
     image: bird4,
-    images: [bird4, attSlide1, attSlide2, attSlide3, attSlide4, attSlide5, attSlide6, attSlide7],
+    images: [bird4],
     category: "water",
     highlights: ["Sarus Crane", "Greater Spotted Eagle", "Eastern Marsh Harrier", "Wetland birding", "Conservation reserve", "Eld's Deer habitat"],
     rating: 4.8,
