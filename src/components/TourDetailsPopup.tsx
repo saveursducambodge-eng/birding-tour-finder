@@ -11,6 +11,10 @@ import kohKer916_1 from "@/assets/koh-ker-9-16-1.png.asset.json";
 import kohKer916_2 from "@/assets/koh-ker-9-16-2.jpg.asset.json";
 import kohKer916_3 from "@/assets/koh-ker-9-16-3.jpg.asset.json";
 import kohKer916_4 from "@/assets/koh-ker-9-16-4.jpg.asset.json";
+import atts916_1 from "@/assets/atts-9-16-1.jpg.asset.json";
+import atts916_2 from "@/assets/atts-9-16-2.jpg.asset.json";
+import atts916_3 from "@/assets/atts-9-16-3.jpg.asset.json";
+import atts916_4 from "@/assets/atts-9-16-4.jpg.asset.json";
 import angkorWat916_1 from "@/assets/angkor-wat-9-16-1.jpg.asset.json";
 import angkorWat916_2 from "@/assets/angkor-wat-9-16-2.jpg.asset.json";
 import angkorWat916_3 from "@/assets/angkor-wat-9-16-3.jpg.asset.json";
@@ -360,6 +364,20 @@ The surrounding dry grasslands are home to many species, including Small and Blu
 
             {/* Tour Overview */}
             <div>
+              {tour.id === 4 && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+                  {[atts916_1, atts916_2, atts916_3, atts916_4].map((asset, i) => (
+                    <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                      <img
+                        src={asset.url}
+                        alt={`Ang Trapaeng Thmor Sarus Crane Reserve photo ${i + 1}`}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-2 text-primary">
                 <Star className="w-5 h-5 text-nature-forest" />
                 Tour Overview
