@@ -120,7 +120,7 @@ const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => 
   }, [images.length]);
 
   return (
-    <div className="relative aspect-[4/3] overflow-hidden group/slider">
+    <div className="relative aspect-[3/2] overflow-hidden group/slider">
       {images.map((img, i) => (
         <img
           key={i}
@@ -425,7 +425,7 @@ const ToursPage = () => {
               {tour.images && tour.images.length > 1 ? (
                 <TourImageSlider images={tour.images} alt={tour.title} />
               ) : (
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[3/2] overflow-hidden">
                   <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
                 </div>
               )}
