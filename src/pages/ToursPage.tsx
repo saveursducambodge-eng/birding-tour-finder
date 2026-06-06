@@ -91,6 +91,8 @@ import attSlide7 from "@/assets/att-slide-7.jpg";
 import bird5 from "@/assets/angkor-wat-bird-tour.jpg";
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
+import russeyTrepBengalFloricanAsset from "@/assets/russey-trep-bengal-florican.png.asset.json";
+const russeyTrepBengalFlorican = russeyTrepBengalFloricanAsset.url;
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
 import bird9 from "@/assets/bird-9.jpg";
@@ -289,8 +291,8 @@ const ToursPage = () => {
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$675 Per Person",
-    image: giantIbis2night2days,
-    images: [giantIbis2night2days],
+    image: russeyTrepBengalFlorican,
+    images: [russeyTrepBengalFlorican],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
     rating: 4.8,
