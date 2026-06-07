@@ -21,7 +21,7 @@ const videoPosts: VideoPost[] = [
     title: "Giant Ibis at Dawn — Russey Treb Field Diary",
     description:
       "Follow our guides into the dry dipterocarp forest at first light for an unforgettable encounter with Cambodia's critically endangered national bird.",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "VG7j24yDTwQ",
     category: "Field Diary",
     duration: "6:42",
     date: "June 5, 2026",
