@@ -25,6 +25,7 @@ const Navigation = () => {
       { name: "Temple Tours", path: "/temple-tours" },
       { name: "Gallery", path: "/gallery" },
       { name: "Blog", path: "/blog" },
+      { name: "Video Blog", path: "/video-blog" },
     ]
   }, {
     name: "Featured",
