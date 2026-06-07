@@ -19,6 +19,7 @@ import heroMoon3 from "@/assets/hero-moon/hero-moon-3.jpg.asset.json";
 import heroMoon4 from "@/assets/hero-moon/hero-moon-4.jpg.asset.json";
 import heroMoon5 from "@/assets/hero-moon/hero-moon-5.jpg.asset.json";
 import heroMoon6 from "@/assets/hero-moon/hero-moon-6.jpg.asset.json";
+import heroVideo from "@/assets/hero-video.mp4.asset.json";
 // Import bird images from gallery
 import bird1Asset from "@/assets/half-day-birding-siem-reap-new.jpg.asset.json";
 const bird1 = bird1Asset.url;
@@ -93,13 +94,21 @@ const Homepage = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
+        <video
+          src={heroVideo.url}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {heroSlides.map((slide, index) => (
           <div
             key={index}
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
             style={{
               backgroundImage: `url(${slide})`,
-              opacity: currentSlide === index ? 1 : 0,
+              opacity: 0,
             }}
           />
         ))}
