@@ -16,6 +16,7 @@ import TempleToursPage from "./pages/TempleToursPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import VideoBlogPage from "./pages/VideoBlogPage";
+import UnsubscribePage from "./pages/UnsubscribePage";
 import GiantIbisPage from "./pages/GiantIbisPage";
 import BengalFloricanPage from "./pages/BengalFloricanPage";
 import PrekToalPage from "./pages/PrekToalPage";
@@ -49,6 +50,7 @@ const App = () => (
                 <Route path="/blog" element={<BlogPage />} />
                 <Route path="/blog/:slug" element={<BlogPostPage />} />
                 <Route path="/video-blog" element={<VideoBlogPage />} />
+                <Route path="/unsubscribe" element={<UnsubscribePage />} />
                 <Route path="/giant-ibis" element={<GiantIbisPage />} />
                 <Route path="/bengal-florican" element={<BengalFloricanPage />} />
                 <Route path="/prek-toal" element={<PrekToalPage />} />

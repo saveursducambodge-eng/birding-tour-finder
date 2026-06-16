@@ -15,6 +15,7 @@ import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 import Navigation from "@/components/Navigation";
 import contactBirdingGuide from "@/assets/contact-birding-guide.jpg";
+import { supabase } from "@/integrations/supabase/client";
 const ContactPage = () => {
   const [formData, setFormData] = useState<{
     name: string;
@@ -36,36 +37,55 @@ const ContactPage = () => {
   const {
     toast
   } = useToast();
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Prepare email content
-    const subject = `Tour Inquiry - ${formData.tour || 'General Inquiry'}`;
-    const body = `
-Tour Inquiry Details:
-
-Name: ${formData.name}
-Email: ${formData.email}
-Selected Tour: ${formData.tour || 'Not specified'}
-Group Size: ${formData.groupSize || 'Not specified'} people
-Travel Period: ${formData.preferredDate || 'Not specified'}
-
-Message:
-${formData.message || 'No additional message'}
-
----
-This inquiry was submitted through the PEARAING Conservation Tours website contact form.
-    `.trim();
-
-    // Create mailto link
-    const mailtoLink = `mailto:pearaingbirdingtrails@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Open email client
-    window.location.href = mailtoLink;
-    toast({
-      title: "Email Client Opened!",
-      description: "Your email client should now be open with the inquiry details. Please send the email to complete your booking request."
-    });
+    if (submitting) return;
+    setSubmitting(true);
+    const data = {
+      name: formData.name,
+      email: formData.email,
+      tour: formData.tour || "Not specified",
+      groupSize: formData.groupSize || "Not specified",
+      preferredDate: formData.preferredDate || "Not specified",
+      message: formData.message || "",
+    };
+    const idKey = `contact-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    try {
+      const [notify, confirm] = await Promise.all([
+        supabase.functions.invoke("send-transactional-email", {
+          body: {
+            templateName: "contact-notification",
+            idempotencyKey: `${idKey}-notify`,
+            templateData: data,
+          },
+        }),
+        supabase.functions.invoke("send-transactional-email", {
+          body: {
+            templateName: "contact-confirmation",
+            recipientEmail: formData.email,
+            idempotencyKey: `${idKey}-confirm`,
+            templateData: data,
+          },
+        }),
+      ]);
+      if (notify.error) throw notify.error;
+      if (confirm.error) throw confirm.error;
+      toast({
+        title: "Inquiry sent!",
+        description: "Thanks — we've emailed you a confirmation and our guide will reply within 24 hours.",
+      });
+      setFormData({ name: "", email: "", tour: "", message: "", groupSize: "", preferredDate: "", dateRange: undefined });
+    } catch (err: any) {
+      console.error("Contact form send failed", err);
+      toast({
+        title: "Could not send inquiry",
+        description: "Please try again, or email pearaingbirdingtrails@gmail.com directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
   const handleInputChange = (field: string, value: string | any) => {
     setFormData(prev => ({
