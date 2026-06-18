@@ -26,7 +26,7 @@ const videoPosts: VideoPost[] = [
     youtubeId: "VG7j24yDTwQ",
     category: "Field Diary",
     duration: "6:42",
-    date: "June 5, 2026",
+    date: "March 5, 2026",
   },
   {
     id: "2",
