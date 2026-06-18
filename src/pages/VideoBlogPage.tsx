@@ -33,7 +33,7 @@ const videoPosts: VideoPost[] = [
     title: "Prek Toal Waterbird Sanctuary — A Full Day on the Tonle Sap",
     description:
       "Greater Adjutants, Milky Storks and Spot-billed Pelicans at the largest breeding colony in Southeast Asia.",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "vlUvw-qQ2wI",
     category: "Birding Tours",
     duration: "8:15",
     date: "May 28, 2026",
