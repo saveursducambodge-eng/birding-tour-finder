@@ -1,4 +1,5 @@
 import SpeciesLandingPage from "@/components/SpeciesLandingPage";
+import bengalFloricanHero from "@/assets/bengal-florican-hero.jpg.asset.json";
 
 const BengalFloricanPage = () => (
   <SpeciesLandingPage
@@ -32,6 +33,7 @@ const BengalFloricanPage = () => (
       },
     ]}
     relatedTour={{ label: "Book a Bengal Florican tour", href: "/tours" }}
+    heroImage={{ url: bengalFloricanHero.url, alt: "Male Bengal Florican in display flight over Tonle Sap grasslands, Cambodia" }}
     jsonLd={{
       "@context": "https://schema.org",
       "@type": "Article",
