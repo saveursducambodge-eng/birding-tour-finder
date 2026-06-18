@@ -291,7 +291,7 @@ const ToursPage = () => {
     duration: "3 Days / 2 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$675 Per Person",
+    price: "\u00a0$Per Person",
     image: russeyTrepBengalFlorican,
     images: [russeyTrepBengalFlorican],
     category: "multi-day",
