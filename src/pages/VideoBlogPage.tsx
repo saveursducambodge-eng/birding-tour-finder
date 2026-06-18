@@ -20,7 +20,7 @@ interface VideoPost {
 const videoPosts: VideoPost[] = [
   {
     id: "1",
-    title: "Giant Ibis at Dawn — Russey Treb Field Diary",
+    title: "Pearaing Conservation Tours,  Done Bird Survey at Sofitel Angkor Phokeetra Golf & Spa Resort 2025",
     description:
       "Follow our guides into the dry dipterocarp forest at first light for an unforgettable encounter with Cambodia's critically endangered national bird.",
     youtubeId: "VG7j24yDTwQ",
