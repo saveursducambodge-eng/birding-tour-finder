@@ -1,4 +1,5 @@
 import SpeciesLandingPage from "@/components/SpeciesLandingPage";
+import giantIbisHero from "@/assets/giant-ibis-hero.jpg.asset.json";
 
 const GiantIbisPage = () => (
   <SpeciesLandingPage
@@ -32,6 +33,7 @@ const GiantIbisPage = () => (
       },
     ]}
     relatedTour={{ label: "See the Giant Ibis tour", href: "/tours" }}
+    heroImage={{ url: giantIbisHero.url, alt: "Giant Ibis perched in a dry deciduous dipterocarp tree, Northern Plains of Cambodia" }}
     jsonLd={{
       "@context": "https://schema.org",
       "@type": "Article",
