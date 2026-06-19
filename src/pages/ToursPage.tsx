@@ -289,7 +289,6 @@ const ToursPage = () => {
     title: "Three-Day Tour to Birding at Russey Trep - Bengal Florican Grassland.",
     description: "Techo Sen Russey Trep is a remote community-based ecotourism site in Cambodia's Northern Plains, renowned for hosting the critically endangered Giant Ibis (Cambodia's national bird) and the elusive White-shouldered Ibis. The Russey Trep Ibis Site is a conservation initiative established by the Local NGO and Internation NGO in partnership with the Cambodian government and the local community.\n\nBefore the tour begins in Russey Trep, we enjoy a full morning of birdwatching at the Bengal Florican Grassland, one of the best locations to observe the critically endangered Bengal Florican. This grassland also supports a wide range of rare and notable species, including Manchurian Reed Warbler, Sarus Crane, Singing Bushlark, Oriental Skylark, Common Buttonquail, Asian Pied Starling, Spotted Redshank, Little Ringed Plover, Streaked Weaver, Oriental Pratincole, Pied Harrier, Eastern Marsh Harrier, Bluethroat, Red Avadavat, Lanceolated Warbler, and various other waterbirds.",
     duration: "3 Days / 2 Nights",
-    duration: "3 Days / 2 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "\u00a0$Per Person",
