@@ -1,8 +1,10 @@
 import SpeciesLandingPage from "@/components/SpeciesLandingPage";
+import prekToalHero from "@/assets/prek-toal-hero.jpg.asset.json";
 
 const PrekToalPage = () => (
   <SpeciesLandingPage
     slug="prek-toal"
+    heroImage={{ url: prekToalHero.url, alt: "Cormorants perched above Painted Storks and egrets at Prek Toal waterbird colony, Tonle Sap Lake" }}
     title="Prek Toal Bird Sanctuary | Tonle Sap Birding Tours | Pearaing Conservation Tours"
     metaDescription="Prek Toal is Southeast Asia's most important waterbird colony on Tonle Sap Lake. Book guided Prek Toal bird sanctuary tours from Siem Reap with Pearaing Conservation Tours."
     h1="Prek Toal Bird Sanctuary — Tonle Sap's Great Waterbird Colony"
