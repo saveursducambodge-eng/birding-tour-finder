@@ -34,7 +34,7 @@ const videoPosts: VideoPost[] = [
     description:
       "Greater Adjutants, Milky Storks and Spot-billed Pelicans at the largest breeding colony in Southeast Asia.",
     youtubeId: "vlUvw-qQ2wI",
-    category: "Birding Tours",
+    category: "\u00a0Tours",
     duration: "8:15",
     date: "May 28, 2026",
   },
