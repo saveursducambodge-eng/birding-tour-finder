@@ -317,6 +317,17 @@ const TempleToursPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {temples.map((temple) => {
                 const popupKey = tourPopupMap[temple.name];
+                const d = (temple.duration || "").toLowerCase();
+                let durationLabel = "";
+                const dayMatch = d.match(/(\d+)\s*day/);
+                if (dayMatch) {
+                  const n = parseInt(dayMatch[1], 10);
+                  durationLabel = `${n} ${n === 1 ? "DAY" : "DAYS"}`;
+                } else if (d.includes("half")) {
+                  durationLabel = "HALF DAY";
+                } else if (d.includes("full")) {
+                  durationLabel = "1 DAY";
+                }
                 return (
                   <Card key={temple.name} className="overflow-hidden group hover:shadow-lg transition-shadow duration-300">
                     <div className="relative overflow-hidden aspect-[4/3]">
@@ -328,6 +339,11 @@ const TempleToursPage = () => {
                         height={512}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
+                      {durationLabel && (
+                        <span className="absolute bottom-3 left-3 z-20 bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none">
+                          {durationLabel}
+                        </span>
+                      )}
                     </div>
                     <CardContent className="p-5">
                       <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
