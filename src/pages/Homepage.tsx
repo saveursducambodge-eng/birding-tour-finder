@@ -103,42 +103,77 @@ const Homepage = () => {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-black/40" />
-        
-        <div className="relative z-10 text-center text-white max-w-4xl px-4 sm:px-6 py-8">
-          <Badge className="mb-4 bg-nature-forest/80 text-white border-none text-xs sm:text-sm">
-            Cambodia's Premier Birding Experience
-          </Badge>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 animate-fade-in">
-            Explore Cambodia's
-            <span className="block text-nature-sky mt-2">Wild Birds</span>
-          </h1>
-          <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto animate-slide-up text-justify lg:text-lg">
-            
+        {/* Warm earthy gradient overlay (inspired by Saveurs du Cambodge) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-[#3d2817]/30 to-[#1a1208]/60" />
 
-
-Pearaing Biodiversity Conservation is an organization officially registered with the Cambodian government. We provide visitors with unique access to birding and wildlife sites across Cambodia. Our mission is to sustain Cambodia’s wildlife and local communities through ecotourism.
-
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up max-w-md sm:max-w-none mx-auto">
-              <Link to="/tours" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-nature-forest hover:bg-nature-forest-light text-white w-full sm:w-auto">
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  Discover Our Tours
-                </Button>
-              </Link>
-            <Button size="lg" variant="outline" className="border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary w-full sm:w-auto" onClick={() => setShowPopup(true)}>
-              <Compass className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-              Learn More
-            </Button>
+        <div className="relative z-10 text-center text-white max-w-5xl px-4 sm:px-6 py-8">
+          {/* Top trust badges row */}
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8 sm:mb-10 animate-fade-in">
+            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-white/25 bg-white/10 backdrop-blur-sm text-[11px] sm:text-xs text-white/95">
+              <span className="text-[#e8c97a] tracking-widest">★★★★★</span>
+              <span>5.0 · TripAdvisor</span>
+            </span>
+            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-white/25 bg-white/10 backdrop-blur-sm text-[11px] sm:text-xs text-white/95">
+              <Award className="w-3.5 h-3.5 text-[#e8c97a]" />
+              Certified Conservation Tours
+            </span>
+            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-white/25 bg-white/10 backdrop-blur-sm text-[11px] sm:text-xs text-white/95">
+              <Compass className="w-3.5 h-3.5 text-[#e8c97a]" />
+              15+ years of experience
+            </span>
           </div>
-          <div className="flex gap-2 justify-center mt-6">
+
+          <h1 className="font-serif font-light tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 animate-fade-in">
+            <span className="block">Authentic</span>
+            <span className="block italic text-[#e8c97a] font-normal" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+              Cambodia
+            </span>
+          </h1>
+
+          <p className="font-serif text-lg sm:text-xl md:text-2xl text-white/90 italic mb-6 animate-slide-up">
+            with a guide who feels like family
+          </p>
+
+          {/* Decorative divider */}
+          <div className="flex items-center justify-center gap-3 mb-6 opacity-80">
+            <span className="h-px w-12 bg-[#e8c97a]/60" />
+            <span className="text-[#e8c97a] text-xs">✦</span>
+            <span className="text-[#e8c97a] text-xs">✦</span>
+            <span className="text-[#e8c97a] text-xs">✦</span>
+            <span className="h-px w-12 bg-[#e8c97a]/60" />
+          </div>
+
+          <p className="text-sm sm:text-base md:text-lg mb-8 sm:mb-10 text-white/85 max-w-2xl mx-auto animate-slide-up leading-relaxed">
+            Pearaing Biodiversity Conservation, officially registered with the Cambodian government, opens private access to Cambodia's rarest birds and wild landscapes — at your rhythm, with guides who live the mission.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up max-w-md sm:max-w-none mx-auto">
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => setShowPopup(true)}
+              className="w-full sm:w-auto rounded-full px-8 py-6 text-base border-[#c98a3a]/70 bg-[#2a1a0e]/40 backdrop-blur-sm text-white hover:bg-[#3a2516]/60 hover:text-white hover:border-[#e8c97a]"
+            >
+              <Compass className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+              Book your tour
+            </Button>
+            <Link to="/tours" className="w-full sm:w-auto">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto rounded-full px-8 py-6 text-base bg-[#d9722e] hover:bg-[#c2611f] text-white shadow-[0_10px_30px_-10px_rgba(217,114,46,0.6)]"
+              >
+                <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                Discover our tours
+              </Button>
+            </Link>
+          </div>
+          <div className="flex gap-2 justify-center mt-10">
             {heroSlides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? "bg-white scale-125" : "bg-white/50"
+                className={`h-[3px] rounded-full transition-all duration-300 ${
+                  currentSlide === index ? "w-10 bg-[#e8c97a]" : "w-6 bg-white/40"
                 }`}
               />
             ))}
