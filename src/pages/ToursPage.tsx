@@ -11,6 +11,7 @@ import TourDetailsPopup from "@/components/TourDetailsPopup";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-storks.jpg.asset.json";
+import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo.png.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
