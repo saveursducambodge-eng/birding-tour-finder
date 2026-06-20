@@ -448,14 +448,34 @@ const ToursPage = () => {
 
         {/* Tours Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredTours.map((tour) => <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
-              {tour.images && tour.images.length > 1 ? (
-                <TourImageSlider images={tour.images} alt={tour.title} />
-              ) : (
-                <div className="relative aspect-[3/2] overflow-hidden">
-                  <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
-                </div>
-              )}
+          {filteredTours.map((tour) => {
+            const d = (tour.duration || "").toLowerCase();
+            let durationLabel = "";
+            const nightMatch = d.match(/(\d+)\s*day/);
+            if (nightMatch) {
+              const n = parseInt(nightMatch[1], 10);
+              durationLabel = `${n} ${n === 1 ? "DAY" : "DAYS"}`;
+            } else if (d.includes("half")) {
+              durationLabel = "HALF DAY";
+            } else if (d.includes("full")) {
+              durationLabel = "1 DAY";
+            }
+            return (
+            <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
+              <div className="relative">
+                {tour.images && tour.images.length > 1 ? (
+                  <TourImageSlider images={tour.images} alt={tour.title} />
+                ) : (
+                  <div className="relative aspect-[3/2] overflow-hidden">
+                    <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
+                  </div>
+                )}
+                {durationLabel && (
+                  <span className="absolute bottom-3 left-3 z-20 bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none">
+                    {durationLabel}
+                  </span>
+                )}
+              </div>
               
               <CardContent className="p-6">
                 <h3 className="font-serif text-xl text-nature-forest mb-2 line-clamp-2">
@@ -501,7 +521,8 @@ const ToursPage = () => {
                   </Button>
                 </div>
               </CardContent>
-            </Card>)}
+            </Card>
+          );})}
           <a href="#plan-your-trip" className="block group">
             <Card className="h-full min-h-[380px] flex flex-col items-center justify-center text-center p-8 bg-sage-light/40 border-2 border-dashed border-nature-sage hover:border-nature-forest hover:shadow-xl transition-all duration-300">
               <Calendar className="w-12 h-12 text-nature-forest mb-4" />
