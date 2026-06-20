@@ -11,6 +11,7 @@ import TourDetailsPopup from "@/components/TourDetailsPopup";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-storks.jpg.asset.json";
+import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo.png.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -286,14 +287,14 @@ const ToursPage = () => {
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
     id: 51,
-    title: "Changkran Roy Birding Tour – 2 Days, 1 Night | Cambodia Birdwatching Experience",
+    title: "Changkran Roy Birding Tour – 2 Days, 1 Night | Cambodia",
     description: "Discover the hidden birding paradise of Changkran Roy, a remote and biodiverse forest landscape in northern Cambodia. This two-day, one-night adventure takes you deep into mixed deciduous and semi-evergreen forest mosaics, home to a remarkable variety of woodpeckers, raptors, owls, and forest specialties rarely seen elsewhere in Southeast Asia.\n\nGuided by experienced Pearaing birding guides, you will explore quiet forest trails at dawn and dusk — the most productive hours for spotting key species. Overnight at a simple community-based eco-camp allows for evening owling sessions and an authentic taste of rural Cambodian life. This tour is ideal for keen birders, photographers, and travellers seeking an off-the-beaten-path wildlife experience that directly supports local conservation.\n\nPhoto coming soon — a stunning gallery of Changkran Roy will be added shortly.",
     duration: "2 Days / 1 Night",
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: bird1,
-    images: [bird1],
+    image: changkranRoyAsset.url,
+    images: [changkranRoyAsset.url],
     category: "multi-day",
     highlights: ["Multiple woodpecker species", "Forest raptors & owls", "Night walk for nightjars & owls", "Community eco-camp stay", "Off-the-beaten-path trails", "Conservation-based tourism"],
     rating: 4.8,
