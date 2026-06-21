@@ -52,7 +52,7 @@ const temples = [
     image: angkorSunriseImg,
     location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -62,7 +62,7 @@ const temples = [
     image: banteaySreiNewImg,
     location: "Angkor Thom",
     description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -72,7 +72,7 @@ const temples = [
     image: kampongPhlukImg,
     location: "Tonle Sap Lake",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -82,7 +82,7 @@ const temples = [
     image: kulenWaterfallImg,
     location: "Siem Reap Province",
     description: "The 'Citadel of Women' is renowned for its intricate pink sandstone carvings, considered the finest example of classical Khmer art.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -92,7 +92,7 @@ const temples = [
     image: bengMealeaNewImg,
     location: "Preah Vihear Province",
     description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -112,7 +112,7 @@ const temples = [
     image: kompongKhleangImg,
     location: "Siem Reap Province",
     description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -122,7 +122,7 @@ const temples = [
     image: banteayChhmarImg,
     location: "Banteay Meanchey",
     description: "One of the largest and most mysterious Angkorian temples, featuring unique multi-armed Avalokiteshvara carvings and remarkably few tourists.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -132,7 +132,7 @@ const temples = [
     image: preahVihear2DayImg,
     location: "Angkor",
     description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -153,7 +153,7 @@ const temples = [
     image: preahKhanKampongSvayImg,
     location: "Preah Vihear Province",
     description: "One of Cambodia's most remote and impressive temple complexes, spanning over 5 square kilometers. This vast jungle-engulfed site was once a major city of the Khmer Empire.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "Full Day (10–12 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -163,7 +163,7 @@ const temples = [
     image: preahVihearFulldayImg,
     location: "Preah Vihear Province",
     description: "Journey to the breathtaking UNESCO World Heritage temple perched atop a 525-meter cliff, offering unparalleled panoramic views and exceptional Khmer architectural masterpieces.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "Full Day (10–12 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -173,7 +173,7 @@ const temples = [
     image: essentialCambodia5DayImg,
     location: "Siem Reap",
     description: "Experience the very best of Siem Reap in 5 unforgettable days — from Angkor Wat sunrise to jungle temples, floating villages, Kulen Mountain, and vibrant night markets.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "5 Days / 4 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -183,7 +183,7 @@ const temples = [
     image: battambangImg,
     location: "Battambang",
     description: "Explore Cambodia's charming second city — French colonial architecture, the iconic Bamboo Train, bat caves, hilltop temples, and authentic village workshops.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "3 Days / 2 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -193,7 +193,7 @@ const temples = [
     image: phnomPenhImg,
     location: "Phnom Penh",
     description: "Discover Cambodia's vibrant capital — the Royal Palace, Silver Pagoda, National Museum, Tuol Sleng, Killing Fields, and bustling markets across two action-packed days.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "2 Days / 1 Night",
     groupSize: "2 people",
     country: "Cambodia",
@@ -203,7 +203,7 @@ const temples = [
     image: kohKerImg,
     location: "Siem Reap, Battambang, Phnom Penh, Kratie, Stung Treng, Preah Vihear",
     description: "An epic journey through Cambodia's most spectacular destinations — from Angkor temples to Mekong dolphins, remote wilderness, and cliff-top temples.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "10 Days / 9 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -213,7 +213,7 @@ const temples = [
     image: banteayChhmarImg,
     location: "All Cambodia",
     description: "The ultimate Cambodia experience — 15 days covering temples, colonial cities, Mekong dolphins, remote northeast, cliff-top temples, and pre-Angkorian heritage sites.",
-    price: "$ people",
+    price: "$150 two people",
     duration: "15 Days / 14 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -278,30 +278,17 @@ const TempleToursPage = () => {
 
       <div className="pt-16">
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <section className="relative py-32 md:py-44 overflow-hidden">
           <div className="absolute inset-0">
             <img src={templeToursHero} alt="Angkor Wat at sunset" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-[#3d2817]/40 to-[#1a1208]/70" />
+            <div className="absolute inset-0 bg-black/50" />
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
-            <h1 className="font-light tracking-tight leading-[0.95] mb-6 animate-fade-in">
-              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white">Ancient</span>
-              <span className="block italic font-normal text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#e8c97a] mt-2">
-                Temples
-              </span>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
+              Temple Tours
             </h1>
-            
-            {/* Decorative divider */}
-            <div className="flex items-center justify-center gap-3 mb-6 opacity-90">
-              <span className="h-px w-12 bg-[#e8c97a]/70" />
-              <span className="text-[#e8c97a] text-xs">✦</span>
-              <span className="text-[#e8c97a] text-xs">✦</span>
-              <span className="text-[#e8c97a] text-xs">✦</span>
-              <span className="h-px w-12 bg-[#e8c97a]/70" />
-            </div>
-
-            <p className="text-xl sm:text-2xl text-white/95 max-w-2xl mx-auto font-light leading-relaxed">
-              Explore Cambodia's magnificent architectural wonders and sacred heritage sites at your own rhythm.
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
+              Explore Cambodia's magnificent temples and cultural heritage sites
             </p>
           </div>
         </section>

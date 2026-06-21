@@ -134,7 +134,7 @@ export default {
         "float": "var(--shadow-float)",
       },
       fontFamily: {
-        serif: ["Cormorant Garamond", "Playfair Display", "serif"],
+        serif: ["Playfair Display", "serif"],
         sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
