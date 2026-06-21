@@ -395,19 +395,31 @@ const ToursPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/90 to-nature-forest/60 z-10" />
-        <img src={birdTourHero} alt="Bird watching tours in Cambodia" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
-          <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight drop-shadow-lg">
-              Discover Cambodia's
-              <span className="text-nature-sand block">Rare Birds</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/95 drop-shadow-md">
-              Expert-guided birding tours through Cambodia's most pristine wilderness areas
-            </p>
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={birdTourHero} alt="Bird watching tours in Cambodia" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-[#3d2817]/40 to-[#1a1208]/70" />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+          <h1 className="font-light tracking-tight leading-[0.95] mb-6 animate-fade-in">
+            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white">Birding</span>
+            <span className="block italic font-normal text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#e8c97a] mt-2">
+              Adventures
+            </span>
+          </h1>
+          
+          {/* Decorative divider */}
+          <div className="flex items-center justify-center gap-3 mb-6 opacity-90">
+            <span className="h-px w-12 bg-[#e8c97a]/70" />
+            <span className="text-[#e8c97a] text-xs">✦</span>
+            <span className="text-[#e8c97a] text-xs">✦</span>
+            <span className="text-[#e8c97a] text-xs">✦</span>
+            <span className="h-px w-12 bg-[#e8c97a]/70" />
           </div>
+
+          <p className="text-xl sm:text-2xl text-white/95 max-w-2xl mx-auto font-light leading-relaxed">
+            Expert-guided birding tours through Cambodia's most pristine wilderness and rare bird habitats.
+          </p>
         </div>
       </section>
 
