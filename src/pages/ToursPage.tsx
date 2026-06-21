@@ -156,7 +156,7 @@ const ToursPage = () => {
     duration: "Half Day (4 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$122 Per Person",
+    price: "$144 Per Person",
     image: pearaingBio2,
     images: [pearaingBio2, pearaingBio3, pearaingBio4, pearaingBio5, pearaingBio7, pearaingBio8, pearaingBio9, pearaingBio10],
     category: "cultural",
