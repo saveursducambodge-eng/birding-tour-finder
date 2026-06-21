@@ -106,45 +106,29 @@ const Homepage = () => {
         {/* Warm earthy gradient overlay (inspired by Saveurs du Cambodge) */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-[#3d2817]/30 to-[#1a1208]/60" />
 
-        <div className="relative z-10 text-center text-white max-w-5xl px-4 sm:px-6 py-8">
-          {/* Top trust badges row */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8 sm:mb-10 animate-fade-in">
-            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-white/25 bg-white/10 backdrop-blur-sm text-[11px] sm:text-xs text-white/95">
-              <span className="text-[#e8c97a] tracking-widest">★★★★★</span>
-              <span>5.0 · TripAdvisor</span>
-            </span>
-            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-white/25 bg-white/10 backdrop-blur-sm text-[11px] sm:text-xs text-white/95">
-              <Award className="w-3.5 h-3.5 text-[#e8c97a]" />
-              Certified Conservation Tours
-            </span>
-            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full border border-white/25 bg-white/10 backdrop-blur-sm text-[11px] sm:text-xs text-white/95">
-              <Compass className="w-3.5 h-3.5 text-[#e8c97a]" />
-              15+ years of experience
-            </span>
-          </div>
-
-          <h1 className="font-serif font-light tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 animate-fade-in">
-            <span className="block">Authentic</span>
-            <span className="block italic text-[#e8c97a] font-normal" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+        <div className="relative z-10 text-center text-white max-w-5xl px-4 sm:px-6 py-8" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+          <h1 className="font-light tracking-tight leading-[0.95] mb-8 animate-fade-in" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+            <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">Authentic</span>
+            <span className="block italic font-normal text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] text-[#e8c97a] mt-2">
               Cambodia
             </span>
           </h1>
 
-          <p className="font-serif text-lg sm:text-xl md:text-2xl text-white/90 italic mb-6 animate-slide-up">
+          <p className="text-xl sm:text-2xl md:text-3xl text-white/95 mb-6 animate-slide-up font-light" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
             with a guide who feels like family
           </p>
 
           {/* Decorative divider */}
-          <div className="flex items-center justify-center gap-3 mb-6 opacity-80">
-            <span className="h-px w-12 bg-[#e8c97a]/60" />
+          <div className="flex items-center justify-center gap-3 mb-8 opacity-90">
+            <span className="h-px w-16 bg-[#e8c97a]/70" />
             <span className="text-[#e8c97a] text-xs">✦</span>
             <span className="text-[#e8c97a] text-xs">✦</span>
             <span className="text-[#e8c97a] text-xs">✦</span>
-            <span className="h-px w-12 bg-[#e8c97a]/60" />
+            <span className="h-px w-16 bg-[#e8c97a]/70" />
           </div>
 
-          <p className="text-sm sm:text-base md:text-lg mb-8 sm:mb-10 text-white/85 max-w-2xl mx-auto animate-slide-up leading-relaxed">
-            Pearaing Biodiversity Conservation, officially registered with the Cambodian government, opens private access to Cambodia's rarest birds and wild landscapes — at your rhythm, with guides who live the mission.
+          <p className="text-base sm:text-lg md:text-xl mb-10 text-white/90 max-w-2xl mx-auto animate-slide-up leading-relaxed font-light" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+            For 15+ years, Pearaing Biodiversity Conservation has opened private access to Cambodia's rarest birds, ancient temples and wild landscapes — at your rhythm, with guides who live the mission.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up max-w-md sm:max-w-none mx-auto">
