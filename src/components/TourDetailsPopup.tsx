@@ -89,25 +89,25 @@ const TourDetailsPopup = ({
             </p>
 
             <div className="space-y-4">
-              <h3 className="text-green-600 font-semibold text-lg">Day 1: Arrival in Siem Reap and Birding Near Siem Reap</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 2: Full Day Birding At Angkor Complex</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 3: full day birding at Prek Toal Waterbird Sanctuary (overnight at Siem Reap)</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 4: full day birding at Ang Trapeang Thmor Sarus Crane (overnight at Siem Reap)</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 5: Full Birding at Chang Kran Roy, night in Changkran Roey Camp</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 6: Full day bird at Chang Kran Roey, night in Siem Reap</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 7: AM birding at Florican Grassland, PM birding and overnight at Be Treed Adventure</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 8 Full Bird at Be Treed Adventure</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 9: AM birding at Be Treed, PM Birding and overnight at Tmatboey</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 10: full day birding at Tmatboey (overnight at Tmatboey lodge)</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 11: AM birding at Tmatboey, PM birding and overnight at Vulture Restaurant</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 12: AM birding at Vulture restaurant, PM birding and overnight at Kratie</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 13: AM birding at Kratie, PM birding and overnight at Keo Seima Wildlife Sanctuary</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 14: Full day birding at Jahoo Gibbon Camp</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 15: AM birding at Jahoo Gibbon Camp, PM birding at Sean Monorom</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 16: Full birding at Dak Dam</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 17: AM birding Koe Seima, PM birding at Cambodian Tailorbird and Pursat</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 18: AM birding at Pursat Grassbird, PM birding at Cambodian Tailorbird, and overnight at Phnom Penh</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 19: Full day city tours and transfer to Phnom Penh airport</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 1: Arrival in Siem Reap and Birding Near Siem Reap</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 2: Full Day Birding At Angkor Complex</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 3: full day birding at Prek Toal Waterbird Sanctuary (overnight at Siem Reap)</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 4: full day birding at Ang Trapeang Thmor Sarus Crane (overnight at Siem Reap)</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 5: Full Birding at Chang Kran Roy, night in Changkran Roey Camp</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 6: Full day bird at Chang Kran Roey, night in Siem Reap</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 7: AM birding at Florican Grassland, PM birding and overnight at Be Treed Adventure</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 8 Full Bird at Be Treed Adventure</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 9: AM birding at Be Treed, PM Birding and overnight at Tmatboey</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 10: full day birding at Tmatboey (overnight at Tmatboey lodge)</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 11: AM birding at Tmatboey, PM birding and overnight at Vulture Restaurant</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 12: AM birding at Vulture restaurant, PM birding and overnight at Kratie</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 13: AM birding at Kratie, PM birding and overnight at Keo Seima Wildlife Sanctuary</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 14: Full day birding at Jahoo Gibbon Camp</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 15: AM birding at Jahoo Gibbon Camp, PM birding at Sean Monorom</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 16: Full birding at Dak Dam</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 17: AM birding Koe Seima, PM birding at Cambodian Tailorbird and Pursat</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 18: AM birding at Pursat Grassbird, PM birding at Cambodian Tailorbird, and overnight at Phnom Penh</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 19: Full day city tours and transfer to Phnom Penh airport</h3>
             </div>
 
             <div className="space-y-3">
@@ -117,93 +117,93 @@ const TourDetailsPopup = ({
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-green-600 font-semibold text-lg">Day 1: Arrival in Siem Reap</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 1: Arrival in Siem Reap</h3>
               <p className="text-muted-foreground">
                 Arrive in Cambodia's bustling capital, AM or PM, Siem Reap. Spend the day acclimatizing and visiting local attractions like the Phnom Kroam or Chrev. In the evening, prepare for your birdwatching adventure by meeting your guide for a briefing.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 2: Siem Reap and Angkor Wat</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 2: Siem Reap and Angkor Wat</h3>
               <p className="text-muted-foreground">
                 Combine culture and birding as you explore the Angkor Wat complex and its surrounding forests. Keep an eye out for species like the Forest Wagtail, White-throated Rock Thrush, Hinan blue flycatcher, Asian Barred Owlet, and Black Baza. The ancient temples offer an enchanting backdrop for birdwatching.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 3: Prek Toal Bird Sanctuary</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 3: Prek Toal Bird Sanctuary</h3>
               <p className="text-muted-foreground">
                 Prek Toal, a world-renowned bird sanctuary on the Tonle Sap Lake. Explore the sanctuary by boat and spot rare species. Look for the Oriental Darter, Painted Stork, Milky Stork, Greater Adjutant, Lesser Adjutant, Egrets, Heron, Ibis, Cormorants, and Spot-billed Pelican. These floodplains are also crucial habitats for migratory birds. Stay overnight in Siem Reap.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 4: Ang Trapeang Thmor - Sarus Crane</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 4: Ang Trapeang Thmor - Sarus Crane</h3>
               <p className="text-muted-foreground">
                 Head to Ang Trapeang Thmor, a wetland sanctuary northwest of Siem Reap. This area is a stronghold for the endangered Sarus Crane, Spotted Wood Owl, Greater Spotted Eagle, Eastern Marsh Harrier, Pied Harrier, Black Kite, Gray-headed Swamphen, and other wetland birds like the Comb Duck. Stay overnight in Siem Reap.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 5 Siem Reap to Chong Kran Roy</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 5 Siem Reap to Chong Kran Roy</h3>
               <p className="text-muted-foreground">
                 By the early morning, leave from Siem Reap Town heading to Chong Kran Roy, we will start travelling towards our next birding site of Chong Kran Roy, where we will stay in a tented camp. In the late afternoon, we visit a hide set up at an area that attracts birds, with Bar-bellied Pitta, Coral-billed ground cuckoo, Siamese fireback, and Siberian blue robin being the birds we most hope to see here. Along with this prize, we also hope to see a Green-legged partridge and an Orange-breasted trogon, all species that are very hard to see under normal circumstances. Commoner birds here include Black-naped Monarch, Green-eared Barbet, Lineated Barbet, Puff-throated Babbler, and Hinan Blue Flycatcher, Gray-eyed Bulbul.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 6, Chong Kran Roy to Siem Reap</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 6, Chong Kran Roy to Siem Reap</h3>
               <p className="text-muted-foreground">
                 In the early morning, we revisit the hide to give us another chance to see the key species that visit, including Bar-bellied Pitta and Siberian Blue Robin. Waiting for the birds to come is a nice way to start the morning with other species we might expect, including Red Junglefowl and Emerald Dove. We plan to spend most of the day in the woodlands here with plenty of different species to look for. Spending the whole morning in the forest, birds like Thick-billed Green Pigeon, Green-eared Barbet, and Asian Fairy Bluebird can be expected on any fruiting trees. The list of possibilities is quite long, and although we only have a short time at this location, it is a good time to be here with many species vocal as the breeding season gets into full swing. With that in mind, we should have a decent chance at finding Banded Broadbill, the funny little Heart-spotted Woodpecker, or even Banded Kingfisher. Bring all your luck charms, keep your fingers crossed, and there could even be the possibility of the Coral-billed Ground Cuckoo, as this is its most vocal time of the year. By mid-afternoon, we will begin the drive back to our hotel at Siem Reap, arriving in plenty of time to have a shower and relax a bit before dinner.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 7: BeTreed Adventure and Bengal Florican Grasslands</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 7: BeTreed Adventure and Bengal Florican Grasslands</h3>
               <p className="text-muted-foreground">
                 Visit the grasslands near Kampong Thom, one of the few remaining habitats for the critically endangered Bengal Florican, Sarus Crane, and Manchurian Reed Warbler. The open grasslands also attract raptors like the Eastern Marsh Harrier and storks, egrets, and more than 60 species of birds have been found over there. In the late afternoon, we will check into the BeTreed homestay and local guide. After lunch and rest, join your guide for an introductory birding walk along forest trails. The dry forest is home to Siamese Fireback, Green Peafowl, Greater Yellownape woodpecker, Burmese Shrike, Asian Barred Owlet, Rufous Treepie, and flocks of bulbuls and Drongos. As dusk falls, listen for the haunting calls of collared scops owls and perhaps spotlight nocturnal species such as nightjars or a rare brown wood owl. Dinner is served at the eco-lodge, prepared with local ingredients. Overnight in your jungle lodge, lulled by the sounds of cicadas and distant gibbon songs.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 8: Full day Birding at BeTreed Adventure</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 8: Full day Birding at BeTreed Adventure</h3>
               <p className="text-muted-foreground">
                 All day bird watching at BeTreed, BeTreed Adventures is a remote ecotourism homestay situated in Preah Vihear Province, inside the Phnom Tnout Phnom Pok Wildlife Sanctuary. It's about 2-3 hours by road from Bengal Florican Grassland. This intimate off-grid site helps conserve 42,000+ hectares of dry dipterocarp forest and offers support for local community conservation efforts. Trekking to the varied habitats from Dry to Evergreen Forest, taking a challenging hike to the top of the mountain, and exploring the Angkorian era "cave-temples. Wake up before sunrise for coffee and depart on a dawn birdwatching trek. Early morning is the most active period for birds: look for White-browed Fantail, Scarlet Minivet, Asian Paradise Flycatcher, Blossom-headed Parakeet, and flocks of woodpeckers tapping on old dipterocarp trunks. Lucky observers may encounter the Crested Serpent Eagle circling overhead or hear the deep calls of the Banded Broadbill hidden in the canopy. After breakfast back at the lodge, continue with a longer hike into the core forest. The mixed habitat of bamboo groves, grassland patches, and rocky outcrops provides chances to see Indochinese Bushlark, Rufous-winged Buzzard, Common Iora, Brown Prinia, and the Blue-winged Pitta during migration months. Return to camp for lunch and siesta in a hammock. In the afternoon, take a forest edge trail leading to Prasat Preah Puol, an Angkor-era temple ruin reclaimed by trees. Along the way, keep binoculars ready for Green Peafowl displaying, Lineated Barbet, and Hainan Blue Flycatcher. As evening approaches, climb the viewpoint ridge or try the zipline crossing: both offer spectacular panoramas and good chances for raptors such as Oriental Honey Buzzard and Shikra. After sunset, join a short night walk for possible sightings of owls, nightjars, and even civets. Night at BeTreed eco-treehouse or stilt house
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 9, Be Treed adventure – Tmatboey - Giant ibis</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 9, Be Treed adventure – Tmatboey - Giant ibis</h3>
               <p className="text-muted-foreground">
                 Rise early once more for a final dawn birdwatching walk, targeting species you may have missed. Dry forests often reward patient birders: Black-headed Woodpecker, White-rumped Shama, Velvet-fronted Nuthatch, and winter visitors like Taiga Flycatcher are frequently encountered. This is also a good time to hear gibbons calling across the valley, a magical soundtrack to end your stay. Return to the lodge for breakfast, pack your belongings, and bid farewell to the conservation team. Depart late morning for Tmatboey Giant Ibis. The drive takes about 2-3 hours to reach Tmatboey, passing through rural farmland and small Khmer villages. When we arrive at Tmatboey and meet our local guide at 3:30 PM, We Head into the surrounding dry deciduous forest, one of Southeast Asia's rarest ecosystems. Local guides know the seasonal waterholes where ibises often feed. Target species include: Giant Ibis – Cambodia's national bird, Critically Endangered, and the star of Tmatboey, White-shouldered Ibis – another globally threatened species. Other sightings may include the Black-headed Woodpecker, Yellow-crowned Woodpecker, Burmese Shrike, Blossom-headed Parakeet, Rufous-winged Buzzard, and Lesser Adjutant. At 6 PM, return to the lodge and enjoy dinner back at the lodge. Optional night spotlighting may reveal Collared Scops Owl, Spotted Owlet, Large-tailed Nightjar, or even Barn Owl around the clearing. Overnight at Tmatboey Eco-Lodge.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 10: Full Birding Day: Giant Ibis, White-shouldered Ibis & Forest Specialists</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 10: Full Birding Day: Giant Ibis, White-shouldered Ibis & Forest Specialists</h3>
               <p className="text-muted-foreground">
                 Wake before sunrise with coffee/tea. Your destination: seasonal wetlands and forest clearings where the Giant Ibis feeds at dawn. With luck, you may watch Cambodia's national bird foraging in a shallow pond—an unforgettable experience. After breakfast in the field, continue birding along dry forest trails. This habitat is excellent for species of woodpeckers, Brown Wood Owl, Spotted Wood Owl, Brown Fish Owl, Blossom-headed Parakeet, White-browed Fantail, Common Flameback, Large Cuckooshrike, and Velvet-fronted Nuthatch. Return to the lodge for lunch and a midday rest. In the afternoon, visit another site where White-shouldered Ibis often gather, as well as areas supporting Greater Racket-tailed Drongo, Green Bee-eater, Blue-winged Pitta (in migration months), and Siamese Fireback. Evening birding walks near the village, with a chance of spotting Collared Scops Owl, Barn Owl, or even a Large-tailed Nightjar at dusk. Dinner and overnight at Tmatboey Eco-lodge. Accommodation: Tmatboey Eco-lodge
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 11 – Morning Birding Tmatboey & Departure</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 11 – Morning Birding Tmatboey & Departure</h3>
               <p className="text-muted-foreground">
                 If there are still any key species that we are searching for, we can use a final few hours on our last morning at Tmat Boey. If local guides have discovered a roosting tree, we might be lucky enough to experience the sight and sound of the Giant Ibis as it wakes at its roost tree, if we have not already been amazed by this prehistoric scene. After our final morning at Tmat Boey, we will move to the small town (Dung Plet Village) of Boeng Toal Vultures Restaurant. By mid-morning, we will transfer to the Vulture restaurant at Boeg Toal, where food for the vultures will have been pre-organized to be provided at the right time for our visit. After doing some birding around the camp, which is a great location for Yellow-crowned Woodpecker and White-browed Fantail, we will visit the large hide constructed for vulture-viewing, where we hope to see several species loafing in the trees nearby if not already feeding on a carcass. Overnight camping in the forest.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 12, Boeng Toal (Vulture Restaurant) to Kratei Mekong Wagtail</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 12, Boeng Toal (Vulture Restaurant) to Kratei Mekong Wagtail</h3>
               <p className="text-muted-foreground">
                 Birdwatching at the Vulture Restaurant in northern Cambodia is one of the most unusual and rewarding wildlife experiences in Southeast Asia. Unlike many birding sites where the focus is on forest songbirds or waterbirds, here the highlight is the chance to see three species of critically endangered vultures—the White-rumped Vulture, Slender-billed Vulture, and Red-headed Vulture all in one place. The "restaurant" is not for people but for birds. It is a conservation project run by the local community in Dongphlet village (Preah Vihear Province) with support from NGOs such as WCS. Since natural carrion has become scarce due to habitat loss, hunting, and declining wild ungulates, villagers organize controlled feedings by placing carcasses in a forest clearing. This attracts large numbers of vultures that can feed safely, while visitors watch from a discreet hide. The entrance fees and visitor support provide vital income for the community and a direct incentive to protect these globally threatened species. Visiting birders pay for a cow with which to feed the birds, which will hopefully result in close-up sightings of Red-headed, Slender-billed, and White-rumped Vultures viewed from within a hide. Watching these endangered birds should be a very memorable experience and one that presents some great photo opportunities. Some other raptors or mammals may come to join the feeding frenzy, but seeing some of Asia's most endangered raptors will make for some exciting birding. After our final morning at Vulture restaurant, we will continue to Kratie, nestled alongside the Mekong River. The journey takes around 4 hours, and we will stop in Stung Treng for lunch. The hotel we stay in here is very pleasant with good facilities, and it is in front of the Mekong River, which will be nice after some of the more rustic accommodations over the last few days. On the same day, late afternoon, After we check in the hotel and then We will procced to marsh near Kratie in the late afternoon, where we should see large numbers of weavers, including Grey-headed Swamphen, Pheasant-tailed Jacanas, Brown-winged Jacanas Oriental Reed Warbler, Asian Golden and Baya Weaver, Golden-headed Cisticola, Yellow-bellied prinia, Dusky Warbler, and other wetland birds, and sometimes you will have a chance to see Small Pratincole flying over the rice fields. We spent just one night in our hotel in Kratei.
               </p>
 
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 14 Full day birding at Jahoo Gibbon Camp</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 14 Full day birding at Jahoo Gibbon Camp</h3>
               <p className="text-muted-foreground">
                 A four-day, three-night birdwatching adventure through Jahoo in Keo Seima Wildlife Sanctuary and the Dak Dam Highlands of Mondulkiri offers travelers one of the most immersive experiences in Cambodia's eastern forests, combining rare bird sightings, wildlife encounters, and deep connections with the indigenous Bunong community. The journey usually begins in Sen Monorom, a tranquil town nestled amid rolling hills, from where visitors transfer to Jahoo Gibbon Camp, a rustic yet comfortable bamboo eco-camp set at the forest edge. Jahoo is not only a conservation hub but also a model of community-based ecotourism, where the Bunong guides lead treks into evergreen and mixed deciduous forest to search for elusive species that are difficult to see elsewhere. At dawn, the forest awakens with the echoing calls of the southern yellow-cheeked crested gibbon, and birdwatchers rise early to catch the magical chorus alongside the wing beats of Greater Hornbills overhead. Jahoo is also known for sightings of Green Peafowl, a species that once roamed widely in Southeast Asia but now survives in protected areas like Keo Seima.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 15 Jahoo Gibbon Camp to Sean Monrom City</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 15 Jahoo Gibbon Camp to Sean Monrom City</h3>
               <p className="text-muted-foreground">
                 Before sunrise to experience Jahoo's dawn chorus. The haunting calls of the Yellow-cheeked gibbon and Black-shanked douc echo across the forest, and are joined by birdlife such as Orange-breasted Trogon, Red-headed Trogon, Banded Kingfisher, Flycatchers, Warblers, Barbets, and feeding flocks of broadbills. After breakfast, a final exploration of the riverine forest may reveal sunbirds, flowerpeckers, and kingfishers. Returning to camp late afternoon to have lunch. At 2:30 PM, we will move from Jahoo for birding near Jahoo Camp to look at the Green Peafowl. After lunch, we move to Sean Monorom to check into our Accommodation and leave for Dak Dam for birding. Dak Dam is a highland plateau close to the Vietnamese border, where the climate is cooler, the forests denser, and the avian community distinct. Dak Dam is one of Cambodia's premier birding hotspots, harboring species adapted to montane and hill evergreen habitats. Arriving in the late afternoon, we will explore trails looking for White-cheeked Laughingthrush, Orange-breasted laughingthrush, Silver-eared Mesia, which are moving noisily in flocks, Indochinese Barbet perched on fruiting trees, or woodpeckers drumming high above the canopy. we will be birding until dark and then head to the city dinner and the night.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 16 Full Day to Sean Monrom City – Dak Dam</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 16 Full Day to Sean Monrom City – Dak Dam</h3>
               <p className="text-muted-foreground">
                 Today is dedicated entirely to exploring the diverse habitats of Dak Dam. After a pre-dawn wake-up call, we will trek into the misty highland forest, where birding can be superb. The early hours often bring encounters with mixed flocks of minivets, Bulbul, shrikes, yuhinas, and Mesia, Maroon Oriole. White-cheeked Laughingthrush, Orange-breasted laughingthrush, which move in feeding waves through the canopy. Keen birders hope for rarities such as Pale-capped Pigeon or the elusive Blue Pitta, while the undergrowth hides species like Germain's peacock-pheasant. As you ascend gentle slopes, you may encounter open clearings where raptors such as the Crested Serpent-Eagle or Black Eagle soar. By late morning, you pause for breakfast near the spot for bird watching, where smaller species like Sunbirds and Flowerpeckers are often active. In the afternoon, after we have lunch in the hotel, you will explore the Dak Dam for new trails leading deeper into the forest. We will birding until dark, heading back to the City for dinner and the night.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 17: Sean Monorom to the Cambodian Tailorbird and the Pursat Grassland</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 17: Sean Monorom to the Cambodian Tailorbird and the Pursat Grassland</h3>
               <p className="text-muted-foreground">
                 After spending a full morning at Sean Monorom, we will continue moving to Pursat and stopping near Phnom City for the Cambodian Tailorbird along the way to Phnom Penh City. The Cambodian Tailorbird, which is a new endemic species that was found in Cambodia in the year 2009, in the outskirts of Phnom Penh city, during avian influenza checks. And then continue to Pursat Grassland for the Chinese Grassbird and other wetland birds. It will be night in Pursat city.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 18: Pursat to Phnom Penh</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 18: Pursat to Phnom Penh</h3>
               <p className="text-muted-foreground">
                 On our final morning of birding in Cambodia, we will wake up very early to bring breakfast in the field in the Pursat grasslands. Locals in this area are part of a new conservation project to protect the grasslands and their key species, which are the Chinese Grassbird and Yellow-breasted Bunting. This poorly-known and cryptic species has a very patchy and thinly-spread distribution throughout Asia, having been wiped out because of habitat loss in many places. A population was discovered near Pursat a few years ago, and by being out in the right habitat in the early morning, we have an excellent chance of observing at least one Chinese Grassbird. In addition, we have a chance of finding small groups of critically endangered species, the Yellow-breasted Bunting. These grasslands provide an important wintering habitat and, as such, they add another dimension to the importance of conservation here. We also have another chance to see as well as other key species such as Manchurian Reed Warbler, Asian Golden Weavers, which should be performing a pre-migration song by now. Striated Grassbird, Oriental Pratincole, Red Avadavat, and the stunning Pied Harrier are also likely here. After lunch, we will begin to drive back towards the capital city, Phnom Penh, with one final star species to look for along the way again. The Cambodian Tailorbird is not uncommon in the right habitat, and there will be several places for us to stop to see it before we get to our hotel in Phnom Penh city. For overnight in Phnom Penh.
               </p>
 
-              <h3 className="text-green-600 font-semibold text-lg">Day 19: Phnom Penh City Tours and Transfer to Phnom Penh Airport</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 19: Phnom Penh City Tours and Transfer to Phnom Penh Airport</h3>
               <p className="text-muted-foreground">
                 The next day, we will transfer to Phnom Penh Airport or a hotel for departure, where we will bid each other goodbye.
               </p>

@@ -42,7 +42,7 @@ const PhnomPenhTourPopup = ({ isOpen, onClose }: PhnomPenhTourPopupProps) => {
             </div>
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 1: Royal Palace & Historical Sites</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 1: Royal Palace & Historical Sites</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Begin at the stunning Royal Palace and Silver Pagoda complex, home to the Emerald Buddha and a floor of 5,000 silver tiles. Visit the National Museum, showcasing the world's finest collection of Khmer sculpture. Afternoon visit to the sobering Tuol Sleng Genocide Museum (S-21) and the Choeung Ek Killing Fields memorial. Evening stroll along the scenic Riverside promenade.
               </p>
@@ -51,7 +51,7 @@ const PhnomPenhTourPopup = ({ isOpen, onClose }: PhnomPenhTourPopupProps) => {
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 2: Markets, Temples & Departure</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 2: Markets, Temples & Departure</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Morning visit to the bustling Central Market (Phsar Thmei) with its iconic Art Deco dome. Explore Wat Phnom, the hilltop temple that gives the city its name. Visit the Russian Market (Tuol Tom Poung) for souvenirs and local crafts. Optional visit to the Independence Monument and Koh Pich (Diamond Island). Depart in the afternoon.
               </p>

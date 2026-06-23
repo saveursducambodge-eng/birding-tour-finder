@@ -38,7 +38,7 @@ const PreahVihearTourPopup = ({ isOpen, onClose }: PreahVihearTourPopupProps) =>
 
             {/* Day 1 */}
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 1: Siem Reap to Preah Vihear</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 1: Siem Reap to Preah Vihear</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Your adventure begins with an early morning departure from Siem Reap, venturing into the heart of rural Cambodia. As you journey towards Preah Vihear Province, you'll make a captivating stop at local market, where you can explore a typical Cambodian village market and experience authentic local life.
               </p>
@@ -65,7 +65,7 @@ const PreahVihearTourPopup = ({ isOpen, onClose }: PreahVihearTourPopupProps) =>
 
             {/* Day 2 */}
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 2: Preah Vihear – Anlong Veng – Siem Reap</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 2: Preah Vihear – Anlong Veng – Siem Reap</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Rise early to visit the crown jewel of your tour—the magnificent Preah Vihear Temple. This UNESCO World Heritage Site, perched atop a 525-meter cliff, offers breathtaking views over the plains of Cambodia and the mountains of Thailand. Built during the height of the Khmer Empire, its impressive architecture and dramatic setting make it an unforgettable experience.
               </p>

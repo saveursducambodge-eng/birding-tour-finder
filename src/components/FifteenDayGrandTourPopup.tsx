@@ -42,7 +42,7 @@ const FifteenDayGrandTourPopup = ({ isOpen, onClose }: FifteenDayGrandTourPopupP
             </div>
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 1–3: Siem Reap & Angkor</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 1–3: Siem Reap & Angkor</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Comprehensive Angkor exploration including Small Circuit, Grand Circuit, Banteay Srei, Beng Mealea, Kampong Phluk floating village, and Kulen Mountain with its sacred waterfall and River of a Thousand Lingas.
               </p>
@@ -50,7 +50,7 @@ const FifteenDayGrandTourPopup = ({ isOpen, onClose }: FifteenDayGrandTourPopupP
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 4–5: Battambang</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 4–5: Battambang</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Explore Cambodia's charming second city. Bamboo Train, Phnom Sampeau bat caves, Wat Banan, Ek Phnom ruins, colonial architecture walking tour, and traditional village workshops for rice paper, fish paste, and knife-making.
               </p>
@@ -58,7 +58,7 @@ const FifteenDayGrandTourPopup = ({ isOpen, onClose }: FifteenDayGrandTourPopupP
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 6–7: Phnom Penh</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 6–7: Phnom Penh</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Cambodia's dynamic capital. Royal Palace, Silver Pagoda, National Museum, Tuol Sleng Museum, Killing Fields, Central Market, Russian Market, Riverside promenade, and Koh Pich Diamond Island.
               </p>
@@ -66,7 +66,7 @@ const FifteenDayGrandTourPopup = ({ isOpen, onClose }: FifteenDayGrandTourPopupP
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 8–9: Kratie & Mekong</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 8–9: Kratie & Mekong</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Drive along the Mekong to Kratie. Boat trip to see Irrawaddy freshwater dolphins, visit Phnom Sombok pagoda, explore Koh Trong island by bicycle, and discover the colonial architecture of Kratie town.
               </p>
@@ -74,7 +74,7 @@ const FifteenDayGrandTourPopup = ({ isOpen, onClose }: FifteenDayGrandTourPopupP
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 10–11: Stung Treng & Northeast</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 10–11: Stung Treng & Northeast</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Journey to the remote northeast. Visit Stung Treng's Mekong flooded forest, Ramsar wetland sites, and local indigenous communities. Explore the spectacular Mekong rapids and enjoy the pristine natural environment far from tourist crowds.
               </p>
@@ -82,7 +82,7 @@ const FifteenDayGrandTourPopup = ({ isOpen, onClose }: FifteenDayGrandTourPopupP
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 12–13: Preah Vihear & Remote Temples</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 12–13: Preah Vihear & Remote Temples</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Visit the UNESCO World Heritage Preah Vihear Temple on its dramatic clifftop. Explore the remote Koh Ker temple complex with its seven-tiered pyramid. Visit Beng Mealea, the jungle-engulfed temple considered a prototype of Angkor Wat.
               </p>
@@ -90,7 +90,7 @@ const FifteenDayGrandTourPopup = ({ isOpen, onClose }: FifteenDayGrandTourPopupP
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 14–15: Sambor Prei Kuk & Return</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 14–15: Sambor Prei Kuk & Return</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Visit the pre-Angkorian UNESCO World Heritage site of Sambor Prei Kuk in Kampong Thom, featuring unique octagonal towers set in peaceful forest. Return to Siem Reap or Phnom Penh for departure, with time for last-minute shopping and relaxation.
               </p>

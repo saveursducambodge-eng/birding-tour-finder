@@ -47,7 +47,7 @@ const EssentialCambodia5DayTourPopup = ({ isOpen, onClose }: EssentialCambodia5D
 
             {/* Day 1 */}
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2 flex items-center gap-2">
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2 flex items-center gap-2">
                 <Landmark className="w-4 h-4" /> Day 1 – Angkor Wat Sunrise & Main Temples
               </h4>
               <div className="text-muted-foreground leading-relaxed text-base space-y-2">
@@ -77,7 +77,7 @@ const EssentialCambodia5DayTourPopup = ({ isOpen, onClose }: EssentialCambodia5D
 
             {/* Day 2 */}
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">🌿 Day 2 – Grand Circuit & Banteay Srei</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">🌿 Day 2 – Grand Circuit & Banteay Srei</h4>
               <div className="text-muted-foreground leading-relaxed text-base space-y-2">
                 <p><strong>08:00 AM – Departure</strong></p>
                 <p><strong>Morning Temples</strong></p>
@@ -100,7 +100,7 @@ const EssentialCambodia5DayTourPopup = ({ isOpen, onClose }: EssentialCambodia5D
 
             {/* Day 3 */}
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2 flex items-center gap-2">
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2 flex items-center gap-2">
                 <Ship className="w-4 h-4" /> Day 3 – Floating Village & Local Life
               </h4>
               <div className="text-muted-foreground leading-relaxed text-base space-y-2">
@@ -128,7 +128,7 @@ const EssentialCambodia5DayTourPopup = ({ isOpen, onClose }: EssentialCambodia5D
 
             {/* Day 4 */}
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2 flex items-center gap-2">
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2 flex items-center gap-2">
                 <Mountain className="w-4 h-4" /> Day 4 – Kulen Mountain & Waterfall
               </h4>
               <div className="text-muted-foreground leading-relaxed text-base space-y-2">
@@ -148,7 +148,7 @@ const EssentialCambodia5DayTourPopup = ({ isOpen, onClose }: EssentialCambodia5D
 
             {/* Day 5 */}
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">🌅 Day 5 – Hidden Temples & City Tour</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">🌅 Day 5 – Hidden Temples & City Tour</h4>
               <div className="text-muted-foreground leading-relaxed text-base space-y-2">
                 <p><strong>Option A: Hidden Temples</strong></p>
                 <ul className="list-disc list-inside space-y-1 ml-2">

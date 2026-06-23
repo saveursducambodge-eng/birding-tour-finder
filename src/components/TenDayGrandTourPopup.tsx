@@ -42,7 +42,7 @@ const TenDayGrandTourPopup = ({ isOpen, onClose }: TenDayGrandTourPopupProps) =>
             </div>
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 1–2: Siem Reap & Angkor Temples</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 1–2: Siem Reap & Angkor Temples</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Arrive in Siem Reap. Explore the Small and Grand Circuits of Angkor including Angkor Wat sunrise, Bayon, Ta Prohm, Banteay Srei, and the floating village of Kampong Phluk on Tonle Sap Lake.
               </p>
@@ -50,7 +50,7 @@ const TenDayGrandTourPopup = ({ isOpen, onClose }: TenDayGrandTourPopupProps) =>
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 3–4: Battambang</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 3–4: Battambang</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Travel to Battambang. Explore the Bamboo Train, Phnom Sampeau bat caves, Wat Banan temple, and traditional village workshops. Enjoy the charming colonial architecture and vibrant local food scene.
               </p>
@@ -58,7 +58,7 @@ const TenDayGrandTourPopup = ({ isOpen, onClose }: TenDayGrandTourPopupProps) =>
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 5–6: Phnom Penh</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 5–6: Phnom Penh</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Travel to Phnom Penh. Visit the Royal Palace, Silver Pagoda, National Museum, Tuol Sleng Museum, and Killing Fields. Explore the Central Market, Russian Market, and the scenic Riverside promenade.
               </p>
@@ -66,7 +66,7 @@ const TenDayGrandTourPopup = ({ isOpen, onClose }: TenDayGrandTourPopupProps) =>
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 7: Kratie – Irrawaddy Dolphins</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 7: Kratie – Irrawaddy Dolphins</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Drive to Kratie along the Mekong River. Afternoon boat trip to observe the rare Irrawaddy freshwater dolphins. Visit Phnom Sombok pagoda for sunset views over the Mekong. Overnight in Kratie.
               </p>
@@ -74,7 +74,7 @@ const TenDayGrandTourPopup = ({ isOpen, onClose }: TenDayGrandTourPopupProps) =>
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 8: Stung Treng</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 8: Stung Treng</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Continue north to Stung Treng, a remote riverside town near the Laos border. Visit the Mekong River flooded forest, local communities, and enjoy the tranquil, off-the-beaten-path atmosphere. Overnight in Stung Treng.
               </p>
@@ -82,7 +82,7 @@ const TenDayGrandTourPopup = ({ isOpen, onClose }: TenDayGrandTourPopupProps) =>
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 9: Preah Vihear Temple</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 9: Preah Vihear Temple</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Travel to Preah Vihear and ascend to the magnificent UNESCO World Heritage temple perched atop a 525-meter cliff. Explore all five gopuras and enjoy panoramic views stretching across Cambodia and Thailand. Overnight near Preah Vihear.
               </p>
@@ -90,7 +90,7 @@ const TenDayGrandTourPopup = ({ isOpen, onClose }: TenDayGrandTourPopupProps) =>
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 10: Return to Siem Reap</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 10: Return to Siem Reap</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Return journey to Siem Reap with stops at Koh Ker temple complex and Beng Mealea jungle temple. Arrive back in Siem Reap by late afternoon for departure or onward travel.
               </p>
