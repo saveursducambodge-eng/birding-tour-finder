@@ -42,7 +42,7 @@ const BattambangTourPopup = ({ isOpen, onClose }: BattambangTourPopupProps) => {
             </div>
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 1: Siem Reap to Battambang</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 1: Siem Reap to Battambang</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Depart from Siem Reap and travel to Battambang via the scenic countryside route. En route, stop at Sisophon for a break. Upon arrival in Battambang, explore the charming colonial town center, visit the Battambang Provincial Museum, and stroll along the Sangker River. Check into your hotel and enjoy the evening at leisure.
               </p>
@@ -51,7 +51,7 @@ const BattambangTourPopup = ({ isOpen, onClose }: BattambangTourPopupProps) => {
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 2: Battambang Exploration</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 2: Battambang Exploration</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Full day exploring Battambang's highlights. Morning visit to Phnom Sampeau with its killing caves and bat cave (millions of bats emerge at sunset). Ride the famous Bamboo Train through the countryside. Visit Wat Banan, a hilltop temple often compared to a mini Angkor Wat. Afternoon visit to local villages known for rice paper making, fish paste production, and traditional knife-making.
               </p>
@@ -60,7 +60,7 @@ const BattambangTourPopup = ({ isOpen, onClose }: BattambangTourPopupProps) => {
             <Separator />
 
             <div>
-              <h4 className="font-serif text-md font-semibold text-primary mb-2">Day 3: Battambang to Siem Reap</h4>
+              <h4 className="font-serif text-md font-semibold text-nature-forest mb-2">Day 3: Battambang to Siem Reap</h4>
               <p className="text-muted-foreground leading-relaxed text-justify text-base">
                 Morning visit to Ek Phnom temple ruins and the nearby countryside. Explore the vibrant Battambang morning market for local breakfast and fresh produce. Depart for Siem Reap with a stop at the Pursat area if time permits. Arrive back in Siem Reap by late afternoon.
               </p>
