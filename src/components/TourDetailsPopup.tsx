@@ -89,25 +89,25 @@ const TourDetailsPopup = ({
             </p>
 
             <div className="space-y-4">
-              <h3 className="text-green-600 font-semibold text-lg">Day 1: Arrival in Siem Reap and Birding Near Siem Reap</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 2: Full Day Birding At Angkor Complex</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 3: full day birding at Prek Toal Waterbird Sanctuary (overnight at Siem Reap)</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 4: full day birding at Ang Trapeang Thmor Sarus Crane (overnight at Siem Reap)</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 5: Full Birding at Chang Kran Roy, night in Changkran Roey Camp</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 6: Full day bird at Chang Kran Roey, night in Siem Reap</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 7: AM birding at Florican Grassland, PM birding and overnight at Be Treed Adventure</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 8 Full Bird at Be Treed Adventure</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 9: AM birding at Be Treed, PM Birding and overnight at Tmatboey</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 10: full day birding at Tmatboey (overnight at Tmatboey lodge)</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 11: AM birding at Tmatboey, PM birding and overnight at Vulture Restaurant</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 12: AM birding at Vulture restaurant, PM birding and overnight at Kratie</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 13: AM birding at Kratie, PM birding and overnight at Keo Seima Wildlife Sanctuary</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 14: Full day birding at Jahoo Gibbon Camp</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 15: AM birding at Jahoo Gibbon Camp, PM birding at Sean Monorom</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 16: Full birding at Dak Dam</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 17: AM birding Koe Seima, PM birding at Cambodian Tailorbird and Pursat</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 18: AM birding at Pursat Grassbird, PM birding at Cambodian Tailorbird, and overnight at Phnom Penh</h3>
-              <h3 className="text-green-600 font-semibold text-lg">Day 19: Full day city tours and transfer to Phnom Penh airport</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 1: Arrival in Siem Reap and Birding Near Siem Reap</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 2: Full Day Birding At Angkor Complex</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 3: full day birding at Prek Toal Waterbird Sanctuary (overnight at Siem Reap)</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 4: full day birding at Ang Trapeang Thmor Sarus Crane (overnight at Siem Reap)</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 5: Full Birding at Chang Kran Roy, night in Changkran Roey Camp</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 6: Full day bird at Chang Kran Roey, night in Siem Reap</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 7: AM birding at Florican Grassland, PM birding and overnight at Be Treed Adventure</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 8 Full Bird at Be Treed Adventure</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 9: AM birding at Be Treed, PM Birding and overnight at Tmatboey</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 10: full day birding at Tmatboey (overnight at Tmatboey lodge)</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 11: AM birding at Tmatboey, PM birding and overnight at Vulture Restaurant</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 12: AM birding at Vulture restaurant, PM birding and overnight at Kratie</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 13: AM birding at Kratie, PM birding and overnight at Keo Seima Wildlife Sanctuary</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 14: Full day birding at Jahoo Gibbon Camp</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 15: AM birding at Jahoo Gibbon Camp, PM birding at Sean Monorom</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 16: Full birding at Dak Dam</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 17: AM birding Koe Seima, PM birding at Cambodian Tailorbird and Pursat</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 18: AM birding at Pursat Grassbird, PM birding at Cambodian Tailorbird, and overnight at Phnom Penh</h3>
+              <h3 className="text-nature-forest font-semibold text-lg">Day 19: Full day city tours and transfer to Phnom Penh airport</h3>
             </div>
 
             <div className="space-y-3">
