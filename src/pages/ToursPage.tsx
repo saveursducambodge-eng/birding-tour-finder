@@ -175,6 +175,36 @@ const ToursPage = () => {
     food: "No meals included - short tour duration",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
+    id: 1.5,
+    title: "Half Day Birding at Kampong Phluk and Visit Floating Village",
+    description: "Experience a rewarding half-day birding excursion to Kampong Phluk, one of the most authentic floating villages on the Tonle Sap Great Lake. The tour combines birding along the flooded forest edges, village waterways and open lake with a glimpse of daily life in a stilt-house community. In the early morning, the wetland edges are alive with herons, egrets, cormorants, kingfishers, swallows and waterbirds, while the flooded forest provides close views of woodpeckers, bulbuls and raptors. After birding, enjoy a relaxed boat ride through the village to see local life before returning to Siem Reap by mid-day.",
+    duration: "Half Day (6 hours)",
+    difficulty: "Easy",
+    groupSize: "2 people",
+    price: "$180 Per Person",
+    image: "/placeholder.svg",
+    images: [],
+    category: "cultural",
+    highlights: ["Flooded forest birding", "Floating village visit", "Tonle Sap wetlands", "Morning birding", "Stilt-house community"],
+    rating: 4.7,
+    schedule: {
+      "5:30 AM": "Pick up from your hotel in Siem Reap and transfer to the boat pier at Kampong Phluk",
+      "6:00 AM": "Board a traditional wooden boat and begin birding along the flooded forest edge and waterways",
+      "7:30 AM": "Continue birding near the village margins, watching for kingfishers, herons, egrets, swallows and raptors",
+      "9:00 AM": "Take a break with a simple packed breakfast on the boat or at a local stilt-house",
+      "9:30 AM": "Cruise through Kampong Phluk floating village to observe daily life, fishing activities and stilted homes",
+      "10:30 AM": "Return to the boat pier and transfer back to Siem Reap",
+      "11:30 AM": "Arrive back at your hotel"
+    },
+    birdSpecies: ["Spot-billed Pelican", "Painted Stork", "Asian Openbill", "Oriental Darter", "Little Cormorant", "Indian Cormorant", "Great Cormorant", "Grey Heron", "Purple Heron", "Great Egret", "Little Egret", "Cattle Egret", "Black-crowned Night Heron", "White-breasted Waterhen", "Purple Swamphen", "Common Moorhen", "Bronze-winged Jacana", "Pheasant-tailed Jacana", "White-throated Kingfisher", "Common Kingfisher", "Pied Kingfisher", "Black-capped Kingfisher", "Brown Shrike", "Barn Swallow", "Red-rumped Swallow", "Asian Palm Swift", "Oriental Reed Warbler", "Plain-backed Sparrow", "Asian Golden Weaver", "Baya Weaver", "Yellow-vented Bulbul", "Black-collared Starling", "Greater Racket-tailed Drongo"],
+    included: ["All transport from Siem Reap and return", "English-speaking birding guide", "Boat ride through Kampong Phluk village and flooded forest", "Bottled drinking water", "Packed breakfast"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "November to April (Peak: December-March) when water levels are favourable and morning bird activity is highest. Tours available year-round.",
+    physicalEffort: "Easy. Mostly birding from a boat with short walks on wooden walkways and village paths. Suitable for all fitness levels.",
+    weather: "Hot and humid conditions expected near the lake. The morning is usually cooler, and afternoon heat can be intense. A hat, sunscreen and water are recommended.",
+    food: "Packed breakfast is included. No other meals are provided on this short tour.",
+    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
+  }, {
     id: 2,
     title: "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating Village",
     description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
