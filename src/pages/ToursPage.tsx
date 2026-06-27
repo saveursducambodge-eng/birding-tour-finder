@@ -12,6 +12,7 @@ import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-storks.jpg.asset.json";
 import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo.png.asset.json";
+import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -182,7 +183,7 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$180 Per Person",
-    image: "/placeholder.svg",
+    image: kampongPhlukBirdingAsset.url,
     images: [],
     category: "cultural",
     highlights: ["Flooded forest birding", "Floating village visit", "Tonle Sap wetlands", "Morning birding", "Stilt-house community"],
