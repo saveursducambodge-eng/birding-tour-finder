@@ -206,6 +206,33 @@ const ToursPage = () => {
     food: "Packed breakfast is included. No other meals are provided on this short tour.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
   }, {
+    id: 1.6,
+    title: "Half Day Birding at Phnom Kroam Marsh Land",
+    description: "Enjoy a rewarding half-day birding excursion to Phnom Kroam Marsh Land, a seasonally flooded wetland and grassland mosaic just outside Siem Reap. The area mixes open marsh, low scrub, rice paddies and small woodland patches, creating a productive hotspot for wetland birds, raptors and grassland species within easy reach of town.
+
+In the early morning, the marsh is alive with herons, egrets, cormorants, kingfishers and waterbirds, while the surrounding grassland attracts harriers, buzzards, swallows and larks. The afternoon session offers warm light for photography and a second chance to find species missed in the morning. This relaxed, flexible tour is ideal for birders with limited time or those who want a gentle introduction to Cambodian birding.",
+    duration: "Half Day (4–6 hours)",
+    difficulty: "Easy",
+    groupSize: "2 people",
+    price: "$160 Per Person",
+    image: "/placeholder.svg",
+    images: [],
+    category: "cultural",
+    highlights: ["Wetland and grassland birding", "Morning and afternoon options", "Easy access from Siem Reap", "Great for photography", "Diverse waterbirds and raptors"],
+    rating: 4.6,
+    schedule: {
+      "Option 1 - Morning": "5:30 AM pickup from your hotel in Siem Reap, 5:45 AM arrive at Phnom Kroam Marsh Land and begin birding along marsh edges and grassland, 9:00 AM continue through rice paddies and scrub for raptors, swallows and open-country birds, 11:00 AM return to vehicle, 11:30 AM arrive back at your hotel",
+      "Option 2 - Afternoon": "2:30 PM pickup from your hotel in Siem Reap, 2:45 PM arrive at Phnom Kroam Marsh Land, 3:00 PM birding in the marsh and grassland in warm afternoon light, 5:00 PM final scans for raptors and harriers, 5:30 PM return to your hotel"
+    },
+    birdSpecies: ["Cinnamon Bittern", "Yellow Bittern", "Black Bittern", "Lesser Coucal", "Greater Coucal", "Grey Heron", "Purple Heron", "Great Egret", "Intermediate Egret", "Little Egret", "Cattle Egret", "Chinese Pond Heron", "Javan Pond Heron", "Black-crowned Night Heron", "Asian Openbill", "Painted Stork", "Spot-billed Pelican", "Oriental Darter", "Little Cormorant", "Indian Cormorant", "Great Cormorant", "White-breasted Waterhen", "Purple Swamphen", "Common Moorhen", "Bronze-winged Jacana", "Pheasant-tailed Jacana", "White-throated Kingfisher", "Common Kingfisher", "Pied Kingfisher", "Brown Shrike", "Barn Swallow", "Red-rumped Swallow", "Asian Golden Weaver", "Baya Weaver", "Streaked Weaver", "Black-browed Reed Warbler", "Oriental Reed Warbler", "Plain-backed Sparrow", "Indochinese Bushlark", "Oriental Skylark", "Pied Harrier", "Eastern Marsh Harrier", "Black Kite", "Shikra", "Eurasian Kestrel"],
+    included: ["Transport from Siem Reap and return", "English-speaking birding guide", "Bottled drinking water", "All site access fees"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "Year-round, with best conditions November to April. Morning departures are recommended during the hot season.",
+    physicalEffort: "Easy. Walking 2–4 km on flat, open terrain and short marsh-edge tracks. Suitable for all fitness levels.",
+    weather: "Hot and humid conditions expected. Mornings are cooler and usually most productive; afternoons can be warm but offer good light for photography.",
+    food: "No meals included on this short tour. Bottled water is provided.",
+    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
+  }, {
     id: 2,
     title: "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating Village",
     description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
