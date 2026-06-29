@@ -208,9 +208,7 @@ const ToursPage = () => {
   }, {
     id: 1.6,
     title: "Half Day Birding at Phnom Kroam Marsh Land",
-    description: "Enjoy a rewarding half-day birding excursion to Phnom Kroam Marsh Land, a seasonally flooded wetland and grassland mosaic just outside Siem Reap. The area mixes open marsh, low scrub, rice paddies and small woodland patches, creating a productive hotspot for wetland birds, raptors and grassland species within easy reach of town.
-
-In the early morning, the marsh is alive with herons, egrets, cormorants, kingfishers and waterbirds, while the surrounding grassland attracts harriers, buzzards, swallows and larks. The afternoon session offers warm light for photography and a second chance to find species missed in the morning. This relaxed, flexible tour is ideal for birders with limited time or those who want a gentle introduction to Cambodian birding.",
+    description: "Enjoy a rewarding half-day birding excursion to Phnom Kroam Marsh Land, a seasonally flooded wetland and grassland mosaic just outside Siem Reap. The area mixes open marsh, low scrub, rice paddies and small woodland patches, creating a productive hotspot for wetland birds, raptors and grassland species within easy reach of town.\n\nIn the early morning, the marsh is alive with herons, egrets, cormorants, kingfishers and waterbirds, while the surrounding grassland attracts harriers, buzzards, swallows and larks. The afternoon session offers warm light for photography and a second chance to find species missed in the morning. This relaxed, flexible tour is ideal for birders with limited time or those who want a gentle introduction to Cambodian birding.",
     duration: "Half Day (4–6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
