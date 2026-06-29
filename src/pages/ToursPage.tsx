@@ -13,7 +13,6 @@ import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-storks.jpg.asset.json";
 import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo.png.asset.json";
 import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
-import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -214,7 +213,7 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$60 Per Person",
-    image: phnomKroamMarshLandAsset.url,
+    image: "/placeholder.svg",
     images: [],
     category: "cultural",
     highlights: ["Wetland and grassland birding", "Morning and afternoon options", "Easy access from Siem Reap", "Great for photography", "Diverse waterbirds and raptors"],
