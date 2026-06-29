@@ -212,7 +212,7 @@ const ToursPage = () => {
     duration: "Half Day (4–6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$160 Per Person",
+    price: "$60 Per Person",
     image: "/placeholder.svg",
     images: [],
     category: "cultural",
