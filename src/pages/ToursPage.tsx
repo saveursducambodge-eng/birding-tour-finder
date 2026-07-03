@@ -63,6 +63,8 @@ import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
 const prekToalWaterbirdSanctuary = prekToalWaterbirdSanctuaryAsset.url;
+import kohKerWoodpeckersAsset from "@/assets/koh-ker-woodpeckers.png.asset.json";
+const kohKerWoodpeckers = kohKerWoodpeckersAsset.url;
 import bird4Asset from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg.asset.json";
 const bird4 = bird4Asset.url;
 import attSlide1 from "@/assets/att-slide-1.jpg";
