@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import bengalFloricanHeroAsset from "@/assets/new-2.jpg.asset.json";
+import bengalFloricanHeroAsset from "@/assets/bengal-florican-clean.jpg.asset.json";
 const bengalFloricanHero = bengalFloricanHeroAsset.url;
 
 const ItinerariesPage = () => {
