@@ -209,7 +209,7 @@ const ToursPage = () => {
     duration: "Half Day (4–6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$60 Per Person",
+    price: "$75 Per Person",
     image: phnomKroamMarshLandAsset.url,
     images: [],
     category: "cultural",
