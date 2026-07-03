@@ -225,6 +225,31 @@ const ToursPage = () => {
     food: "No meals included on this short tour. Bottled water is provided.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
   }, {
+    id: 2.5,
+    title: "Half-day Birding at Bengal Florican Grassland",
+    description: "Join a focused half-day birding excursion to the Bengal Florican Grassland on the Tonle Sap floodplain, one of the most reliable places on Earth to see the critically endangered Bengal Florican. The tour is timed around the species' display season, when males perform their dramatic vertical leaps above the grass at dawn and dusk. Open grasslands and seasonally flooded fields also support a rich cast of wetland and grassland specialists, including Sarus Crane, Pied Harrier, Manchurian Reed Warbler and Oriental Skylark. Choose a morning session to catch the peak display activity, or an afternoon session for softer light and a second chance at the day's target birds.",
+    duration: "Half Day (3–6 hours)",
+    difficulty: "Easy",
+    groupSize: "2 people",
+    price: "$180 Per Person",
+    image: "/placeholder.svg",
+    images: [],
+    category: "cultural",
+    highlights: ["Bengal Florican", "Sarus Crane", "Grassland specialists", "Morning & afternoon options", "Tonle Sap floodplain"],
+    rating: 4.8,
+    schedule: {
+      "Option 1 - Morning (5:30 AM – 11:30 AM)": "5:30 AM pickup from your hotel in Siem Reap with packed breakfast, 6:30 AM arrive at Bengal Florican Grassland and begin scanning for displaying males and grassland species, 9:00 AM continue birding across the floodplain for Sarus Crane, harriers, larks and warblers, 11:00 AM final checks and return to vehicle, 11:30 AM arrive back at your hotel",
+      "Option 2 - Afternoon (2:30 PM – 5:30 PM)": "2:30 PM pickup from your hotel in Siem Reap, 3:30 PM arrive at Bengal Florican Grassland for afternoon birding in warm light, 4:30 PM scan for displaying males, harriers and open-country species, 5:30 PM return to your hotel"
+    },
+    birdSpecies: ["Bengal Florican", "Sarus Crane", "Manchurian Reed Warbler", "Oriental Skylark", "Singing Bushlark", "Indochinese Bushlark", "Oriental Pratincole", "Common Buttonquail", "Blue-breasted Quail", "Small Buttonquail", "Asian Pied Starling", "Pied Harrier", "Eastern Marsh Harrier", "Black Kite", "Shikra", "Eurasian Kestrel", "Red Avadavat", "Streaked Weaver", "Asian Golden Weaver", "Baya Weaver", "Barn Swallow", "Red-rumped Swallow", "Plain-backed Sparrow", "Cinnamon Bittern", "Yellow Bittern", "Black Bittern", "Lesser Coucal", "Greater Coucal", "Chinese Pond Heron", "Javan Pond Heron", "Black-crowned Night Heron", "Grey Heron", "Purple Heron", "Great Egret", "Intermediate Egret", "Little Egret", "Cattle Egret", "Painted Stork", "Asian Openbill", "Spot-billed Pelican", "White-breasted Waterhen", "Bronze-winged Jacana", "Pheasant-tailed Jacana"],
+    included: ["Transport from Siem Reap and return", "English-speaking birding guide", "Packed breakfast (morning option)", "Bottled drinking water", "All site access fees"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "Mid-February to early May for Bengal Florican display season; November to April also good for general grassland birding",
+    physicalEffort: "Easy. Walking 2–4 km on flat grassland and floodplain tracks. Suitable for all fitness levels.",
+    weather: "Hot and dry conditions expected. Mornings are cooler and most productive; afternoons offer warm light for photography.",
+    food: "Packed breakfast included on the morning option. No meals on the afternoon option.",
+    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
+  }, {
     id: 2,
     title: "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating Village",
     description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
