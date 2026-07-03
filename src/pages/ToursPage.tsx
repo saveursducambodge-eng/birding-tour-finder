@@ -1,11 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Clock, Users, MapPin, Star, ArrowRight, Filter, ChevronLeft, ChevronRight, Calendar } from "lucide-react";
+import { Clock, Users, MapPin, ArrowRight, ChevronLeft, ChevronRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Navigation from "@/components/Navigation";
 import TourDetailsPopup from "@/components/TourDetailsPopup";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
@@ -131,7 +130,7 @@ const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => 
 };
 
 const ToursPage = () => {
-  const [selectedFilter, setSelectedFilter] = useState("all");
+  const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("all");
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const tours = [{
@@ -505,7 +504,33 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     setSelectedTour(tour);
     setIsPopupOpen(true);
   };
-  const filteredTours = selectedFilter === "all" ? tours : tours.filter((tour) => tour.category === selectedFilter);
+  const getDurationGroup = (duration: string) => {
+    const d = (duration || "").toLowerCase();
+    if (d.includes("information")) return "information";
+    if (d.includes("half")) return "half-day";
+    const dayMatch = d.match(/(\d+)\s*day/);
+    if (dayMatch) {
+      const n = parseInt(dayMatch[1], 10);
+      if (n === 1) return "1-day";
+      if (n === 2) return "2-days";
+      return "multi-day";
+    }
+    if (d.includes("full")) return "1-day";
+    return "multi-day";
+  };
+  const durationGroupOptions = [
+    { value: "all", label: "All Tours" },
+    { value: "half-day", label: "Half Day" },
+    { value: "1-day", label: "1 Day" },
+    { value: "2-days", label: "2 Days" },
+    { value: "multi-day", label: "Multi-Day" }
+  ];
+  const filteredTours = selectedDurationGroup === "all"
+    ? tours
+    : tours.filter((tour) => {
+        const group = getDurationGroup(tour.duration);
+        return group !== "information" && group === selectedDurationGroup;
+      });
   return <>
       <Helmet>
         <title>Cambodia Birding Tours | Bird Watching in Siem Reap | PEARAING</title>
@@ -546,26 +571,27 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
 
       {/* Filter Section */}
       <section className="py-6 sm:py-8 lg:py-10 px-4 max-w-6xl mx-auto">
-        <div className="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 gap-4">
-          <h3 className="text-xl sm:text-2xl font-serif text-nature-forest">
+        <div className="text-center mb-6 sm:mb-8">
+          <h3 className="text-xl sm:text-2xl font-serif text-nature-forest mb-4">
             Choose Your Adventure
           </h3>
-          <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
-            <Filter className="w-4 h-4 sm:w-5 sm:h-5 text-nature-forest flex-shrink-0" />
-            <Select value={selectedFilter} onValueChange={setSelectedFilter}>
-              <SelectTrigger className="w-full sm:w-48">
-                <SelectValue placeholder="Filter by category" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Tours</SelectItem>
-                <SelectItem value="multi-day">Multi-Day Adventures</SelectItem>
-                <SelectItem value="cultural">Cultural & Birding</SelectItem>
-                <SelectItem value="water">Wetland Specialists</SelectItem>
-                <SelectItem value="sanctuary">Sanctuary Visits</SelectItem>
-              </SelectContent>
-            </Select>
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {durationGroupOptions.map((option) => (
+              <button
+                key={option.value}
+                onClick={() => setSelectedDurationGroup(option.value)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${
+                  selectedDurationGroup === option.value
+                    ? "bg-nature-forest text-white border-nature-forest shadow-md"
+                    : "bg-white text-nature-forest border-nature-sage hover:bg-sage-light"
+                }`}
+              >
+                {option.label}
+              </button>
+            ))}
           </div>
         </div>
+
 
         {/* Tours Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
