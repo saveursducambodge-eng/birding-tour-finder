@@ -605,22 +605,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
         </DialogHeader>
         
         <div className="space-y-6">
-          {/* Prek Toal Waterbird Sanctuary — 9:16 photo gallery */}
-          {tour.id === 2 && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[prekToal916_1, prekToal916_2, prekToal916_3, prekToal916_4].map((asset, i) => (
-                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
-                  <img
-                    src={asset.url}
-                    alt={`Prek Toal Waterbird Sanctuary photo ${i + 1}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
-
           {/* Tour Info */}
           {tour.id !== 3 && tour.id !== 5 && tour.id !== 6 && tour.id !== 7 && (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
