@@ -500,11 +500,29 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     isInformational: true,
     thingsToBring: "This is an informational guide only"
   }];
-  const handleTourDetails = (tour: typeof tours[0]) => {
-    setSelectedTour(tour);
-    setIsPopupOpen(true);
+  const getDurationGroup = (duration: string) => {
+    const d = (duration || "").toLowerCase();
+    if (d.includes("half")) return "half-day";
+    const dayMatch = d.match(/(\d+)\s*day/);
+    if (dayMatch) {
+      const n = parseInt(dayMatch[1], 10);
+      if (n === 1) return "1-day";
+      if (n === 2) return "2-days";
+      return "multi-day";
+    }
+    if (d.includes("full")) return "1-day";
+    return "multi-day";
   };
-  const filteredTours = selectedFilter === "all" ? tours : tours.filter((tour) => tour.category === selectedFilter);
+  const durationGroupOptions = [
+    { value: "all", label: "All Tours" },
+    { value: "half-day", label: "Half Day" },
+    { value: "1-day", label: "1 Day" },
+    { value: "2-days", label: "2 Days" },
+    { value: "multi-day", label: "Multi-Day" }
+  ];
+  const filteredTours = selectedDurationGroup === "all"
+    ? tours
+    : tours.filter((tour) => getDurationGroup(tour.duration) === selectedDurationGroup);
   return <>
       <Helmet>
         <title>Cambodia Birding Tours | Bird Watching in Siem Reap | PEARAING</title>
