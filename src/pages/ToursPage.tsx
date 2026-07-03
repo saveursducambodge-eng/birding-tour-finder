@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import Navigation from "@/components/Navigation";
 import TourDetailsPopup from "@/components/TourDetailsPopup";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
