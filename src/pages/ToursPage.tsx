@@ -599,11 +599,11 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
               <div className="relative">
                 {tour.images && tour.images.length > 1 ? (
                   <TourImageSlider images={tour.images} alt={tour.title} />
-                ) : (
+                ) : tour.image ? (
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
                   </div>
-                )}
+                ) : null}
                 {durationLabel && (
                   <span className="absolute bottom-3 left-3 z-20 bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none">
                     {durationLabel}
