@@ -56,6 +56,14 @@ import beTreedSlide7 from "@/assets/be-treed-slide-7.jpg";
 import beTreedSlide8 from "@/assets/be-treed-slide-8.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
+import pearaingBio2 from "@/assets/pearaing-biodiversity-2.jpg";
+import pearaingBio3 from "@/assets/pearaing-biodiversity-3.jpg";
+import pearaingBio4 from "@/assets/pearaing-biodiversity-4.jpg";
+import pearaingBio5 from "@/assets/pearaing-biodiversity-5.jpg";
+import pearaingBio7 from "@/assets/pearaing-biodiversity-7.jpg";
+import pearaingBio8 from "@/assets/pearaing-biodiversity-8.jpg";
+import pearaingBio9 from "@/assets/pearaing-biodiversity-9.jpg";
+import pearaingBio10 from "@/assets/pearaing-biodiversity-10.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import bird2Asset from "@/assets/prek-toal-heron-storks.jpg.asset.json";
 const bird2 = bird2Asset.url;
@@ -151,8 +159,8 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$144 Per Person",
-    image: "",
-    images: [],
+    image: pearaingBio2,
+    images: [pearaingBio2, pearaingBio3, pearaingBio4, pearaingBio5, pearaingBio7, pearaingBio8, pearaingBio9, pearaingBio10],
     category: "cultural",
     highlights: ["50+ bird species", "Pearaing Biodiversity Conservation Center", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
     rating: 4.5,
@@ -511,27 +519,20 @@ const ToursPage = () => {
             }
             return (
             <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
-              {(() => {
-                const hasImage = Boolean(tour.image) || (tour.images && tour.images.length > 1);
-                return (
-                  <div className={hasImage ? "relative" : ""}>
-                    {hasImage && (
-                      tour.images && tour.images.length > 1 ? (
-                        <TourImageSlider images={tour.images} alt={tour.title} />
-                      ) : (
-                        <div className="relative aspect-[4/3] overflow-hidden">
-                          <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
-                        </div>
-                      )
-                    )}
-                    {durationLabel && (
-                      <span className={`bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none ${hasImage ? 'absolute bottom-3 left-3 z-20' : 'inline-block ml-6 mt-6'}`}>
-                        {durationLabel}
-                      </span>
-                    )}
+              <div className="relative">
+                {tour.images && tour.images.length > 1 ? (
+                  <TourImageSlider images={tour.images} alt={tour.title} />
+                ) : (
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
                   </div>
-                );
-              })()}
+                )}
+                {durationLabel && (
+                  <span className="absolute bottom-3 left-3 z-20 bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none">
+                    {durationLabel}
+                  </span>
+                )}
+              </div>
               
               <CardContent className="p-6">
                 <h3 className="font-serif text-xl text-nature-forest mb-2 line-clamp-2">
