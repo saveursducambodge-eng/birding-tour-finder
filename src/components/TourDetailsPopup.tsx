@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Users, MapPin, Star, Calendar, Utensils, AlertCircle, Camera } from "lucide-react";
 import birdTourHero from "@/assets/bird-tour-hero.png";
+import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
 import kohKer916_1 from "@/assets/koh-ker-9-16-1.png.asset.json";
 import kohKer916_2 from "@/assets/koh-ker-9-16-2.jpg.asset.json";
 import kohKer916_3 from "@/assets/koh-ker-9-16-3.jpg.asset.json";
