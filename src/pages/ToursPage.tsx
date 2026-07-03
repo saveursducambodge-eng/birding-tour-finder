@@ -444,9 +444,9 @@ const ToursPage = () => {
   }, {
     id: 7.1,
     title: "2-Day 1-Night Birding at Kratie — Mekong Wagtail & Irrawaddy Dolphins",
-    description: "Explore the mighty Mekong River at Kratie, one of Cambodia's most rewarding lowland birding destinations. This relaxed two-day tour focuses on the riverbanks, sandbars and small islands around Kratie town, where the endemic Mekong Wagtail is reliably found alongside a suite of specialist waterbirds.
+    description: `Explore the mighty Mekong River at Kratie, one of Cambodia's most rewarding lowland birding destinations. This relaxed two-day tour focuses on the riverbanks, sandbars and small islands around Kratie town, where the endemic Mekong Wagtail is reliably found alongside a suite of specialist waterbirds.
 
-The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, and time on Koh Trong island for open-country and riverside species. With easy walking, good roads and comfortable local accommodation, this is an ideal extension for birders who want to add Mekong specialities to their Cambodia list while experiencing rural river life.",
+The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, and time on Koh Trong island for open-country and riverside species. With easy walking, good roads and comfortable local accommodation, this is an ideal extension for birders who want to add Mekong specialities to their Cambodia list while experiencing rural river life.`,
     duration: "2 Days / 1 Night",
     difficulty: "Easy",
     groupSize: "2-8 people",
