@@ -94,8 +94,15 @@ const ItinerariesPage = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden bg-nature-forest">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/95 to-nature-forest/70 z-10" />
+        <img
+          src={bengalFloricanHero}
+          alt="Bengal Florican in grassland"
+          className="absolute inset-0 w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
         <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
           <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight drop-shadow-lg">
