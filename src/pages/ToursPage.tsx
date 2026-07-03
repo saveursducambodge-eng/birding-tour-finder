@@ -324,7 +324,7 @@ const ToursPage = () => {
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
     id: 5,
-    title: "Full Birding and Angkor Wat Temple Tour",
+    title: "Full Day Tours To Full-DayBirding and Angkor Wat Temple Tour",
     description: "This tour combines the most important birding experiences with the country's rich cultural heritage at the same sites. Angkor Wat is a Hindu–Buddhist temple complex covering 162 hectares within the ancient Khmer capital of Angkor. Originally constructed in the 12th century as a Hindu temple dedicated to the god Vishnu, it is located just 7 kilometers north of Siem Reap.\n\nAngkor Wat is not only Cambodia's most iconic temple but also a surprisingly rewarding birding site. The surrounding moat and forest patches provide feeding and roosting habitats for more than 50 bird species. After birdwatching and learning about the history of Angkor Wat, we continue to Bayon and Ta Prohm temples. At Ta Prohm, we search for Alexandrine Parakeet and Red-breasted Parakeet in an extraordinary setting made famous by the movie Tomb Raider, where massive tree roots entwine the ancient ruins. The day concludes with further birdwatching at Bayon Temple until sunset.",
     duration: "​Full Day (12.5 hours)",
     difficulty: "Easy",
