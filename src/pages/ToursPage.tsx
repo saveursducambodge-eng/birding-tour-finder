@@ -14,6 +14,7 @@ import birdTourHeroAsset from "@/assets/tours-hero-storks.jpg.asset.json";
 import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo.png.asset.json";
 import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
+import pearaingBiodiversityCenterAsset from "@/assets/pearaing-biodiversity-center.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -151,8 +152,8 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$144 Per Person",
-    image: "/placeholder.svg",
-    images: [],
+    image: pearaingBiodiversityCenterAsset.url,
+    images: [pearaingBiodiversityCenterAsset.url],
     category: "cultural",
     highlights: ["50+ bird species", "Pearaing Biodiversity Conservation Center", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
     rating: 4.5,
