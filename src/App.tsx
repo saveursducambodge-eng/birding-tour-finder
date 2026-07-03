@@ -8,6 +8,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/AboutPage";
 import ToursPage from "./pages/ToursPage";
+import ItinerariesPage from "./pages/ItinerariesPage";
 import GalleryPage from "./pages/GalleryPage";
 import ConservationPage from "./pages/ConservationPage";
 
