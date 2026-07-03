@@ -16,6 +16,7 @@ import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.j
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
 import pearaingBiodiversityCenterAsset from "@/assets/pearaing-biodiversity-center.jpg.asset.json";
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
+import dakDamKeoSeimaForestAsset from "@/assets/dak-dam-keo-seima-forest.png.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -479,8 +480,8 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     difficulty: "Moderate",
     groupSize: "2-6 people",
     price: "$ Per Person",
-    image: "/placeholder.svg",
-    images: [],
+    image: dakDamKeoSeimaForestAsset.url,
+    images: [dakDamKeoSeimaForestAsset.url],
     category: "multi-day",
     highlights: ["Yellow-cheeked Gibbon", "Black-shanked Douc", "Great Hornbill", "Wreathed Hornbill", "Evergreen forest trails", "Night walk for owls"],
     rating: 4.8,
