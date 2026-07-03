@@ -499,7 +499,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     rating: 5.0,
     isInformational: true,
     thingsToBring: "This is an informational guide only"
-  };
+  }];
   const handleTourDetails = (tour: typeof tours[0]) => {
     setSelectedTour(tour);
     setIsPopupOpen(true);
