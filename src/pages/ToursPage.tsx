@@ -15,6 +15,7 @@ import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo
 import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
 import pearaingBiodiversityCenterAsset from "@/assets/pearaing-biodiversity-center.jpg.asset.json";
+import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -232,7 +233,7 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$165 Per Person",
-    image: "/placeholder.svg",
+    image: bengalFloricanGrasslandTourAsset.url,
     images: [],
     category: "cultural",
     highlights: ["Bengal Florican", "Sarus Crane", "Grassland specialists", "Morning & afternoon options", "Tonle Sap floodplain"],
