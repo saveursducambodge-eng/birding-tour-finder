@@ -652,20 +652,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           </div>
 
           {/* Best Season */}
-          {tour.id === 3 && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[kohKer916_1, kohKer916_2, kohKer916_3, kohKer916_4].map((asset, i) => (
-                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
-                  <img
-                    src={asset.url}
-                    alt={`Koh Ker and  Beng Mealea photo ${i + 1}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
 
           {tour.id === 3 && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
