@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
+import bengalFloricanHeroAsset from "@/assets/bengal-florican-hero.jpg.asset.json";
+const bengalFloricanHero = bengalFloricanHeroAsset.url;
 
 const ItinerariesPage = () => {
   const itineraries = [
