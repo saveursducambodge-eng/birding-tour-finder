@@ -63,13 +63,6 @@ import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
 const prekToalWaterbirdSanctuary = prekToalWaterbirdSanctuaryAsset.url;
-import bird3 from "@/assets/koh-ker-temple.png";
-import kohKerSlide1 from "@/assets/koh-ker-slide-1.jpg";
-import kohKerSlide2 from "@/assets/koh-ker-slide-2.jpg";
-import kohKerSlide3 from "@/assets/koh-ker-slide-3.jpg";
-import kohKerSlide4 from "@/assets/koh-ker-slide-4.jpg";
-import kohKerSlide5 from "@/assets/koh-ker-slide-5.jpg";
-import kohKerSlide6 from "@/assets/koh-ker-slide-6.jpg";
 import bird4Asset from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg.asset.json";
 const bird4 = bird4Asset.url;
 import attSlide1 from "@/assets/att-slide-1.jpg";
@@ -277,8 +270,8 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$245 Per Person",
-    image: bird3,
-    images: [bird3, kohKerSlide1, kohKerSlide2, kohKerSlide3, kohKerSlide4, kohKerSlide5, kohKerSlide6],
+    image: "",
+    images: [],
     category: "cultural",
     highlights: ["White-Rumped Pygmy Falcon", "8 Woodpecker species", "Remote temples", "Forest birding", "Temple exploration", "Beng Mealea ruins"],
     rating: 5.0,

@@ -4,10 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Clock, Users, MapPin, Star, Calendar, Utensils, AlertCircle, Camera } from "lucide-react";
 import birdTourHero from "@/assets/bird-tour-hero.png";
 import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
-import kohKer916_1 from "@/assets/koh-ker-9-16-1.png.asset.json";
-import kohKer916_2 from "@/assets/koh-ker-9-16-2.jpg.asset.json";
-import kohKer916_3 from "@/assets/koh-ker-9-16-3.jpg.asset.json";
-import kohKer916_4 from "@/assets/koh-ker-9-16-4.jpg.asset.json";
 import atts916_1 from "@/assets/atts-9-16-1.jpg.asset.json";
 import atts916_2 from "@/assets/atts-9-16-2.jpg.asset.json";
 import atts916_3 from "@/assets/atts-9-16-3.jpg.asset.json";
@@ -656,20 +652,6 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           </div>
 
           {/* Best Season */}
-          {tour.id === 3 && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[kohKer916_1, kohKer916_2, kohKer916_3, kohKer916_4].map((asset, i) => (
-                <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
-                  <img
-                    src={asset.url}
-                    alt={`Koh Ker and  Beng Mealea photo ${i + 1}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
 
           {tour.id === 3 && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
