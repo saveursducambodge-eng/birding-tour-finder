@@ -567,26 +567,27 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
 
       {/* Filter Section */}
       <section className="py-6 sm:py-8 lg:py-10 px-4 max-w-6xl mx-auto">
-        <div className="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 gap-4">
-          <h3 className="text-xl sm:text-2xl font-serif text-nature-forest">
+        <div className="text-center mb-6 sm:mb-8">
+          <h3 className="text-xl sm:text-2xl font-serif text-nature-forest mb-4">
             Choose Your Adventure
           </h3>
-          <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
-            <Filter className="w-4 h-4 sm:w-5 sm:h-5 text-nature-forest flex-shrink-0" />
-            <Select value={selectedFilter} onValueChange={setSelectedFilter}>
-              <SelectTrigger className="w-full sm:w-48">
-                <SelectValue placeholder="Filter by category" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Tours</SelectItem>
-                <SelectItem value="multi-day">Multi-Day Adventures</SelectItem>
-                <SelectItem value="cultural">Cultural & Birding</SelectItem>
-                <SelectItem value="water">Wetland Specialists</SelectItem>
-                <SelectItem value="sanctuary">Sanctuary Visits</SelectItem>
-              </SelectContent>
-            </Select>
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {durationGroupOptions.map((option) => (
+              <button
+                key={option.value}
+                onClick={() => setSelectedDurationGroup(option.value)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${
+                  selectedDurationGroup === option.value
+                    ? "bg-nature-forest text-white border-nature-forest shadow-md"
+                    : "bg-white text-nature-forest border-nature-sage hover:bg-sage-light"
+                }`}
+              >
+                {option.label}
+              </button>
+            ))}
           </div>
         </div>
+
 
         {/* Tours Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
