@@ -61,16 +61,6 @@ import beTreedSlide8 from "@/assets/be-treed-slide-8.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
-import bird2Asset from "@/assets/prek-toal-heron-storks.jpg.asset.json";
-const bird2 = bird2Asset.url;
-import prekToalSlide1 from "@/assets/prek-toal-slide-1.jpg";
-import prekToalSlide2 from "@/assets/prek-toal-slide-2.jpg";
-import prekToalSlide3 from "@/assets/prek-toal-slide-3.jpg";
-import prekToalSlide4 from "@/assets/prek-toal-slide-4.jpg";
-import prekToalSlide5 from "@/assets/prek-toal-slide-5.jpg";
-import prekToalSlide6 from "@/assets/prek-toal-slide-6.jpg";
-import prekToalSlide7 from "@/assets/prek-toal-slide-7.jpg";
-import prekToalSlide8 from "@/assets/prek-toal-slide-8.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
 import kohKerSlide1 from "@/assets/koh-ker-slide-1.jpg";
 import kohKerSlide2 from "@/assets/koh-ker-slide-2.jpg";
