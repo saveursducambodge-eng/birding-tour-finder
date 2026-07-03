@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Clock, Users, MapPin, Star, Calendar, Utensils, AlertCircle, Camera } from "lucide-react";
 import birdTourHero from "@/assets/bird-tour-hero.png";
 import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
+import kohKerWoodpeckersAsset from "@/assets/koh-ker-woodpeckers.png.asset.json";
 import atts916_1 from "@/assets/atts-9-16-1.jpg.asset.json";
 import atts916_2 from "@/assets/atts-9-16-2.jpg.asset.json";
 import atts916_3 from "@/assets/atts-9-16-3.jpg.asset.json";
