@@ -130,7 +130,7 @@ const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => 
 };
 
 const ToursPage = () => {
-  const [selectedFilter, setSelectedFilter] = useState("all");
+  const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("all");
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const tours = [{
