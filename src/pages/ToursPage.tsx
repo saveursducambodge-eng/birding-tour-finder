@@ -232,7 +232,7 @@ const ToursPage = () => {
     duration: "Half Day (3–6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$165 Per Person",
+    price: "$210 Per Person",
     image: bengalFloricanGrasslandTourAsset.url,
     images: [],
     category: "cultural",
