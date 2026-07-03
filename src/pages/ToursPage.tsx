@@ -511,20 +511,27 @@ const ToursPage = () => {
             }
             return (
             <Card key={tour.id} className="group hover:shadow-xl transition-all duration-300 border-sage-light hover:border-nature-sage overflow-hidden">
-              <div className="relative">
-                {tour.images && tour.images.length > 1 ? (
-                  <TourImageSlider images={tour.images} alt={tour.title} />
-                ) : (
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
+              {(() => {
+                const hasImage = Boolean(tour.image) || (tour.images && tour.images.length > 1);
+                return (
+                  <div className={hasImage ? "relative" : ""}>
+                    {hasImage && (
+                      tour.images && tour.images.length > 1 ? (
+                        <TourImageSlider images={tour.images} alt={tour.title} />
+                      ) : (
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
+                        </div>
+                      )
+                    )}
+                    {durationLabel && (
+                      <span className={`bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none ${hasImage ? 'absolute bottom-3 left-3 z-20' : 'inline-block ml-6 mt-6'}`}>
+                        {durationLabel}
+                      </span>
+                    )}
                   </div>
-                )}
-                {durationLabel && (
-                  <span className="absolute bottom-3 left-3 z-20 bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none">
-                    {durationLabel}
-                  </span>
-                )}
-              </div>
+                );
+              })()}
               
               <CardContent className="p-6">
                 <h3 className="font-serif text-xl text-nature-forest mb-2 line-clamp-2">
