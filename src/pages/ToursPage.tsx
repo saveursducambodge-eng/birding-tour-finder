@@ -670,11 +670,11 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
               </CardContent>
             </Card>
           );})}
-          <a href="#plan-your-trip" className="block group">
+          <Link to="/itineraries" className="block group">
             <Card className="h-full min-h-[380px] flex flex-col items-center justify-center text-center p-8 bg-sage-light/40 border-2 border-dashed border-nature-sage hover:border-nature-forest hover:shadow-xl transition-all duration-300">
               <Calendar className="w-12 h-12 text-nature-forest mb-4" />
               <h3 className="text-2xl font-serif text-nature-forest mb-3">
-                Plan Your Trip
+                View Itineraries
               </h3>
               <p className="text-muted-foreground mb-4">
                 Browse suggested birding itineraries from 1 day up to 25 days across Cambodia.
@@ -683,7 +683,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
                 View itineraries <ArrowRight className="w-4 h-4" />
               </span>
             </Card>
-          </a>
+          </Link>
         </div>
       </section>
 
