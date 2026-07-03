@@ -61,6 +61,8 @@ import beTreedSlide8 from "@/assets/be-treed-slide-8.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
+import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
+const prekToalWaterbirdSanctuary = prekToalWaterbirdSanctuaryAsset.url;
 import bird3 from "@/assets/koh-ker-temple.png";
 import kohKerSlide1 from "@/assets/koh-ker-slide-1.jpg";
 import kohKerSlide2 from "@/assets/koh-ker-slide-2.jpg";
