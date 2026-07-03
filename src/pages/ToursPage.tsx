@@ -17,6 +17,7 @@ import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jp
 import pearaingBiodiversityCenterAsset from "@/assets/pearaing-biodiversity-center.jpg.asset.json";
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
 import dakDamKeoSeimaForestAsset from "@/assets/dak-dam-keo-seima-forest.png.asset.json";
+import kratieMekongDolphinsAsset from "@/assets/kratie-mekong-irrawaddy-dolphins.png.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -452,8 +453,8 @@ The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, an
     difficulty: "Easy",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: "/placeholder.svg",
-    images: [],
+    image: kratieMekongDolphinsAsset.url,
+    images: [kratieMekongDolphinsAsset.url],
     category: "multi-day",
     highlights: ["Mekong Wagtail", "Irrawaddy Dolphins", "Koh Trong island", "Mekong River birding", "Community homestay"],
     rating: 4.7,
