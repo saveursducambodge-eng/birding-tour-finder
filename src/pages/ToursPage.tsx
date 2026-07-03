@@ -74,7 +74,7 @@ import attSlide4 from "@/assets/att-slide-4.jpg";
 import attSlide5 from "@/assets/att-slide-5.jpg";
 import attSlide6 from "@/assets/att-slide-6.jpg";
 import attSlide7 from "@/assets/att-slide-7.jpg";
-import bird5Asset from "@/assets/angkor-wat-hainan-blue-flycatcher.jpg.asset.json";
+import bird5Asset from "@/assets/angkor-wat-asian-barred-owlet.jpg.asset.json";
 const bird5 = bird5Asset.url;
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
