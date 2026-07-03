@@ -1,5 +1,5 @@
 import SpeciesLandingPage from "@/components/SpeciesLandingPage";
-import bengalFloricanHero from "@/assets/bengal-florican-hero-clean.jpg.asset.json";
+import bengalFloricanHero from "@/assets/bengal-florican-clean.jpg.asset.json";
 
 const BengalFloricanPage = () => (
   <SpeciesLandingPage
