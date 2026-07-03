@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
+import bengalFloricanHeroAsset from "@/assets/bengal-florican-clean.jpg.asset.json";
+const bengalFloricanHero = bengalFloricanHeroAsset.url;
 
 const ItinerariesPage = () => {
   const itineraries = [
@@ -92,7 +94,14 @@ const ItinerariesPage = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden bg-nature-forest">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <img
+          src={bengalFloricanHero}
+          alt="Bengal Florican in grassland"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          width={1920}
+          height={1080}
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/95 to-nature-forest/70 z-10" />
         <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
           <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
