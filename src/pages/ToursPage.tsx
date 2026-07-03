@@ -56,14 +56,6 @@ import beTreedSlide7 from "@/assets/be-treed-slide-7.jpg";
 import beTreedSlide8 from "@/assets/be-treed-slide-8.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
-import pearaingBio2 from "@/assets/pearaing-biodiversity-2.jpg";
-import pearaingBio3 from "@/assets/pearaing-biodiversity-3.jpg";
-import pearaingBio4 from "@/assets/pearaing-biodiversity-4.jpg";
-import pearaingBio5 from "@/assets/pearaing-biodiversity-5.jpg";
-import pearaingBio7 from "@/assets/pearaing-biodiversity-7.jpg";
-import pearaingBio8 from "@/assets/pearaing-biodiversity-8.jpg";
-import pearaingBio9 from "@/assets/pearaing-biodiversity-9.jpg";
-import pearaingBio10 from "@/assets/pearaing-biodiversity-10.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import bird2Asset from "@/assets/prek-toal-heron-storks.jpg.asset.json";
 const bird2 = bird2Asset.url;
