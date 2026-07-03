@@ -63,6 +63,8 @@ import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
 import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
 const prekToalWaterbirdSanctuary = prekToalWaterbirdSanctuaryAsset.url;
+import kohKerWoodpeckersAsset from "@/assets/koh-ker-woodpeckers.png.asset.json";
+const kohKerWoodpeckers = kohKerWoodpeckersAsset.url;
 import bird4Asset from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg.asset.json";
 const bird4 = bird4Asset.url;
 import attSlide1 from "@/assets/att-slide-1.jpg";
@@ -270,8 +272,8 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$245 Per Person",
-    image: "",
-    images: [],
+    image: kohKerWoodpeckers,
+    images: [kohKerWoodpeckers],
     category: "cultural",
     highlights: ["White-Rumped Pygmy Falcon", "8 Woodpecker species", "Remote temples", "Forest birding", "Temple exploration", "Beng Mealea ruins"],
     rating: 5.0,

@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Clock, Users, MapPin, Star, Calendar, Utensils, AlertCircle, Camera } from "lucide-react";
 import birdTourHero from "@/assets/bird-tour-hero.png";
 import prekToalWaterbirdSanctuaryAsset from "@/assets/prek-toal-waterbird-sanctuary.jpg.asset.json";
+import kohKerWoodpeckersAsset from "@/assets/koh-ker-woodpeckers.png.asset.json";
 import atts916_1 from "@/assets/atts-9-16-1.jpg.asset.json";
 import atts916_2 from "@/assets/atts-9-16-2.jpg.asset.json";
 import atts916_3 from "@/assets/atts-9-16-3.jpg.asset.json";
@@ -604,6 +605,18 @@ The surrounding dry grasslands are home to many species, including Small and Blu
               <img
                 src={prekToalWaterbirdSanctuaryAsset.url}
                 alt="Prek Toal Waterbird Sanctuary"
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          )}
+
+          {/* Koh Ker and Beng Mealea photo */}
+          {tour.id === 3 && (
+            <div className="aspect-[4/3] overflow-hidden rounded-lg">
+              <img
+                src={kohKerWoodpeckersAsset.url}
+                alt="Koh Ker and Beng Mealea"
                 loading="lazy"
                 className="w-full h-full object-cover"
               />
