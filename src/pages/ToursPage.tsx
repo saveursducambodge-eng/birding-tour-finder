@@ -225,31 +225,6 @@ const ToursPage = () => {
     food: "No meals included on this short tour. Bottled water is provided.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
   }, {
-    id: 2,
-    title: "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating Village",
-    description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
-    duration: "Full Day (11 hours)",
-    difficulty: "Easy",
-    groupSize: "2 people",
-    price: "$240 Per Person",
-    image: bird2,
-    images: [bird2, prekToalSlide1, prekToalSlide2, prekToalSlide3, prekToalSlide4, prekToalSlide5, prekToalSlide6, prekToalSlide7, prekToalSlide8],
-    category: "water",
-    highlights: ["Greater Adjutant", "Milky Stork", "Floating village", "Ramsar wetlands", "Community restaurant", "150+ bird species"],
-    rating: 4.9,
-    schedule: {
-      "Option 1 - Full Day": "5:30 AM pickup from hotel, 7:30 AM packed breakfast on boat, 8:30 AM arrive at Prek Toal floating village, 8:45 AM transfer to smaller community boats, 9:30 AM arrive at observation platform and climb treetop for bird colony views, 10:30 AM return to village for lunch at Saray Community Restaurant, 12:45 PM visit Water Hyacinth Handicraft Workshop, 1:00 PM paddle boat tour around floating village, 3:15 PM travel back to Siem Reap, 4:00 PM arrive back at hotel",
-      "Option 2 - Afternoon": "9:30 AM pickup from hotel, 12:30 PM lunch at local restaurant at Prek Toal Floating Village, 2:50 PM arrive and begin birding at Prek Toal Waterbird Sanctuary platform, 5:00 PM return to vehicle, 5:30 PM drop-off at hotel"
-    },
-    birdSpecies: ["Greater Adjutant", "Lesser Adjutant", "Painted Stork", "Milky Stork", "Great Cormorant", "Purple Heron", "Black Bittern", "Cinnamon Bittern", "Spot-billed Pelican", "Yellow Bittern", "Asian Openbill", "Medium Egret", "Oriental Darter", "Indian Cormorant", "Gray-headed Fish Eagle", "Oriental Reed Warbler", "Dusky Warbler", "Black-browed Reed Warbler", "Plain-backed Sparrow", "Amur Stonechat", "Pied Bush Chat", "Black-collared Starling", "Brown Shrike", "Oriental Pratincole", "Rufous Woodpecker", "White-breasted Waterhen", "Black-headed Ibis"],
-    included: ["All transport including transfers", "All reserve entry fees", "Meals, breakfast and lunch on the day of departure", "Bottled drinking water", "Boat trips", "English-speaking birding guide", "Community restaurant meal", "Handicraft workshop visit"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips", "Laundry", "Hotel mini bar", "Phone calls", "Any other items of a personal nature"],
-    bestSeason: "November to April (Peak: January-March) when water levels are low and all waterbirds come to breed at Prek Toal Waterbird Sanctuary",
-    physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 1 kilometre in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
-    weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
-    food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
-  }, {
     id: 2.5,
     title: "Half-day Birding at Bengal Florican Grassland",
     description: "Join a focused half-day birding excursion to the Bengal Florican Grassland on the Tonle Sap floodplain, one of the most reliable places on Earth to see the critically endangered Bengal Florican. The tour is timed around the species' display season, when males perform their dramatic vertical leaps above the grass at dawn and dusk. Open grasslands and seasonally flooded fields also support a rich cast of wetland and grassland specialists, including Sarus Crane, Pied Harrier, Manchurian Reed Warbler and Oriental Skylark. Choose a morning session to catch the peak display activity, or an afternoon session for softer light and a second chance at the day's target birds.",
@@ -274,6 +249,31 @@ const ToursPage = () => {
     weather: "Hot and dry conditions expected. Mornings are cooler and most productive; afternoons offer warm light for photography.",
     food: "Packed breakfast included on the morning option. No meals on the afternoon option.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
+  }, {
+    id: 2,
+    title: "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating Village",
+    description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
+    duration: "Full Day (11 hours)",
+    difficulty: "Easy",
+    groupSize: "2 people",
+    price: "$240 Per Person",
+    image: bird2,
+    images: [bird2, prekToalSlide1, prekToalSlide2, prekToalSlide3, prekToalSlide4, prekToalSlide5, prekToalSlide6, prekToalSlide7, prekToalSlide8],
+    category: "water",
+    highlights: ["Greater Adjutant", "Milky Stork", "Floating village", "Ramsar wetlands", "Community restaurant", "150+ bird species"],
+    rating: 4.9,
+    schedule: {
+      "Option 1 - Full Day": "5:30 AM pickup from hotel, 7:30 AM packed breakfast on boat, 8:30 AM arrive at Prek Toal floating village, 8:45 AM transfer to smaller community boats, 9:30 AM arrive at observation platform and climb treetop for bird colony views, 10:30 AM return to village for lunch at Saray Community Restaurant, 12:45 PM visit Water Hyacinth Handicraft Workshop, 1:00 PM paddle boat tour around floating village, 3:15 PM travel back to Siem Reap, 4:00 PM arrive back at hotel",
+      "Option 2 - Afternoon": "9:30 AM pickup from hotel, 12:30 PM lunch at local restaurant at Prek Toal Floating Village, 2:50 PM arrive and begin birding at Prek Toal Waterbird Sanctuary platform, 5:00 PM return to vehicle, 5:30 PM drop-off at hotel"
+    },
+    birdSpecies: ["Greater Adjutant", "Lesser Adjutant", "Painted Stork", "Milky Stork", "Great Cormorant", "Purple Heron", "Black Bittern", "Cinnamon Bittern", "Spot-billed Pelican", "Yellow Bittern", "Asian Openbill", "Medium Egret", "Oriental Darter", "Indian Cormorant", "Gray-headed Fish Eagle", "Oriental Reed Warbler", "Dusky Warbler", "Black-browed Reed Warbler", "Plain-backed Sparrow", "Amur Stonechat", "Pied Bush Chat", "Black-collared Starling", "Brown Shrike", "Oriental Pratincole", "Rufous Woodpecker", "White-breasted Waterhen", "Black-headed Ibis"],
+    included: ["All transport including transfers", "All reserve entry fees", "Meals, breakfast and lunch on the day of departure", "Bottled drinking water", "Boat trips", "English-speaking birding guide", "Community restaurant meal", "Handicraft workshop visit"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips", "Laundry", "Hotel mini bar", "Phone calls", "Any other items of a personal nature"],
+    bestSeason: "November to April (Peak: January-March) when water levels are low and all waterbirds come to breed at Prek Toal Waterbird Sanctuary",
+    physicalEffort: "This trip does not require any great physical effort in terms of long uphill hikes, but does require that participants are fit enough to walk, sometimes for 1 kilometre in hot conditions. The walking is mostly on a flat landscape, but some walking on even ground is needed to search for some key species. The physical effort required is well within the capabilities of most healthy people with the ability to deal with tropical climates.",
+    weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+    food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
+    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
     id: 3,
     title: "Full-day Trip to Birding at Koh Ker and  Beng Mealea",
