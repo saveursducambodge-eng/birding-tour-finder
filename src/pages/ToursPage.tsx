@@ -61,16 +61,6 @@ import beTreedSlide8 from "@/assets/be-treed-slide-8.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
-import bird2Asset from "@/assets/prek-toal-heron-storks.jpg.asset.json";
-const bird2 = bird2Asset.url;
-import prekToalSlide1 from "@/assets/prek-toal-slide-1.jpg";
-import prekToalSlide2 from "@/assets/prek-toal-slide-2.jpg";
-import prekToalSlide3 from "@/assets/prek-toal-slide-3.jpg";
-import prekToalSlide4 from "@/assets/prek-toal-slide-4.jpg";
-import prekToalSlide5 from "@/assets/prek-toal-slide-5.jpg";
-import prekToalSlide6 from "@/assets/prek-toal-slide-6.jpg";
-import prekToalSlide7 from "@/assets/prek-toal-slide-7.jpg";
-import prekToalSlide8 from "@/assets/prek-toal-slide-8.jpg";
 import bird3 from "@/assets/koh-ker-temple.png";
 import kohKerSlide1 from "@/assets/koh-ker-slide-1.jpg";
 import kohKerSlide2 from "@/assets/koh-ker-slide-2.jpg";
@@ -260,8 +250,8 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$240 Per Person",
-    image: bird2,
-    images: [bird2, prekToalSlide1, prekToalSlide2, prekToalSlide3, prekToalSlide4, prekToalSlide5, prekToalSlide6, prekToalSlide7, prekToalSlide8],
+    image: "",
+    images: [],
     category: "water",
     highlights: ["Greater Adjutant", "Milky Stork", "Floating village", "Ramsar wetlands", "Community restaurant", "150+ bird species"],
     rating: 4.9,
@@ -599,11 +589,11 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
               <div className="relative">
                 {tour.images && tour.images.length > 1 ? (
                   <TourImageSlider images={tour.images} alt={tour.title} />
-                ) : (
+                ) : tour.image ? (
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img src={tour.image} alt={tour.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 border-double opacity-100 border-0" />
                   </div>
-                )}
+                ) : null}
                 {durationLabel && (
                   <span className="absolute bottom-3 left-3 z-20 bg-[#d9722e] text-white text-xs font-semibold tracking-wider px-3 py-1.5 rounded shadow-md pointer-events-none">
                     {durationLabel}
