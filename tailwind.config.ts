@@ -51,6 +51,8 @@ export default {
         nature: {
           forest: "hsl(var(--forest-green))",
           "forest-light": "hsl(var(--forest-green-light))",
+          sage: "hsl(var(--nature-sage))",
+          "sage-light": "hsl(var(--sage-light))",
           sand: "hsl(var(--sand-beige))",
           "sand-dark": "hsl(var(--sand-beige-dark))",
           brown: "hsl(var(--warm-brown))",

@@ -688,7 +688,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
       </section>
 
       {/* Call to Action */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-nature-forest text-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-nature-sage text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
             Ready to Start Your Birding Adventure?
@@ -697,7 +697,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
             Contact us to customize your perfect Cambodia birding experience
           </p>
           <Link to="/contact">
-            <Button size="lg" variant="outline" className="border-white bg-white/10 backdrop-blur-sm text-nature-forest hover:bg-white hover:text-nature-forest">
+            <Button size="lg" variant="outline" className="border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-nature-sage">
               Get in Touch
             </Button>
           </Link>
