@@ -558,18 +558,62 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/90 to-nature-forest/60 z-10" />
-        <img src={birdTourHero} alt="Bird watching tours in Cambodia" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
-          <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight drop-shadow-lg">
-              Discover Cambodia's
-              <span className="text-nature-sand block">Rare Birds</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/95 drop-shadow-md">
-              Expert-guided birding tours through Cambodia's most pristine wilderness areas
-            </p>
+      <section className="relative h-[70vh] min-h-[550px] md:min-h-[650px] flex items-center justify-center overflow-hidden px-4 md:px-8 py-6">
+        <div className="relative w-full max-w-7xl h-full rounded-[3rem] overflow-hidden shadow-nature group">
+          {/* Background image */}
+          <img
+            src={birdTourHero}
+            alt="Bird watching tours in Cambodia"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+          />
+          {/* Gradient overlays */}
+          <div className="absolute inset-0 bg-gradient-to-t from-nature-forest/95 via-nature-forest/40 to-transparent" />
+          <div className="absolute inset-0 ring-1 ring-inset ring-primary-foreground/10 rounded-[3rem]" />
+
+          {/* Content */}
+          <div className="relative h-full flex flex-col justify-end p-8 md:p-16 lg:p-20 space-y-8">
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
+                <span className="h-px w-8 bg-nature-sage-light" />
+                <span className="text-nature-sage-light font-medium tracking-[0.3em] uppercase text-xs md:text-sm font-sans">
+                  Discover the Unseen
+                </span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-primary-foreground leading-[0.9] mb-4 md:mb-6 font-serif">
+                PEARAING <br />
+                <span className="italic font-light opacity-90">Birding Trails</span>
+              </h1>
+              <p className="text-primary-foreground/80 text-base sm:text-lg md:text-xl max-w-lg leading-relaxed font-light font-sans">
+                Expertly curated expeditions to Cambodia's most vibrant avian sanctuaries and pristine wilderness.
+              </p>
+            </div>
+
+            {/* Duration filter bar */}
+            <div className="flex flex-wrap items-center gap-2 p-2 bg-primary-foreground/10 backdrop-blur-2xl border border-primary-foreground/10 rounded-3xl shadow-nature w-full max-w-3xl">
+              <div className="flex flex-wrap items-center gap-1">
+                {durationGroupOptions.map((option) => (
+                  <button
+                    key={option.value}
+                    onClick={() => setSelectedDurationGroup(option.value)}
+                    className={`px-4 py-2.5 rounded-2xl text-sm font-medium transition-all duration-300 ${
+                      selectedDurationGroup === option.value
+                        ? "bg-primary text-primary-foreground shadow-md"
+                        : "text-primary-foreground hover:bg-primary-foreground/5"
+                    }`}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Decorative scroll indicator */}
+          <div className="absolute bottom-10 right-10 hidden lg:flex flex-col items-center gap-4">
+            <span className="[writing-mode:vertical-lr] text-primary-foreground/40 text-[10px] uppercase tracking-[0.3em] font-medium">
+              Scroll to explore
+            </span>
+            <div className="w-px h-12 bg-gradient-to-b from-primary-foreground/40 to-transparent" />
           </div>
         </div>
       </section>
