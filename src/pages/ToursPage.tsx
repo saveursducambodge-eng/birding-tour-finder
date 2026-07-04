@@ -725,12 +725,12 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
       </section>
 
       {/* Floating duration filter */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 p-1.5 md:p-2 bg-nature-forest/95 backdrop-blur-xl border border-primary-foreground/10 rounded-full shadow-nature max-w-[calc(100%-2rem)] md:max-w-fit">
+      <div className="fixed bottom-24 md:bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-0.5 md:gap-1 p-1 md:p-1.5 lg:p-2 bg-nature-forest/95 backdrop-blur-xl border border-primary-foreground/10 rounded-full shadow-float animate-float-pill max-w-[calc(100%-2rem)] md:max-w-fit">
         {durationGroupOptions.map((option) => (
           <button
             key={option.value}
             onClick={() => setSelectedDurationGroup(option.value)}
-            className={`px-3 py-2 md:px-4 md:py-2.5 rounded-full text-xs md:text-sm font-medium whitespace-nowrap transition-all duration-300 ${
+            className={`px-2 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 rounded-full text-[10px] md:text-xs lg:text-sm font-medium whitespace-nowrap transition-all duration-300 ${
               selectedDurationGroup === option.value
                 ? "bg-primary-foreground text-nature-forest shadow-sm"
                 : "text-primary-foreground hover:bg-primary-foreground/10"
