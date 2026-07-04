@@ -133,6 +133,7 @@ export default {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-nature": "var(--gradient-nature)",
         "gradient-conservation": "var(--gradient-conservation)",
+        "gradient-gold": "var(--gradient-gold)",
       },
       boxShadow: {
         "nature": "var(--shadow-nature)",
