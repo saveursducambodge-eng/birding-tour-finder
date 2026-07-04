@@ -691,7 +691,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
             </Card>
           );})}
           <Link to="/itineraries" className="block group">
-            <Card className="h-full min-h-[380px] flex flex-col items-center justify-center text-center p-8 bg-sage-light/40 border-2 border-dashed border-nature-sage hover:border-nature-forest hover:shadow-xl transition-all duration-300">
+            <Card className="h-full min-h-[380px] flex flex-col items-center justify-center text-center p-8 bg-gradient-to-br from-nature-sand to-nature-saffron/20 border-2 border-dashed border-nature-saffron hover:border-nature-forest hover:shadow-xl transition-all duration-300">
               <Calendar className="w-12 h-12 text-nature-forest mb-4" />
               <h3 className="text-2xl font-serif text-nature-forest mb-3">
                 View Itineraries
