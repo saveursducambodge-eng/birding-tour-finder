@@ -69,6 +69,7 @@ import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import russeyTrepBengalFloricanAsset from "@/assets/russey-trep-bengal-florican.png.asset.json";
 import giantIbisTourAsset from "@/assets/giant-ibis-tour.png.asset.json";
+import beTreedWoodpeckerAsset from "@/assets/be-treed-woodpecker.jpg.asset.json";
 const russeyTrepBengalFlorican = russeyTrepBengalFloricanAsset.url;
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
@@ -401,8 +402,8 @@ const ToursPage = () => {
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$",
-    image: "/placeholder.svg",
-    images: [],
+    image: beTreedWoodpeckerAsset.url,
+    images: [beTreedWoodpeckerAsset.url],
     category: "multi-day",
     highlights: ["Bengal Florican", "White-rumped Pygmy-Falcon", "Tree House accommodation", "Conservation tourism", "Angkorian cave temples", "Forest zipline", "Community-based ecotourism"],
     rating: 4.9,
