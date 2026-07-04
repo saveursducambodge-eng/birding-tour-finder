@@ -59,6 +59,8 @@ export default {
           "brown-light": "hsl(var(--warm-brown-light))",
           gold: "hsl(var(--nature-gold))",
           "gold-light": "hsl(var(--nature-gold-light))",
+          saffron: "hsl(var(--nature-saffron))",
+          "saffron-light": "hsl(var(--nature-saffron-light))",
           terracotta: "hsl(var(--nature-terracotta))",
           "terracotta-light": "hsl(var(--nature-terracotta-light))",
           sky: "hsl(var(--sky-blue))",
