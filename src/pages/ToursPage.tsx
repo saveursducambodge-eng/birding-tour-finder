@@ -431,7 +431,7 @@ const ToursPage = () => {
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
     id: 7.05,
-    title: "3-day 2-night, CAMBODIA Birding Holiday Tours: Giant Ibis, Pittas and Ground Cuckoos!",
+    title: "CAMBODIA Birding Holiday Tours: Giant Ibis, Pittas and Ground Cuckoos!",
     description: "This 3-day birding holiday takes you from the seasonally flooded grasslands of Kampong Thom to the remote dry forests of the Northern Plains, one of Cambodia's greatest conservation success stories. Search for the critically endangered Bengal Florican, then spend two full days tracking the world's rarest ibises — Giant Ibis and White-shouldered Ibis — alongside an exceptional cast of dry forest specialties, raptors, woodpeckers, nightjars and owls. The tour ends with a visit to the Vulture Restaurant before returning to Siem Reap.",
     duration: "3 Days / 2 Nights",
     difficulty: "Moderate",
