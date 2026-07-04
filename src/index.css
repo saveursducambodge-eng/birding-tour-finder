@@ -52,6 +52,12 @@ All colors MUST be HSL.
     --accent: 203 68% 69%;
     --accent-foreground: 120 37% 26%;
 
+    /* Gold and terracotta accents for Cambodian warmth */
+    --nature-gold: 43 74% 66%;
+    --nature-gold-light: 43 74% 76%;
+    --nature-terracotta: 24 68% 47%;
+    --nature-terracotta-light: 24 68% 57%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 43 25% 97%;
 
