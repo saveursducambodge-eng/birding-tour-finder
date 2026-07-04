@@ -331,8 +331,8 @@ const Homepage = () => {
             </Card>
 
             {/* View More Tours Card */}
-            <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 bg-gradient-to-br from-nature-forest to-nature-forest-light text-white border-0">
-              <div className="aspect-video overflow-hidden bg-gradient-to-br from-nature-sky/20 to-nature-forest/20 flex items-center justify-center">
+            <Card className="group overflow-hidden hover:shadow-float transition-all duration-300 bg-gradient-to-br from-nature-terracotta to-nature-forest text-white border-0">
+              <div className="aspect-video overflow-hidden bg-gradient-to-br from-nature-gold/20 to-nature-terracotta/20 flex items-center justify-center">
                 <div className="text-center">
                   <Compass className="w-12 h-12 mx-auto mb-2 text-white/80" />
                   <p className="text-sm text-white/80">Discover More</p>
@@ -361,7 +361,7 @@ const Homepage = () => {
       </section>
 
       {/* Conservation Message */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-nature px-4 md:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-nature-sand to-nature-sand-dark px-4 md:px-6 lg:px-8">
         <div className="container mx-auto text-center">
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
             Supporting Bird Conservation
