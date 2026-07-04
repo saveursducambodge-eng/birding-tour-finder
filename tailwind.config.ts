@@ -57,6 +57,10 @@ export default {
           "sand-dark": "hsl(var(--sand-beige-dark))",
           brown: "hsl(var(--warm-brown))",
           "brown-light": "hsl(var(--warm-brown-light))",
+          gold: "hsl(var(--nature-gold))",
+          "gold-light": "hsl(var(--nature-gold-light))",
+          terracotta: "hsl(var(--nature-terracotta))",
+          "terracotta-light": "hsl(var(--nature-terracotta-light))",
           sky: "hsl(var(--sky-blue))",
           "sky-light": "hsl(var(--sky-blue-light))",
         },
@@ -129,6 +133,7 @@ export default {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-nature": "var(--gradient-nature)",
         "gradient-conservation": "var(--gradient-conservation)",
+        "gradient-gold": "var(--gradient-gold)",
       },
       boxShadow: {
         "nature": "var(--shadow-nature)",

@@ -59,8 +59,8 @@ const TourIntroPopup = ({
           </div>
 
           {/* Giant Ibis Highlight */}
-          <div className="bg-gradient-nature rounded-lg p-6 mb-6">
-            <Badge className="mb-3 bg-nature-forest text-white">Featured Experience</Badge>
+          <div className="bg-gradient-to-br from-nature-sand to-nature-sand-dark rounded-lg p-6 mb-6">
+            <Badge className="mb-3 bg-nature-gold text-nature-forest">Featured Experience</Badge>
             <h3 className="font-serif text-xl font-semibold mb-2 text-primary">
               Pearaing Biodiversity Conservation - Cambodia's
             </h3>
