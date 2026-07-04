@@ -9,6 +9,15 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  @keyframes float-pill {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  .animate-float-pill {
+    animation: float-pill 4s ease-in-out infinite;
+  }
 }
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 

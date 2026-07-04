@@ -725,7 +725,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
       </section>
 
       {/* Floating duration filter */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 p-1.5 md:p-2 bg-nature-forest/95 backdrop-blur-xl border border-primary-foreground/10 rounded-full shadow-nature max-w-[calc(100%-2rem)] md:max-w-fit">
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 p-1.5 md:p-2 bg-nature-forest/95 backdrop-blur-xl border border-primary-foreground/10 rounded-full shadow-float animate-float-pill max-w-[calc(100%-2rem)] md:max-w-fit">
         {durationGroupOptions.map((option) => (
           <button
             key={option.value}
