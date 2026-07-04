@@ -122,7 +122,7 @@ const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => 
 };
 
 const ToursPage = () => {
-  const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("all");
+  const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("half-day");
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const tours = [{
@@ -539,7 +539,6 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     return "multi-day";
   };
   const durationGroupOptions = [
-    { value: "all", label: "All" },
     { value: "half-day", label: "Half Day" },
     { value: "1-day", label: "1 Day" },
     { value: "2-days", label: "2 Days" },
