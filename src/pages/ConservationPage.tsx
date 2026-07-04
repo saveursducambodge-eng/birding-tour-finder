@@ -156,7 +156,7 @@ const ConservationPage = () => {
           <section className="relative py-24 sm:py-32 overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${conservationImage})` }}
+              style={{ backgroundImage: `url(${travelGivesBackImage.url})` }}
             />
             <div className="absolute inset-0 bg-primary/85" />
             <div className="relative container mx-auto px-6 text-center text-primary-foreground max-w-3xl">
