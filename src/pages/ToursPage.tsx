@@ -78,6 +78,7 @@ const bird5 = bird5Asset.url;
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import russeyTrepBengalFloricanAsset from "@/assets/russey-trep-bengal-florican.png.asset.json";
+import giantIbisTourAsset from "@/assets/giant-ibis-tour.png.asset.json";
 const russeyTrepBengalFlorican = russeyTrepBengalFloricanAsset.url;
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
