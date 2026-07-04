@@ -169,7 +169,7 @@ const Homepage = () => {
       <section className="py-12 sm:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-nature-gold text-nature-forest">
+            <Badge className="mb-4 bg-nature-saffron text-nature-forest">
               Our Tours
             </Badge>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
