@@ -63,7 +63,7 @@ const ConservationPage = () => {
                 className="min-h-[420px] lg:min-h-[640px] bg-cover bg-center"
                 style={{ backgroundImage: `url(${communityPlantingImage.url})` }}
                 role="img"
-                aria-label="Eco-tourism boat tour with local guides and visitors"
+                aria-label="Community members and visitors planting trees together for conservation"
               />
               <div className="bg-secondary px-6 sm:px-12 lg:px-20 py-16 lg:py-28 flex items-center">
                 <div className="max-w-xl">
