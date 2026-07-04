@@ -558,8 +558,8 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[550px] md:min-h-[650px] flex items-center justify-center overflow-hidden px-4 md:px-8 py-6">
-        <div className="relative w-full max-w-7xl h-full rounded-[3rem] overflow-hidden shadow-nature group">
+      <section className="relative flex items-center justify-center overflow-hidden px-4 md:px-8 py-6">
+        <div className="relative w-full max-w-7xl aspect-[1280/822] min-h-[500px] max-h-[80vh] rounded-[3rem] overflow-hidden shadow-nature group">
           {/* Background image */}
           <img
             src={birdTourHero}
