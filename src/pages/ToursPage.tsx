@@ -539,7 +539,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     return "multi-day";
   };
   const durationGroupOptions = [
-    { value: "all", label: "All Tours" },
+    { value: "all", label: "All" },
     { value: "half-day", label: "Half Day" },
     { value: "1-day", label: "1 Day" },
     { value: "2-days", label: "2 Days" },
