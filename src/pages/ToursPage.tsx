@@ -544,12 +544,10 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     { value: "2-days", label: "2 Days" },
     { value: "multi-day", label: "Multi-Day" }
   ];
-  const filteredTours = selectedDurationGroup === "all"
-    ? tours
-    : tours.filter((tour) => {
-        const group = getDurationGroup(tour.duration);
-        return group !== "information" && group === selectedDurationGroup;
-      });
+  const filteredTours = tours.filter((tour) => {
+    const group = getDurationGroup(tour.duration);
+    return group !== "information" && group === selectedDurationGroup;
+  });
   return <>
       <Helmet>
         <title>Cambodia Birding Tours | Bird Watching in Siem Reap | PEARAING</title>
