@@ -61,7 +61,7 @@ const ConservationPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div
                 className="min-h-[420px] lg:min-h-[640px] bg-cover bg-center"
-                style={{ backgroundImage: `url(/lovable-uploads/0f6e4de3-1f73-40b6-9e51-f1868c109dbf.jpg)` }}
+                style={{ backgroundImage: `url(${communityPlantingImage.url})` }}
                 role="img"
                 aria-label="Eco-tourism boat tour with local guides and visitors"
               />
