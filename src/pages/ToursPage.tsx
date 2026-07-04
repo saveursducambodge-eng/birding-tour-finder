@@ -56,6 +56,8 @@ import kohKerWoodpeckersAsset from "@/assets/koh-ker-woodpeckers.png.asset.json"
 const kohKerWoodpeckers = kohKerWoodpeckersAsset.url;
 import bird4Asset from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg.asset.json";
 const bird4 = bird4Asset.url;
+import angTrapaengThmorSarusPairAsset from "@/assets/ang-trapaeng-thmor-sarus-pair.jpg.asset.json";
+const angTrapaengThmorSarusPair = angTrapaengThmorSarusPairAsset.url;
 import attSlide1 from "@/assets/att-slide-1.jpg";
 import attSlide2 from "@/assets/att-slide-2.jpg";
 import attSlide3 from "@/assets/att-slide-3.jpg";
@@ -292,8 +294,8 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$240 Per Person",
-    image: bird4,
-    images: [bird4],
+    image: angTrapaengThmorSarusPair,
+    images: [angTrapaengThmorSarusPair, bird4],
     category: "water",
     highlights: ["Sarus Crane", "Greater Spotted Eagle", "Eastern Marsh Harrier", "Wetland birding", "Conservation reserve", "Eld's Deer habitat"],
     rating: 4.8,
