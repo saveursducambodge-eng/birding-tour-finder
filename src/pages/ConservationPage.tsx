@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import conservationHero from "@/assets/conservation-hero.jpg.asset.json";
 import conservationImage from "@/assets/conservation-cambodia.jpg";
 import communityPlantingImage from "@/assets/conservation-community-planting.jpg.asset.json";
+import travelGivesBackImage from "@/assets/conservation-travel-gives-back.png.asset.json";
 import { Leaf, Users, Bird, ShieldCheck } from "lucide-react";
 
 const ConservationPage = () => {
