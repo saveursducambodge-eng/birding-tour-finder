@@ -588,8 +588,8 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
               </p>
             </div>
 
-            {/* Duration filter bar */}
-            <div className="flex flex-wrap items-center gap-2 p-2 bg-primary-foreground/10 backdrop-blur-2xl border border-primary-foreground/10 rounded-3xl shadow-nature w-full max-w-3xl">
+            {/* Duration filter bar — desktop only */}
+            <div className="hidden md:flex flex-wrap items-center gap-2 p-2 bg-primary-foreground/10 backdrop-blur-2xl border border-primary-foreground/10 rounded-3xl shadow-nature w-full max-w-3xl">
               <div className="flex flex-wrap items-center gap-1">
                 {durationGroupOptions.map((option) => (
                   <button
