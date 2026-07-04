@@ -104,7 +104,7 @@ const Homepage = () => {
           />
         ))}
         {/* Warm forest gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-nature-forest/60 via-nature-terracotta/30 to-nature-forest/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-nature-forest/40 via-nature-terracotta/20 to-nature-forest/80" />
 
         <div className="relative z-10 text-center text-white max-w-5xl px-4 sm:px-6 py-8" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
           <h1 className="font-light tracking-tight leading-[0.95] mb-8 animate-fade-in" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
