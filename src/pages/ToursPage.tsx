@@ -78,6 +78,7 @@ const bird5 = bird5Asset.url;
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import russeyTrepBengalFloricanAsset from "@/assets/russey-trep-bengal-florican.png.asset.json";
+import giantIbisTourAsset from "@/assets/giant-ibis-tour.png.asset.json";
 const russeyTrepBengalFlorican = russeyTrepBengalFloricanAsset.url;
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
@@ -437,8 +438,8 @@ const ToursPage = () => {
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: "/placeholder.svg",
-    images: [],
+    image: giantIbisTourAsset.url,
+    images: [giantIbisTourAsset.url],
     category: "multi-day",
     highlights: ["Giant Ibis", "White-shouldered Ibis", "Bengal Florican", "Northern Plains", "Vulture Restaurant", "Dry forest specialties"],
     rating: 4.8,
