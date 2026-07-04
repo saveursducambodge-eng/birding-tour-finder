@@ -88,7 +88,7 @@ const Homepage = () => {
         <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with Pearaing Conservation Tours. Expert-guided birding tours, Angkor temple tours, and wildlife adventures across Cambodia." />
         <link rel="canonical" href="https://pearaing.com/" />
       </Helmet>
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-gradient-to-b from-background via-nature-sand/30 to-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -103,13 +103,13 @@ const Homepage = () => {
             }}
           />
         ))}
-        {/* Warm earthy gradient overlay (inspired by Saveurs du Cambodge) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-[#3d2817]/30 to-[#1a1208]/60" />
+        {/* Warm forest gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-nature-forest/40 via-nature-terracotta/20 to-nature-forest/80" />
 
         <div className="relative z-10 text-center text-white max-w-5xl px-4 sm:px-6 py-8" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
           <h1 className="font-light tracking-tight leading-[0.95] mb-8 animate-fade-in" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
             <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">Authentic</span>
-            <span className="block italic font-normal text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] text-[#e8c97a] mt-2">
+            <span className="block italic font-normal text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] text-nature-gold mt-2">
               Cambodia
             </span>
           </h1>
@@ -120,11 +120,11 @@ const Homepage = () => {
 
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8 opacity-90">
-            <span className="h-px w-16 bg-[#e8c97a]/70" />
-            <span className="text-[#e8c97a] text-xs">✦</span>
-            <span className="text-[#e8c97a] text-xs">✦</span>
-            <span className="text-[#e8c97a] text-xs">✦</span>
-            <span className="h-px w-16 bg-[#e8c97a]/70" />
+            <span className="h-px w-16 bg-nature-gold/70" />
+            <span className="text-nature-gold text-xs">✦</span>
+            <span className="text-nature-gold text-xs">✦</span>
+            <span className="text-nature-gold text-xs">✦</span>
+            <span className="h-px w-16 bg-nature-gold/70" />
           </div>
 
           <p className="text-base sm:text-lg md:text-xl mb-10 text-white/90 max-w-2xl mx-auto animate-slide-up leading-relaxed font-light" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
@@ -136,7 +136,7 @@ const Homepage = () => {
               size="lg"
               variant="outline"
               onClick={() => setShowPopup(true)}
-              className="w-full sm:w-auto rounded-full px-8 py-6 text-base border-[#c98a3a]/70 bg-[#2a1a0e]/40 backdrop-blur-sm text-white hover:bg-[#3a2516]/60 hover:text-white hover:border-[#e8c97a]"
+              className="w-full sm:w-auto rounded-full px-8 py-6 text-base border-nature-gold/70 bg-nature-forest/30 backdrop-blur-sm text-white hover:bg-nature-forest/50 hover:text-white hover:border-nature-gold"
             >
               <Compass className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Book your tour
@@ -144,7 +144,7 @@ const Homepage = () => {
             <Link to="/tours" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="w-full sm:w-auto rounded-full px-8 py-6 text-base bg-[#d9722e] hover:bg-[#c2611f] text-white shadow-[0_10px_30px_-10px_rgba(217,114,46,0.6)]"
+                className="w-full sm:w-auto rounded-full px-8 py-6 text-base bg-nature-terracotta hover:bg-nature-terracotta-light text-white shadow-[0_10px_30px_-10px_hsl(var(--nature-terracotta)/0.6)]"
               >
                 <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Discover our tours
@@ -157,7 +157,7 @@ const Homepage = () => {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`h-[3px] rounded-full transition-all duration-300 ${
-                  currentSlide === index ? "w-10 bg-[#e8c97a]" : "w-6 bg-white/40"
+                  currentSlide === index ? "w-10 bg-nature-gold" : "w-6 bg-white/40"
                 }`}
               />
             ))}
