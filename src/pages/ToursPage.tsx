@@ -47,16 +47,6 @@ import dreamBirding7Day from "@/assets/dream-birding-7day.jpg";
 import day7Slide1 from "@/assets/7day-slide-1.jpg";
 import day7Slide2 from "@/assets/7day-slide-2.jpg";
 import day7Slide3 from "@/assets/7day-slide-3.jpg";
-import beTreedAdventure from "@/assets/be-treed-adventure.jpg";
-import beTreedAdventureBirds from "@/assets/be-treed-adventure-birds.jpg";
-import beTreedSlide1 from "@/assets/be-treed-slide-1.jpg";
-import beTreedSlide2 from "@/assets/be-treed-slide-2.jpg";
-import beTreedSlide3 from "@/assets/be-treed-slide-3.jpg";
-import beTreedSlide4 from "@/assets/be-treed-slide-4.jpg";
-import beTreedSlide5 from "@/assets/be-treed-slide-5.jpg";
-import beTreedSlide6 from "@/assets/be-treed-slide-6.jpg";
-import beTreedSlide7 from "@/assets/be-treed-slide-7.jpg";
-import beTreedSlide8 from "@/assets/be-treed-slide-8.jpg";
 // Import bird images from gallery
 import bird1 from "@/assets/pearaing-biodiversity.jpg";
 import keyLocationsRareBirds from "@/assets/key-locations-rare-birds.jpg";
