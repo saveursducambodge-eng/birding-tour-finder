@@ -691,15 +691,17 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
             </Card>
           );})}
           <Link to="/itineraries" className="block group">
-            <Card className="h-full min-h-[380px] flex flex-col items-center justify-center text-center p-8 bg-gradient-to-br from-nature-sand to-nature-saffron/20 border-2 border-dashed border-nature-saffron hover:border-nature-forest hover:shadow-xl transition-all duration-300">
-              <Calendar className="w-12 h-12 text-nature-forest mb-4" />
-              <h3 className="text-2xl font-serif text-nature-forest mb-3">
+            <Card className="h-full min-h-[380px] flex flex-col items-center justify-center text-center p-8 bg-nature-sage-pale border-2 border-dashed border-nature-sage-mist hover:bg-nature-sage-pale-hover hover:border-nature-sage-mist-hover transition-all duration-300">
+              <div className="w-20 h-20 mb-4 rounded-full bg-white border border-nature-sage-soft shadow-sm flex items-center justify-center text-nature-sage group-hover:scale-105 transition-transform duration-300">
+                <Calendar className="w-10 h-10" />
+              </div>
+              <h3 className="text-2xl font-serif text-foreground mb-3">
                 View Itineraries
               </h3>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-nature-sage mb-4">
                 Browse suggested birding itineraries from 1 day up to 25 days across Cambodia.
               </p>
-              <span className="inline-flex items-center gap-2 text-nature-forest font-semibold group-hover:gap-3 transition-all">
+              <span className="inline-flex items-center gap-2 text-nature-sage font-semibold group-hover:gap-3 transition-all">
                 View itineraries <ArrowRight className="w-4 h-4" />
               </span>
             </Card>
