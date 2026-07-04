@@ -588,24 +588,6 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
               </p>
             </div>
 
-            {/* Duration filter bar — desktop only */}
-            <div className="hidden md:flex flex-wrap items-center gap-2 p-2 bg-primary-foreground/10 backdrop-blur-2xl border border-primary-foreground/10 rounded-3xl shadow-nature w-full max-w-3xl">
-              <div className="flex flex-wrap items-center gap-1">
-                {durationGroupOptions.map((option) => (
-                  <button
-                    key={option.value}
-                    onClick={() => setSelectedDurationGroup(option.value)}
-                    className={`px-4 py-2.5 rounded-2xl text-sm font-medium transition-all duration-300 ${
-                      selectedDurationGroup === option.value
-                        ? "bg-primary text-primary-foreground shadow-md"
-                        : "text-primary-foreground hover:bg-primary-foreground/5"
-                    }`}
-                  >
-                    {option.label}
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Decorative scroll indicator */}
