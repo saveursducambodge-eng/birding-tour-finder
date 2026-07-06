@@ -231,6 +231,36 @@ const ToursPage = () => {
     food: "Packed breakfast included on the morning option. No meals on the afternoon option.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
   }, {
+    id: 2.6,
+    title: "Half-Day Morning Birding at Sarus Crane Conservation Area",
+    description: "Enjoy a focused half-day morning birding excursion to the Sarus Crane Conservation Area, a mosaic of seasonally flooded grasslands, rice paddies and shallow wetlands on the Tonle Sap floodplain. The reserve is one of the most reliable places in Cambodia to see the majestic Sarus Crane at close range, along with a strong supporting cast of harriers, waterbirds and grassland specialists.\n\nStart before dawn to be on-site as the cranes leave their roost and move out to feed. The soft morning light is perfect for photography, and cooler temperatures make birding comfortable. In just a few hours you can expect Sarus Crane, Pied Harrier, Eastern Marsh Harrier, Oriental Skylark and a wide range of herons, egrets and open-country birds.",
+    duration: "Half Day (6 hours)",
+    difficulty: "Easy",
+    groupSize: "2 people",
+    price: "$180 Per Person",
+    image: bird4,
+    images: [bird4],
+    category: "water",
+    highlights: ["Sarus Crane", "Pied Harrier", "Grassland specialists", "Sunrise photography", "Easy access from Siem Reap"],
+    rating: 4.8,
+    schedule: {
+      "5:00 AM": "Pickup from your hotel in Siem Reap with packed breakfast",
+      "6:15 AM": "Arrive at Sarus Crane Conservation Area and begin birding as cranes leave the roost",
+      "7:30 AM": "Scan the wetlands and grassland for harriers, herons, waterbirds and larks",
+      "9:00 AM": "Short break for packed breakfast in the field",
+      "9:30 AM": "Continue birding through rice paddies and reservoir edges for open-country species",
+      "10:30 AM": "Final scans and return to the vehicle",
+      "11:00 AM": "Arrive back at your hotel in Siem Reap"
+    },
+    birdSpecies: ["Sarus Crane", "Pied Harrier", "Eastern Marsh Harrier", "Greater Spotted Eagle", "Black-winged Kite", "Black Kite", "Shikra", "Eurasian Kestrel", "Watercock", "Cotton Pygmy-goose", "Knob-billed Duck", "Bronze-winged Jacana", "Pheasant-tailed Jacana", "Black-headed Ibis", "Painted Stork", "Asian Openbill", "Spot-billed Pelican", "Oriental Darter", "Grey Heron", "Purple Heron", "Great Egret", "Intermediate Egret", "Little Egret", "Cattle Egret", "Chinese Pond Heron", "Javan Pond Heron", "Black-crowned Night Heron", "Cinnamon Bittern", "Yellow Bittern", "Black Bittern", "White-breasted Waterhen", "Purple Swamphen", "Common Moorhen", "Oriental Skylark", "Indochinese Bushlark", "Singing Bushlark", "Barn Swallow", "Red-rumped Swallow", "Amur Stonechat", "Pied Bush Chat", "Plain-backed Sparrow", "Asian Golden Weaver", "Baya Weaver", "Red Avadavat"],
+    included: ["Transport from Siem Reap and return", "English-speaking birding guide", "Packed breakfast", "Bottled drinking water", "All site access fees"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "November to April (Peak: January-March) when Sarus Cranes return to the conservation area.",
+    physicalEffort: "Easy. Walking 2–4 km on flat grassland and reservoir-edge tracks. Suitable for all fitness levels.",
+    weather: "Hot and dry conditions expected. Mornings are cooler and most productive for birding and photography.",
+    food: "Packed breakfast is included. No other meals are provided on this short tour.",
+    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
+  }, {
     id: 2,
     title: "Full Day Tours to Birding at Prek Toal Waterbird Sanctuary and Visit Floating village",
     description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
