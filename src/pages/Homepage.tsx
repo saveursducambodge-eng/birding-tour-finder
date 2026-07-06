@@ -109,7 +109,7 @@ const Homepage = () => {
         <div className="relative z-10 text-center text-white max-w-5xl px-4 sm:px-6 py-8 drop-shadow-lg" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
           <h1 className="font-light tracking-tight leading-[0.95] mb-8 animate-fade-in drop-shadow-2xl" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
             <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">Authentic</span>
-            <span className="block italic font-normal text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] text-nature-saffron mt-2">
+            <span className="block italic font-normal text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] text-nature-forest mt-2">
               Cambodia
             </span>
           </h1>
