@@ -678,7 +678,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
       </section>
 
       {/* Tours Grid */}
-      <section className="py-6 sm:py-8 lg:py-10 px-4 max-w-6xl mx-auto">
+      <section ref={toursSectionRef} className="py-6 sm:py-8 lg:py-10 px-4 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {filteredTours.map((tour) => {
             const d = (tour.duration || "").toLowerCase();
