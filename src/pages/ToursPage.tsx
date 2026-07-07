@@ -263,6 +263,38 @@ const ToursPage = () => {
     food: "Packed breakfast is included. No other meals are provided on this short tour.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
   }, {
+    id: 2.7,
+    title: "Full-Day Birding Tour: Bengal Florican Grassland and Angkor Wat Tours",
+    description: "Combine two of Cambodia's most iconic wildlife and cultural experiences in a single full-day adventure. The morning is devoted to the critically endangered Bengal Florican, one of the rarest birds on Earth. Cambodia holds the majority of the world's remaining Bengal Florican population, and the Tonle Sap grassland conservation area we visit supports a globally important breeding concentration. Males perform their dramatic vertical display leaps above the grass at dawn, offering a breathtaking and unforgettable wildlife spectacle.\n\nAfter a midday break, the afternoon shifts to the world-famous Angkor Wat archaeological complex, where ancient moats, forest corridors and grassland clearings attract an impressive array of bird species. This is the only tour that pairs a dedicated search for one of the planet's rarest birds with the cultural wonder of Angkor Wat, giving you a complete day of nature and heritage.",
+    duration: "Full Day (12 hours)",
+    difficulty: "Easy",
+    groupSize: "2 people",
+    price: "$280 Per Person",
+    image: bengalFloricanGrasslandTourAsset.url,
+    images: [bengalFloricanGrasslandTourAsset.url],
+    category: "cultural",
+    highlights: ["Bengal Florican", "Angkor Wat birding", "Critically endangered species", "World heritage temple", "Dawn display", "Grassland & forest birds"],
+    rating: 5.0,
+    schedule: {
+      "5:00 AM": "Pickup from your hotel in Siem Reap with packed breakfast",
+      "6:00 AM": "Arrive at Bengal Florican Grassland and begin scanning for displaying males and grassland species until mid-morning",
+      "9:00 AM": "Continue birding across the floodplain for Sarus Crane, harriers, larks, warblers and open-country specialists",
+      "10:30 AM": "Return to vehicle and transfer back to Siem Reap",
+      "11:30 AM": "Lunch break at a local restaurant in Siem Reap (not included)",
+      "1:00 PM": "Transfer to the Angkor Wat area for afternoon birding along ancient moats, forest corridors and grassland clearings",
+      "2:00 PM": "Birding around Angkor Wat temple complex — search for Asian Barred Owlet, Hainan Blue Flycatcher, woodpeckers and forest species",
+      "4:00 PM": "Continue to Angkor Thom and Bayon area for late-afternoon birding and temple exploration",
+      "5:00 PM": "Return to your hotel in Siem Reap"
+    },
+    birdSpecies: ["Bengal Florican", "Sarus Crane", "Manchurian Reed Warbler", "Oriental Skylark", "Singing Bushlark", "Indochinese Bushlark", "Oriental Pratincole", "Common Buttonquail", "Blue-breasted Quail", "Small Buttonquail", "Asian Pied Starling", "Pied Harrier", "Eastern Marsh Harrier", "Black Kite", "Shikra", "Eurasian Kestrel", "Red Avadavat", "Streaked Weaver", "Asian Golden Weaver", "Baya Weaver", "Barn Swallow", "Red-rumped Swallow", "Plain-backed Sparrow", "Cinnamon Bittern", "Yellow Bittern", "Black Bittern", "Lesser Coucal", "Greater Coucal", "Chinese Pond Heron", "Javan Pond Heron", "Black-crowned Night Heron", "Grey Heron", "Purple Heron", "Great Egret", "Intermediate Egret", "Little Egret", "Cattle Egret", "Painted Stork", "Asian Openbill", "Spot-billed Pelican", "White-breasted Waterhen", "Bronze-winged Jacana", "Pheasant-tailed Jacana", "Asian Barred Owlet", "Hainan Blue Flycatcher", "White-throated Rock Thrush", "Laced Woodpecker", "Black-headed Woodpecker", "Greater Flameback", "Common Flameback", "Green-billed Malkoha", "Rufous Treepie", "Indochinese Roller", "Oriental Pied Hornbill"],
+    included: ["All transport from Siem Reap and return", "English-speaking birding guide", "Packed breakfast", "Bottled drinking water", "All site access fees", "Temple area entrance permit guidance"],
+    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Temple entrance fee (USD 37)", "Lunch and other meals", "Alcoholic and soft drinks", "Tips and gratuities", "Personal expenses"],
+    bestSeason: "Mid-February to early May for Bengal Florican display season; November to April also excellent for general birding and temple photography. Tours available year-round.",
+    physicalEffort: "Easy. Walking 4–6 km in total on flat grassland and temple grounds. Suitable for all fitness levels comfortable with tropical conditions and early starts.",
+    weather: "Hot and dry conditions expected. Morning grassland birding is cooler; afternoon temple sites can be warm. Sun protection essential.",
+    food: "Packed breakfast is included. Lunch is not included — there will be a midday break in Siem Reap with restaurant options. Khmer cuisine is available at local restaurants near the temple complex.",
+    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, camera, and modest clothing for temple visits (shoulders and knees covered)"
+  }, {
     id: 2,
     title: "Full Day Tours to Birding at Prek Toal Waterbird Sanctuary and Visit Floating village",
     description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
