@@ -796,7 +796,10 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
         {durationGroupOptions.map((option) => (
           <button
             key={option.value}
-            onClick={() => setSelectedDurationGroup(option.value)}
+            onClick={() => {
+              setSelectedDurationGroup(option.value);
+              toursSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }}
             className={`px-2 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 rounded-full text-[10px] md:text-xs lg:text-sm font-medium whitespace-nowrap transition-all duration-300 ${
               selectedDurationGroup === option.value
                 ? "bg-primary-foreground text-nature-forest shadow-sm"
