@@ -127,6 +127,7 @@ const ToursPage = () => {
   const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("half-day");
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const toursSectionRef = useRef<HTMLElement>(null);
   const tours = [{
     id: 1,
     title: "Half Day Birding at Pearaing Biodiversity Conservation Center",
