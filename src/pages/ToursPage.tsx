@@ -56,6 +56,8 @@ import kohKerWoodpeckersAsset from "@/assets/koh-ker-woodpeckers.png.asset.json"
 const kohKerWoodpeckers = kohKerWoodpeckersAsset.url;
 import bird4Asset from "@/assets/ang-trapaeng-thmor-sarus-cranes.jpg.asset.json";
 const bird4 = bird4Asset.url;
+import sarusCraneHalfDayAsset from "@/assets/sarus-crane-half-day-tour.jpg.asset.json";
+const sarusCraneHalfDay = sarusCraneHalfDayAsset.url;
 import attSlide1 from "@/assets/att-slide-1.jpg";
 import attSlide2 from "@/assets/att-slide-2.jpg";
 import attSlide3 from "@/assets/att-slide-3.jpg";
@@ -238,8 +240,8 @@ const ToursPage = () => {
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$180 Per Person",
-    image: bird4,
-    images: [bird4],
+    image: sarusCraneHalfDay,
+    images: [sarusCraneHalfDay],
     category: "water",
     highlights: ["Sarus Crane", "Pied Harrier", "Grassland specialists", "Sunrise photography", "Easy access from Siem Reap"],
     rating: 4.8,
