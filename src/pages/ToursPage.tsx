@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Clock, Users, MapPin, ArrowRight, ChevronLeft, ChevronRight, Calendar } from "lucide-react";
@@ -127,6 +127,7 @@ const ToursPage = () => {
   const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("half-day");
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const toursSectionRef = useRef<HTMLElement>(null);
   const tours = [{
     id: 1,
     title: "Half Day Birding at Pearaing Biodiversity Conservation Center",
@@ -677,7 +678,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
       </section>
 
       {/* Tours Grid */}
-      <section className="py-6 sm:py-8 lg:py-10 px-4 max-w-6xl mx-auto">
+      <section ref={toursSectionRef} className="py-6 sm:py-8 lg:py-10 px-4 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {filteredTours.map((tour) => {
             const d = (tour.duration || "").toLowerCase();
@@ -795,7 +796,10 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
         {durationGroupOptions.map((option) => (
           <button
             key={option.value}
-            onClick={() => setSelectedDurationGroup(option.value)}
+            onClick={() => {
+              setSelectedDurationGroup(option.value);
+              toursSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }}
             className={`px-2 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 rounded-full text-[10px] md:text-xs lg:text-sm font-medium whitespace-nowrap transition-all duration-300 ${
               selectedDurationGroup === option.value
                 ? "bg-primary-foreground text-nature-forest shadow-sm"
