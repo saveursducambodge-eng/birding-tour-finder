@@ -4,7 +4,8 @@ import fullDayImage from "@/assets/prek-toal-storks.jpg";
 import twoDayImageAsset from "@/assets/giant-ibis-2day-blog.jpg.asset.json";
 const twoDayImage = twoDayImageAsset.url;
 import sevenDayImage from "@/assets/dream-birding-7day.jpg";
-import templeImage from "@/assets/angkor-wat-temple-bird.jpg";
+import templeImageAsset from "@/assets/angkor-owlet-blog.jpg.asset.json";
+const templeImage = templeImageAsset.url;
 
 export interface BlogPost {
   slug: string;
