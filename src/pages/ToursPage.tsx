@@ -17,6 +17,7 @@ import pearaingBiodiversityCenterAsset from "@/assets/pearaing-biodiversity-cent
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
 import dakDamKeoSeimaForestAsset from "@/assets/dak-dam-keo-seima-forest.png.asset.json";
 import kratieMekongDolphinsAsset from "@/assets/kratie-mekong-irrawaddy-dolphins.png.asset.json";
+import customTourAsset from "@/assets/custom-tour-cambodian-laughingthrush.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
