@@ -92,7 +92,7 @@ const Homepage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20 lg:py-24">
         {heroSlides.map((slide, index) => (
           <div
             key={index}
@@ -107,19 +107,19 @@ const Homepage = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-nature-forest/40 via-nature-terracotta/20 to-nature-forest/80" />
 
         <div className="relative z-10 text-center text-white max-w-5xl px-4 sm:px-6 py-8 drop-shadow-lg" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
-          <h1 className="font-light tracking-tight leading-[0.95] mb-8 animate-fade-in drop-shadow-2xl" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
-            <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">Authentic</span>
-            <span className="block italic font-normal text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] text-nature-forest mt-2">
+          <h1 className="font-light tracking-tight leading-[0.95] mb-6 animate-fade-in drop-shadow-2xl" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+            <span className="block text-6xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-9xl text-white">Authentic</span>
+            <span className="block italic font-normal text-7xl sm:text-8xl md:text-8xl lg:text-9xl xl:text-[10rem] text-nature-forest mt-2">
               Cambodia
             </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl md:text-3xl text-white/95 mb-6 animate-slide-up font-light drop-shadow-md" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+          <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl text-white/95 mb-5 animate-slide-up font-light drop-shadow-md" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
             with a guide who feels like family
           </p>
 
           {/* Decorative divider */}
-          <div className="flex items-center justify-center gap-3 mb-8 opacity-90">
+          <div className="flex items-center justify-center gap-3 mb-6 opacity-90">
             <span className="h-px w-16 bg-nature-saffron/70" />
             <span className="text-nature-saffron text-xs">✦</span>
             <span className="text-nature-saffron text-xs">✦</span>
@@ -127,7 +127,7 @@ const Homepage = () => {
             <span className="h-px w-16 bg-nature-saffron/70" />
           </div>
 
-          <p className="text-base sm:text-lg md:text-xl mb-10 text-white/90 max-w-2xl mx-auto animate-slide-up leading-relaxed font-light drop-shadow-md" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
+          <p className="text-base sm:text-lg md:text-lg lg:text-xl mb-8 text-white/90 max-w-2xl mx-auto animate-slide-up leading-relaxed font-light drop-shadow-md" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
             For 15+ years, Pearaing Biodiversity Conservation has opened private access to Cambodia's rarest birds, ancient temples and wild landscapes — at your rhythm, with guides who live the mission.
           </p>
 
@@ -151,7 +151,7 @@ const Homepage = () => {
               </Button>
             </Link>
           </div>
-          <div className="flex gap-2 justify-center mt-10">
+          <div className="flex gap-2 justify-center mt-8">
             {heroSlides.map((_, index) => (
               <button
                 key={index}
