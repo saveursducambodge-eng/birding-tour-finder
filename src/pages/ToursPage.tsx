@@ -17,6 +17,7 @@ import pearaingBiodiversityCenterAsset from "@/assets/pearaing-biodiversity-cent
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
 import dakDamKeoSeimaForestAsset from "@/assets/dak-dam-keo-seima-forest.png.asset.json";
 import kratieMekongDolphinsAsset from "@/assets/kratie-mekong-irrawaddy-dolphins.png.asset.json";
+import customTourAsset from "@/assets/custom-tour-cambodian-laughingthrush.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
@@ -578,8 +579,8 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: "/placeholder.svg",
-    images: [],
+    image: customTourAsset.url,
+    images: [customTourAsset.url],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Mekong Wagtail", "Chinese Grassbird", "Cambodian Laughingthrush", "Mount Aural extension", "Angkor temples"],
     rating: 4.9,
