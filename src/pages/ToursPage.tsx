@@ -170,7 +170,7 @@ const ToursPage = () => {
     schedule: {
       "5:30 AM": "Pick up from your hotel in Siem Reap and transfer to the boat pier at Kampong Phluk",
       "6:00 AM": "Board a traditional wooden boat and begin birding along the flooded forest edge and waterways",
-      "7:30 AM": "Continue birding near the village margins, watching for kingfishers, herons, egrets, swallows and raptors",
+      "7:30 AM": "Continue birding near the ricefield and pond, watching for kingfishers, herons, egrets, swallows, and raptors",
       "9:00 AM": "Take a break with a simple packed breakfast on the boat or at a local stilt-house",
       "9:30 AM": "Cruise through Kampong Phluk floating village to observe daily life, fishing activities and stilted homes",
       "10:30 AM": "Return to the boat pier and transfer back to Siem Reap",
