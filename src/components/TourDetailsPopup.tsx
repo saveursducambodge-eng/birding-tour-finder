@@ -659,9 +659,11 @@ The surrounding dry grasslands are home to many species, including Small and Blu
 
           {/* Description */}
           <div className="space-y-4">
-            <p className="text-muted-foreground leading-relaxed">
-              {tour.description}
-            </p>
+            <div className="text-muted-foreground leading-relaxed space-y-4">
+              {tour.description.split('\n\n').map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </div>
 
           {/* Best Season */}
