@@ -467,7 +467,7 @@ const ToursPage = () => {
     duration: "3 Days / 2 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "$",
+    price: "$ Per Person",
     image: beTreedWoodpeckerAsset.url,
     images: [beTreedWoodpeckerAsset.url],
     category: "multi-day",
