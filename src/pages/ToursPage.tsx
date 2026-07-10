@@ -440,7 +440,7 @@ const ToursPage = () => {
     duration: "3 Days / 2 Nights",
     difficulty: "Moderate",
     groupSize: "2-8 people",
-    price: "\u00a0$Per Person",
+    price: "$ Per Person",
     image: russeyTrepBengalFlorican,
     images: [russeyTrepBengalFlorican],
     category: "multi-day",
