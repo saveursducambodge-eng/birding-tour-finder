@@ -13,7 +13,7 @@ const GiantIbisPage = () => (
     sections={[
       {
         heading: "About the Giant Ibis",
-        body: "Standing over a metre tall with a wingspan close to 1.5 m, the Giant Ibis is the largest ibis species in the world. Adults are dark grey-brown with a bare, wrinkled head, a long downcurved bill and pale bands across the wings. It is listed as Critically Endangered on the IUCN Red List, mainly due to habitat loss, drainage of seasonal pools and hunting. Cambodia is now the only country with a viable breeding population.",
+        body: "Standing over a metre tall with a wingspan close to 1.5 m, the Giant Ibis is the largest ibis species in the world. Adults are dark grey-brown with a bare, wrinkled head, a long downcurved bill, and pale bands across the wings. It is listed as Critically Endangered on the IUCN Red List, mainly due to habitat loss, drainage of seasonal ponds, and hunting. Cambodia is now the only country with a viable breeding population.",
       },
       {
         heading: "Where to see the Giant Ibis in Cambodia",
