@@ -29,7 +29,7 @@ const GiantIbisPage = () => (
       },
       {
         heading: "How your visit supports conservation",
-        body: "All visitor fees are split between local guides, the community fund and direct conservation costs — including nest protection, water-hole maintenance and anti-poaching patrols. Tourism revenue is one of the strongest reasons local communities continue to protect Giant Ibis habitat.",
+        body: "All visitor fees are split between local guides, the community fund, and direct conservation costs, including nest protection, Seasonal pond maintenance, and patrols. Tourism revenue is one of the strongest reasons local communities continue to protect the Giant Ibis habitat in Cambodia",
       },
     ]}
     relatedTour={{ label: "See the Giant Ibis tour", href: "/tours" }}
