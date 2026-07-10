@@ -237,7 +237,7 @@ const ToursPage = () => {
   }, {
     id: 2.6,
     title: "Half-Day Morning Birding at Sarus Crane Conservation Area",
-    description: "Enjoy a focused half-day morning birding excursion to the Sarus Crane Conservation Area, a mosaic of seasonally flooded grasslands, rice paddies and shallow wetlands on the Tonle Sap floodplain. The reserve is one of the most reliable places in Cambodia to see the majestic Sarus Crane at close range, along with a strong supporting cast of harriers, waterbirds and grassland specialists.\n\nStart before dawn to be on-site as the cranes leave their roost and move out to feed. The soft morning light is perfect for photography, and cooler temperatures make birding comfortable. In just a few hours you can expect Sarus Crane, Pied Harrier, Eastern Marsh Harrier, Oriental Skylark and a wide range of herons, egrets and open-country birds.",
+    description: "Enjoy a half-day morning birding trip to the Sarus Crane Conservation Area, one of the best places in Cambodia to see the world's tallest flying bird. The area is made up of rice fields and shallow wetlands on the Tonle Sap floodplain, creating ideal habitat for Sarus Cranes and many other wetland birds.\n\nWe leave early in the morning to arrive as the cranes leave their overnight roosts and fly out to feed. The cool morning air and soft sunrise light provide excellent conditions for birdwatching and photography.\n\nIn addition to the Target Sarus Crane, we hope to see Pied Harrier, Eastern Marsh Harrier, Black Kite, Brown Wood Owl, Spotted Owlet, Black-winged Kite, herons, egrets, and a variety of other grassland and wetland birds before returning to Siem Reap.",
     duration: "Half Day (6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
