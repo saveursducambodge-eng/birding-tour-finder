@@ -705,7 +705,7 @@ Over two days you will explore forest trails, fruiting trees and nearby streams 
             Cambodia Birding Adventures
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            Cambodia is home to over 600 bird species, including several globally threatened and endemic species. Our expertly guided tours take you to the country's most important birding sites, from the vast wetlands of Tonle Sap to the pristine forests of the Northern Plains, maximizing your chances of seeing rare and endangered species while supporting local conservation efforts.
+            Cambodia is home to over 600 bird species, including several globally threatened and endemic species. Our expertly guided local tours take you to the country's most important birding sites, from the vast wetlands of Tonle Sap to the Northern Plains of Cambodia. Join us to see rare and endangered species while supporting local conservation efforts.
           </p>
         </div>
       </section>
