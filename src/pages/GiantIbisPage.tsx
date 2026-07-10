@@ -17,7 +17,7 @@ const GiantIbisPage = () => (
       },
       {
         heading: "Where to see the Giant Ibis in Cambodia",
-        body: "The most reliable site is Russey Treb, a community-based ecotourism village inside the Kulen Promtep Wildlife Sanctuary. Birds use a small number of known roost trees and seasonal waterholes (trapeangs), where local guides can position visitors at dawn for high-probability sightings. Other sites include the Western Siem Pang area and parts of the Northern Plains Landscape.",
+        body: "The most reliable site is Tmartboey and Russey Treb, a community-based ecotourism village inside the Kulen Promtep Wildlife Sanctuary. Birds use a small number of known roost trees and seasonal ponds (trapeangs), where local guides can position visitors at dawn for high-probability sightings. Other sites include the Western Siem Pang area and parts of the Northern Plains Landscape.",
       },
       {
         heading: "Best time to see the Giant Ibis",
