@@ -157,7 +157,7 @@ const ToursPage = () => {
   }, {
     id: 1.5,
     title: "Half Day Birding at Kampong Phluk and\u00a0Traditional Stilt Houses village.",
-    description: "Experience a rewarding half-day birding excursion to Kampong Phluk, one of the most authentic floating villages on the Tonle Sap Great Lake. The tour combines birding along the flooded forest edges, village waterways and open lake with a glimpse of daily life in a stilt-house community. In the early morning, the wetland edges are alive with herons, egrets, cormorants, kingfishers, swallows and waterbirds, while the flooded forest provides close views of woodpeckers, bulbuls and raptors. After birding, enjoy a relaxed boat ride through the village to see local life before returning to Siem Reap by mid-day.",
+    description: "Experience a rewarding half-day birding excursion to Kampong Phluk, one of the most authentic Traditional Stilt House villages on the Tonle Sap Great Lake. The tour combines birding along the flooded forest edges, village waterways, and open lake with a glimpse of daily life in a stilt-house community. In the early morning, the wetland edges will be birding for herons, egrets, cormorants, kingfishers, swallows, and waterbirds, while the flooded forest provides close views of woodpeckers, bulbuls, and raptors. After birding, enjoy a relaxed boat ride through the village to see local life before returning to Siem Reap by midday.",
     duration: "Half Day (6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
