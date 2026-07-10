@@ -21,7 +21,7 @@ const GiantIbisPage = () => (
       },
       {
         heading: "Best time to see the Giant Ibis",
-        body: "Plan a visit between November and early May. Late in the dry season (March–April) is particularly good — surface water disappears across the wider forest, so birds concentrate at known waterholes. Outside the dry season the forest floods, birds disperse, and sightings become much harder.",
+        body: "Plan a visit between November and early May. Late in the dry season (March–April) is particularly good — surface water disappears across the wider forest, so birds concentrate at the known Seasonal pond. Outside the dry season, the forest floods, birds disperse, and sightings become much harder.",
       },
       {
         heading: "Birding tours that target the Giant Ibis",
