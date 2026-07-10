@@ -299,7 +299,7 @@ const ToursPage = () => {
   }, {
     id: 2,
     title: "Full Day Tours to Birding at Prek Toal Waterbird Sanctuary and Visit Floating village",
-    description: "Nestled on the northwestern edge of the Tonle Sap Great Lake, the Prek Toal Bird Sanctuary is a spectacular Ramsar site and part of Cambodia's UNESCO Biosphere Reserve. This unique ecosystem, dominated by seasonally flooded freshwater swamp forest, supports thousands of rare and endangered birds during the dry season, making it one of Southeast Asia's premier birdwatching destinations. Prek Toal is home to the largest breeding colony of large waterbirds in the region, with more than 150 bird species recorded within this protected reserve.",
+    description: "Prek Toal Bird Sanctuary is located on the northwestern side of Tonle Sap Lake and is one of Cambodia's best birdwatching sites. The sanctuary is part of the Tonle Sap Biosphere Reserve and is famous for its seasonally flooded freshwater forest.\n\nDuring the dry season, thousands of waterbirds gather here to nest and raise their young, creating one of the largest breeding colonies of waterbirds in Southeast Asia. More than 102 bird species have been recorded in the sanctuary, including many rare and globally threatened species. Prek Toal is a must-visit destination for birdwatchers and nature lovers visiting Cambodia. After the bird watching is done at Prek Toal, you will enjoy the floating village after having lunch in a local restaurant at FLOATING HOUSE",
     duration: "Full Day (11 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
