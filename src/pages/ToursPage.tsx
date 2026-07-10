@@ -15,6 +15,9 @@ import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.j
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
 import pearaingBiodiversityCenterAsset from "@/assets/pearaing-biodiversity-center.jpg.asset.json";
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
+import bfTourAsianOpenbill from "@/assets/bf-tour-asian-openbill.jpg.asset.json";
+import bfTourCattleEgret from "@/assets/bf-tour-cattle-egret.jpg.asset.json";
+import bfTourCitrineWagtail from "@/assets/bf-tour-citrine-wagtail.jpg.asset.json";
 import dakDamKeoSeimaForestAsset from "@/assets/dak-dam-keo-seima-forest.png.asset.json";
 import kratieMekongDolphinsAsset from "@/assets/kratie-mekong-irrawaddy-dolphins.png.asset.json";
 import customTourAsset from "@/assets/custom-tour-cambodian-laughingthrush.jpg.asset.json";
@@ -273,7 +276,7 @@ const ToursPage = () => {
     groupSize: "2 people",
     price: "$280 Per Person",
     image: bengalFloricanGrasslandTourAsset.url,
-    images: [bengalFloricanGrasslandTourAsset.url],
+    images: [bengalFloricanGrasslandTourAsset.url, bfTourAsianOpenbill.url, bfTourCattleEgret.url, bfTourCitrineWagtail.url],
     category: "cultural",
     highlights: ["Bengal Florican", "Angkor Wat birding", "Critically endangered species", "World heritage temple", "Dawn display", "Grassland & forest birds"],
     rating: 5.0,
