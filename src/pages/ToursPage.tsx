@@ -212,7 +212,7 @@ const ToursPage = () => {
   }, {
     id: 2.5,
     title: "Half-day Birding at Bengal Florican Grassland",
-    description: "Join a half-day birding trip to the Bengal Florican Grassland on the Tonle Sap floodplain, one of the most reliable places to see the critically endangered Bengal Florican. Open grasslands and seasonally flooded fields also support a variety of species in wetland and grassland specialists, including Sarus Crane, Pied Harrier, Manchurian Reed Warbler, and Oriental Skylark, Oriental Pratincole, Stork, Pelican, and more than 60 species.\u00a0Choose a morning session to catch the peak display activity, or an afternoon session for softer light and a second chance at the day's target birds.",
+    description: "Join a half-day birding trip to the Bengal Florican Grassland on the Tonle Sap floodplain, one of the most reliable places to see the critically endangered Bengal Florican. Open grasslands and seasonally flooded fields also support a variety of species in wetland and grassland specialists, including Sarus Crane, Pied Harrier, Manchurian Reed Warbler, and Oriental Skylark, Oriental Pratincole, Stork, Pelican, and more than 60 species.\u00a0Choose a morning is the best session see display activity in the morning, or an afternoon session for softer light.",
     duration: "Half Day (3–6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
