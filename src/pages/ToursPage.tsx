@@ -548,7 +548,7 @@ The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, an
     title: "2-Day 1-Night Birding at Dak Dam — Keo Seima Evergreen Forest",
     description: `Journey into the lush evergreen forests of Dak Dam, inside the Keo Seima Wildlife Sanctuary in Cambodia's eastern Mondulkiri Province. This remote forest edge is famous for its rich wildlife, including several species of hornbills, primates and forest birds that are difficult to find elsewhere in the country.
 
-Over two days you will explore forest trails, fruiting trees and nearby streams at dawn and dusk, giving excellent chances for Yellow-cheeked Gibbon, Black-shanked Douc, Great Hornbill and Wreathed Hornbill. The area is also excellent for woodpeckers, broadbills, trogons, pittas and nightbirds. A night walk adds possibilities for owls, frogmouths and nocturnal mammals. This is a true wilderness experience for birders who want to explore Cambodia's eastern forests.`,
+Over two days, you will explore forest trails, fruiting trees, and nearby streams at dawn and dusk, giving excellent chances for Yellow-cheeked Gibbon, Black-shanked Douc, Great Hornbill, and Wreathed Hornbill. The area is also excellent for woodpeckers, broadbills, trogons, pittas, and over 80 other species. This is a true wilderness experience for birders who want to explore Cambodia's eastern forests.`,
     duration: "2 Days / 1 Night",
     difficulty: "Moderate",
     groupSize: "2-6 people",
