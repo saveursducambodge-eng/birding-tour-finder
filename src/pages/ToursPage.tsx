@@ -72,6 +72,7 @@ import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import russeyTrepBengalFloricanAsset from "@/assets/russey-trep-bengal-florican.png.asset.json";
 import giantIbisTourAsset from "@/assets/giant-ibis-tour.png.asset.json";
+import redHeadedVultureFlockAsset from "@/assets/red-headed-vulture-flock.jpg.asset.json";
 import beTreedWoodpeckerAsset from "@/assets/be-treed-woodpecker.jpg.asset.json";
 const russeyTrepBengalFlorican = russeyTrepBengalFloricanAsset.url;
 import bird7 from "@/assets/bird-7.jpg";
@@ -528,8 +529,8 @@ We hope to see around 235 bird species during this tour.`,
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: giantIbisTourAsset.url,
-    images: [giantIbisTourAsset.url],
+    image: redHeadedVultureFlockAsset.url,
+    images: [redHeadedVultureFlockAsset.url],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Red-headed Vulture", "White-shouldered Ibis", "Mekong Wagtail", "Irrawaddy Dolphin", "Cambodian Tailorbird", "Angkor temples"],
     rating: 4.9,
