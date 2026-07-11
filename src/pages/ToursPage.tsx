@@ -515,8 +515,46 @@ const ToursPage = () => {
     food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
-    id: 7.1,
+    id: 7.06,
+    title: "Custom Tours 8 Days: Giant Ibis, Bengal Florican, Red-headed Vulture & Mekong Wagtail",
+    description: `Cambodia is a fantastic destination for anyone who loves nature and wildlife. While the country is famous for the ancient temples of Angkor Wat, it is also one of the best birdwatching destinations in Southeast Asia. It is home to many rare and endangered birds, including the Giant Ibis, Cambodia's national bird, as well as a wide variety of other unique wildlife.
 
+On this tour, we'll explore a wide range of habitats, including evergreen forests, dry woodlands, wetlands, grasslands and the mighty Mekong River. Along the way, we'll search for some of Cambodia's most sought-after birds and other fascinating wildlife.
+
+This tour is more than just a birdwatching holiday. By travelling with us, you also help support local communities and conservation projects that protect Cambodia's wildlife and natural habitats. It's a great opportunity to enjoy outstanding birding while making a positive contribution to the conservation of these remarkable places for future generations.
+
+We hope to see around 235 bird species during this tour.`,
+    duration: "8 Days / 7 Nights",
+    difficulty: "Moderate",
+    groupSize: "2-8 people",
+    price: "$ Per Person",
+    image: giantIbisTourAsset.url,
+    images: [giantIbisTourAsset.url],
+    category: "multi-day",
+    highlights: ["Giant Ibis", "Bengal Florican", "Red-headed Vulture", "White-shouldered Ibis", "Mekong Wagtail", "Irrawaddy Dolphin", "Cambodian Tailorbird", "Angkor temples"],
+    rating: 4.9,
+    schedule: {
+      "Day 1": "Arrive in Siem Reap — If time allows, enjoy local birding near Siem Reap at Phnom Krom Marshland or Chrav. Dinner at a local restaurant. Overnight in Siem Reap.",
+      "Day 2": "Full Day Angkor Complex (birding & temples) — Our first birding hotspot is the Angkor Temple complex, where we combine birdwatching with a tour of the temples. We will also visit the fabulous Ta Prohm Temple, embraced by the roots of enormous fig trees and gigantic creepers. Along the way we look for White-throated Rock-thrush, Black-capped Kingfisher, Black Baza, Alexandrine and Red-breasted Parakeet, Hainan Blue and Taiga Flycatchers, among many others. Overnight in Siem Reap.",
+      "Day 3": "Florican Grassland & Northern Plains — Depart Siem Reap early and head to the grasslands of Kampong Thom in search of the rare and endangered Bengal Florican and the wintering Manchurian/White-browed Reed-warbler. Raptors including Eastern Marsh Harrier, Pied Harrier and Greater Spotted Eagle are often seen cruising overhead. Continue to Russey Treb (Tmatboey), one of the last strongholds of the Giant Ibis and White-shouldered Ibis. Dinner at the community restaurant. Overnight at the community lodge or nearby guesthouse.",
+      "Day 4": "Full Day Northern Plains — A full day dedicated to the Giant Ibis and rare birds of the dry dipterocarp forest. The Northern Plains are home to the iconic critically endangered Giant Ibis and White-shouldered Ibis, alongside White-rumped Pygmy-falcon, Pale-capped Pigeon, Asian Woolly-necked Stork, Black-headed, Great Slaty and Rufous-bellied Woodpeckers, Chinese Francolin, White-browed Fantail, Indochinese Bushlark, Rufous-bellied Eagle, Violet Cuckoo and Indian Spotted Eagle. Owls and nightjars possible after dark. Overnight at the community lodge or nearby guesthouse.",
+      "Day 5": "Full Day Northern Plains — A second full day exploring the dry forests, waterholes and open woodland of the Northern Plains, targeting any missed species and adding to our list of raptors, woodpeckers and dry-forest specialities, including Franklin's or Savannah Nightjar, Large-tailed Nightjar, Oriental Scops-Owl, Barn Owl, Brown Fish-Owl, Spotted Wood-Owl and Brown Wood-Owl. Overnight at the community lodge or nearby guesthouse.",
+      "Day 6": "Northern Plains & Vulture Restaurant — A final morning birding the Northern Plains for any missed targets before returning to the community lodge for lunch. Then a three-hour drive to Boeng Toal, arriving in late afternoon. A short walk through the surrounding forest offers more birding before the tour highlight — an evening at the Vulture Restaurant, a chance to observe all three of Cambodia's critically endangered vultures: Red-headed, White-rumped and Slender-billed Vulture. Dhole is also possible. We stay in comfortable safari tents deep in Chhep Wildlife Sanctuary. By visiting you directly support this important conservation programme and the surrounding community. Overnight basic homestay or camping at the Vulture Restaurant (tented camp, no A/C).",
+      "Day 7": "Vulture Restaurant & Kratie Mekong River — A return morning visit to the vulture hide and birding the nearby trails. After an early lunch we continue to Kratie. Evening birding at rice paddies and wetlands on the other side of the Mekong River. Overnight in Kratie.",
+      "Day 8": "Kratie Mekong River & Phnom Penh — Morning boat trip on the Mekong River (around two hours) for Mekong Wagtail, Irrawaddy Dolphin and other river specialities. Around 11 AM we set off for Phnom Penh, stopping en route at the Cambodian Tailorbird Marshland to look for this recently discovered endemic. The tour concludes in Phnom Penh in the late afternoon. Transfers back to Siem Reap can be arranged; if flying from Phnom Penh please book a late evening flight."
+    },
+    birdSpecies: ["Giant Ibis", "White-shouldered Ibis", "Bengal Florican", "Red-headed Vulture", "White-rumped Vulture", "Slender-billed Vulture", "Mekong Wagtail", "Irrawaddy Dolphin", "Cambodian Tailorbird", "Manchurian Reed-warbler", "Eastern Marsh Harrier", "Pied Harrier", "Greater Spotted Eagle", "Indian Spotted Eagle", "Rufous-bellied Eagle", "White-rumped Pygmy-falcon", "Pale-capped Pigeon", "Asian Woolly-necked Stork", "Black-headed Woodpecker", "Great Slaty Woodpecker", "Rufous-bellied Woodpecker", "Chinese Francolin", "White-browed Fantail", "Indochinese Bushlark", "Violet Cuckoo", "White-throated Rock-thrush", "Black-capped Kingfisher", "Black Baza", "Alexandrine Parakeet", "Red-breasted Parakeet", "Hainan Blue Flycatcher", "Taiga Flycatcher", "Savannah Nightjar", "Large-tailed Nightjar", "Oriental Scops-Owl", "Barn Owl", "Brown Fish-Owl", "Spotted Wood-Owl", "Brown Wood-Owl", "Small Pratincole", "Pied Kingfisher", "Dhole"],
+    included: ["All transport", "All accommodation as per itinerary", "All meals — full board from dinner on Day 1 to lunch on Day 7 (breakfast on Day 8)", "Services of local guides at each birding site", "Carcass for the Vulture Restaurant", "Boat trip on the Mekong River", "All drinking water", "All entrance and reserve fees"],
+    notIncluded: ["International airfare", "Travel insurance", "Tips", "Drinks", "Laundry", "Flight/airport tax", "Any items of a personal nature"],
+    accommodation: "1 night in Siem Reap (Day 1), 1 night in Siem Reap (Day 2), 2 nights at Russey Treb community lodge, 1 night at the Vulture Restaurant (safari tent, no A/C), 1 night in Kratie, 1 night in Phnom Penh. Single supplement is not available for the Northern Plains and Boeng Toal.",
+    bestSeason: "November to April (Peak: January-March) when the dry season concentrates ibises and vultures at waterholes and river levels are low for Mekong Wagtail.",
+    physicalEffort: "Walking 3-5 km per day on flat grassland, temple grounds and forest trails. Suitable for birders in reasonable health who are comfortable with tropical conditions and early starts.",
+    weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
+    food: "Full board from dinner on Day 1 through to lunch on Day 7, with breakfast on Day 8. A mix of Khmer cuisine at local restaurants, community lodges and safari camp. Vegetarian options available on request.",
+    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, headlamp or torch, light long-sleeved clothing, binoculars and camera"
+  }, {
+    id: 7.1,
+    
     title: "2-Day 1-Night Birding at Kratie — Mekong Wagtail & Irrawaddy Dolphins",
     description: `Explore the mighty Mekong River at Kratie, one of Cambodia's most rewarding lowland birding destinations. This relaxed two-day tour focuses on the riverbanks, sandbars and small islands around Kratie town, where the endemic Mekong Wagtail is reliably found alongside a suite of specialist waterbirds.
 
