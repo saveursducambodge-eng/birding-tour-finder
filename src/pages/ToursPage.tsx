@@ -20,6 +20,7 @@ import dakDamKeoSeimaForestAsset from "@/assets/dak-dam-keo-seima-forest.png.ass
 import kratieMekongDolphinsAsset from "@/assets/kratie-mekong-irrawaddy-dolphins.png.asset.json";
 import customTourAsset from "@/assets/custom-tour-cambodian-laughingthrush.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
+const paintedStorksHero = paintedStorksHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
 import northernPlainsIbisFlight from "@/assets/northern-plains-ibis-flight.jpg";
 import customTourIbisGroup from "@/assets/custom-tour-ibis-group.jpg";
