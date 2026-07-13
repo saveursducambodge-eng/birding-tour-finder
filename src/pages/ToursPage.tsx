@@ -10,6 +10,7 @@ import TourDetailsPopup from "@/components/TourDetailsPopup";
 import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-vultures.jpg.asset.json";
+import paintedStorksHeroAsset from "@/assets/tours-hero-painted-storks.jpg.asset.json";
 import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo.png.asset.json";
 import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
