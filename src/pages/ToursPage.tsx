@@ -621,7 +621,7 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, headlamp or torch, light long-sleeved clothing, waterproof jacket, binoculars and camera"
   }, {
     id: 15,
-    title: "Custom Tours",
+    title: "Custom 14-Day Cambodia Birding Tour | Tailor-Made Birdwatching Holiday",
     description: "A fully customizable 15-day Cambodia birding adventure combining ancient temples, endangered grassland species, Northern Plains ibises, Mekong River specialities, and the endemic Cambodian Laughingthrush on Mount Aural.\n\nDay 1 begins with arrival in Siem Reap and birding among the iconic Angkor temples, where Hainan Blue Flycatcher, Asian Barred Owlet, Black Baza and wintering minivets are possible. Day 2 searches for Bengal Florican before travelling north to Russey Treb in the Northern Plains. Days 3–4 are dedicated to finding Giant Ibis and White-shouldered Ibis and the region's exceptional dry-forest species. Day 5 boats the Mekong River near Kratie for Mekong Wagtail and Irrawaddy Dolphins, then Day 6 targets Chinese Grassbird near Pursat. Day 7 transfers to Phnom Penh for international departures, while the optional Mount Aural post-tour extension (Days 8–12) searches for the endemic Cambodian Laughingthrush and Chestnut-headed Partridge. Day 15 ends with departures from Phnom Penh International Airport.",
     duration: "15 Days / 14 Nights",
     difficulty: "Moderate",
