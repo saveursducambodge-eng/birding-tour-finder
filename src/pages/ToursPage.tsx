@@ -131,7 +131,14 @@ const ToursPage = () => {
   const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("half-day");
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [heroSlide, setHeroSlide] = useState(0);
+  const heroImages = [birdTourHero, paintedStorksHero];
   const toursSectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const timer = setInterval(() => setHeroSlide((s) => (s + 1) % heroImages.length), 6000);
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
   const tours = [{
     id: 1,
     title: "Half Day Birding at Pearaing Biodiversity Conservation Center",
