@@ -706,12 +706,39 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
       {/* Hero Section */}
       <section className="relative flex items-center justify-center overflow-hidden px-4 md:px-8 py-6">
         <div className="relative w-full max-w-7xl aspect-[1280/822] min-h-[500px] rounded-[3rem] overflow-hidden shadow-nature group">
-          {/* Background image */}
-          <img
-            src={birdTourHero}
-            alt="Bird watching tours in Cambodia"
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-          />
+          {/* Background image slider */}
+          {heroImages.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`Bird watching tours in Cambodia ${i + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === heroSlide ? 'opacity-100' : 'opacity-0'}`}
+            />
+          ))}
+          <button
+            onClick={() => setHeroSlide((s) => (s - 1 + heroImages.length) % heroImages.length)}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity z-20"
+            aria-label="Previous hero image"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => setHeroSlide((s) => (s + 1) % heroImages.length)}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity z-20"
+            aria-label="Next hero image"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+            {heroImages.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setHeroSlide(i)}
+                className={`w-2 h-2 rounded-full transition-colors ${i === heroSlide ? 'bg-white' : 'bg-white/50 hover:bg-white/80'}`}
+                aria-label={`Go to hero image ${i + 1}`}
+              />
+            ))}
+          </div>
           {/* Gradient overlays */}
           <div className="absolute inset-0 bg-gradient-to-t from-nature-forest/95 via-nature-forest/40 to-transparent" />
           <div className="absolute inset-0 ring-1 ring-inset ring-primary-foreground/10 rounded-[3rem]" />
