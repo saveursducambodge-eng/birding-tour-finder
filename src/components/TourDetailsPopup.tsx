@@ -21,6 +21,7 @@ import beTreed916_1 from "@/assets/be-treed-9-16-1.jpg.asset.json";
 import beTreed916_2 from "@/assets/be-treed-9-16-2.jpg.asset.json";
 import beTreed916_3 from "@/assets/be-treed-9-16-3.jpg.asset.json";
 import beTreed916_4 from "@/assets/be-treed-9-16-4.jpg.asset.json";
+import halfDayPearaingWaterbirds from "@/assets/half-day-pearaing-waterbirds.jpg.asset.json";
 interface Tour {
   id: number;
   title: string;
