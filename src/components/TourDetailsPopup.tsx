@@ -675,7 +675,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                     </p>
                   );
                 }
-                return <p key={index}>{paragraph}</p>;
+                return <p key={index} className="whitespace-pre-line">{paragraph}</p>;
               })}
             </div>
           </div>
