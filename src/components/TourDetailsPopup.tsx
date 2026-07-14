@@ -682,14 +682,9 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                         return <h3 key={i} className="text-nature-forest font-semibold text-lg mt-4 mb-2">{line}</h3>;
                       }
                       
-                      const content = line.trim();
-                      if (!content) return <br key={i} />;
-                      
                       return (
                         <span key={i}>
-                          {content.startsWith('The Bengal Florican is one of') ? (
-                            <strong>{content}</strong>
-                          ) : content}
+                          {line}
                           {i < paragraph.split('\n').length - 1 && <br />}
                         </span>
                       );
