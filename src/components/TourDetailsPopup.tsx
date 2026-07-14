@@ -21,6 +21,7 @@ import beTreed916_1 from "@/assets/be-treed-9-16-1.jpg.asset.json";
 import beTreed916_2 from "@/assets/be-treed-9-16-2.jpg.asset.json";
 import beTreed916_3 from "@/assets/be-treed-9-16-3.jpg.asset.json";
 import beTreed916_4 from "@/assets/be-treed-9-16-4.jpg.asset.json";
+import halfDayPearaingWaterbirds from "@/assets/half-day-pearaing-waterbirds.jpg.asset.json";
 interface Tour {
   id: number;
   title: string;
@@ -660,9 +661,22 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           {/* Description */}
           <div className="space-y-4">
             <div className="text-muted-foreground leading-relaxed space-y-4">
-              {tour.description.split('\n\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+              {tour.description.split('\n\n').map((paragraph, index) => {
+                if (tour.id === 1 && index === 0) {
+                  return (
+                    <p key={index} className="overflow-hidden">
+                      <img
+                        src={halfDayPearaingWaterbirds.url}
+                        alt="Waterbirds at Pearaing Biodiversity Conservation Center"
+                        loading="lazy"
+                        className="float-left w-32 h-auto sm:w-40 rounded-lg mr-4 mb-2 shadow-md"
+                      />
+                      {paragraph}
+                    </p>
+                  );
+                }
+                return <p key={index}>{paragraph}</p>;
+              })}
             </div>
           </div>
 
