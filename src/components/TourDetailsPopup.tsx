@@ -662,7 +662,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           <div className="space-y-4">
             <div className="text-muted-foreground leading-relaxed space-y-4">
               {tour.description.split('\n\n').map((paragraph, index) => {
-                if (tour.id === 1 && index === 0) {
+                if (tour.id === 1 && index === 1) {
                   return (
                     <p key={index} className="overflow-hidden">
                       <img
