@@ -678,7 +678,14 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                 return (
                   <div key={index} className="whitespace-pre-line">
                     {paragraph.split('\n').map((line, i) => {
-                      if (i === 0 && line === "Kampong Phluk Floating Village") {
+                      const headers = [
+                        "Kampong Phluk Floating Village.",
+                        "A Village Built Above the Water",
+                        "Life on Tonle Sap Lake",
+                        "Flooded Mangrove Forest"
+                      ];
+                      
+                      if (i === 0 && headers.some(h => line.includes(h))) {
                         return <h3 key={i} className="text-nature-forest font-semibold text-lg mt-4 mb-2">{line}</h3>;
                       }
                       
