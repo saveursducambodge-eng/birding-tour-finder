@@ -676,7 +676,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                   );
                 }
                 return (
-                  <p key={index} className="whitespace-pre-line">
+                  <div key={index} className="whitespace-pre-line">
                     {paragraph.split('\n').map((line, i) => {
                       if (i === 0 && line === "Kampong Phluk Floating Village") {
                         return <h3 key={i} className="text-nature-forest font-semibold text-lg mt-4 mb-2">{line}</h3>;
@@ -689,7 +689,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
                         </span>
                       );
                     })}
-                  </p>
+                  </div>
                 );
               })}
             </div>
