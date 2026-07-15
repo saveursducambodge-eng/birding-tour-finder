@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "A short but powerful expedition to see Cambodia's critically endangered national bird, the Giant Ibis, deep in the dry dipterocarp forests of Russey Treb.",
     image: twoDayImage,
-    category: "Multi-Day Tours",
+    category: "Custom Tours",
     readTime: "8 min read",
     date: "May 24, 2026",
     highlights: [
@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "From Tonle Sap wetlands to the Northern Plains and ancient temples, this week-long expedition covers Cambodia's most important birding regions.",
     image: sevenDayImage,
-    category: "Multi-Day Tours",
+    category: "Custom Tours",
     readTime: "10 min read",
     date: "May 30, 2026",
     highlights: [
