@@ -220,7 +220,7 @@ const Homepage = () => {
                   Prek Toal Waterbird Sanctuary
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm line-clamp-3">
-                  UNESCO Biosphere Reserve with Greater Adjutant and floating village experience.
+                  Famous for its large colonies of waterbirds, it is one of the best places to see the endangered Greater Adjutant and Milky Stork
                 </p>
                 <Link to="/tours">
                   <Button variant="ghost" className="group/btn p-0 h-auto text-primary hover:text-primary">
