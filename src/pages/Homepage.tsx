@@ -176,7 +176,7 @@ const Homepage = () => {
               Discover Pearaing Conservation Tours
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
-              From half-day excursions to multi-day expeditions, explore Cambodia's incredible bird diversity with our expert guides.
+              From half-day excursions to Custom Tours expeditions, explore Cambodia's incredible bird diversity with our expert guides.
             </p>
           </div>
 
