@@ -251,7 +251,7 @@ const ToursPage = () => {
     duration: "Half Day (6 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
-    price: "$180 Per Person",
+    price: "$255 Per Person",
     image: sarusCraneHalfDay,
     images: [sarusCraneHalfDay],
     category: "water",
