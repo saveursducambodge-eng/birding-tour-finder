@@ -128,7 +128,7 @@ const Homepage = () => {
           </div>
 
           <p className="text-base sm:text-lg md:text-lg lg:text-xl mb-8 text-white/90 max-w-2xl mx-auto animate-slide-up leading-relaxed font-light drop-shadow-md" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
-            For 15+ years, Pearaing Biodiversity Conservation has opened private access to Cambodia's rarest birds, ancient temples and wild landscapes — at your rhythm, with guides who live the mission.
+            For 15+ years, Pearaing Biodiversity Conservation has opened private access to Cambodia's rarest birds, ancient temples and wild landscapes at your rhythm, with guides who live the mission.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up max-w-md sm:max-w-none mx-auto">
