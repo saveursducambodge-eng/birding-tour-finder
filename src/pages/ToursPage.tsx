@@ -679,7 +679,7 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
       const n = parseInt(dayMatch[1], 10);
       if (n === 1) return "1-day";
       if (n === 2) return "2-days";
-      return "multi-day";
+      return "multi-day"; // Maps to "Custom Tours" label
     }
     if (d.includes("full")) return "1-day";
     return "multi-day";
