@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import LazyImage from "@/components/LazyImage";
 import { tours } from "@/pages/ToursPage";
 
 const GreenSeasonBirdingPage = () => {
