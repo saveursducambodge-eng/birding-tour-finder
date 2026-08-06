@@ -654,10 +654,6 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     isInformational: true,
     thingsToBring: "This is an informational guide only"
   }];
-  const handleTourDetails = (tour: typeof tours[0]) => {
-    setSelectedTour(tour);
-    setIsPopupOpen(true);
-  };
   const getDurationGroup = (duration: string) => {
     const d = (duration || "").toLowerCase();
     if (d.includes("information")) return "information";
@@ -686,6 +682,10 @@ const ToursPage = () => {
   const [heroSlide, setHeroSlide] = useState(0);
   const heroImages = [birdTourHero, paintedStorksHero];
   const toursSectionRef = useRef<HTMLElement>(null);
+  const handleTourDetails = (tour: typeof tours[0]) => {
+    setSelectedTour(tour);
+    setIsPopupOpen(true);
+  };
 
   useEffect(() => {
     const timer = setInterval(() => setHeroSlide((s) => (s + 1) % heroImages.length), 6000);
