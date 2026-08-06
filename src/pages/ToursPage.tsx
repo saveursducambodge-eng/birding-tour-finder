@@ -84,7 +84,7 @@ import bird10 from "@/assets/bird-10.jpg";
 import russeyTrepSlide1 from "@/assets/russey-trep-slide-1.jpg";
 import russeyTrepSlide2 from "@/assets/russey-trep-slide-2.jpg";
 import russeyTrepSlide3 from "@/assets/russey-trep-slide-3.jpg";
-const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => {
+export const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback((e: React.MouseEvent) => {
@@ -654,7 +654,7 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     isInformational: true,
     thingsToBring: "This is an informational guide only"
   }];
-  const getDurationGroup = (duration: string) => {
+export const getDurationGroup = (duration: string) => {
     const d = (duration || "").toLowerCase();
     if (d.includes("information")) return "information";
     if (d.includes("half")) return "half-day";
@@ -668,7 +668,7 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     if (d.includes("full")) return "1-day";
     return "multi-day";
   };
-  const durationGroupOptions = [
+export const durationGroupOptions = [
     { value: "half-day", label: "Half Day" },
     { value: "1-day", label: "1 Day" },
     { value: "2-days", label: "2 Days" },
