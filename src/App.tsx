@@ -9,6 +9,7 @@ import Homepage from "./pages/Homepage";
 import AboutPage from "./pages/AboutPage";
 import ToursPage from "./pages/ToursPage";
 import ItinerariesPage from "./pages/ItinerariesPage";
+import GreenSeasonBirdingPage from "./pages/GreenSeasonBirdingPage";
 import GalleryPage from "./pages/GalleryPage";
 import ConservationPage from "./pages/ConservationPage";
 
@@ -44,6 +45,7 @@ const App = () => (
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/tours" element={<ToursPage />} />
                 <Route path="/itineraries" element={<ItinerariesPage />} />
+                <Route path="/green-season-birding" element={<GreenSeasonBirdingPage />} />
                 <Route path="/temple-tours" element={<TempleToursPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/conservation" element={<ConservationPage />} />

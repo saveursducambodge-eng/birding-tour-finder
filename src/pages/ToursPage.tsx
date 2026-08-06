@@ -127,19 +127,7 @@ const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => 
   );
 };
 
-const ToursPage = () => {
-  const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("half-day");
-  const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [heroSlide, setHeroSlide] = useState(0);
-  const heroImages = [birdTourHero, paintedStorksHero];
-  const toursSectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const timer = setInterval(() => setHeroSlide((s) => (s + 1) % heroImages.length), 6000);
-    return () => clearInterval(timer);
-  }, [heroImages.length]);
-  const tours = [{
+export const tours = [{
     id: 1,
     title: "Half Day Birding at Pearaing Biodiversity Conservation Center",
     description: "The Pearaing Biodiversity Conservation Center (PBCC) is a community-based bird conservation area located about 13 km southeast of Siem Reap and around 2 km north of Tonle Sap Lake. It is one of the closest and most rewarding birdwatching sites near Siem Reap, making it ideal for visitors who want to experience Cambodia's rich wetland wildlife without traveling far from the city. The site was officially recognized as an eco-tourism destination in 2016 and is managed by local villagers with support from community leaders, Buddhist monks, and government authorities.\n\n\nAn easy and affordable half-day birding tour, perfect for early risers or afternoon explorers. Just 10 km from Siem Reap town (about 20 minutes by car or tuk-tuk), explore the Pearaing Biodiversity Conservation Center, which stretches to the edge of the great Tonle Sap Lake.\n\nThis important feeding site is home to many waterbirds, including Painted Stork, Milky Stork, Lesser Adjutant, Grey-headed Fish Eagle, Spot-billed Pelican, Oriental Darter, Indian Cormorant, Great Cormorant, Little Cormorant, and more than 70+ wetland bird species.\n\nIn just a few hours of birding, you can spot over 50 wetland and grassland bird species.",
@@ -666,10 +654,6 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     isInformational: true,
     thingsToBring: "This is an informational guide only"
   }];
-  const handleTourDetails = (tour: typeof tours[0]) => {
-    setSelectedTour(tour);
-    setIsPopupOpen(true);
-  };
   const getDurationGroup = (duration: string) => {
     const d = (duration || "").toLowerCase();
     if (d.includes("information")) return "information";
@@ -689,7 +673,24 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     { value: "1-day", label: "1 Day" },
     { value: "2-days", label: "2 Days" },
     { value: "multi-day", label: "Custom Tours" }
-  ];
+];
+
+const ToursPage = () => {
+  const [selectedDurationGroup, setSelectedDurationGroup] = useState<string>("half-day");
+  const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [heroSlide, setHeroSlide] = useState(0);
+  const heroImages = [birdTourHero, paintedStorksHero];
+  const toursSectionRef = useRef<HTMLElement>(null);
+  const handleTourDetails = (tour: typeof tours[0]) => {
+    setSelectedTour(tour);
+    setIsPopupOpen(true);
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => setHeroSlide((s) => (s + 1) % heroImages.length), 6000);
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
   const filteredTours = tours.filter((tour) => {
     const group = getDurationGroup(tour.duration);
     return group !== "information" && group === selectedDurationGroup;
