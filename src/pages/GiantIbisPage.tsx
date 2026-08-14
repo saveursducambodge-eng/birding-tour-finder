@@ -4,10 +4,10 @@ import giantIbisHero from "@/assets/giant-ibis-hero.jpg.asset.json";
 const GiantIbisPage = () => (
   <SpeciesLandingPage
     slug="giant-ibis"
-    title="Giant Ibis Cambodia | Where to See Cambodia's National Bird | Pearaing Conservation Tours"
-    metaDescription="See the critically endangered Giant Ibis in Cambodia. Russey Treb & Northern Plains birding tours led by Pearaing Conservation Tours's local guides — the best chance to spot Cambodia's national bird."
+    title="Giant Ibis Cambodia | Where to See Cambodia's National Bird | Pearaing Birding Trails"
+    metaDescription="See the critically endangered Giant Ibis in Cambodia. Russey Treb & Northern Plains birding tours led by Pearaing Birding Trails's local guides — the best chance to spot Cambodia's national bird."
     h1="Giant Ibis in Cambodia — Where to See Thaumatibis gigantea"
-    intro="The Giant Ibis (Thaumatibis gigantea) is Cambodia's national bird and one of the rarest large waterbirds on Earth. Fewer than 200 mature individuals remain, almost all of them in the dry deciduous dipterocarp forests of northern Cambodia. Pearaing Conservation Tours specialises in guided tours to its last remaining strongholds."
+    intro="The Giant Ibis (Thaumatibis gigantea) is Cambodia's national bird and one of the rarest large waterbirds on Earth. Fewer than 200 mature individuals remain, almost all of them in the dry deciduous dipterocarp forests of northern Cambodia. Pearaing Birding Trails specialises in guided tours to its last remaining strongholds."
     whereToSee="Russey Treb (formerly Tmatboey) and surrounding waterholes in the Northern Plains, Preah Vihear Province. Birds are reliably observed at roosting trees at dawn and dusk."
     bestTime="November to early May (dry season). Birds gather at the few remaining waterholes, making sightings far more predictable."
     sections={[
@@ -25,7 +25,7 @@ const GiantIbisPage = () => (
       },
       {
         heading: "Birding tours that target the Giant Ibis",
-        body: "Pearaing Conservation Tours' 3-day Russey Treb tour is designed for the Giant Ibis and White-shouldered Ibis. Longer 5–10-day Cambodia birding itineraries combine Russey Treb with Bengal Florican grasslands, Prek Toal, and the dry forests of Preah Vihear for a full Northern Plains experience.",
+        body: "Pearaing Birding Trails' 3-day Russey Treb tour is designed for the Giant Ibis and White-shouldered Ibis. Longer 5–10-day Cambodia birding itineraries combine Russey Treb with Bengal Florican grasslands, Prek Toal, and the dry forests of Preah Vihear for a full Northern Plains experience.",
       },
       {
         heading: "How your visit supports conservation",
@@ -39,7 +39,7 @@ const GiantIbisPage = () => (
       "@type": "Article",
       headline: "Giant Ibis in Cambodia — Where to See Thaumatibis gigantea",
       about: "Giant Ibis (Thaumatibis gigantea)",
-      author: { "@type": "Organization", name: "Pearaing Conservation Tours" },
+      author: { "@type": "Organization", name: "Pearaing Birding Trails" },
       mainEntityOfPage: "https://pearaing.com/giant-ibis",
     }}
   />

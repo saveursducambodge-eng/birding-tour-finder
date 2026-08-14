@@ -20,7 +20,7 @@ interface VideoPost {
 const videoPosts: VideoPost[] = [
   {
     id: "1",
-    title: "Pearaing Conservation Tours,  Done Bird Survey at Sofitel Angkor Phokeetra Golf & Spa Resort 2025",
+    title: "Pearaing Birding Trails,  Done Bird Survey at Sofitel Angkor Phokeetra Golf & Spa Resort 2025",
     description:
       "Follow our guides into the dry dipterocarp forest at first light for an unforgettable encounter with Cambodia's critically endangered national bird.",
     youtubeId: "VG7j24yDTwQ",
@@ -77,7 +77,7 @@ const VideoBlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>Video Blog | Cambodia Birding Videos | Pearaing Conservation Tours</title>
+        <title>Video Blog | Cambodia Birding Videos | Pearaing Birding Trails</title>
         <meta
           name="description"
           content="Watch our latest birding and conservation videos from across Cambodia — field diaries, tour highlights, and species spotlights."

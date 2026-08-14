@@ -3,8 +3,8 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const GreenPeafowlPage = () => (
   <SpeciesLandingPage
     slug="green-peafowl"
-    title="Green Peafowl Cambodia | Mekong & Mondulkiri Birding | Pearaing Conservation Tours"
-    metaDescription="See the endangered Green Peafowl in Cambodia's Mekong riverine forests and Mondulkiri dry forests. Guided birding tours with Pearaing Conservation Tours."
+    title="Green Peafowl Cambodia | Mekong & Mondulkiri Birding | Pearaing Birding Trails"
+    metaDescription="See the endangered Green Peafowl in Cambodia's Mekong riverine forests and Mondulkiri dry forests. Guided birding tours with Pearaing Birding Trails."
     h1="Green Peafowl in Cambodia — Asia's Wild Peacock"
     intro="The Green Peafowl (Pavo muticus) is the world's most spectacular wild pheasant — taller, slimmer and far rarer than the familiar Indian Peafowl. Cambodia is one of the last places on Earth where wild populations can be seen reliably along the Mekong and in the eastern dry forests."
     whereToSee="Mekong riverine forests around Kratie and Stung Treng, the Western Siem Pang area, and the dry deciduous forests of Mondulkiri and Keo Seima."
@@ -24,7 +24,7 @@ const GreenPeafowlPage = () => (
       },
       {
         heading: "Tours that target the Green Peafowl",
-        body: "Pearaing Conservation Tours's Mekong birding extension and Mondulkiri / Keo Seima itineraries both target Green Peafowl, often combined with Irrawaddy Dolphin and Mekong Wagtail on the river.",
+        body: "Pearaing Birding Trails's Mekong birding extension and Mondulkiri / Keo Seima itineraries both target Green Peafowl, often combined with Irrawaddy Dolphin and Mekong Wagtail on the river.",
       },
       {
         heading: "Conservation",
@@ -37,7 +37,7 @@ const GreenPeafowlPage = () => (
       "@type": "Article",
       headline: "Green Peafowl in Cambodia",
       about: "Green Peafowl (Pavo muticus)",
-      author: { "@type": "Organization", name: "Pearaing Conservation Tours" },
+      author: { "@type": "Organization", name: "Pearaing Birding Trails" },
       mainEntityOfPage: "https://pearaing.com/green-peafowl",
     }}
   />

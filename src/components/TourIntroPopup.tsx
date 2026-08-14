@@ -47,7 +47,7 @@ const TourIntroPopup = ({
           <div className="flex justify-between items-start mb-6">
             <div>
               <h2 className="font-serif text-3xl font-bold text-primary mb-2">
-                 Pearaing Conservation Tours
+                 Pearaing Birding Trails
               </h2>
               <p className="text-muted-foreground">
                 Discover the magnificent birds of Cambodia with expert guidance
@@ -65,7 +65,7 @@ const TourIntroPopup = ({
               Pearaing Biodiversity Conservation - Cambodia's
             </h3>
             <p className="text-sm text-muted-foreground">
-              Pearaing Conservation Tours offers immersive birding and wildlife trips with unique access to conservation sites across Cambodia. Our tours support local communities and promote responsible eco-tourism while showcasing Cambodia’s rich biodiversity. 
+              Pearaing Birding Trails offers immersive birding and wildlife trips with unique access to conservation sites across Cambodia. Our tours support local communities and promote responsible eco-tourism while showcasing Cambodia’s rich biodiversity. 
 
             </p>
           </div>

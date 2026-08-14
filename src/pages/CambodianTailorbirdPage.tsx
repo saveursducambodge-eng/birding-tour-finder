@@ -3,8 +3,8 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const CambodianTailorbirdPage = () => (
   <SpeciesLandingPage
     slug="cambodian-tailorbird"
-    title="Cambodian Tailorbird | Phnom Penh Endemic Birding | Pearaing Conservation Tours"
-    metaDescription="See Cambodia's only endemic bird — the Cambodian Tailorbird — in the scrub around Phnom Penh. Guided half-day endemic birding tours with Pearaing Conservation Tours."
+    title="Cambodian Tailorbird | Phnom Penh Endemic Birding | Pearaing Birding Trails"
+    metaDescription="See Cambodia's only endemic bird — the Cambodian Tailorbird — in the scrub around Phnom Penh. Guided half-day endemic birding tours with Pearaing Birding Trails."
     h1="Cambodian Tailorbird — The Country's Only Endemic Bird"
     intro="The Cambodian Tailorbird (Orthotomus chaktomuk) was only described to science in 2013. It is Cambodia's sole endemic bird species, restricted to dense scrub on the floodplain around Phnom Penh — making it a must-see target for any visiting birder."
     whereToSee="Dense humid scrub on the floodplains around Phnom Penh, in particular sites in Kandal and along the Tonle Sap / Mekong confluence."
@@ -16,7 +16,7 @@ const CambodianTailorbirdPage = () => (
       },
       {
         heading: "Where to see the Cambodian Tailorbird",
-        body: "Pearaing Conservation Tours's local guides work a small set of reliable sites in the scrub belt around Phnom Penh. Half a morning is usually enough, often combined with Asian Golden Weaver and other floodplain specialities.",
+        body: "Pearaing Birding Trails's local guides work a small set of reliable sites in the scrub belt around Phnom Penh. Half a morning is usually enough, often combined with Asian Golden Weaver and other floodplain specialities.",
       },
       {
         heading: "Best time for a Cambodian Tailorbird tour",
@@ -37,7 +37,7 @@ const CambodianTailorbirdPage = () => (
       "@type": "Article",
       headline: "Cambodian Tailorbird — Cambodia's only endemic bird",
       about: "Cambodian Tailorbird (Orthotomus chaktomuk)",
-      author: { "@type": "Organization", name: "Pearaing Conservation Tours" },
+      author: { "@type": "Organization", name: "Pearaing Birding Trails" },
       mainEntityOfPage: "https://pearaing.com/cambodian-tailorbird",
     }}
   />

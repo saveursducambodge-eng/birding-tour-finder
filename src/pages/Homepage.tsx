@@ -83,9 +83,9 @@ const Homepage = () => {
   }];
   return <>
       <Helmet>
-        <title>Pearaing Conservation Tours - Birding & Temple Tours in Cambodia</title>
+        <title>Pearaing Birding Trails - Birding & Temple Tours in Cambodia</title>
 
-        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with Pearaing Conservation Tours. Expert-guided birding tours, Angkor temple tours, and wildlife adventures across Cambodia." />
+        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with Pearaing Birding Trails. Expert-guided birding tours, Angkor temple tours, and wildlife adventures across Cambodia." />
         <link rel="canonical" href="https://pearaing.com/" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-background via-nature-sand/30 to-background">
@@ -173,7 +173,7 @@ const Homepage = () => {
               Our Tours
             </Badge>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-              Discover Pearaing Conservation Tours
+              Discover Pearaing Birding Trails
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
               From half-day excursions to Custom Tours expeditions, explore Cambodia's incredible bird diversity with our expert guides.

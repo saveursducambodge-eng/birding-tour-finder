@@ -12,8 +12,8 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>Page Not Found | Pearaing Conservation Tours Cambodia</title>
-        <meta name="description" content="Sorry, the page you are looking for does not exist. Explore bird watching tours and temple tours in Cambodia with Pearaing Conservation Tours." />
+        <title>Page Not Found | Pearaing Birding Trails Cambodia</title>
+        <meta name="description" content="Sorry, the page you are looking for does not exist. Explore bird watching tours and temple tours in Cambodia with Pearaing Birding Trails." />
 
       </Helmet>
       <div className="flex min-h-screen items-center justify-center bg-gray-100">
