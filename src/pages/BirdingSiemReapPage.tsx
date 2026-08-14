@@ -3,10 +3,10 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const BirdingSiemReapPage = () => (
   <SpeciesLandingPage
     slug="birding-siem-reap"
-    title="Bird Watching Siem Reap | Angkor & Tonle Sap Birding Tours | Pearaing Conservation Tours"
+    title="Bird Watching Siem Reap | Angkor & Tonle Sap Birding Tours | Pearaing Birding Trails"
     metaDescription="Bird watching tours from Siem Reap — Angkor temple birding, Prek Toal waterbirds, Bengal Florican grasslands and Northern Plains specialities. Local expert guides."
     h1="Bird Watching in Siem Reap — Cambodia's Best Birding Base"
-    intro="Siem Reap is the perfect base for birding in Cambodia. Within a few hours' drive you can be inside the Angkor temple forests, on Tonle Sap Lake at Prek Toal, on the Bengal Florican grasslands, or heading north for Giant Ibis at Russey Treb. Pearaing Conservation Tours runs half-day, full-day and multi-day birding tours from Siem Reap with local expert guides."
+    intro="Siem Reap is the perfect base for birding in Cambodia. Within a few hours' drive you can be inside the Angkor temple forests, on Tonle Sap Lake at Prek Toal, on the Bengal Florican grasslands, or heading north for Giant Ibis at Russey Treb. Pearaing Birding Trails runs half-day, full-day and multi-day birding tours from Siem Reap with local expert guides."
     whereToSee="Angkor Archaeological Park (forest birds and temple specialities), Prek Toal Bird Sanctuary (waterbirds), Ang Trapeang Thmor (Sarus Crane), Bengal Florican Conservation Areas, Kompong Khleang and Kampong Phluk (floating-village birding) and the Northern Plains."
     bestTime="November to April is the main birding season. December–February for waterbirds and cranes; February–April for Bengal Florican display and dry-forest concentrations."
     sections={[
@@ -24,7 +24,7 @@ const BirdingSiemReapPage = () => (
       },
       {
         heading: "What to bring",
-        body: "Binoculars (8× or 10×), neutral-coloured clothing, sun protection and water. Pearaing Conservation Tours supplies a spotting scope, transport, permits and an experienced local guide on every tour.",
+        body: "Binoculars (8× or 10×), neutral-coloured clothing, sun protection and water. Pearaing Birding Trails supplies a spotting scope, transport, permits and an experienced local guide on every tour.",
       },
       {
         heading: "Booking and pricing",
@@ -40,7 +40,7 @@ const BirdingSiemReapPage = () => (
         "Half-day, full-day and multi-day bird watching tours from Siem Reap, Cambodia, covering Angkor, Tonle Sap, Bengal Florican grasslands and the Northern Plains.",
       provider: {
         "@type": "Organization",
-        name: "Pearaing Conservation Tours",
+        name: "Pearaing Birding Trails",
       },
       url: "https://pearaing.com/birding-siem-reap",
     }}

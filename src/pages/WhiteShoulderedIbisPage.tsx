@@ -3,8 +3,8 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const WhiteShoulderedIbisPage = () => (
   <SpeciesLandingPage
     slug="white-shouldered-ibis"
-    title="White-shouldered Ibis Cambodia | Northern Plains Birding | Pearaing Conservation Tours"
-    metaDescription="Track the critically endangered White-shouldered Ibis at Russey Treb and Western Siem Pang. Guided dry-forest birding tours with Pearaing Conservation Tours."
+    title="White-shouldered Ibis Cambodia | Northern Plains Birding | Pearaing Birding Trails"
+    metaDescription="Track the critically endangered White-shouldered Ibis at Russey Treb and Western Siem Pang. Guided dry-forest birding tours with Pearaing Birding Trails."
     h1="White-shouldered Ibis — Cambodia's Forgotten Forest Ibis"
     intro="The White-shouldered Ibis (Pseudibis davisoni) is one of the world's rarest waterbirds. Cambodia's northern dry forests hold over 80% of the global population, making it one of the most important countries on Earth for the species."
     whereToSee="Russey Treb (Kulen Promtep Wildlife Sanctuary), Western Siem Pang and seasonal waterholes across the Northern Plains, Preah Vihear and Stung Treng provinces."
@@ -24,7 +24,7 @@ const WhiteShoulderedIbisPage = () => (
       },
       {
         heading: "Tours that include the White-shouldered Ibis",
-        body: "Pearaing Conservation Tours's 3-day Russey Treb tour targets both Giant Ibis and White-shouldered Ibis. Longer Northern Plains itineraries add Western Siem Pang for higher counts and additional dry-forest specialities.",
+        body: "Pearaing Birding Trails's 3-day Russey Treb tour targets both Giant Ibis and White-shouldered Ibis. Longer Northern Plains itineraries add Western Siem Pang for higher counts and additional dry-forest specialities.",
       },
       {
         heading: "Conservation",
@@ -37,7 +37,7 @@ const WhiteShoulderedIbisPage = () => (
       "@type": "Article",
       headline: "White-shouldered Ibis in Cambodia",
       about: "White-shouldered Ibis (Pseudibis davisoni)",
-      author: { "@type": "Organization", name: "Pearaing Conservation Tours" },
+      author: { "@type": "Organization", name: "Pearaing Birding Trails" },
       mainEntityOfPage: "https://pearaing.com/white-shouldered-ibis",
     }}
   />

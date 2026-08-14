@@ -3,7 +3,7 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const SarusCranePage = () => (
   <SpeciesLandingPage
     slug="sarus-crane"
-    title="Sarus Crane Cambodia | Ang Trapeang Thmor Birding | Pearaing Conservation Tours"
+    title="Sarus Crane Cambodia | Ang Trapeang Thmor Birding | Pearaing Birding Trails"
     metaDescription="See the Sarus Crane, the world's tallest flying bird, at Ang Trapeang Thmor and the Tonle Sap floodplain. Guided Sarus Crane birding tours from Siem Reap."
     h1="Sarus Crane in Cambodia — The World's Tallest Flying Bird"
     intro="The Eastern Sarus Crane (Antigone antigone sharpii) stands over 1.7 m tall and is one of Southeast Asia's most iconic waterbirds. Cambodia holds the largest remaining population, with key sites at Ang Trapeang Thmor and the Tonle Sap floodplain grasslands."
@@ -24,7 +24,7 @@ const SarusCranePage = () => (
       },
       {
         heading: "Tours that target the Sarus Crane",
-        body: "Pearaing Conservation Tours runs a dedicated full-day Sarus Crane tour from Siem Reap to Ang Trapeang Thmor, and includes the species in longer Tonle Sap and Northern Plains itineraries.",
+        body: "Pearaing Birding Trails runs a dedicated full-day Sarus Crane tour from Siem Reap to Ang Trapeang Thmor, and includes the species in longer Tonle Sap and Northern Plains itineraries.",
       },
       {
         heading: "Conservation",
@@ -37,7 +37,7 @@ const SarusCranePage = () => (
       "@type": "Article",
       headline: "Sarus Crane in Cambodia",
       about: "Eastern Sarus Crane (Antigone antigone sharpii)",
-      author: { "@type": "Organization", name: "Pearaing Conservation Tours" },
+      author: { "@type": "Organization", name: "Pearaing Birding Trails" },
       mainEntityOfPage: "https://pearaing.com/sarus-crane",
     }}
   />

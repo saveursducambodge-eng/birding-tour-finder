@@ -13,7 +13,7 @@ const BlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>Blog | Birding & Temple Tour Insights | Pearaing Conservation Tours</title>
+        <title>Blog | Birding & Temple Tour Insights | Pearaing Birding Trails</title>
         <meta
           name="description"
           content="Stories, guides, and insights about bird watching, full-day tours, multi-day expeditions, and temple tours across Cambodia."

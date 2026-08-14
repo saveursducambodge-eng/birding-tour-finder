@@ -3,8 +3,8 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const MekongWagtailPage = () => (
   <SpeciesLandingPage
     slug="mekong-wagtail"
-    title="Mekong Wagtail Cambodia | Kratie & Stung Treng Birding | Pearaing Conservation Tours"
-    metaDescription="See the Mekong Wagtail, a Cambodia-Laos endemic, on the Mekong river around Kratie and Stung Treng. Guided river birding tours with Pearaing Conservation Tours."
+    title="Mekong Wagtail Cambodia | Kratie & Stung Treng Birding | Pearaing Birding Trails"
+    metaDescription="See the Mekong Wagtail, a Cambodia-Laos endemic, on the Mekong river around Kratie and Stung Treng. Guided river birding tours with Pearaing Birding Trails."
     h1="Mekong Wagtail — A True Mekong River Endemic"
     intro="The Mekong Wagtail (Motacilla samveasnae) is restricted to the rocky channels of the Mekong river in Cambodia, Laos, Thailand and a small corner of Vietnam. Cambodia is the easiest country in which to see it, particularly on the river between Kratie and Stung Treng."
     whereToSee="Mekong river channels and rocky islets between Kratie, Sambor and Stung Treng. Best observed by boat at low water."
@@ -37,7 +37,7 @@ const MekongWagtailPage = () => (
       "@type": "Article",
       headline: "Mekong Wagtail in Cambodia",
       about: "Mekong Wagtail (Motacilla samveasnae)",
-      author: { "@type": "Organization", name: "Pearaing Conservation Tours" },
+      author: { "@type": "Organization", name: "Pearaing Birding Trails" },
       mainEntityOfPage: "https://pearaing.com/mekong-wagtail",
     }}
   />
