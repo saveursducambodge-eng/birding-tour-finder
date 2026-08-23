@@ -30,7 +30,7 @@ interface Tour {
   difficulty: string;
   groupSize: string;
   price: string;
-  image: string;
+  image?: string;
   category: string;
   highlights: string[];
   rating: number;

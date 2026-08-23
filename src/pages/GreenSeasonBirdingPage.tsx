@@ -45,12 +45,14 @@ const GreenSeasonBirdingPage = () => {
               <Card key={tour.id} className="overflow-hidden border-sage-light">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[280px] bg-muted">
-                    <img
-                      src={tour.image}
-                      alt={tour.title}
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
+                    {tour.image ? (
+                      <img
+                        src={tour.image}
+                        alt={tour.title}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    ) : null}
                   </div>
                   <CardContent className="p-6">
                     <h2 className="font-serif text-2xl text-nature-forest mb-3">{tour.title}</h2>
