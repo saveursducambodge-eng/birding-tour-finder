@@ -135,8 +135,6 @@ export const tours = [{
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$144 Per Person",
-    image: pearaingBiodiversityCenterAsset.url,
-    images: [pearaingBiodiversityCenterAsset.url],
     category: "cultural",
     highlights: ["50+ bird species", "Pearaing Biodiversity Conservation Center", "Tonle Sap wetlands", "Morning or afternoon options", "Easy access from Siem Reap"],
     rating: 4.5,
