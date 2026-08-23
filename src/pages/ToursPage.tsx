@@ -11,14 +11,10 @@ import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-vultures.jpg.asset.json";
 import paintedStorksHeroAsset from "@/assets/tours-hero-painted-storks.jpg.asset.json";
-import changkranRoyAsset from "@/assets/changkran-roy-coral-billed-ground-cuckoo.png.asset.json";
 import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
 
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
-import dakDamKeoSeimaForestAsset from "@/assets/dak-dam-keo-seima-forest.png.asset.json";
-import kratieMekongDolphinsAsset from "@/assets/kratie-mekong-irrawaddy-dolphins.png.asset.json";
-import customTourAsset from "@/assets/custom-tour-cambodian-laughingthrush.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
 const paintedStorksHero = paintedStorksHeroAsset.url;
 import tmatboeyIbis from "@/assets/tmatboey-ibis.jpg";
@@ -74,7 +70,6 @@ import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
 import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import russeyTrepBengalFloricanAsset from "@/assets/russey-trep-bengal-florican.png.asset.json";
 import giantIbisTourAsset from "@/assets/giant-ibis-card.png.asset.json";
-import redHeadedVultureFlockAsset from "@/assets/red-headed-vulture-flock-v2.jpg.asset.json";
 import beTreedWoodpeckerAsset from "@/assets/be-treed-woodpecker.jpg.asset.json";
 const russeyTrepBengalFlorican = russeyTrepBengalFloricanAsset.url;
 import bird7 from "@/assets/bird-7.jpg";
@@ -411,8 +406,6 @@ export const tours = [{
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: changkranRoyAsset.url,
-    images: [changkranRoyAsset.url],
     category: "multi-day",
     highlights: ["Multiple woodpecker species", "Forest raptors & owls", "Night walk for nightjars & owls", "Community eco-camp stay", "Off-the-beaten-path trails", "Conservation-based tourism"],
     rating: 4.8,
@@ -524,8 +517,6 @@ We hope to see around 235 bird species during this tour.`,
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: redHeadedVultureFlockAsset.url,
-    images: [redHeadedVultureFlockAsset.url],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Red-headed Vulture", "White-shouldered Ibis", "Mekong Wagtail", "Irrawaddy Dolphin", "Cambodian Tailorbird", "Angkor temples"],
     rating: 4.9,
@@ -559,8 +550,6 @@ The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, an
     difficulty: "Easy",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: kratieMekongDolphinsAsset.url,
-    images: [kratieMekongDolphinsAsset.url],
     category: "multi-day",
     highlights: ["Mekong Wagtail", "Irrawaddy Dolphins", "Koh Trong island", "Mekong River birding", "Community homestay"],
     rating: 4.7,
@@ -587,8 +576,6 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     difficulty: "Moderate",
     groupSize: "2-6 people",
     price: "$ Per Person",
-    image: dakDamKeoSeimaForestAsset.url,
-    images: [dakDamKeoSeimaForestAsset.url],
     category: "multi-day",
     highlights: ["Yellow-cheeked Gibbon", "Black-shanked Douc", "Great Hornbill", "Wreathed Hornbill", "Evergreen forest trails", "Night walk for owls"],
     rating: 4.8,
@@ -613,8 +600,6 @@ Over two days, you will explore forest trails, fruiting trees, and nearby stream
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: customTourAsset.url,
-    images: [customTourAsset.url],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "Mekong Wagtail", "Chinese Grassbird", "Cambodian Laughingthrush", "Mount Aural extension", "Angkor temples"],
     rating: 4.9,
