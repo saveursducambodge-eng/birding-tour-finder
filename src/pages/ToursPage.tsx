@@ -13,6 +13,7 @@ import birdTourHeroAsset from "@/assets/tours-hero-vultures.jpg.asset.json";
 import paintedStorksHeroAsset from "@/assets/tours-hero-painted-storks.jpg.asset.json";
 import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
+import pearaingPaintedStorksAsset from "@/assets/pearaing-painted-storks-flock.jpg.asset.json";
 
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
