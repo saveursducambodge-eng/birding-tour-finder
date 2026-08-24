@@ -13,6 +13,7 @@ import birdTourHeroAsset from "@/assets/tours-hero-vultures.jpg.asset.json";
 import paintedStorksHeroAsset from "@/assets/tours-hero-painted-storks.jpg.asset.json";
 import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding.jpg.asset.json";
+import pearaingPaintedStorksAsset from "@/assets/pearaing-painted-storks-flock.jpg.asset.json";
 
 import bengalFloricanGrasslandTourAsset from "@/assets/bengal-florican-grassland-tour.jpg.asset.json";
 const birdTourHero = birdTourHeroAsset.url;
@@ -118,6 +119,8 @@ export const tours = [{
     id: 1,
     title: "Half Day Birding at Pearaing Biodiversity Conservation Center",
     description: "The Pearaing Biodiversity Conservation Center (PBCC) is a community-based bird conservation area located about 13 km southeast of Siem Reap and around 2 km north of Tonle Sap Lake. It is one of the closest and most rewarding birdwatching sites near Siem Reap, making it ideal for visitors who want to experience Cambodia's rich wetland wildlife without traveling far from the city. The site was officially recognized as an eco-tourism destination in 2016 and is managed by local villagers with support from community leaders, Buddhist monks, and government authorities.\n\n\nAn easy and affordable half-day birding tour, perfect for early risers or afternoon explorers. Just 10 km from Siem Reap town (about 20 minutes by car or tuk-tuk), explore the Pearaing Biodiversity Conservation Center, which stretches to the edge of the great Tonle Sap Lake.\n\nThis important feeding site is home to many waterbirds, including Painted Stork, Milky Stork, Lesser Adjutant, Grey-headed Fish Eagle, Spot-billed Pelican, Oriental Darter, Indian Cormorant, Great Cormorant, Little Cormorant, and more than 70+ wetland bird species.\n\nIn just a few hours of birding, you can spot over 50 wetland and grassland bird species.",
+    image: pearaingPaintedStorksAsset.url,
+    images: [pearaingPaintedStorksAsset.url],
     duration: "Half Day (4 hours)",
     difficulty: "Easy",
     groupSize: "2 people",
