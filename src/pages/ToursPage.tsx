@@ -67,18 +67,10 @@ import attSlide7 from "@/assets/att-slide-7.jpg";
 import bird5Asset from "@/assets/angkor-wat-asian-barred-owlet.jpg.asset.json";
 const bird5 = bird5Asset.url;
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
-import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
 import bird9 from "@/assets/bird-9.jpg";
 import bird10 from "@/assets/bird-10.jpg";
-import russeyTrepSlide1 from "@/assets/russey-trep-slide-1.jpg";
-import bird8 from "@/assets/bird-8.jpg";
-import bird9 from "@/assets/bird-9.jpg";
-import bird10 from "@/assets/bird-10.jpg";
-import russeyTrepSlide1 from "@/assets/russey-trep-slide-1.jpg";
-import russeyTrepSlide2 from "@/assets/russey-trep-slide-2.jpg";
-import russeyTrepSlide3 from "@/assets/russey-trep-slide-3.jpg";
 const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => {
   const [current, setCurrent] = useState(0);
 
