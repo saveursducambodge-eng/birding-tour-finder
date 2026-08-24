@@ -67,18 +67,10 @@ import attSlide7 from "@/assets/att-slide-7.jpg";
 import bird5Asset from "@/assets/angkor-wat-asian-barred-owlet.jpg.asset.json";
 const bird5 = bird5Asset.url;
 import bird6 from "@/assets/tmatboey-ibis-tour6.jpg";
-import giantIbis2night2days from "@/assets/giant-ibis-2night-2days.jpg";
 import bird7 from "@/assets/bird-7.jpg";
 import bird8 from "@/assets/bird-8.jpg";
 import bird9 from "@/assets/bird-9.jpg";
 import bird10 from "@/assets/bird-10.jpg";
-import russeyTrepSlide1 from "@/assets/russey-trep-slide-1.jpg";
-import bird8 from "@/assets/bird-8.jpg";
-import bird9 from "@/assets/bird-9.jpg";
-import bird10 from "@/assets/bird-10.jpg";
-import russeyTrepSlide1 from "@/assets/russey-trep-slide-1.jpg";
-import russeyTrepSlide2 from "@/assets/russey-trep-slide-2.jpg";
-import russeyTrepSlide3 from "@/assets/russey-trep-slide-3.jpg";
 const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => {
   const [current, setCurrent] = useState(0);
 
@@ -430,8 +422,6 @@ export const tours = [{
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: russeyTrepBengalFlorican,
-    images: [russeyTrepBengalFlorican],
     category: "multi-day",
     highlights: ["Giant Ibis", "Bengal Florican", "White-shouldered Ibis", "Preah Vihear Temple", "Sarus Crane", "Community eco-lodge"],
     rating: 4.8,
@@ -457,8 +447,6 @@ export const tours = [{
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: beTreedWoodpeckerAsset.url,
-    images: [beTreedWoodpeckerAsset.url],
     category: "multi-day",
     highlights: ["Bengal Florican", "White-rumped Pygmy-Falcon", "Tree House accommodation", "Conservation tourism", "Angkorian cave temples", "Forest zipline", "Community-based ecotourism"],
     rating: 4.9,
@@ -484,8 +472,6 @@ export const tours = [{
     difficulty: "Moderate",
     groupSize: "2-8 people",
     price: "$ Per Person",
-    image: giantIbisTourAsset.url,
-    images: [giantIbisTourAsset.url],
     category: "multi-day",
     highlights: ["Giant Ibis", "White-shouldered Ibis", "Bengal Florican", "Northern Plains", "Vulture Restaurant", "Dry forest specialties"],
     rating: 4.8,
