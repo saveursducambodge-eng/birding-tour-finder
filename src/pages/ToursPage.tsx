@@ -493,33 +493,6 @@ export const tours = [{
     food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
-    id: 7.1,
-    
-    title: "2-Day 1-Night Birding at Kratie — Mekong Wagtail & Irrawaddy Dolphins",
-    description: `Explore the mighty Mekong River at Kratie, one of Cambodia's most rewarding lowland birding destinations. This relaxed two-day tour focuses on the riverbanks, sandbars and small islands around Kratie town, where the endemic Mekong Wagtail is reliably found alongside a suite of specialist waterbirds.
-
-The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, and time on Koh Trong island for open-country and riverside species. With easy walking, good roads and comfortable local accommodation, this is an ideal extension for birders who want to add Mekong specialities to their Cambodia list while experiencing rural river life.`,
-    duration: "2 Days / 1 Night",
-    difficulty: "Easy",
-    groupSize: "2-8 people",
-    price: "$ Per Person",
-    category: "multi-day",
-    highlights: ["Mekong Wagtail", "Irrawaddy Dolphins", "Koh Trong island", "Mekong River birding", "Community homestay"],
-    rating: 4.7,
-    schedule: {
-      "Day 1": "Siem Reap → Kratie — 5:30 AM pickup from your hotel in Siem Reap with packed breakfast, drive east toward Kratie with birding stops at scenic rice paddies and riverside wetlands. 12:00 PM lunch in Kratie town. 2:00 PM board a local boat for dolphin watching and river birding along the Mekong sandbars. 4:30 PM check in at a simple guesthouse or community homestay on Koh Trong island. 6:00 PM dinner and optional evening walk for owls and nightjars.",
-      "Day 2": "Kratie → Siem Reap — 5:30 AM early morning walk along Koh Trong's gardens and riverbank for Mekong Wagtail, swallows, kingfishers and pratincoles. 8:00 AM breakfast at the homestay. 9:00 AM continue birding on the island, looking for grassland and open-country species. 12:00 PM lunch in Kratie. 1:00 PM begin the return drive to Siem Reap with birding stops en route. 6:30 PM arrive back at your hotel in Siem Reap."
-    },
-    birdSpecies: ["Mekong Wagtail", "Irrawaddy Dolphin", "Small Pratincole", "River Lapwing", "Red-wattled Lapwing", "Grey-headed Lapwing", "Oriental Pratincole", "Little Ringed Plover", "Common Sandpiper", "Green Sandpiper", "Common Kingfisher", "White-throated Kingfisher", "Pied Kingfisher", "Stork-billed Kingfisher", "Barn Swallow", "Red-rumped Swallow", "Asian Palm Swift", "House Swift", "Brown Shrike", "Long-tailed Shrike", "Plain-backed Sparrow", "Baya Weaver", "Asian Golden Weaver", "Black-collared Starling", "Asian Pied Starling", "Great Myna", "Javan Myna", "Yellow-vented Bulbul", "Zebra Dove", "Spotted Dove", "Greater Coucal", "Lesser Coucal", "Collared Scops Owl", "Large-tailed Nightjar"],
-    included: ["Round-trip transport from Siem Reap", "One night accommodation on Koh Trong island or in Kratie town", "All meals: breakfast, lunch and dinner as per itinerary", "Bottled drinking water throughout the tour", "Mekong dolphin-watching boat trip", "Services of an English-speaking birding guide"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Laundry services", "Personal expenses"],
-    accommodation: "Simple community homestay or local guesthouse on Koh Trong island with basic private rooms and fan. Single supplement: $30.",
-    bestSeason: "November to April (Peak: January-March) when the Mekong water level is low, sandbars are exposed and dolphin sightings are most reliable. Tours available year-round.",
-    physicalEffort: "Easy. Walking 2-4 km per day on flat village paths, riverbanks and garden edges. Suitable for all fitness levels.",
-    weather: "Hot and dry weather is expected. The Mekong breeze can make conditions feel pleasant, but sun protection is essential. Occasional showers are possible.",
-    food: "Traditional Khmer meals are served at local restaurants and the homestay, featuring fresh river fish, rice and seasonal vegetables. Vegetarian options are available on request.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
-  }, {
     id: 14,
     title: "Key Locations for Rare Birds",
     description: "A typical Cambodia rare bird itinerary includes Siem Reap for the temples and birding areas like Prek Toal Bird Sanctuary for storks and pelicans, the Florican Grasslands and Tmatboey in the Northern Plains for the critically endangered Bengal Florican and Giant Ibis, the Vulture Restaurant at Boeng Toal for vultures, and Kratie for the Mekong Wagtail and Irrawaddy Dolphins. The best time to visit for a wide range of species, particularly waterbirds, is typically from January to April.",
