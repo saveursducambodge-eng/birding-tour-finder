@@ -520,32 +520,6 @@ The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, an
     food: "Traditional Khmer meals are served at local restaurants and the homestay, featuring fresh river fish, rice and seasonal vegetables. Vegetarian options are available on request.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
   }, {
-    id: 7.2,
-    title: "2-Day 1-Night Birding at Dak Dam — Keo Seima Evergreen Forest",
-    description: `Journey into the lush evergreen forests of Dak Dam, inside the Keo Seima Wildlife Sanctuary in Cambodia's eastern Mondulkiri Province. This remote forest edge is famous for its rich wildlife, including several species of hornbills, primates and forest birds that are difficult to find elsewhere in the country.
-
-Over two days, you will explore forest trails, fruiting trees, and nearby streams at dawn and dusk, giving excellent chances for Yellow-cheeked Gibbon, Black-shanked Douc, Great Hornbill, and Wreathed Hornbill. The area is also excellent for woodpeckers, broadbills, trogons, pittas, and over 80 other species. This is a true wilderness experience for birders who want to explore Cambodia's eastern forests.`,
-    duration: "2 Days / 1 Night",
-    difficulty: "Moderate",
-    groupSize: "2-6 people",
-    price: "$ Per Person",
-    category: "multi-day",
-    highlights: ["Yellow-cheeked Gibbon", "Black-shanked Douc", "Great Hornbill", "Wreathed Hornbill", "Evergreen forest trails", "Night walk for owls"],
-    rating: 4.8,
-    schedule: {
-      "Day 1": "Siem Reap → Dak Dam — 5:00 AM pickup from your hotel in Siem Reap with packed breakfast, long drive east through Kratie toward Mondulkiri with birding stops at productive wetlands and forest edges. 12:00 PM lunch in Sen Monorom or a local village. 2:00 PM arrive at Dak Dam, check in at a simple community lodge or camp. 3:00 PM afternoon birding along forest trails for hornbills, broadbills and primates. 6:00 PM dinner at the lodge, followed by a night walk for owls, frogmouths and nocturnal mammals. Overnight at Dak Dam.",
-      "Day 2": "Dak Dam → Siem Reap — 5:00 AM early breakfast, then dawn birding at the most productive forest edge for gibbons, hornbills, woodpeckers and trogons. 9:00 AM return to the lodge for a short rest. 10:00 AM continue birding along a different trail, focusing on understorey species such as pittas, broadbills and babblers. 12:30 PM lunch. 1:30 PM begin the return drive to Siem Reap with birding stops en route. 7:00 PM arrive back at your hotel in Siem Reap."
-    },
-    birdSpecies: ["Great Hornbill", "Wreathed Hornbill", "Oriental Pied Hornbill", "Yellow-cheeked Gibbon", "Black-shanked Douc", "Pig-tailed Macaque", "Long-tailed Macaque", "Red-breasted Parakeet", "Alexandrine Parakeet", "Vernal Hanging Parrot", "Blue-eared Barbet", "Coppersmith Barbet", "Greater Yellownape", "Lesser Yellownape", "Pale-headed Woodpecker", "Black-headed Woodpecker", "Great Slaty Woodpecker", "White-bellied Woodpecker", "Eurasian Jay", "Green Magpie", "Racket-tailed Treepie", "Bronzed Drongo", "Greater Racket-tailed Drongo", "Scarlet Minivet", "Grey-chinned Minivet", "Bar-winged Flycatcher-shrike", "Black-winged Cuckooshrike", "Indochinese Cuckooshrike", "Banded Broadbill", "Long-tailed Broadbill", "Blue-winged Leafbird", "Greater Green Leafbird", "Asian Fairy-bluebird", "Pale-blue Flycatcher", "Hill Blue Flycatcher", "Blue-throated Bee-eater", "Chestnut-headed Bee-eater", "Oriental Dollarbird", "Large-tailed Nightjar", "Grey Nightjar", "Collared Scops Owl", "Brown Wood Owl", "Brown Boobook"],
-    included: ["Round-trip transport from Siem Reap", "All reserve and community access fees", "One night accommodation at Dak Dam community lodge or camp", "All meals: breakfast, lunch and dinner as per itinerary", "Bottled drinking water throughout the tour", "Services of an English-speaking birding guide", "Night walk activity with local ranger"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Laundry services", "Personal expenses"],
-    accommodation: "Basic community lodge or camp at Dak Dam with simple rooms, shared or private facilities and mosquito nets. Single supplement: $40.",
-    bestSeason: "November to April (Peak: December-March) when forest trails are drier, fruiting trees attract hornbills and primates, and morning bird activity is highest.",
-    physicalEffort: "Moderate. Walking 4-6 km per day on forest trails with some uneven ground, slopes and stream crossings. Suitable for birders in reasonable health who are comfortable with tropical conditions and early starts.",
-    weather: "Warm and humid conditions in evergreen forest. Mornings are often cool and misty, while midday can be warm. Rain is possible at any time, so waterproof clothing is recommended.",
-    food: "Traditional Khmer meals are prepared by the community lodge using fresh local ingredients. Vegetarian options are available on request. Bottled water is provided throughout the tour.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, headlamp or torch, light long-sleeved clothing, waterproof jacket, binoculars and camera"
-  }, {
     id: 14,
     title: "Key Locations for Rare Birds",
     description: "A typical Cambodia rare bird itinerary includes Siem Reap for the temples and birding areas like Prek Toal Bird Sanctuary for storks and pelicans, the Florican Grasslands and Tmatboey in the Northern Plains for the critically endangered Bengal Florican and Giant Ibis, the Vulture Restaurant at Boeng Toal for vultures, and Kratie for the Mekong Wagtail and Irrawaddy Dolphins. The best time to visit for a wide range of species, particularly waterbirds, is typically from January to April.",
