@@ -394,30 +394,6 @@ export const tours = [{
     food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
   }, {
-    id: 51,
-    title: "Changkran Roy Birding Tour – 2 Days, 1 Night | Cambodia",
-    description: "Explore the beautiful forests of Changkran Roy on this two-day, one-night birding adventure. This remote forest is one of the best places in Cambodia to look for rare and special birds, including woodpeckers, Coral-billed Ground Cuckoo, Bar-bellied pittas, Oriental Barred Owls, raptors, and many other forest species.\n\nWith the help of an experienced local birding guide, you'll walk quiet forest trails during the early morning and late afternoon, when birds are most active. You'll spend the night at a simple community lodge, giving you the chance to enjoy an evening owling session and experience local village life.\n\nThis tour is perfect for birdwatchers, wildlife photographers, and nature lovers looking to explore one of Cambodia's hidden birding destinations while supporting local communities and conservation.",
-    duration: "2 Days / 1 Night",
-    difficulty: "Moderate",
-    groupSize: "2-8 people",
-    price: "$ Per Person",
-    category: "multi-day",
-    highlights: ["Multiple woodpecker species", "Forest raptors & owls", "Night walk for nightjars & owls", "Community eco-camp stay", "Off-the-beaten-path trails", "Conservation-based tourism"],
-    rating: 4.8,
-    schedule: {
-      "Day 1": "Siem Reap → Changkran Roy Forest — 5:00 AM pickup from your hotel in Siem Reap with a packed breakfast, then drive north toward Changkran Roy with birding stops en route. At 9:00 AM, arrive at the forest edge, enjoy breakfast, and begin morning birding along forest tracks for woodpeckers, raptors, and forest specialties. 12:00 PM lunch at the community camp followed by a short rest. 3:00 PM afternoon birding session focusing on understory species, bulbuls, babblers and flycatchers. 6:30 PM dinner at the camp, followed by a night walk in search of owls, frogmouths, and nightjars. Overnight at the community eco-camp.",
-      "Day 2": "Changkran Roy → Siem Reap — 5:00 AM early tea and coffee, head out for a full dawn birding session at the most productive forest sites. 9:00 AM return to camp for a hot breakfast. 10:00 AM continue birding along a different forest trail, watching for raptors and any missed targets. 12:30 PM farewell lunch at the community camp. 1:30 PM begins the return drive to Siem Reap with birding stops along the way. 5:30 PM arrive back at your hotel in Siem Reap."
-    },
-    birdSpecies: ["Great Slaty Woodpecker", "\n", "\n", "Greater Flameback", "Rufous Woodpecker", "White-rumped Falcon", "\n", "Rufous-winged Buzzard", "Crested Serpent Eagle", "\n", "Oriental Bay Owl", "Spotted Wood Owl", "l", "Brown Boobook", "Large-tailed Nightjar", "indochines Roller", "Indochinese Roller", "Banded Bay Cuckoo", "Green-billed Malkoha", "Burmese Shrike", "Black-hooded Oriole", "Greater Racket-tailed Drongo", "Velvet-fronted Nuthatch", "Burmese Nuthatch", "Hainan Blue Flycatcher", "Tickell's Blue Flycatcher", "Asian Paradise Flycatcher", "Puff-throated Babbler", "Abbott's Babbler"],
-    included: ["Round-trip transport from Siem Reap", "All reserve and community access fees", "One night accommodation at community eco-camp", "All meals: breakfast, lunch and dinner as per itinerary", "Bottled drinking water throughout the tour", "Services of an English-speaking Pearaing birding guide", "Night walk activity with local ranger"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Laundry services", "Personal expenses"],
-    accommodation: "Simple community-based eco-camp with shared facilities, mosquito nets and fans. Single supplement: $40. Note: comfort level is basic — this is an authentic forest experience.",
-    bestSeason: "November to April (Peak: December–March) when forest conditions are dry, trails are accessible and bird activity is at its highest.",
-    physicalEffort: "Moderate. Walking 4–6 km per day on mostly flat forest tracks with some uneven ground. Suitable for travellers in reasonable health who are comfortable with hot, tropical conditions and early starts.",
-    weather: "Hot and dry weather is expected throughout this tour. Mornings can be cool and pleasant, while midday temperatures may rise sharply. The forest provides good shade during the hottest part of the day. Occasional light showers are possible.",
-    food: "Traditional Khmer meals are prepared by the community camp using fresh local ingredients. Vegetarian options are available on request. Bottled water is provided throughout the tour.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, headlamp or torch, light long-sleeved clothing for the night walk, binoculars and camera."
-  }, {
     id: 6,
     title: "Three-Day Tour to Birding at Russey Trep - Bengal Florican Grassland.",
     description: "Techo Sen Russey Trep is a remote community-based ecotourism site in Cambodia's Northern Plains, renowned for hosting the critically endangered Giant Ibis (Cambodia's national bird) and the elusive White-shouldered Ibis. The Russey Trep Ibis Site is a conservation initiative established by the Local NGO and Internation NGO in partnership with the Cambodian government and the local community.\n\nBefore the tour begins in Russey Trep, we enjoy a full morning of birdwatching at the Bengal Florican Grassland, one of the best locations to observe the critically endangered Bengal Florican. This grassland also supports a wide range of rare and notable species, including Manchurian Reed Warbler, Sarus Crane, Singing Bushlark, Oriental Skylark, Common Buttonquail, Asian Pied Starling, Spotted Redshank, Little Ringed Plover, Streaked Weaver, Oriental Pratincole, Pied Harrier, Eastern Marsh Harrier, Bluethroat, Red Avadavat, Lanceolated Warbler, and various other waterbirds.",
@@ -492,59 +468,6 @@ export const tours = [{
     weather: "Hot and dry weather is expected throughout this tour. There is always the possibility of a shower or two, given the world's changing climate, but it is likely to be dry most, if not all, of the time. Midday temperatures are likely to be very hot, but most of the woodland sites we visit have low humidity. Wetland sites, however, can be fairly humid by their very nature. The tour has been paced so that we have plenty of time and are not forced to be birding throughout the heat of the day to see most of the birds.",
     food: "Khmer cuisine is similar to most Southeast Asian cooking, but rather less spicy. The traditional cuisine of the country is recovering after much of the knowledge being lost through the years of war here, but staff at the lodges we visit cook a wide variety of good local food. The former French influence manifests itself in the fact that good bread is available in many areas, and for those who like beer, there is a surprisingly wide range of local brews to try.",
     thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, and binoculars"
-  }, {
-    id: 7.1,
-    
-    title: "2-Day 1-Night Birding at Kratie — Mekong Wagtail & Irrawaddy Dolphins",
-    description: `Explore the mighty Mekong River at Kratie, one of Cambodia's most rewarding lowland birding destinations. This relaxed two-day tour focuses on the riverbanks, sandbars and small islands around Kratie town, where the endemic Mekong Wagtail is reliably found alongside a suite of specialist waterbirds.
-
-The tour also includes a boat trip to search for the rare Irrawaddy Dolphins, and time on Koh Trong island for open-country and riverside species. With easy walking, good roads and comfortable local accommodation, this is an ideal extension for birders who want to add Mekong specialities to their Cambodia list while experiencing rural river life.`,
-    duration: "2 Days / 1 Night",
-    difficulty: "Easy",
-    groupSize: "2-8 people",
-    price: "$ Per Person",
-    category: "multi-day",
-    highlights: ["Mekong Wagtail", "Irrawaddy Dolphins", "Koh Trong island", "Mekong River birding", "Community homestay"],
-    rating: 4.7,
-    schedule: {
-      "Day 1": "Siem Reap → Kratie — 5:30 AM pickup from your hotel in Siem Reap with packed breakfast, drive east toward Kratie with birding stops at scenic rice paddies and riverside wetlands. 12:00 PM lunch in Kratie town. 2:00 PM board a local boat for dolphin watching and river birding along the Mekong sandbars. 4:30 PM check in at a simple guesthouse or community homestay on Koh Trong island. 6:00 PM dinner and optional evening walk for owls and nightjars.",
-      "Day 2": "Kratie → Siem Reap — 5:30 AM early morning walk along Koh Trong's gardens and riverbank for Mekong Wagtail, swallows, kingfishers and pratincoles. 8:00 AM breakfast at the homestay. 9:00 AM continue birding on the island, looking for grassland and open-country species. 12:00 PM lunch in Kratie. 1:00 PM begin the return drive to Siem Reap with birding stops en route. 6:30 PM arrive back at your hotel in Siem Reap."
-    },
-    birdSpecies: ["Mekong Wagtail", "Irrawaddy Dolphin", "Small Pratincole", "River Lapwing", "Red-wattled Lapwing", "Grey-headed Lapwing", "Oriental Pratincole", "Little Ringed Plover", "Common Sandpiper", "Green Sandpiper", "Common Kingfisher", "White-throated Kingfisher", "Pied Kingfisher", "Stork-billed Kingfisher", "Barn Swallow", "Red-rumped Swallow", "Asian Palm Swift", "House Swift", "Brown Shrike", "Long-tailed Shrike", "Plain-backed Sparrow", "Baya Weaver", "Asian Golden Weaver", "Black-collared Starling", "Asian Pied Starling", "Great Myna", "Javan Myna", "Yellow-vented Bulbul", "Zebra Dove", "Spotted Dove", "Greater Coucal", "Lesser Coucal", "Collared Scops Owl", "Large-tailed Nightjar"],
-    included: ["Round-trip transport from Siem Reap", "One night accommodation on Koh Trong island or in Kratie town", "All meals: breakfast, lunch and dinner as per itinerary", "Bottled drinking water throughout the tour", "Mekong dolphin-watching boat trip", "Services of an English-speaking birding guide"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Laundry services", "Personal expenses"],
-    accommodation: "Simple community homestay or local guesthouse on Koh Trong island with basic private rooms and fan. Single supplement: $30.",
-    bestSeason: "November to April (Peak: January-March) when the Mekong water level is low, sandbars are exposed and dolphin sightings are most reliable. Tours available year-round.",
-    physicalEffort: "Easy. Walking 2-4 km per day on flat village paths, riverbanks and garden edges. Suitable for all fitness levels.",
-    weather: "Hot and dry weather is expected. The Mekong breeze can make conditions feel pleasant, but sun protection is essential. Occasional showers are possible.",
-    food: "Traditional Khmer meals are served at local restaurants and the homestay, featuring fresh river fish, rice and seasonal vegetables. Vegetarian options are available on request.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, binoculars, and a camera"
-  }, {
-    id: 7.2,
-    title: "2-Day 1-Night Birding at Dak Dam — Keo Seima Evergreen Forest",
-    description: `Journey into the lush evergreen forests of Dak Dam, inside the Keo Seima Wildlife Sanctuary in Cambodia's eastern Mondulkiri Province. This remote forest edge is famous for its rich wildlife, including several species of hornbills, primates and forest birds that are difficult to find elsewhere in the country.
-
-Over two days, you will explore forest trails, fruiting trees, and nearby streams at dawn and dusk, giving excellent chances for Yellow-cheeked Gibbon, Black-shanked Douc, Great Hornbill, and Wreathed Hornbill. The area is also excellent for woodpeckers, broadbills, trogons, pittas, and over 80 other species. This is a true wilderness experience for birders who want to explore Cambodia's eastern forests.`,
-    duration: "2 Days / 1 Night",
-    difficulty: "Moderate",
-    groupSize: "2-6 people",
-    price: "$ Per Person",
-    category: "multi-day",
-    highlights: ["Yellow-cheeked Gibbon", "Black-shanked Douc", "Great Hornbill", "Wreathed Hornbill", "Evergreen forest trails", "Night walk for owls"],
-    rating: 4.8,
-    schedule: {
-      "Day 1": "Siem Reap → Dak Dam — 5:00 AM pickup from your hotel in Siem Reap with packed breakfast, long drive east through Kratie toward Mondulkiri with birding stops at productive wetlands and forest edges. 12:00 PM lunch in Sen Monorom or a local village. 2:00 PM arrive at Dak Dam, check in at a simple community lodge or camp. 3:00 PM afternoon birding along forest trails for hornbills, broadbills and primates. 6:00 PM dinner at the lodge, followed by a night walk for owls, frogmouths and nocturnal mammals. Overnight at Dak Dam.",
-      "Day 2": "Dak Dam → Siem Reap — 5:00 AM early breakfast, then dawn birding at the most productive forest edge for gibbons, hornbills, woodpeckers and trogons. 9:00 AM return to the lodge for a short rest. 10:00 AM continue birding along a different trail, focusing on understorey species such as pittas, broadbills and babblers. 12:30 PM lunch. 1:30 PM begin the return drive to Siem Reap with birding stops en route. 7:00 PM arrive back at your hotel in Siem Reap."
-    },
-    birdSpecies: ["Great Hornbill", "Wreathed Hornbill", "Oriental Pied Hornbill", "Yellow-cheeked Gibbon", "Black-shanked Douc", "Pig-tailed Macaque", "Long-tailed Macaque", "Red-breasted Parakeet", "Alexandrine Parakeet", "Vernal Hanging Parrot", "Blue-eared Barbet", "Coppersmith Barbet", "Greater Yellownape", "Lesser Yellownape", "Pale-headed Woodpecker", "Black-headed Woodpecker", "Great Slaty Woodpecker", "White-bellied Woodpecker", "Eurasian Jay", "Green Magpie", "Racket-tailed Treepie", "Bronzed Drongo", "Greater Racket-tailed Drongo", "Scarlet Minivet", "Grey-chinned Minivet", "Bar-winged Flycatcher-shrike", "Black-winged Cuckooshrike", "Indochinese Cuckooshrike", "Banded Broadbill", "Long-tailed Broadbill", "Blue-winged Leafbird", "Greater Green Leafbird", "Asian Fairy-bluebird", "Pale-blue Flycatcher", "Hill Blue Flycatcher", "Blue-throated Bee-eater", "Chestnut-headed Bee-eater", "Oriental Dollarbird", "Large-tailed Nightjar", "Grey Nightjar", "Collared Scops Owl", "Brown Wood Owl", "Brown Boobook"],
-    included: ["Round-trip transport from Siem Reap", "All reserve and community access fees", "One night accommodation at Dak Dam community lodge or camp", "All meals: breakfast, lunch and dinner as per itinerary", "Bottled drinking water throughout the tour", "Services of an English-speaking birding guide", "Night walk activity with local ranger"],
-    notIncluded: ["International flights", "Travel insurance", "Entry visa", "Alcoholic and soft drinks", "Tips and gratuities", "Laundry services", "Personal expenses"],
-    accommodation: "Basic community lodge or camp at Dak Dam with simple rooms, shared or private facilities and mosquito nets. Single supplement: $40.",
-    bestSeason: "November to April (Peak: December-March) when forest trails are drier, fruiting trees attract hornbills and primates, and morning bird activity is highest.",
-    physicalEffort: "Moderate. Walking 4-6 km per day on forest trails with some uneven ground, slopes and stream crossings. Suitable for birders in reasonable health who are comfortable with tropical conditions and early starts.",
-    weather: "Warm and humid conditions in evergreen forest. Mornings are often cool and misty, while midday can be warm. Rain is possible at any time, so waterproof clothing is recommended.",
-    food: "Traditional Khmer meals are prepared by the community lodge using fresh local ingredients. Vegetarian options are available on request. Bottled water is provided throughout the tour.",
-    thingsToBring: "Hat, sunglasses, sunscreen, insect repellent, headlamp or torch, light long-sleeved clothing, waterproof jacket, binoculars and camera"
   }, {
     id: 14,
     title: "Key Locations for Rare Birds",
