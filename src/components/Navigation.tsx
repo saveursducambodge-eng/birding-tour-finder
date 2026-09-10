@@ -22,7 +22,7 @@ const Navigation = () => {
     path: "/tours",
     children: [
       { name: "Birding Tours", path: "/tours" },
-      
+      { name: "Young Bird Club", path: "/tours/young-bird-club" },
       { name: "View Itineraries", path: "/itineraries" },
       { name: "Temple Tours", path: "/temple-tours" },
       { name: "Gallery", path: "/gallery" },
