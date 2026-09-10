@@ -18,7 +18,7 @@ const Navigation = () => {
     name: "About Us",
     path: "/about"
   }, {
-    name: "\u00a0About Tours",
+    name: "\u00a0Tours",
     path: "/tours",
     children: [
       { name: "Birding Tours", path: "/tours" },
