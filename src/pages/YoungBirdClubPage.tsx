@@ -63,7 +63,7 @@ const YoungBirdClubPage = () => {
               </div>
 
               <div className="bg-secondary rounded-lg p-8 sm:p-12">
-                <h3 className="font-serif text-2xl sm:text-3xl text-primary mb-6">What young members do</h3>
+                <h3 className="font-serif text-2xl sm:text-3xl text-primary mb-6">What young members do ?</h3>
                 <ul className="space-y-5">
                   {[
                     { icon: Binoculars, text: "Join easy half-day birding walks led by friendly local guides" },
