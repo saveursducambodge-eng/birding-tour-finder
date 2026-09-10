@@ -24,7 +24,7 @@ const ItinerariesPage = () => {
     },
     {
       days: "3 Days",
-      title: "Russey Treb — Bengal Florican",
+      title: "Russey Treb Bengal Florican",
       summary: "Northern Plains grasslands and dry forest for Bengal Florican, Giant Ibis and Sarus Crane.",
       highlights: ["Bengal Florican", "Giant Ibis", "Community lodge"],
     },
