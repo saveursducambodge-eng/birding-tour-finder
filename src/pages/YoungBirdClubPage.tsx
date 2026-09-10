@@ -55,10 +55,10 @@ const YoungBirdClubPage = () => {
                   The Young Bird Club is a community initiative by Pearaing Birding Trails that introduces children and young people to the birds, wetlands, and forests of Cambodia. Through guided walks, games, and simple conservation activities, members learn to observe, appreciate, and protect the wildlife around them.
                 </p>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-5">
-                  We believe that when a child spots their first kingfisher or hears a bulbul call, something changes. A young birder becomes a young conservationist — and Cambodia’s natural heritage gains a new guardian.
+                  We believe that when a child spots their first kingfisher or hears a bulbul call, something changes. A young birder becomes a young conservationist  and Cambodia’s natural heritage gains a new guardian.
                 </p>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  The club is open to school groups, families, and young nature enthusiasts of all backgrounds. No experience or equipment is needed — just curiosity and a love for the outdoors.
+                  The club is open to school groups, families, and young nature enthusiasts of all backgrounds. No experience or equipment is needed  just curiosity and a love for the outdoors.
                 </p>
               </div>
 
