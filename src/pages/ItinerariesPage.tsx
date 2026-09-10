@@ -73,7 +73,7 @@ const ItinerariesPage = () => {
     {
       days: "25 Days",
       title: "Ultimate Cambodia Expedition",
-      summary: "Our most complete itinerary — every major habitat, all flagship species and cultural highlights.",
+      summary: "Our most complete itinerary  every major habitat, all flagship species and cultural highlights.",
       highlights: ["Maximum species list", "Remote camps", "Private guiding"],
     },
     {
