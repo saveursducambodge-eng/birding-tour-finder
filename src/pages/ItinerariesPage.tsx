@@ -43,7 +43,7 @@ const ItinerariesPage = () => {
     {
       days: "7 Days",
       title: "Cambodia Classic Birding",
-      summary: "Siem Reap, Prek Toal, Russey Treb and BeTreed — the essential first-time birding loop.",
+      summary: "Siem Reap, Prek Toal, Russey Treb and BeTreed the essential first-time birding loop.",
       highlights: ["Giant Ibis", "Bengal Florican", "Spot-billed Pelican"],
     },
     {
