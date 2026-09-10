@@ -49,7 +49,7 @@ const YoungBirdClubPage = () => {
               <div>
                 <span className="text-xs uppercase tracking-[0.3em] text-primary/70 mb-5 inline-block">About the Club</span>
                 <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-primary leading-tight mb-6">
-                  Where curiosity takes flight.
+                  Young Bird Club Cambodia
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-5">
                   The Young Bird Club is a community initiative by Pearaing Birding Trails that introduces children and young people to the birds, wetlands, and forests of Cambodia. Through guided walks, games, and simple conservation activities, members learn to observe, appreciate, and protect the wildlife around them.
