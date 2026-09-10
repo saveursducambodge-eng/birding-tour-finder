@@ -79,7 +79,7 @@ const ItinerariesPage = () => {
     {
       days: "Custom",
       title: "Tailor-Made Itinerary",
-      summary: "Tell us your dates, target species and pace — we'll design a private itinerary just for you.",
+      summary: "Tell us your dates, target species and pace  we'll design a private itinerary just for you.",
       highlights: ["Private guide", "Flexible pace", "Any duration"],
     },
   ];
