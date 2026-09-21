@@ -218,7 +218,7 @@ const GalleryPage = () => {
                 <div className="relative">
                   <LazyImage 
                     src={src} 
-                    alt={`Bird photo ${index + 1}`} 
+                    alt={`Cambodian bird photographed on a Pearaing birding tour (${index + 1})`} 
                     className="group-hover:scale-110 transition-transform duration-300" 
                     onClick={() => setSelectedImage(src)} 
                   />
@@ -238,7 +238,7 @@ const GalleryPage = () => {
           <div className="relative w-full max-w-4xl max-h-[90vh]">
             <img 
               src={selectedImage} 
-              alt="Bird photo" 
+              alt="Cambodian bird photographed on a Pearaing birding tour" 
               className="w-full h-full max-w-full max-h-[85vh] object-contain rounded-lg" 
               onClick={e => e.stopPropagation()} 
             />

@@ -18,7 +18,7 @@ const BlogPage = () => {
           name="description"
           content="Stories, guides, and insights about bird watching, full-day tours, multi-day expeditions, and temple tours across Cambodia."
         />
-        <link rel="canonical" href="https://my-birding-canvas.lovable.app/blog" />
+        <link rel="canonical" href="https://pearaing.com/blog" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navigation />

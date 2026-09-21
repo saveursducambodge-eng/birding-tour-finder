@@ -19,7 +19,7 @@ const BlogPostPage = () => {
       <Helmet>
         <title>{post.title} | Pearaing Birding Trails</title>
         <meta name="description" content={post.excerpt} />
-        <link rel="canonical" href={`https://my-birding-canvas.lovable.app/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://pearaing.com/blog/${post.slug}`} />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navigation />
