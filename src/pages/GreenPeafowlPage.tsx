@@ -3,8 +3,8 @@ import SpeciesLandingPage from "@/components/SpeciesLandingPage";
 const GreenPeafowlPage = () => (
   <SpeciesLandingPage
     slug="green-peafowl"
-    title="Green Peafowl Cambodia | Mekong & Mondulkiri Birding | Pearaing Birding Trails"
-    metaDescription="See the endangered Green Peafowl in Cambodia's Mekong riverine forests and Mondulkiri dry forests. Guided birding tours with Pearaing Birding Trails."
+    title="Green Peafowl Cambodia | Where to See It | Pearaing Birding Trails"
+    metaDescription="Search for endangered Green Peafowl in Cambodia's Mekong forests and Keo Seima with expert local birding guides. Best season, locations and tour options."
     h1="Green Peafowl in Cambodia — Asia's Wild Peacock"
     intro="The Green Peafowl (Pavo muticus) is the world's most spectacular wild pheasant — taller, slimmer and far rarer than the familiar Indian Peafowl. Cambodia is one of the last places on Earth where wild populations can be seen reliably along the Mekong and in the eastern dry forests."
     whereToSee="Mekong riverine forests around Kratie and Stung Treng, the Western Siem Pang area, and the dry deciduous forests of Mondulkiri and Keo Seima."
@@ -29,6 +29,20 @@ const GreenPeafowlPage = () => (
       {
         heading: "Conservation",
         body: "Hunting for feathers and meat is the main threat. Tour fees support community ranger patrols on the Mekong islands and in Keo Seima.",
+      },
+    ]}
+    faqs={[
+      {
+        question: "Where is the best place to see Green Peafowl in Cambodia?",
+        answer: "The Mekong riverine forests around Kratie and Stung Treng are among the most reliable areas, while Keo Seima and Mondulkiri offer additional dry-forest birding opportunities.",
+      },
+      {
+        question: "When is the best season for a Green Peafowl tour?",
+        answer: "January to April is usually best, when males call and display most actively at dawn during the dry season.",
+      },
+      {
+        question: "Can Pearaing Birding Trails organise a Green Peafowl tour?",
+        answer: "Yes. Green Peafowl can be targeted on tailored Mekong and Mondulkiri birding itineraries, often combined with Mekong Wagtail, Irrawaddy Dolphin and other eastern Cambodia specialties.",
       },
     ]}
     relatedTour={{ label: "See Mekong & Mondulkiri tours", href: "/tours" }}
