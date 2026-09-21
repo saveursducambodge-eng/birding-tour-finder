@@ -19,6 +19,10 @@ const BlogPage = () => {
           content="Stories, guides, and insights about bird watching, full-day tours, multi-day expeditions, and temple tours across Cambodia."
         />
         <link rel="canonical" href="https://pearaing.com/blog" />
+        <meta property="og:title" content="Birding & Temple Tour Blog | Pearaing Birding Trails" />
+        <meta property="og:description" content="Stories, trip reports and practical guides on bird watching and temple touring across Cambodia." />
+        <meta property="og:url" content="https://pearaing.com/blog" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navigation />
