@@ -83,10 +83,34 @@ const Homepage = () => {
   }];
   return <>
       <Helmet>
-        <title>Pearaing Birding Trails - Birding & Temple Tours in Cambodia</title>
+        <title>Cambodia Birding & Temple Tours | Pearaing Trails</title>
 
-        <meta name="description" content="Discover Cambodia's rarest birds and ancient temples with Pearaing Birding Trails. Expert-guided birding tours, Angkor temple tours, and wildlife adventures across Cambodia." />
+        <meta name="description" content="Guided birding and Angkor temple tours in Cambodia with expert local guides. See Giant Ibis, Sarus Crane and 600+ bird species." />
         <link rel="canonical" href="https://pearaing.com/" />
+        <meta property="og:title" content="Cambodia Birding & Temple Tours | Pearaing Trails" />
+        <meta property="og:description" content="Guided birding and Angkor temple tours in Cambodia with expert local guides. See Giant Ibis, Sarus Crane and 600+ bird species." />
+        <meta property="og:url" content="https://pearaing.com/" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Pearaing Birding Trails",
+            url: "https://pearaing.com/",
+            description:
+              "Community-based birding and temple tours in Cambodia led by certified local guides.",
+            email: "pearaingbirdingtrails@gmail.com",
+            areaServed: "Cambodia",
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Pearaing Birding Trails",
+            url: "https://pearaing.com/",
+          })}
+        </script>
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-background via-nature-sand/30 to-background">
       <Navigation />
