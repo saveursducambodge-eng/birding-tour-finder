@@ -34,7 +34,12 @@ export default function UnsubscribePage() {
 
   return (
     <>
-      <Helmet><title>Unsubscribe — PEARAING Birding Trails</title></Helmet>
+      <Helmet>
+        <title>Unsubscribe — PEARAING Birding Trails</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta property="og:title" content="Unsubscribe — PEARAING Birding Trails" />
+        <meta property="og:description" content="Manage your PEARAING Birding Trails email preferences." />
+      </Helmet>
       <main className="min-h-[60vh] flex items-center justify-center px-6 py-16">
         <div className="max-w-md w-full text-center space-y-6">
           <h1 className="text-3xl font-serif">Email preferences</h1>
