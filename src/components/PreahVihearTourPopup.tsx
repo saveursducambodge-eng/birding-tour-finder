@@ -170,7 +170,7 @@ const PreahVihearTourPopup = ({ isOpen, onClose }: PreahVihearTourPopupProps) =>
 
             {/* Price */}
             <div className="text-center">
-              <p className="text-primary font-semibold text-xl">$350 for Person people</p>
+              <p className="text-primary font-semibold text-xl">$350 USD per person</p>
             </div>
 
             <Separator />

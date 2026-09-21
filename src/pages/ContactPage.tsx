@@ -121,6 +121,10 @@ const ContactPage = () => {
         <title>Contact Us | Book a Birding or Temple Tour in Cambodia</title>
         <meta name="description" content="Plan your perfect bird watching or temple tour in Cambodia. Contact Pearaing Birding Trails via WhatsApp, email, or our booking form." />
         <link rel="canonical" href="https://pearaing.com/contact" />
+        <meta property="og:title" content="Contact Us | Book a Birding or Temple Tour in Cambodia" />
+        <meta property="og:description" content="Plan your Cambodia birding or temple tour with Pearaing Birding Trails via WhatsApp, email, or our booking form." />
+        <meta property="og:url" content="https://pearaing.com/contact" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="min-h-screen bg-background">
       <Navigation />

@@ -12,6 +12,10 @@ const ConservationPage = () => {
         <title>Bird Conservation & Community Support | Pearaing Birding Trails</title>
         <meta name="description" content="How Pearaing Birding Trails protects Cambodia's birds and supports the communities who live alongside them through responsible ecotourism." />
         <link rel="canonical" href="https://pearaing.com/conservation" />
+        <meta property="og:title" content="Bird Conservation & Community Support | Pearaing Birding Trails" />
+        <meta property="og:description" content="Learn how responsible ecotourism helps protect Cambodia's birds and supports local communities." />
+        <meta property="og:url" content="https://pearaing.com/conservation" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

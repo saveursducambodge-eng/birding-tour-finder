@@ -15,6 +15,10 @@ const YoungBirdClubPage = () => {
         <title>Young Bird Club | Pearaing Birding Trails</title>
         <meta name="description" content="Join the Pearaing Birding Trails Young Bird Club. Inspire the next generation of Cambodian birders through field trips, conservation education, and community fun." />
         <link rel="canonical" href="https://pearaing.com/tours/young-bird-club" />
+        <meta property="og:title" content="Young Bird Club | Pearaing Birding Trails" />
+        <meta property="og:description" content="Inspire the next generation of Cambodian birders through field trips, conservation education, and community fun." />
+        <meta property="og:url" content="https://pearaing.com/tours/young-bird-club" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

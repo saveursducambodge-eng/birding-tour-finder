@@ -190,6 +190,10 @@ const GalleryPage = () => {
         <title>Bird & Wildlife Photo Gallery | Cambodia | Pearaing Birding Trails</title>
         <meta name="description" content="Browse stunning photos of Cambodia's rare birds, wildlife, and tour destinations. Giant Ibis, Bengal Florican, Angkor Wat, and more." />
         <link rel="canonical" href="https://pearaing.com/gallery" />
+        <meta property="og:title" content="Bird & Wildlife Photo Gallery | Cambodia" />
+        <meta property="og:description" content="Browse photos of Cambodia's rare birds, wildlife, and tour destinations, from Giant Ibis to Angkor Wat." />
+        <meta property="og:url" content="https://pearaing.com/gallery" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="min-h-screen bg-background">
       <Navigation />
