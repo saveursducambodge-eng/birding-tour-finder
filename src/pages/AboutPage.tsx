@@ -42,6 +42,10 @@ const AboutPage = () => {
         <title>About Our Guides | Pearaing Birding Trails Cambodia</title>
         <meta name="description" content="Meet our certified bird and temple guides with over a decade of experience. Officially registered with the Cambodian Ministry of Tourism." />
         <link rel="canonical" href="https://pearaing.com/about" />
+        <meta property="og:title" content="Meet Our Cambodian Bird & Temple Guides | Pearaing" />
+        <meta property="og:description" content="Our certified guides have over a decade of birding and temple guiding experience, registered with the Cambodian Ministry of Tourism." />
+        <meta property="og:url" content="https://pearaing.com/about" />
+        <meta property="og:type" content="profile" />
       </Helmet>
       <div className="min-h-screen bg-background">
       <Navigation />
