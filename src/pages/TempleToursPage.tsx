@@ -250,7 +250,7 @@ const TempleToursPage = () => {
         <title>Temple Tours in Cambodia | Angkor Wat & Beyond | Pearaing Birding Trails</title>
         <meta name="description" content="Explore Cambodia's ancient temples with expert guides. Angkor Wat, Banteay Srei, Preah Vihear, Koh Ker, and remote temple adventures from Siem Reap and beyond." />
 
-        <link rel="canonical" href="https://my-birding-canvas.lovable.app/temple-tours" />
+        <link rel="canonical" href="https://pearaing.com/temple-tours" />
       </Helmet>
       <div className="min-h-screen bg-background">
       <Navigation />

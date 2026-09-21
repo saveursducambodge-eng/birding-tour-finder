@@ -30,7 +30,7 @@ const BlogPostPage = () => {
             "@type": "Article",
             headline: post.title,
             description: post.excerpt,
-            datePublished: post.date,
+            datePublished: new Date(post.date).toISOString().slice(0, 10),
             mainEntityOfPage: `https://pearaing.com/blog/${post.slug}`,
             author: { "@type": "Organization", name: "Pearaing Birding Trails" },
             publisher: { "@type": "Organization", name: "Pearaing Birding Trails" },
