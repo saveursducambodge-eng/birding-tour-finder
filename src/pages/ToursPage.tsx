@@ -100,15 +100,15 @@ const TourImageSlider = ({ images, alt }: { images: string[]; alt: string }) => 
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${i === current ? 'opacity-100' : 'opacity-0'}`}
         />
       ))}
-      <button onClick={prev} className="absolute left-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 opacity-0 group-hover/slider:opacity-100 transition-opacity z-10">
+      <button onClick={prev} aria-label="Previous photo" className="absolute left-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 opacity-0 group-hover/slider:opacity-100 transition-opacity z-10">
         <ChevronLeft className="w-4 h-4" />
       </button>
-      <button onClick={next} className="absolute right-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 opacity-0 group-hover/slider:opacity-100 transition-opacity z-10">
+      <button onClick={next} aria-label="Next photo" className="absolute right-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-1 opacity-0 group-hover/slider:opacity-100 transition-opacity z-10">
         <ChevronRight className="w-4 h-4" />
       </button>
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
         {images.map((_, i) => (
-          <button key={i} onClick={(e) => { e.stopPropagation(); setCurrent(i); }} className={`w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-white' : 'bg-white/50'}`} />
+          <button key={i} aria-label={`Show photo ${i + 1}`} onClick={(e) => { e.stopPropagation(); setCurrent(i); }} className={`w-2 h-2 rounded-full transition-colors ${i === current ? 'bg-white' : 'bg-white/50'}`} />
         ))}
       </div>
     </div>
@@ -454,6 +454,10 @@ const ToursPage = () => {
         <title>Cambodia Birding Tours | Bird Watching in Siem Reap | PEARAING</title>
         <meta name="description" content="Cambodia birding tours led by expert local guides. Bird watching in Siem Reap, Prek Toal, Russey Treb & Bengal Florican grasslands — see Giant Ibis, Sarus Crane & 500+ species." />
         <link rel="canonical" href="https://pearaing.com/tours" />
+        <meta property="og:title" content="Cambodia Birding Tours | Bird Watching in Siem Reap" />
+        <meta property="og:description" content="Half-day to multi-day birding tours with local guides: Prek Toal, Russey Treb, Bengal Florican grasslands, Giant Ibis and Sarus Crane." />
+        <meta property="og:url" content="https://pearaing.com/tours" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
       <Navigation />
