@@ -451,11 +451,11 @@ const ToursPage = () => {
   });
   return <>
       <Helmet>
-        <title>Cambodia Birding Tours | Bird Watching in Siem Reap | PEARAING</title>
-        <meta name="description" content="Cambodia birding tours led by expert local guides. Bird watching in Siem Reap, Prek Toal, Russey Treb & Bengal Florican grasslands — see Giant Ibis, Sarus Crane & 500+ species." />
+        <title>Cambodia Birding Tours from Siem Reap | Pearaing Birding Trails</title>
+        <meta name="description" content="Book a Cambodia birding tour from Siem Reap: Pearaing Biodiversity Conservation Center, Prek Toal, Bengal Florican grasslands and Giant Ibis trips with local guides." />
         <link rel="canonical" href="https://pearaing.com/tours" />
-        <meta property="og:title" content="Cambodia Birding Tours | Bird Watching in Siem Reap" />
-        <meta property="og:description" content="Half-day to multi-day birding tours with local guides: Prek Toal, Russey Treb, Bengal Florican grasslands, Giant Ibis and Sarus Crane." />
+        <meta property="og:title" content="Cambodia Birding Tours from Siem Reap | Pearaing Birding Trails" />
+        <meta property="og:description" content="Book a Cambodia birding tour from Siem Reap: Pearaing Biodiversity Conservation Center, Prek Toal, Bengal Florican grasslands and Giant Ibis trips with local guides." />
         <meta property="og:url" content="https://pearaing.com/tours" />
         <meta property="og:type" content="website" />
       </Helmet>

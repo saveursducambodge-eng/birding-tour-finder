@@ -42,6 +42,25 @@ const heroSlides = [
   heroSlideScope,
 ];
 
+const homeFaqs = [
+  {
+    question: "What is Pearaing Biodiversity Conservation Center?",
+    answer: "Pearaing Biodiversity Conservation Center is a community-managed wetland about 13 km southeast of Siem Reap, close to Tonle Sap Lake. It protects feeding habitat for Painted Stork, Spot-billed Pelican, Oriental Darter and more than 70 wetland bird species.",
+  },
+  {
+    question: "Can I visit Pearaing on a half-day birding tour?",
+    answer: "Yes. Pearaing Birding Trails runs morning and afternoon half-day tours from Siem Reap with hotel pickup, a local birding guide, site fees and boat transport included.",
+  },
+  {
+    question: "What birds can I see near Siem Reap?",
+    answer: "Depending on the season, visitors may see Painted Stork, Milky Stork, Spot-billed Pelican, Grey-headed Fish Eagle, kingfishers, herons, egrets, jacanas and grassland species.",
+  },
+  {
+    question: "How do I book a Cambodia birding tour?",
+    answer: "Use the contact form or email pearaingbirdingtrails@gmail.com. Tours are private or small-group and can be tailored to your dates, target birds and travel pace.",
+  },
+];
+
 const Homepage = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -83,12 +102,12 @@ const Homepage = () => {
   }];
   return <>
       <Helmet>
-        <title>Cambodia Birding & Temple Tours | Pearaing Trails</title>
+        <title>Pearaing Biodiversity Conservation Center | Cambodia Birding Tours</title>
 
-        <meta name="description" content="Guided birding and Angkor temple tours in Cambodia with expert local guides. See Giant Ibis, Sarus Crane and 600+ bird species." />
+        <meta name="description" content="Visit Pearaing Biodiversity Conservation Center near Siem Reap on a guided Cambodia birding tour. Spot 70+ wetland species with local expert guides." />
         <link rel="canonical" href="https://pearaing.com/" />
-        <meta property="og:title" content="Cambodia Birding & Temple Tours | Pearaing Trails" />
-        <meta property="og:description" content="Guided birding and Angkor temple tours in Cambodia with expert local guides. See Giant Ibis, Sarus Crane and 600+ bird species." />
+        <meta property="og:title" content="Pearaing Biodiversity Conservation Center | Cambodia Birding Tours" />
+        <meta property="og:description" content="Visit Pearaing Biodiversity Conservation Center near Siem Reap on a guided Cambodia birding tour. Spot 70+ wetland species with local expert guides." />
         <meta property="og:url" content="https://pearaing.com/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
@@ -109,6 +128,20 @@ const Homepage = () => {
             "@type": "WebSite",
             name: "Pearaing Birding Trails",
             url: "https://pearaing.com/",
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: homeFaqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
           })}
         </script>
       </Helmet>
@@ -380,6 +413,37 @@ const Homepage = () => {
                 </Link>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Visitor Questions */}
+      <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-muted/20">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-10">
+            <Badge className="mb-4 bg-nature-saffron text-nature-forest">
+              Visitor Questions
+            </Badge>
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
+              Planning a birding tour near Siem Reap?
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
+              Quick answers about Pearaing Biodiversity Conservation Center and booking a local guided tour.
+            </p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            {homeFaqs.map((faq) => (
+              <Card key={faq.question} className="border-nature-forest/10">
+                <CardContent className="p-5">
+                  <h3 className="font-serif text-lg font-semibold text-primary mb-2">
+                    {faq.question}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
