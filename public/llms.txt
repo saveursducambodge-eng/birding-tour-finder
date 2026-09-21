@@ -1,0 +1,34 @@
+# Pearaing Birding Trails
+
+> Community-based bird watching and temple tours in Cambodia, led by certified local guides in Siem Reap, Prek Toal, the Northern Plains and beyond.
+
+## Pages
+
+- [Home](/): Guided birding and temple tours across Cambodia.
+- [About](/about): Our certified bird and temple guides.
+- [Tours](/tours): Half-day, full-day and multi-day birding tours.
+- [Young Bird Club](/tours/young-bird-club): Youth birding and conservation education.
+- [Itineraries](/itineraries): Suggested birding routes around Cambodia.
+- [Temple Tours](/temple-tours): Angkor and remote temple tours.
+- [Gallery](/gallery): Bird and tour photography.
+- [Conservation](/conservation): How our tours support habitat protection.
+- [Contact](/contact): Enquiries and private tour planning.
+
+## Birding Spots & Species
+
+- [Birding in Siem Reap](/birding-siem-reap): Birding sites close to Siem Reap.
+- [Prek Toal](/prek-toal): Tonle Sap waterbird sanctuary.
+- [Giant Ibis](/giant-ibis): Where and when to see Cambodia's national bird.
+- [Bengal Florican](/bengal-florican): Grassland sites for this critically endangered bustard.
+- [Sarus Crane](/sarus-crane): Ang Trapaeng Thmor crane watching.
+- [White-shouldered Ibis](/white-shouldered-ibis): Northern Plains dry forest specialty.
+- [Green Peafowl](/green-peafowl): Sites and season for Green Peafowl.
+- [Mekong Wagtail](/mekong-wagtail): Mekong river channel birding.
+- [Cambodian Tailorbird](/cambodian-tailorbird): Cambodia's recently described endemic.
+
+## Blog
+
+- [Blog](/blog): Trip reports, guides and birding insights.
+- [Video Blog](/video-blog): Field videos from recent tours.
+- [Half-day birding in Siem Reap](/blog/half-day-birding-siem-reap): What to expect on a short morning tour.
+- [Full-day Prek Toal](/blog/full-day-prek-toal): A day at the waterbird colonies.
