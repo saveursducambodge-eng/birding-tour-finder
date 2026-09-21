@@ -83,6 +83,10 @@ const VideoBlogPage = () => {
           content="Watch our latest birding and conservation videos from across Cambodia — field diaries, tour highlights, and species spotlights."
         />
         <link rel="canonical" href="https://pearaing.com/video-blog" />
+        <meta property="og:title" content="Video Blog | Cambodia Birding Videos | Pearaing Birding Trails" />
+        <meta property="og:description" content="Watch birding and conservation videos from across Cambodia, including field diaries, tour highlights, and species spotlights." />
+        <meta property="og:url" content="https://pearaing.com/video-blog" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navigation />

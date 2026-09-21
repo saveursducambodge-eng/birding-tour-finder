@@ -14,7 +14,9 @@ const NotFound = () => {
       <Helmet>
         <title>Page Not Found | Pearaing Birding Trails Cambodia</title>
         <meta name="description" content="Sorry, the page you are looking for does not exist. Explore bird watching tours and temple tours in Cambodia with Pearaing Birding Trails." />
-
+        <meta name="robots" content="noindex, follow" />
+        <meta property="og:title" content="Page Not Found | Pearaing Birding Trails Cambodia" />
+        <meta property="og:description" content="Explore bird watching tours and temple tours in Cambodia with Pearaing Birding Trails." />
       </Helmet>
       <div className="flex min-h-screen items-center justify-center bg-gray-100">
       <div className="text-center">

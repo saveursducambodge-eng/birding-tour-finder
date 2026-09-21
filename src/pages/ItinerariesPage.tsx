@@ -89,6 +89,10 @@ const ItinerariesPage = () => {
       <title>Suggested Birding Itineraries | Cambodia | PEARAING</title>
       <meta name="description" content="Browse suggested Cambodia birding itineraries from 1 day to 25 days. Choose from Angkor, Prek Toal, Russey Treb, Keo Seima, Kratie and tailor-made options." />
       <link rel="canonical" href="https://pearaing.com/itineraries" />
+      <meta property="og:title" content="Suggested Birding Itineraries | Cambodia | PEARAING" />
+      <meta property="og:description" content="Browse Cambodia birding itineraries from 1 day to 25 days, including Angkor, Prek Toal, Russey Treb, Keo Seima, and Kratie." />
+      <meta property="og:url" content="https://pearaing.com/itineraries" />
+      <meta property="og:type" content="website" />
     </Helmet>
     <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
       <Navigation />
