@@ -102,12 +102,11 @@ const Homepage = () => {
   }];
   return <>
       <Helmet>
-        <title>Pearaing Biodiversity Conservation Center | Cambodia Birding Tours</title>
-
-        <meta name="description" content="Visit Pearaing Biodiversity Conservation Center near Siem Reap on a guided Cambodia birding tour. Spot 70+ wetland species with local expert guides." />
+        <title>Cambodia Birding Tours | Pearaing Birding Trails</title>
+        <meta name="description" content="Explore Cambodia birding tours from Siem Reap to Tonle Sap, Prek Toal, the Bengal Florican grasslands, and the Northern Plains with expert local guides." />
         <link rel="canonical" href="https://pearaing.com/" />
-        <meta property="og:title" content="Pearaing Biodiversity Conservation Center | Cambodia Birding Tours" />
-        <meta property="og:description" content="Visit Pearaing Biodiversity Conservation Center near Siem Reap on a guided Cambodia birding tour. Spot 70+ wetland species with local expert guides." />
+        <meta property="og:title" content="Cambodia Birding Tours | Pearaing Birding Trails" />
+        <meta property="og:description" content="Explore Cambodia birding tours from Siem Reap to Tonle Sap, Prek Toal, the Bengal Florican grasslands, and the Northern Plains with expert local guides." />
         <meta property="og:url" content="https://pearaing.com/" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
@@ -172,7 +171,7 @@ const Homepage = () => {
           </h1>
 
           <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl text-white/95 mb-5 animate-slide-up font-light drop-shadow-md" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
-            with a guide who feels like family
+            Cambodia birding tours with a guide who feels like family
           </p>
 
           {/* Decorative divider */}
@@ -185,7 +184,7 @@ const Homepage = () => {
           </div>
 
           <p className="text-base sm:text-lg md:text-lg lg:text-xl mb-8 text-white/90 max-w-2xl mx-auto animate-slide-up leading-relaxed font-light drop-shadow-md" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
-            For 15+ years, Pearaing Biodiversity Conservation has opened private access to Cambodia's rarest birds, ancient temples and wild landscapes at your rhythm, with guides who live the mission.
+            For 15+ years, our local guides have led birding journeys from Pearaing and Prek Toal to the Bengal Florican grasslands and the remote Northern Plains.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up max-w-md sm:max-w-none mx-auto">

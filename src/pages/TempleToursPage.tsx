@@ -52,7 +52,6 @@ const temples = [
     image: angkorSunriseImg,
     location: "Siem Reap    Angkor, Angkor Thom,  Ta Prohm",
     description: "The world's largest religious monument, a masterpiece of Khmer architecture built in the 12th century. Famous for its stunning sunrise views and intricate bas-reliefs.",
-    price: "$ people",
     duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -62,7 +61,6 @@ const temples = [
     image: banteaySreiNewImg,
     location: "Angkor Thom",
     description: "Known for its massive stone faces carved into towering spires, Bayon is the centerpiece of Angkor Thom and one of Cambodia's most iconic temples.",
-    price: "$ people",
     duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -72,7 +70,7 @@ const temples = [
     image: kampongPhlukImg,
     location: "Tonle Sap Lake",
     description: "The famous 'Tomb Raider' temple where giant tree roots intertwine with ancient stone ruins, creating one of Angkor's most atmospheric and photogenic sites.",
-    price: "$ people",
+    price: "$150 USD (2 people)",
     duration: "1 Day (8 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -82,7 +80,6 @@ const temples = [
     image: kulenWaterfallImg,
     location: "Siem Reap Province",
     description: "The 'Citadel of Women' is renowned for its intricate pink sandstone carvings, considered the finest example of classical Khmer art.",
-    price: "$ people",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -92,7 +89,7 @@ const temples = [
     image: bengMealeaNewImg,
     location: "Preah Vihear Province",
     description: "A UNESCO World Heritage temple perched on a 525-meter cliff in the Dângrêk Mountains, offering breathtaking panoramic views of Cambodia and Thailand.",
-    price: "$ people",
+    price: "$65–$130 USD (private tour)",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -112,7 +109,7 @@ const temples = [
     image: kompongKhleangImg,
     location: "Siem Reap Province",
     description: "A sprawling jungle temple largely consumed by vegetation, offering an adventurous exploration experience reminiscent of early Angkor discoveries.",
-    price: "$ people",
+    price: "$45–$150 USD per person",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -122,7 +119,7 @@ const temples = [
     image: banteayChhmarImg,
     location: "Banteay Meanchey",
     description: "One of the largest and most mysterious Angkorian temples, featuring unique multi-armed Avalokiteshvara carvings and remarkably few tourists.",
-    price: "$ people",
+    price: "$70–$220 USD per person",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -132,7 +129,7 @@ const temples = [
     image: preahVihear2DayImg,
     location: "Angkor",
     description: "A hilltop temple offering spectacular sunset views over Angkor Wat and the surrounding jungle. One of the first temples built in the Angkor area.",
-    price: "$ people",
+    price: "$350 USD per person",
     duration: "Half Day (4 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -142,7 +139,7 @@ const temples = [
     image: samborPreiKukImg,
     location: "Kampong Thom",
     description: "A UNESCO World Heritage pre-Angkorian temple complex dating to the 6th–7th century, featuring unique octagonal towers set in a peaceful forest.",
-    price: "$120–$150 (1–2 people)",
+    price: "$150–$250 USD (private tour)",
     duration: "Full Day (8–10 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -153,7 +150,7 @@ const temples = [
     image: preahKhanKampongSvayImg,
     location: "Preah Vihear Province",
     description: "One of Cambodia's most remote and impressive temple complexes, spanning over 5 square kilometers. This vast jungle-engulfed site was once a major city of the Khmer Empire.",
-    price: "$ people",
+    price: "$180–$380 USD (private tour)",
     duration: "Full Day (10–12 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -163,7 +160,7 @@ const temples = [
     image: preahVihearFulldayImg,
     location: "Preah Vihear Province",
     description: "Journey to the breathtaking UNESCO World Heritage temple perched atop a 525-meter cliff, offering unparalleled panoramic views and exceptional Khmer architectural masterpieces.",
-    price: "$ people",
+    price: "$180–$380 USD (private tour)",
     duration: "Full Day (10–12 hours)",
     groupSize: "2 people",
     country: "Cambodia",
@@ -173,7 +170,7 @@ const temples = [
     image: essentialCambodia5DayImg,
     location: "Siem Reap",
     description: "Experience the very best of Siem Reap in 5 unforgettable days — from Angkor Wat sunrise to jungle temples, floating villages, Kulen Mountain, and vibrant night markets.",
-    price: "$ people",
+    price: "$450–$1,300 USD (private tour)",
     duration: "5 Days / 4 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -183,7 +180,6 @@ const temples = [
     image: battambangImg,
     location: "Battambang",
     description: "Explore Cambodia's charming second city — French colonial architecture, the iconic Bamboo Train, bat caves, hilltop temples, and authentic village workshops.",
-    price: "$ people",
     duration: "3 Days / 2 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -193,7 +189,6 @@ const temples = [
     image: phnomPenhImg,
     location: "Phnom Penh",
     description: "Discover Cambodia's vibrant capital — the Royal Palace, Silver Pagoda, National Museum, Tuol Sleng, Killing Fields, and bustling markets across two action-packed days.",
-    price: "$ people",
     duration: "2 Days / 1 Night",
     groupSize: "2 people",
     country: "Cambodia",
@@ -203,7 +198,6 @@ const temples = [
     image: kohKerImg,
     location: "Siem Reap, Battambang, Phnom Penh, Kratie, Stung Treng, Preah Vihear",
     description: "An epic journey through Cambodia's most spectacular destinations — from Angkor temples to Mekong dolphins, remote wilderness, and cliff-top temples.",
-    price: "$ people",
     duration: "10 Days / 9 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -213,7 +207,6 @@ const temples = [
     image: banteayChhmarImg,
     location: "All Cambodia",
     description: "The ultimate Cambodia experience — 15 days covering temples, colonial cities, Mekong dolphins, remote northeast, cliff-top temples, and pre-Angkorian heritage sites.",
-    price: "$ people",
     duration: "15 Days / 14 Nights",
     groupSize: "2 people",
     country: "Cambodia",
@@ -249,8 +242,11 @@ const TempleToursPage = () => {
       <Helmet>
         <title>Angkor Wat & Koh Ker Temple Tours in Cambodia | Pearaing</title>
         <meta name="description" content="Private Angkor Wat, Koh Ker, Beng Mealea and Preah Vihear temple tours from Siem Reap with certified local guides, flexible itineraries and hotel pickup." />
-
         <link rel="canonical" href="https://pearaing.com/temple-tours" />
+        <meta property="og:title" content="Angkor Wat & Koh Ker Temple Tours in Cambodia | Pearaing" />
+        <meta property="og:description" content="Private Angkor Wat, Koh Ker, Beng Mealea, and Preah Vihear temple tours from Siem Reap with certified local guides." />
+        <meta property="og:url" content="https://pearaing.com/temple-tours" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="min-h-screen bg-background">
       <Navigation />
@@ -387,10 +383,13 @@ const TempleToursPage = () => {
         <section className="py-16">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
-              Featured Tours
+              Featured Temple Tours
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Coming soon — explore our top temple tour experiences.
+            <p className="text-muted-foreground text-lg mb-4">
+              Explore our most requested journeys, from sunrise at Angkor Wat to the remote pyramid of Koh Ker and the clifftop sanctuary of Preah Vihear.
+            </p>
+            <p className="text-muted-foreground text-base">
+              Every tour includes an English-speaking guide, air-conditioned transport, and hotel pickup. Pricing varies by group size, route, and vehicle type.
             </p>
           </div>
         </section>
