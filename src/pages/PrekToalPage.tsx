@@ -6,7 +6,7 @@ const PrekToalPage = () => (
     slug="prek-toal"
     heroImage={{ url: prekToalHero.url, alt: "Cormorants perched above Painted Storks and egrets at Prek Toal waterbird colony, Tonle Sap Lake" }}
     title="Prek Toal Bird Sanctuary | Tonle Sap Birding Tours | Pearaing Birding Trails"
-    metaDescription="Prek Toal is Southeast Asia's most important waterbird colony on Tonle Sap Lake. Book guided Prek Toal bird sanctuary tours from Siem Reap with Pearaing Birding Trails."
+    metaDescription="Take a Prek Toal bird sanctuary tour from Siem Reap to Tonle Sap's waterbird colony. See Spot-billed Pelican, Milky Stork and adjutants with local guides."
     h1="Prek Toal Bird Sanctuary — Tonle Sap's Great Waterbird Colony"
     intro="Prek Toal is the largest breeding colony of large waterbirds in mainland Southeast Asia. Set in the flooded forest at the north-western edge of Tonle Sap Lake, it is the most reliable place in the region to see Spot-billed Pelican, Milky Stork, Greater Adjutant, Asian Openbill and Oriental Darter at nest scale."
     whereToSee="Prek Toal Core Area, Tonle Sap Biosphere Reserve. Accessed by boat from Chong Kneas or Phnom Krom near Siem Reap — typically 90–120 minutes by motorboat."
@@ -31,6 +31,20 @@ const PrekToalPage = () => (
       {
         heading: "Supporting Tonle Sap conservation",
         body: "Visitor permits and guide fees fund colony protection, ranger salaries and community livelihoods in the floating villages. Pearaing Birding Trails works exclusively with local boatmen and uses small groups to minimise disturbance.",
+      },
+    ]}
+    faqs={[
+      {
+        question: "How do I get to Prek Toal from Siem Reap?",
+        answer: "Most tours leave Siem Reap around 05:00, transfer to the boat landing near Chong Kneas or Phnom Krom, then continue by motorboat for approximately 90–120 minutes depending on water levels.",
+      },
+      {
+        question: "What birds is Prek Toal famous for?",
+        answer: "Prek Toal is known for large breeding colonies of Spot-billed Pelican, Milky Stork, Painted Stork, Greater Adjutant, Lesser Adjutant, Asian Openbill and Oriental Darter.",
+      },
+      {
+        question: "When should I visit Prek Toal Bird Sanctuary?",
+        answer: "December to April is the main season, with January and February often providing the most active colonies and best photography conditions.",
       },
     ]}
     relatedTour={{ label: "See the Prek Toal day tour", href: "/tours" }}

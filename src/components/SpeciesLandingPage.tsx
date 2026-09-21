@@ -9,6 +9,11 @@ export interface SpeciesSection {
   body: string;
 }
 
+export interface SpeciesFaq {
+  question: string;
+  answer: string;
+}
+
 export interface SpeciesLandingProps {
   slug: string;
   title: string;
@@ -18,6 +23,7 @@ export interface SpeciesLandingProps {
   whereToSee: string;
   bestTime: string;
   sections: SpeciesSection[];
+  faqs?: SpeciesFaq[];
   relatedTour: { label: string; href: string };
   jsonLd?: Record<string, unknown>;
   heroImage?: { url: string; alt: string };
@@ -32,11 +38,24 @@ const SpeciesLandingPage = ({
   whereToSee,
   bestTime,
   sections,
+  faqs = [],
   relatedTour,
   jsonLd,
   heroImage,
 }: SpeciesLandingProps) => {
   const canonical = `https://pearaing.com/${slug}`;
+  const faqJsonLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  } : null;
   return (
     <>
       <Helmet>
@@ -49,6 +68,9 @@ const SpeciesLandingPage = ({
         <meta property="og:type" content="article" />
         {jsonLd && (
           <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        )}
+        {faqJsonLd && (
+          <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         )}
       </Helmet>
       <div className="min-h-screen bg-background">
@@ -124,6 +146,28 @@ const SpeciesLandingPage = ({
               ))}
             </div>
           </section>
+
+          {faqs.length > 0 && (
+            <section className="py-12 px-4 bg-muted/20">
+              <div className="container mx-auto max-w-3xl">
+                <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-primary mb-8 text-center">
+                  Frequently asked questions
+                </h2>
+                <div className="space-y-6">
+                  {faqs.map((faq) => (
+                    <article key={faq.question} className="rounded-2xl border bg-card p-6">
+                      <h3 className="font-serif text-xl font-semibold text-primary mb-2">
+                        {faq.question}
+                      </h3>
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
 
           <section className="py-16 px-4 bg-muted/30">
             <div className="container mx-auto max-w-3xl text-center space-y-6">

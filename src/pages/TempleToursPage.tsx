@@ -247,8 +247,8 @@ const TempleToursPage = () => {
   return (
     <>
       <Helmet>
-        <title>Temple Tours in Cambodia | Angkor Wat & Beyond | Pearaing Birding Trails</title>
-        <meta name="description" content="Explore Cambodia's ancient temples with expert guides. Angkor Wat, Banteay Srei, Preah Vihear, Koh Ker, and remote temple adventures from Siem Reap and beyond." />
+        <title>Angkor Wat & Koh Ker Temple Tours in Cambodia | Pearaing</title>
+        <meta name="description" content="Private Angkor Wat, Koh Ker, Beng Mealea and Preah Vihear temple tours from Siem Reap with certified local guides, flexible itineraries and hotel pickup." />
 
         <link rel="canonical" href="https://pearaing.com/temple-tours" />
       </Helmet>

@@ -4,7 +4,7 @@ const BirdingSiemReapPage = () => (
   <SpeciesLandingPage
     slug="birding-siem-reap"
     title="Bird Watching Siem Reap | Angkor & Tonle Sap Birding Tours | Pearaing Birding Trails"
-    metaDescription="Bird watching tours from Siem Reap — Angkor temple birding, Prek Toal waterbirds, Bengal Florican grasslands and Northern Plains specialities. Local expert guides."
+    metaDescription="Bird watching tours from Siem Reap to Pearaing, Angkor, Prek Toal and Bengal Florican grasslands. Half-day and multi-day trips with expert local guides."
     h1="Bird Watching in Siem Reap — Cambodia's Best Birding Base"
     intro="Siem Reap is the perfect base for birding in Cambodia. Within a few hours' drive you can be inside the Angkor temple forests, on Tonle Sap Lake at Prek Toal, on the Bengal Florican grasslands, or heading north for Giant Ibis at Russey Treb. Pearaing Birding Trails runs half-day, full-day and multi-day birding tours from Siem Reap with local expert guides."
     whereToSee="Angkor Archaeological Park (forest birds and temple specialities), Prek Toal Bird Sanctuary (waterbirds), Ang Trapeang Thmor (Sarus Crane), Bengal Florican Conservation Areas, Kompong Khleang and Kampong Phluk (floating-village birding) and the Northern Plains."
@@ -29,6 +29,20 @@ const BirdingSiemReapPage = () => (
       {
         heading: "Booking and pricing",
         body: "Tours run as small private groups. Get in touch for tailored quotes — pricing depends on tour length, number of birders and accommodation level.",
+      },
+    ]}
+    faqs={[
+      {
+        question: "What is the best bird watching near Siem Reap?",
+        answer: "Pearaing Biodiversity Conservation Center is the closest wetland birding site, while Angkor's temple forests, Prek Toal, Ang Trapeang Thmor and the Bengal Florican grasslands offer excellent half-day and full-day trips.",
+      },
+      {
+        question: "Can I do a half-day birding tour from Siem Reap?",
+        answer: "Yes. Half-day tours are available at Pearaing, Angkor and nearby wetlands, with morning and afternoon options depending on the site and season.",
+      },
+      {
+        question: "What is included in a Siem Reap birding tour?",
+        answer: "Tours typically include hotel pickup, transport, site fees, drinking water and an experienced local birding guide. Longer tours can include meals, boats and accommodation.",
       },
     ]}
     relatedTour={{ label: "See all birding tours", href: "/tours" }}
