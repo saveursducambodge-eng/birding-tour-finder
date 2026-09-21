@@ -20,6 +20,22 @@ const BlogPostPage = () => {
         <title>{post.title} | Pearaing Birding Trails</title>
         <meta name="description" content={post.excerpt} />
         <link rel="canonical" href={`https://pearaing.com/blog/${post.slug}`} />
+        <meta property="og:title" content={`${post.title} | Pearaing Birding Trails`} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:url" content={`https://pearaing.com/blog/${post.slug}`} />
+        <meta property="og:type" content="article" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: post.title,
+            description: post.excerpt,
+            datePublished: post.date,
+            mainEntityOfPage: `https://pearaing.com/blog/${post.slug}`,
+            author: { "@type": "Organization", name: "Pearaing Birding Trails" },
+            publisher: { "@type": "Organization", name: "Pearaing Birding Trails" },
+          })}
+        </script>
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navigation />
