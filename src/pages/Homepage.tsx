@@ -82,8 +82,6 @@ const Homepage = () => {
     { title: "Prek Toal Waterbird Sanctuary", description: "Huge colonies of waterbirds – one of the best places to see Greater Adjutant and Milky Stork.", image: bird2, duration: "Full day", price: "USD 255" },
     { title: "Koh Ker and Beng Mealea", description: "Ancient temples and forest birding with White-rumped Falcon and 8 woodpecker species.", image: kohKerImage, duration: "Full day", price: "USD 255" },
     { title: "Angkor Wat Birding Tour", description: "Combine sunrise at Angkor Wat with forest birding and temple exploration.", image: angkorWatSunset, duration: "Full day", price: "USD 195" },
-    { title: "Giant Ibis Experience", description: "Multi-day adventure for Giant Ibis and Bengal Florican near Tonle Sap Lake and the dry forests.", image: "/lovable-uploads/698db8ba-7d33-4946-9ec8-c6df5ed8e394.jpg", duration: "3 days", price: "USD 1,350" },
-    { title: "Sarus Crane & Grasslands", description: "Search the Tonle Sap floodplain grasslands for Sarus Crane, Bengal Florican and more.", image: bird4, duration: "Full day", price: "Contact us" },
   ];
   return <>
       <Helmet>
@@ -206,7 +204,7 @@ const Homepage = () => {
               The tours below are recommended by our expert bird guides, from half-day trips to multi-day adventures. Click "Read More" for full details and availability.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlightedTours.map((tour) => (
               <Card key={tour.title} className="group overflow-hidden flex flex-col border-0 shadow-card hover:shadow-float transition-shadow">
                 <div className="aspect-[4/3] overflow-hidden">
