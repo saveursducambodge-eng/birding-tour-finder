@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import guidesHero from "@/assets/hero-slide-guides.jpg";
+import PageHero from "@/components/PageHero";
 import Navigation from "@/components/Navigation";
 import samnangGuidePortrait from "@/assets/samnang-guide-portrait.jpg";
 import sekiGuidePortrait from "@/assets/seki-guide-portrait.jpg";
@@ -50,18 +52,12 @@ const AboutPage = () => {
       <div className="min-h-screen bg-background">
       <Navigation />
 
-      <main className="pt-24 pb-32 px-6 lg:px-12">
+      <main className="pt-16 pb-32">
+        <PageHero image={guidesHero} title="Meet Our Guides" subtitle="Connecting you with the rhythms of Cambodia's wild places through the eyes of local experts." imageAlt="Pearaing birding guides" />
+        <div className="px-6 lg:px-12 pt-20 lg:pt-32">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <header className="mb-20 lg:mb-32 text-center">
-            <h1 className="font-serif italic text-5xl sm:text-6xl md:text-7xl font-medium text-primary mb-6 tracking-tight lg:text-xl">
-              Meet Our Guides
-            </h1>
-            <div className="w-24 h-px bg-nature-forest/40 mx-auto mb-8" />
-            <p className="max-w-xl mx-auto text-nature-forest/80 text-base sm:text-lg leading-relaxed">
-              Connecting you with the rhythms of Cambodia's wild places through the eyes of local experts.
-            </p>
-          </header>
+          
 
           {/* Guide Profiles — Framed overlap */}
           <div className="space-y-32 lg:space-y-48">

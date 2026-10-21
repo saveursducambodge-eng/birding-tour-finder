@@ -4,6 +4,8 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import PageHero from "@/components/PageHero";
+import blogHero from "@/assets/prek-toal-storks.jpg";
 import Navigation from "@/components/Navigation";
 import { blogPosts } from "@/data/blogPosts";
 
@@ -27,18 +29,10 @@ const BlogPage = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         <main className="pt-16">
+          <PageHero image={blogHero} title="Birding and Temple Tour Stories" subtitle="Field notes, tour highlights, and expert guidance from our certified guides across Cambodia." imageAlt="Storks at Prek Toal" />
           <section className="py-16 sm:py-20 px-4 md:px-6 lg:px-8">
             <div className="container mx-auto max-w-6xl">
-              <div className="text-center mb-12 lg:mb-16">
-                <Badge className="mb-4 bg-nature-sand text-nature-forest">Our Journal</Badge>
-                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
-                  Birding and Temple Tour Stories
-                </h1>
-                <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                  Field notes, tour highlights, and expert guidance from our certified guides across Cambodia.
-                </p>
-              </div>
-
+              
               {/* Featured post */}
               <Link to={`/blog/${featured.slug}`} className="block group mb-12 lg:mb-16">
                 <Card className="overflow-hidden hover:shadow-float transition-all duration-300">

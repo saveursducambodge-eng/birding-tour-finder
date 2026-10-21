@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { Play, Clock, Calendar, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import PageHero from "@/components/PageHero";
+import videoHero from "@/assets/sarus-cranes.jpg";
 import Navigation from "@/components/Navigation";
 import featuredVideo from "@/assets/videos/field-diary-2026-06-06.mp4.asset.json";
 
@@ -91,18 +93,10 @@ const VideoBlogPage = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         <main className="pt-16">
+          <PageHero image={videoHero} title="Birding Videos from the Field" subtitle="Short films and field diaries from our guides across Cambodia's wetlands, forests, and temple landscapes." imageAlt="Sarus Cranes" />
           <section className="py-16 sm:py-20 px-4 md:px-6 lg:px-8">
             <div className="container mx-auto max-w-6xl">
-              <div className="text-center mb-12 lg:mb-16">
-                <Badge className="mb-4 bg-nature-sand text-nature-forest">Video Blog</Badge>
-                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
-                  Birding Videos from the Field
-                </h1>
-                <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                  Short films and field diaries from our guides across Cambodia's wetlands, forests, and temple landscapes.
-                </p>
-              </div>
-
+              
               {/* Featured video */}
               <div ref={heroRef} className="mb-12">
                 <Card className="overflow-hidden shadow-float">

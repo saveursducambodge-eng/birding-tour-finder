@@ -4,6 +4,7 @@ import { ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import PageHero from "@/components/PageHero";
 import Navigation from "@/components/Navigation";
 import bengalFloricanHeroAsset from "@/assets/bengal-florican-clean.jpg.asset.json";
 const bengalFloricanHero = bengalFloricanHeroAsset.url;
@@ -97,27 +98,7 @@ const ItinerariesPage = () => {
     <div className="min-h-screen bg-gradient-to-br from-sage-light to-nature-earth/20">
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <img
-          src={bengalFloricanHero}
-          alt="Bengal Florican in grassland"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/95 to-nature-forest/70 z-10" />
-        <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
-          <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight drop-shadow-lg">
-              View Itineraries
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-white/95 drop-shadow-md">
-              Suggested birding trips from a single day to a full month across Cambodia
-            </p>
-          </div>
-        </div>
-      </section>
+      <div className="pt-16"><PageHero image={bengalFloricanHero} title="View Itineraries" subtitle="Suggested birding trips from a single day to a full month across Cambodia" imageAlt="Bengal Florican in grassland" /></div>
 
       {/* Intro */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 max-w-6xl mx-auto">

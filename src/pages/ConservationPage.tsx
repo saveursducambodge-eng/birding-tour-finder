@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PageHero from "@/components/PageHero";
 import Navigation from "@/components/Navigation";
 import conservationHero from "@/assets/conservation-hero.jpg.asset.json";
 import communityPlantingImage from "@/assets/conservation-community-planting.jpg.asset.json";
@@ -22,26 +23,7 @@ const ConservationPage = () => {
         <Navigation />
 
         <main className="pt-16">
-          {/* HERO */}
-          <section className="relative h-[85vh] min-h-[560px] w-full overflow-hidden">
-            <div
-              className="absolute inset-0 bg-cover bg-center scale-105"
-              style={{ backgroundImage: `url(${conservationHero.url})` }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/60 to-primary/90" />
-            <div className="relative z-10 h-full container mx-auto px-6 flex flex-col justify-end pb-16 sm:pb-24">
-              <span className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.3em] text-primary-foreground/80 mb-6">
-                <Leaf className="w-4 h-4" /> Our Commitment
-              </span>
-              <h1 className="font-serif italic text-primary-foreground text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[0.95] max-w-5xl">
-                Where birds thrive,<br />communities flourish.
-              </h1>
-              <p className="mt-8 max-w-2xl text-base sm:text-lg text-primary-foreground/85 leading-relaxed">
-                Conservation in Cambodia begins with the people who share the forest. Every trail we walk
-                supports the rangers, guides, and villages that keep these wild places wild.
-              </p>
-            </div>
-          </section>
+          <PageHero image={conservationHero.url} title={<>Where birds thrive,<br />communities flourish.</>} subtitle="Every trail we walk supports the rangers, guides, and villages that keep Cambodia's wild places wild." imageAlt="Conservation in Cambodia" />
 
           {/* STATS BAND */}
           <section className="bg-primary text-primary-foreground">
