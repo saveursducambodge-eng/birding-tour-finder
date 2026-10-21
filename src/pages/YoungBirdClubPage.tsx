@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import PageHero from "@/components/PageHero";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Heart, HandHeart, Mail, Binoculars, Leaf, Users } from "lucide-react";
@@ -25,27 +26,7 @@ const YoungBirdClubPage = () => {
         <Navigation />
 
         <main className="pt-16">
-          {/* HERO */}
-          <section className="relative h-[75vh] min-h-[520px] w-full overflow-hidden">
-            <div
-              className="absolute inset-0 bg-cover bg-center scale-105"
-              style={{ backgroundImage: `url(${youngBirdClubImage.url})` }}
-              role="img"
-              aria-label="Young birders with a guide watching waterbirds in a Cambodian wetland"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-primary/50 to-primary/85" />
-            <div className="relative z-10 h-full container mx-auto px-6 flex flex-col justify-end pb-16 sm:pb-24">
-              <span className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.3em] text-primary-foreground/80 mb-6">
-                <Binoculars className="w-4 h-4" /> Youth & Conservation
-              </span>
-              <h1 className="font-serif italic text-primary-foreground text-4xl sm:text-6xl md:text-7xl font-medium leading-[0.95] max-w-4xl">
-                Young Bird Club
-              </h1>
-              <p className="mt-8 max-w-2xl text-base sm:text-lg text-primary-foreground/85 leading-relaxed">
-                Inspiring Cambodia’s next generation of nature lovers through fun, hands-on birding experiences in the wild places we call home.
-              </p>
-            </div>
-          </section>
+          <PageHero image={youngBirdClubImage.url} title="Young Bird Club" subtitle="Inspiring Cambodia’s next generation of nature lovers through fun, hands-on birding experiences." imageAlt="Young birders with a guide watching waterbirds in a Cambodian wetland" />
 
           {/* INTRO */}
           <section className="container mx-auto px-6 py-16 sm:py-24">

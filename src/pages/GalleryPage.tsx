@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import PageHero from "@/components/PageHero";
+import galleryHero from "@/assets/gallery-bird-60.jpg";
 import Navigation from "@/components/Navigation";
 import LazyImage from "@/components/LazyImage";
 import galleryBird1 from "@/assets/gallery-bird-1.jpg";
@@ -198,17 +200,7 @@ const GalleryPage = () => {
       <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
-            Activity & Bird Gallery
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-            Discover the incredible diversity of Cambodia's birdlife through our collection of stunning photographs
-          </p>
-        </div>
-      </section>
+      <div className="pt-16"><PageHero image={galleryHero} title="Activity & Bird Gallery" subtitle="Discover the incredible diversity of Cambodia's birdlife through our photographs." imageAlt="Birds in Cambodia" /></div>
 
       {/* Gallery Grid */}
       <section className="py-8 sm:py-12 lg:py-16 px-4">

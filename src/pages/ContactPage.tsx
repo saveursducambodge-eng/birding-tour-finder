@@ -13,6 +13,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
+import PageHero from "@/components/PageHero";
 import Navigation from "@/components/Navigation";
 import contactBirdingGuide from "@/assets/contact-birding-guide.jpg";
 import contactHeroImage from "@/assets/contact-hero-cormorants.jpg.asset.json";
@@ -130,25 +131,7 @@ const ContactPage = () => {
       <Navigation />
       
       <main className="pt-16">
-        {/* Hero Section */}
-        <section
-          className="relative py-20 sm:py-28 px-4 md:px-6 lg:px-8 bg-cover bg-center"
-          style={{ backgroundImage: `url(${contactHeroImage.url})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
-          <div className="container mx-auto text-center relative z-10">
-            <Badge className="mb-4 bg-nature-forest text-white text-xs sm:text-sm">
-              Get In Touch
-            </Badge>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
-              Plan Your Perfect
-              <span className="block text-nature-sky">Birding Adventure</span>
-            </h1>
-            <p className="text-base sm:text-lg text-white/90 max-w-3xl mx-auto px-4 drop-shadow">
-              Ready to explore Cambodia's magnificent birdlife? Contact us to customize your perfect birding experience or get answers to any questions about our tours.
-            </p>
-          </div>
-        </section>
+        <PageHero image={contactHeroImage.url} title="Plan Your Perfect Birding Adventure" subtitle="Contact us to customize your birding experience or get answers to any questions about our tours." imageAlt="Cormorants" />
 
         {/* Contact Information */}
         <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8">
