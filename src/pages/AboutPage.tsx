@@ -148,6 +148,7 @@ const AboutPage = () => {
             </Link>
           </div>
         </div>
+        </div>
       </main>
     </div></>;
 };
