@@ -49,11 +49,11 @@ const Navigation = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 transition-colors hover:text-primary">
           <img alt="Pearaing Birding Trails" className="h-7 w-7 sm:h-8 sm:w-8" src="/lovable-uploads/1f44ea21-da34-4708-b702-7faa33818cdb.jpg" />
-          <span className="font-serif font-semibold text-base sm:text-lg text-primary">Pearaing Birding Trails</span>
+          <span className="font-serif font-semibold text-base sm:text-lg text-primary whitespace-nowrap">Pearaing Birding Trails</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-5 xl:space-x-8">
           {navItems.map(item => {
             if (item.children) {
               const isActive = item.children.some(c => location.pathname === c.path);
@@ -61,7 +61,7 @@ const Navigation = () => {
                 <div key={item.name} className="relative group">
                   <button
                     className={cn(
-                      "text-sm font-medium transition-colors hover:text-primary inline-flex items-center gap-1",
+                      "text-sm font-medium transition-colors hover:text-primary inline-flex items-center gap-1 whitespace-nowrap",
                       isActive ? "text-primary" : "text-muted-foreground"
                     )}
                   >
@@ -88,7 +88,7 @@ const Navigation = () => {
               );
             }
             return (
-              <Link key={item.name} to={item.path} className={cn("text-sm font-medium transition-colors hover:text-primary", location.pathname === item.path ? "text-primary" : "text-muted-foreground")}>
+              <Link key={item.name} to={item.path} className={cn("text-sm font-medium transition-colors hover:text-primary whitespace-nowrap", location.pathname === item.path ? "text-primary" : "text-muted-foreground")}>
                 {item.name}
               </Link>
             );
