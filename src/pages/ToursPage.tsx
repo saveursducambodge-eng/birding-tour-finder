@@ -463,72 +463,50 @@ const ToursPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center overflow-hidden px-4 md:px-8 py-6">
-        <div className="relative w-full max-w-7xl aspect-[1280/822] min-h-[500px] rounded-[3rem] overflow-hidden shadow-nature group">
-          {/* Background image slider */}
-          {heroImages.map((img, i) => (
-            <img
+      <section className="relative h-[85vh] min-h-[520px] mt-16 flex items-center overflow-hidden group">
+        {heroImages.map((img, i) => (
+          <img
+            key={i}
+            src={img}
+            alt={`Bird watching tours in Cambodia ${i + 1}`}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === heroSlide ? 'opacity-100' : 'opacity-0'}`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/80 via-nature-forest/40 to-transparent" />
+        <button
+          onClick={() => setHeroSlide((s) => (s - 1 + heroImages.length) % heroImages.length)}
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-nature-forest/40 hover:bg-nature-forest/60 text-primary-foreground rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity z-20"
+          aria-label="Previous hero image"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={() => setHeroSlide((s) => (s + 1) % heroImages.length)}
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-nature-forest/40 hover:bg-nature-forest/60 text-primary-foreground rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity z-20"
+          aria-label="Next hero image"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+        <div className="relative z-10 container mx-auto px-4 sm:px-8">
+          <div className="max-w-2xl text-primary-foreground">
+            <h1 className="font-serif font-bold leading-[1.05] mb-4 animate-fade-in">
+              <span className="block text-5xl sm:text-6xl lg:text-7xl text-nature-gold">Our Birding</span>
+              <span className="block text-5xl sm:text-6xl lg:text-7xl text-nature-gold">Tours</span>
+            </h1>
+            <p className="text-xl sm:text-2xl font-medium leading-snug">
+              Expertly guided trips to Cambodia's best bird sanctuaries and wild places
+            </p>
+          </div>
+        </div>
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+          {heroImages.map((_, i) => (
+            <button
               key={i}
-              src={img}
-              alt={`Bird watching tours in Cambodia ${i + 1}`}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === heroSlide ? 'opacity-100' : 'opacity-0'}`}
+              onClick={() => setHeroSlide(i)}
+              aria-label={`Go to hero image ${i + 1}`}
+              className={`h-[3px] rounded-full transition-all ${i === heroSlide ? 'w-10 bg-nature-gold' : 'w-6 bg-primary-foreground/50'}`}
             />
           ))}
-          <button
-            onClick={() => setHeroSlide((s) => (s - 1 + heroImages.length) % heroImages.length)}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity z-20"
-            aria-label="Previous hero image"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
-            onClick={() => setHeroSlide((s) => (s + 1) % heroImages.length)}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity z-20"
-            aria-label="Next hero image"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-            {heroImages.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setHeroSlide(i)}
-                className={`w-2 h-2 rounded-full transition-colors ${i === heroSlide ? 'bg-white' : 'bg-white/50 hover:bg-white/80'}`}
-                aria-label={`Go to hero image ${i + 1}`}
-              />
-            ))}
-          </div>
-          {/* Gradient overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-nature-forest/95 via-nature-forest/40 to-transparent" />
-          <div className="absolute inset-0 ring-1 ring-inset ring-primary-foreground/10 rounded-[3rem]" />
-
-          {/* Content */}
-          <div className="relative h-full flex flex-col justify-end p-8 md:p-16 lg:p-20 space-y-8">
-            <div className="max-w-3xl">
-              <div className="flex items-center gap-3 mb-4 md:mb-6">
-                <span className="h-px w-8 bg-nature-sage-light" />
-                <span className="text-nature-sage-light font-medium tracking-[0.3em] uppercase text-xs md:text-sm font-sans">
-                  Discover the Unseen
-                </span>
-              </div>
-              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-primary-foreground leading-[0.9] mb-4 md:mb-6 font-serif">
-                PEARAING <br />
-                <span className="italic font-light opacity-90">Birding Trails</span>
-              </h1>
-              <p className="text-primary-foreground/80 text-base sm:text-lg md:text-xl max-w-lg leading-relaxed font-light font-sans">
-                Expertly curated expeditions to Cambodia's most vibrant avian sanctuaries and pristine wilderness.
-              </p>
-            </div>
-
-          </div>
-
-          {/* Decorative scroll indicator */}
-          <div className="absolute bottom-10 right-10 hidden lg:flex flex-col items-center gap-4">
-            <span className="[writing-mode:vertical-lr] text-primary-foreground/40 text-[10px] uppercase tracking-[0.3em] font-medium">
-              Scroll to explore
-            </span>
-            <div className="w-px h-12 bg-gradient-to-b from-primary-foreground/40 to-transparent" />
-          </div>
         </div>
       </section>
 

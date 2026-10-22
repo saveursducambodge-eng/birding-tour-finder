@@ -76,38 +76,25 @@ const SpeciesLandingPage = ({
       <div className="min-h-screen bg-background">
         <Navigation />
         <main className="pt-16">
-          {heroImage ? (
-            <section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
+          <section className={`relative h-[60vh] min-h-[420px] flex items-center overflow-hidden ${heroImage ? "" : "bg-gradient-hero"}`}>
+            {heroImage && (
               <img
                 src={heroImage.url}
                 alt={heroImage.alt}
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="eager"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/10" />
-              <div className="relative z-10 h-full flex items-end">
-                <div className="container mx-auto max-w-4xl text-center px-4 pb-12 sm:pb-16">
-                  <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-6">
-                    {h1}
-                  </h1>
-                  <p className="text-base sm:text-lg text-foreground/90 leading-relaxed max-w-3xl mx-auto">
-                    {intro}
-                  </p>
-                </div>
-              </div>
-            </section>
-          ) : (
-            <section className="bg-gradient-nature py-16 sm:py-24 px-4">
-              <div className="container mx-auto max-w-4xl text-center">
-                <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-6">
+            )}
+            <div className="absolute inset-0 bg-gradient-to-r from-nature-forest/85 via-nature-forest/45 to-transparent" />
+            <div className="relative z-10 container mx-auto px-4 sm:px-8">
+              <div className="max-w-2xl text-primary-foreground">
+                <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-nature-gold mb-4 animate-fade-in">
                   {h1}
                 </h1>
-                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  {intro}
-                </p>
+                <p className="text-base sm:text-lg leading-relaxed">{intro}</p>
               </div>
-            </section>
-          )}
+            </div>
+          </section>
 
           <section className="py-12 px-4">
             <div className="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6">
