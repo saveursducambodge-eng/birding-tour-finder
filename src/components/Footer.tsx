@@ -83,6 +83,54 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* More to View + Contact */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 border-t border-nature-sky/30 mt-6 sm:mt-8 pt-6 sm:pt-8">
+          {/* More to View */}
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">More to View</h3>
+            <ul className="space-y-2 text-sm sm:text-base">
+              <li><Link to="/conservation" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Supporting Projects</Link></li>
+              <li><Link to="/itineraries" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Cambodia Birding Sites</Link></li>
+              <li><Link to="/gallery" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Cambodia Bird Checklist</Link></li>
+              <li><Link to="/about" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Staff &amp; Guides</Link></li>
+              <li><Link to="/tours" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Join Group Tours</Link></li>
+              <li><Link to="/contact" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Privacy Policy</Link></li>
+              <li><Link to="/contact" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Terms &amp; Conditions</Link></li>
+            </ul>
+          </div>
+          <div className="space-y-3 sm:space-y-4 lg:pt-11">
+            <ul className="space-y-2 text-sm sm:text-base">
+              <li><Link to="/tours/young-bird-club" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Explore Membership</Link></li>
+              <li><a href="https://www.tripadvisor.com/Attraction_Review-g297390-d12290404-Reviews-Pearaing_Biodiversity_Conservation_Center-Siem_Reap_Siem_Reap_Province.html" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Read Testimonials</a></li>
+              <li><Link to="/contact" className="text-white/90 hover:text-nature-sky transition-colors duration-200">F.A.Q</Link></li>
+              <li><Link to="/tours/young-bird-club" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Young Bird Club</Link></li>
+              <li><a href="mailto:pearaingbirdingtrails@gmail.com?subject=Donation%20to%20Pearaing%20Birding%20Trails" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Donate Us</a></li>
+              <li><Link to="/contact" className="text-white/90 hover:text-nature-sky transition-colors duration-200">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-nature-sand">Contact</h3>
+            <div className="flex items-start space-x-3 text-sm sm:text-base">
+              <MapPin className="w-4 h-4 flex-shrink-0 mt-1 text-nature-sky" />
+              <span className="text-white">Office: Chriev Commune, Siem Reap, Cambodia</span>
+            </div>
+            <div className="flex items-start space-x-3 text-sm sm:text-base">
+              <Clock className="w-4 h-4 flex-shrink-0 mt-1 text-nature-sky" />
+              <span className="text-white">Office Hours: 8:30 AM to 5:00 PM (GMT +7)<br />Monday to Friday</span>
+            </div>
+            <div className="flex items-start space-x-3 text-sm sm:text-base">
+              <Mail className="w-4 h-4 flex-shrink-0 mt-1 text-nature-sky" />
+              <a href="mailto:pearaingbirdingtrails@gmail.com" className="text-white break-all hover:text-nature-sky transition-colors duration-200">pearaingbirdingtrails@gmail.com</a>
+            </div>
+            <div className="flex items-start space-x-3 text-sm sm:text-base">
+              <Phone className="w-4 h-4 flex-shrink-0 mt-1 text-nature-sky" />
+              <a href="tel:+85585303050" className="text-white hover:text-nature-sky transition-colors duration-200">+855 (0) 85303050</a>
+            </div>
+          </div>
+        </div>
+
         <div className="border-t border-nature-sky/30 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
           <p className="text-xs sm:text-sm text-white/80">
             © {new Date().getFullYear()} Pearaing Birding Trails. All rights reserved.
