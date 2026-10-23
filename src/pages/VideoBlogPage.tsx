@@ -18,7 +18,6 @@ interface VideoPost {
   date: string;
 }
 
-// Placeholder videos — swap youtubeId values with your real video IDs
 const videoPosts: VideoPost[] = [
   {
     id: "1",
@@ -39,26 +38,6 @@ const videoPosts: VideoPost[] = [
     category: "\u00a0Tours",
     duration: "8:15",
     date: "May 28, 2026",
-  },
-  {
-    id: "3",
-    title: "Sarus Crane Wintering Grounds at Ang Trapaeng Thmor",
-    description:
-      "Open grasslands, a vast reservoir, and the tallest flying bird in the world — Cambodia's most reliable Sarus Crane site.",
-    youtubeId: "dQw4w9WgXcQ",
-    category: "Conservation",
-    duration: "5:30",
-    date: "May 20, 2026",
-  },
-  {
-    id: "4",
-    title: "Birding inside the Angkor Forest",
-    description:
-      "Hainan Blue Flycatcher, Alexandrine Parakeet and Oriental Pied Hornbill — quiet birding among ancient temples.",
-    youtubeId: "dQw4w9WgXcQ",
-    category: "Temple Birding",
-    duration: "7:08",
-    date: "May 10, 2026",
   },
 ];
 
