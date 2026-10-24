@@ -57,7 +57,7 @@ interface TourDetailsPopupProps {
 }
 // The "Know more" details fill the whole window so more tour information shows at once.
 const FULL_WINDOW_DIALOG =
-  "left-0 top-0 translate-x-0 translate-y-0 max-w-none w-full h-full max-h-none rounded-none sm:rounded-none overflow-y-auto";
+  "tour-dialog left-0 top-0 translate-x-0 translate-y-0 max-w-none w-full h-full max-h-none rounded-none sm:rounded-none overflow-y-auto";
 const TourDetailsPopup = ({
   tour,
   isOpen,
