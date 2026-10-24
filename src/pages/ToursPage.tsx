@@ -11,7 +11,7 @@ import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-vultures.jpg.asset.json";
 import paintedStorksHeroAsset from "@/assets/tours-hero-painted-storks.jpg.asset.json";
-import kampongPhlukBirdingAsset from "@/assets/kampong-phluk-birding.jpg.asset.json";
+import kampongPhlukHeronLiliesAsset from "@/assets/kampong-phluk-heron-lilies.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding-v2.jpg.asset.json";
 import pearaingPaintedStorksAsset from "@/assets/pearaing-painted-storks-flock.jpg.asset.json";
 
@@ -148,7 +148,7 @@ export const tours = [{
     difficulty: "Easy",
     groupSize: "2 people",
     price: "$165 Per Person",
-    image: kampongPhlukBirdingAsset.url,
+    image: kampongPhlukHeronLiliesAsset.url,
     images: [],
     category: "cultural",
     highlights: ["Flooded forest birding", "Floating village visit", "Tonle Sap wetlands", "Morning birding", "Stilt-house community"],
