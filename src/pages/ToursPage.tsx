@@ -11,6 +11,9 @@ import giantIbisImage from "@/assets/tmatboey-ibis.jpg";
 import heroImage from "@/assets/hero-cambodia-jungle.jpg";
 import birdTourHeroAsset from "@/assets/tours-hero-vultures.jpg.asset.json";
 import paintedStorksHeroAsset from "@/assets/tours-hero-painted-storks.jpg.asset.json";
+import heroPaintedStorksFlightAsset from "@/assets/hero-painted-storks-flight.jpg.asset.json";
+import heroPondHeronLiliesAsset from "@/assets/hero-pond-heron-lilies.jpg.asset.json";
+import heroGlossyIbisesAsset from "@/assets/hero-glossy-ibises.jpg.asset.json";
 import kampongPhlukHeronLiliesAsset from "@/assets/kampong-phluk-heron-lilies.jpg.asset.json";
 import phnomKroamMarshLandAsset from "@/assets/phnom-kroam-marsh-land-birding-v2.jpg.asset.json";
 import pearaingPaintedStorksAsset from "@/assets/pearaing-painted-storks-flock.jpg.asset.json";
@@ -434,7 +437,13 @@ const ToursPage = () => {
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [heroSlide, setHeroSlide] = useState(0);
-  const heroImages = [birdTourHero, paintedStorksHero];
+  const heroImages = [
+    birdTourHero,
+    paintedStorksHero,
+    heroPaintedStorksFlightAsset.url,
+    heroPondHeronLiliesAsset.url,
+    heroGlossyIbisesAsset.url,
+  ];
   const toursSectionRef = useRef<HTMLElement>(null);
   const handleTourDetails = (tour: typeof tours[0]) => {
     setSelectedTour(tour);
