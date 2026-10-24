@@ -55,6 +55,9 @@ interface TourDetailsPopupProps {
   isOpen: boolean;
   onClose: () => void;
 }
+// The "Know more" details fill the whole window so more tour information shows at once.
+const FULL_WINDOW_DIALOG =
+  "tour-dialog left-0 top-0 translate-x-0 translate-y-0 max-w-none w-full h-full max-h-none rounded-none sm:rounded-none overflow-y-auto";
 const TourDetailsPopup = ({
   tour,
   isOpen,
@@ -65,7 +68,7 @@ const TourDetailsPopup = ({
   // Special handling for informational content
   if (tour.isInformational && tour.title === "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Species") {
     return <Dialog open={isOpen} onOpenChange={onClose}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className={FULL_WINDOW_DIALOG}>
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
               Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Species
@@ -259,7 +262,7 @@ const TourDetailsPopup = ({
   // Special handling for Ang Trapaeng Thmor tour (ID 4)
   if (tour.id === 4) {
     return <Dialog open={isOpen} onOpenChange={onClose}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className={FULL_WINDOW_DIALOG}>
           <DialogHeader>
             <DialogTitle className="font-serif text-2xl text-primary">
               {tour.title}
@@ -592,7 +595,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
       </Dialog>;
   }
   return <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className={FULL_WINDOW_DIALOG}>
         <DialogHeader>
           <DialogTitle className="font-serif text-2xl text-primary">
             {tour.title}
