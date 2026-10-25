@@ -73,7 +73,12 @@ const TourDetailsPopup = ({
             <DialogTitle className="font-serif text-2xl text-primary">
               Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Species
             </DialogTitle>
-          </DialogHeader>
+        </DialogHeader>
+        {tour.image && ![2, 3].includes(tour.id) && (
+          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+            <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
+          </div>
+        )}
           
           <div className="space-y-6 prose prose-sm max-w-none">
             <h3 className="text-green-600 font-semibold text-lg">Rare Bird Itinerary in Cambodia</h3>
@@ -267,7 +272,12 @@ const TourDetailsPopup = ({
             <DialogTitle className="font-serif text-2xl text-primary">
               {tour.title}
             </DialogTitle>
-          </DialogHeader>
+        </DialogHeader>
+        {tour.image && ![2, 3].includes(tour.id) && (
+          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+            <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
+          </div>
+        )}
           
           <div className="space-y-6">
             {/* Introduction */}
@@ -601,6 +611,11 @@ The surrounding dry grasslands are home to many species, including Small and Blu
             {tour.title}
           </DialogTitle>
         </DialogHeader>
+        {tour.image && ![2, 3].includes(tour.id) && (
+          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+            <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
+          </div>
+        )}
         
         <div className="space-y-6">
           {/* Prek Toal Waterbird Sanctuary photo */}
