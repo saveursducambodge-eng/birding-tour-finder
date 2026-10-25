@@ -69,16 +69,16 @@ const TourDetailsPopup = ({
   if (tour.isInformational && tour.title === "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Species") {
     return <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent className={FULL_WINDOW_DIALOG}>
-          <DialogHeader>
-            <DialogTitle className="font-serif text-2xl text-primary">
-              Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Species
-            </DialogTitle>
-        </DialogHeader>
         {tour.image && ![2, 3].includes(tour.id) && (
           <div className="aspect-[16/9] overflow-hidden rounded-lg">
             <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
         )}
+        <DialogHeader>
+            <DialogTitle className="font-serif text-2xl text-primary">
+              Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Species
+            </DialogTitle>
+        </DialogHeader>
           
           <div className="space-y-6 prose prose-sm max-w-none">
             <h3 className="text-green-600 font-semibold text-lg">Rare Bird Itinerary in Cambodia</h3>
@@ -268,16 +268,16 @@ const TourDetailsPopup = ({
   if (tour.id === 4) {
     return <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent className={FULL_WINDOW_DIALOG}>
-          <DialogHeader>
-            <DialogTitle className="font-serif text-2xl text-primary">
-              {tour.title}
-            </DialogTitle>
-        </DialogHeader>
         {tour.image && ![2, 3].includes(tour.id) && (
           <div className="aspect-[16/9] overflow-hidden rounded-lg">
             <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
         )}
+        <DialogHeader>
+          <DialogTitle className="font-serif text-2xl text-primary">
+            {tour.title}
+          </DialogTitle>
+        </DialogHeader>
           
           <div className="space-y-6">
             {/* Introduction */}
@@ -606,41 +606,38 @@ The surrounding dry grasslands are home to many species, including Small and Blu
   }
   return <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className={FULL_WINDOW_DIALOG}>
-        <DialogHeader>
-          <DialogTitle className="font-serif text-2xl text-primary">
-            {tour.title}
-          </DialogTitle>
-        </DialogHeader>
         {tour.image && ![2, 3].includes(tour.id) && (
           <div className="aspect-[16/9] overflow-hidden rounded-lg">
             <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
         )}
+        {tour.id === 2 && (
+          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+            <img
+              src={prekToalWaterbirdSanctuaryAsset.url}
+              alt="Prek Toal Waterbird Sanctuary"
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+        {tour.id === 3 && (
+          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+            <img
+              src={kohKerWoodpeckersAsset.url}
+              alt="Koh Ker and Beng Mealea"
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+        <DialogHeader>
+          <DialogTitle className="font-serif text-2xl text-primary">
+            {tour.title}
+          </DialogTitle>
+        </DialogHeader>
         
         <div className="space-y-6">
-          {/* Prek Toal Waterbird Sanctuary photo */}
-          {tour.id === 2 && (
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={prekToalWaterbirdSanctuaryAsset.url}
-                alt="Prek Toal Waterbird Sanctuary"
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          )}
-
-          {/* Koh Ker and Beng Mealea photo */}
-          {tour.id === 3 && (
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={kohKerWoodpeckersAsset.url}
-                alt="Koh Ker and Beng Mealea"
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          )}
 
           {/* Tour Info */}
           {tour.id !== 3 && tour.id !== 5 && tour.id !== 6 && tour.id !== 7 && (
