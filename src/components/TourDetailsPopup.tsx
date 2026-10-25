@@ -70,7 +70,7 @@ const TourDetailsPopup = ({
     return <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent className={FULL_WINDOW_DIALOG}>
         {tour.image && ![2, 3].includes(tour.id) && (
-          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+          <div className="h-[45vh] min-h-[240px] overflow-hidden rounded-lg">
             <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
         )}
@@ -269,7 +269,7 @@ const TourDetailsPopup = ({
     return <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent className={FULL_WINDOW_DIALOG}>
         {tour.image && ![2, 3].includes(tour.id) && (
-          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+          <div className="h-[45vh] min-h-[240px] overflow-hidden rounded-lg">
             <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
         )}
@@ -607,12 +607,12 @@ The surrounding dry grasslands are home to many species, including Small and Blu
   return <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className={FULL_WINDOW_DIALOG}>
         {tour.image && ![2, 3].includes(tour.id) && (
-          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+          <div className="h-[45vh] min-h-[240px] overflow-hidden rounded-lg">
             <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
           </div>
         )}
         {tour.id === 2 && (
-          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+          <div className="h-[45vh] min-h-[240px] overflow-hidden rounded-lg">
             <img
               src={prekToalWaterbirdSanctuaryAsset.url}
               alt="Prek Toal Waterbird Sanctuary"
@@ -622,7 +622,7 @@ The surrounding dry grasslands are home to many species, including Small and Blu
           </div>
         )}
         {tour.id === 3 && (
-          <div className="aspect-[16/9] overflow-hidden rounded-lg">
+          <div className="h-[45vh] min-h-[240px] overflow-hidden rounded-lg">
             <img
               src={kohKerWoodpeckersAsset.url}
               alt="Koh Ker and Beng Mealea"
