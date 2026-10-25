@@ -679,15 +679,15 @@ The surrounding dry grasslands are home to many species, including Small and Blu
               {tour.description.split('\n\n').map((paragraph, index) => {
                 if (tour.id === 1 && index === 1) {
                   return (
-                    <p key={index} className="overflow-hidden">
+                    <div key={index} className="space-y-3">
                       <img
                         src={halfDayPearaingWaterbirds.url}
                         alt="Waterbirds at Pearaing Biodiversity Conservation Center"
                         loading="lazy"
-                        className="float-left w-32 h-auto sm:w-40 rounded-lg mr-4 mb-2 shadow-md"
+                        className="w-32 h-auto sm:w-40 rounded-lg shadow-md"
                       />
-                      {paragraph}
-                    </p>
+                      <p>{paragraph}</p>
+                    </div>
                   );
                 }
                 return (
