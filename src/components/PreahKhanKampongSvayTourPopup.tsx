@@ -20,14 +20,13 @@ const PreahKhanKampongSvayTourPopup = ({ isOpen, onClose }: PreahKhanKampongSvay
               className="w-full h-64 md:h-80 object-cover"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4">
-              <DialogHeader>
-                <DialogTitle className="text-white text-2xl md:text-3xl font-serif">
-                  Full-Day Tour to Preah Khan Kampong Svay Adventure
-                </DialogTitle>
-              </DialogHeader>
-            </div>
+          </div>
+          <div className="px-6 pt-4">
+            <DialogHeader>
+              <DialogTitle className="font-serif text-2xl md:text-3xl text-primary">
+                Full-Day Tour to Preah Khan Kampong Svay Adventure
+              </DialogTitle>
+            </DialogHeader>
           </div>
 
           <div className="p-6 space-y-8">

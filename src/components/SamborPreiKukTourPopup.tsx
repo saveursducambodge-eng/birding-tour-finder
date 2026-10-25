@@ -15,14 +15,13 @@ const SamborPreiKukTourPopup = ({ isOpen, onClose }: SamborPreiKukTourPopupProps
         <ScrollArea className="max-h-[90vh]">
           <div className="relative">
             <img src={samborPreiKukAsset.url} alt="Sambor Prei Kuk ancient pre-Angkorian temple ruins in jungle" className="w-full h-64 md:h-80 object-cover" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4">
-              <DialogHeader>
-                <DialogTitle className="text-white text-2xl md:text-3xl font-serif">
-                  Sambor Prei Kuk Full-Day Heritage Tour
-                </DialogTitle>
-              </DialogHeader>
-            </div>
+          </div>
+          <div className="px-6 pt-4">
+            <DialogHeader>
+              <DialogTitle className="font-serif text-2xl md:text-3xl text-primary">
+                Sambor Prei Kuk Full-Day Heritage Tour
+              </DialogTitle>
+            </DialogHeader>
           </div>
 
           <div className="p-6 space-y-8">
