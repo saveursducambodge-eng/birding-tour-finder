@@ -373,9 +373,9 @@ The surrounding dry grasslands are home to many species, including Small and Blu
             {/* Tour Overview */}
             <div>
               {tour.id === 4 && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+                <div className="grid grid-cols-4 gap-2 mb-4 max-w-2xl">
                   {[atts916_1, atts916_2, atts916_3, atts916_4].map((asset, i) => (
-                    <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                    <div key={i} className="aspect-[3/4] overflow-hidden rounded-lg">
                       <img
                         src={asset.url}
                         alt={`Ang Trapaeng Thmor Sarus Crane Reserve photo ${i + 1}`}
@@ -754,9 +754,9 @@ The surrounding dry grasslands are home to many species, including Small and Blu
 
           {tour.id === 5 && (
             <>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="grid grid-cols-4 gap-2 max-w-2xl">
                 {[angkorWat916_1, angkorWat916_2, angkorWat916_3, angkorWat916_4].map((asset, i) => (
-                  <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                  <div key={i} className="aspect-[3/4] overflow-hidden rounded-lg">
                     <img
                       src={asset.url}
                       alt={`Full Birding and Angkor Wat Temple Tour photo ${i + 1}`}
@@ -801,9 +801,9 @@ The surrounding dry grasslands are home to many species, including Small and Blu
 
           {tour.id === 6 && (
             <>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="grid grid-cols-4 gap-2 max-w-2xl">
                 {[russeyTrep916_1, russeyTrep916_2, russeyTrep916_3, russeyTrep916_4].map((asset, i) => (
-                  <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                  <div key={i} className="aspect-[3/4] overflow-hidden rounded-lg">
                     <img
                       src={asset.url}
                       alt={`Russey Trep Bengal Florican Grassland photo ${i + 1}`}
@@ -848,9 +848,9 @@ The surrounding dry grasslands are home to many species, including Small and Blu
 
           {tour.id === 7 && (
             <>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="grid grid-cols-4 gap-2 max-w-2xl">
                 {[beTreed916_1, beTreed916_2, beTreed916_3, beTreed916_4].map((asset, i) => (
-                  <div key={i} className="aspect-[9/16] overflow-hidden rounded-lg">
+                  <div key={i} className="aspect-[3/4] overflow-hidden rounded-lg">
                     <img
                       src={asset.url}
                       alt={`Be Treed Adventure photo ${i + 1}`}
