@@ -88,8 +88,8 @@ const whyChoose = [
 
 const destinations = [
   { name: "Siem Reap & Angkor", image: angkorWatSunset },
-  { name: "Prek Toal Biosphere Reserve", image: bird5 },
-  { name: "Western Siem Pang", image: bird6 },
+  { name: "Prek Toal Biosphere Reserve", image: heroPaintedStorksFlight.url },
+  { name: "Western Siem Pang", image: heroGlossyIbises.url },
   { name: "Russey Treb", image: heroMoon4.url },
   { name: "Kratie", image: heroMoon5.url },
   { name: "Keo Seima, Mondulkiri", image: heroMoon6.url },
