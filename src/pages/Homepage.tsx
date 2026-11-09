@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowRight, Clock, Heart, Bird, Users, Leaf, ShieldCheck, MapPin, CalendarCheck } from "lucide-react";
+import { ArrowRight, Clock, Heart, Bird, Users, Leaf, ShieldCheck, MapPin, CalendarCheck, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import TourIntroPopup from "@/components/TourIntroPopup";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 import heroSlideGuides from "@/assets/hero-slide-guides.jpg";
 import heroSlideBirdingGroup from "@/assets/hero-slide-birding-group.jpg";
@@ -382,7 +381,11 @@ const Homepage = () => {
             </ul>
           </div>
           <div className="flex flex-col items-start gap-4">
-            <WhatsAppButton />
+            <a href="https://wa.me/85589529696" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="rounded-full px-8 bg-transparent border-nature-gold text-nature-gold hover:bg-nature-gold/10 hover:text-nature-gold font-semibold">
+                <MessageCircle className="w-5 h-5 mr-2" /> Chat on WhatsApp
+              </Button>
+            </a>
             <Link to="/contact">
               <Button size="lg" className="rounded-full px-8 bg-nature-gold text-nature-forest hover:bg-nature-gold-light font-semibold">
                 Send a Tour Enquiry
