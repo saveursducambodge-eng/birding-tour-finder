@@ -93,7 +93,7 @@ const destinations = [
   { name: "Russey Treb", image: heroMoon4.url },
   { name: "Kratie", image: heroMoon5.url },
   { name: "Keo Seima, Mondulkiri", image: heroMoon6.url },
-  { name: "Phnom Penh & Surrounding Wetlands", image: bird4 },
+  { name: "Phnom Penh & Surrounding Wetlands", image: heroPondHeronLilies.url },
 ];
 
 const team = [
