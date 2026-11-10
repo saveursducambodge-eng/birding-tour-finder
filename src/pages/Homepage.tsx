@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import TourIntroPopup from "@/components/TourIntroPopup";
+import LazyImage from "@/components/LazyImage";
+import { featuredTourDetails, tourEnquiryUrl } from "@/lib/featured-tour-details";
 
 import heroSlideGuides from "@/assets/hero-slide-guides.jpg";
 import heroSlideBirdingGroup from "@/assets/hero-slide-birding-group.jpg";
@@ -69,9 +71,12 @@ const homeFaqs = [
 
 // Only tours that exist on the Tours page, with their real prices.
 const featuredTours = [
-  { title: "Half Day Birding at Pearaing", description: "Explore Pearaing Biodiversity Conservation Center with 50+ wetland species, just 20 minutes from Siem Reap.", image: bird1, duration: "Half day", price: "$144 per person" },
-  { title: "Bengal Florican Grassland Birding", description: "Search the seasonally flooded grasslands for the critically endangered Bengal Florican.", image: bird3, duration: "Half day", price: "$255 per person" },
-  { title: "Prek Toal Waterbird Sanctuary", description: "Huge colonies of waterbirds – one of the best places to see Greater Adjutant and Milky Stork.", image: bird2, duration: "Full day", price: "$240 per person" },
+  ...featuredTourDetails.map((tour, index) => ({
+    ...tour,
+    image: [bird1, bird3, bird2][index],
+    imageAlt: ["Wetland birds at Pearaing Biodiversity Conservation Center near Siem Reap", "A falcon perched among leafy branches in Cambodia", "Storks at Prek Toal Waterbird Sanctuary in Cambodia"][index],
+    price: `$${tour.pricePerPerson} per person`,
+  })),
   { title: "Kampong Phluk & Tonle Sap Wetlands", description: "Bird the flooded forest and lotus wetlands, then visit a traditional stilted village.", image: kampongPhlukAsset.url, duration: "Half day", price: "$165 per person" },
   { title: "Koh Ker and Beng Mealea Forest Birding", description: "Ancient temples and forest birding with White-rumped Falcon and 8 woodpecker species.", image: kohKerImage, duration: "Full day", price: "$245 per person" },
   { title: "Angkor Wat Birding Tour", description: "Combine sunrise at Angkor Wat with forest birding and temple exploration.", image: angkorWatSunset, duration: "Full day", price: "$195 per person" },
@@ -233,30 +238,32 @@ const Homepage = () => {
       </section>
 
       {/* Featured birding experiences */}
-      <section className="py-16 lg:py-20 px-4 bg-secondary/50">
+      <section id="birding-tours" aria-labelledby="birding-tours-heading" className="py-16 lg:py-20 px-4 bg-secondary/50">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-primary mb-4">Featured Birding Experiences</h2>
+            <h2 id="birding-tours-heading" className="font-serif text-3xl sm:text-4xl font-semibold text-primary mb-4">Birding Tours in Cambodia</h2>
             <p className="text-muted-foreground">
-              Recommended by our expert bird guides, from half-day trips near Siem Reap to full-day adventures. Every tour is private and can be tailored to your target birds.
+              Explore Cambodia birdwatching tours with Pearaing Birding Trails, from Siem Reap birdwatching to the grasslands and waterbird sanctuaries of Tonle Sap.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-fr">
             {featuredTours.map((tour) => (
-              <Card key={tour.title} className="group overflow-hidden flex flex-col border-0 shadow-card hover:shadow-float transition-shadow">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={tour.image} alt={tour.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <Card key={tour.title} className="group rounded-lg overflow-hidden flex flex-col border-border shadow-card motion-safe:hover:-translate-y-1 motion-safe:transition-all motion-safe:duration-300 hover:shadow-float">
+                <div className="aspect-[3/2] shrink-0 overflow-hidden">
+                  <LazyImage src={tour.image} alt={"imageAlt" in tour ? tour.imageAlt : tour.title} aspectRatio="aspect-[3/2]" className="w-full motion-safe:group-hover:scale-105 motion-safe:transition-transform motion-safe:duration-500" />
                 </div>
                 <CardContent className="p-6 flex flex-col flex-1">
-                  <h3 className="font-serif text-xl font-semibold text-primary mb-2">{tour.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4 flex-1">{tour.description}</p>
-                  <div className="flex items-center justify-between text-sm mb-5 border-t border-border pt-4">
-                    <span className="flex items-center gap-1 text-muted-foreground"><Clock className="w-4 h-4" />{tour.duration}</span>
-                    <span className="font-semibold text-primary">{tour.price}</span>
+                  <h3 className="font-serif text-2xl leading-tight font-semibold text-primary mb-3 sm:min-h-[3.75rem]">{tour.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground mb-6 flex-1">{tour.description}</p>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-sm mb-5 border-t border-border pt-4">
+                    <span className="flex items-center gap-2 text-muted-foreground"><Clock aria-hidden="true" className="w-4 h-4" />{tour.duration}</span>
+                    <span className="font-semibold text-primary"><span className="text-lg">{tour.price.split(" per person")[0]}</span> <span className="font-normal text-muted-foreground">per person</span></span>
                   </div>
-                  <Link to="/contact">
-                    <Button className="w-full rounded-full bg-nature-gold text-nature-forest hover:bg-nature-gold-light font-semibold">Enquire Now</Button>
-                  </Link>
+                  <Button asChild className="w-full min-h-12 h-auto px-3 py-3 rounded-md whitespace-normal bg-nature-gold text-nature-forest hover:bg-nature-gold-light font-semibold">
+                    <Link to={tourEnquiryUrl(tour.title)} aria-label={`Enquire About This Tour: ${tour.title}`}>
+                      Enquire About This Tour <ArrowRight aria-hidden="true" className="shrink-0" />
+                    </Link>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
