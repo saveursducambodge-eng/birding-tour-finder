@@ -1,4 +1,5 @@
-# Birding Tours improvements
-- [x] Refresh homepage tour cards without removing existing tours or changing prices.
-- [x] Carry the selected tour into the enquiry form and retain WhatsApp access.
-- [x] Check prices, tour selection, and desktop/mobile presentation.
+# Homepage iconic birds update
+- [x] Remove the homepage welcome popup and link trip planning to the existing enquiry form.
+- [ ] Verify seven species profiles and source correctly identified, licensed photographs.
+- [ ] Add the bird cards and tour/contact buttons without changing other homepage sections or prices.
+- [ ] Check desktop/mobile presentation and links; leave unpublished.

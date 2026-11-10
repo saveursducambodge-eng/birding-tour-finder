@@ -5,7 +5,6 @@ import { ArrowRight, Clock, Heart, Bird, Users, Leaf, ShieldCheck, MapPin, Calen
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
-import TourIntroPopup from "@/components/TourIntroPopup";
 import LazyImage from "@/components/LazyImage";
 import { featuredTourDetails, tourEnquiryUrl } from "@/lib/featured-tour-details";
 
@@ -108,15 +107,7 @@ const team = [
 ];
 
 const Homepage = () => {
-  const [showPopup, setShowPopup] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -197,8 +188,8 @@ const Homepage = () => {
                   Explore Birding Tours
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" onClick={() => setShowPopup(true)} className="rounded-full px-8 bg-transparent border-primary-foreground/70 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
-                Plan Your Birding Trip
+              <Button asChild size="lg" variant="outline" className="rounded-full px-8 bg-transparent border-primary-foreground/70 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                <Link to="/contact#tour-enquiry">Plan Your Birding Trip</Link>
               </Button>
             </div>
           </div>
@@ -424,7 +415,6 @@ const Homepage = () => {
         </div>
       </section>
 
-      <TourIntroPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
     </div></>;
 };
 export default Homepage;
