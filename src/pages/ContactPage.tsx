@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
+import { featuredTourDetails, selectedEnquiryTour } from "@/lib/featured-tour-details";
 import { Helmet } from "react-helmet-async";
 import { format } from "date-fns";
 import { DateRange } from "react-day-picker";
@@ -19,6 +21,7 @@ import contactBirdingGuide from "@/assets/contact-birding-guide.jpg";
 import contactHeroImage from "@/assets/contact-hero-cormorants.jpg.asset.json";
 import { supabase } from "@/integrations/supabase/client";
 const ContactPage = () => {
+  const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState<{
     name: string;
     email: string;
@@ -117,6 +120,13 @@ const ContactPage = () => {
     description: "7 days a week"
   }];
   const tours = ["Half-Day Birding Near Siem Reap - Pearaing Biodiversity Conservation Center (Half Day - 4 hours)", "Full Bird at Prek Toal Waterbird Sanctuary and Visit Prek Toal Floating village (Full Day - 11 hours)", "Trip full day to Koh Ker and Beng Melea for Bird watching and Temple Tour (Full Day - 12.5 hours)", "Full Birding and Angkor Wat Temple Tour (Full Day - 12.5 hours)", "Birding at Tmatboey - Bengal Florican Grassland and Presh Vihear Temple (3 Days / 2 Nights)", "7 Day Focus Target Tours species - Dream Birding Trip to Cambodia (7 Days / 6 Nights)", "10-Day Birding Trip to Cambodia - Dream Birding Trip to Cambodia (10 Days / 9 Nights)", "Bird Watching Itinerary in Cambodia: 14-Day Tours - Rare Bird Itinerary in Cambodia (14 Days / 13 Nights)", "Bird Watching Itinerary in Cambodia: 15-Day Tours - Rare Bird Itinerary in Cambodia (15 Days / 14 Nights)", "Bird Watching Itinerary in Cambodia: 19-Day Tours - Rare Bird Itinerary in Cambodia (19 Days / 18 Nights)", "Essential Cambodia 8th-23rd March 2026 - Dream Birding Trip to Cambodia (16 Days / 15 Nights)", "Custom Tour Request"];
+  const availableTours = [...new Set([...featuredTourDetails.map(tour => tour.title), "Kampong Phluk & Tonle Sap Wetlands", "Koh Ker and Beng Mealea Forest Birding", "Angkor Wat Birding Tour", ...tours])];
+  const requestedTour = selectedEnquiryTour(searchParams, availableTours);
+  useEffect(() => {
+    if (!requestedTour) return;
+    setFormData(previous => ({ ...previous, tour: requestedTour }));
+    document.getElementById("tour-enquiry")?.scrollIntoView({ block: "start" });
+  }, [requestedTour]);
   return <>
       <Helmet>
         <title>Contact Us | Book a Birding or Temple Tour in Cambodia</title>
@@ -156,7 +166,7 @@ const ContactPage = () => {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Contact Form */}
-              <Card className="shadow-float">
+              <Card id="tour-enquiry" className="shadow-float scroll-mt-24">
                 <CardHeader className="p-4 sm:p-6">
                   <CardTitle className="font-serif text-xl sm:text-2xl text-primary flex items-center gap-2">
                     <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -193,7 +203,7 @@ const ContactPage = () => {
                           <SelectValue placeholder="Select a tour or request custom" />
                         </SelectTrigger>
                         <SelectContent>
-                          {tours.map(tour => <SelectItem key={tour} value={tour}>
+                          {availableTours.map(tour => <SelectItem key={tour} value={tour}>
                               {tour}
                             </SelectItem>)}
                         </SelectContent>
